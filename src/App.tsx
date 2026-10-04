@@ -238,8 +238,16 @@ export default function App() {
                   Nicho: <strong className="text-white">{result.request.topic}</strong>
                 </span>
                 <span className="text-slate-500">•</span>
-                <span className="text-slate-400">
-                  {result.cached ? '⚡ Carregado de Cache (24h)' : '🌐 Pesquisa em Tempo Real'}
+                <span className={result.isLiveResearchAvailable ? 'text-slate-400' : 'text-amber-400'}>
+                  {result.cached
+                    ? '⚡ Carregado de Cache (24h)'
+                    : result.researchProvenance?.sourceType === 'live_google_grounding'
+                    ? '🌐 Google Grounding em Tempo Real'
+                    : result.researchProvenance?.sourceType === 'live_web_search'
+                    ? '🌐 Pesquisa Web em Tempo Real'
+                    : result.researchProvenance?.sourceType === 'curated_niche_match'
+                    ? '📚 Base Curada (Correspondência Direta)'
+                    : '⚠️ Dedução Analítica IA (Sem concorrência direta)'}
                 </span>
               </div>
 
@@ -254,8 +262,25 @@ export default function App() {
               </div>
             </div>
 
-            {/* 2. Competitors Section (10–20 results) */}
-            <CompetitorsSection competitors={result.competitors} />
+            {/* Zero-Fabrication Transparency Alert Banner */}
+            {!result.isLiveResearchAvailable && (
+              <div className="p-4 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs flex items-start space-x-3">
+                <AlertCircle className="w-5 h-5 shrink-0 text-amber-400 mt-0.5" />
+                <div className="space-y-1">
+                  <span className="font-semibold text-amber-200">Aviso de Proveniência & Zero Fabricação:</span>
+                  <p className="text-amber-300/90 leading-relaxed">
+                    Não foram encontrados vídeos concorrentes diretos ativos em fontes públicas abertas para este termo. Para cumprir estritamente o princípio de zero fabricação, nenhum canal substituto ou estatística inventada foi apresentado. A análise subsequente (lacunas, 20 ideias ranqueadas e roteiros) baseia-se em dedução estratégica da IA para o mercado selecionado ({result.request.market}).
+                  </p>
+                </div>
+              </div>
+            )}
+
+            {/* 2. Competitors Section (0 or 10–20 results with zero-fabrication guarantees) */}
+            <CompetitorsSection
+              competitors={result.competitors}
+              provenance={result.researchProvenance}
+              topic={result.request.topic}
+            />
 
             {/* 3. Outlier Analysis Section */}
             <OutlierAnalysisSection analysis={result.outlierAnalysis} />

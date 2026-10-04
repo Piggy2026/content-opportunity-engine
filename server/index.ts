@@ -55,9 +55,9 @@ app.post('/api/analyze', async (req, res) => {
 
     console.log(`[Engine] Running full pipeline for: "${researchReq.topic}" (${researchReq.market}, ${researchReq.platform})`);
 
-    // 1. Live Web & Video Search Research (10-20 verified competitor results)
-    const competitors = await searchCompetitors(researchReq);
-    console.log(`[Engine] Found ${competitors.length} verified competitors/content results.`);
+    // 1. Live Web & Video Search Research (with provenance and zero-fabrication guarantees)
+    const { competitors, provenance } = await searchCompetitors(researchReq);
+    console.log(`[Engine] Search result: ${competitors.length} competitors. Provenance: ${provenance.sourceType}, Live: ${provenance.isLiveResearchAvailable}`);
 
     // 2. Outlier Analysis
     const outlierAnalysis = analyzeOutliers(researchReq, competitors);
@@ -79,6 +79,8 @@ app.post('/api/analyze', async (req, res) => {
       createdAt: new Date().toISOString(),
       request: researchReq,
       cached: false,
+      isLiveResearchAvailable: provenance.isLiveResearchAvailable,
+      researchProvenance: provenance,
       competitors,
       outlierAnalysis,
       contentGaps,

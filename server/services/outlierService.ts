@@ -14,7 +14,9 @@ export function analyzeOutliers(req: ResearchRequest, competitors: CompetitorRes
     dominantHookPatterns = [
       {
         pattern: 'O Erro Crítico / Alerta Fiscal & Legal',
-        example: `Exemplo real observado: "${titles[0] || 'O Maior Erro em ' + topic + ' em Portugal'}"`,
+        example: titles.length > 0
+          ? `Exemplo real observado: "${titles[0]}"`
+          : `Hipótese estratégica para teste: "O Maior Erro em ${topic} em Portugal"`,
         whyItWorks: 'Em Portugal, o medo de coimas da Autoridade Tributária ou perdas financeiras em contratos gera muito maior clique do que promessas de riqueza imediata.',
       },
       {
@@ -32,7 +34,9 @@ export function analyzeOutliers(req: ResearchRequest, competitors: CompetitorRes
     dominantHookPatterns = [
       {
         pattern: 'Quebra de Padrão Acelerada / Desafio de 30 Dias',
-        example: `Exemplo real observado: "${titles[0] || 'Pare de Fazer Isto com ' + topic + ' Agora!'}"`,
+        example: titles.length > 0
+          ? `Exemplo real observado: "${titles[0]}"`
+          : `Hipótese estratégica para teste: "Pare de Fazer Isto com ${topic} Agora!"`,
         whyItWorks: 'O público brasileiro consome em ritmo acelerado; ganchos com apelo emocional e urgência nos primeiros 2 segundos reduzem a taxa de swipe.',
       },
       {
@@ -51,7 +55,9 @@ export function analyzeOutliers(req: ResearchRequest, competitors: CompetitorRes
     dominantHookPatterns = [
       {
         pattern: 'El Choque de Realidad / La Trampa de Hacienda',
-        example: `Ejemplo real observado: "${titles[0] || 'La Verdad sobre ' + topic + ' que Nadie te Cuenta en España'}"`,
+        example: titles.length > 0
+          ? `Ejemplo real observado: "${titles[0]}"`
+          : `Hipótesis estratégica para prueba: "La Verdad sobre ${topic} que Nadie te Cuenta en España"`,
         whyItWorks: 'En España, la presión regulatoria y las dudas sobre cotización y tributación provocan un alto engagement emocional en la comunidad.',
       },
       {
@@ -75,7 +81,10 @@ export function analyzeOutliers(req: ResearchRequest, competitors: CompetitorRes
     whyItOutperforms: isShortsOrReels
       ? 'Vídeos verticais que iniciam diretamente com um erro comum ou número chocante retêm mais de 72% dos utilizadores nos primeiros 5 segundos.'
       : 'Vídeos com demonstração prática real (sem enrolação teórica nos primeiros 60 segundos) têm retenção média 2.4x superior aos vídeos em estúdio tradicional.',
-    frequencyObserved: `${Math.round(competitors.length * 0.65)} de ${competitors.length} dos conteúdos de topo analisados utilizam esta estrutura.`,
+    frequencyObserved:
+      competitors.length > 0
+        ? `${Math.round(competitors.length * 0.65)} de ${competitors.length} dos conteúdos de topo analisados utilizam esta estrutura.`
+        : `Padrão comportamental de referência para ${platform.toUpperCase()} no mercado ${market} (sem concorrência direta indexada no termo).`,
   };
 
   // High velocity topics
@@ -103,20 +112,35 @@ export function analyzeOutliers(req: ResearchRequest, competitors: CompetitorRes
   ];
 
   // Strictly factual observations
-  const observedFacts = [
-    `Amostra pesquisada: ${competitors.length} conteúdos concorrentes ativos encontrados na pesquisa de mercado.`,
-    `Plataforma analisada: ${platform.toUpperCase()} no mercado geográfico e linguístico de ${market}.`,
-    `Títulos mais eficazes contêm entre 45 e 65 caracteres com termos de ação ou números concretos.`,
-    `Presença confirmada de canais estabelecidos (${competitors.slice(0, 3).map((c) => c.channelOrCreator).join(', ')}).`,
-    `Grande parte dos vídeos concorrentes foca em noções introdutórias, deixando lacunas de implementação prática.`,
-  ];
+  const observedFacts =
+    competitors.length > 0
+      ? [
+          `Amostra pesquisada: ${competitors.length} conteúdos concorrentes ativos encontrados na pesquisa de mercado.`,
+          `Plataforma analisada: ${platform.toUpperCase()} no mercado geográfico e linguístico de ${market}.`,
+          `Títulos mais eficazes contêm entre 45 e 65 caracteres com termos de ação ou números concretos.`,
+          `Presença confirmada de canais estabelecidos (${competitors.slice(0, 3).map((c) => c.channelOrCreator).join(', ')}).`,
+          `Grande parte dos vídeos concorrentes foca em noções introdutórias, deixando lacunas de implementação prática.`,
+        ]
+      : [
+          `Pesquisa direta realizada para "${topic}" na plataforma ${platform.toUpperCase()} (${market}).`,
+          `Amostra observada: 0 conteúdos diretos indexados publicamente no momento da consulta.`,
+          `Garantia de integridade: Nenhum concorrente fictício ou métrica simulada foi gerada para preencher a tabela.`,
+          `Mapeamento de ecossistema: A ausência de canais dominantes indica nicho pioneiro no idioma local ou busca por termos alternativos.`,
+        ];
 
   // Clearly labeled AI deductions
-  const aiDeductions = [
-    `Dedução IA: Há uma saturação evidente de conteúdos teóricos e repetitivos sobre "${topic}", criando uma oportunidade gigantesca para abordagens contrárias e dados práticos.`,
-    `Dedução IA: A audiência de ${market} demonstra fadiga de formatos estilo "guru", favorecendo criadores que demonstram telas reais, custos exatos e transparência honesta.`,
-    `Dedução IA: O formato de roteiro com gancho de 3 segundos focado no resultado final terá probabilidade de retenção superior à média do nicho.`,
-  ];
+  const aiDeductions =
+    competitors.length > 0
+      ? [
+          `Dedução IA: Há uma saturação evidente de conteúdos teóricos e repetitivos sobre "${topic}", criando uma oportunidade gigantesca para abordagens contrárias e dados práticos.`,
+          `Dedução IA: A audiência de ${market} demonstra fadiga de formatos estilo "guru", favorecendo criadores que demonstram telas reais, custos exatos e transparência honesta.`,
+          `Dedução IA: O formato de roteiro com gancho de 3 segundos focado no resultado final terá probabilidade de retenção superior à média do nicho.`,
+        ]
+      : [
+          `Dedução IA: A ausência de vídeos concorrentes diretos com forte autoridade para "${topic}" indica oportunidade pioneira (oceano azul) em ${market}.`,
+          `Dedução IA: As lacunas, ideias e roteiros gerados a seguir baseiam-se em modelos preditivos de comportamento de audiência em ${market} e nas melhores práticas do ${platform.toUpperCase()}, e não em dados empíricos de vídeos concorrentes pré-existentes.`,
+          `Dedução IA: Recomenda-se iniciar com formatos de "Guia Passo a Passo para Iniciantes" e "Erros Mais Comuns" para validar o volume de demanda orgânica.`,
+        ];
 
   return {
     topFormatOutlier,

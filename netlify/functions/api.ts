@@ -56,7 +56,7 @@ export const handler: Handler = async (event, context) => {
         };
       }
 
-      const competitors = await searchCompetitors(researchReq);
+      const { competitors, provenance } = await searchCompetitors(researchReq);
       const outlierAnalysis = analyzeOutliers(researchReq, competitors);
       const contentGaps = detectContentGaps(researchReq, competitors);
       const rankedIdeas = generateRankedIdeas(researchReq, contentGaps, competitors);
@@ -68,6 +68,8 @@ export const handler: Handler = async (event, context) => {
         createdAt: new Date().toISOString(),
         request: researchReq,
         cached: false,
+        isLiveResearchAvailable: provenance.isLiveResearchAvailable,
+        researchProvenance: provenance,
         competitors,
         outlierAnalysis,
         contentGaps,

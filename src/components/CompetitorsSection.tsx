@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { ExternalLink, CheckCircle2, ShieldCheck, Sparkles, Search, Video, Eye, Calendar, AlertCircle } from 'lucide-react';
-import { CompetitorResult } from '../types/index.js';
+import { CompetitorResult, ResearchProvenance } from '../types/index.js';
 
 interface CompetitorsSectionProps {
   competitors: CompetitorResult[];
+  provenance?: ResearchProvenance;
+  topic?: string;
 }
 
-export const CompetitorsSection: React.FC<CompetitorsSectionProps> = ({ competitors }) => {
+export const CompetitorsSection: React.FC<CompetitorsSectionProps> = ({ competitors, provenance, topic }) => {
   const [searchTerm, setSearchTerm] = useState('');
 
   const filtered = competitors.filter(
@@ -28,9 +30,15 @@ export const CompetitorsSection: React.FC<CompetitorsSectionProps> = ({ competit
             <h2 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
               Pesquisa de Concorrentes & Conteúdos Ativos
             </h2>
-            <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
-              {competitors.length} Resultados Verificados
-            </span>
+            {competitors.length > 0 ? (
+              <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                {competitors.length} Resultados Verificados
+              </span>
+            ) : (
+              <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/20">
+                0 Concorrentes Diretos Indexados
+              </span>
+            )}
           </div>
           <p className="text-slate-400 text-xs sm:text-sm mt-1">
             Fontes reais indexadas na web e plataformas. Cada item possui URL autêntica com distinção estrita entre
@@ -38,17 +46,19 @@ export const CompetitorsSection: React.FC<CompetitorsSectionProps> = ({ competit
           </p>
         </div>
 
-        {/* Search inside results */}
-        <div className="relative min-w-[220px]">
-          <Search className="w-4 h-4 text-slate-500 absolute left-3 top-1/2 -translate-y-1/2" />
-          <input
-            type="text"
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            placeholder="Filtrar concorrentes..."
-            className="w-full pl-9 pr-3 py-1.5 bg-slate-950 rounded-lg border border-slate-800 text-xs text-white placeholder-slate-500 focus:border-brand-500"
-          />
-        </div>
+        {/* Search inside results (only when competitors exist) */}
+        {competitors.length > 0 && (
+          <div className="relative min-w-[220px]">
+            <Search className="w-4 h-4 text-slate-500 absolute left-3 top-1/2 -translate-y-1/2" />
+            <input
+              type="text"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              placeholder="Filtrar concorrentes..."
+              className="w-full pl-9 pr-3 py-1.5 bg-slate-950 rounded-lg border border-slate-800 text-xs text-white placeholder-slate-500 focus:border-brand-500"
+            />
+          </div>
+        )}
       </div>
 
       {/* Distinction Banner */}
@@ -59,6 +69,43 @@ export const CompetitorsSection: React.FC<CompetitorsSectionProps> = ({ competit
           ou link foi inventado. As tags com fundo escuro representam <span className="text-emerald-400 font-medium">fatos concretos</span> e as caixas lilás indicam <span className="text-brand-300 font-medium">inferência analítica da IA</span>.
         </div>
       </div>
+
+      {/* Provenance Notice if available */}
+      {provenance?.notice && (
+        <div className="mt-3 p-3 rounded-xl bg-indigo-950/30 border border-indigo-800/40 text-indigo-300 text-xs flex items-center gap-2.5">
+          <Sparkles className="w-4 h-4 text-indigo-400 shrink-0" />
+          <span>{provenance.notice}</span>
+        </div>
+      )}
+
+      {/* Zero Competitors Honest Card */}
+      {competitors.length === 0 && (
+        <div className="mt-6 p-6 rounded-2xl bg-amber-950/20 border border-amber-800/40 text-amber-200 space-y-4">
+          <div className="flex items-start gap-3.5">
+            <AlertCircle className="w-6 h-6 text-amber-400 shrink-0 mt-0.5" />
+            <div className="space-y-2.5 text-xs sm:text-sm">
+              <h4 className="font-bold text-amber-300 text-base">
+                Pesquisa Pública Direta Indisponível para este Termo
+              </h4>
+              <p className="text-amber-200/90 leading-relaxed">
+                A pesquisa aberta em tempo real não localizou vídeos concorrentes diretos ativos ou canais indexados publicamente para o termo <strong className="text-white">"{topic || 'pesquisado'}"</strong> na plataforma selecionada.
+              </p>
+              <div className="p-3.5 rounded-xl bg-slate-950/70 border border-amber-900/40 text-slate-300 text-xs space-y-2">
+                <div className="flex items-center gap-1.5 text-emerald-400 font-semibold">
+                  <ShieldCheck className="w-4 h-4" />
+                  <span>Salvaguarda de Zero Fabricação</span>
+                </div>
+                <p>
+                  Para manter integridade estrita, <strong className="text-white">nenhum canal de outro nicho foi substituído</strong> e nenhuma estatística foi inventada para preencher a tela.
+                </p>
+                <p className="text-slate-400">
+                  As secções seguintes (<span className="text-brand-300 font-medium">Análise de Lacunas, 20 Ideias Rankeadas e Roteiros</span>) foram estruturadas através de <strong className="text-white">Dedução Analítica da IA</strong> a partir dos padrões de retenção da plataforma e do perfil de consumo do mercado.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Grid of 10-20 Competitor Cards */}
       <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">

@@ -37,8 +37,8 @@ async function runTests() {
   // 3. Competitor results (10-20, no invented statistics)
   console.log('\nStep 3: Checking Competitor Results...');
   assert(
-    ptData.competitors.length >= 10 && ptData.competitors.length <= 20,
-    `Competitors count is within 10-20 (Got: ${ptData.competitors.length})`
+    ptData.competitors.length >= 1 && ptData.competitors.length <= 20,
+    `Competitors count is valid and unpadded (Got: ${ptData.competitors.length})`
   );
   for (const c of ptData.competitors) {
     assert(c.url.startsWith('http'), `Competitor has valid URL: ${c.url}`);
@@ -111,7 +111,7 @@ async function runTests() {
 
   // 10. Source links
   console.log('\nStep 10: Checking Verified Sources...');
-  assert(ptData.sources.length >= 10, `At least 10 source citations (Got: ${ptData.sources.length})`);
+  assert(ptData.sources.length === ptData.competitors.length, `Source citations match competitors count (Got: ${ptData.sources.length})`);
   for (const src of ptData.sources) {
     assert(src.url.startsWith('http'), `Source URL is valid: ${src.url}`);
     assert(src.verificationStatus === 'verified_real_url', 'Verification status is verified_real_url');
@@ -148,6 +148,76 @@ async function runTests() {
   const ideaData = await ideaRes.json();
   assert(ideaData.scripts.length === 3, 'Generated 3 new scripts for selected idea');
   assert(ideaData.titles.length >= 5, 'Generated titles for selected idea');
+
+  // 13. Zero-Fabrication Integrity Check on Obscure Query
+  console.log('\nStep 13: Testing Zero-Fabrication Safeguard on Obscure Niche Query...');
+  const obscureReq = {
+    topic: 'Origami fractal complexo com folha de bananeira artesanal',
+    market: 'pt-PT',
+    platform: 'youtube',
+    audienceLevel: 'advanced',
+  };
+  const obscureRes = await fetch('http://localhost:3001/api/analyze', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(obscureReq),
+  });
+  assert(obscureRes.ok, 'Pipeline responded 200 for obscure query');
+  const obscureData = await obscureRes.json();
+
+  // If live search found 0 items, check that it DID NOT substitute unrelated finance creators:
+  console.log(`Competitors found for obscure query: ${obscureData.competitors.length}`);
+  const hasFinanceCompetitors = obscureData.competitors.some(c =>
+    c.channelOrCreator.includes('Rico Dinheiro') ||
+    c.channelOrCreator.includes('Pedro Andersson') ||
+    c.channelOrCreator.includes('Primo Rico')
+  );
+  assert(!hasFinanceCompetitors, 'NEVER injects unrelated finance benchmark creators as competitors!');
+
+  if (obscureData.competitors.length === 0) {
+    assert(obscureData.isLiveResearchAvailable === false, 'isLiveResearchAvailable is false when 0 competitors found');
+    assert(obscureData.researchProvenance.sourceType === 'insufficient_live_data', 'Provenance sourceType is insufficient_live_data');
+    assert(obscureData.researchProvenance.notice, 'Provenance contains clear transparency notice');
+    assert(obscureData.sources.length === 0, 'No invented sources when 0 competitors found');
+  }
+
+  // 14. Testing Brazil Workflow (pt-BR, TikTok)
+  console.log('\nStep 14: Testing Analysis Pipeline for Brazil (pt-BR, TikTok)...');
+  const brReq = {
+    topic: 'Como economizar dinheiro ganhando até dois salários mínimos',
+    market: 'pt-BR',
+    platform: 'tiktok',
+    audienceLevel: 'beginner',
+  };
+  const brRes = await fetch('http://localhost:3001/api/analyze', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(brReq),
+  });
+  assert(brRes.ok, 'Pipeline responded 200 for Brazil request');
+  const brData = await brRes.json();
+  assert(brData.rankedIdeas.length >= 15, 'Generated 15-20 ranked ideas for Brazil');
+  assert(brData.scripts.length === 3, 'Generated 3 scripts for Brazil');
+  assert(brData.contentGaps.some(g => g.marketNuance.includes('Brasil') || g.marketNuance.includes('pt-BR')), 'Brazil market nuance detected');
+
+  // 15. Testing Spain Workflow (es-ES, Instagram Reels)
+  console.log('\nStep 15: Testing Analysis Pipeline for Spain (es-ES, Instagram Reels)...');
+  const esReq = {
+    topic: 'Cómo tributar como autónomo en España sin cometer errores graves',
+    market: 'es-ES',
+    platform: 'instagram-reels',
+    audienceLevel: 'intermediate',
+  };
+  const esRes = await fetch('http://localhost:3001/api/analyze', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(esReq),
+  });
+  assert(esRes.ok, 'Pipeline responded 200 for Spain request');
+  const esData = await esRes.json();
+  assert(esData.rankedIdeas.length >= 15, 'Generated 15-20 ranked ideas for Spain');
+  assert(esData.scripts.length === 3, 'Generated 3 scripts for Spain');
+  assert(esData.contentGaps.some(g => g.marketNuance.includes('España') || g.marketNuance.includes('es-ES')), 'Spain market nuance detected');
 
   console.log('\n🎉 ALL WORKFLOW TESTS PASSED SUCCESSFULLY! 🎉\n');
 }

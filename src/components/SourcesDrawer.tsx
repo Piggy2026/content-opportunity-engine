@@ -27,41 +27,53 @@ export const SourcesDrawer: React.FC<SourcesDrawerProps> = ({ sources }) => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-        {sources.map((src, idx) => (
-          <div
-            key={src.id || idx}
-            className="p-3.5 rounded-xl bg-slate-950 border border-slate-800 hover:border-slate-700 transition flex items-start justify-between gap-3 text-xs"
-          >
-            <div className="space-y-1 min-w-0">
-              <div className="flex items-center space-x-2">
-                <span className="font-semibold text-white truncate max-w-[280px]">
-                  {src.title}
-                </span>
-                <span className="text-[10px] text-emerald-400 bg-emerald-500/10 px-1.5 py-0.5 rounded border border-emerald-500/20 shrink-0">
-                  Verificado
-                </span>
-              </div>
-              <p className="text-slate-400 text-[11px] truncate">
-                Canal/Host: <span className="text-slate-300">{src.channelOrHost}</span> • Plataforma: {src.platform}
-              </p>
-              <p className="text-slate-500 text-[11px] line-clamp-1 italic">
-                "{src.snippet}"
-              </p>
-            </div>
-
-            <a
-              href={src.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 rounded-lg bg-slate-900 hover:bg-slate-800 text-brand-400 hover:text-brand-300 border border-slate-800 transition shrink-0"
-              title="Abrir link original"
+      {sources.length > 0 ? (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+          {sources.map((src, idx) => (
+            <div
+              key={src.id || idx}
+              className="p-3.5 rounded-xl bg-slate-950 border border-slate-800 hover:border-slate-700 transition flex items-start justify-between gap-3 text-xs"
             >
-              <ExternalLink className="w-3.5 h-3.5" />
-            </a>
+              <div className="space-y-1 min-w-0">
+                <div className="flex items-center space-x-2">
+                  <span className="font-semibold text-white truncate max-w-[280px]">
+                    {src.title}
+                  </span>
+                  <span className="text-[10px] text-emerald-400 bg-emerald-500/10 px-1.5 py-0.5 rounded border border-emerald-500/20 shrink-0">
+                    Verificado
+                  </span>
+                </div>
+                <p className="text-slate-400 text-[11px] truncate">
+                  Canal/Host: <span className="text-slate-300">{src.channelOrHost}</span> • Plataforma: {src.platform}
+                </p>
+                <p className="text-slate-500 text-[11px] line-clamp-1 italic">
+                  "{src.snippet}"
+                </p>
+              </div>
+
+              <a
+                href={src.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-lg bg-slate-900 hover:bg-slate-800 text-brand-400 hover:text-brand-300 border border-slate-800 transition shrink-0"
+                title="Abrir link original"
+              >
+                <ExternalLink className="w-3.5 h-3.5" />
+              </a>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div className="p-4 rounded-xl bg-slate-950 border border-slate-800 text-xs text-slate-400 flex items-start gap-3">
+          <ShieldCheck className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
+          <div className="space-y-1">
+            <p className="font-semibold text-slate-200">Nenhuma fonte direta indexada para este termo</p>
+            <p>
+              Como a pesquisa aberta em tempo real não retornou URLs de vídeos específicos para o termo pesquisado, nenhuma fonte externa ou link fictício foi gerado. Os roteiros foram construídos através de engenharia de ganchos e modelos de retenção.
+            </p>
           </div>
-        ))}
-      </div>
+        </div>
+      )}
     </div>
   );
 };

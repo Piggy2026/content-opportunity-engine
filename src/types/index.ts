@@ -149,12 +149,21 @@ export interface SourceCitation {
   snippet: string;
 }
 
+export interface ResearchProvenance {
+  sourceType: 'live_google_grounding' | 'live_web_search' | 'curated_niche_match' | 'insufficient_live_data';
+  isLiveResearchAvailable: boolean;
+  notice?: string;
+  queryPerformed: string;
+}
+
 export interface OpportunityEngineResult {
   id: string;
   createdAt: string;
   request: ResearchRequest;
   cached: boolean;
-  competitors: CompetitorResult[]; // 10-20
+  isLiveResearchAvailable: boolean;
+  researchProvenance: ResearchProvenance;
+  competitors: CompetitorResult[]; // Genuine competitor content found
   outlierAnalysis: OutlierAnalysis;
   contentGaps: ContentGap[];
   rankedIdeas: ContentIdea[]; // 15-20
