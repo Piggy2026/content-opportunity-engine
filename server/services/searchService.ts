@@ -309,9 +309,12 @@ export async function searchCompetitors(req: ResearchRequest): Promise<SearchCom
               snippet: item.snippet,
               isRealVerifiedSource: true,
               sourceDomain: item.sourceDomain,
-              detectedHookOrAngle: hook,
               factSummary: `URL real indexada com presença no ecossistema de conteúdo: ${item.title}.`,
-              aiInference: `Dedução IA: Este conteúdo gerou autoridade no nicho de "${req.topic}" respondendo à intenção de busca prioritária do usuário local.`,
+              aiInference: req.market === 'pt-PT'
+                ? `Dedução IA: Este conteúdo gerou autoridade no nicho de "${req.topic}" respondendo à intenção de pesquisa prioritária do utilizador local.`
+                : req.market === 'pt-BR'
+                ? `Dedução IA: Este conteúdo gerou autoridade no nicho de "${req.topic}" respondendo à intenção de busca prioritária do usuário local.`
+                : `Deducción IA: Este contenido generó autoridad en el nicho de "${req.topic}" respondiendo a la intención de búsqueda del usuario local.`,
             });
           }
         }

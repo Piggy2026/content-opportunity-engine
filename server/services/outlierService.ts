@@ -74,13 +74,34 @@ export function analyzeOutliers(req: ResearchRequest, competitors: CompetitorRes
   }
 
   // Format outlier identification
-  let topFormatOutlier = {
-    format: isShortsOrReels
-      ? 'Vídeo Vertical de 35 a 50s com Demonstração na Tela e Quebra de Mito'
-      : 'Vídeo Longo de 12 a 18 minutos com Estudo de Caso Prático e Planilha/Gráfico na Tela',
-    whyItOutperforms: isShortsOrReels
+  let formatDesc = '';
+  let whyDesc = '';
+  if (market === 'pt-PT') {
+    formatDesc = isShortsOrReels
+      ? 'Vídeo Vertical de 35 a 50s com Demonstração no Ecrã e Quebra de Mitos'
+      : 'Vídeo Longo de 12 a 18 minutos com Estudo de Caso Prático e Folha de Cálculo/Gráfico no Ecrã';
+    whyDesc = isShortsOrReels
       ? 'Vídeos verticais que iniciam diretamente com um erro comum ou número chocante retêm mais de 72% dos utilizadores nos primeiros 5 segundos.'
-      : 'Vídeos com demonstração prática real (sem enrolação teórica nos primeiros 60 segundos) têm retenção média 2.4x superior aos vídeos em estúdio tradicional.',
+      : 'Vídeos com demonstração prática no ecrã (sem rodeios teóricos no primeiro minuto) têm retenção média 2.4x superior aos vídeos em estúdio tradicional.';
+  } else if (market === 'pt-BR') {
+    formatDesc = isShortsOrReels
+      ? 'Vídeo Vertical de 35 a 50s com Demonstração na Tela e Quebra de Mito'
+      : 'Vídeo Longo de 12 a 18 minutos com Estudo de Caso Prático e Planilha/Gráfico na Tela';
+    whyDesc = isShortsOrReels
+      ? 'Vídeos verticais que iniciam diretamente com um erro comum ou número chocante retêm mais de 72% dos usuários nos primeiros 5 segundos.'
+      : 'Vídeos com demonstração prática real (sem enrolação teórica nos primeiros 60 segundos) têm retenção média 2.4x superior aos vídeos em estúdio tradicional.';
+  } else {
+    formatDesc = isShortsOrReels
+      ? 'Vídeo Vertical de 35 a 50s con Demostración en Pantalla y Ruptura de Mitos'
+      : 'Vídeo Largo de 12 a 18 minutos con Estudio de Caso Práctico y Tabla/Gráfico en Pantalla';
+    whyDesc = isShortsOrReels
+      ? 'Los vídeos verticales que inician directamente con un error común retienen a más del 72% de los usuarios en los primeros 5 segundos.'
+      : 'Los vídeos con demostración práctica real en pantalla (sin rodeos teóricos iniciales) tienen una retención media 2.4x superior a las grabaciones convencionales.';
+  }
+
+  let topFormatOutlier = {
+    format: formatDesc,
+    whyItOutperforms: whyDesc,
     frequencyObserved:
       competitors.length > 0
         ? `${Math.round(competitors.length * 0.65)} de ${competitors.length} dos conteúdos de topo analisados utilizam esta estrutura.`
@@ -111,18 +132,20 @@ export function analyzeOutliers(req: ResearchRequest, competitors: CompetitorRes
     },
   ];
 
+  const marketName = market === 'pt-PT' ? 'Portugal (pt-PT)' : market === 'pt-BR' ? 'Brasil (pt-BR)' : 'Espanha (es-ES)';
+
   // Strictly factual observations
   const observedFacts =
     competitors.length > 0
       ? [
           `Amostra pesquisada: ${competitors.length} conteúdos concorrentes ativos encontrados na pesquisa de mercado.`,
-          `Plataforma analisada: ${platform.toUpperCase()} no mercado geográfico e linguístico de ${market}.`,
+          `Plataforma analisada: ${platform.toUpperCase()} no mercado geográfico e linguístico de ${marketName}.`,
           `Títulos mais eficazes contêm entre 45 e 65 caracteres com termos de ação ou números concretos.`,
           `Presença confirmada de canais estabelecidos (${competitors.slice(0, 3).map((c) => c.channelOrCreator).join(', ')}).`,
           `Grande parte dos vídeos concorrentes foca em noções introdutórias, deixando lacunas de implementação prática.`,
         ]
       : [
-          `Pesquisa direta realizada para "${topic}" na plataforma ${platform.toUpperCase()} (${market}).`,
+          `Pesquisa direta realizada para "${topic}" na plataforma ${platform.toUpperCase()} (${marketName}).`,
           `Amostra observada: 0 conteúdos diretos indexados publicamente no momento da consulta.`,
           `Garantia de integridade: Nenhum concorrente fictício ou métrica simulada foi gerada para preencher a tabela.`,
           `Mapeamento de ecossistema: A ausência de canais dominantes indica nicho pioneiro no idioma local ou busca por termos alternativos.`,
@@ -133,12 +156,18 @@ export function analyzeOutliers(req: ResearchRequest, competitors: CompetitorRes
     competitors.length > 0
       ? [
           `Dedução IA: Há uma saturação evidente de conteúdos teóricos e repetitivos sobre "${topic}", criando uma oportunidade gigantesca para abordagens contrárias e dados práticos.`,
-          `Dedução IA: A audiência de ${market} demonstra fadiga de formatos estilo "guru", favorecendo criadores que demonstram telas reais, custos exatos e transparência honesta.`,
-          `Dedução IA: O formato de roteiro com gancho de 3 segundos focado no resultado final terá probabilidade de retenção superior à média do nicho.`,
+          market === 'pt-PT'
+            ? `Dedução IA: A audiência em Portugal demonstra fadiga de formatos estilo "guru", favorecendo criadores que demonstram ecrãs reais, custos exatos e transparência honesta.`
+            : `Dedução IA: A audiência de ${marketName} demonstra fadiga de formatos estilo "guru", favorecendo criadores que demonstram telas reais, custos exatos e transparência honesta.`,
+          market === 'pt-PT'
+            ? `Dedução IA: O formato de guião com gancho de 3 segundos focado no resultado final terá probabilidade de retenção superior à média do nicho.`
+            : `Dedução IA: O formato de roteiro com gancho de 3 segundos focado no resultado final terá probabilidade de retenção superior à média do nicho.`,
         ]
       : [
-          `Dedução IA: A ausência de vídeos concorrentes diretos com forte autoridade para "${topic}" indica oportunidade pioneira (oceano azul) em ${market}.`,
-          `Dedução IA: As lacunas, ideias e roteiros gerados a seguir baseiam-se em modelos preditivos de comportamento de audiência em ${market} e nas melhores práticas do ${platform.toUpperCase()}, e não em dados empíricos de vídeos concorrentes pré-existentes.`,
+          `Dedução IA: A ausência de vídeos concorrentes diretos com forte autoridade para "${topic}" indica oportunidade pioneira (oceano azul) em ${marketName}.`,
+          market === 'pt-PT'
+            ? `Dedução IA: As lacunas, ideias e guiões gerados a seguir baseiam-se em modelos preditivos de comportamento de audiência em Portugal e nas melhores práticas do ${platform.toUpperCase()}, e não em dados empíricos de vídeos concorrentes pré-existentes.`
+            : `Dedução IA: As lacunas, ideias e roteiros gerados a seguir baseiam-se em modelos preditivos de comportamento de audiência em ${marketName} e nas melhores práticas do ${platform.toUpperCase()}, e não em dados empíricos de vídeos concorrentes pré-existentes.`,
           `Dedução IA: Recomenda-se iniciar com formatos de "Guia Passo a Passo para Iniciantes" e "Erros Mais Comuns" para validar o volume de demanda orgânica.`,
         ];
 

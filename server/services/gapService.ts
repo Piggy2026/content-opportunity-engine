@@ -27,7 +27,7 @@ export function detectContentGaps(req: ResearchRequest, competitors: CompetitorR
     gaps.push({
       id: 'gap-pt-3',
       category: 'oversaturated-angle',
-      title: 'Chega de Teorias Básicas de Dicionário: Queremos Telas e Processos Reais',
+      title: 'Chega de Teorias Básicas de Dicionário: Queremos Ecrãs e Processos Reais',
       description: `Mais de 70% dos vídeos concorrentes explicam conceitos teóricos repetidos ("o que é X"). O público já sabe o que é; quer ver o ecrã, onde clicar, que documento preencher e que botão evitar.`,
       whyCompetitorsMissedIt: 'É mais fácil e rápido gravar uma pessoa a falar em estúdio do que fazer uma demonstração prática e transparente de ecrã.',
       marketNuance: 'Portugal: Alta procura por tutoriais práticos "screen-recording" sem rodeios nem música dramática de fundo.',

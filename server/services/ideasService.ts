@@ -11,10 +11,12 @@ export function generateRankedIdeas(
   const rawIdeas: Omit<ContentIdea, 'rank' | 'opportunityScore' | 'isBestOpportunity'>[] = [];
 
   if (market === 'pt-PT') {
+    const topicClean = topic.replace(/\s+em\s+Portugal/gi, '').trim();
+
     rawIdeas.push(
       {
         id: 'idea-pt-1',
-        title: `O Erro no IRS / Custos em Portugal com ${topic} que Ninguém Te Avisa`,
+        title: `O Erro no IRS / Custos em Portugal com ${topicClean} que Ninguém Te Avisa`,
         angle: 'Alerta regulamentar e fiscal desmistificado com documento real no ecrã.',
         format: isShorts ? 'Shorts/Reels 45s com Gancho de Quebra de Padrão' : 'Vídeo Longo 14min com Gravação de Ecrã no Portal das Finanças',
         gapExploited: 'Lacuna de fiscalidade portuguesa prática versus conselhos genéricos estrangeiros.',
@@ -25,7 +27,7 @@ export function generateRankedIdeas(
       },
       {
         id: 'idea-pt-2',
-        title: `Como Começar em ${topic} em Portugal com Apenas 50€ a 100€ por Mês`,
+        title: `Como Começar em ${topicClean} em Portugal com Apenas 50€ a 100€ por Mês`,
         angle: 'Guia ultrarrealista desenhado especificamente para o salário médio nacional.',
         format: isShorts ? 'Reel de 50s em 3 Passos Práticos' : 'Vídeo de 12min Passo a Passo com Simulação em Euros',
         gapExploited: 'Inexistência de conteúdos pragmáticos com valores reais acessíveis para jovens portugueses.',
@@ -47,7 +49,7 @@ export function generateRankedIdeas(
       },
       {
         id: 'idea-pt-4',
-        title: `Por que 90% das Pessoas Falham em ${topic} em Portugal (E o Segredo dos 10%)`,
+        title: `Por que 90% das Pessoas Falham em ${topicClean} em Portugal (E o Segredo dos 10%)`,
         angle: 'Quebra de mito e desmontagem do conselho padrão que já não funciona em 2025/2026.',
         format: isShorts ? 'Shorts 45s de Choque de Realidade' : 'Vídeo 15min Análise Crítica',
         gapExploited: 'Saturação de discursos motivacionais vazios.',
@@ -58,18 +60,18 @@ export function generateRankedIdeas(
       },
       {
         id: 'idea-pt-5',
-        title: `A Minha Rotina Semanal de 15 Minutos para Dominar ${topic}`,
+        title: `A Minha Rotina Semanal de 15 Minutos para Dominar ${topicClean}`,
         angle: 'Minimalismo operacional para quem trabalha a tempo inteiro.',
         format: isShorts ? 'POV Timelapse 35s com Narração' : 'Vídeo 10min Walkthrough de Rotina',
         gapExploited: 'Falta de tempo e sobrecarga de informação dos profissionais.',
         targetAudiencePainPoint: 'Não ter horas livres para estudar métodos complexos.',
         viralityPotential: 'Very High',
         competitionLevel: 'Low',
-        whyItWins: 'Promessa de resultado com baixo atrito de tempo é o maior ímã de retenção.',
+        whyItWins: 'Promessa de resultado com baixo atrito de tempo é o maior íman de retenção.',
       },
       {
         id: 'idea-pt-6',
-        title: `O Guia Definitivo de ${topic} para Quem Vive Fora dos Grandes Centros em Portugal`,
+        title: `O Guia Definitivo de ${topicClean} para Quem Vive Fora dos Grandes Centros em Portugal`,
         angle: 'Interior de Portugal e zonas periféricas: oportunidades e particularidades.',
         format: isShorts ? 'Shorts 45s Focado em Descentralização' : 'Vídeo 13min Estudo de Caso',
         gapExploited: 'Conteúdo quase 100% focado apenas na bolha de Lisboa.',
@@ -80,7 +82,7 @@ export function generateRankedIdeas(
       },
       {
         id: 'idea-pt-7',
-        title: `3 Coisas em ${topic} que Parecem Vantajosas Mas São um Desperdício`,
+        title: `3 Coisas em ${topicClean} que Parecem Vantajosas Mas São um Desperdício`,
         angle: 'Contrarian puro: desmontar três produtos ou métodos populares vendidos na internet.',
         format: isShorts ? 'Reel de 40s com 3 Cortes Rápidos' : 'Vídeo 11min Desmistificação',
         gapExploited: 'Ceticismo da audiência perante promessas excessivas.',
@@ -91,7 +93,7 @@ export function generateRankedIdeas(
       },
       {
         id: 'idea-pt-8',
-        title: `Como Estruturar ${topic} do Zero Mesmo Sem Ter Experiência Prévia`,
+        title: `Como Estruturar ${topicClean} do Zero Mesmo Sem Ter Experiência Prévia`,
         angle: 'Passo zero descomplicado com glossário simples em bom português.',
         format: isShorts ? 'Shorts 50s com Checklist no Ecrã' : 'Vídeo 15min Tutorial para Leigos',
         gapExploited: 'A barreira técnica da linguagem rebuscada dos especialistas.',
@@ -102,7 +104,7 @@ export function generateRankedIdeas(
       },
       {
         id: 'idea-pt-9',
-        title: `Testei a Estratégia Mais Famosa de ${topic} por 60 Dias (Resultados Reais)`,
+        title: `Testei a Estratégia Mais Famosa de ${topicClean} por 60 Dias (Resultados Reais)`,
         angle: 'Experimento empírico com diário de bordo e números abertos.',
         format: isShorts ? 'TikTok 55s Formato Diário/Story' : 'Vídeo 18min Documentário Pessoal',
         gapExploited: 'Falta de verificação prática e honesta das promessas de mercado.',
@@ -114,13 +116,13 @@ export function generateRankedIdeas(
       {
         id: 'idea-pt-10',
         title: `As 5 Ferramentas Gratuitas em Portugal que Substituem Software de Centenas de Euros`,
-        angle: 'Arsenal gratuito e acessível para obter resultados imediatos em ${topic}.',
-        format: isShorts ? 'Reel 45s "Salva este vídeo"' : 'Vídeo 14min Demonstração de Ferramentas',
+        angle: `Arsenal gratuito e acessível para obter resultados imediatos em ${topicClean}.`,
+        format: isShorts ? 'Reel 45s "Guarda este vídeo"' : 'Vídeo 14min Demonstração de Ferramentas',
         gapExploited: 'Custo de entrada proibitivo das ferramentas recomendadas por gurus.',
         targetAudiencePainPoint: 'Falta de capital para investir em subscrições de software caro.',
         viralityPotential: 'Very High',
         competitionLevel: 'Low',
-        whyItWins: 'Ímã de partilhas e salvamentos por entregar utilidade prática instantânea.',
+        whyItWins: 'Íman de partilhas e salvamentos por entregar utilidade prática instantânea.',
       },
       {
         id: 'idea-pt-11',
@@ -135,7 +137,7 @@ export function generateRankedIdeas(
       },
       {
         id: 'idea-pt-12',
-        title: `Auditoria em Direto: Analisando Casos Reais de ${topic} em Portugal`,
+        title: `Auditoria em Direto: Analisando Casos Reais de ${topicClean} em Portugal`,
         angle: 'Análise de casos submetidos por seguidores com diagnóstico honesto.',
         format: isShorts ? 'TikTok 50s Reação / Análise' : 'Vídeo 16min Consultoria Prática',
         gapExploited: 'Distância entre teoria e aplicação em casos particulares.',

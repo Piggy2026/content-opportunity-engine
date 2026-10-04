@@ -27,6 +27,8 @@ export function generateScriptSuite(
   const scripts: ScriptVariation[] = [];
 
   if (market === 'pt-PT') {
+    const topicClean = topic.replace(/\s+em\s+Portugal/gi, '').trim();
+
     // Portugal (European Portuguese) Scripts
     scripts.push(
       {
@@ -42,7 +44,7 @@ export function generateScriptSuite(
             timestamp: '0:00 - 0:03',
             stage: 'Hook',
             visualCue: '[VISUAL: Grande plano nos olhos, expressão séria com telemóvel na mão a apontar para o ecrã]',
-            spokenText: 'Se ainda estás a fazer isto com ' + topic + ' em Portugal, lamento dizer-te, mas estás a deitar dinheiro ao lixo todos os meses.',
+            spokenText: 'Se ainda estás a fazer isto com ' + topicClean + ' em Portugal, lamento dizer-te, mas estás a deitar dinheiro ao lixo todos os meses.',
             audioToneCue: '[AUDIO: Efeito de corte seco / sem música nos primeiros 2 segundos para focar atenção]',
           },
           {
@@ -74,7 +76,7 @@ export function generateScriptSuite(
             audioToneCue: '[AUDIO: Som de sino/notificação subtil]',
           },
         ],
-        fullSpokenText: `Se ainda estás a fazer isto com ${topic} em Portugal, lamento dizer-te, mas estás a deitar dinheiro ao lixo todos os meses. 90% dos criadores na internet dizem-te para seguir a receita antiga. O problema? Essa regra mudou e agora as taxas e comissões comem qualquer benefício. Olha com atenção para esta comparação: no método habitual perdes logo uma percentagem em custódia e retenção. Se em vez disso fizeres este ajuste simples de 3 passos, proteges o teu retorno líquido. A diferença é teres paz de espírito e não seres apanhado de surpresa no final do ano. Guarda este vídeo para consultares quando fores tratar disto e comenta "GUIA" se queres o resumo com os detalhes legais.`,
+        fullSpokenText: `Se ainda estás a fazer isto com ${topicClean} em Portugal, lamento dizer-te, mas estás a deitar dinheiro ao lixo todos os meses. 90% dos criadores na internet dizem-te para seguir a receita antiga. O problema? Essa regra mudou e agora as taxas e comissões comem qualquer benefício. Olha com atenção para esta comparação: no método habitual perdes logo uma percentagem em custódia e retenção. Se em vez disso fizeres este ajuste simples de 3 passos, proteges o teu retorno líquido. A diferença é teres paz de espírito e não seres apanhado de surpresa no final do ano. Guarda este vídeo para consultares quando fores tratar disto e comenta "GUIA" se queres o resumo com os detalhes legais.`,
       },
       {
         id: 'script-pt-story',
@@ -126,7 +128,7 @@ export function generateScriptSuite(
       {
         id: 'script-pt-blueprint',
         style: 'actionable-blueprint',
-        styleName: 'Variação 3: O Roteiro Direto & Acionável (Blueprint 3 Passos)',
+        styleName: 'Variação 3: O Guião Prático & Direto (Blueprint 3 Passos)',
         badge: 'Máximo Número de Salvamentos',
         tagline: 'Zero rodeios. Um protocolo direto ao assunto em 3 passos com o que fazer imediatamente.',
         estimatedDuration: isShortsOrReels ? '40 segundos' : '10 minutos',
@@ -136,7 +138,7 @@ export function generateScriptSuite(
             timestamp: '0:00 - 0:03',
             stage: 'Hook',
             visualCue: '[VISUAL: Três dedos levantados na câmara, transição rápida de texto: "1, 2, 3"]',
-            spokenText: 'O plano exato de 3 passos para dominar ' + topic + ' em Portugal sem perder tempo.',
+            spokenText: 'O plano exato de 3 passos para dominar ' + topicClean + ' em Portugal sem perder tempo.',
             audioToneCue: '[AUDIO: Efeito "Whoosh" rápido e batida moderna e animada]',
           },
           {
@@ -168,7 +170,7 @@ export function generateScriptSuite(
             audioToneCue: '[AUDIO: Efeito final de sucesso]',
           },
         ],
-        fullSpokenText: `O plano exato de 3 passos para dominar ${topic} em Portugal sem perder tempo. Passo 1: Elimina intermediários tradicionais e escolhe uma plataforma registada com custos transparentes. Passo 2: Configura a transferência automática no dia a seguir ao ordenado para não caíres na tentação de gastar. Passo 3: Aplica a isenção legal aplicável ao teu escalão para não entregares metade do teu lucro ao estado. Guarda já para não perderes e subscreve o canal para não perderes os próximos guiões práticos.`,
+        fullSpokenText: `O plano exato de 3 passos para dominar ${topicClean} em Portugal sem perder tempo. Passo 1: Elimina intermediários tradicionais e escolhe uma plataforma registada com custos transparentes. Passo 2: Configura a transferência automática no dia a seguir ao ordenado para não caíres na tentação de gastar. Passo 3: Aplica a isenção legal aplicável ao teu escalão para não entregares metade do teu lucro ao estado. Guarda já para não perderes e subscreve o canal para não perderes os próximos guiões práticos.`,
       }
     );
   } else if (market === 'pt-BR') {
@@ -466,12 +468,13 @@ export function generateScriptSuite(
   // TITLES (Categorized by psychological framework)
   const titles: TitleIdea[] = [];
   if (market === 'pt-PT') {
+    const topicClean = topic.replace(/\s+em\s+Portugal/gi, '').trim();
     titles.push(
-      { id: 'title-1', type: 'Curiosity Gap', title: `A Regra Não Escrita de ${topic} em Portugal que Mudou Tudo`, score: 96 },
-      { id: 'title-2', type: 'Fear of Missing Out / Loss', title: `O Erro no IRS / Finanças com ${topic} que Te Custa Milhares de Euros`, score: 94 },
-      { id: 'title-3', type: 'Contrarian', title: `Por Que Deves Parar de Seguir os Conselhos Habituais de ${topic}`, score: 92 },
-      { id: 'title-4', type: 'Outcome / How-To', title: `Como Dominar ${topic} em Portugal com Apenas 15 Minutos por Semana`, score: 90 },
-      { id: 'title-5', type: 'Number / Listicle', title: `3 Armadilhas em ${topic} que Ninguém Te Explica (E Como Evitar)`, score: 88 }
+      { id: 'title-1', type: 'Curiosity Gap', title: `A Regra Não Escrita de ${topicClean} em Portugal que Mudou Tudo`, score: 96 },
+      { id: 'title-2', type: 'Fear of Missing Out / Loss', title: `O Erro no IRS / Finanças com ${topicClean} que Te Custa Milhares de Euros`, score: 94 },
+      { id: 'title-3', type: 'Contrarian', title: `Por Que Deves Parar de Seguir os Conselhos Habituais de ${topicClean}`, score: 92 },
+      { id: 'title-4', type: 'Outcome / How-To', title: `Como Dominar ${topicClean} em Portugal com Apenas 15 Minutos por Semana`, score: 90 },
+      { id: 'title-5', type: 'Number / Listicle', title: `3 Armadilhas em ${topicClean} que Ninguém Te Explica (E Como Evitar)`, score: 88 }
     );
   } else if (market === 'pt-BR') {
     titles.push(
@@ -495,12 +498,13 @@ export function generateScriptSuite(
   // HOOKS (Visual + Verbal + Overlay in first 3 seconds)
   const hooks: HookIdea[] = [];
   if (market === 'pt-PT') {
+    const topicClean = topic.replace(/\s+em\s+Portugal/gi, '').trim();
     hooks.push(
       {
         id: 'hook-1',
         type: 'Pattern Interrupt',
         visualHook: 'Aproximação ultra-rápida à câmara com expressão séria e ecrã de telemóvel virado.',
-        spokenHook: 'Se ainda estás a fazer isto com ' + topic + ', estás a perder dinheiro sem saber.',
+        spokenHook: 'Se ainda estás a fazer isto com ' + topicClean + ', estás a perder dinheiro sem saber.',
         overlayText: '90% DAS PESSOAS ERRAM AQUI EM PORTUGAL',
       },
       {
@@ -528,7 +532,7 @@ export function generateScriptSuite(
         id: 'hook-5',
         type: 'Bold Statement',
         visualHook: 'Apontar o dedo diretamente para a lente com ritmo firme.',
-        spokenHook: 'A regra que te ensinaram sobre ' + topic + ' já não funciona em 2025/2026.',
+        spokenHook: 'A regra que te ensinaram sobre ' + topicClean + ' já não funciona em 2025/2026.',
         overlayText: 'A REGRA MUDOU',
       }
     );
@@ -611,84 +615,243 @@ export function generateScriptSuite(
     );
   }
 
-  // CALLS TO ACTION (Platform-native)
+  // CALLS TO ACTION (Market & Platform-native)
   const ctas: CallToAction[] = [];
-  if (platform === 'youtube') {
-    ctas.push(
-      {
-        id: 'cta-yt-1',
-        goal: 'Follow / Subscribe',
-        spokenCta: 'Se este vídeo te abriu os olhos, subscreve o canal e ativa as notificações para não perderes a análise da próxima semana.',
-        onScreenText: 'SUBSCREVER O CANAL 🔔',
-        platformBestPractice: 'Exibir cartão final com o botão de inscrição e vídeo recomendado nos últimos 20 segundos.',
-      },
-      {
-        id: 'cta-yt-2',
-        goal: 'Comment / Keyword Automation',
-        spokenCta: 'Deixa nos comentários qual foi o ponto que mais te surpreendeu. Respondo a todas as dúvidas durante as primeiras 24 horas.',
-        onScreenText: 'DEIXA A TUA DÚVIDA NOS COMENTÁRIOS 👇',
-        platformBestPractice: 'Fixar um comentário pinado com pergunta aberta estimulando o debate nos comentários.',
-      }
-    );
-  } else if (platform === 'youtube-shorts') {
-    ctas.push(
-      {
-        id: 'cta-shorts-1',
-        goal: 'Follow / Subscribe',
-        spokenCta: 'Subscreve aqui embaixo para mais análises práticas e sem enrolação!',
-        onScreenText: 'INSCREVA-SE / SUBSCREVER ⚡',
-        platformBestPractice: 'Pacing acelerado até ao último milissegundo com looping suave do final para o início.',
-      },
-      {
-        id: 'cta-shorts-2',
-        goal: 'Save / Bookmark',
-        spokenCta: 'Salva este Shorts para consultar quando estiveres a aplicar o método.',
-        onScreenText: 'GUARDA ESTE VÍDEO 📌',
-        platformBestPractice: 'Indicar com a mão o botão de curtir e salvar no canto lateral.',
-      }
-    );
-  } else if (platform === 'tiktok') {
-    ctas.push(
-      {
-        id: 'cta-tt-1',
-        goal: 'Save / Bookmark',
-        spokenCta: 'Salva nos teus favoritos agora porque este vídeo vai ser útil quando fores aplicar.',
-        onScreenText: 'FAVORITA O VÍDEO ⭐',
-        platformBestPractice: 'Aumenta significativamente a pontuação do algoritmo no TikTok nos primeiros 30 minutos.',
-      },
-      {
-        id: 'cta-tt-2',
-        goal: 'Comment / Keyword Automation',
-        spokenCta: 'Comenta "PARTE 2" se queres ver a demonstração de tela detalhada!',
-        onScreenText: 'COMENTA "PARTE 2" 💬',
-        platformBestPractice: 'Gera uma enxurrada de comentários rápidos que impulsionam o vídeo para a For You Page.',
-      }
-    );
+  if (market === 'pt-PT') {
+    if (platform === 'youtube') {
+      ctas.push(
+        {
+          id: 'cta-yt-1',
+          goal: 'Follow / Subscribe',
+          spokenCta: 'Se este vídeo te abriu os olhos, subscreve o canal e ativa as notificações para não perderes a análise da próxima semana.',
+          onScreenText: 'SUBSCREVE O CANAL 🔔',
+          platformBestPractice: 'Exibir ecrã final com o botão de subscrever e vídeo recomendado nos últimos 20 segundos.',
+        },
+        {
+          id: 'cta-yt-2',
+          goal: 'Comment / Keyword Automation',
+          spokenCta: 'Deixa nos comentários qual foi o ponto que mais te surpreendeu. Respondo a todas as dúvidas durante as primeiras 24 horas.',
+          onScreenText: 'DEIXA A TUA DÚVIDA NOS COMENTÁRIOS 👇',
+          platformBestPractice: 'Fixar um comentário no topo com pergunta aberta estimulando o debate nos comentários.',
+        }
+      );
+    } else if (platform === 'youtube-shorts') {
+      ctas.push(
+        {
+          id: 'cta-shorts-1',
+          goal: 'Follow / Subscribe',
+          spokenCta: 'Subscreve aqui em baixo para mais análises práticas e sem rodeios!',
+          onScreenText: 'SUBSCREVE O CANAL ⚡',
+          platformBestPractice: 'Pacing acelerado até ao último milissegundo com looping suave do final para o início.',
+        },
+        {
+          id: 'cta-shorts-2',
+          goal: 'Save / Bookmark',
+          spokenCta: 'Guarda este Shorts para consultares quando estiveres a aplicar o método.',
+          onScreenText: 'GUARDA ESTE VÍDEO 📌',
+          platformBestPractice: 'Indicar com a mão o botão de guardar no canto lateral.',
+        }
+      );
+    } else if (platform === 'tiktok') {
+      ctas.push(
+        {
+          id: 'cta-tt-1',
+          goal: 'Save / Bookmark',
+          spokenCta: 'Guarda nos teus favoritos agora porque este vídeo vai ser útil quando fores aplicar.',
+          onScreenText: 'GUARDA NOS FAVORITOS ⭐',
+          platformBestPractice: 'Aumenta significativamente a pontuação do algoritmo no TikTok nos primeiros 30 minutos.',
+        },
+        {
+          id: 'cta-tt-2',
+          goal: 'Comment / Keyword Automation',
+          spokenCta: 'Comenta "PARTE 2" se queres ver a demonstração no ecrã detalhada!',
+          onScreenText: 'COMENTA "PARTE 2" 💬',
+          platformBestPractice: 'Gera uma torrente de comentários rápidos que impulsionam o vídeo para a página Para Si.',
+        }
+      );
+    } else {
+      // Instagram Reels
+      ctas.push(
+        {
+          id: 'cta-reels-1',
+          goal: 'Comment / Keyword Automation',
+          spokenCta: 'Comenta "GUIA" aqui em baixo para receberes o resumo completo por mensagem privada agora mesmo!',
+          onScreenText: 'COMENTA "GUIA" POR MENSAGEM 🚀',
+          platformBestPractice: 'Integração com automação de mensagens diretas converte visualizações em contactos qualificados.',
+        },
+        {
+          id: 'cta-reels-2',
+          goal: 'Save / Bookmark',
+          spokenCta: 'Guarda este Reel no teu arquivo pessoal para não perderes esta estratégia!',
+          onScreenText: 'GUARDA O REEL 📌',
+          platformBestPractice: 'Guardados no Reels têm o maior peso no algoritmo para distribuição orgânica.',
+        },
+        {
+          id: 'cta-reels-3',
+          goal: 'Share to Story / DM',
+          spokenCta: 'Envia este vídeo por mensagem para alguém que precisa de saber disto hoje!',
+          onScreenText: 'PARTILHA COM UM AMIGO ✈️',
+          platformBestPractice: 'Partilha direta impulsiona o alcance para novos perfis semelhantes.',
+        }
+      );
+    }
+  } else if (market === 'pt-BR') {
+    if (platform === 'youtube') {
+      ctas.push(
+        {
+          id: 'cta-yt-1',
+          goal: 'Follow / Subscribe',
+          spokenCta: 'Se esse vídeo te ajudou, se inscreve no canal e ativa o sininho para não perder a análise da semana que vem.',
+          onScreenText: 'INSCREVA-SE NO CANAL 🔔',
+          platformBestPractice: 'Exibir tela final com o botão de inscrição e vídeo recomendado nos últimos 20 segundos.',
+        },
+        {
+          id: 'cta-yt-2',
+          goal: 'Comment / Keyword Automation',
+          spokenCta: 'Deixa nos comentários qual foi o ponto que mais te chamou atenção. Respondo todo mundo nas primeiras 24 horas.',
+          onScreenText: 'DEIXE SUA DÚVIDA NOS COMENTÁRIOS 👇',
+          platformBestPractice: 'Fixar um comentário com pergunta aberta estimulando o debate nos comentários.',
+        }
+      );
+    } else if (platform === 'youtube-shorts') {
+      ctas.push(
+        {
+          id: 'cta-shorts-1',
+          goal: 'Follow / Subscribe',
+          spokenCta: 'Se inscreve aqui embaixo para mais análises práticas e sem enrolação!',
+          onScreenText: 'INSCREVA-SE ⚡',
+          platformBestPractice: 'Pacing acelerado até o último milissegundo com looping suave do final para o início.',
+        },
+        {
+          id: 'cta-shorts-2',
+          goal: 'Save / Bookmark',
+          spokenCta: 'Salva esse Shorts para consultar quando for colocar em prática.',
+          onScreenText: 'SALVA ESSE VÍDEO 📌',
+          platformBestPractice: 'Indicar com a mão o botão de curtir e salvar no canto lateral.',
+        }
+      );
+    } else if (platform === 'tiktok') {
+      ctas.push(
+        {
+          id: 'cta-tt-1',
+          goal: 'Save / Bookmark',
+          spokenCta: 'Salva nos seus favoritos agora porque esse vídeo vai te salvar quando for aplicar.',
+          onScreenText: 'FAVORITA O VÍDEO ⭐',
+          platformBestPractice: 'Aumenta significativamente a pontuação do algoritmo no TikTok nos primeiros 30 minutos.',
+        },
+        {
+          id: 'cta-tt-2',
+          goal: 'Comment / Keyword Automation',
+          spokenCta: 'Comenta "PARTE 2" se você quer ver a demonstração na tela detalhada!',
+          onScreenText: 'COMENTA "PARTE 2" 💬',
+          platformBestPractice: 'Gera uma enxurrada de comentários rápidos que impulsionam o vídeo para o For You.',
+        }
+      );
+    } else {
+      // Instagram Reels
+      ctas.push(
+        {
+          id: 'cta-reels-1',
+          goal: 'Comment / Keyword Automation',
+          spokenCta: 'Comenta "GUIA" aqui embaixo que eu te envio o link direto no seu direct agora mesmo!',
+          onScreenText: 'COMENTE "GUIA" NO DIRECT 🚀',
+          platformBestPractice: 'Integração com automação de direct converte visualizações em leads instantâneos.',
+        },
+        {
+          id: 'cta-reels-2',
+          goal: 'Save / Bookmark',
+          spokenCta: 'Salva esse Reel para não perder essa estratégia!',
+          onScreenText: 'SALVA O REEL 📌',
+          platformBestPractice: 'Salvamentos no Reels têm o maior peso no algoritmo para distribuição orgânica.',
+        },
+        {
+          id: 'cta-reels-3',
+          goal: 'Share to Story / DM',
+          spokenCta: 'Manda esse vídeo no aviãozinho para um amigo que precisa ver isso hoje!',
+          onScreenText: 'ENVIA PARA UM AMIGO ✈️',
+          platformBestPractice: 'Compartilhamento via Direct impulsiona o alcance para novos perfis semelhantes.',
+        }
+      );
+    }
   } else {
-    // Instagram Reels
-    ctas.push(
-      {
-        id: 'cta-reels-1',
-        goal: 'Comment / Keyword Automation',
-        spokenCta: 'Comenta "GUIA" aqui embaixo que o meu robô te envia o link direto no seu direct agora mesmo!',
-        onScreenText: 'COMENTE "GUIA" NO DIRECT 🚀',
-        platformBestPractice: 'Integração com automação de direct (ManyChat) converte visualizações em leads instantâneos.',
-      },
-      {
-        id: 'cta-reels-2',
-        goal: 'Save / Bookmark',
-        spokenCta: 'Salva este Reel no teu arquivo pessoal para não perderes esta estratégia!',
-        onScreenText: 'SALVA O REEL 📌',
-        platformBestPractice: 'Salvamentos no Reels têm o maior peso no algoritmo para distribuição orgânica.',
-      },
-      {
-        id: 'cta-reels-3',
-        goal: 'Share to Story / DM',
-        spokenCta: 'Envia este vídeo pelo aviãozinho para alguém que precisa de saber disto hoje!',
-        onScreenText: 'ENVIA PARA UM AMIGO ✈️',
-        platformBestPractice: 'Compartilhamento via Direct impulsiona o alcance para novos perfis semelhantes.',
-      }
-    );
+    // Spanish CTAs (es-ES)
+    if (platform === 'youtube') {
+      ctas.push(
+        {
+          id: 'cta-yt-1',
+          goal: 'Follow / Subscribe',
+          spokenCta: 'Si este vídeo te ha servido de ayuda, suscríbete al canal y activa la campana para no perderte el análisis de la próxima semana.',
+          onScreenText: 'SUSCRÍBETE AL CANAL 🔔',
+          platformBestPractice: 'Mostrar pantalla final con botón de suscripción y vídeo recomendado en los últimos 20 segundos.',
+        },
+        {
+          id: 'cta-yt-2',
+          goal: 'Comment / Keyword Automation',
+          spokenCta: 'Déjame en los comentarios tu mayor duda sobre este tema. Respondo a todas las preguntas durante las primeras 24 horas.',
+          onScreenText: 'DEJA TU DUDA EN COMENTARIOS 👇',
+          platformBestPractice: 'Fijar un comentario en la parte superior con pregunta abierta para estimular el debate.',
+        }
+      );
+    } else if (platform === 'youtube-shorts') {
+      ctas.push(
+        {
+          id: 'cta-shorts-1',
+          goal: 'Follow / Subscribe',
+          spokenCta: '¡Suscríbete aquí abajo para más análisis prácticos y sin rodeos!',
+          onScreenText: 'SUSCRÍBETE ⚡',
+          platformBestPractice: 'Ritmo acelerado con bucle fluido desde el final hacia el inicio.',
+        },
+        {
+          id: 'cta-shorts-2',
+          goal: 'Save / Bookmark',
+          spokenCta: 'Guarda este Shorts para tenerlo a mano cuando vayas a aplicarlo.',
+          onScreenText: 'GUARDA ESTE VÍDEO 📌',
+          platformBestPractice: 'Señalar con la mano el botón de guardar en el lateral.',
+        }
+      );
+    } else if (platform === 'tiktok') {
+      ctas.push(
+        {
+          id: 'cta-tt-1',
+          goal: 'Save / Bookmark',
+          spokenCta: 'Guarda en favoritos ahora porque este vídeo te va a servir mucho.',
+          onScreenText: 'AÑADE A FAVORITOS ⭐',
+          platformBestPractice: 'Incrementa de forma notable la puntuación del algoritmo en TikTok en los primeros 30 minutos.',
+        },
+        {
+          id: 'cta-tt-2',
+          goal: 'Comment / Keyword Automation',
+          spokenCta: '¡Comenta "PARTE 2" si quieres ver la demostración paso a paso en pantalla!',
+          onScreenText: 'COMENTA "PARTE 2" 💬',
+          platformBestPractice: 'Genera un alto volumen de comentarios rápidos impulsando el vídeo a la sección Para Ti.',
+        }
+      );
+    } else {
+      // Instagram Reels
+      ctas.push(
+        {
+          id: 'cta-reels-1',
+          goal: 'Comment / Keyword Automation',
+          spokenCta: '¡Comenta "GUÍA" aquí abajo y te envío el resumen directo por mensaje privado ahora mismo!',
+          onScreenText: 'COMENTA "GUÍA" POR MD 🚀',
+          platformBestPractice: 'La automatización de mensajes directos convierte visualizaciones en contactos cualificados.',
+        },
+        {
+          id: 'cta-reels-2',
+          goal: 'Save / Bookmark',
+          spokenCta: '¡Guarda este Reel para no perderte esta estrategia!',
+          onScreenText: 'GUARDA EL REEL 📌',
+          platformBestPractice: 'Los guardados en Reels tienen la máxima ponderación en el algoritmo de distribución.',
+        },
+        {
+          id: 'cta-reels-3',
+          goal: 'Share to Story / DM',
+          spokenCta: '¡Comparte este vídeo por mensaje directo con alguien que necesite saberlo hoy!',
+          onScreenText: 'COMPARTE CON UN AMIGO ✈️',
+          platformBestPractice: 'Compartir por mensaje privado impulsa el alcance a perfiles similares.',
+        }
+      );
+    }
   }
 
   // REAL SOURCE CITATIONS
