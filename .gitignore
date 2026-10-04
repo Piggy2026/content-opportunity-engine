@@ -34,3 +34,6 @@ Thumbs.db
 
 # Cache
 server/data/cache.json
+
+# Local Netlify folder
+.netlify
