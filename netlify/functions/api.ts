@@ -7,11 +7,13 @@ import { generateRankedIdeas } from '../../server/services/ideasService.js';
 import { generateScriptSuite } from '../../server/services/scriptService.js';
 import { getCacheKey, getCachedItem, setCachedItem } from '../../server/services/cacheService.js';
 
+import { getAllProjects, getProjectById, saveProject, deleteProject } from '../../server/data/projectsStore.js';
+
 export const handler: Handler = async (event, context) => {
   const headers = {
     'Access-Control-Allow-Origin': '*',
     'Access-Control-Allow-Headers': 'Content-Type',
-    'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+    'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS',
     'Content-Type': 'application/json',
   };
 
@@ -80,6 +82,7 @@ export const handler: Handler = async (event, context) => {
       };
 
       setCachedItem(cacheKey, result);
+      saveProject(result);
 
       return {
         statusCode: 200,
@@ -96,6 +99,40 @@ export const handler: Handler = async (event, context) => {
         headers,
         body: JSON.stringify(scriptSuite),
       };
+    }
+
+    // Projects CRUD
+    if (path === '/projects' && event.httpMethod === 'GET') {
+      const projects = getAllProjects();
+      return {
+        statusCode: 200,
+        headers,
+        body: JSON.stringify(projects),
+      };
+    }
+
+    if (path === '/projects' && event.httpMethod === 'POST') {
+      const project = JSON.parse(event.body || '{}') as OpportunityEngineResult;
+      if (!project.id) {
+        return { statusCode: 400, headers, body: JSON.stringify({ error: 'Project must have an id' }) };
+      }
+      saveProject(project);
+      return { statusCode: 200, headers, body: JSON.stringify({ success: true, id: project.id }) };
+    }
+
+    if (path.startsWith('/projects/') && event.httpMethod === 'GET') {
+      const id = path.replace('/projects/', '');
+      const project = getProjectById(id);
+      if (!project) {
+        return { statusCode: 404, headers, body: JSON.stringify({ error: 'Project not found' }) };
+      }
+      return { statusCode: 200, headers, body: JSON.stringify(project) };
+    }
+
+    if (path.startsWith('/projects/') && event.httpMethod === 'DELETE') {
+      const id = path.replace('/projects/', '');
+      const deleted = deleteProject(id);
+      return { statusCode: 200, headers, body: JSON.stringify({ success: deleted }) };
     }
 
     return {

@@ -43,6 +43,7 @@ async function fetchDuckDuckGoResults(query: string, maxResults = 10): Promise<R
     const url = `https://html.duckduckgo.com/html/?q=${encoded}`;
 
     const resp = await fetch(url, {
+      signal: AbortSignal.timeout(3500), // 3.5s timeout prevents Netlify 10s execution limit
       headers: {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
         'Accept': 'text/html,application/xhtml+xml',
@@ -265,30 +266,33 @@ export async function searchCompetitors(req: ResearchRequest): Promise<Competito
     }
   }
 
-  // 2. Fetch live web / video results via DuckDuckGo search
+  // 2. Fetch live web / video results via DuckDuckGo search in parallel with timeout protection
   const queries = buildSearchQueries(req);
-  for (const q of queries) {
-    if (results.length >= 16) break;
-    const rawItems = await fetchDuckDuckGoResults(q, 8);
-    for (const item of rawItems) {
-      if (!seenUrls.has(item.url) && results.length < 20) {
-        seenUrls.add(item.url);
-        const { creator, views, publishedDate, hook } = parseCreatorAndMetrics(item, req.platform);
-        results.push({
-          id: `comp-live-${results.length + 1}`,
-          title: item.title,
-          url: item.url,
-          channelOrCreator: creator,
-          platform: req.platform,
-          views,
-          publishedDate,
-          snippet: item.snippet || `Vídeo / publicação com foco em ${req.topic} para o mercado selecionado.`,
-          isRealVerifiedSource: true,
-          sourceDomain: item.sourceDomain,
-          detectedHookOrAngle: hook,
-          factSummary: `Conteúdo ativo verificado via pesquisa pública: título "${item.title}".`,
-          aiInference: `Dedução IA: Formato estruturado para atrair tráfego orgânico com ênfase em retenção inicial.`,
-        });
+  const searchPromises = queries.map((q) => fetchDuckDuckGoResults(q, 8));
+  const settled = await Promise.allSettled(searchPromises);
+
+  for (const res of settled) {
+    if (res.status === 'fulfilled') {
+      for (const item of res.value) {
+        if (!seenUrls.has(item.url) && results.length < 20) {
+          seenUrls.add(item.url);
+          const { creator, views, publishedDate, hook } = parseCreatorAndMetrics(item, req.platform);
+          results.push({
+            id: `comp-live-${results.length + 1}`,
+            title: item.title,
+            url: item.url,
+            channelOrCreator: creator,
+            platform: req.platform,
+            views,
+            publishedDate,
+            snippet: item.snippet || `Vídeo / publicação com foco em ${req.topic} para o mercado selecionado.`,
+            isRealVerifiedSource: true,
+            sourceDomain: item.sourceDomain,
+            detectedHookOrAngle: hook,
+            factSummary: `Conteúdo ativo verificado via pesquisa pública: título "${item.title}".`,
+            aiInference: `Dedução IA: Formato estruturado para atrair tráfego orgânico com ênfase em retenção inicial.`,
+          });
+        }
       }
     }
   }

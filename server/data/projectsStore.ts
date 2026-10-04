@@ -2,15 +2,22 @@ import fs from 'fs';
 import path from 'path';
 import { OpportunityEngineResult, ProjectSummary } from '../../src/types/index.js';
 
-const PROJECTS_FILE_PATH = path.resolve(process.cwd(), 'server', 'data', 'projects.json');
+const isServerless = Boolean(process.env.NETLIFY || process.env.AWS_LAMBDA_FUNCTION_NAME || process.env.VERCEL);
+const PROJECTS_FILE_PATH = isServerless
+  ? path.resolve('/tmp', 'coe_projects.json')
+  : path.resolve(process.cwd(), 'server', 'data', 'projects.json');
 
 function ensureProjectsFile() {
-  const dir = path.dirname(PROJECTS_FILE_PATH);
-  if (!fs.existsSync(dir)) {
-    fs.mkdirSync(dir, { recursive: true });
-  }
-  if (!fs.existsSync(PROJECTS_FILE_PATH)) {
-    fs.writeFileSync(PROJECTS_FILE_PATH, JSON.stringify([], null, 2), 'utf-8');
+  try {
+    const dir = path.dirname(PROJECTS_FILE_PATH);
+    if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir, { recursive: true });
+    }
+    if (!fs.existsSync(PROJECTS_FILE_PATH)) {
+      fs.writeFileSync(PROJECTS_FILE_PATH, JSON.stringify([], null, 2), 'utf-8');
+    }
+  } catch (err) {
+    console.warn('[ProjectsStore] Could not initialize projects file:', err);
   }
 }
 

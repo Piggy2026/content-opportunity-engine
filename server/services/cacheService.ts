@@ -7,7 +7,10 @@ interface CacheEntry<T> {
 }
 
 const CACHE_TTL_MS = 24 * 60 * 60 * 1000; // 24 hours
-const CACHE_FILE_PATH = path.resolve(process.cwd(), 'server', 'data', 'cache.json');
+const isServerless = Boolean(process.env.NETLIFY || process.env.AWS_LAMBDA_FUNCTION_NAME || process.env.VERCEL);
+const CACHE_FILE_PATH = isServerless
+  ? path.resolve('/tmp', 'coe_cache.json')
+  : path.resolve(process.cwd(), 'server', 'data', 'cache.json');
 
 // In-memory cache map
 const memoryCache = new Map<string, CacheEntry<any>>();
