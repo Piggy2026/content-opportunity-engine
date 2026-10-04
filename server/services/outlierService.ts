@@ -1,8 +1,10 @@
 import { CompetitorResult, OutlierAnalysis, ResearchRequest } from '../../src/types/index.js';
+import { normalizeTopic } from './topicNormalizer.js';
 
 export function analyzeOutliers(req: ResearchRequest, competitors: CompetitorResult[]): OutlierAnalysis {
   const { topic, market, platform } = req;
   const isShortsOrReels = platform === 'youtube-shorts' || platform === 'tiktok' || platform === 'instagram-reels';
+  const topicClean = normalizeTopic(topic, market);
 
   // Extract common patterns from real competitor titles
   const titles = competitors.map((c) => c.title);
@@ -16,7 +18,7 @@ export function analyzeOutliers(req: ResearchRequest, competitors: CompetitorRes
         pattern: 'O Erro Crítico / Alerta Fiscal & Legal',
         example: titles.length > 0
           ? `Exemplo real observado: "${titles[0]}"`
-          : `Hipótese estratégica para teste: "O Maior Erro em ${topic} em Portugal"`,
+          : `Hipótese estratégica para teste: "O Maior Erro em ${topicClean} em Portugal"`,
         whyItWorks: 'Em Portugal, o medo de coimas da Autoridade Tributária ou perdas financeiras em contratos gera muito maior clique do que promessas de riqueza imediata.',
       },
       {
@@ -26,7 +28,7 @@ export function analyzeOutliers(req: ResearchRequest, competitors: CompetitorRes
       },
       {
         pattern: 'Desmistificação Sem Filtros (Contrarian)',
-        example: `Exemplo: "A Verdade que os Bancos / Consultores Não Contam Sobre ${topic}"`,
+        example: `Exemplo: "A Verdade que os Bancos / Consultores Não Contam Sobre ${topicClean}"`,
         whyItWorks: 'Cria cumplicidade imediata entre o criador e a audiência ao romper com a linguagem institucional pesada.',
       },
     ];
@@ -36,7 +38,7 @@ export function analyzeOutliers(req: ResearchRequest, competitors: CompetitorRes
         pattern: 'Quebra de Padrão Acelerada / Desafio de 30 Dias',
         example: titles.length > 0
           ? `Exemplo real observado: "${titles[0]}"`
-          : `Hipótese estratégica para teste: "Pare de Fazer Isto com ${topic} Agora!"`,
+          : `Hipótese estratégica para teste: "Pare de Fazer Isto com ${topicClean} Agora!"`,
         whyItWorks: 'O público brasileiro consome em ritmo acelerado; ganchos com apelo emocional e urgência nos primeiros 2 segundos reduzem a taxa de swipe.',
       },
       {
@@ -56,7 +58,7 @@ export function analyzeOutliers(req: ResearchRequest, competitors: CompetitorRes
         pattern: 'El Choque de Realidad / La Trampa de Hacienda',
         example: titles.length > 0
           ? `Ejemplo real observado: "${titles[0]}"`
-          : `Hipótesis estratégica para prueba: "La Verdad sobre ${topic} que Nadie te Cuenta en España"`,
+          : `Hipótesis estratégica para prueba: "La Verdad sobre ${topicClean} que Nadie te Cuenta en España"`,
         whyItWorks: 'En España, la presión regulatoria y las dudas sobre cotización y tributación provocan un alto engagement emocional en la comunidad.',
       },
       {
@@ -77,7 +79,7 @@ export function analyzeOutliers(req: ResearchRequest, competitors: CompetitorRes
         pattern: 'The Costly HMRC & Regulatory Trap',
         example: titles.length > 0
           ? `Observed real example: "${titles[0]}"`
-          : `Strategic hypothesis for testing: "The Costly Tax Year Blunder with ${topic} in the UK"`,
+          : `Strategic hypothesis for testing: "The Costly Tax Year Blunder with ${topicClean} in the UK"`,
         whyItWorks: 'In the UK, fear of unexpected HMRC tax demands, fiscal drag, and hidden platform fees triggers significantly higher click-through and save rates than empty promises of wealth.',
       },
       {
@@ -87,7 +89,7 @@ export function analyzeOutliers(req: ResearchRequest, competitors: CompetitorRes
       },
       {
         pattern: 'No-Nonsense Contrarian Truth (Anti-Hype)',
-        example: `Example: "Why the Most Popular Advice About ${topic} in the UK Is Outdated"`,
+        example: `Example: "Why the Most Popular Advice About ${topicClean} in the UK Is Outdated"`,
         whyItWorks: 'Cuts through Americanised, generic advice by establishing immediate trust with understated, pragmatic analysis.',
       },
     ];
@@ -143,15 +145,15 @@ export function analyzeOutliers(req: ResearchRequest, competitors: CompetitorRes
   // High velocity topics
   const highVelocityTopics = market === 'en-GB'
     ? [
-        `Practical impact of new UK tax rules and thresholds in 2025/2026 applied to ${topic}`,
+        `Practical impact of new UK tax rules and thresholds in 2025/2026 applied to ${topicClean}`,
         `Unsponsored comparison: The 3 UK options that are genuinely worthwhile`,
-        `The quiet blunder costing 9 in 10 UK creators and investors hundreds of pounds each year with ${topic}`,
+        `The quiet blunder costing 9 in 10 UK creators and investors hundreds of pounds each year with ${topicClean}`,
         `Minimalist routine for UK full-time workers taking under 15 minutes a week`,
       ]
     : [
-        `Impacto prático das novas regras e custos em 2025/2026 aplicadas a ${topic}`,
+        `Impacto prático das novas regras e custos em 2025/2026 aplicadas a ${topicClean}`,
         `Comparativo sem patrocínios: As 3 alternativas que realmente compensam`,
-        `O erro silencioso que custa caro a 9 em cada 10 pessoas ao implementar ${topic}`,
+        `O erro silencioso que custa caro a 9 em cada 10 pessoas ao implementar ${topicClean}`,
         `Estratégia minimalista para iniciantes com execução em menos de 15 minutos`,
       ];
 

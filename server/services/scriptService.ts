@@ -8,6 +8,7 @@ import {
   SourceCitation,
   CompetitorResult,
 } from '../../src/types/index.js';
+import { normalizeTopic, cleanTemplateText, formatSpokenHook, formatScript1Opening } from './topicNormalizer.js';
 
 export function generateScriptSuite(
   req: ResearchRequest,
@@ -22,13 +23,12 @@ export function generateScriptSuite(
 } {
   const { topic, market, platform } = req;
   const isShortsOrReels = platform === 'youtube-shorts' || platform === 'tiktok' || platform === 'instagram-reels';
+  const topicClean = normalizeTopic(topic, market);
 
   // SCRIPT VARIATIONS
   const scripts: ScriptVariation[] = [];
 
   if (market === 'pt-PT') {
-    const topicClean = topic.replace(/\s+em\s+Portugal/gi, '').trim();
-
     // Portugal (European Portuguese) Scripts
     scripts.push(
       {
@@ -44,7 +44,7 @@ export function generateScriptSuite(
             timestamp: '0:00 - 0:03',
             stage: 'Hook',
             visualCue: '[VISUAL: Grande plano nos olhos, expressão séria com telemóvel na mão a apontar para o ecrã]',
-            spokenText: 'Se ainda estás a fazer isto com ' + topicClean + ' em Portugal, lamento dizer-te, mas estás a deitar dinheiro ao lixo todos os meses.',
+            spokenText: formatScript1Opening(topic, market),
             audioToneCue: '[AUDIO: Efeito de corte seco / sem música nos primeiros 2 segundos para focar atenção]',
           },
           {
@@ -76,7 +76,7 @@ export function generateScriptSuite(
             audioToneCue: '[AUDIO: Som de sino/notificação subtil]',
           },
         ],
-        fullSpokenText: `Se ainda estás a fazer isto com ${topicClean} em Portugal, lamento dizer-te, mas estás a deitar dinheiro ao lixo todos os meses. 90% dos criadores na internet dizem-te para seguir a receita antiga. O problema? Essa regra mudou e agora as taxas e comissões comem qualquer benefício. Olha com atenção para esta comparação: no método habitual perdes logo uma percentagem em custódia e retenção. Se em vez disso fizeres este ajuste simples de 3 passos, proteges o teu retorno líquido. A diferença é teres paz de espírito e não seres apanhado de surpresa no final do ano. Guarda este vídeo para consultares quando fores tratar disto e comenta "GUIA" se queres o resumo com os detalhes legais.`,
+        fullSpokenText: `${formatScript1Opening(topic, market)} 90% dos criadores na internet dizem-te para seguir a receita antiga. O problema? Essa regra mudou e agora as taxas e comissões comem qualquer benefício. Olha com atenção para esta comparação: no método habitual perdes logo uma percentagem em custódia e retenção. Se em vez disso fizeres este ajuste simples de 3 passos, proteges o teu retorno líquido. A diferença é teres paz de espírito e não seres apanhado de surpresa no final do ano. Guarda este vídeo para consultares quando fores tratar disto e comenta "GUIA" se queres o resumo com os detalhes legais.`,
       },
       {
         id: 'script-pt-story',
@@ -334,7 +334,7 @@ export function generateScriptSuite(
             timestamp: '0:00 - 0:03',
             stage: 'Hook',
             visualCue: '[VISUAL: Primer plano a cámara con expresión seria sosteniendo una notificación o móvil]',
-            spokenText: 'Si sigues aplicando este consejo sobre ' + topic + ' en España, estás regalando literalmente tu dinero.',
+            spokenText: formatScript1Opening(topic, market),
             audioToneCue: '[AUDIO: Sin música inicial, voz seca e impactante]',
           },
           {
@@ -366,7 +366,7 @@ export function generateScriptSuite(
             audioToneCue: '[AUDIO: Sonido sutil de notificación]',
           },
         ],
-        fullSpokenText: `Si sigues aplicando este consejo sobre ${topic} en España, estás regalando literalmente tu dinero. El 90% de los vídeos te repite lo mismo de siempre. Lo que no te cuentan es que la regulación cambió y ahora te aplican una regularización que te deja en números rojos. Fíjate en esta comparativa: con el método estándar pierdes casi un 30% en gastos y retenciones. Si aplicas esta alternativa contrastada, te quedas con el rendimiento limpio. Es la diferencia entre trabajar para pagar comisiones o tener una estructura sólida y legal. Guarda este vídeo para cuando tengas que revisarlo y comenta "GUÍA" para enviarte la plantilla al privado.`,
+        fullSpokenText: `${formatScript1Opening(topic, market)} El 90% de los vídeos te repite lo mismo de siempre. Lo que no te cuentan es que la regulación cambió y ahora te aplican una regularización que te deja en números rojos. Fíjate en esta comparativa: con el método estándar pierdes casi un 30% en gastos y retenciones. Si aplicas esta alternativa contrastada, te quedas con el rendimiento limpio. Es la diferencia entre trabajar para pagar comisiones o tener una estructura sólida y legal. Guarda este vídeo para cuando tengas que revisarlo y comenta "GUÍA" para enviarte la plantilla al privado.`,
       },
       {
         id: 'script-es-story',
@@ -381,7 +381,7 @@ export function generateScriptSuite(
             timestamp: '0:00 - 0:04',
             stage: 'Hook',
             visualCue: '[VISUAL: Mirando la pantalla del ordenador con cara de frustración y un café en la mesa]',
-            spokenText: 'Hace dos años cometí el peor error posible con ' + topic + '. Y nadie en YouTube me había avisado.',
+            spokenText: 'Hace dos años cometí el peor error posible con ' + topicClean + '. Y nadie en YouTube me había avisado.',
             audioToneCue: '[AUDIO: Melodía introspectiva de piano suave]',
           },
           {
@@ -413,7 +413,7 @@ export function generateScriptSuite(
             audioToneCue: '[AUDIO: Cierre limpio]',
           },
         ],
-        fullSpokenText: `Hace dos años cometí el peor error posible con ${topic}. Y nadie en YouTube me había avisado. Seguía todas las recomendaciones de los grandes canales y al final de trimestre me di cuenta de que apenas cubría costes. Hasta que decidí cambiar de rumbo por completo y centrarme únicamente en estas 3 claves pragmáticas. En 6 meses la rentabilidad neta se multiplicó. Hoy gestiono todo el proceso en menos de media hora a la semana con total seguridad. Si quieres contenido honesto y contrastado sobre España, suscríbete al canal y comparte esto con quien lo necesite.`,
+        fullSpokenText: `Hace dos años cometí el peor error posible con ${topicClean}. Y nadie en YouTube me había avisado. Seguía todas las recomendaciones de los grandes canales y al final de trimestre me di cuenta de que apenas cubría costes. Hasta que decidí cambiar de rumbo por completo y centrarme únicamente en estas 3 claves pragmáticas. En 6 meses la rentabilidad neta se multiplicó. Hoy gestiono todo el proceso en menos de media hora a la semana con total seguridad. Si quieres contenido honesto y contrastado sobre España, suscríbete al canal y comparte esto con quien lo necesite.`,
       },
       {
         id: 'script-es-blueprint',
@@ -428,7 +428,7 @@ export function generateScriptSuite(
             timestamp: '0:00 - 0:03',
             stage: 'Hook',
             visualCue: '[VISUAL: Tres dedos a cámara y rótulo dinámico: "3 PASOS INDISPENSABLES"]',
-            spokenText: 'El protocolo de 3 pasos para optimizar ' + topic + ' en España sin perder tiempo ni dinero.',
+            spokenText: 'El protocolo de 3 pasos para optimizar ' + topicClean + ' en España sin perder tiempo ni dinero.',
             audioToneCue: '[AUDIO: Sonido rápido de transición y ritmo fresco]',
           },
           {
@@ -464,8 +464,6 @@ export function generateScriptSuite(
       }
     );
   } else {
-    const topicClean = topic.replace(/\s+in\s+the\s+UK/gi, '').replace(/\s+in\s+UK/gi, '').replace(/\s+UK/gi, '').trim();
-
     // United Kingdom (British English) Scripts
     scripts.push(
       {
@@ -481,7 +479,7 @@ export function generateScriptSuite(
             timestamp: '0:00 - 0:03',
             stage: 'Hook',
             visualCue: '[VISUAL: Tight close-up to camera, serious expression holding a mobile displaying an HMRC or account alert]',
-            spokenText: 'If you are still doing this with ' + topicClean + ' in the UK, I\'m sorry to say, but you are throwing money away every single month.',
+            spokenText: formatScript1Opening(topic, market),
             audioToneCue: '[AUDIO: Clean cut / silence in the first 2 seconds to focus viewer attention]',
           },
           {
@@ -513,7 +511,7 @@ export function generateScriptSuite(
             audioToneCue: '[AUDIO: Clean outro sting]',
           },
         ],
-        fullSpokenText: `If you are still doing this with ${topicClean} in the UK, I'm sorry to say, but you are throwing money away every single month. Ninety per cent of self-styled online experts tell you to follow the same old textbook playbook. The problem? Those thresholds have frozen, and stealth taxes combined with platform fees are quietly eating away at your returns. Look closely at this comparison: under the standard route, you immediately surrender a chunk to account charges and unnecessary HMRC drag. If you make this straightforward three-step tweak instead, your net return remains protected. The real difference is gaining genuine peace of mind and not being caught off-guard with a surprise tax demand at the end of the tax year. Save this video so you have it ready when you sort this out, and leave a comment below if you want the checklist with the exact details.`,
+        fullSpokenText: `${formatScript1Opening(topic, market)} Ninety per cent of self-styled online experts tell you to follow the same old textbook playbook. The problem? Those thresholds have frozen, and stealth taxes combined with platform fees are quietly eating away at your returns. Look closely at this comparison: under the standard route, you immediately surrender a chunk to account charges and unnecessary HMRC drag. If you make this straightforward three-step tweak instead, your net return remains protected. The real difference is gaining genuine peace of mind and not being caught off-guard with a surprise tax demand at the end of the tax year. Save this video so you have it ready when you sort this out, and leave a comment below if you want the checklist with the exact details.`,
       },
       {
         id: 'script-uk-story',
@@ -615,7 +613,6 @@ export function generateScriptSuite(
   // TITLES (Categorized by psychological framework)
   const titles: TitleIdea[] = [];
   if (market === 'pt-PT') {
-    const topicClean = topic.replace(/\s+em\s+Portugal/gi, '').trim();
     titles.push(
       { id: 'title-1', type: 'Curiosity Gap', title: `A Regra Não Escrita de ${topicClean} em Portugal que Mudou Tudo`, score: 96 },
       { id: 'title-2', type: 'Fear of Missing Out / Loss', title: `O Erro no IRS / Finanças com ${topicClean} que Te Custa Milhares de Euros`, score: 94 },
@@ -625,24 +622,23 @@ export function generateScriptSuite(
     );
   } else if (market === 'pt-BR') {
     titles.push(
-      { id: 'title-1', type: 'Fear of Missing Out / Loss', title: `A Cilada Oculta em ${topic} que Está Drenando Seu Dinheiro`, score: 97 },
-      { id: 'title-2', type: 'Curiosity Gap', title: `O Segredo de ${topic} que o Seu Banco Não Quer que Você Descubra`, score: 95 },
-      { id: 'title-3', type: 'Contrarian', title: `Pare de Fazer Isso em ${topic}! Você Está Fazendo Tudo Errado`, score: 93 },
-      { id: 'title-4', type: 'Outcome / How-To', title: `Como Dominar ${topic} Começando com Pouco pelo Celular em 2026`, score: 91 },
-      { id: 'title-5', type: 'Number / Listicle', title: `3 Truques Simples de ${topic} que Quase Ninguém Conhece`, score: 89 }
+      { id: 'title-1', type: 'Fear of Missing Out / Loss', title: `A Cilada Oculta em ${topicClean} que Está Drenando Seu Dinheiro`, score: 97 },
+      { id: 'title-2', type: 'Curiosity Gap', title: `O Segredo de ${topicClean} que o Seu Banco Não Quer que Você Descubra`, score: 95 },
+      { id: 'title-3', type: 'Contrarian', title: `Pare de Fazer Isso em ${topicClean}! Você Está Fazendo Tudo Errado`, score: 93 },
+      { id: 'title-4', type: 'Outcome / How-To', title: `Como Dominar ${topicClean} Começando com Pouco pelo Celular em 2026`, score: 91 },
+      { id: 'title-5', type: 'Number / Listicle', title: `3 Truques Simples de ${topicClean} que Quase Ninguém Conhece`, score: 89 }
     );
   } else if (market === 'es-ES') {
     // es-ES
     titles.push(
-      { id: 'title-1', type: 'Curiosity Gap', title: `La Verdad Sobre ${topic} en España que Tu Gestoría No te Dice`, score: 96 },
-      { id: 'title-2', type: 'Fear of Missing Out / Loss', title: `La Trampa Fiscal de ${topic}: Cómo Evitar Inspecciones y Recargos`, score: 94 },
-      { id: 'title-3', type: 'Contrarian', title: `Por Qué el Consejo Típico de ${topic} es una Pérdida de Tiempo`, score: 92 },
-      { id: 'title-4', type: 'Outcome / How-To', title: `Cómo Optimizar ${topic} en España Paso a Paso (Sin Humo)`, score: 91 },
-      { id: 'title-5', type: 'Number / Listicle', title: `Las 3 Claves Legales en ${topic} que Marcan la Diferencia en España`, score: 89 }
+      { id: 'title-1', type: 'Curiosity Gap', title: `La Verdad Sobre ${topicClean} en España que Tu Gestoría No te Dice`, score: 96 },
+      { id: 'title-2', type: 'Fear of Missing Out / Loss', title: `La Trampa Fiscal de ${topicClean}: Cómo Evitar Inspecciones y Recargos`, score: 94 },
+      { id: 'title-3', type: 'Contrarian', title: `Por Qué el Consejo Típico de ${topicClean} es una Pérdida de Tiempo`, score: 92 },
+      { id: 'title-4', type: 'Outcome / How-To', title: `Cómo Optimizar ${topicClean} en España Paso a Paso (Sin Humo)`, score: 91 },
+      { id: 'title-5', type: 'Number / Listicle', title: `Las 3 Claves Legales en ${topicClean} que Marcan la Diferencia en España`, score: 89 }
     );
   } else {
     // en-GB (United Kingdom)
-    const topicClean = topic.replace(/\s+in\s+the\s+UK/gi, '').replace(/\s+in\s+UK/gi, '').replace(/\s+UK/gi, '').trim();
     titles.push(
       { id: 'title-1', type: 'Curiosity Gap', title: `The Unwritten UK Rule of ${topicClean} That Changes Everything`, score: 96 },
       { id: 'title-2', type: 'Fear of Missing Out / Loss', title: `The Costly HMRC & Fee Trap in ${topicClean} That Costs You Thousands`, score: 94 },
@@ -655,13 +651,12 @@ export function generateScriptSuite(
   // HOOKS (Visual + Verbal + Overlay in first 3 seconds)
   const hooks: HookIdea[] = [];
   if (market === 'pt-PT') {
-    const topicClean = topic.replace(/\s+em\s+Portugal/gi, '').trim();
     hooks.push(
       {
         id: 'hook-1',
         type: 'Pattern Interrupt',
         visualHook: 'Aproximação ultra-rápida à câmara com expressão séria e ecrã de telemóvel virado.',
-        spokenHook: 'Se ainda estás a fazer isto com ' + topicClean + ', estás a perder dinheiro sem saber.',
+        spokenHook: formatSpokenHook(topic, market),
         overlayText: '90% DAS PESSOAS ERRAM AQUI EM PORTUGAL',
       },
       {
@@ -699,7 +694,7 @@ export function generateScriptSuite(
         id: 'hook-1',
         type: 'Pattern Interrupt',
         visualHook: 'Congelamento rápido com efeito glitch e aproximação rápida de lente.',
-        spokenHook: 'Pára tudo o que você tá fazendo e olha esse detalhe aqui sobre ' + topic + '!',
+        spokenHook: formatSpokenHook(topic, market),
         overlayText: 'NÃO FAÇA MAIS ISSO!',
       },
       {
@@ -713,7 +708,7 @@ export function generateScriptSuite(
         id: 'hook-3',
         type: 'Provocative Question',
         visualHook: 'Expressão de choque com as duas mãos na cabeça.',
-        spokenHook: 'Por que ninguém te contou a verdade sobre ' + topic + ' até hoje?',
+        spokenHook: 'Por que ninguém te contou a verdade sobre ' + topicClean + ' até hoje?',
         overlayText: 'O QUE ESCONDEM DE VOCÊ',
       },
       {
@@ -738,7 +733,7 @@ export function generateScriptSuite(
         id: 'hook-1',
         type: 'Pattern Interrupt',
         visualHook: 'Corte seco sin música, mirada fija y directa con ceño fruncido.',
-        spokenHook: 'Si vives en España y haces esto con ' + topic + ', estás cometiendo un error monumental.',
+        spokenHook: formatSpokenHook(topic, market),
         overlayText: 'ALERTA FISCAL EN ESPAÑA',
       },
       {
@@ -772,13 +767,12 @@ export function generateScriptSuite(
     );
   } else {
     // en-GB (United Kingdom)
-    const topicClean = topic.replace(/\s+in\s+the\s+UK/gi, '').replace(/\s+in\s+UK/gi, '').replace(/\s+UK/gi, '').trim();
     hooks.push(
       {
         id: 'hook-1',
         type: 'Pattern Interrupt',
         visualHook: 'Ultra-fast snap zoom to camera with direct, deadpan expression holding a mobile displaying an HMRC or bank notification.',
-        spokenHook: 'If you\'re still doing this with ' + topicClean + ' in the UK, you are quietly throwing money away.',
+        spokenHook: formatSpokenHook(topic, market),
         overlayText: '90% GET THIS WRONG IN THE UK',
       },
       {
@@ -1145,7 +1139,7 @@ export function generateScriptSuite(
 
   return {
     scripts,
-    titles,
+    titles: titles.map((t) => ({ ...t, title: cleanTemplateText(t.title) })),
     hooks,
     ctas,
     sources,

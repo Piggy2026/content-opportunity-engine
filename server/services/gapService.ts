@@ -1,7 +1,9 @@
 import { ContentGap, ResearchRequest, CompetitorResult } from '../../src/types/index.js';
+import { normalizeTopic } from './topicNormalizer.js';
 
 export function detectContentGaps(req: ResearchRequest, competitors: CompetitorResult[]): ContentGap[] {
   const { topic, market, platform } = req;
+  const topicClean = normalizeTopic(topic, market);
   const gaps: ContentGap[] = [];
 
   // Gap 1: Saturated vs Unanswered Nuance
@@ -10,7 +12,7 @@ export function detectContentGaps(req: ResearchRequest, competitors: CompetitorR
       id: 'gap-pt-1',
       category: 'underserved-market-need',
       title: 'Realidade Fiscal e Bancária Portuguesa vs Dicas Genéricas Importadas',
-      description: `Muitos vídeos sobre ${topic} copiam formatos do Brasil ou dos EUA, esquecendo taxas da banca portuguesa, comissões de manutenção, regras do Banco de Portugal e retenção de IRS.`,
+      description: `Muitos vídeos sobre ${topicClean} copiam formatos do Brasil ou dos EUA, esquecendo taxas da banca portuguesa, comissões de manutenção, regras do Banco de Portugal e retenção de IRS.`,
       whyCompetitorsMissedIt: 'Os criadores copiam guiões virais internacionais sem adaptar à legislação nacional e custos de vida em Portugal.',
       marketNuance: 'Portugal (pt-PT): Os utilizadores valorizam especificidade em euros, declaração de IRS, impacto das taxas Euribor e bancos locais (ActivoBank, CGD, Millennium, Moey).',
       opportunityLevel: 'critical',
@@ -47,7 +49,7 @@ export function detectContentGaps(req: ResearchRequest, competitors: CompetitorR
       id: 'gap-br-1',
       category: 'underserved-market-need',
       title: 'Sobrevivência à Volatilidade Real e Inflação do Dia a Dia Brasileiro',
-      description: `A maioria dos vídeos de ${topic} ignora a realidade de quem tem renda instável (freelancers, MEI, CLT com hora extra) e foca em cenários perfeitos de poupança linear.`,
+      description: `A maioria dos vídeos de ${topicClean} ignora a realidade de quem tem renda instável (freelancers, MEI, CLT com hora extra) e foca em cenários perfeitos de poupança linear.`,
       whyCompetitorsMissedIt: 'Fórmulas prontas de livros americanos traduzidos que não contemplam a realidade da economia brasileira e juros reais.',
       marketNuance: 'Brasil (pt-BR): Foco em reserva de emergência com liquidez diária, Pix, IOF, Selic real e proteção contra perda do poder de compra no mercado.',
       opportunityLevel: 'critical',
@@ -84,7 +86,7 @@ export function detectContentGaps(req: ResearchRequest, competitors: CompetitorR
       id: 'gap-es-1',
       category: 'underserved-market-need',
       title: 'Complejidad Regulatoria y Fiscal en España Explicada Sin Jerga Legal',
-      description: `El contenido sobre ${topic} en España suele ser o bien un texto legal incomprensible de gestoría o bien un vídeo superficial sin base normativa real (Hacienda, IRPF, cuotas, deducciones).`,
+      description: `El contenido sobre ${topicClean} en España suele ser o bien un texto legal incomprensible de gestoría o bien un vídeo superficial sin base normativa real (Hacienda, IRPF, cuotas, deducciones).`,
       whyCompetitorsMissedIt: 'Pocos creadores se toman el tiempo de traducir la normativa del BOE o consultas vinculantes de la DGT a un lenguaje fresco y visual.',
       marketNuance: 'España (es-ES): Alto interés por consejos fiscalmente blindados, deducciones autonómicas y seguridad jurídica.',
       opportunityLevel: 'critical',
@@ -101,8 +103,8 @@ export function detectContentGaps(req: ResearchRequest, competitors: CompetitorR
     gaps.push({
       id: 'gap-es-3',
       category: 'unanswered-question',
-      title: 'Cómo Conciliar ${topic} con un Trabajo por Cuenta Ajena',
-      description: `Existe un vacío notable sobre cómo compaginar ${topic} manteniendo un contrato laboral estándar en España sin incurrir en incompatibilidades o duplicidad de costes sociales.`,
+      title: `Cómo Conciliar ${topicClean} con un Trabajo por Cuenta Ajena`,
+      description: `Existe un vacío notable sobre cómo compaginar ${topicClean} manteniendo un contrato laboral estándar en España sin incurrir en incompatibilidades o duplicidad de costes sociales.`,
       whyCompetitorsMissedIt: 'Casi todo el contenido asume que el espectador es 100% autónomo o 100% asalariado.',
       marketNuance: 'España: Pluriactividad, bonificaciones de cuota y deducción de gastos compartidos en el hogar.',
       opportunityLevel: 'high',
@@ -122,7 +124,7 @@ export function detectContentGaps(req: ResearchRequest, competitors: CompetitorR
       id: 'gap-uk-1',
       category: 'underserved-market-need',
       title: 'UK Tax Rules, HMRC Allowances & Fiscal Drag vs Generic US Advice',
-      description: `Too many videos about ${topic} uncritically import US concepts (401k, Roth IRA, IRS rules), completely ignoring UK-specific mechanisms such as HMRC tax years (6 April to 5 April), the £20,000 ISA allowance, Capital Gains Tax cuts, National Insurance thresholds, and SIPP tax relief.`,
+      description: `Too many videos about ${topicClean} uncritically import US concepts (401k, Roth IRA, IRS rules), completely ignoring UK-specific mechanisms such as HMRC tax years (6 April to 5 April), the £20,000 ISA allowance, Capital Gains Tax cuts, National Insurance thresholds, and SIPP tax relief.`,
       whyCompetitorsMissedIt: 'Creators frequently regurgitate American YouTube trends without adapting to UK tax law, HMRC self-assessment, and the British cost-of-living reality.',
       marketNuance: 'United Kingdom (en-GB): UK viewers demand figures in British Pounds (£), tax year deadlines, Stamp Duty / council tax nuances, and authorised platforms regulated by the Financial Conduct Authority (FCA).',
       opportunityLevel: 'critical',
@@ -140,7 +142,7 @@ export function detectContentGaps(req: ResearchRequest, competitors: CompetitorR
       id: 'gap-uk-3',
       category: 'oversaturated-angle',
       title: 'Over-Theoretical Dictionaries: We Want Real Screen Walkthroughs and Exact UK Steps',
-      description: `Over 70% of UK competitors produce static talking-head monologues repeating textbook definitions ("What is an ETF" / "What is ${topic}"). Viewers already know the theory; they want to see the mobile app screen, which specific fund to choose, which HMRC box to tick, and which hidden platform fees to avoid.`,
+      description: `Over 70% of UK competitors produce static talking-head monologues repeating textbook definitions ("What is an ETF" / "What is ${topicClean}"). Viewers already know the theory; they want to see the mobile app screen, which specific fund to choose, which HMRC box to tick, and which hidden platform fees to avoid.`,
       whyCompetitorsMissedIt: 'Talking in front of a camera is faster than recording live screen walkthroughs and auditing transparent fee schedules.',
       marketNuance: 'UK: High demand for crisp screen-recordings on mobile/desktop without tedious self-indulgent preambles.',
       opportunityLevel: 'high',

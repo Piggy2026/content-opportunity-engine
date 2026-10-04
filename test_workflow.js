@@ -238,6 +238,43 @@ async function runTests() {
   assert(ukData.scripts[0].fullSpokenText.includes('UK') || ukData.scripts[0].fullSpokenText.includes('HMRC') || ukData.scripts[0].fullSpokenText.includes('per cent'), 'British English vocabulary verified in scripts');
   assert(ukData.ctas.length >= 2, 'Generated platform-native UK CTAs');
 
+  // 17. Testing Topic Normalization & Natural Phrasing ("Stocks and Shares ISA HMRC rules")
+  console.log('\nStep 17: Testing Topic Normalization for UK ("Stocks and Shares ISA HMRC rules")...');
+  const ukNormReq = {
+    topic: 'Stocks and Shares ISA HMRC rules',
+    market: 'en-GB',
+    platform: 'youtube',
+    audienceLevel: 'intermediate',
+  };
+  const ukNormRes = await fetch('http://localhost:3001/api/analyze', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(ukNormReq),
+  });
+  assert(ukNormRes.ok, 'Pipeline responded 200 for UK normalized topic request');
+  const ukNormData = await ukNormRes.json();
+  assert(ukNormData.rankedIdeas.length >= 15, 'Generated 15-20 ranked ideas for normalized UK topic');
+  assert(ukNormData.scripts.length === 3, 'Generated 3 scripts for normalized UK topic');
+
+  // Check Idea 1 Title for absence of awkward repetition
+  const topIdeaTitle = ukNormData.rankedIdeas[0].title;
+  console.log(`Top Idea Title: "${topIdeaTitle}"`);
+  assert(!topIdeaTitle.includes('HMRC Mistake with HMRC'), 'Idea 1 title avoids repeated "HMRC"');
+  assert(!topIdeaTitle.includes('in the UK in the UK'), 'Idea 1 title avoids repeated "in the UK"');
+
+  // Check Spoken Hook
+  const topHook = ukNormData.hooks[0].spokenHook;
+  console.log(`Top Spoken Hook: "${topHook}"`);
+  assert(!topHook.includes('doing this with Stocks and Shares ISA HMRC rules'), 'Hook avoids awkward "doing this with rules"');
+  assert(topHook.includes('HMRC rules for Stocks and Shares ISAs'), 'Hook contains natural phrasing "HMRC rules for Stocks and Shares ISAs"');
+
+  // Check Script 1 Opening and Full Text
+  const script1Opening = ukNormData.scripts[0].sections[0].spokenText;
+  console.log(`Script 1 Opening: "${script1Opening}"`);
+  assert(!script1Opening.includes('doing this with Stocks and Shares ISA HMRC rules'), 'Script 1 avoids awkward "doing this with rules"');
+  assert(script1Opening.includes('HMRC rules for Stocks and Shares ISAs'), 'Script 1 contains natural phrasing "HMRC rules for Stocks and Shares ISAs"');
+  assert(ukNormData.scripts[0].fullSpokenText.includes('per cent'), 'Script 1 maintains British English "per cent"');
+
   console.log('\n🎉 ALL WORKFLOW TESTS PASSED SUCCESSFULLY! 🎉\n');
 }
 

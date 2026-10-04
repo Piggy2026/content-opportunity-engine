@@ -1,4 +1,5 @@
 import { ContentIdea, ResearchRequest, ContentGap, CompetitorResult } from '../../src/types/index.js';
+import { normalizeTopic, cleanTemplateText } from './topicNormalizer.js';
 
 export function generateRankedIdeas(
   req: ResearchRequest,
@@ -7,12 +8,11 @@ export function generateRankedIdeas(
 ): ContentIdea[] {
   const { topic, market, platform } = req;
   const isShorts = platform === 'youtube-shorts' || platform === 'tiktok' || platform === 'instagram-reels';
+  const topicClean = normalizeTopic(topic, market);
 
   const rawIdeas: Omit<ContentIdea, 'rank' | 'opportunityScore' | 'isBestOpportunity'>[] = [];
 
   if (market === 'pt-PT') {
-    const topicClean = topic.replace(/\s+em\s+Portugal/gi, '').trim();
-
     rawIdeas.push(
       {
         id: 'idea-pt-1',
@@ -552,8 +552,6 @@ export function generateRankedIdeas(
     );
   } else {
     // en-GB (United Kingdom)
-    const topicClean = topic.replace(/\s+in\s+the\s+UK/gi, '').replace(/\s+in\s+UK/gi, '').replace(/\s+UK/gi, '').trim();
-
     rawIdeas.push(
       {
         id: 'idea-uk-1',
@@ -745,6 +743,7 @@ export function generateRankedIdeas(
 
     return {
       ...idea,
+      title: cleanTemplateText(idea.title),
       rank: index + 1,
       opportunityScore: totalScore,
       isBestOpportunity: index === 0,
