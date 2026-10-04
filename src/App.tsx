@@ -146,6 +146,12 @@ export default function App() {
       if (proj) {
         setResult(proj);
         setSelectedIdea(proj.bestOpportunity || proj.rankedIdeas[0]);
+        setTimeout(() => {
+          const compEl = document.getElementById('section-competitors');
+          if (compEl) {
+            compEl.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 150);
       }
     } catch (err: any) {
       setErrorMessage('Não foi possível carregar o projeto.');

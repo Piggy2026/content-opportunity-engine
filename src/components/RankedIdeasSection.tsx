@@ -146,7 +146,16 @@ export const RankedIdeasSection: React.FC<RankedIdeasSectionProps> = ({
                       : 'bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700'
                   }`}
                 >
-                  <span>{isSelected ? 'Roteiro Ativo' : 'Gerar Roteiro'}</span>
+                  {isGeneratingScripts && isSelected && (
+                    <div className="w-3 h-3 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                  )}
+                  <span>
+                    {isSelected
+                      ? isGeneratingScripts
+                        ? 'A gerar...'
+                        : 'Roteiro Ativo'
+                      : 'Gerar Roteiro'}
+                  </span>
                   <ChevronRight className="w-3.5 h-3.5" />
                 </button>
               </div>

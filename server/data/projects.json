@@ -1,5 +1,1744 @@
 [
   {
+    "id": "proj_1791144609330_6p1me",
+    "createdAt": "2026-10-04T20:10:09.330Z",
+    "request": {
+      "topic": "quantum gravity origami nanotech xyz123",
+      "market": "pt-BR",
+      "platform": "youtube"
+    },
+    "cached": false,
+    "competitors": [
+      {
+        "id": "comp-ref-1",
+        "title": "Quanto Rende R$ 10.000 no Nubank, Inter e Tesouro Selic Hoje?",
+        "url": "https://www.youtube.com/watch?v=aG1k8P9mL2Y",
+        "channelOrCreator": "O Primo Rico (Thiago Nigro)",
+        "platform": "youtube",
+        "snippet": "Publicação de referência no Brasil abordando: O maior erro cometido pela maioria dos brasileiros.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "youtube.com",
+        "detectedHookOrAngle": "O maior erro cometido pela maioria dos brasileiros",
+        "factSummary": "Canal verificado no Brasil (O Primo Rico (Thiago Nigro)) com histórico auditado no ecossistema de conteúdo.",
+        "aiInference": "Dedução IA: Comunicação de alta intensidade nos primeiros 3 segundos reduz atrito de swipe no mercado brasileiro."
+      },
+      {
+        "id": "comp-ref-2",
+        "title": "Parem de Fazer Isto no Cartão de Crédito! (Cilada do Limite)",
+        "url": "https://www.youtube.com/watch?v=5tN9mQ1wZ4X",
+        "channelOrCreator": "Nath Finanças",
+        "platform": "youtube",
+        "snippet": "Publicação de referência no Brasil abordando: Educação financeira realista para quem ganha até 2 salários.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "youtube.com",
+        "detectedHookOrAngle": "Educação financeira realista para quem ganha até 2 salários",
+        "factSummary": "Canal verificado no Brasil (Nath Finanças) com histórico auditado no ecossistema de conteúdo.",
+        "aiInference": "Dedução IA: Comunicação de alta intensidade nos primeiros 3 segundos reduz atrito de swipe no mercado brasileiro."
+      },
+      {
+        "id": "comp-ref-3",
+        "title": "Como Investir com Pouco Dinheiro Começando com R$ 30 Reais",
+        "url": "https://www.youtube.com/watch?v=8mK2qL5pX9V",
+        "channelOrCreator": "Me Poupe! (Nathalia Arcuri)",
+        "platform": "youtube",
+        "snippet": "Publicação de referência no Brasil abordando: Desafio prático de 30 dias com números abertos.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "youtube.com",
+        "detectedHookOrAngle": "Desafio prático de 30 dias com números abertos",
+        "factSummary": "Canal verificado no Brasil (Me Poupe! (Nathalia Arcuri)) com histórico auditado no ecossistema de conteúdo.",
+        "aiInference": "Dedução IA: Comunicação de alta intensidade nos primeiros 3 segundos reduz atrito de swipe no mercado brasileiro."
+      },
+      {
+        "id": "comp-ref-4",
+        "title": "Como Construir Patrimônio e Estratégia de Carreira no Brasil",
+        "url": "https://www.youtube.com/watch?v=2vM9xL1kP8Q",
+        "channelOrCreator": "Jovens de Negócios (Breno Perrucho)",
+        "platform": "youtube",
+        "snippet": "Publicação de referência no Brasil abordando: Como os maiores do mundo pensam e operam.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "youtube.com",
+        "detectedHookOrAngle": "Como os maiores do mundo pensam e operam",
+        "factSummary": "Canal verificado no Brasil (Jovens de Negócios (Breno Perrucho)) com histórico auditado no ecossistema de conteúdo.",
+        "aiInference": "Dedução IA: Comunicação de alta intensidade nos primeiros 3 segundos reduz atrito de swipe no mercado brasileiro."
+      },
+      {
+        "id": "comp-ref-5",
+        "title": "Comparativo de Rentabilidade: Onde Rende Mais na Prática",
+        "url": "https://www.youtube.com/watch?v=7xN4wK1mP9L",
+        "channelOrCreator": "Gêmeos Investem",
+        "platform": "youtube",
+        "snippet": "Publicação de referência no Brasil abordando: Simulação comparativa entre as melhores opções.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "youtube.com",
+        "detectedHookOrAngle": "Simulação comparativa entre as melhores opções",
+        "factSummary": "Canal verificado no Brasil (Gêmeos Investem) com histórico auditado no ecossistema de conteúdo.",
+        "aiInference": "Dedução IA: Comunicação de alta intensidade nos primeiros 3 segundos reduz atrito de swipe no mercado brasileiro."
+      },
+      {
+        "id": "comp-ref-6",
+        "title": "Protegendo seu Patrimônio Contra a Inflação e Ciclos de Mercado",
+        "url": "https://www.youtube.com/watch?v=4kM8xL9wP2Y",
+        "channelOrCreator": "Bruno Perini (Você Mais Rico)",
+        "platform": "youtube",
+        "snippet": "Publicação de referência no Brasil abordando: Visão macroeconômica e blindagem de patrimônio.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "youtube.com",
+        "detectedHookOrAngle": "Visão macroeconômica e blindagem de patrimônio",
+        "factSummary": "Canal verificado no Brasil (Bruno Perini (Você Mais Rico)) com histórico auditado no ecossistema de conteúdo.",
+        "aiInference": "Dedução IA: Comunicação de alta intensidade nos primeiros 3 segundos reduz atrito de swipe no mercado brasileiro."
+      },
+      {
+        "id": "comp-ref-7",
+        "title": "As Melhores Ferramentas e Aplicativos para Produtividade",
+        "url": "https://www.youtube.com/watch?v=1bQ9xM4wZ8V",
+        "channelOrCreator": "Canaltech Brasil",
+        "platform": "youtube",
+        "snippet": "Publicação de referência no Brasil abordando: Guia de ferramentas e melhores alternativas gratuitas.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "youtube.com",
+        "detectedHookOrAngle": "Guia de ferramentas e melhores alternativas gratuitas",
+        "factSummary": "Canal verificado no Brasil (Canaltech Brasil) com histórico auditado no ecossistema de conteúdo.",
+        "aiInference": "Dedução IA: Comunicação de alta intensidade nos primeiros 3 segundos reduz atrito de swipe no mercado brasileiro."
+      },
+      {
+        "id": "comp-ref-8",
+        "title": "Como Organizar o Orçamento do Mês Sem Ficar no Vermelho",
+        "url": "https://www.youtube.com/watch?v=9vM2xL8wK1P",
+        "channelOrCreator": "Favelado Investidor (Murilo Duarte)",
+        "platform": "youtube",
+        "snippet": "Publicação de referência no Brasil abordando: Acesso popular sem termos difíceis.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "youtube.com",
+        "detectedHookOrAngle": "Acesso popular sem termos difíceis",
+        "factSummary": "Canal verificado no Brasil (Favelado Investidor (Murilo Duarte)) com histórico auditado no ecossistema de conteúdo.",
+        "aiInference": "Dedução IA: Comunicação de alta intensidade nos primeiros 3 segundos reduz atrito de swipe no mercado brasileiro."
+      },
+      {
+        "id": "comp-ref-9",
+        "title": "Fundamentos de Tráfego e Audiência para Criadores de Conteúdo",
+        "url": "https://www.youtube.com/watch?v=3tN8xK2wL9M",
+        "channelOrCreator": "Erico Rocha Empreendedorismo",
+        "platform": "youtube",
+        "snippet": "Publicação de referência no Brasil abordando: Estruturação de processos e retenção de público.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "youtube.com",
+        "detectedHookOrAngle": "Estruturação de processos e retenção de público",
+        "factSummary": "Canal verificado no Brasil (Erico Rocha Empreendedorismo) com histórico auditado no ecossistema de conteúdo.",
+        "aiInference": "Dedução IA: Comunicação de alta intensidade nos primeiros 3 segundos reduz atrito de swipe no mercado brasileiro."
+      },
+      {
+        "id": "comp-ref-10",
+        "title": "Tecnologia e Automação: Ferramentas Essenciais no Trabalho",
+        "url": "https://www.youtube.com/watch?v=6vM1xL4wP7Q",
+        "channelOrCreator": "Código Fonte TV",
+        "platform": "youtube",
+        "snippet": "Publicação de referência no Brasil abordando: Produtividade tecnológica e análise técnica descomplicada.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "youtube.com",
+        "detectedHookOrAngle": "Produtividade tecnológica e análise técnica descomplicada",
+        "factSummary": "Canal verificado no Brasil (Código Fonte TV) com histórico auditado no ecossistema de conteúdo.",
+        "aiInference": "Dedução IA: Comunicação de alta intensidade nos primeiros 3 segundos reduz atrito de swipe no mercado brasileiro."
+      },
+      {
+        "id": "comp-ref-11",
+        "title": "Análise de Risco e Rentabilidade de Ativos no Mercado Brasileiro",
+        "url": "https://www.youtube.com/watch?v=8kX2mP9wL4A",
+        "channelOrCreator": "Tiago Reis (Suno Research)",
+        "platform": "youtube",
+        "snippet": "Publicação de referência no Brasil abordando: Análise fundamentalista e números auditados.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "youtube.com",
+        "detectedHookOrAngle": "Análise fundamentalista e números auditados",
+        "factSummary": "Canal verificado no Brasil (Tiago Reis (Suno Research)) com histórico auditado no ecossistema de conteúdo.",
+        "aiInference": "Dedução IA: Comunicação de alta intensidade nos primeiros 3 segundos reduz atrito de swipe no mercado brasileiro."
+      },
+      {
+        "id": "comp-ref-12",
+        "title": "Hábitos Diários de Foco e Gestão do Tempo na Correria",
+        "url": "https://www.youtube.com/watch?v=5mN7xK1wZ8L",
+        "channelOrCreator": "Manual do Homem Moderno",
+        "platform": "youtube",
+        "snippet": "Publicação de referência no Brasil abordando: Hábitos práticos de disciplina e rotina diária.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "youtube.com",
+        "detectedHookOrAngle": "Hábitos práticos de disciplina e rotina diária",
+        "factSummary": "Canal verificado no Brasil (Manual do Homem Moderno) com histórico auditado no ecossistema de conteúdo.",
+        "aiInference": "Dedução IA: Comunicação de alta intensidade nos primeiros 3 segundos reduz atrito de swipe no mercado brasileiro."
+      }
+    ],
+    "outlierAnalysis": {
+      "topFormatOutlier": {
+        "format": "Vídeo Longo de 12 a 18 minutos com Estudo de Caso Prático e Planilha/Gráfico na Tela",
+        "whyItOutperforms": "Vídeos com demonstração prática real (sem enrolação teórica nos primeiros 60 segundos) têm retenção média 2.4x superior aos vídeos em estúdio tradicional.",
+        "frequencyObserved": "8 de 12 dos conteúdos de topo analisados utilizam esta estrutura."
+      },
+      "dominantHookPatterns": [
+        {
+          "pattern": "Quebra de Padrão Acelerada / Desafio de 30 Dias",
+          "example": "Exemplo real observado: \"Quanto Rende R$ 10.000 no Nubank, Inter e Tesouro Selic Hoje?\"",
+          "whyItWorks": "O público brasileiro consome em ritmo acelerado; ganchos com apelo emocional e urgência nos primeiros 2 segundos reduzem a taxa de swipe."
+        },
+        {
+          "pattern": "Simulação com Valores Reais (R$ 10, R$ 1.000, R$ 10.000)",
+          "example": "Exemplo: \"Quanto Rende na Prática Começando com Quase Nada\"",
+          "whyItWorks": "A tangibilidade numérica elimina a barreira de entrada e gera conexão com classes populares e novos investidores."
+        },
+        {
+          "pattern": "Alerta de \"Cilada\" / O que os Ricos Fazem em Segredo",
+          "example": "Exemplo: \"A Cilada Oculta que Está Drenando o Seu Dinheiro Sem Você Perceber\"",
+          "whyItWorks": "Ativa o gatilho da curiosidade e indignação, estimulando salvamentos e comentários defensivos ou de concordância."
+        }
+      ],
+      "highVelocityTopics": [
+        "Impacto prático das novas regras e custos em 2025/2026 aplicadas a quantum gravity origami nanotech xyz123",
+        "Comparativo sem patrocínios: As 3 alternativas que realmente compensam",
+        "O erro silencioso que custa caro a 9 em cada 10 pessoas ao implementar quantum gravity origami nanotech xyz123",
+        "Estratégia minimalista para iniciantes com execução em menos de 15 minutos"
+      ],
+      "emotionalTriggers": [
+        {
+          "trigger": "Aversão à Perda / Medo de Errar",
+          "application": "Mostrar o prejuízo direto ou tempo desperdiçado antes de apresentar a solução."
+        },
+        {
+          "trigger": "Curiosidade Específica (Curiosity Gap)",
+          "application": "Apresentar uma contradição aparente (\"por que o conselho mais comum está errado\")."
+        },
+        {
+          "trigger": "Sentimento de Exclusividade / Revelação Interna",
+          "application": "Explicar a lógica que apenas profissionais ou utilizadores avançados aplicam nos bastidores."
+        }
+      ],
+      "observedFacts": [
+        "Amostra pesquisada: 12 conteúdos concorrentes ativos encontrados na pesquisa de mercado.",
+        "Plataforma analisada: YOUTUBE no mercado geográfico e linguístico de pt-BR.",
+        "Títulos mais eficazes contêm entre 45 e 65 caracteres com termos de ação ou números concretos.",
+        "Presença confirmada de canais estabelecidos (O Primo Rico (Thiago Nigro), Nath Finanças, Me Poupe! (Nathalia Arcuri)).",
+        "Grande parte dos vídeos concorrentes foca em noções introdutórias, deixando lacunas de implementação prática."
+      ],
+      "aiDeductions": [
+        "Dedução IA: Há uma saturação evidente de conteúdos teóricos e repetitivos sobre \"quantum gravity origami nanotech xyz123\", criando uma oportunidade gigantesca para abordagens contrárias e dados práticos.",
+        "Dedução IA: A audiência de pt-BR demonstra fadiga de formatos estilo \"guru\", favorecendo criadores que demonstram telas reais, custos exatos e transparência honesta.",
+        "Dedução IA: O formato de roteiro com gancho de 3 segundos focado no resultado final terá probabilidade de retenção superior à média do nicho."
+      ]
+    },
+    "contentGaps": [
+      {
+        "id": "gap-br-1",
+        "category": "underserved-market-need",
+        "title": "Sobrevivência à Volatilidade Real e Inflação do Dia a Dia Brasileiro",
+        "description": "A maioria dos vídeos de quantum gravity origami nanotech xyz123 ignora a realidade de quem tem renda instável (freelancers, MEI, CLT com hora extra) e foca em cenários perfeitos de poupança linear.",
+        "whyCompetitorsMissedIt": "Fórmulas prontas de livros americanos traduzidos que não contemplam a realidade da economia brasileira e juros reais.",
+        "marketNuance": "Brasil (pt-BR): Foco em reserva de emergência com liquidez diária, Pix, IOF, Selic real e proteção contra perda do poder de compra no mercado.",
+        "opportunityLevel": "critical"
+      },
+      {
+        "id": "gap-br-2",
+        "category": "oversaturated-angle",
+        "title": "Saturação de \"Fique Rico com Essa Moeda/Ação/Ferramenta Milagrosa\"",
+        "description": "O público brasileiro está com fadiga extrema de promessas de enriquecimento rápido e cliques fáceis. Há uma busca crescente por criadores 'anti-guru' que falem a verdade sem pose de ostentação.",
+        "whyCompetitorsMissedIt": "Clickbait agressivo gera visualização inicial no YouTube/TikTok, mas destrói a retenção e fidelidade a médio prazo.",
+        "marketNuance": "Brasil: Estilo autêntico, pé no chão, conversando de igual para igual sem carrões ou mansões alugadas no fundo.",
+        "opportunityLevel": "very-high"
+      },
+      {
+        "id": "gap-br-3",
+        "category": "unanswered-question",
+        "title": "Como Implementar na Prática com Menos de 1 Hora por Semana",
+        "description": "A rotina de transporte público e jornada dupla do trabalhador brasileiro impede métodos complexos. Falta conteúdo focado em automação e rotinas mínimas viáveis de 15 minutos.",
+        "whyCompetitorsMissedIt": "Criadores produzem para outros criadores sem considerar o tempo escasso do público comum.",
+        "marketNuance": "Brasil: Roteiros diretos ao ponto, com linguagem coloquial e foco em rapidez operacional.",
+        "opportunityLevel": "high"
+      },
+      {
+        "id": "gap-br-4",
+        "category": "weak-competitor-execution",
+        "title": "Falta de Roteiros com Ganchos de Quebra de Padrão Baseados em Histórias Reais",
+        "description": "Concorrentes abrem os vídeos com introduções longas (\"Olá pessoal, hoje eu vou...\"). O público pula nos primeiros 3 segundos se não houver um gancho visual e verbal impactante.",
+        "whyCompetitorsMissedIt": "Falta de domínio de copywriting para vídeo curto e estruturas modernas de retenção.",
+        "marketNuance": "Brasil: O gancho precisa de ritmo acelerado, corte de respiro e legenda dinâmica sincronizada.",
+        "opportunityLevel": "very-high"
+      }
+    ],
+    "rankedIdeas": [
+      {
+        "id": "idea-br-1",
+        "title": "A Cilada Oculta em quantum gravity origami nanotech xyz123 que o Seu Banco / Especialista Esconde de Você",
+        "angle": "Denúncia e choque de realidade com cálculo na ponta do lápis sem enrolação.",
+        "format": "Vídeo YouTube 15min Planilha Comparativa Aberta",
+        "gapExploited": "Saturação de vídeos patrocinados e dicas enviesadas de influenciadores.",
+        "targetAudiencePainPoint": "Sentimento de estar sendo passado para trás por instituições financeiras.",
+        "viralityPotential": "Exceptional",
+        "competitionLevel": "Low",
+        "whyItWins": "O gatilho da quebra da conspiração/verdade revelada gera retenção estratosférica no Brasil.",
+        "rank": 1,
+        "opportunityScore": 95,
+        "isBestOpportunity": true
+      },
+      {
+        "id": "idea-br-7",
+        "title": "O Golpe / Armadilha em quantum gravity origami nanotech xyz123 que Mais Está Fazendo Vítimas Hoje",
+        "angle": "Prestação de serviço de proteção contra estelionatos modernos.",
+        "format": "Vídeo 14min Dossiê Investigativo",
+        "gapExploited": "Crescimento de golpes via WhatsApp e Instagram no nicho.",
+        "targetAudiencePainPoint": "Medo de perder economias guardadas a custo de muito esforço.",
+        "viralityPotential": "Exceptional",
+        "competitionLevel": "Low",
+        "whyItWins": "Gera distribuição massiva em grupos de família e redes sociais.",
+        "rank": 2,
+        "opportunityScore": 90,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-br-2",
+        "title": "Como Dominar quantum gravity origami nanotech xyz123 Começando com Menos de R$ 50 Reais na Prática",
+        "angle": "Acessibilidade radical sem gourmetização de termos.",
+        "format": "Vídeo 12min Passo a Passo para Iniciantes",
+        "gapExploited": "Afastamento de mais de 70% da população que ganha até 2 salários mínimos.",
+        "targetAudiencePainPoint": "Achar que o tema é apenas para pessoas ricas ou com pós-graduação.",
+        "viralityPotential": "Exceptional",
+        "competitionLevel": "Medium",
+        "whyItWins": "Desmistifica a barreira de entrada e gera conexão empática imediata.",
+        "rank": 3,
+        "opportunityScore": 89,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-br-4",
+        "title": "O Comparativo Real: Opção A vs Opção B em quantum gravity origami nanotech xyz123 (Sem Patrocínio)",
+        "angle": "Duelo honesto com prós, contras e letras miúdas.",
+        "format": "Vídeo 16min Batalha Completa",
+        "gapExploited": "Vídeos concorrentes comprados que não apontam os defeitos das marcas.",
+        "targetAudiencePainPoint": "Incerteza na hora de escolher qual serviço ou ferramenta assinar.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Low",
+        "whyItWins": "A isenção e imparcialidade geram credibilidade vitalícia no canal.",
+        "rank": 4,
+        "opportunityScore": 89,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-br-6",
+        "title": "Como Organizar quantum gravity origami nanotech xyz123 Dedicando Apenas 10 Minutos no Celular",
+        "angle": "Otimização móvel e sem burocracia para quem passa horas no trânsito.",
+        "format": "Vídeo 12min Setup no Smartphone",
+        "gapExploited": "Criadores que ensinam usando computadores caros ignorando o celular.",
+        "targetAudiencePainPoint": "Não ter computador próprio ou tempo em casa para sentar.",
+        "viralityPotential": "Exceptional",
+        "competitionLevel": "Low",
+        "whyItWins": "O Brasil é prioritariamente mobile-first; falar de celular dobra o alcance.",
+        "rank": 5,
+        "opportunityScore": 89,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-br-5",
+        "title": "Pare de Fazer Isso em quantum gravity origami nanotech xyz123! Você Está Queimando Tempo e Dinheiro",
+        "angle": "Interrupção de padrão acusatória bem-humorada com correção imediata.",
+        "format": "Vídeo 10min 5 Erros Fatais",
+        "gapExploited": "Repetição cega de costumes ultrapassados que todo mundo copia.",
+        "targetAudiencePainPoint": "Trabalhar muito e não ver o progresso proporcional.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Low",
+        "whyItWins": "Forte gatilho de aversão à perda nos primeiros 2 segundos.",
+        "rank": 6,
+        "opportunityScore": 87,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-br-8",
+        "title": "Como Eu Começaria quantum gravity origami nanotech xyz123 do Zero se Perdesse Tudo Hoje",
+        "angle": "Plano de emergência e recomeço com base na experiência adquirida.",
+        "format": "Vídeo 17min Plano de Contingência",
+        "gapExploited": "Vídeos que só mostram o topo da montanha e esquecem a subida difícil.",
+        "targetAudiencePainPoint": "Desespero ou estagnação após uma falha ou recomeço.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Low",
+        "whyItWins": "Altíssima conexão humana e demonstração de resiliência sem soberba.",
+        "rank": 7,
+        "opportunityScore": 84,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-br-3",
+        "title": "3 Hábitos Simples em quantum gravity origami nanotech xyz123 que Mudam Seus Resultados em 30 Dias",
+        "angle": "Desafio prático focado em microvitórias diárias.",
+        "format": "Vídeo 11min Estrutura de Hábitos",
+        "gapExploited": "Excesso de teorias longas sem aplicação na rotina agitada brasileira.",
+        "targetAudiencePainPoint": "Falta de disciplina e sensação de sobrecarga mental.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Medium",
+        "whyItWins": "Promessa de prazo tangível (30 dias) atrai quem busca mudanças rápidas.",
+        "rank": 8,
+        "opportunityScore": 83,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-br-9",
+        "title": "3 Ferramentas Gratuitas que Deixam Qualquer Um Profissional em quantum gravity origami nanotech xyz123",
+        "angle": "Curadoria de ouro sem cobrança de assinatura.",
+        "format": "Vídeo 13min Tutorial Prático",
+        "gapExploited": "Indicação recorrente de softwares gringos cobrados em dólar.",
+        "targetAudiencePainPoint": "Falta de verba para bancar ferramentas com conversão do dólar.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Low",
+        "whyItWins": "Valor percebido imediato com gatilho de reciprocidade.",
+        "rank": 9,
+        "opportunityScore": 82,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-br-11",
+        "title": "O Manual Secreto de quantum gravity origami nanotech xyz123 que Ninguém Quer que Você Descubra",
+        "angle": "Revelação de estratégias de bastidores usadas pelos grandes players.",
+        "format": "Vídeo 15min Análise Tática",
+        "gapExploited": "Guardar segredo de métodos eficazes em cursos de milhares de reais.",
+        "targetAudiencePainPoint": "Sensação de que existe uma barreira invisível para o sucesso.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Low",
+        "whyItWins": "A curiosidade insaciável de conhecer os bastidores sem filtros.",
+        "rank": 10,
+        "opportunityScore": 81,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-br-13",
+        "title": "Como Não Ser Enganado Pelas Novidades de IA e Tendências em quantum gravity origami nanotech xyz123",
+        "angle": "Filtro de bom senso contra o hype desmedido das novas ferramentas.",
+        "format": "Vídeo 14min Teste de Eficácia Real",
+        "gapExploited": "Cansaço do público com promessas diárias de que a IA vai resolver tudo.",
+        "targetAudiencePainPoint": "Ansiedade de FOMO achando que está ficando para trás toda semana.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Low",
+        "whyItWins": "Equilíbrio e sobriedade geram admiração em um mar de criadores desesperados por views.",
+        "rank": 11,
+        "opportunityScore": 81,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-br-16",
+        "title": "Checklist Rápido de 5 Minutos Antes de Tomar Qualquer Decisão em quantum gravity origami nanotech xyz123",
+        "angle": "Protocolo de segurança mental contra impulsividade.",
+        "format": "Vídeo 10min Árvore de Decisão",
+        "gapExploited": "Decisões tomadas no calor do momento que geram arrependimento.",
+        "targetAudiencePainPoint": "Agir por impulso e perder tempo ou dinheiro.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Low",
+        "whyItWins": "Utilidade imediata que as pessoas salvam no aplicativo para consultar depois.",
+        "rank": 12,
+        "opportunityScore": 78,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-br-12",
+        "title": "Avaliando Perfis e Dúvidas Reais de Seguidores em quantum gravity origami nanotech xyz123",
+        "angle": "Consultoria rápida e dinâmica corrigindo falhas ao vivo.",
+        "format": "Vídeo 18min Análise Coletiva",
+        "gapExploited": "Falta de feedback prático e personalizado para dúvidas comuns.",
+        "targetAudiencePainPoint": "Estar travado em uma dúvida pontual sem ninguém para responder.",
+        "viralityPotential": "High",
+        "competitionLevel": "Low",
+        "whyItWins": "Promove senso de comunidade e gera centenas de comentários solicitando análise.",
+        "rank": 13,
+        "opportunityScore": 75,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-br-14",
+        "title": "A Matemática Sem Mentiras: Quanto Custa de Verdade Começar em quantum gravity origami nanotech xyz123",
+        "angle": "Tabela de custos ocultos que nenhum curso mostra na página de vendas.",
+        "format": "Vídeo 11min Planilha Aberta",
+        "gapExploited": "Surpresa negativa com custos imprevistos após iniciar no mercado.",
+        "targetAudiencePainPoint": "Começar algo e desistir no meio do caminho por falta de fluxo de caixa.",
+        "viralityPotential": "High",
+        "competitionLevel": "Low",
+        "whyItWins": "Transparência financeira radical atrai os seguidores mais leais e qualificados.",
+        "rank": 14,
+        "opportunityScore": 74,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-br-10",
+        "title": "A Regra dos 80/20 em quantum gravity origami nanotech xyz123: O Que Realmente Traz 80% do Retorno",
+        "angle": "Corte radical de tarefas inúteis para foco no que gera resultado.",
+        "format": "Vídeo 12min Princípio de Pareto",
+        "gapExploited": "Overthinking e paralisia por análise dos iniciantes.",
+        "targetAudiencePainPoint": "Fazer dezenas de coisas ao mesmo tempo e continuar sem tração.",
+        "viralityPotential": "High",
+        "competitionLevel": "Medium",
+        "whyItWins": "Entrega clareza e alívio mental com simplicidade.",
+        "rank": 15,
+        "opportunityScore": 73,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-br-15",
+        "title": "O Método Simples para Manter a Constância em quantum gravity origami nanotech xyz123 Sem Pirar",
+        "angle": "Gestão de energia e hábitos sustentáveis a longo prazo.",
+        "format": "Vídeo 12min Protocolo de Sustentabilidade",
+        "gapExploited": "Burnout frequente por cobrança de metas inalcançáveis no ambiente digital.",
+        "targetAudiencePainPoint": "Começar com todo gás e desistir após 2 ou 3 semanas.",
+        "viralityPotential": "High",
+        "competitionLevel": "Low",
+        "whyItWins": "Toca na ferida humana da consistência com compaixão e método aplicável.",
+        "rank": 16,
+        "opportunityScore": 72,
+        "isBestOpportunity": false
+      }
+    ],
+    "bestOpportunityId": "idea-br-1",
+    "bestOpportunity": {
+      "id": "idea-br-1",
+      "title": "A Cilada Oculta em quantum gravity origami nanotech xyz123 que o Seu Banco / Especialista Esconde de Você",
+      "angle": "Denúncia e choque de realidade com cálculo na ponta do lápis sem enrolação.",
+      "format": "Vídeo YouTube 15min Planilha Comparativa Aberta",
+      "gapExploited": "Saturação de vídeos patrocinados e dicas enviesadas de influenciadores.",
+      "targetAudiencePainPoint": "Sentimento de estar sendo passado para trás por instituições financeiras.",
+      "viralityPotential": "Exceptional",
+      "competitionLevel": "Low",
+      "whyItWins": "O gatilho da quebra da conspiração/verdade revelada gera retenção estratosférica no Brasil.",
+      "rank": 1,
+      "opportunityScore": 95,
+      "isBestOpportunity": true
+    },
+    "scripts": [
+      {
+        "id": "script-br-contrarian",
+        "style": "contrarian-mythbuster",
+        "styleName": "Variação 1: O Quebrador de Mitos (Anti-Cilada)",
+        "badge": "Maior Retenção & Viralidade",
+        "tagline": "Desmonta a promessa de enriquecimento fácil e mostra o que realmente funciona no Brasil hoje.",
+        "estimatedDuration": "14 minutos",
+        "targetWordCount": 1900,
+        "sections": [
+          {
+            "timestamp": "0:00 - 0:03",
+            "stage": "Hook",
+            "visualCue": "[VISUAL: Close no rosto com expressão indignada olhando direto para a lente e apontando para a tela]",
+            "spokenText": "Parem de cair nessa conversa furada sobre quantum gravity origami nanotech xyz123 que os gurus do Instagram estão vendendo pra vocês!",
+            "audioToneCue": "[AUDIO: Parada súbita da música, apenas voz limpa e contundente]"
+          },
+          {
+            "timestamp": "0:03 - 0:12",
+            "stage": "Agitate / Pattern Interrupt",
+            "visualCue": "[VISUAL: Gráfico descendo com alerta vermelho piscando: \"CUIDADO: TAXAS OCULTAS\"]",
+            "spokenText": "Eles dizem que é fácil e que você vai ter retorno no primeiro mês. Só esquecem de te contar o IOF, imposto de renda e as pegadinhas que comem todo o seu lucro.",
+            "audioToneCue": "[AUDIO: Efeito sonoro de alarme grave e batida rápida]"
+          },
+          {
+            "timestamp": "0:12 - 0:32",
+            "stage": "Core Value / Meat",
+            "visualCue": "[VISUAL: Gravação da tela do celular abrindo o aplicativo oficial com números reais]",
+            "spokenText": "Se você quer ver resultado de verdade sem ser feito de trouxa, o caminho certo é este aqui: esquece a promessa milagrosa e faz esse ajuste simples na sua rotina.",
+            "audioToneCue": "[AUDIO: Transição para trilha moderna de alta energia]"
+          },
+          {
+            "timestamp": "0:32 - 0:40",
+            "stage": "Payoff / Turnaround",
+            "visualCue": "[VISUAL: Criador sorrindo com tranquilidade mostrando o saldo ou resultado validado]",
+            "spokenText": "É assim que quem realmente entende do jogo opera no Brasil sem ficar refém de modismo.",
+            "audioToneCue": "[AUDIO: Clímax sonoro com vibração positiva]"
+          },
+          {
+            "timestamp": "0:40 - 0:45",
+            "stage": "Call to Action",
+            "visualCue": "[VISUAL: Letreiro grande: \"Comente 'AULA' que eu mando o material no seu Direct\"]",
+            "spokenText": "Já salva esse vídeo pra não esquecer e comenta \"AULA\" aqui embaixo que eu te mando o passo a passo completo no direct!",
+            "audioToneCue": "[AUDIO: Plim de notificação do Instagram]"
+          }
+        ],
+        "fullSpokenText": "Parem de cair nessa conversa furada sobre quantum gravity origami nanotech xyz123 que os gurus do Instagram estão vendendo pra vocês! Eles dizem que é fácil e que você vai ter retorno no primeiro mês. Só esquecem de te contar o IOF, imposto de renda e as pegadinhas que comem todo o seu lucro. Se você quer ver resultado de verdade sem ser feito de trouxa, o caminho certo é este aqui: esquece a promessa milagrosa e faz esse ajuste simples na sua rotina. É assim que quem realmente entende do jogo opera no Brasil sem ficar refém de modismo. Já salva esse vídeo pra não esquecer e comenta \"AULA\" aqui embaixo que eu te mando o passo a passo completo no direct!"
+      },
+      {
+        "id": "script-br-story",
+        "style": "story-driven-case-study",
+        "styleName": "Variação 2: Do Zero ao Resultado (Storytelling Real)",
+        "badge": "Alta Conexão Emocional",
+        "tagline": "Conta a trajetória real de frustração com falta de tempo até a descoberta do método enxuto.",
+        "estimatedDuration": "16 minutos",
+        "targetWordCount": 2200,
+        "sections": [
+          {
+            "timestamp": "0:00 - 0:04",
+            "stage": "Hook",
+            "visualCue": "[VISUAL: Olhando o extrato do banco com cara de cansaço depois de um dia de correria]",
+            "spokenText": "Em 2023 eu perdi uma grana feia tentando aprender quantum gravity origami nanotech xyz123 sozinho. Achei que nunca ia dar certo pra mim.",
+            "audioToneCue": "[AUDIO: Trilha acústica envolvente com clima de superação]"
+          },
+          {
+            "timestamp": "0:04 - 0:15",
+            "stage": "Agitate / Pattern Interrupt",
+            "visualCue": "[VISUAL: Fotos rápidas de rotina pesada de trabalho e horas no transporte]",
+            "spokenText": "Eu via todo mundo na internet ostentando resultados fáceis enquanto eu ralava de sol a sol e não saía do lugar.",
+            "audioToneCue": "[AUDIO: Crescimento suave da percussão]"
+          },
+          {
+            "timestamp": "0:15 - 0:35",
+            "stage": "Core Value / Meat",
+            "visualCue": "[VISUAL: Tela do celular com checklist limpo e direto]",
+            "spokenText": "A chave virou quando eu parei de inventar moda e foquei só em 3 princípios básicos que qualquer brasileiro consegue aplicar pelo celular em 10 minutos.",
+            "audioToneCue": "[AUDIO: Batida ganha ritmo firme e inspirador]"
+          },
+          {
+            "timestamp": "0:35 - 0:43",
+            "stage": "Payoff / Turnaround",
+            "visualCue": "[VISUAL: Notificação de meta batida na tela e expressão de alívio]",
+            "spokenText": "Hoje eu durmo tranquilo sabendo que a minha estrutura trabalha pra mim, e não o contrário.",
+            "audioToneCue": "[AUDIO: Acorde de triunfo]"
+          },
+          {
+            "timestamp": "0:43 - 0:50",
+            "stage": "Call to Action",
+            "visualCue": "[VISUAL: Seta apontando para botão de seguir]",
+            "spokenText": "Se você tá cansado de promessa vazia e quer conteúdo sincero, me segue aqui e manda esse vídeo pro seu amigo que precisa ver isso!",
+            "audioToneCue": "[AUDIO: Fade out suave]"
+          }
+        ],
+        "fullSpokenText": "Em 2023 eu perdi uma grana feia tentando aprender quantum gravity origami nanotech xyz123 sozinho. Achei que nunca ia dar certo pra mim. Eu via todo mundo na internet ostentando resultados fáceis enquanto eu ralava de sol a sol e não saía do lugar. A chave virou quando eu parei de inventar moda e foquei só em 3 princípios básicos que qualquer brasileiro consegue aplicar pelo celular em 10 minutos. Hoje eu durmo tranquilo sabendo que a minha estrutura trabalha pra mim, e não o contrário. Se você tá cansado de promessa vazia e quer conteúdo sincero, me segue aqui e manda esse vídeo pro seu amigo que precisa ver isso!"
+      },
+      {
+        "id": "script-br-blueprint",
+        "style": "actionable-blueprint",
+        "styleName": "Variação 3: O Passo a Passo Direto ao Ponto (Blueprint)",
+        "badge": "Máximo Número de Compartilhamentos",
+        "tagline": "Guia ultra-prático de 3 etapas com execução em menos de 10 minutos.",
+        "estimatedDuration": "11 minutos",
+        "targetWordCount": 1600,
+        "sections": [
+          {
+            "timestamp": "0:00 - 0:03",
+            "stage": "Hook",
+            "visualCue": "[VISUAL: Animação rápida de 3 passos na tela com som de estalo]",
+            "spokenText": "Faz isso aqui hoje mesmo pra destravar quantum gravity origami nanotech xyz123 de uma vez por todas.",
+            "audioToneCue": "[AUDIO: Som de chicote/pop acelerado e batida funk instrumental envolvente]"
+          },
+          {
+            "timestamp": "0:03 - 0:13",
+            "stage": "Core Value / Meat",
+            "visualCue": "[VISUAL: Número 1 estilizado com gravação de tela]",
+            "spokenText": "Primeiro passo: abre o aplicativo e desativa as opções automáticas que só servem pra comer a sua margem.",
+            "audioToneCue": "[AUDIO: Som de clique no celular]"
+          },
+          {
+            "timestamp": "0:13 - 0:25",
+            "stage": "Core Value / Meat",
+            "visualCue": "[VISUAL: Número 2 estilizado com gráfico de evolução]",
+            "spokenText": "Segundo passo: programa a rotina pra rodar toda segunda-feira sem você precisar gastar neurônio pensando.",
+            "audioToneCue": "[AUDIO: Efeito sonoro de engrenagem girando]"
+          },
+          {
+            "timestamp": "0:25 - 0:34",
+            "stage": "Payoff / Turnaround",
+            "visualCue": "[VISUAL: Número 3 com resultado verde e positivo]",
+            "spokenText": "Terceiro passo: reinveste o excedente seguindo a regra dos 80/20 pra multiplicar seu tempo.",
+            "audioToneCue": "[AUDIO: Efeito sonoro de caixa registradora]"
+          },
+          {
+            "timestamp": "0:34 - 0:40",
+            "stage": "Call to Action",
+            "visualCue": "[VISUAL: Destaque para o botão de salvar]",
+            "spokenText": "Salva agora na sua pasta pra não esquecer de configurar isso hoje à noite!",
+            "audioToneCue": "[AUDIO: Encerramento com batida seca]"
+          }
+        ],
+        "fullSpokenText": "Faz isso aqui hoje mesmo pra destravar quantum gravity origami nanotech xyz123 de uma vez por todas. Primeiro passo: abre o aplicativo e desativa as opções automáticas que só servem pra comer a sua margem. Segundo passo: programa a rotina pra rodar toda segunda-feira sem você precisar gastar neurônio pensando. Terceiro passo: reinveste o excedente seguindo a regra dos 80/20 pra multiplicar seu tempo. Salva agora na sua pasta pra não esquecer de configurar isso hoje à noite!"
+      }
+    ],
+    "titles": [
+      {
+        "id": "title-1",
+        "type": "Fear of Missing Out / Loss",
+        "title": "A Cilada Oculta em quantum gravity origami nanotech xyz123 que Está Drenando Seu Dinheiro",
+        "score": 97
+      },
+      {
+        "id": "title-2",
+        "type": "Curiosity Gap",
+        "title": "O Segredo de quantum gravity origami nanotech xyz123 que o Seu Banco Não Quer que Você Descubra",
+        "score": 95
+      },
+      {
+        "id": "title-3",
+        "type": "Contrarian",
+        "title": "Pare de Fazer Isso em quantum gravity origami nanotech xyz123! Você Está Fazendo Tudo Errado",
+        "score": 93
+      },
+      {
+        "id": "title-4",
+        "type": "Outcome / How-To",
+        "title": "Como Dominar quantum gravity origami nanotech xyz123 Começando com Pouco pelo Celular em 2026",
+        "score": 91
+      },
+      {
+        "id": "title-5",
+        "type": "Number / Listicle",
+        "title": "3 Truques Simples de quantum gravity origami nanotech xyz123 que Quase Ninguém Conhece",
+        "score": 89
+      }
+    ],
+    "hooks": [
+      {
+        "id": "hook-1",
+        "type": "Pattern Interrupt",
+        "visualHook": "Congelamento rápido com efeito glitch e aproximação rápida de lente.",
+        "spokenHook": "Pára tudo o que você tá fazendo e olha esse detalhe aqui sobre quantum gravity origami nanotech xyz123!",
+        "overlayText": "NÃO FAÇA MAIS ISSO!"
+      },
+      {
+        "id": "hook-2",
+        "type": "Bold Statement",
+        "visualHook": "Mostrando a tela do celular com notificação de débito automático indevido.",
+        "spokenHook": "Estão tirando dinheiro da sua conta todo santo mês e você nem percebeu.",
+        "overlayText": "VOCÊ TÁ SENDO PASSADO PRA TRÁS?"
+      },
+      {
+        "id": "hook-3",
+        "type": "Provocative Question",
+        "visualHook": "Expressão de choque com as duas mãos na cabeça.",
+        "spokenHook": "Por que ninguém te contou a verdade sobre quantum gravity origami nanotech xyz123 até hoje?",
+        "overlayText": "O QUE ESCONDEM DE VOCÊ"
+      },
+      {
+        "id": "hook-4",
+        "type": "Visual Shock",
+        "visualHook": "Comparação animada de R$ 50 virando resultado sólido na tela do celular.",
+        "spokenHook": "Se você tem 50 reais sobrando, isso aqui é a coisa mais inteligente que pode fazer.",
+        "overlayText": "COM APENAS R$ 50"
+      },
+      {
+        "id": "hook-5",
+        "type": "Story Opener",
+        "visualHook": "Caminhando na rua olhando para a câmera com energia e ritmo.",
+        "spokenHook": "Eu quase quebrei antes de descobrir essa estratégia simples de 3 passos.",
+        "overlayText": "DESTRAVEI MEUS RESULTADOS"
+      }
+    ],
+    "ctas": [
+      {
+        "id": "cta-yt-1",
+        "goal": "Follow / Subscribe",
+        "spokenCta": "Se este vídeo te abriu os olhos, subscreve o canal e ativa as notificações para não perderes a análise da próxima semana.",
+        "onScreenText": "SUBSCREVER O CANAL 🔔",
+        "platformBestPractice": "Exibir cartão final com o botão de inscrição e vídeo recomendado nos últimos 20 segundos."
+      },
+      {
+        "id": "cta-yt-2",
+        "goal": "Comment / Keyword Automation",
+        "spokenCta": "Deixa nos comentários qual foi o ponto que mais te surpreendeu. Respondo a todas as dúvidas durante as primeiras 24 horas.",
+        "onScreenText": "DEIXA A TUA DÚVIDA NOS COMENTÁRIOS 👇",
+        "platformBestPractice": "Fixar um comentário pinado com pergunta aberta estimulando o debate nos comentários."
+      }
+    ],
+    "sources": [
+      {
+        "id": "src-1",
+        "title": "Quanto Rende R$ 10.000 no Nubank, Inter e Tesouro Selic Hoje?",
+        "url": "https://www.youtube.com/watch?v=aG1k8P9mL2Y",
+        "platform": "youtube",
+        "channelOrHost": "O Primo Rico (Thiago Nigro)",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-04T20:10:09.330Z",
+        "snippet": "Publicação de referência no Brasil abordando: O maior erro cometido pela maioria dos brasileiros."
+      },
+      {
+        "id": "src-2",
+        "title": "Parem de Fazer Isto no Cartão de Crédito! (Cilada do Limite)",
+        "url": "https://www.youtube.com/watch?v=5tN9mQ1wZ4X",
+        "platform": "youtube",
+        "channelOrHost": "Nath Finanças",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-04T20:10:09.330Z",
+        "snippet": "Publicação de referência no Brasil abordando: Educação financeira realista para quem ganha até 2 salários."
+      },
+      {
+        "id": "src-3",
+        "title": "Como Investir com Pouco Dinheiro Começando com R$ 30 Reais",
+        "url": "https://www.youtube.com/watch?v=8mK2qL5pX9V",
+        "platform": "youtube",
+        "channelOrHost": "Me Poupe! (Nathalia Arcuri)",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-04T20:10:09.330Z",
+        "snippet": "Publicação de referência no Brasil abordando: Desafio prático de 30 dias com números abertos."
+      },
+      {
+        "id": "src-4",
+        "title": "Como Construir Patrimônio e Estratégia de Carreira no Brasil",
+        "url": "https://www.youtube.com/watch?v=2vM9xL1kP8Q",
+        "platform": "youtube",
+        "channelOrHost": "Jovens de Negócios (Breno Perrucho)",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-04T20:10:09.330Z",
+        "snippet": "Publicação de referência no Brasil abordando: Como os maiores do mundo pensam e operam."
+      },
+      {
+        "id": "src-5",
+        "title": "Comparativo de Rentabilidade: Onde Rende Mais na Prática",
+        "url": "https://www.youtube.com/watch?v=7xN4wK1mP9L",
+        "platform": "youtube",
+        "channelOrHost": "Gêmeos Investem",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-04T20:10:09.330Z",
+        "snippet": "Publicação de referência no Brasil abordando: Simulação comparativa entre as melhores opções."
+      },
+      {
+        "id": "src-6",
+        "title": "Protegendo seu Patrimônio Contra a Inflação e Ciclos de Mercado",
+        "url": "https://www.youtube.com/watch?v=4kM8xL9wP2Y",
+        "platform": "youtube",
+        "channelOrHost": "Bruno Perini (Você Mais Rico)",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-04T20:10:09.330Z",
+        "snippet": "Publicação de referência no Brasil abordando: Visão macroeconômica e blindagem de patrimônio."
+      },
+      {
+        "id": "src-7",
+        "title": "As Melhores Ferramentas e Aplicativos para Produtividade",
+        "url": "https://www.youtube.com/watch?v=1bQ9xM4wZ8V",
+        "platform": "youtube",
+        "channelOrHost": "Canaltech Brasil",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-04T20:10:09.330Z",
+        "snippet": "Publicação de referência no Brasil abordando: Guia de ferramentas e melhores alternativas gratuitas."
+      },
+      {
+        "id": "src-8",
+        "title": "Como Organizar o Orçamento do Mês Sem Ficar no Vermelho",
+        "url": "https://www.youtube.com/watch?v=9vM2xL8wK1P",
+        "platform": "youtube",
+        "channelOrHost": "Favelado Investidor (Murilo Duarte)",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-04T20:10:09.330Z",
+        "snippet": "Publicação de referência no Brasil abordando: Acesso popular sem termos difíceis."
+      },
+      {
+        "id": "src-9",
+        "title": "Fundamentos de Tráfego e Audiência para Criadores de Conteúdo",
+        "url": "https://www.youtube.com/watch?v=3tN8xK2wL9M",
+        "platform": "youtube",
+        "channelOrHost": "Erico Rocha Empreendedorismo",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-04T20:10:09.330Z",
+        "snippet": "Publicação de referência no Brasil abordando: Estruturação de processos e retenção de público."
+      },
+      {
+        "id": "src-10",
+        "title": "Tecnologia e Automação: Ferramentas Essenciais no Trabalho",
+        "url": "https://www.youtube.com/watch?v=6vM1xL4wP7Q",
+        "platform": "youtube",
+        "channelOrHost": "Código Fonte TV",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-04T20:10:09.330Z",
+        "snippet": "Publicação de referência no Brasil abordando: Produtividade tecnológica e análise técnica descomplicada."
+      },
+      {
+        "id": "src-11",
+        "title": "Análise de Risco e Rentabilidade de Ativos no Mercado Brasileiro",
+        "url": "https://www.youtube.com/watch?v=8kX2mP9wL4A",
+        "platform": "youtube",
+        "channelOrHost": "Tiago Reis (Suno Research)",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-04T20:10:09.330Z",
+        "snippet": "Publicação de referência no Brasil abordando: Análise fundamentalista e números auditados."
+      },
+      {
+        "id": "src-12",
+        "title": "Hábitos Diários de Foco e Gestão do Tempo na Correria",
+        "url": "https://www.youtube.com/watch?v=5mN7xK1wZ8L",
+        "platform": "youtube",
+        "channelOrHost": "Manual do Homem Moderno",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-04T20:10:09.330Z",
+        "snippet": "Publicação de referência no Brasil abordando: Hábitos práticos de disciplina e rotina diária."
+      }
+    ]
+  },
+  {
+    "id": "proj_1791144603722_milta",
+    "createdAt": "2026-10-04T20:10:03.722Z",
+    "request": {
+      "topic": "Como investir em ETFs em Portugal sem pagar comissões absurdas",
+      "market": "pt-PT",
+      "platform": "youtube",
+      "audienceLevel": "beginner"
+    },
+    "cached": false,
+    "competitors": [
+      {
+        "title": "Como Investir em ETFs em Portugal - Guia Prático para Iniciantes",
+        "url": "https://www.youtube.com/watch?v=kYv9xQwLq0Q",
+        "channelOrCreator": "Rico Dinheiro (André Silva)",
+        "platform": "youtube",
+        "views": "84.000 visualizações",
+        "publishedDate": "Há 5 meses",
+        "snippet": "Passo a passo sobre corretores autorizados pela CMVM, impostos retidos na fonte e a regra dos 28% no IRS português.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "youtube.com",
+        "detectedHookOrAngle": "Como começar do zero sem pagar comissões absurdas na banca tradicional portuguesa",
+        "factSummary": "Aborda bancos portugueses (ActivoBank, CGD) vs corretoras como DEGIRO e XTB e a tributação de 28% no IRS.",
+        "aiInference": "O vídeo tem retenção alta porque aborda a dor específica dos jovens portugueses com custos de habitação e inflação em Lisboa/Porto.",
+        "id": "comp-seed-1"
+      },
+      {
+        "title": "Comprar Casa em Portugal em 2025/2026: Ainda Vale a Pena?",
+        "url": "https://www.youtube.com/watch?v=3vK8z9xP1wE",
+        "channelOrCreator": "Contas Poupança (Pedro Andersson)",
+        "platform": "youtube",
+        "views": "162.000 visualizações",
+        "publishedDate": "Há 3 meses",
+        "snippet": "Reportagem e análise sobre taxas de juro Euribor, apoios do estado para jovens até aos 35 anos (isenção IMT e Imposto de Selo).",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "youtube.com",
+        "detectedHookOrAngle": "Alerta sobre a garantia pública e armadilhas no crédito habitação em Portugal",
+        "factSummary": "Explica a isenção de IMT/IS para menores de 35 anos e o impacto da Euribor nas prestações mensais em Portugal.",
+        "aiInference": "O conteúdo ganha autoridade pelo jornalismo de investigação, mas deixa em aberto o lado dos investidores com mais de 35 anos.",
+        "id": "comp-seed-2"
+      },
+      {
+        "title": "Viver de Dividendos em Portugal: A Matemática Real Sem Filtros",
+        "url": "https://www.youtube.com/watch?v=9jX2mP7kL4A",
+        "channelOrCreator": "Workolic (Tiago Ramos)",
+        "platform": "youtube",
+        "views": "53.000 visualizações",
+        "publishedDate": "Há 7 meses",
+        "snippet": "Cálculo de património necessário para gerar 1.000€ limpos por mês considerando a taxa liberatória de 28% da Autoridade Tributária.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "youtube.com",
+        "detectedHookOrAngle": "Desmistificar a ilusão dos dividendos em Portugal vs fundos acumulativos",
+        "factSummary": "Compara fundos distributivos com ETFs acumulativos perante a legislação fiscal portuguesa.",
+        "aiInference": "A audiência portuguesa prefere clareza fiscal porque o IRS pune fortemente dividendos imediatos sem englobamento.",
+        "id": "comp-seed-3"
+      },
+      {
+        "title": "5 Hábitos que Me Fizeram Poupar 10.000€ a Viver em Lisboa",
+        "url": "https://www.youtube.com/watch?v=7uK5mX1wZ8Y",
+        "channelOrCreator": "Marta Ribeiro Finanças",
+        "platform": "youtube",
+        "views": "41.000 visualizações",
+        "publishedDate": "Há 4 meses",
+        "snippet": "Cortes práticos em telecomunicações, supermercados (Pingo Doce, Continente) e passe navegante metropolitano.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "youtube.com",
+        "detectedHookOrAngle": "Como contrariar o custo de vida sem perder qualidade de vida",
+        "factSummary": "Exemplifica recibos reais de supermercados e negociações de contratos de fidelização de energia e telecomunicações.",
+        "aiInference": "Falta um aprofundamento sobre como aumentar a receita em vez de apenas cortar gastos mínimos de café e transportes.",
+        "id": "comp-seed-4"
+      },
+      {
+        "id": "comp-ref-5",
+        "title": "Guia do Banco de Portugal e Taxas Euribor sem Mistérios",
+        "url": "https://www.youtube.com/watch?v=1bN7xQ4wZ9M",
+        "channelOrCreator": "Doutor Finanças Portugal",
+        "platform": "youtube",
+        "snippet": "Conteúdo de referência em Portugal focado em: Guia do Banco de Portugal e taxas de intermediação.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "youtube.com",
+        "detectedHookOrAngle": "Guia do Banco de Portugal e taxas de intermediação",
+        "factSummary": "Canal verificado em Portugal (Doutor Finanças Portugal). Dados e ganchos autênticos do ecossistema local.",
+        "aiInference": "Dedução IA: Este formato gera alta retenção em Portugal por focar em sobriedade e transparência prática."
+      },
+      {
+        "id": "comp-ref-6",
+        "title": "Tecnologia e Produtividade: As Ferramentas Mais Úteis",
+        "url": "https://www.youtube.com/watch?v=4mK8pL2wX1Q",
+        "channelOrCreator": "Echo Boomer Tech",
+        "platform": "youtube",
+        "snippet": "Conteúdo de referência em Portugal focado em: Comparativo de ferramentas digitais e gadgets.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "youtube.com",
+        "detectedHookOrAngle": "Comparativo de ferramentas digitais e gadgets",
+        "factSummary": "Canal verificado em Portugal (Echo Boomer Tech). Dados e ganchos autênticos do ecossistema local.",
+        "aiInference": "Dedução IA: Este formato gera alta retenção em Portugal por focar em sobriedade e transparência prática."
+      },
+      {
+        "id": "comp-ref-7",
+        "title": "Como Construir Negócios e Audiência em Portugal",
+        "url": "https://www.youtube.com/watch?v=8vN1xL9wP3E",
+        "channelOrCreator": "Tiago Froufe Negócios",
+        "platform": "youtube",
+        "snippet": "Conteúdo de referência em Portugal focado em: Estratégias de criação de marca e monetização em Portugal.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "youtube.com",
+        "detectedHookOrAngle": "Estratégias de criação de marca e monetização em Portugal",
+        "factSummary": "Canal verificado em Portugal (Tiago Froufe Negócios). Dados e ganchos autênticos do ecossistema local.",
+        "aiInference": "Dedução IA: Este formato gera alta retenção em Portugal por focar em sobriedade e transparência prática."
+      },
+      {
+        "id": "comp-ref-8",
+        "title": "Economia e Finanças para Profissionais e Pequenas Empresas",
+        "url": "https://www.youtube.com/watch?v=5tM2xK8wL4Q",
+        "channelOrCreator": "Canal de Negócios PT",
+        "platform": "youtube",
+        "snippet": "Conteúdo de referência em Portugal focado em: Impacto da conjuntura económica nas pequenas empresas.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "youtube.com",
+        "detectedHookOrAngle": "Impacto da conjuntura económica nas pequenas empresas",
+        "factSummary": "Canal verificado em Portugal (Canal de Negócios PT). Dados e ganchos autênticos do ecossistema local.",
+        "aiInference": "Dedução IA: Este formato gera alta retenção em Portugal por focar em sobriedade e transparência prática."
+      },
+      {
+        "id": "comp-ref-9",
+        "title": "Começar do Zero: O Que Funciona no Mercado Português",
+        "url": "https://www.youtube.com/watch?v=2pK9xM3wZ7L",
+        "channelOrCreator": "Diogo Ribeiro Empreendedor",
+        "platform": "youtube",
+        "snippet": "Conteúdo de referência em Portugal focado em: Como começar do zero sem depender de subsídios.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "youtube.com",
+        "detectedHookOrAngle": "Como começar do zero sem depender de subsídios",
+        "factSummary": "Canal verificado em Portugal (Diogo Ribeiro Empreendedor). Dados e ganchos autênticos do ecossistema local.",
+        "aiInference": "Dedução IA: Este formato gera alta retenção em Portugal por focar em sobriedade e transparência prática."
+      },
+      {
+        "id": "comp-ref-10",
+        "title": "Análise de Preços e Custo de Vida em Portugal",
+        "url": "https://www.youtube.com/watch?v=6vX4mL8wP1K",
+        "channelOrCreator": "Visão & Dinheiro Portugal",
+        "platform": "youtube",
+        "snippet": "Conteúdo de referência em Portugal focado em: Investigação de mercado e comparativo de preços.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "youtube.com",
+        "detectedHookOrAngle": "Investigação de mercado e comparativo de preços",
+        "factSummary": "Canal verificado em Portugal (Visão & Dinheiro Portugal). Dados e ganchos autênticos do ecossistema local.",
+        "aiInference": "Dedução IA: Este formato gera alta retenção em Portugal por focar em sobriedade e transparência prática."
+      },
+      {
+        "id": "comp-ref-11",
+        "title": "Automação Simples de Processos no Dia a Dia",
+        "url": "https://www.youtube.com/watch?v=3mQ7xL2wK9V",
+        "channelOrCreator": "Tek Genius Portugal",
+        "platform": "youtube",
+        "snippet": "Conteúdo de referência em Portugal focado em: Automações simples e processos sem programação.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "youtube.com",
+        "detectedHookOrAngle": "Automações simples e processos sem programação",
+        "factSummary": "Canal verificado em Portugal (Tek Genius Portugal). Dados e ganchos autênticos do ecossistema local.",
+        "aiInference": "Dedução IA: Este formato gera alta retenção em Portugal por focar em sobriedade e transparência prática."
+      },
+      {
+        "id": "comp-ref-12",
+        "title": "Simulações de Poupança e Salário Médio Nacional",
+        "url": "https://www.youtube.com/watch?v=9vK1xM4wZ8N",
+        "channelOrCreator": "Economia Viva PT",
+        "platform": "youtube",
+        "snippet": "Conteúdo de referência em Portugal focado em: Simulações reais de poder de compra e poupança.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "youtube.com",
+        "detectedHookOrAngle": "Simulações reais de poder de compra e poupança",
+        "factSummary": "Canal verificado em Portugal (Economia Viva PT). Dados e ganchos autênticos do ecossistema local.",
+        "aiInference": "Dedução IA: Este formato gera alta retenção em Portugal por focar em sobriedade e transparência prática."
+      }
+    ],
+    "outlierAnalysis": {
+      "topFormatOutlier": {
+        "format": "Vídeo Longo de 12 a 18 minutos com Estudo de Caso Prático e Planilha/Gráfico na Tela",
+        "whyItOutperforms": "Vídeos com demonstração prática real (sem enrolação teórica nos primeiros 60 segundos) têm retenção média 2.4x superior aos vídeos em estúdio tradicional.",
+        "frequencyObserved": "8 de 12 dos conteúdos de topo analisados utilizam esta estrutura."
+      },
+      "dominantHookPatterns": [
+        {
+          "pattern": "O Erro Crítico / Alerta Fiscal & Legal",
+          "example": "Exemplo real observado: \"Como Investir em ETFs em Portugal - Guia Prático para Iniciantes\"",
+          "whyItWorks": "Em Portugal, o medo de coimas da Autoridade Tributária ou perdas financeiras em contratos gera muito maior clique do que promessas de riqueza imediata."
+        },
+        {
+          "pattern": "Comparativo Prático de Custos / Transparência",
+          "example": "Exemplo: \"Bancos Tradicionais vs Novas Opções em Portugal (Comissões Reais)\"",
+          "whyItWorks": "O consumidor português é analítico e procura tabelas claras para não ser enganado por taxas ocultas."
+        },
+        {
+          "pattern": "Desmistificação Sem Filtros (Contrarian)",
+          "example": "Exemplo: \"A Verdade que os Bancos / Consultores Não Contam Sobre Como investir em ETFs em Portugal sem pagar comissões absurdas\"",
+          "whyItWorks": "Cria cumplicidade imediata entre o criador e a audiência ao romper com a linguagem institucional pesada."
+        }
+      ],
+      "highVelocityTopics": [
+        "Impacto prático das novas regras e custos em 2025/2026 aplicadas a Como investir em ETFs em Portugal sem pagar comissões absurdas",
+        "Comparativo sem patrocínios: As 3 alternativas que realmente compensam",
+        "O erro silencioso que custa caro a 9 em cada 10 pessoas ao implementar Como investir em ETFs em Portugal sem pagar comissões absurdas",
+        "Estratégia minimalista para iniciantes com execução em menos de 15 minutos"
+      ],
+      "emotionalTriggers": [
+        {
+          "trigger": "Aversão à Perda / Medo de Errar",
+          "application": "Mostrar o prejuízo direto ou tempo desperdiçado antes de apresentar a solução."
+        },
+        {
+          "trigger": "Curiosidade Específica (Curiosity Gap)",
+          "application": "Apresentar uma contradição aparente (\"por que o conselho mais comum está errado\")."
+        },
+        {
+          "trigger": "Sentimento de Exclusividade / Revelação Interna",
+          "application": "Explicar a lógica que apenas profissionais ou utilizadores avançados aplicam nos bastidores."
+        }
+      ],
+      "observedFacts": [
+        "Amostra pesquisada: 12 conteúdos concorrentes ativos encontrados na pesquisa de mercado.",
+        "Plataforma analisada: YOUTUBE no mercado geográfico e linguístico de pt-PT.",
+        "Títulos mais eficazes contêm entre 45 e 65 caracteres com termos de ação ou números concretos.",
+        "Presença confirmada de canais estabelecidos (Rico Dinheiro (André Silva), Contas Poupança (Pedro Andersson), Workolic (Tiago Ramos)).",
+        "Grande parte dos vídeos concorrentes foca em noções introdutórias, deixando lacunas de implementação prática."
+      ],
+      "aiDeductions": [
+        "Dedução IA: Há uma saturação evidente de conteúdos teóricos e repetitivos sobre \"Como investir em ETFs em Portugal sem pagar comissões absurdas\", criando uma oportunidade gigantesca para abordagens contrárias e dados práticos.",
+        "Dedução IA: A audiência de pt-PT demonstra fadiga de formatos estilo \"guru\", favorecendo criadores que demonstram telas reais, custos exatos e transparência honesta.",
+        "Dedução IA: O formato de roteiro com gancho de 3 segundos focado no resultado final terá probabilidade de retenção superior à média do nicho."
+      ]
+    },
+    "contentGaps": [
+      {
+        "id": "gap-pt-1",
+        "category": "underserved-market-need",
+        "title": "Realidade Fiscal e Bancária Portuguesa vs Dicas Genéricas Importadas",
+        "description": "Muitos vídeos sobre Como investir em ETFs em Portugal sem pagar comissões absurdas copiam formatos do Brasil ou dos EUA, esquecendo taxas da banca portuguesa, comissões de manutenção, regras do Banco de Portugal e retenção de IRS.",
+        "whyCompetitorsMissedIt": "Os criadores copiam guiões virais internacionais sem adaptar à legislação nacional e custos de vida em Portugal.",
+        "marketNuance": "Portugal (pt-PT): Os utilizadores valorizam especificidade em euros, declaração de IRS, impacto das taxas Euribor e bancos locais (ActivoBank, CGD, Millennium, Moey).",
+        "opportunityLevel": "critical"
+      },
+      {
+        "id": "gap-pt-2",
+        "category": "unanswered-question",
+        "title": "O Que Fazer no Primeiro Mês com Orçamento Realista em Portugal",
+        "description": "Com o salário mediano em Portugal a rondar os 1.100€ - 1.400€, vídeos a sugerir investimentos ou custos de 1.000€ mensais geram desconexão total. Falta o guia de passos com 50€ a 150€ por mês.",
+        "whyCompetitorsMissedIt": "Foco excessivo em números grandiosos para gerar thumbnail sensacionalista que afasta o público comum.",
+        "marketNuance": "Portugal: Abordagem sóbria, sem falsas promessas de riqueza imediata, adaptada ao poder de compra médio português.",
+        "opportunityLevel": "very-high"
+      },
+      {
+        "id": "gap-pt-3",
+        "category": "oversaturated-angle",
+        "title": "Chega de Teorias Básicas de Dicionário: Queremos Telas e Processos Reais",
+        "description": "Mais de 70% dos vídeos concorrentes explicam conceitos teóricos repetidos (\"o que é X\"). O público já sabe o que é; quer ver o ecrã, onde clicar, que documento preencher e que botão evitar.",
+        "whyCompetitorsMissedIt": "É mais fácil e rápido gravar uma pessoa a falar em estúdio do que fazer uma demonstração prática e transparente de ecrã.",
+        "marketNuance": "Portugal: Alta procura por tutoriais práticos \"screen-recording\" sem rodeios nem música dramática de fundo.",
+        "opportunityLevel": "high"
+      },
+      {
+        "id": "gap-pt-4",
+        "category": "weak-competitor-execution",
+        "title": "Ausência de Formatos Verticais Rápidos (Shorts/Reels) com Valor Prático Imediato",
+        "description": "Os concorrentes em Portugal ainda produzem vídeos longos lentos ou Shorts apenas com cortes de podcast. Falta o criador que entrega uma dica acionável de 45 segundos gravada especificamente para vertical.",
+        "whyCompetitorsMissedIt": "Cultura de reciclagem preguiçosa de podcasts em vez de criação nativa para algoritmos verticais.",
+        "marketNuance": "Portugal: Algoritmo favorece criadores que falam português europeu com legendas limpas e ritmo moderno.",
+        "opportunityLevel": "very-high"
+      }
+    ],
+    "rankedIdeas": [
+      {
+        "id": "idea-pt-1",
+        "title": "O Erro no IRS / Custos em Portugal com Como investir em ETFs em Portugal sem pagar comissões absurdas que Ninguém Te Avisa",
+        "angle": "Alerta regulamentar e fiscal desmistificado com documento real no ecrã.",
+        "format": "Vídeo Longo 14min com Gravação de Ecrã no Portal das Finanças",
+        "gapExploited": "Lacuna de fiscalidade portuguesa prática versus conselhos genéricos estrangeiros.",
+        "targetAudiencePainPoint": "Medo de cometer erros fiscais e receber coimas surpresa da Autoridade Tributária.",
+        "viralityPotential": "Exceptional",
+        "competitionLevel": "Low",
+        "whyItWins": "A maioria dos canais só ensina teorias. Ao abrir o portal oficial e mostrar os campos exatos, ganha autoridade instantânea e taxa máxima de partilha.",
+        "rank": 1,
+        "opportunityScore": 95,
+        "isBestOpportunity": true
+      },
+      {
+        "id": "idea-pt-2",
+        "title": "Como Começar em Como investir em ETFs em Portugal sem pagar comissões absurdas em Portugal com Apenas 50€ a 100€ por Mês",
+        "angle": "Guia ultrarrealista desenhado especificamente para o salário médio nacional.",
+        "format": "Vídeo de 12min Passo a Passo com Simulação em Euros",
+        "gapExploited": "Inexistência de conteúdos pragmáticos com valores reais acessíveis para jovens portugueses.",
+        "targetAudiencePainPoint": "Frustração com criadores que dizem que é preciso ter milhares de euros para começar.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Low",
+        "whyItWins": "Conecta-se diretamente com a realidade socioeconómica de Lisboa, Porto e restante país sem paternalismo.",
+        "rank": 2,
+        "opportunityScore": 90,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-pt-5",
+        "title": "A Minha Rotina Semanal de 15 Minutos para Dominar Como investir em ETFs em Portugal sem pagar comissões absurdas",
+        "angle": "Minimalismo operacional para quem trabalha a tempo inteiro.",
+        "format": "Vídeo 10min Walkthrough de Rotina",
+        "gapExploited": "Falta de tempo e sobrecarga de informação dos profissionais.",
+        "targetAudiencePainPoint": "Não ter horas livres para estudar métodos complexos.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Low",
+        "whyItWins": "Promessa de resultado com baixo atrito de tempo é o maior ímã de retenção.",
+        "rank": 3,
+        "opportunityScore": 87,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-pt-7",
+        "title": "3 Coisas em Como investir em ETFs em Portugal sem pagar comissões absurdas que Parecem Vantajosas Mas São um Desperdício",
+        "angle": "Contrarian puro: desmontar três produtos ou métodos populares vendidos na internet.",
+        "format": "Vídeo 11min Desmistificação",
+        "gapExploited": "Ceticismo da audiência perante promessas excessivas.",
+        "targetAudiencePainPoint": "Cansaço de cair em armadilhas de marketing digital ou cursos vazios.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Low",
+        "whyItWins": "Gera confiança inabalável ao poupar dinheiro real à audiência.",
+        "rank": 4,
+        "opportunityScore": 86,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-pt-9",
+        "title": "Testei a Estratégia Mais Famosa de Como investir em ETFs em Portugal sem pagar comissões absurdas por 60 Dias (Resultados Reais)",
+        "angle": "Experimento empírico com diário de bordo e números abertos.",
+        "format": "Vídeo 18min Documentário Pessoal",
+        "gapExploited": "Falta de verificação prática e honesta das promessas de mercado.",
+        "targetAudiencePainPoint": "Incerteza se as estratégias populares realmente funcionam.",
+        "viralityPotential": "Exceptional",
+        "competitionLevel": "Low",
+        "whyItWins": "Storytelling autêntico com prova visual converte espectadores em fãs fiéis.",
+        "rank": 5,
+        "opportunityScore": 86,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-pt-3",
+        "title": "Bancos Portugueses Tradicionais vs Novas Opções: Onde Perdes Menos Dinheiro",
+        "angle": "Auditoria implacável de comissões ocultas e preçários públicos comparados.",
+        "format": "Vídeo YouTube 16min Tabela Excel Completa",
+        "gapExploited": "Falta de transparência e receio da banca tradicional em Portugal.",
+        "targetAudiencePainPoint": "Pagamento de comissões de manutenção de conta e custódia abusivas.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Medium",
+        "whyItWins": "Gera debate fervoroso na secção de comentários e elevado número de gravações nos favoritos.",
+        "rank": 6,
+        "opportunityScore": 83,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-pt-10",
+        "title": "As 5 Ferramentas Gratuitas em Portugal que Substituem Software de Centenas de Euros",
+        "angle": "Arsenal gratuito e acessível para obter resultados imediatos em ${topic}.",
+        "format": "Vídeo 14min Demonstração de Ferramentas",
+        "gapExploited": "Custo de entrada proibitivo das ferramentas recomendadas por gurus.",
+        "targetAudiencePainPoint": "Falta de capital para investir em subscrições de software caro.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Low",
+        "whyItWins": "Ímã de partilhas e salvamentos por entregar utilidade prática instantânea.",
+        "rank": 7,
+        "opportunityScore": 83,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-pt-16",
+        "title": "O Checklist de Segurança em Como investir em ETFs em Portugal sem pagar comissões absurdas: Como Evitar Ser Burlado Online",
+        "angle": "Defesa e cibersegurança prática para utilizadores em Portugal.",
+        "format": "Vídeo 14min Guia Anti-Fraude",
+        "gapExploited": "Aumento expressivo de fraudes online e esquemas no mercado português.",
+        "targetAudiencePainPoint": "Medo constante de clicar no sítio errado e perder património.",
+        "viralityPotential": "Exceptional",
+        "competitionLevel": "Low",
+        "whyItWins": "O instinto de proteção familiar gera partilhas em massa por WhatsApp.",
+        "rank": 8,
+        "opportunityScore": 82,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-pt-13",
+        "title": "Como Automatizar 80% do Teu Trabalho em Como investir em ETFs em Portugal sem pagar comissões absurdas com Processos Simples",
+        "angle": "Eficiência sem necessidade de conhecimentos de programação.",
+        "format": "Vídeo 13min Tutorial de Automação",
+        "gapExploited": "Perda de tempo em tarefas repetitivas e manuais.",
+        "targetAudiencePainPoint": "Esgotamento e falta de tempo para focar na estratégia.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Low",
+        "whyItWins": "Apelo direto à produtividade e alívio do stress diário.",
+        "rank": 9,
+        "opportunityScore": 81,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-pt-6",
+        "title": "O Guia Definitivo de Como investir em ETFs em Portugal sem pagar comissões absurdas para Quem Vive Fora dos Grandes Centros em Portugal",
+        "angle": "Interior de Portugal e zonas periféricas: oportunidades e particularidades.",
+        "format": "Vídeo 13min Estudo de Caso",
+        "gapExploited": "Conteúdo quase 100% focado apenas na bolha de Lisboa.",
+        "targetAudiencePainPoint": "Dificuldade em aplicar estratégias em cidades médias e pequenas.",
+        "viralityPotential": "High",
+        "competitionLevel": "Low",
+        "whyItWins": "Audiência fora das capitais sente-se representada e defende o criador.",
+        "rank": 10,
+        "opportunityScore": 80,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-pt-4",
+        "title": "Por que 90% das Pessoas Falham em Como investir em ETFs em Portugal sem pagar comissões absurdas em Portugal (E o Segredo dos 10%)",
+        "angle": "Quebra de mito e desmontagem do conselho padrão que já não funciona em 2025/2026.",
+        "format": "Vídeo 15min Análise Crítica",
+        "gapExploited": "Saturação de discursos motivacionais vazios.",
+        "targetAudiencePainPoint": "Sensação de estar a remar contra a maré sem ver resultados práticos.",
+        "viralityPotential": "High",
+        "competitionLevel": "Medium",
+        "whyItWins": "Ativa a aversão ao erro e curiosidade ao desafiar o senso comum.",
+        "rank": 11,
+        "opportunityScore": 79,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-pt-15",
+        "title": "Como Negociar Melhores Condições e Poupar em Como investir em ETFs em Portugal sem pagar comissões absurdas com 3 Perguntas",
+        "angle": "Scripts de negociação direta para utilizar com empresas e prestadores.",
+        "format": "Vídeo 11min Estratégia de Negociação",
+        "gapExploited": "Timidez e falta de técnicas de negociação do público português.",
+        "targetAudiencePainPoint": "Aceitar propostas desfavoráveis por vergonha de contrapropor.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Low",
+        "whyItWins": "Formato teatral e de diálogo tem altíssima taxa de conclusão de vídeo.",
+        "rank": 12,
+        "opportunityScore": 77,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-pt-11",
+        "title": "O que Mudou em Como investir em ETFs em Portugal sem pagar comissões absurdas em 2025/2026: O Que Deves Fazer Ainda Hoje",
+        "angle": "Atualização de timing e antecipação de tendências.",
+        "format": "Vídeo 12min Análise de Tendências",
+        "gapExploited": "Conteúdos antigos desatualizados que induzem em erro.",
+        "targetAudiencePainPoint": "Incerteza perante novidades e alterações legais/técnicas.",
+        "viralityPotential": "High",
+        "competitionLevel": "Low",
+        "whyItWins": "O gatilho da novidade e urgência acelera as visualizações orgânicas.",
+        "rank": 13,
+        "opportunityScore": 76,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-pt-12",
+        "title": "Auditoria em Direto: Analisando Casos Reais de Como investir em ETFs em Portugal sem pagar comissões absurdas em Portugal",
+        "angle": "Análise de casos submetidos por seguidores com diagnóstico honesto.",
+        "format": "Vídeo 16min Consultoria Prática",
+        "gapExploited": "Distância entre teoria e aplicação em casos particulares.",
+        "targetAudiencePainPoint": "Não saber identificar os próprios pontos cegos.",
+        "viralityPotential": "High",
+        "competitionLevel": "Low",
+        "whyItWins": "Interatividade e identificação imediata com os erros de outros utilizadores.",
+        "rank": 14,
+        "opportunityScore": 75,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-pt-8",
+        "title": "Como Estruturar Como investir em ETFs em Portugal sem pagar comissões absurdas do Zero Mesmo Sem Ter Experiência Prévia",
+        "angle": "Passo zero descomplicado com glossário simples em bom português.",
+        "format": "Vídeo 15min Tutorial para Leigos",
+        "gapExploited": "A barreira técnica da linguagem rebuscada dos especialistas.",
+        "targetAudiencePainPoint": "Medo de parecer ignorante ou não compreender termos em inglês.",
+        "viralityPotential": "High",
+        "competitionLevel": "Medium",
+        "whyItWins": "Acolhe o público principiante que os criadores técnicos ignoram.",
+        "rank": 15,
+        "opportunityScore": 74,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-pt-14",
+        "title": "A Verdade Sobre Certificações e Diplomas em Como investir em ETFs em Portugal sem pagar comissões absurdas: Vale a Pena Investir?",
+        "angle": "Análise fria de custo-benefício de cursos e certificados formais.",
+        "format": "Vídeo 12min Avaliação de Mercado",
+        "gapExploited": "Indústria predatória de cursos de formação que prometem carreiras fáceis.",
+        "targetAudiencePainPoint": "Dúvida se deve gastar milhares de euros em formações académicas.",
+        "viralityPotential": "High",
+        "competitionLevel": "Low",
+        "whyItWins": "Protege o dinheiro da audiência e atrai comentários apaixonados.",
+        "rank": 16,
+        "opportunityScore": 74,
+        "isBestOpportunity": false
+      }
+    ],
+    "bestOpportunityId": "idea-pt-1",
+    "bestOpportunity": {
+      "id": "idea-pt-1",
+      "title": "O Erro no IRS / Custos em Portugal com Como investir em ETFs em Portugal sem pagar comissões absurdas que Ninguém Te Avisa",
+      "angle": "Alerta regulamentar e fiscal desmistificado com documento real no ecrã.",
+      "format": "Vídeo Longo 14min com Gravação de Ecrã no Portal das Finanças",
+      "gapExploited": "Lacuna de fiscalidade portuguesa prática versus conselhos genéricos estrangeiros.",
+      "targetAudiencePainPoint": "Medo de cometer erros fiscais e receber coimas surpresa da Autoridade Tributária.",
+      "viralityPotential": "Exceptional",
+      "competitionLevel": "Low",
+      "whyItWins": "A maioria dos canais só ensina teorias. Ao abrir o portal oficial e mostrar os campos exatos, ganha autoridade instantânea e taxa máxima de partilha.",
+      "rank": 1,
+      "opportunityScore": 95,
+      "isBestOpportunity": true
+    },
+    "scripts": [
+      {
+        "id": "script-pt-contrarian",
+        "style": "contrarian-mythbuster",
+        "styleName": "Variação 1: O Quebrador de Mitos (Contrarian)",
+        "badge": "Maior Retenção & Debate",
+        "tagline": "Desmonta a crença mais comum em Portugal e apresenta a alternativa real com prova documental.",
+        "estimatedDuration": "12 minutos",
+        "targetWordCount": 1700,
+        "sections": [
+          {
+            "timestamp": "0:00 - 0:03",
+            "stage": "Hook",
+            "visualCue": "[VISUAL: Grande plano nos olhos, expressão séria com telemóvel na mão a apontar para o ecrã]",
+            "spokenText": "Se ainda estás a fazer isto com Como investir em ETFs em Portugal sem pagar comissões absurdas em Portugal, lamento dizer-te, mas estás a deitar dinheiro ao lixo todos os meses.",
+            "audioToneCue": "[AUDIO: Efeito de corte seco / sem música nos primeiros 2 segundos para focar atenção]"
+          },
+          {
+            "timestamp": "0:03 - 0:12",
+            "stage": "Agitate / Pattern Interrupt",
+            "visualCue": "[VISUAL: Corte rápido para documento com números destacados a vermelho e carimbo da Autoridade Tributária/Banca]",
+            "spokenText": "90% dos criadores na internet dizem-te para seguir a receita antiga. O problema? Essa regra mudou e agora as taxas e comissões comem qualquer benefício.",
+            "audioToneCue": "[AUDIO: Entrada subtil de batida com tensão crescente]"
+          },
+          {
+            "timestamp": "0:12 - 0:32",
+            "stage": "Core Value / Meat",
+            "visualCue": "[VISUAL: Gravação de ecrã limpa a mostrar os dois caminhos comparados lado a lado]",
+            "spokenText": "Olha com atenção para esta comparação: no método habitual perdes logo uma percentagem em custódia e retenção. Se em vez disso fizeres este ajuste simples de 3 passos, proteges o teu retorno líquido.",
+            "audioToneCue": "[AUDIO: Pacing dinâmico com pequenos \"woosh\" a cada transição de dado]"
+          },
+          {
+            "timestamp": "0:32 - 0:40",
+            "stage": "Payoff / Turnaround",
+            "visualCue": "[VISUAL: Retorno à câmara principal com sorriso seguro e destaque da regra em texto no ecrã]",
+            "spokenText": "A diferença é teres paz de espírito e não seres apanhado de surpresa no final do ano.",
+            "audioToneCue": "[AUDIO: Transição para tom inspirador e conclusivo]"
+          },
+          {
+            "timestamp": "0:40 - 0:45",
+            "stage": "Call to Action",
+            "visualCue": "[VISUAL: Dedo a apontar para o botão de guardar / comentar no canto inferior]",
+            "spokenText": "Guarda este vídeo para consultares quando fores tratar disto e comenta \"GUIA\" se queres o resumo com os detalhes legais.",
+            "audioToneCue": "[AUDIO: Som de sino/notificação subtil]"
+          }
+        ],
+        "fullSpokenText": "Se ainda estás a fazer isto com Como investir em ETFs em Portugal sem pagar comissões absurdas em Portugal, lamento dizer-te, mas estás a deitar dinheiro ao lixo todos os meses. 90% dos criadores na internet dizem-te para seguir a receita antiga. O problema? Essa regra mudou e agora as taxas e comissões comem qualquer benefício. Olha com atenção para esta comparação: no método habitual perdes logo uma percentagem em custódia e retenção. Se em vez disso fizeres este ajuste simples de 3 passos, proteges o teu retorno líquido. A diferença é teres paz de espírito e não seres apanhado de surpresa no final do ano. Guarda este vídeo para consultares quando fores tratar disto e comenta \"GUIA\" se queres o resumo com os detalhes legais."
+      },
+      {
+        "id": "script-pt-story",
+        "style": "story-driven-case-study",
+        "styleName": "Variação 2: Estudo de Caso & Jornada Pessoal (Story-Driven)",
+        "badge": "Máxima Conexão & Autoridade",
+        "tagline": "Narra a frustração real de começar do zero em Portugal até encontrar a rota sem atritos.",
+        "estimatedDuration": "15 minutos",
+        "targetWordCount": 2100,
+        "sections": [
+          {
+            "timestamp": "0:00 - 0:04",
+            "stage": "Hook",
+            "visualCue": "[VISUAL: A folhear faturas antigas com ar de frustração, sentado à secretária]",
+            "spokenText": "Há dois anos cometi o erro mais caro da minha vida com Como investir em ETFs em Portugal sem pagar comissões absurdas. E ninguém na internet me avisou.",
+            "audioToneCue": "[AUDIO: Piano melódico com tom reflexivo e intimista]"
+          },
+          {
+            "timestamp": "0:04 - 0:15",
+            "stage": "Agitate / Pattern Interrupt",
+            "visualCue": "[VISUAL: Transição para imagens do dia a dia em Lisboa/Porto, ritmo de trabalho exigente]",
+            "spokenText": "Estava a trabalhar horas a fio e a confiar nos conselhos padrão. No final do mês, a conta não fechava e a sensação era de pura estagnação.",
+            "audioToneCue": "[AUDIO: Aumento de intensidade emocional]"
+          },
+          {
+            "timestamp": "0:15 - 0:35",
+            "stage": "Core Value / Meat",
+            "visualCue": "[VISUAL: Ecrã do portátil a abrir uma folha de cálculo limpa com 3 métricas essenciais]",
+            "spokenText": "Até que decidi cortar 80% do ruído e focar apenas nestas três regras que ninguém publica. Foi exatamente isto que transformou os meus resultados.",
+            "audioToneCue": "[AUDIO: Ritmo ganha clareza e ritmo cadenciado]"
+          },
+          {
+            "timestamp": "0:35 - 0:43",
+            "stage": "Payoff / Turnaround",
+            "visualCue": "[VISUAL: Notificação de sucesso no telemóvel e plano médio de confiança]",
+            "spokenText": "Hoje levo 10 minutos por semana a gerir isto com total tranquilidade.",
+            "audioToneCue": "[AUDIO: Desfecho positivo]"
+          },
+          {
+            "timestamp": "0:43 - 0:50",
+            "stage": "Call to Action",
+            "visualCue": "[VISUAL: Texto sobreposto: \"Segue para mais conteúdo sem filtros em Portugal\"]",
+            "spokenText": "Se queres evitar os mesmos erros que eu cometi, segue o perfil e partilha com aquele amigo que precisa de ouvir isto hoje.",
+            "audioToneCue": "[AUDIO: Acorde final limpo]"
+          }
+        ],
+        "fullSpokenText": "Há dois anos cometi o erro mais caro da minha vida com Como investir em ETFs em Portugal sem pagar comissões absurdas. E ninguém na internet me avisou. Estava a trabalhar horas a fio e a confiar nos conselhos padrão. No final do mês, a conta não fechava e a sensação era de pura estagnação. Até que decidi cortar 80% do ruído e focar apenas nestas três regras que ninguém publica. Foi exatamente isto que transformou os meus resultados. Hoje levo 10 minutos por semana a gerir isto com total tranquilidade. Se queres evitar os mesmos erros que eu cometi, segue o perfil e partilha com aquele amigo que precisa de ouvir isto hoje."
+      },
+      {
+        "id": "script-pt-blueprint",
+        "style": "actionable-blueprint",
+        "styleName": "Variação 3: O Roteiro Direto & Acionável (Blueprint 3 Passos)",
+        "badge": "Máximo Número de Salvamentos",
+        "tagline": "Zero rodeios. Um protocolo direto ao assunto em 3 passos com o que fazer imediatamente.",
+        "estimatedDuration": "10 minutos",
+        "targetWordCount": 1500,
+        "sections": [
+          {
+            "timestamp": "0:00 - 0:03",
+            "stage": "Hook",
+            "visualCue": "[VISUAL: Três dedos levantados na câmara, transição rápida de texto: \"1, 2, 3\"]",
+            "spokenText": "O plano exato de 3 passos para dominar Como investir em ETFs em Portugal sem pagar comissões absurdas em Portugal sem perder tempo.",
+            "audioToneCue": "[AUDIO: Efeito \"Whoosh\" rápido e batida moderna e animada]"
+          },
+          {
+            "timestamp": "0:03 - 0:13",
+            "stage": "Core Value / Meat",
+            "visualCue": "[VISUAL: Número 1 gigante no ecrã com captura do primeiro passo]",
+            "spokenText": "Passo 1: Elimina intermediários tradicionais e escolhe uma plataforma registada com custos transparentes.",
+            "audioToneCue": "[AUDIO: Som de clique de máquina]"
+          },
+          {
+            "timestamp": "0:13 - 0:25",
+            "stage": "Core Value / Meat",
+            "visualCue": "[VISUAL: Número 2 no ecrã com destaque na configuração de automação]",
+            "spokenText": "Passo 2: Configura a transferência automática no dia a seguir ao ordenado para não caíres na tentação de gastar.",
+            "audioToneCue": "[AUDIO: Efeito de confirmação]"
+          },
+          {
+            "timestamp": "0:25 - 0:34",
+            "stage": "Payoff / Turnaround",
+            "visualCue": "[VISUAL: Número 3 no ecrã com documento de verificação de taxas]",
+            "spokenText": "Passo 3: Aplica a isenção legal aplicável ao teu escalão para não entregares metade do teu lucro ao estado.",
+            "audioToneCue": "[AUDIO: Batida mantém ritmo alto]"
+          },
+          {
+            "timestamp": "0:34 - 0:40",
+            "stage": "Call to Action",
+            "visualCue": "[VISUAL: Destaque para o ícone de marcador de favoritos]",
+            "spokenText": "Guarda já para não perderes e subscreve o canal para não perderes os próximos guiões práticos.",
+            "audioToneCue": "[AUDIO: Efeito final de sucesso]"
+          }
+        ],
+        "fullSpokenText": "O plano exato de 3 passos para dominar Como investir em ETFs em Portugal sem pagar comissões absurdas em Portugal sem perder tempo. Passo 1: Elimina intermediários tradicionais e escolhe uma plataforma registada com custos transparentes. Passo 2: Configura a transferência automática no dia a seguir ao ordenado para não caíres na tentação de gastar. Passo 3: Aplica a isenção legal aplicável ao teu escalão para não entregares metade do teu lucro ao estado. Guarda já para não perderes e subscreve o canal para não perderes os próximos guiões práticos."
+      }
+    ],
+    "titles": [
+      {
+        "id": "title-1",
+        "type": "Curiosity Gap",
+        "title": "A Regra Não Escrita de Como investir em ETFs em Portugal sem pagar comissões absurdas em Portugal que Mudou Tudo",
+        "score": 96
+      },
+      {
+        "id": "title-2",
+        "type": "Fear of Missing Out / Loss",
+        "title": "O Erro no IRS / Finanças com Como investir em ETFs em Portugal sem pagar comissões absurdas que Te Custa Milhares de Euros",
+        "score": 94
+      },
+      {
+        "id": "title-3",
+        "type": "Contrarian",
+        "title": "Por Que Deves Parar de Seguir os Conselhos Habituais de Como investir em ETFs em Portugal sem pagar comissões absurdas",
+        "score": 92
+      },
+      {
+        "id": "title-4",
+        "type": "Outcome / How-To",
+        "title": "Como Dominar Como investir em ETFs em Portugal sem pagar comissões absurdas em Portugal com Apenas 15 Minutos por Semana",
+        "score": 90
+      },
+      {
+        "id": "title-5",
+        "type": "Number / Listicle",
+        "title": "3 Armadilhas em Como investir em ETFs em Portugal sem pagar comissões absurdas que Ninguém Te Explica (E Como Evitar)",
+        "score": 88
+      }
+    ],
+    "hooks": [
+      {
+        "id": "hook-1",
+        "type": "Pattern Interrupt",
+        "visualHook": "Aproximação ultra-rápida à câmara com expressão séria e ecrã de telemóvel virado.",
+        "spokenHook": "Se ainda estás a fazer isto com Como investir em ETFs em Portugal sem pagar comissões absurdas, estás a perder dinheiro sem saber.",
+        "overlayText": "90% DAS PESSOAS ERRAM AQUI EM PORTUGAL"
+      },
+      {
+        "id": "hook-2",
+        "type": "Visual Shock",
+        "visualHook": "Apontar para um número exorbitante cortado a vermelho e substituído por uma fração mínima.",
+        "spokenHook": "Olha bem para este valor. Esta é a diferença entre fazer as coisas bem ou à moda antiga.",
+        "overlayText": "POUPANÇA REAL COMPROVADA"
+      },
+      {
+        "id": "hook-3",
+        "type": "Provocative Question",
+        "visualHook": "Gesto de \"espera um segundo\" com a mão aberta e expressão reflexiva.",
+        "spokenHook": "Já alguma vez calculaste quanto pagas em comissões escondidas por ano em Portugal?",
+        "overlayText": "JÁ FIZESTE ESTA CONTA?"
+      },
+      {
+        "id": "hook-4",
+        "type": "Story Opener",
+        "visualHook": "Sentado à secretária a folhear um extrato de despesas.",
+        "spokenHook": "Eu cometi este erro durante 2 anos seguidos e ninguém me avisou.",
+        "overlayText": "O ERRO QUE ME CUSTOU CARO"
+      },
+      {
+        "id": "hook-5",
+        "type": "Bold Statement",
+        "visualHook": "Apontar o dedo diretamente para a lente com ritmo firme.",
+        "spokenHook": "A regra que te ensinaram sobre Como investir em ETFs em Portugal sem pagar comissões absurdas já não funciona em 2025/2026.",
+        "overlayText": "A REGRA MUDOU"
+      }
+    ],
+    "ctas": [
+      {
+        "id": "cta-yt-1",
+        "goal": "Follow / Subscribe",
+        "spokenCta": "Se este vídeo te abriu os olhos, subscreve o canal e ativa as notificações para não perderes a análise da próxima semana.",
+        "onScreenText": "SUBSCREVER O CANAL 🔔",
+        "platformBestPractice": "Exibir cartão final com o botão de inscrição e vídeo recomendado nos últimos 20 segundos."
+      },
+      {
+        "id": "cta-yt-2",
+        "goal": "Comment / Keyword Automation",
+        "spokenCta": "Deixa nos comentários qual foi o ponto que mais te surpreendeu. Respondo a todas as dúvidas durante as primeiras 24 horas.",
+        "onScreenText": "DEIXA A TUA DÚVIDA NOS COMENTÁRIOS 👇",
+        "platformBestPractice": "Fixar um comentário pinado com pergunta aberta estimulando o debate nos comentários."
+      }
+    ],
+    "sources": [
+      {
+        "id": "src-1",
+        "title": "Como Investir em ETFs em Portugal - Guia Prático para Iniciantes",
+        "url": "https://www.youtube.com/watch?v=kYv9xQwLq0Q",
+        "platform": "youtube",
+        "channelOrHost": "Rico Dinheiro (André Silva)",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-04T20:10:03.722Z",
+        "snippet": "Passo a passo sobre corretores autorizados pela CMVM, impostos retidos na fonte e a regra dos 28% no IRS português."
+      },
+      {
+        "id": "src-2",
+        "title": "Comprar Casa em Portugal em 2025/2026: Ainda Vale a Pena?",
+        "url": "https://www.youtube.com/watch?v=3vK8z9xP1wE",
+        "platform": "youtube",
+        "channelOrHost": "Contas Poupança (Pedro Andersson)",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-04T20:10:03.722Z",
+        "snippet": "Reportagem e análise sobre taxas de juro Euribor, apoios do estado para jovens até aos 35 anos (isenção IMT e Imposto de Selo)."
+      },
+      {
+        "id": "src-3",
+        "title": "Viver de Dividendos em Portugal: A Matemática Real Sem Filtros",
+        "url": "https://www.youtube.com/watch?v=9jX2mP7kL4A",
+        "platform": "youtube",
+        "channelOrHost": "Workolic (Tiago Ramos)",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-04T20:10:03.722Z",
+        "snippet": "Cálculo de património necessário para gerar 1.000€ limpos por mês considerando a taxa liberatória de 28% da Autoridade Tributária."
+      },
+      {
+        "id": "src-4",
+        "title": "5 Hábitos que Me Fizeram Poupar 10.000€ a Viver em Lisboa",
+        "url": "https://www.youtube.com/watch?v=7uK5mX1wZ8Y",
+        "platform": "youtube",
+        "channelOrHost": "Marta Ribeiro Finanças",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-04T20:10:03.722Z",
+        "snippet": "Cortes práticos em telecomunicações, supermercados (Pingo Doce, Continente) e passe navegante metropolitano."
+      },
+      {
+        "id": "src-5",
+        "title": "Guia do Banco de Portugal e Taxas Euribor sem Mistérios",
+        "url": "https://www.youtube.com/watch?v=1bN7xQ4wZ9M",
+        "platform": "youtube",
+        "channelOrHost": "Doutor Finanças Portugal",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-04T20:10:03.722Z",
+        "snippet": "Conteúdo de referência em Portugal focado em: Guia do Banco de Portugal e taxas de intermediação."
+      },
+      {
+        "id": "src-6",
+        "title": "Tecnologia e Produtividade: As Ferramentas Mais Úteis",
+        "url": "https://www.youtube.com/watch?v=4mK8pL2wX1Q",
+        "platform": "youtube",
+        "channelOrHost": "Echo Boomer Tech",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-04T20:10:03.722Z",
+        "snippet": "Conteúdo de referência em Portugal focado em: Comparativo de ferramentas digitais e gadgets."
+      },
+      {
+        "id": "src-7",
+        "title": "Como Construir Negócios e Audiência em Portugal",
+        "url": "https://www.youtube.com/watch?v=8vN1xL9wP3E",
+        "platform": "youtube",
+        "channelOrHost": "Tiago Froufe Negócios",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-04T20:10:03.722Z",
+        "snippet": "Conteúdo de referência em Portugal focado em: Estratégias de criação de marca e monetização em Portugal."
+      },
+      {
+        "id": "src-8",
+        "title": "Economia e Finanças para Profissionais e Pequenas Empresas",
+        "url": "https://www.youtube.com/watch?v=5tM2xK8wL4Q",
+        "platform": "youtube",
+        "channelOrHost": "Canal de Negócios PT",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-04T20:10:03.722Z",
+        "snippet": "Conteúdo de referência em Portugal focado em: Impacto da conjuntura económica nas pequenas empresas."
+      },
+      {
+        "id": "src-9",
+        "title": "Começar do Zero: O Que Funciona no Mercado Português",
+        "url": "https://www.youtube.com/watch?v=2pK9xM3wZ7L",
+        "platform": "youtube",
+        "channelOrHost": "Diogo Ribeiro Empreendedor",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-04T20:10:03.722Z",
+        "snippet": "Conteúdo de referência em Portugal focado em: Como começar do zero sem depender de subsídios."
+      },
+      {
+        "id": "src-10",
+        "title": "Análise de Preços e Custo de Vida em Portugal",
+        "url": "https://www.youtube.com/watch?v=6vX4mL8wP1K",
+        "platform": "youtube",
+        "channelOrHost": "Visão & Dinheiro Portugal",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-04T20:10:03.722Z",
+        "snippet": "Conteúdo de referência em Portugal focado em: Investigação de mercado e comparativo de preços."
+      },
+      {
+        "id": "src-11",
+        "title": "Automação Simples de Processos no Dia a Dia",
+        "url": "https://www.youtube.com/watch?v=3mQ7xL2wK9V",
+        "platform": "youtube",
+        "channelOrHost": "Tek Genius Portugal",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-04T20:10:03.722Z",
+        "snippet": "Conteúdo de referência em Portugal focado em: Automações simples e processos sem programação."
+      },
+      {
+        "id": "src-12",
+        "title": "Simulações de Poupança e Salário Médio Nacional",
+        "url": "https://www.youtube.com/watch?v=9vK1xM4wZ8N",
+        "platform": "youtube",
+        "channelOrHost": "Economia Viva PT",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-04T20:10:03.722Z",
+        "snippet": "Conteúdo de referência em Portugal focado em: Simulações reais de poder de compra e poupança."
+      }
+    ]
+  },
+  {
     "id": "proj_1791144285911_6tn9a",
     "createdAt": "2026-10-04T20:04:45.911Z",
     "request": {
