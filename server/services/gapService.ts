@@ -79,8 +79,7 @@ export function detectContentGaps(req: ResearchRequest, competitors: CompetitorR
       marketNuance: 'Brasil: O gancho precisa de ritmo acelerado, corte de respiro e legenda dinâmica sincronizada.',
       opportunityLevel: 'very-high',
     });
-  } else {
-    // es-ES
+  } else if (market === 'es-ES') {
     gaps.push({
       id: 'gap-es-1',
       category: 'underserved-market-need',
@@ -115,6 +114,44 @@ export function detectContentGaps(req: ResearchRequest, competitors: CompetitorR
       description: `En España predomina el vídeo largo de charla o entrevista. Hay un hueco enorme para creadores que sinteticen la clave en 45 segundos con gráficos dinámicos y llamada a la acción clara.`,
       whyCompetitorsMissedIt: 'Los creadores hispanohablantes tradicionales siguen anclados al formato de tertulia larga.',
       marketNuance: 'España: Dinamismo europeo, tono directo, ironía sutil y llamada a guardar el reel.',
+      opportunityLevel: 'very-high',
+    });
+  } else {
+    // en-GB (United Kingdom)
+    gaps.push({
+      id: 'gap-uk-1',
+      category: 'underserved-market-need',
+      title: 'UK Tax Rules, HMRC Allowances & Fiscal Drag vs Generic US Advice',
+      description: `Too many videos about ${topic} uncritically import US concepts (401k, Roth IRA, IRS rules), completely ignoring UK-specific mechanisms such as HMRC tax years (6 April to 5 April), the £20,000 ISA allowance, Capital Gains Tax cuts, National Insurance thresholds, and SIPP tax relief.`,
+      whyCompetitorsMissedIt: 'Creators frequently regurgitate American YouTube trends without adapting to UK tax law, HMRC self-assessment, and the British cost-of-living reality.',
+      marketNuance: 'United Kingdom (en-GB): UK viewers demand figures in British Pounds (£), tax year deadlines, Stamp Duty / council tax nuances, and authorised platforms regulated by the Financial Conduct Authority (FCA).',
+      opportunityLevel: 'critical',
+    });
+    gaps.push({
+      id: 'gap-uk-2',
+      category: 'unanswered-question',
+      title: 'Realistic UK Household Budgets vs Influencer Extravagance',
+      description: `With typical UK median take-home pay around £2,100 to £2,600 per month and soaring private rent, energy bills, and mortgages, advice demanding £1,000 monthly contributions causes viewer disengagement. There is a glaring lack of practical walkthroughs starting with £50 to £150 a month.`,
+      whyCompetitorsMissedIt: 'Content creators chase sensationalist thumbnails with inflated figures, alienating everyday UK workers and young professionals.',
+      marketNuance: 'UK: A grounded, pragmatic tone that respects everyday British cost pressures without condescending guru posturing.',
+      opportunityLevel: 'very-high',
+    });
+    gaps.push({
+      id: 'gap-uk-3',
+      category: 'oversaturated-angle',
+      title: 'Over-Theoretical Dictionaries: We Want Real Screen Walkthroughs and Exact UK Steps',
+      description: `Over 70% of UK competitors produce static talking-head monologues repeating textbook definitions ("What is an ETF" / "What is ${topic}"). Viewers already know the theory; they want to see the mobile app screen, which specific fund to choose, which HMRC box to tick, and which hidden platform fees to avoid.`,
+      whyCompetitorsMissedIt: 'Talking in front of a camera is faster than recording live screen walkthroughs and auditing transparent fee schedules.',
+      marketNuance: 'UK: High demand for crisp screen-recordings on mobile/desktop without tedious self-indulgent preambles.',
+      opportunityLevel: 'high',
+    });
+    gaps.push({
+      id: 'gap-uk-4',
+      category: 'weak-competitor-execution',
+      title: 'Lack of Native Short-Form (Shorts/TikTok/Reels) with Immediate Practical Utility',
+      description: `Competitors in the UK still rely on sleepy 25-minute webinars or low-effort podcast snippets. There is a wide gap for a creator delivering 45-second, high-density, actionable advice filmed specifically for vertical feeds.`,
+      whyCompetitorsMissedIt: 'Lazy podcast clipping culture instead of purpose-built vertical hooks designed for UK viewers\' mobile habits.',
+      marketNuance: 'UK: Fast pacing, clean subtitles, understated British humour, and clear cues to save for later reference.',
       opportunityLevel: 'very-high',
     });
   }

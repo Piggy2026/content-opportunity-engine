@@ -318,7 +318,7 @@ export function generateScriptSuite(
         fullSpokenText: `Faz isso aqui hoje mesmo pra destravar ${topic} de uma vez por todas. Primeiro passo: abre o aplicativo e desativa as opções automáticas que só servem pra comer a sua margem. Segundo passo: programa a rotina pra rodar toda segunda-feira sem você precisar gastar neurônio pensando. Terceiro passo: reinveste o excedente seguindo a regra dos 80/20 pra multiplicar seu tempo. Salva agora na sua pasta pra não esquecer de configurar isso hoje à noite!`,
       }
     );
-  } else {
+  } else if (market === 'es-ES') {
     // Spain (Spanish) Scripts
     scripts.push(
       {
@@ -463,6 +463,153 @@ export function generateScriptSuite(
         fullSpokenText: `El protocolo de 3 pasos para optimizar ${topic} en España sin perder tiempo ni dinero. Paso 1: Elige una entidad con IBAN local y sede comunitaria para evitar líos con el modelo 720. Paso 2: Automatiza la operativa el día después de cobrar la nómina o facturación para que sea 100% pasivo. Paso 3: Aplica las deducciones autonómicas vigentes en tu comunidad autónoma para blindar tu ahorro. Guarda este vídeo para aplicarlo con calma esta semana y no perderte ninguna actualización.`,
       }
     );
+  } else {
+    const topicClean = topic.replace(/\s+in\s+the\s+UK/gi, '').replace(/\s+in\s+UK/gi, '').replace(/\s+UK/gi, '').trim();
+
+    // United Kingdom (British English) Scripts
+    scripts.push(
+      {
+        id: 'script-uk-contrarian',
+        style: 'contrarian-mythbuster',
+        styleName: 'Variation 1: The Contrarian Reality Check (Highest Retention & Debate)',
+        badge: 'Highest Retention & Debate',
+        tagline: 'Dismantles the most prevalent UK misconception and reveals the evidence-backed alternative.',
+        estimatedDuration: isShortsOrReels ? '45 seconds' : '12 minutes',
+        targetWordCount: isShortsOrReels ? 135 : 1700,
+        sections: [
+          {
+            timestamp: '0:00 - 0:03',
+            stage: 'Hook',
+            visualCue: '[VISUAL: Tight close-up to camera, serious expression holding a mobile displaying an HMRC or account alert]',
+            spokenText: 'If you are still doing this with ' + topicClean + ' in the UK, I\'m sorry to say, but you are throwing money away every single month.',
+            audioToneCue: '[AUDIO: Clean cut / silence in the first 2 seconds to focus viewer attention]',
+          },
+          {
+            timestamp: '0:03 - 0:12',
+            stage: 'Agitate / Pattern Interrupt',
+            visualCue: '[VISUAL: Quick cut to official UK figures with frozen tax thresholds and fee rates circled in red]',
+            spokenText: 'Ninety per cent of self-styled online experts tell you to follow the same old textbook playbook. The problem? Those thresholds have frozen, and stealth taxes combined with platform fees are quietly eating away at your returns.',
+            audioToneCue: '[AUDIO: Subtle rising percussive tension]',
+          },
+          {
+            timestamp: '0:12 - 0:32',
+            stage: 'Core Value / Meat',
+            visualCue: '[VISUAL: Clean screen-recording comparing the traditional route against the modern optimised protocol]',
+            spokenText: 'Look closely at this comparison: under the standard route, you immediately surrender a chunk to account charges and unnecessary HMRC drag. If you make this straightforward three-step tweak instead, your net return remains protected.',
+            audioToneCue: '[AUDIO: Upbeat, modern rhythm under clear speech]',
+          },
+          {
+            timestamp: '0:32 - 0:40',
+            stage: 'Payoff / Turnaround',
+            visualCue: '[VISUAL: Return to primary camera with confident posture and key takeaway emphasised on screen]',
+            spokenText: 'The real difference is gaining genuine peace of mind and not being caught off-guard with a surprise tax demand at the end of the tax year.',
+            audioToneCue: '[AUDIO: Reassuring harmonic resolve]',
+          },
+          {
+            timestamp: '0:40 - 0:45',
+            stage: 'Call to Action',
+            visualCue: '[VISUAL: Direct gesture towards the save/bookmark button with on-screen text]',
+            spokenText: 'Save this video so you have it ready when you sort this out, and leave a comment below if you want the checklist with the exact details.',
+            audioToneCue: '[AUDIO: Clean outro sting]',
+          },
+        ],
+        fullSpokenText: `If you are still doing this with ${topicClean} in the UK, I'm sorry to say, but you are throwing money away every single month. Ninety per cent of self-styled online experts tell you to follow the same old textbook playbook. The problem? Those thresholds have frozen, and stealth taxes combined with platform fees are quietly eating away at your returns. Look closely at this comparison: under the standard route, you immediately surrender a chunk to account charges and unnecessary HMRC drag. If you make this straightforward three-step tweak instead, your net return remains protected. The real difference is gaining genuine peace of mind and not being caught off-guard with a surprise tax demand at the end of the tax year. Save this video so you have it ready when you sort this out, and leave a comment below if you want the checklist with the exact details.`,
+      },
+      {
+        id: 'script-uk-story',
+        style: 'story-driven-case-study',
+        styleName: 'Variation 2: Personal Case Study & Journey (Maximum Authority & Trust)',
+        badge: 'Maximum Authority & Trust',
+        tagline: 'Walks through the real frustration of starting from scratch in the UK to finding a low-friction system.',
+        estimatedDuration: isShortsOrReels ? '50 seconds' : '15 minutes',
+        targetWordCount: isShortsOrReels ? 145 : 1900,
+        sections: [
+          {
+            timestamp: '0:00 - 0:04',
+            stage: 'Hook',
+            visualCue: '[VISUAL: Looking at a laptop screen with genuine frustration, mug of tea on desk]',
+            spokenText: 'Two years ago, I made the most expensive mistake of my life with ' + topicClean + ' in the UK. And nobody on the internet bothered to warn me.',
+            audioToneCue: '[AUDIO: Thoughtful, understated opening chords]',
+          },
+          {
+            timestamp: '0:04 - 0:15',
+            stage: 'Agitate / Pattern Interrupt',
+            visualCue: '[VISUAL: Rapid cut of early morning commute and endless paperwork]',
+            spokenText: 'I was working long hours, commuting, and trusting conventional advice. At the end of the month, the sums just didn\'t add up, and the feeling of financial stagnation was exhausting.',
+            audioToneCue: '[AUDIO: Building intensity and momentum]',
+          },
+          {
+            timestamp: '0:15 - 0:35',
+            stage: 'Core Value / Meat',
+            visualCue: '[VISUAL: Laptop screen displaying a clean spreadsheet with 3 core rules]',
+            spokenText: 'Until I decided to cut out eighty per cent of the noise and focus exclusively on these three simple rules. That was the turning point that completely altered my trajectory.',
+            audioToneCue: '[AUDIO: Confident, crisp delivery tone]',
+          },
+          {
+            timestamp: '0:35 - 0:43',
+            stage: 'Payoff / Turnaround',
+            visualCue: '[VISUAL: Calm mid-shot with relaxed, reassuring smile]',
+            spokenText: 'Today, it takes me barely ten minutes a week to manage everything with complete clarity and zero stress.',
+            audioToneCue: '[AUDIO: Warm, positive chord]',
+          },
+          {
+            timestamp: '0:43 - 0:50',
+            stage: 'Call to Action',
+            visualCue: '[VISUAL: On-screen caption: "Subscribe for honest, hype-free UK guides"]',
+            spokenText: 'If you want to dodge the costly blunders I made, follow the channel and share this with a mate who needs to hear it today.',
+            audioToneCue: '[AUDIO: Clean outro beat]',
+          },
+        ],
+        fullSpokenText: `Two years ago, I made the most expensive mistake of my life with ${topicClean} in the UK. And nobody on the internet bothered to warn me. I was working long hours, commuting, and trusting conventional advice. At the end of the month, the sums just didn't add up, and the feeling of financial stagnation was exhausting. Until I decided to cut out eighty per cent of the noise and focus exclusively on these three simple rules. That was the turning point that completely altered my trajectory. Today, it takes me barely ten minutes a week to manage everything with complete clarity and zero stress. If you want to dodge the costly blunders I made, follow the channel and share this with a mate who needs to hear it today.`,
+      },
+      {
+        id: 'script-uk-blueprint',
+        style: 'actionable-blueprint',
+        styleName: 'Variation 3: The Pragmatic 3-Step Blueprint (Highest Bookmark & Save Rate)',
+        badge: 'Highest Bookmark & Save Rate',
+        tagline: 'Zero waffle. A crisp, three-step action protocol you can implement straight away.',
+        estimatedDuration: isShortsOrReels ? '40 seconds' : '10 minutes',
+        targetWordCount: isShortsOrReels ? 120 : 1500,
+        sections: [
+          {
+            timestamp: '0:00 - 0:03',
+            stage: 'Hook',
+            visualCue: '[VISUAL: Three fingers held up to camera with clean text transition: "1, 2, 3"]',
+            spokenText: 'The exact three-step blueprint to master ' + topicClean + ' in the UK without wasting hours of your time.',
+            audioToneCue: '[AUDIO: Snappy whoosh effect and modern beat]',
+          },
+          {
+            timestamp: '0:03 - 0:13',
+            stage: 'Core Value / Meat',
+            visualCue: '[VISUAL: Bold number 1 on screen with screen capture of an FCA-regulated platform]',
+            spokenText: 'Step one: Cut out high-fee legacy intermediaries and opt for an FCA-regulated platform with genuinely transparent, capped charges.',
+            audioToneCue: '[AUDIO: Affirmative pop sound]',
+          },
+          {
+            timestamp: '0:13 - 0:25',
+            stage: 'Core Value / Meat',
+            visualCue: '[VISUAL: Number 2 on screen highlighting automated monthly standing order setup]',
+            spokenText: 'Step two: Set up an automated standing order for the day after payday so you\'re never tempted to spend what you intended to allocate.',
+            audioToneCue: '[AUDIO: Subtle ticking clock effect]',
+          },
+          {
+            timestamp: '0:25 - 0:34',
+            stage: 'Payoff / Turnaround',
+            visualCue: '[VISUAL: Number 3 on screen displaying HMRC tax allowance verification]',
+            spokenText: 'Step three: Make full use of your statutory allowances and tax relief so you aren\'t handing over unnecessary money to HMRC.',
+            audioToneCue: '[AUDIO: Upbeat chime]',
+          },
+          {
+            timestamp: '0:34 - 0:40',
+            stage: 'Call to Action',
+            visualCue: '[VISUAL: Highlight around the bookmark icon]',
+            spokenText: 'Bookmark this now so you don\'t lose it, and subscribe to the channel for more no-nonsense UK breakdowns.',
+            audioToneCue: '[AUDIO: Final closing chord]',
+          },
+        ],
+        fullSpokenText: `The exact three-step blueprint to master ${topicClean} in the UK without wasting hours of your time. Step one: Cut out high-fee legacy intermediaries and opt for an FCA-regulated platform with genuinely transparent, capped charges. Step two: Set up an automated standing order for the day after payday so you're never tempted to spend what you intended to allocate. Step three: Make full use of your statutory allowances and tax relief so you aren't handing over unnecessary money to HMRC. Bookmark this now so you don't lose it, and subscribe to the channel for more no-nonsense UK breakdowns.`,
+      }
+    );
   }
 
   // TITLES (Categorized by psychological framework)
@@ -484,7 +631,7 @@ export function generateScriptSuite(
       { id: 'title-4', type: 'Outcome / How-To', title: `Como Dominar ${topic} Começando com Pouco pelo Celular em 2026`, score: 91 },
       { id: 'title-5', type: 'Number / Listicle', title: `3 Truques Simples de ${topic} que Quase Ninguém Conhece`, score: 89 }
     );
-  } else {
+  } else if (market === 'es-ES') {
     // es-ES
     titles.push(
       { id: 'title-1', type: 'Curiosity Gap', title: `La Verdad Sobre ${topic} en España que Tu Gestoría No te Dice`, score: 96 },
@@ -492,6 +639,16 @@ export function generateScriptSuite(
       { id: 'title-3', type: 'Contrarian', title: `Por Qué el Consejo Típico de ${topic} es una Pérdida de Tiempo`, score: 92 },
       { id: 'title-4', type: 'Outcome / How-To', title: `Cómo Optimizar ${topic} en España Paso a Paso (Sin Humo)`, score: 91 },
       { id: 'title-5', type: 'Number / Listicle', title: `Las 3 Claves Legales en ${topic} que Marcan la Diferencia en España`, score: 89 }
+    );
+  } else {
+    // en-GB (United Kingdom)
+    const topicClean = topic.replace(/\s+in\s+the\s+UK/gi, '').replace(/\s+in\s+UK/gi, '').replace(/\s+UK/gi, '').trim();
+    titles.push(
+      { id: 'title-1', type: 'Curiosity Gap', title: `The Unwritten UK Rule of ${topicClean} That Changes Everything`, score: 96 },
+      { id: 'title-2', type: 'Fear of Missing Out / Loss', title: `The Costly HMRC & Fee Trap in ${topicClean} That Costs You Thousands`, score: 94 },
+      { id: 'title-3', type: 'Contrarian', title: `Why You Must Stop Following Standard Advice on ${topicClean} in the UK`, score: 92 },
+      { id: 'title-4', type: 'Outcome / How-To', title: `How to Master ${topicClean} in the UK in Just 15 Minutes a Week`, score: 91 },
+      { id: 'title-5', type: 'Number / Listicle', title: `3 Traps in ${topicClean} That Nobody Explains in the UK (And How to Avoid Them)`, score: 89 }
     );
   }
 
@@ -574,7 +731,7 @@ export function generateScriptSuite(
         overlayText: 'DESTRAVEI MEUS RESULTADOS',
       }
     );
-  } else {
+  } else if (market === 'es-ES') {
     // es-ES
     hooks.push(
       {
@@ -611,6 +768,46 @@ export function generateScriptSuite(
         visualHook: 'Gráfico con caída del 40% frente a línea verde estable en España.',
         spokenHook: 'Mira la diferencia abismal entre hacerlo bien o seguir el rebaño.',
         overlayText: 'COMPARATIVA 100% REAL',
+      }
+    );
+  } else {
+    // en-GB (United Kingdom)
+    const topicClean = topic.replace(/\s+in\s+the\s+UK/gi, '').replace(/\s+in\s+UK/gi, '').replace(/\s+UK/gi, '').trim();
+    hooks.push(
+      {
+        id: 'hook-1',
+        type: 'Pattern Interrupt',
+        visualHook: 'Ultra-fast snap zoom to camera with direct, deadpan expression holding a mobile displaying an HMRC or bank notification.',
+        spokenHook: 'If you\'re still doing this with ' + topicClean + ' in the UK, you are quietly throwing money away.',
+        overlayText: '90% GET THIS WRONG IN THE UK',
+      },
+      {
+        id: 'hook-2',
+        type: 'Visual Shock',
+        visualHook: 'Highlighting an inflated annual platform fee crossed out in bold red and replaced with an optimised net figure.',
+        spokenHook: 'Have a proper look at this number. That is the exact difference between doing this the smart way or the old-fashioned way.',
+        overlayText: 'PROVEN NET SAVINGS',
+      },
+      {
+        id: 'hook-3',
+        type: 'Provocative Question',
+        visualHook: 'Thoughtful pause looking directly into the lens with a raised eyebrow.',
+        spokenHook: 'Have you ever actually worked out how much you surrender to hidden platform charges and fiscal drag each year in the UK?',
+        overlayText: 'HAVE YOU DONE THE MATHS?',
+      },
+      {
+        id: 'hook-4',
+        type: 'Story Opener',
+        visualHook: 'Sitting at desk with a cup of tea, opening a spreadsheet showing prior year statements.',
+        spokenHook: 'I fell into this exact trap for two solid years in the UK, and nobody bothered to tell me.',
+        overlayText: 'THE MISTAKE THAT COST ME',
+      },
+      {
+        id: 'hook-5',
+        type: 'Bold Statement',
+        visualHook: 'Pointing index finger firmly towards camera lens.',
+        spokenHook: 'The standard textbook advice they gave you on ' + topicClean + ' no longer holds up in 2025/2026.',
+        overlayText: 'THE RULES HAVE CHANGED',
       }
     );
   }
@@ -773,7 +970,7 @@ export function generateScriptSuite(
         }
       );
     }
-  } else {
+  } else if (market === 'es-ES') {
     // Spanish CTAs (es-ES)
     if (platform === 'youtube') {
       ctas.push(
@@ -849,6 +1046,85 @@ export function generateScriptSuite(
           spokenCta: '¡Comparte este vídeo por mensaje directo con alguien que necesite saberlo hoy!',
           onScreenText: 'COMPARTE CON UN AMIGO ✈️',
           platformBestPractice: 'Compartir por mensaje privado impulsa el alcance a perfiles similares.',
+        }
+      );
+    }
+  } else {
+    // British English CTAs (en-GB / United Kingdom)
+    if (platform === 'youtube') {
+      ctas.push(
+        {
+          id: 'cta-yt-1',
+          goal: 'Follow / Subscribe',
+          spokenCta: 'If this breakdown helped you out, subscribe to the channel and turn on notifications so you don\'t miss next week\'s analysis.',
+          onScreenText: 'SUBSCRIBE TO THE CHANNEL 🔔',
+          platformBestPractice: 'Display end screen with subscribe button and recommended video in the final 20 seconds.',
+        },
+        {
+          id: 'cta-yt-2',
+          goal: 'Comment / Keyword Automation',
+          spokenCta: 'Leave a comment below with your biggest question on this. I reply to every single comment during the first 24 hours.',
+          onScreenText: 'DROP YOUR QUESTION IN THE COMMENTS 👇',
+          platformBestPractice: 'Pin a top comment with an open-ended question to spark discussion in the comments section.',
+        }
+      );
+    } else if (platform === 'youtube-shorts') {
+      ctas.push(
+        {
+          id: 'cta-shorts-1',
+          goal: 'Follow / Subscribe',
+          spokenCta: 'Hit subscribe down below for more practical UK analysis and zero waffle!',
+          onScreenText: 'SUBSCRIBE ⚡',
+          platformBestPractice: 'High-tempo delivery right to the final millisecond with a seamless loop.',
+        },
+        {
+          id: 'cta-shorts-2',
+          goal: 'Save / Bookmark',
+          spokenCta: 'Save this Short to your library so you can refer back when you put it into practice.',
+          onScreenText: 'SAVE THIS SHORT 📌',
+          platformBestPractice: 'Gesture towards the save/bookmark button on the right-hand panel.',
+        }
+      );
+    } else if (platform === 'tiktok') {
+      ctas.push(
+        {
+          id: 'cta-tt-1',
+          goal: 'Save / Bookmark',
+          spokenCta: 'Add this to your favourites right now because it will save you a serious headache when you implement it.',
+          onScreenText: 'ADD TO FAVOURITES ⭐',
+          platformBestPractice: 'Significantly boosts TikTok algorithm velocity within the first 30 minutes.',
+        },
+        {
+          id: 'cta-tt-2',
+          goal: 'Comment / Keyword Automation',
+          spokenCta: 'Comment "PART 2" if you want to see a step-by-step screen walkthrough of the dashboard!',
+          onScreenText: 'COMMENT "PART 2" 💬',
+          platformBestPractice: 'Drives rapid comment spikes that push the video to the For You page.',
+        }
+      );
+    } else {
+      // Instagram Reels
+      ctas.push(
+        {
+          id: 'cta-reels-1',
+          goal: 'Comment / Keyword Automation',
+          spokenCta: 'Comment "GUIDE" down below and I\'ll send the complete summary straight to your DMs right away!',
+          onScreenText: 'COMMENT "GUIDE" FOR DM 🚀',
+          platformBestPractice: 'DM automation integration converts views into qualified contacts instantly.',
+        },
+        {
+          id: 'cta-reels-2',
+          goal: 'Save / Bookmark',
+          spokenCta: 'Save this Reel so you don\'t lose this strategy when you need it!',
+          onScreenText: 'SAVE THIS REEL 📌',
+          platformBestPractice: 'Saves carry the highest weight in the Instagram Reels recommendation algorithm.',
+        },
+        {
+          id: 'cta-reels-3',
+          goal: 'Share to Story / DM',
+          spokenCta: 'Send this video via DM to a friend who needs to see this today!',
+          onScreenText: 'SEND TO A FRIEND ✈️',
+          platformBestPractice: 'Sharing via DM propels discovery to lookalike audience profiles.',
         }
       );
     }

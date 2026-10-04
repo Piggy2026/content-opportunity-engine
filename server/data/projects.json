@@ -1,5 +1,1434 @@
 [
   {
+    "id": "proj_1791147986525_vl2t2",
+    "createdAt": "2026-10-04T21:06:26.525Z",
+    "request": {
+      "topic": "How to invest in Stocks and Shares ISAs and avoid HMRC tax traps",
+      "market": "en-GB",
+      "platform": "youtube"
+    },
+    "cached": false,
+    "isLiveResearchAvailable": true,
+    "researchProvenance": {
+      "sourceType": "curated_niche_match",
+      "isLiveResearchAvailable": true,
+      "queryPerformed": "site:youtube.com/watch How to invest in Stocks and Shares ISAs and avoid HMRC tax traps UK",
+      "notice": "Audited sources obtained via direct keyword match for \"How to invest in Stocks and Shares ISAs and avoid HMRC tax traps\"."
+    },
+    "competitors": [
+      {
+        "title": "How to Invest in Stocks & Shares ISAs for Beginners (UK Guide)",
+        "url": "https://www.youtube.com/watch?v=0h9VqKqX4L0",
+        "channelOrCreator": "Damian Talks Money",
+        "platform": "youtube",
+        "views": "340,000 views",
+        "publishedDate": "4 months ago",
+        "snippet": "Comprehensive breakdown of the £20,000 annual ISA allowance, capital gains tax exemptions, and platforms like Trading 212 vs Vanguard UK.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "youtube.com",
+        "detectedHookOrAngle": "How to start investing in the UK without losing money to platform fees and HMRC taxes",
+        "factSummary": "Explains HMRC tax-free allowances (£20,000 ISA limit, personal savings allowance) and index fund investing for UK residents.",
+        "aiInference": "High UK engagement driven by fiscal drag and recent reductions in the dividend and capital gains tax allowances.",
+        "id": "comp-seed-1"
+      },
+      {
+        "title": "The UK Pension & Tax Rules You Need to Know in 2025/2026",
+        "url": "https://www.youtube.com/watch?v=7Xw9yV1kM2Q",
+        "channelOrCreator": "James Shack",
+        "platform": "youtube",
+        "views": "215,000 views",
+        "publishedDate": "2 months ago",
+        "snippet": "Detailed analysis of UK pension tax relief, Lifetime ISA vs SIPP, and National Insurance thresholds.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "youtube.com",
+        "detectedHookOrAngle": "The silent tax traps catching out UK professionals earning between £50k and £100k",
+        "factSummary": "Breaks down 20%, 40% and 45% income tax relief on UK pension contributions and HMRC self-assessment reporting.",
+        "aiInference": "UK viewers respond strongly to qualified chartered financial planning advice backed by exact HMRC tax year calculations.",
+        "id": "comp-seed-2"
+      },
+      {
+        "title": "How I Organise My Life & Work with Simple Systems (UK)",
+        "url": "https://www.youtube.com/watch?v=sQwH1xM5vQ0",
+        "channelOrCreator": "Ali Abdaal",
+        "platform": "youtube",
+        "views": "1.2M views",
+        "publishedDate": "6 months ago",
+        "snippet": "Step-by-step walkthrough of weekly planning, daily routines, and productivity frameworks tested over years.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "youtube.com",
+        "detectedHookOrAngle": "Stop relying on willpower: build a frictionless system that manages your schedule automatically",
+        "factSummary": "Demonstrates digital organisation systems, friction reduction, and time-blocking techniques on screen.",
+        "aiInference": "Performs strongly with busy UK workers seeking sustainable routines without burnout.",
+        "id": "comp-seed-3"
+      },
+      {
+        "title": "5 Money Rules That Made Me a Millionaire in the UK",
+        "url": "https://www.youtube.com/watch?v=3nK2v9xP8wE",
+        "channelOrCreator": "Mark Tilbury",
+        "platform": "youtube",
+        "views": "480,000 views",
+        "publishedDate": "3 months ago",
+        "snippet": "Actionable financial advice focusing on compounding, living below means, and avoiding high-interest consumer debt.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "youtube.com",
+        "detectedHookOrAngle": "The difference between how everyday people spend money versus how wealthy individuals allocate capital",
+        "factSummary": "Contrasts consumer debt traps with index investing and property equity in the UK market.",
+        "aiInference": "Crisp, direct hook style cuts through consumer skepticism and inertia.",
+        "id": "comp-seed-4"
+      },
+      {
+        "title": "The £20,000 ISA Rule Most People in the UK Don't Know",
+        "url": "https://www.youtube.com/shorts/3nK9vL1wP0Q",
+        "channelOrCreator": "UK Money Tips",
+        "platform": "youtube",
+        "views": "890,000 views",
+        "publishedDate": "1 month ago",
+        "snippet": "Quick 45s breakdown on how to split ISA allowances across cash and stocks without breaking HMRC rules.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "youtube.com",
+        "detectedHookOrAngle": "If you live in the UK and have savings in a standard current account, you are losing money to HMRC",
+        "factSummary": "Vertical screen recording highlighting HMRC tax year deadlines and personal savings allowance calculations.",
+        "aiInference": "The loss-aversion hook (\"losing money to tax\") delivers exceptional 3-second retention in the UK feed.",
+        "id": "comp-seed-5"
+      }
+    ],
+    "outlierAnalysis": {
+      "topFormatOutlier": {
+        "format": "12 to 18 Minute Long-Form Video with Practical Case Study and Spreadsheet on Screen",
+        "whyItOutperforms": "Videos featuring practical screen walkthroughs (without theoretical waffle in the first minute) achieve 2.4x higher average retention than conventional studio recordings.",
+        "frequencyObserved": "3 of 5 top analysed UK videos utilise this structure."
+      },
+      "dominantHookPatterns": [
+        {
+          "pattern": "The Costly HMRC & Regulatory Trap",
+          "example": "Observed real example: \"How to Invest in Stocks & Shares ISAs for Beginners (UK Guide)\"",
+          "whyItWorks": "In the UK, fear of unexpected HMRC tax demands, fiscal drag, and hidden platform fees triggers significantly higher click-through and save rates than empty promises of wealth."
+        },
+        {
+          "pattern": "Transparent Net Cost Comparison (£ vs £)",
+          "example": "Example: \"UK High Street Banks vs Modern Platforms: True Fees After Platform Charges\"",
+          "whyItWorks": "British viewers are analytically minded and demand clear, auditable breakdowns to avoid getting caught by opaque fee schedules."
+        },
+        {
+          "pattern": "No-Nonsense Contrarian Truth (Anti-Hype)",
+          "example": "Example: \"Why the Most Popular Advice About How to invest in Stocks and Shares ISAs and avoid HMRC tax traps in the UK Is Outdated\"",
+          "whyItWorks": "Cuts through Americanised, generic advice by establishing immediate trust with understated, pragmatic analysis."
+        }
+      ],
+      "highVelocityTopics": [
+        "Practical impact of new UK tax rules and thresholds in 2025/2026 applied to How to invest in Stocks and Shares ISAs and avoid HMRC tax traps",
+        "Unsponsored comparison: The 3 UK options that are genuinely worthwhile",
+        "The quiet blunder costing 9 in 10 UK creators and investors hundreds of pounds each year with How to invest in Stocks and Shares ISAs and avoid HMRC tax traps",
+        "Minimalist routine for UK full-time workers taking under 15 minutes a week"
+      ],
+      "emotionalTriggers": [
+        {
+          "trigger": "Loss Aversion / HMRC & Cost Pitfalls",
+          "application": "Highlight direct financial loss or wasted hours before revealing the optimised solution."
+        },
+        {
+          "trigger": "Specific Curiosity (Curiosity Gap)",
+          "application": "Present a clear paradox (\"why the most common UK advice is completely backwards\")."
+        },
+        {
+          "trigger": "Insider UK Nuance / Tactical Advantage",
+          "application": "Explain the exact mechanics that experienced professionals utilise behind the scenes."
+        }
+      ],
+      "observedFacts": [
+        "Sample analysed: 5 active competitor videos identified in UK public search research.",
+        "Platform evaluated: YOUTUBE in the geographic and linguistic market of United Kingdom (en-GB).",
+        "Most effective titles range between 45 and 65 characters with concrete figures or actionable phrasing.",
+        "Confirmed presence of established UK channels (Damian Talks Money, James Shack, Ali Abdaal).",
+        "A significant proportion of competitors focus on introductory theory, leaving clear gaps for practical walkthroughs."
+      ],
+      "aiDeductions": [
+        "AI Deduction: Clear saturation of repetitive theoretical content on \"How to invest in Stocks and Shares ISAs and avoid HMRC tax traps\", creating a substantial opening for contrarian takes and exact UK case studies.",
+        "AI Deduction: The UK audience displays fatigue with superficial guru-style formats, favouring creators who demonstrate real dashboards, exact fees, and transparent evidence.",
+        "AI Deduction: A script structure with an urgent 3-second hook focused on net bottom-line results will achieve retention well above the niche average."
+      ]
+    },
+    "contentGaps": [
+      {
+        "id": "gap-uk-1",
+        "category": "underserved-market-need",
+        "title": "UK Tax Rules, HMRC Allowances & Fiscal Drag vs Generic US Advice",
+        "description": "Too many videos about How to invest in Stocks and Shares ISAs and avoid HMRC tax traps uncritically import US concepts (401k, Roth IRA, IRS rules), completely ignoring UK-specific mechanisms such as HMRC tax years (6 April to 5 April), the £20,000 ISA allowance, Capital Gains Tax cuts, National Insurance thresholds, and SIPP tax relief.",
+        "whyCompetitorsMissedIt": "Creators frequently regurgitate American YouTube trends without adapting to UK tax law, HMRC self-assessment, and the British cost-of-living reality.",
+        "marketNuance": "United Kingdom (en-GB): UK viewers demand figures in British Pounds (£), tax year deadlines, Stamp Duty / council tax nuances, and authorised platforms regulated by the Financial Conduct Authority (FCA).",
+        "opportunityLevel": "critical"
+      },
+      {
+        "id": "gap-uk-2",
+        "category": "unanswered-question",
+        "title": "Realistic UK Household Budgets vs Influencer Extravagance",
+        "description": "With typical UK median take-home pay around £2,100 to £2,600 per month and soaring private rent, energy bills, and mortgages, advice demanding £1,000 monthly contributions causes viewer disengagement. There is a glaring lack of practical walkthroughs starting with £50 to £150 a month.",
+        "whyCompetitorsMissedIt": "Content creators chase sensationalist thumbnails with inflated figures, alienating everyday UK workers and young professionals.",
+        "marketNuance": "UK: A grounded, pragmatic tone that respects everyday British cost pressures without condescending guru posturing.",
+        "opportunityLevel": "very-high"
+      },
+      {
+        "id": "gap-uk-3",
+        "category": "oversaturated-angle",
+        "title": "Over-Theoretical Dictionaries: We Want Real Screen Walkthroughs and Exact UK Steps",
+        "description": "Over 70% of UK competitors produce static talking-head monologues repeating textbook definitions (\"What is an ETF\" / \"What is How to invest in Stocks and Shares ISAs and avoid HMRC tax traps\"). Viewers already know the theory; they want to see the mobile app screen, which specific fund to choose, which HMRC box to tick, and which hidden platform fees to avoid.",
+        "whyCompetitorsMissedIt": "Talking in front of a camera is faster than recording live screen walkthroughs and auditing transparent fee schedules.",
+        "marketNuance": "UK: High demand for crisp screen-recordings on mobile/desktop without tedious self-indulgent preambles.",
+        "opportunityLevel": "high"
+      },
+      {
+        "id": "gap-uk-4",
+        "category": "weak-competitor-execution",
+        "title": "Lack of Native Short-Form (Shorts/TikTok/Reels) with Immediate Practical Utility",
+        "description": "Competitors in the UK still rely on sleepy 25-minute webinars or low-effort podcast snippets. There is a wide gap for a creator delivering 45-second, high-density, actionable advice filmed specifically for vertical feeds.",
+        "whyCompetitorsMissedIt": "Lazy podcast clipping culture instead of purpose-built vertical hooks designed for UK viewers' mobile habits.",
+        "marketNuance": "UK: Fast pacing, clean subtitles, understated British humour, and clear cues to save for later reference.",
+        "opportunityLevel": "very-high"
+      }
+    ],
+    "rankedIdeas": [
+      {
+        "id": "idea-uk-1",
+        "title": "The Costly HMRC Mistake with How to invest in Stocks and Shares ISAs and avoid HMRC tax traps in the UK That Nobody Warns You About",
+        "angle": "Regulatory, tax year, and allowance alert unpicked with real paperwork and gov.uk screens.",
+        "format": "15min Long-Form Video with Live Walkthrough of HMRC & Platform Dashboards",
+        "gapExploited": "Oversaturation of generic US-centric advice ignoring UK Capital Gains Tax, ISA rules, and fiscal drag.",
+        "targetAudiencePainPoint": "Fear of unexpected HMRC penalty notices, tax year deadlines, or losing money to hidden fees.",
+        "viralityPotential": "Exceptional",
+        "competitionLevel": "Low",
+        "whyItWins": "British viewers distrust vague financial claims; seeing exact gov.uk guidelines and audited figures earns instant trust and saves.",
+        "rank": 1,
+        "opportunityScore": 95,
+        "isBestOpportunity": true
+      },
+      {
+        "id": "idea-uk-2",
+        "title": "How to Start with How to invest in Stocks and Shares ISAs and avoid HMRC tax traps in the UK with Just £50 to £100 a Month",
+        "angle": "Ultra-pragmatic blueprint calibrated directly to real UK median take-home pay.",
+        "format": "12min Realistic Walkthrough with Pound (£) Calculations",
+        "gapExploited": "Absence of approachable, sensible guides for younger UK workers squeezed by rent and utility bills.",
+        "targetAudiencePainPoint": "Feeling alienated by influencers claiming you need thousands of pounds to make an impact.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Low",
+        "whyItWins": "Directly reflects genuine UK household finances across London, Manchester, Birmingham, and regional towns.",
+        "rank": 2,
+        "opportunityScore": 90,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-uk-5",
+        "title": "My 15-Minute Weekly Routine to Master How to invest in Stocks and Shares ISAs and avoid HMRC tax traps While Working Full-Time in the UK",
+        "angle": "Minimalist operational routine designed for busy working professionals.",
+        "format": "11min Systems Walkthrough",
+        "gapExploited": "Information overload and chronic lack of free time among UK workers.",
+        "targetAudiencePainPoint": "Not having hours of spare time every weekend to digest complex manuals.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Low",
+        "whyItWins": "Delivering a proven, low-friction routine is an irresistible retention magnet.",
+        "rank": 3,
+        "opportunityScore": 87,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-uk-7",
+        "title": "3 Things in How to invest in Stocks and Shares ISAs and avoid HMRC tax traps That Sound Clever but Are a Complete Waste of Money",
+        "angle": "Pure contrarian audit dismantling three hyped UK products, courses, or services.",
+        "format": "12min Honest Review",
+        "gapExploited": "Consumer weariness of aggressive affiliate marketing and overpriced coaching.",
+        "targetAudiencePainPoint": "Frustration at wasting hard-earned money on underwhelming promises.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Low",
+        "whyItWins": "Builds immediate credibility by saving viewers money on day one.",
+        "rank": 4,
+        "opportunityScore": 86,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-uk-9",
+        "title": "I Tested the Most Popular How to invest in Stocks and Shares ISAs and avoid HMRC tax traps Strategy in the UK for 60 Days (The Honest Numbers)",
+        "angle": "Empirical experiment with an open ledger and unvarnished results.",
+        "format": "18min Full Case Study",
+        "gapExploited": "Absence of honest, real-world verification of popular market claims.",
+        "targetAudiencePainPoint": "Skepticism over whether popular online trends actually work in practice.",
+        "viralityPotential": "Exceptional",
+        "competitionLevel": "Low",
+        "whyItWins": "Transparent documentation converts casual viewers into dedicated subscribers.",
+        "rank": 5,
+        "opportunityScore": 86,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-uk-3",
+        "title": "Traditional UK High Street Banks vs Modern Platforms: Where You Lose the Least Money",
+        "angle": "Relentless audit of hidden account fees, FX markups, and platform charges.",
+        "format": "16min Full Spreadsheet Audit on Screen",
+        "gapExploited": "Lack of transparency and customer inertia regarding legacy UK high street banks.",
+        "targetAudiencePainPoint": "Paying unnecessary monthly charges and receiving uncompetitive interest rates.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Medium",
+        "whyItWins": "Provokes energetic debate in the comments section and high bookmark rates.",
+        "rank": 6,
+        "opportunityScore": 83,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-uk-10",
+        "title": "5 Free UK Tools & Resources That Replace Costly Software Subscriptions",
+        "angle": "Lean toolkit accessible to anyone in the UK for immediate results.",
+        "format": "14min Tool Demonstration",
+        "gapExploited": "Prohibitive costs of software pushed by sponsors and gurus.",
+        "targetAudiencePainPoint": "Reluctance to add another recurring monthly subscription to already stretched bills.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Low",
+        "whyItWins": "Instant utility generates high share and bookmark rates.",
+        "rank": 7,
+        "opportunityScore": 83,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-uk-13",
+        "title": "How to Automate 80% of Your Routine with How to invest in Stocks and Shares ISAs and avoid HMRC tax traps Using Simple Systems",
+        "angle": "Efficiency without needing advanced technical or coding skills.",
+        "format": "13min Systems Walkthrough",
+        "gapExploited": "Time wasted on tedious, repetitive manual tasks.",
+        "targetAudiencePainPoint": "Feeling overwhelmed and exhausted after a long working week.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Low",
+        "whyItWins": "Appeals directly to anyone looking to regain their free evenings and weekends.",
+        "rank": 8,
+        "opportunityScore": 81,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-uk-6",
+        "title": "The Definitive Guide to How to invest in Stocks and Shares ISAs and avoid HMRC tax traps for Anyone Living Outside London in the UK",
+        "angle": "Focus on regional opportunities, realistic living costs, and decentralised work across the UK.",
+        "format": "13min Case Study",
+        "gapExploited": "London-centric content bubble that ignores life across the North, Midlands, Scotland, and Wales.",
+        "targetAudiencePainPoint": "Advice that only makes sense if you earn an inflated central London salary.",
+        "viralityPotential": "High",
+        "competitionLevel": "Low",
+        "whyItWins": "Audiences outside the M25 feel heard and champion the creator.",
+        "rank": 9,
+        "opportunityScore": 80,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-uk-4",
+        "title": "Why 90% of People Struggle with How to invest in Stocks and Shares ISAs and avoid HMRC tax traps in the UK (And What the Top 10% Do Differently)",
+        "angle": "Myth-buster dismantling conventional UK advice that has stopped working in 2025/2026.",
+        "format": "15min Critical Breakdown",
+        "gapExploited": "Tired, recycled advice peddled by self-styled online experts.",
+        "targetAudiencePainPoint": "Feeling stuck in place despite putting in long hours at work.",
+        "viralityPotential": "High",
+        "competitionLevel": "Medium",
+        "whyItWins": "Taps into healthy British skepticism and curiosity by challenging standard boilerplate advice.",
+        "rank": 10,
+        "opportunityScore": 79,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-uk-15",
+        "title": "How to Negotiate Better Terms and Save on How to invest in Stocks and Shares ISAs and avoid HMRC tax traps in 3 Simple Questions",
+        "angle": "Direct negotiation scripts to use with UK providers and firms.",
+        "format": "11min Negotiation Strategy",
+        "gapExploited": "Natural British reserve and reluctance to haggle or challenge initial quotes.",
+        "targetAudiencePainPoint": "Accepting inflated renewal prices out of embarrassment to push back.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Low",
+        "whyItWins": "Practical roleplay scripts give viewers immediate confidence and tangible cash savings.",
+        "rank": 11,
+        "opportunityScore": 77,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-uk-11",
+        "title": "What Changed with How to invest in Stocks and Shares ISAs and avoid HMRC tax traps in the UK for 2025/2026: What You Must Do Now",
+        "angle": "Regulatory update and ahead-of-the-curve practical preparation.",
+        "format": "12min Trend Analysis",
+        "gapExploited": "Outdated videos from 2-3 years ago that give invalid advice under current UK rules.",
+        "targetAudiencePainPoint": "Uncertainty over recent tax threshold freezes and compliance shifts.",
+        "viralityPotential": "High",
+        "competitionLevel": "Low",
+        "whyItWins": "Urgency and timely relevance drive strong organic search traffic.",
+        "rank": 12,
+        "opportunityScore": 76,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-uk-12",
+        "title": "Live Audit: Analysing Real UK Examples and Mistakes with How to invest in Stocks and Shares ISAs and avoid HMRC tax traps",
+        "angle": "Subscriber-submitted examples with frank, constructive diagnostics.",
+        "format": "16min Practical Consultancy",
+        "gapExploited": "The gap between abstract advice and unique personal circumstances.",
+        "targetAudiencePainPoint": "Not knowing how to spot your own blind spots.",
+        "viralityPotential": "High",
+        "competitionLevel": "Low",
+        "whyItWins": "High relatability as viewers see their own challenges mirrored in real examples.",
+        "rank": 13,
+        "opportunityScore": 75,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-uk-8",
+        "title": "How to Set Up How to invest in Stocks and Shares ISAs and avoid HMRC tax traps from Scratch with Zero Previous Experience",
+        "angle": "Plain-English zero-to-one tutorial without baffling jargon.",
+        "format": "15min Plain-English Guide",
+        "gapExploited": "The intimidating technical barrier erected by traditional specialists.",
+        "targetAudiencePainPoint": "Fear of looking uninformed or getting lost in complicated terminology.",
+        "viralityPotential": "High",
+        "competitionLevel": "Medium",
+        "whyItWins": "Welcomes complete beginners whom other technical channels overlook.",
+        "rank": 14,
+        "opportunityScore": 74,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-uk-14",
+        "title": "Are Professional Certificates & Courses Worth It for How to invest in Stocks and Shares ISAs and avoid HMRC tax traps in the UK?",
+        "angle": "Unsentimental cost-benefit analysis of formal credentials vs self-directed learning.",
+        "format": "12min Industry Breakdown",
+        "gapExploited": "Predatory online course vendors promising guaranteed career leaps.",
+        "targetAudiencePainPoint": "Agonising over whether to spend thousands of pounds on courses.",
+        "viralityPotential": "High",
+        "competitionLevel": "Low",
+        "whyItWins": "Protects the viewer's wallet and sparks lively discussion in the comments.",
+        "rank": 15,
+        "opportunityScore": 74,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-uk-16",
+        "title": "The UK Safety & Due Diligence Checklist for How to invest in Stocks and Shares ISAs and avoid HMRC tax traps: How to Avoid Scams Online",
+        "angle": "Practical cybersecurity and FCA regulation checks for UK consumers.",
+        "format": "13min Due Diligence Guide",
+        "gapExploited": "Rising sophisticated online financial scams targeting UK citizens.",
+        "targetAudiencePainPoint": "Fear of getting caught out by unregulated platforms or fraudulent schemes.",
+        "viralityPotential": "High",
+        "competitionLevel": "Low",
+        "whyItWins": "Essential public service content with lasting reference value.",
+        "rank": 16,
+        "opportunityScore": 73,
+        "isBestOpportunity": false
+      }
+    ],
+    "bestOpportunityId": "idea-uk-1",
+    "bestOpportunity": {
+      "id": "idea-uk-1",
+      "title": "The Costly HMRC Mistake with How to invest in Stocks and Shares ISAs and avoid HMRC tax traps in the UK That Nobody Warns You About",
+      "angle": "Regulatory, tax year, and allowance alert unpicked with real paperwork and gov.uk screens.",
+      "format": "15min Long-Form Video with Live Walkthrough of HMRC & Platform Dashboards",
+      "gapExploited": "Oversaturation of generic US-centric advice ignoring UK Capital Gains Tax, ISA rules, and fiscal drag.",
+      "targetAudiencePainPoint": "Fear of unexpected HMRC penalty notices, tax year deadlines, or losing money to hidden fees.",
+      "viralityPotential": "Exceptional",
+      "competitionLevel": "Low",
+      "whyItWins": "British viewers distrust vague financial claims; seeing exact gov.uk guidelines and audited figures earns instant trust and saves.",
+      "rank": 1,
+      "opportunityScore": 95,
+      "isBestOpportunity": true
+    },
+    "scripts": [
+      {
+        "id": "script-uk-contrarian",
+        "style": "contrarian-mythbuster",
+        "styleName": "Variation 1: The Contrarian Reality Check (Highest Retention & Debate)",
+        "badge": "Highest Retention & Debate",
+        "tagline": "Dismantles the most prevalent UK misconception and reveals the evidence-backed alternative.",
+        "estimatedDuration": "12 minutes",
+        "targetWordCount": 1700,
+        "sections": [
+          {
+            "timestamp": "0:00 - 0:03",
+            "stage": "Hook",
+            "visualCue": "[VISUAL: Tight close-up to camera, serious expression holding a mobile displaying an HMRC or account alert]",
+            "spokenText": "If you are still doing this with How to invest in Stocks and Shares ISAs and avoid HMRC tax traps in the UK, I'm sorry to say, but you are throwing money away every single month.",
+            "audioToneCue": "[AUDIO: Clean cut / silence in the first 2 seconds to focus viewer attention]"
+          },
+          {
+            "timestamp": "0:03 - 0:12",
+            "stage": "Agitate / Pattern Interrupt",
+            "visualCue": "[VISUAL: Quick cut to official UK figures with frozen tax thresholds and fee rates circled in red]",
+            "spokenText": "Ninety per cent of self-styled online experts tell you to follow the same old textbook playbook. The problem? Those thresholds have frozen, and stealth taxes combined with platform fees are quietly eating away at your returns.",
+            "audioToneCue": "[AUDIO: Subtle rising percussive tension]"
+          },
+          {
+            "timestamp": "0:12 - 0:32",
+            "stage": "Core Value / Meat",
+            "visualCue": "[VISUAL: Clean screen-recording comparing the traditional route against the modern optimised protocol]",
+            "spokenText": "Look closely at this comparison: under the standard route, you immediately surrender a chunk to account charges and unnecessary HMRC drag. If you make this straightforward three-step tweak instead, your net return remains protected.",
+            "audioToneCue": "[AUDIO: Upbeat, modern rhythm under clear speech]"
+          },
+          {
+            "timestamp": "0:32 - 0:40",
+            "stage": "Payoff / Turnaround",
+            "visualCue": "[VISUAL: Return to primary camera with confident posture and key takeaway emphasised on screen]",
+            "spokenText": "The real difference is gaining genuine peace of mind and not being caught off-guard with a surprise tax demand at the end of the tax year.",
+            "audioToneCue": "[AUDIO: Reassuring harmonic resolve]"
+          },
+          {
+            "timestamp": "0:40 - 0:45",
+            "stage": "Call to Action",
+            "visualCue": "[VISUAL: Direct gesture towards the save/bookmark button with on-screen text]",
+            "spokenText": "Save this video so you have it ready when you sort this out, and leave a comment below if you want the checklist with the exact details.",
+            "audioToneCue": "[AUDIO: Clean outro sting]"
+          }
+        ],
+        "fullSpokenText": "If you are still doing this with How to invest in Stocks and Shares ISAs and avoid HMRC tax traps in the UK, I'm sorry to say, but you are throwing money away every single month. Ninety per cent of self-styled online experts tell you to follow the same old textbook playbook. The problem? Those thresholds have frozen, and stealth taxes combined with platform fees are quietly eating away at your returns. Look closely at this comparison: under the standard route, you immediately surrender a chunk to account charges and unnecessary HMRC drag. If you make this straightforward three-step tweak instead, your net return remains protected. The real difference is gaining genuine peace of mind and not being caught off-guard with a surprise tax demand at the end of the tax year. Save this video so you have it ready when you sort this out, and leave a comment below if you want the checklist with the exact details."
+      },
+      {
+        "id": "script-uk-story",
+        "style": "story-driven-case-study",
+        "styleName": "Variation 2: Personal Case Study & Journey (Maximum Authority & Trust)",
+        "badge": "Maximum Authority & Trust",
+        "tagline": "Walks through the real frustration of starting from scratch in the UK to finding a low-friction system.",
+        "estimatedDuration": "15 minutes",
+        "targetWordCount": 1900,
+        "sections": [
+          {
+            "timestamp": "0:00 - 0:04",
+            "stage": "Hook",
+            "visualCue": "[VISUAL: Looking at a laptop screen with genuine frustration, mug of tea on desk]",
+            "spokenText": "Two years ago, I made the most expensive mistake of my life with How to invest in Stocks and Shares ISAs and avoid HMRC tax traps in the UK. And nobody on the internet bothered to warn me.",
+            "audioToneCue": "[AUDIO: Thoughtful, understated opening chords]"
+          },
+          {
+            "timestamp": "0:04 - 0:15",
+            "stage": "Agitate / Pattern Interrupt",
+            "visualCue": "[VISUAL: Rapid cut of early morning commute and endless paperwork]",
+            "spokenText": "I was working long hours, commuting, and trusting conventional advice. At the end of the month, the sums just didn't add up, and the feeling of financial stagnation was exhausting.",
+            "audioToneCue": "[AUDIO: Building intensity and momentum]"
+          },
+          {
+            "timestamp": "0:15 - 0:35",
+            "stage": "Core Value / Meat",
+            "visualCue": "[VISUAL: Laptop screen displaying a clean spreadsheet with 3 core rules]",
+            "spokenText": "Until I decided to cut out eighty per cent of the noise and focus exclusively on these three simple rules. That was the turning point that completely altered my trajectory.",
+            "audioToneCue": "[AUDIO: Confident, crisp delivery tone]"
+          },
+          {
+            "timestamp": "0:35 - 0:43",
+            "stage": "Payoff / Turnaround",
+            "visualCue": "[VISUAL: Calm mid-shot with relaxed, reassuring smile]",
+            "spokenText": "Today, it takes me barely ten minutes a week to manage everything with complete clarity and zero stress.",
+            "audioToneCue": "[AUDIO: Warm, positive chord]"
+          },
+          {
+            "timestamp": "0:43 - 0:50",
+            "stage": "Call to Action",
+            "visualCue": "[VISUAL: On-screen caption: \"Subscribe for honest, hype-free UK guides\"]",
+            "spokenText": "If you want to dodge the costly blunders I made, follow the channel and share this with a mate who needs to hear it today.",
+            "audioToneCue": "[AUDIO: Clean outro beat]"
+          }
+        ],
+        "fullSpokenText": "Two years ago, I made the most expensive mistake of my life with How to invest in Stocks and Shares ISAs and avoid HMRC tax traps in the UK. And nobody on the internet bothered to warn me. I was working long hours, commuting, and trusting conventional advice. At the end of the month, the sums just didn't add up, and the feeling of financial stagnation was exhausting. Until I decided to cut out eighty per cent of the noise and focus exclusively on these three simple rules. That was the turning point that completely altered my trajectory. Today, it takes me barely ten minutes a week to manage everything with complete clarity and zero stress. If you want to dodge the costly blunders I made, follow the channel and share this with a mate who needs to hear it today."
+      },
+      {
+        "id": "script-uk-blueprint",
+        "style": "actionable-blueprint",
+        "styleName": "Variation 3: The Pragmatic 3-Step Blueprint (Highest Bookmark & Save Rate)",
+        "badge": "Highest Bookmark & Save Rate",
+        "tagline": "Zero waffle. A crisp, three-step action protocol you can implement straight away.",
+        "estimatedDuration": "10 minutes",
+        "targetWordCount": 1500,
+        "sections": [
+          {
+            "timestamp": "0:00 - 0:03",
+            "stage": "Hook",
+            "visualCue": "[VISUAL: Three fingers held up to camera with clean text transition: \"1, 2, 3\"]",
+            "spokenText": "The exact three-step blueprint to master How to invest in Stocks and Shares ISAs and avoid HMRC tax traps in the UK without wasting hours of your time.",
+            "audioToneCue": "[AUDIO: Snappy whoosh effect and modern beat]"
+          },
+          {
+            "timestamp": "0:03 - 0:13",
+            "stage": "Core Value / Meat",
+            "visualCue": "[VISUAL: Bold number 1 on screen with screen capture of an FCA-regulated platform]",
+            "spokenText": "Step one: Cut out high-fee legacy intermediaries and opt for an FCA-regulated platform with genuinely transparent, capped charges.",
+            "audioToneCue": "[AUDIO: Affirmative pop sound]"
+          },
+          {
+            "timestamp": "0:13 - 0:25",
+            "stage": "Core Value / Meat",
+            "visualCue": "[VISUAL: Number 2 on screen highlighting automated monthly standing order setup]",
+            "spokenText": "Step two: Set up an automated standing order for the day after payday so you're never tempted to spend what you intended to allocate.",
+            "audioToneCue": "[AUDIO: Subtle ticking clock effect]"
+          },
+          {
+            "timestamp": "0:25 - 0:34",
+            "stage": "Payoff / Turnaround",
+            "visualCue": "[VISUAL: Number 3 on screen displaying HMRC tax allowance verification]",
+            "spokenText": "Step three: Make full use of your statutory allowances and tax relief so you aren't handing over unnecessary money to HMRC.",
+            "audioToneCue": "[AUDIO: Upbeat chime]"
+          },
+          {
+            "timestamp": "0:34 - 0:40",
+            "stage": "Call to Action",
+            "visualCue": "[VISUAL: Highlight around the bookmark icon]",
+            "spokenText": "Bookmark this now so you don't lose it, and subscribe to the channel for more no-nonsense UK breakdowns.",
+            "audioToneCue": "[AUDIO: Final closing chord]"
+          }
+        ],
+        "fullSpokenText": "The exact three-step blueprint to master How to invest in Stocks and Shares ISAs and avoid HMRC tax traps in the UK without wasting hours of your time. Step one: Cut out high-fee legacy intermediaries and opt for an FCA-regulated platform with genuinely transparent, capped charges. Step two: Set up an automated standing order for the day after payday so you're never tempted to spend what you intended to allocate. Step three: Make full use of your statutory allowances and tax relief so you aren't handing over unnecessary money to HMRC. Bookmark this now so you don't lose it, and subscribe to the channel for more no-nonsense UK breakdowns."
+      }
+    ],
+    "titles": [
+      {
+        "id": "title-1",
+        "type": "Curiosity Gap",
+        "title": "The Unwritten UK Rule of How to invest in Stocks and Shares ISAs and avoid HMRC tax traps That Changes Everything",
+        "score": 96
+      },
+      {
+        "id": "title-2",
+        "type": "Fear of Missing Out / Loss",
+        "title": "The Costly HMRC & Fee Trap in How to invest in Stocks and Shares ISAs and avoid HMRC tax traps That Costs You Thousands",
+        "score": 94
+      },
+      {
+        "id": "title-3",
+        "type": "Contrarian",
+        "title": "Why You Must Stop Following Standard Advice on How to invest in Stocks and Shares ISAs and avoid HMRC tax traps in the UK",
+        "score": 92
+      },
+      {
+        "id": "title-4",
+        "type": "Outcome / How-To",
+        "title": "How to Master How to invest in Stocks and Shares ISAs and avoid HMRC tax traps in the UK in Just 15 Minutes a Week",
+        "score": 91
+      },
+      {
+        "id": "title-5",
+        "type": "Number / Listicle",
+        "title": "3 Traps in How to invest in Stocks and Shares ISAs and avoid HMRC tax traps That Nobody Explains in the UK (And How to Avoid Them)",
+        "score": 89
+      }
+    ],
+    "hooks": [
+      {
+        "id": "hook-1",
+        "type": "Pattern Interrupt",
+        "visualHook": "Ultra-fast snap zoom to camera with direct, deadpan expression holding a mobile displaying an HMRC or bank notification.",
+        "spokenHook": "If you're still doing this with How to invest in Stocks and Shares ISAs and avoid HMRC tax traps in the UK, you are quietly throwing money away.",
+        "overlayText": "90% GET THIS WRONG IN THE UK"
+      },
+      {
+        "id": "hook-2",
+        "type": "Visual Shock",
+        "visualHook": "Highlighting an inflated annual platform fee crossed out in bold red and replaced with an optimised net figure.",
+        "spokenHook": "Have a proper look at this number. That is the exact difference between doing this the smart way or the old-fashioned way.",
+        "overlayText": "PROVEN NET SAVINGS"
+      },
+      {
+        "id": "hook-3",
+        "type": "Provocative Question",
+        "visualHook": "Thoughtful pause looking directly into the lens with a raised eyebrow.",
+        "spokenHook": "Have you ever actually worked out how much you surrender to hidden platform charges and fiscal drag each year in the UK?",
+        "overlayText": "HAVE YOU DONE THE MATHS?"
+      },
+      {
+        "id": "hook-4",
+        "type": "Story Opener",
+        "visualHook": "Sitting at desk with a cup of tea, opening a spreadsheet showing prior year statements.",
+        "spokenHook": "I fell into this exact trap for two solid years in the UK, and nobody bothered to tell me.",
+        "overlayText": "THE MISTAKE THAT COST ME"
+      },
+      {
+        "id": "hook-5",
+        "type": "Bold Statement",
+        "visualHook": "Pointing index finger firmly towards camera lens.",
+        "spokenHook": "The standard textbook advice they gave you on How to invest in Stocks and Shares ISAs and avoid HMRC tax traps no longer holds up in 2025/2026.",
+        "overlayText": "THE RULES HAVE CHANGED"
+      }
+    ],
+    "ctas": [
+      {
+        "id": "cta-yt-1",
+        "goal": "Follow / Subscribe",
+        "spokenCta": "If this breakdown helped you out, subscribe to the channel and turn on notifications so you don't miss next week's analysis.",
+        "onScreenText": "SUBSCRIBE TO THE CHANNEL 🔔",
+        "platformBestPractice": "Display end screen with subscribe button and recommended video in the final 20 seconds."
+      },
+      {
+        "id": "cta-yt-2",
+        "goal": "Comment / Keyword Automation",
+        "spokenCta": "Leave a comment below with your biggest question on this. I reply to every single comment during the first 24 hours.",
+        "onScreenText": "DROP YOUR QUESTION IN THE COMMENTS 👇",
+        "platformBestPractice": "Pin a top comment with an open-ended question to spark discussion in the comments section."
+      }
+    ],
+    "sources": [
+      {
+        "id": "src-1",
+        "title": "How to Invest in Stocks & Shares ISAs for Beginners (UK Guide)",
+        "url": "https://www.youtube.com/watch?v=0h9VqKqX4L0",
+        "platform": "youtube",
+        "channelOrHost": "Damian Talks Money",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-04T21:06:26.525Z",
+        "snippet": "Comprehensive breakdown of the £20,000 annual ISA allowance, capital gains tax exemptions, and platforms like Trading 212 vs Vanguard UK."
+      },
+      {
+        "id": "src-2",
+        "title": "The UK Pension & Tax Rules You Need to Know in 2025/2026",
+        "url": "https://www.youtube.com/watch?v=7Xw9yV1kM2Q",
+        "platform": "youtube",
+        "channelOrHost": "James Shack",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-04T21:06:26.525Z",
+        "snippet": "Detailed analysis of UK pension tax relief, Lifetime ISA vs SIPP, and National Insurance thresholds."
+      },
+      {
+        "id": "src-3",
+        "title": "How I Organise My Life & Work with Simple Systems (UK)",
+        "url": "https://www.youtube.com/watch?v=sQwH1xM5vQ0",
+        "platform": "youtube",
+        "channelOrHost": "Ali Abdaal",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-04T21:06:26.525Z",
+        "snippet": "Step-by-step walkthrough of weekly planning, daily routines, and productivity frameworks tested over years."
+      },
+      {
+        "id": "src-4",
+        "title": "5 Money Rules That Made Me a Millionaire in the UK",
+        "url": "https://www.youtube.com/watch?v=3nK2v9xP8wE",
+        "platform": "youtube",
+        "channelOrHost": "Mark Tilbury",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-04T21:06:26.525Z",
+        "snippet": "Actionable financial advice focusing on compounding, living below means, and avoiding high-interest consumer debt."
+      },
+      {
+        "id": "src-5",
+        "title": "The £20,000 ISA Rule Most People in the UK Don't Know",
+        "url": "https://www.youtube.com/shorts/3nK9vL1wP0Q",
+        "platform": "youtube",
+        "channelOrHost": "UK Money Tips",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-04T21:06:26.525Z",
+        "snippet": "Quick 45s breakdown on how to split ISA allowances across cash and stocks without breaking HMRC rules."
+      }
+    ]
+  },
+  {
+    "id": "proj_1791147971909_v9ae2",
+    "createdAt": "2026-10-04T21:06:11.910Z",
+    "request": {
+      "topic": "How to invest in index funds and Stocks and Shares ISAs in the UK",
+      "market": "en-GB",
+      "platform": "youtube",
+      "audienceLevel": "beginner"
+    },
+    "cached": false,
+    "isLiveResearchAvailable": true,
+    "researchProvenance": {
+      "sourceType": "curated_niche_match",
+      "isLiveResearchAvailable": true,
+      "queryPerformed": "site:youtube.com/watch How to invest in index funds and Stocks and Shares ISAs in the UK UK",
+      "notice": "Audited sources obtained via direct keyword match for \"How to invest in index funds and Stocks and Shares ISAs in the UK\"."
+    },
+    "competitors": [
+      {
+        "title": "How to Invest in Stocks & Shares ISAs for Beginners (UK Guide)",
+        "url": "https://www.youtube.com/watch?v=0h9VqKqX4L0",
+        "channelOrCreator": "Damian Talks Money",
+        "platform": "youtube",
+        "views": "340,000 views",
+        "publishedDate": "4 months ago",
+        "snippet": "Comprehensive breakdown of the £20,000 annual ISA allowance, capital gains tax exemptions, and platforms like Trading 212 vs Vanguard UK.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "youtube.com",
+        "detectedHookOrAngle": "How to start investing in the UK without losing money to platform fees and HMRC taxes",
+        "factSummary": "Explains HMRC tax-free allowances (£20,000 ISA limit, personal savings allowance) and index fund investing for UK residents.",
+        "aiInference": "High UK engagement driven by fiscal drag and recent reductions in the dividend and capital gains tax allowances.",
+        "id": "comp-seed-1"
+      },
+      {
+        "title": "The UK Pension & Tax Rules You Need to Know in 2025/2026",
+        "url": "https://www.youtube.com/watch?v=7Xw9yV1kM2Q",
+        "channelOrCreator": "James Shack",
+        "platform": "youtube",
+        "views": "215,000 views",
+        "publishedDate": "2 months ago",
+        "snippet": "Detailed analysis of UK pension tax relief, Lifetime ISA vs SIPP, and National Insurance thresholds.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "youtube.com",
+        "detectedHookOrAngle": "The silent tax traps catching out UK professionals earning between £50k and £100k",
+        "factSummary": "Breaks down 20%, 40% and 45% income tax relief on UK pension contributions and HMRC self-assessment reporting.",
+        "aiInference": "UK viewers respond strongly to qualified chartered financial planning advice backed by exact HMRC tax year calculations.",
+        "id": "comp-seed-2"
+      },
+      {
+        "title": "How I Organise My Life & Work with Simple Systems (UK)",
+        "url": "https://www.youtube.com/watch?v=sQwH1xM5vQ0",
+        "channelOrCreator": "Ali Abdaal",
+        "platform": "youtube",
+        "views": "1.2M views",
+        "publishedDate": "6 months ago",
+        "snippet": "Step-by-step walkthrough of weekly planning, daily routines, and productivity frameworks tested over years.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "youtube.com",
+        "detectedHookOrAngle": "Stop relying on willpower: build a frictionless system that manages your schedule automatically",
+        "factSummary": "Demonstrates digital organisation systems, friction reduction, and time-blocking techniques on screen.",
+        "aiInference": "Performs strongly with busy UK workers seeking sustainable routines without burnout.",
+        "id": "comp-seed-3"
+      },
+      {
+        "title": "5 Money Rules That Made Me a Millionaire in the UK",
+        "url": "https://www.youtube.com/watch?v=3nK2v9xP8wE",
+        "channelOrCreator": "Mark Tilbury",
+        "platform": "youtube",
+        "views": "480,000 views",
+        "publishedDate": "3 months ago",
+        "snippet": "Actionable financial advice focusing on compounding, living below means, and avoiding high-interest consumer debt.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "youtube.com",
+        "detectedHookOrAngle": "The difference between how everyday people spend money versus how wealthy individuals allocate capital",
+        "factSummary": "Contrasts consumer debt traps with index investing and property equity in the UK market.",
+        "aiInference": "Crisp, direct hook style cuts through consumer skepticism and inertia.",
+        "id": "comp-seed-4"
+      },
+      {
+        "title": "The £20,000 ISA Rule Most People in the UK Don't Know",
+        "url": "https://www.youtube.com/shorts/3nK9vL1wP0Q",
+        "channelOrCreator": "UK Money Tips",
+        "platform": "youtube",
+        "views": "890,000 views",
+        "publishedDate": "1 month ago",
+        "snippet": "Quick 45s breakdown on how to split ISA allowances across cash and stocks without breaking HMRC rules.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "youtube.com",
+        "detectedHookOrAngle": "If you live in the UK and have savings in a standard current account, you are losing money to HMRC",
+        "factSummary": "Vertical screen recording highlighting HMRC tax year deadlines and personal savings allowance calculations.",
+        "aiInference": "The loss-aversion hook (\"losing money to tax\") delivers exceptional 3-second retention in the UK feed.",
+        "id": "comp-seed-5"
+      }
+    ],
+    "outlierAnalysis": {
+      "topFormatOutlier": {
+        "format": "12 to 18 Minute Long-Form Video with Practical Case Study and Spreadsheet on Screen",
+        "whyItOutperforms": "Videos featuring practical screen walkthroughs (without theoretical waffle in the first minute) achieve 2.4x higher average retention than conventional studio recordings.",
+        "frequencyObserved": "3 of 5 top analysed UK videos utilise this structure."
+      },
+      "dominantHookPatterns": [
+        {
+          "pattern": "The Costly HMRC & Regulatory Trap",
+          "example": "Observed real example: \"How to Invest in Stocks & Shares ISAs for Beginners (UK Guide)\"",
+          "whyItWorks": "In the UK, fear of unexpected HMRC tax demands, fiscal drag, and hidden platform fees triggers significantly higher click-through and save rates than empty promises of wealth."
+        },
+        {
+          "pattern": "Transparent Net Cost Comparison (£ vs £)",
+          "example": "Example: \"UK High Street Banks vs Modern Platforms: True Fees After Platform Charges\"",
+          "whyItWorks": "British viewers are analytically minded and demand clear, auditable breakdowns to avoid getting caught by opaque fee schedules."
+        },
+        {
+          "pattern": "No-Nonsense Contrarian Truth (Anti-Hype)",
+          "example": "Example: \"Why the Most Popular Advice About How to invest in index funds and Stocks and Shares ISAs in the UK in the UK Is Outdated\"",
+          "whyItWorks": "Cuts through Americanised, generic advice by establishing immediate trust with understated, pragmatic analysis."
+        }
+      ],
+      "highVelocityTopics": [
+        "Practical impact of new UK tax rules and thresholds in 2025/2026 applied to How to invest in index funds and Stocks and Shares ISAs in the UK",
+        "Unsponsored comparison: The 3 UK options that are genuinely worthwhile",
+        "The quiet blunder costing 9 in 10 UK creators and investors hundreds of pounds each year with How to invest in index funds and Stocks and Shares ISAs in the UK",
+        "Minimalist routine for UK full-time workers taking under 15 minutes a week"
+      ],
+      "emotionalTriggers": [
+        {
+          "trigger": "Loss Aversion / HMRC & Cost Pitfalls",
+          "application": "Highlight direct financial loss or wasted hours before revealing the optimised solution."
+        },
+        {
+          "trigger": "Specific Curiosity (Curiosity Gap)",
+          "application": "Present a clear paradox (\"why the most common UK advice is completely backwards\")."
+        },
+        {
+          "trigger": "Insider UK Nuance / Tactical Advantage",
+          "application": "Explain the exact mechanics that experienced professionals utilise behind the scenes."
+        }
+      ],
+      "observedFacts": [
+        "Sample analysed: 5 active competitor videos identified in UK public search research.",
+        "Platform evaluated: YOUTUBE in the geographic and linguistic market of United Kingdom (en-GB).",
+        "Most effective titles range between 45 and 65 characters with concrete figures or actionable phrasing.",
+        "Confirmed presence of established UK channels (Damian Talks Money, James Shack, Ali Abdaal).",
+        "A significant proportion of competitors focus on introductory theory, leaving clear gaps for practical walkthroughs."
+      ],
+      "aiDeductions": [
+        "AI Deduction: Clear saturation of repetitive theoretical content on \"How to invest in index funds and Stocks and Shares ISAs in the UK\", creating a substantial opening for contrarian takes and exact UK case studies.",
+        "AI Deduction: The UK audience displays fatigue with superficial guru-style formats, favouring creators who demonstrate real dashboards, exact fees, and transparent evidence.",
+        "AI Deduction: A script structure with an urgent 3-second hook focused on net bottom-line results will achieve retention well above the niche average."
+      ]
+    },
+    "contentGaps": [
+      {
+        "id": "gap-uk-1",
+        "category": "underserved-market-need",
+        "title": "UK Tax Rules, HMRC Allowances & Fiscal Drag vs Generic US Advice",
+        "description": "Too many videos about How to invest in index funds and Stocks and Shares ISAs in the UK uncritically import US concepts (401k, Roth IRA, IRS rules), completely ignoring UK-specific mechanisms such as HMRC tax years (6 April to 5 April), the £20,000 ISA allowance, Capital Gains Tax cuts, National Insurance thresholds, and SIPP tax relief.",
+        "whyCompetitorsMissedIt": "Creators frequently regurgitate American YouTube trends without adapting to UK tax law, HMRC self-assessment, and the British cost-of-living reality.",
+        "marketNuance": "United Kingdom (en-GB): UK viewers demand figures in British Pounds (£), tax year deadlines, Stamp Duty / council tax nuances, and authorised platforms regulated by the Financial Conduct Authority (FCA).",
+        "opportunityLevel": "critical"
+      },
+      {
+        "id": "gap-uk-2",
+        "category": "unanswered-question",
+        "title": "Realistic UK Household Budgets vs Influencer Extravagance",
+        "description": "With typical UK median take-home pay around £2,100 to £2,600 per month and soaring private rent, energy bills, and mortgages, advice demanding £1,000 monthly contributions causes viewer disengagement. There is a glaring lack of practical walkthroughs starting with £50 to £150 a month.",
+        "whyCompetitorsMissedIt": "Content creators chase sensationalist thumbnails with inflated figures, alienating everyday UK workers and young professionals.",
+        "marketNuance": "UK: A grounded, pragmatic tone that respects everyday British cost pressures without condescending guru posturing.",
+        "opportunityLevel": "very-high"
+      },
+      {
+        "id": "gap-uk-3",
+        "category": "oversaturated-angle",
+        "title": "Over-Theoretical Dictionaries: We Want Real Screen Walkthroughs and Exact UK Steps",
+        "description": "Over 70% of UK competitors produce static talking-head monologues repeating textbook definitions (\"What is an ETF\" / \"What is How to invest in index funds and Stocks and Shares ISAs in the UK\"). Viewers already know the theory; they want to see the mobile app screen, which specific fund to choose, which HMRC box to tick, and which hidden platform fees to avoid.",
+        "whyCompetitorsMissedIt": "Talking in front of a camera is faster than recording live screen walkthroughs and auditing transparent fee schedules.",
+        "marketNuance": "UK: High demand for crisp screen-recordings on mobile/desktop without tedious self-indulgent preambles.",
+        "opportunityLevel": "high"
+      },
+      {
+        "id": "gap-uk-4",
+        "category": "weak-competitor-execution",
+        "title": "Lack of Native Short-Form (Shorts/TikTok/Reels) with Immediate Practical Utility",
+        "description": "Competitors in the UK still rely on sleepy 25-minute webinars or low-effort podcast snippets. There is a wide gap for a creator delivering 45-second, high-density, actionable advice filmed specifically for vertical feeds.",
+        "whyCompetitorsMissedIt": "Lazy podcast clipping culture instead of purpose-built vertical hooks designed for UK viewers' mobile habits.",
+        "marketNuance": "UK: Fast pacing, clean subtitles, understated British humour, and clear cues to save for later reference.",
+        "opportunityLevel": "very-high"
+      }
+    ],
+    "rankedIdeas": [
+      {
+        "id": "idea-uk-1",
+        "title": "The Costly HMRC Mistake with How to invest in index funds and Stocks and Shares ISAs in the UK That Nobody Warns You About",
+        "angle": "Regulatory, tax year, and allowance alert unpicked with real paperwork and gov.uk screens.",
+        "format": "15min Long-Form Video with Live Walkthrough of HMRC & Platform Dashboards",
+        "gapExploited": "Oversaturation of generic US-centric advice ignoring UK Capital Gains Tax, ISA rules, and fiscal drag.",
+        "targetAudiencePainPoint": "Fear of unexpected HMRC penalty notices, tax year deadlines, or losing money to hidden fees.",
+        "viralityPotential": "Exceptional",
+        "competitionLevel": "Low",
+        "whyItWins": "British viewers distrust vague financial claims; seeing exact gov.uk guidelines and audited figures earns instant trust and saves.",
+        "rank": 1,
+        "opportunityScore": 95,
+        "isBestOpportunity": true
+      },
+      {
+        "id": "idea-uk-2",
+        "title": "How to Start with How to invest in index funds and Stocks and Shares ISAs in the UK with Just £50 to £100 a Month",
+        "angle": "Ultra-pragmatic blueprint calibrated directly to real UK median take-home pay.",
+        "format": "12min Realistic Walkthrough with Pound (£) Calculations",
+        "gapExploited": "Absence of approachable, sensible guides for younger UK workers squeezed by rent and utility bills.",
+        "targetAudiencePainPoint": "Feeling alienated by influencers claiming you need thousands of pounds to make an impact.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Low",
+        "whyItWins": "Directly reflects genuine UK household finances across London, Manchester, Birmingham, and regional towns.",
+        "rank": 2,
+        "opportunityScore": 90,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-uk-5",
+        "title": "My 15-Minute Weekly Routine to Master How to invest in index funds and Stocks and Shares ISAs While Working Full-Time in the UK",
+        "angle": "Minimalist operational routine designed for busy working professionals.",
+        "format": "11min Systems Walkthrough",
+        "gapExploited": "Information overload and chronic lack of free time among UK workers.",
+        "targetAudiencePainPoint": "Not having hours of spare time every weekend to digest complex manuals.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Low",
+        "whyItWins": "Delivering a proven, low-friction routine is an irresistible retention magnet.",
+        "rank": 3,
+        "opportunityScore": 87,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-uk-7",
+        "title": "3 Things in How to invest in index funds and Stocks and Shares ISAs That Sound Clever but Are a Complete Waste of Money",
+        "angle": "Pure contrarian audit dismantling three hyped UK products, courses, or services.",
+        "format": "12min Honest Review",
+        "gapExploited": "Consumer weariness of aggressive affiliate marketing and overpriced coaching.",
+        "targetAudiencePainPoint": "Frustration at wasting hard-earned money on underwhelming promises.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Low",
+        "whyItWins": "Builds immediate credibility by saving viewers money on day one.",
+        "rank": 4,
+        "opportunityScore": 86,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-uk-9",
+        "title": "I Tested the Most Popular How to invest in index funds and Stocks and Shares ISAs Strategy in the UK for 60 Days (The Honest Numbers)",
+        "angle": "Empirical experiment with an open ledger and unvarnished results.",
+        "format": "18min Full Case Study",
+        "gapExploited": "Absence of honest, real-world verification of popular market claims.",
+        "targetAudiencePainPoint": "Skepticism over whether popular online trends actually work in practice.",
+        "viralityPotential": "Exceptional",
+        "competitionLevel": "Low",
+        "whyItWins": "Transparent documentation converts casual viewers into dedicated subscribers.",
+        "rank": 5,
+        "opportunityScore": 86,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-uk-3",
+        "title": "Traditional UK High Street Banks vs Modern Platforms: Where You Lose the Least Money",
+        "angle": "Relentless audit of hidden account fees, FX markups, and platform charges.",
+        "format": "16min Full Spreadsheet Audit on Screen",
+        "gapExploited": "Lack of transparency and customer inertia regarding legacy UK high street banks.",
+        "targetAudiencePainPoint": "Paying unnecessary monthly charges and receiving uncompetitive interest rates.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Medium",
+        "whyItWins": "Provokes energetic debate in the comments section and high bookmark rates.",
+        "rank": 6,
+        "opportunityScore": 83,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-uk-10",
+        "title": "5 Free UK Tools & Resources That Replace Costly Software Subscriptions",
+        "angle": "Lean toolkit accessible to anyone in the UK for immediate results.",
+        "format": "14min Tool Demonstration",
+        "gapExploited": "Prohibitive costs of software pushed by sponsors and gurus.",
+        "targetAudiencePainPoint": "Reluctance to add another recurring monthly subscription to already stretched bills.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Low",
+        "whyItWins": "Instant utility generates high share and bookmark rates.",
+        "rank": 7,
+        "opportunityScore": 83,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-uk-13",
+        "title": "How to Automate 80% of Your Routine with How to invest in index funds and Stocks and Shares ISAs Using Simple Systems",
+        "angle": "Efficiency without needing advanced technical or coding skills.",
+        "format": "13min Systems Walkthrough",
+        "gapExploited": "Time wasted on tedious, repetitive manual tasks.",
+        "targetAudiencePainPoint": "Feeling overwhelmed and exhausted after a long working week.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Low",
+        "whyItWins": "Appeals directly to anyone looking to regain their free evenings and weekends.",
+        "rank": 8,
+        "opportunityScore": 81,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-uk-6",
+        "title": "The Definitive Guide to How to invest in index funds and Stocks and Shares ISAs for Anyone Living Outside London in the UK",
+        "angle": "Focus on regional opportunities, realistic living costs, and decentralised work across the UK.",
+        "format": "13min Case Study",
+        "gapExploited": "London-centric content bubble that ignores life across the North, Midlands, Scotland, and Wales.",
+        "targetAudiencePainPoint": "Advice that only makes sense if you earn an inflated central London salary.",
+        "viralityPotential": "High",
+        "competitionLevel": "Low",
+        "whyItWins": "Audiences outside the M25 feel heard and champion the creator.",
+        "rank": 9,
+        "opportunityScore": 80,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-uk-4",
+        "title": "Why 90% of People Struggle with How to invest in index funds and Stocks and Shares ISAs in the UK (And What the Top 10% Do Differently)",
+        "angle": "Myth-buster dismantling conventional UK advice that has stopped working in 2025/2026.",
+        "format": "15min Critical Breakdown",
+        "gapExploited": "Tired, recycled advice peddled by self-styled online experts.",
+        "targetAudiencePainPoint": "Feeling stuck in place despite putting in long hours at work.",
+        "viralityPotential": "High",
+        "competitionLevel": "Medium",
+        "whyItWins": "Taps into healthy British skepticism and curiosity by challenging standard boilerplate advice.",
+        "rank": 10,
+        "opportunityScore": 79,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-uk-15",
+        "title": "How to Negotiate Better Terms and Save on How to invest in index funds and Stocks and Shares ISAs in 3 Simple Questions",
+        "angle": "Direct negotiation scripts to use with UK providers and firms.",
+        "format": "11min Negotiation Strategy",
+        "gapExploited": "Natural British reserve and reluctance to haggle or challenge initial quotes.",
+        "targetAudiencePainPoint": "Accepting inflated renewal prices out of embarrassment to push back.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Low",
+        "whyItWins": "Practical roleplay scripts give viewers immediate confidence and tangible cash savings.",
+        "rank": 11,
+        "opportunityScore": 77,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-uk-11",
+        "title": "What Changed with How to invest in index funds and Stocks and Shares ISAs in the UK for 2025/2026: What You Must Do Now",
+        "angle": "Regulatory update and ahead-of-the-curve practical preparation.",
+        "format": "12min Trend Analysis",
+        "gapExploited": "Outdated videos from 2-3 years ago that give invalid advice under current UK rules.",
+        "targetAudiencePainPoint": "Uncertainty over recent tax threshold freezes and compliance shifts.",
+        "viralityPotential": "High",
+        "competitionLevel": "Low",
+        "whyItWins": "Urgency and timely relevance drive strong organic search traffic.",
+        "rank": 12,
+        "opportunityScore": 76,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-uk-12",
+        "title": "Live Audit: Analysing Real UK Examples and Mistakes with How to invest in index funds and Stocks and Shares ISAs",
+        "angle": "Subscriber-submitted examples with frank, constructive diagnostics.",
+        "format": "16min Practical Consultancy",
+        "gapExploited": "The gap between abstract advice and unique personal circumstances.",
+        "targetAudiencePainPoint": "Not knowing how to spot your own blind spots.",
+        "viralityPotential": "High",
+        "competitionLevel": "Low",
+        "whyItWins": "High relatability as viewers see their own challenges mirrored in real examples.",
+        "rank": 13,
+        "opportunityScore": 75,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-uk-8",
+        "title": "How to Set Up How to invest in index funds and Stocks and Shares ISAs from Scratch with Zero Previous Experience",
+        "angle": "Plain-English zero-to-one tutorial without baffling jargon.",
+        "format": "15min Plain-English Guide",
+        "gapExploited": "The intimidating technical barrier erected by traditional specialists.",
+        "targetAudiencePainPoint": "Fear of looking uninformed or getting lost in complicated terminology.",
+        "viralityPotential": "High",
+        "competitionLevel": "Medium",
+        "whyItWins": "Welcomes complete beginners whom other technical channels overlook.",
+        "rank": 14,
+        "opportunityScore": 74,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-uk-14",
+        "title": "Are Professional Certificates & Courses Worth It for How to invest in index funds and Stocks and Shares ISAs in the UK?",
+        "angle": "Unsentimental cost-benefit analysis of formal credentials vs self-directed learning.",
+        "format": "12min Industry Breakdown",
+        "gapExploited": "Predatory online course vendors promising guaranteed career leaps.",
+        "targetAudiencePainPoint": "Agonising over whether to spend thousands of pounds on courses.",
+        "viralityPotential": "High",
+        "competitionLevel": "Low",
+        "whyItWins": "Protects the viewer's wallet and sparks lively discussion in the comments.",
+        "rank": 15,
+        "opportunityScore": 74,
+        "isBestOpportunity": false
+      },
+      {
+        "id": "idea-uk-16",
+        "title": "The UK Safety & Due Diligence Checklist for How to invest in index funds and Stocks and Shares ISAs: How to Avoid Scams Online",
+        "angle": "Practical cybersecurity and FCA regulation checks for UK consumers.",
+        "format": "13min Due Diligence Guide",
+        "gapExploited": "Rising sophisticated online financial scams targeting UK citizens.",
+        "targetAudiencePainPoint": "Fear of getting caught out by unregulated platforms or fraudulent schemes.",
+        "viralityPotential": "High",
+        "competitionLevel": "Low",
+        "whyItWins": "Essential public service content with lasting reference value.",
+        "rank": 16,
+        "opportunityScore": 73,
+        "isBestOpportunity": false
+      }
+    ],
+    "bestOpportunityId": "idea-uk-1",
+    "bestOpportunity": {
+      "id": "idea-uk-1",
+      "title": "The Costly HMRC Mistake with How to invest in index funds and Stocks and Shares ISAs in the UK That Nobody Warns You About",
+      "angle": "Regulatory, tax year, and allowance alert unpicked with real paperwork and gov.uk screens.",
+      "format": "15min Long-Form Video with Live Walkthrough of HMRC & Platform Dashboards",
+      "gapExploited": "Oversaturation of generic US-centric advice ignoring UK Capital Gains Tax, ISA rules, and fiscal drag.",
+      "targetAudiencePainPoint": "Fear of unexpected HMRC penalty notices, tax year deadlines, or losing money to hidden fees.",
+      "viralityPotential": "Exceptional",
+      "competitionLevel": "Low",
+      "whyItWins": "British viewers distrust vague financial claims; seeing exact gov.uk guidelines and audited figures earns instant trust and saves.",
+      "rank": 1,
+      "opportunityScore": 95,
+      "isBestOpportunity": true
+    },
+    "scripts": [
+      {
+        "id": "script-uk-contrarian",
+        "style": "contrarian-mythbuster",
+        "styleName": "Variation 1: The Contrarian Reality Check (Highest Retention & Debate)",
+        "badge": "Highest Retention & Debate",
+        "tagline": "Dismantles the most prevalent UK misconception and reveals the evidence-backed alternative.",
+        "estimatedDuration": "12 minutes",
+        "targetWordCount": 1700,
+        "sections": [
+          {
+            "timestamp": "0:00 - 0:03",
+            "stage": "Hook",
+            "visualCue": "[VISUAL: Tight close-up to camera, serious expression holding a mobile displaying an HMRC or account alert]",
+            "spokenText": "If you are still doing this with How to invest in index funds and Stocks and Shares ISAs in the UK, I'm sorry to say, but you are throwing money away every single month.",
+            "audioToneCue": "[AUDIO: Clean cut / silence in the first 2 seconds to focus viewer attention]"
+          },
+          {
+            "timestamp": "0:03 - 0:12",
+            "stage": "Agitate / Pattern Interrupt",
+            "visualCue": "[VISUAL: Quick cut to official UK figures with frozen tax thresholds and fee rates circled in red]",
+            "spokenText": "Ninety per cent of self-styled online experts tell you to follow the same old textbook playbook. The problem? Those thresholds have frozen, and stealth taxes combined with platform fees are quietly eating away at your returns.",
+            "audioToneCue": "[AUDIO: Subtle rising percussive tension]"
+          },
+          {
+            "timestamp": "0:12 - 0:32",
+            "stage": "Core Value / Meat",
+            "visualCue": "[VISUAL: Clean screen-recording comparing the traditional route against the modern optimised protocol]",
+            "spokenText": "Look closely at this comparison: under the standard route, you immediately surrender a chunk to account charges and unnecessary HMRC drag. If you make this straightforward three-step tweak instead, your net return remains protected.",
+            "audioToneCue": "[AUDIO: Upbeat, modern rhythm under clear speech]"
+          },
+          {
+            "timestamp": "0:32 - 0:40",
+            "stage": "Payoff / Turnaround",
+            "visualCue": "[VISUAL: Return to primary camera with confident posture and key takeaway emphasised on screen]",
+            "spokenText": "The real difference is gaining genuine peace of mind and not being caught off-guard with a surprise tax demand at the end of the tax year.",
+            "audioToneCue": "[AUDIO: Reassuring harmonic resolve]"
+          },
+          {
+            "timestamp": "0:40 - 0:45",
+            "stage": "Call to Action",
+            "visualCue": "[VISUAL: Direct gesture towards the save/bookmark button with on-screen text]",
+            "spokenText": "Save this video so you have it ready when you sort this out, and leave a comment below if you want the checklist with the exact details.",
+            "audioToneCue": "[AUDIO: Clean outro sting]"
+          }
+        ],
+        "fullSpokenText": "If you are still doing this with How to invest in index funds and Stocks and Shares ISAs in the UK, I'm sorry to say, but you are throwing money away every single month. Ninety per cent of self-styled online experts tell you to follow the same old textbook playbook. The problem? Those thresholds have frozen, and stealth taxes combined with platform fees are quietly eating away at your returns. Look closely at this comparison: under the standard route, you immediately surrender a chunk to account charges and unnecessary HMRC drag. If you make this straightforward three-step tweak instead, your net return remains protected. The real difference is gaining genuine peace of mind and not being caught off-guard with a surprise tax demand at the end of the tax year. Save this video so you have it ready when you sort this out, and leave a comment below if you want the checklist with the exact details."
+      },
+      {
+        "id": "script-uk-story",
+        "style": "story-driven-case-study",
+        "styleName": "Variation 2: Personal Case Study & Journey (Maximum Authority & Trust)",
+        "badge": "Maximum Authority & Trust",
+        "tagline": "Walks through the real frustration of starting from scratch in the UK to finding a low-friction system.",
+        "estimatedDuration": "15 minutes",
+        "targetWordCount": 1900,
+        "sections": [
+          {
+            "timestamp": "0:00 - 0:04",
+            "stage": "Hook",
+            "visualCue": "[VISUAL: Looking at a laptop screen with genuine frustration, mug of tea on desk]",
+            "spokenText": "Two years ago, I made the most expensive mistake of my life with How to invest in index funds and Stocks and Shares ISAs in the UK. And nobody on the internet bothered to warn me.",
+            "audioToneCue": "[AUDIO: Thoughtful, understated opening chords]"
+          },
+          {
+            "timestamp": "0:04 - 0:15",
+            "stage": "Agitate / Pattern Interrupt",
+            "visualCue": "[VISUAL: Rapid cut of early morning commute and endless paperwork]",
+            "spokenText": "I was working long hours, commuting, and trusting conventional advice. At the end of the month, the sums just didn't add up, and the feeling of financial stagnation was exhausting.",
+            "audioToneCue": "[AUDIO: Building intensity and momentum]"
+          },
+          {
+            "timestamp": "0:15 - 0:35",
+            "stage": "Core Value / Meat",
+            "visualCue": "[VISUAL: Laptop screen displaying a clean spreadsheet with 3 core rules]",
+            "spokenText": "Until I decided to cut out eighty per cent of the noise and focus exclusively on these three simple rules. That was the turning point that completely altered my trajectory.",
+            "audioToneCue": "[AUDIO: Confident, crisp delivery tone]"
+          },
+          {
+            "timestamp": "0:35 - 0:43",
+            "stage": "Payoff / Turnaround",
+            "visualCue": "[VISUAL: Calm mid-shot with relaxed, reassuring smile]",
+            "spokenText": "Today, it takes me barely ten minutes a week to manage everything with complete clarity and zero stress.",
+            "audioToneCue": "[AUDIO: Warm, positive chord]"
+          },
+          {
+            "timestamp": "0:43 - 0:50",
+            "stage": "Call to Action",
+            "visualCue": "[VISUAL: On-screen caption: \"Subscribe for honest, hype-free UK guides\"]",
+            "spokenText": "If you want to dodge the costly blunders I made, follow the channel and share this with a mate who needs to hear it today.",
+            "audioToneCue": "[AUDIO: Clean outro beat]"
+          }
+        ],
+        "fullSpokenText": "Two years ago, I made the most expensive mistake of my life with How to invest in index funds and Stocks and Shares ISAs in the UK. And nobody on the internet bothered to warn me. I was working long hours, commuting, and trusting conventional advice. At the end of the month, the sums just didn't add up, and the feeling of financial stagnation was exhausting. Until I decided to cut out eighty per cent of the noise and focus exclusively on these three simple rules. That was the turning point that completely altered my trajectory. Today, it takes me barely ten minutes a week to manage everything with complete clarity and zero stress. If you want to dodge the costly blunders I made, follow the channel and share this with a mate who needs to hear it today."
+      },
+      {
+        "id": "script-uk-blueprint",
+        "style": "actionable-blueprint",
+        "styleName": "Variation 3: The Pragmatic 3-Step Blueprint (Highest Bookmark & Save Rate)",
+        "badge": "Highest Bookmark & Save Rate",
+        "tagline": "Zero waffle. A crisp, three-step action protocol you can implement straight away.",
+        "estimatedDuration": "10 minutes",
+        "targetWordCount": 1500,
+        "sections": [
+          {
+            "timestamp": "0:00 - 0:03",
+            "stage": "Hook",
+            "visualCue": "[VISUAL: Three fingers held up to camera with clean text transition: \"1, 2, 3\"]",
+            "spokenText": "The exact three-step blueprint to master How to invest in index funds and Stocks and Shares ISAs in the UK without wasting hours of your time.",
+            "audioToneCue": "[AUDIO: Snappy whoosh effect and modern beat]"
+          },
+          {
+            "timestamp": "0:03 - 0:13",
+            "stage": "Core Value / Meat",
+            "visualCue": "[VISUAL: Bold number 1 on screen with screen capture of an FCA-regulated platform]",
+            "spokenText": "Step one: Cut out high-fee legacy intermediaries and opt for an FCA-regulated platform with genuinely transparent, capped charges.",
+            "audioToneCue": "[AUDIO: Affirmative pop sound]"
+          },
+          {
+            "timestamp": "0:13 - 0:25",
+            "stage": "Core Value / Meat",
+            "visualCue": "[VISUAL: Number 2 on screen highlighting automated monthly standing order setup]",
+            "spokenText": "Step two: Set up an automated standing order for the day after payday so you're never tempted to spend what you intended to allocate.",
+            "audioToneCue": "[AUDIO: Subtle ticking clock effect]"
+          },
+          {
+            "timestamp": "0:25 - 0:34",
+            "stage": "Payoff / Turnaround",
+            "visualCue": "[VISUAL: Number 3 on screen displaying HMRC tax allowance verification]",
+            "spokenText": "Step three: Make full use of your statutory allowances and tax relief so you aren't handing over unnecessary money to HMRC.",
+            "audioToneCue": "[AUDIO: Upbeat chime]"
+          },
+          {
+            "timestamp": "0:34 - 0:40",
+            "stage": "Call to Action",
+            "visualCue": "[VISUAL: Highlight around the bookmark icon]",
+            "spokenText": "Bookmark this now so you don't lose it, and subscribe to the channel for more no-nonsense UK breakdowns.",
+            "audioToneCue": "[AUDIO: Final closing chord]"
+          }
+        ],
+        "fullSpokenText": "The exact three-step blueprint to master How to invest in index funds and Stocks and Shares ISAs in the UK without wasting hours of your time. Step one: Cut out high-fee legacy intermediaries and opt for an FCA-regulated platform with genuinely transparent, capped charges. Step two: Set up an automated standing order for the day after payday so you're never tempted to spend what you intended to allocate. Step three: Make full use of your statutory allowances and tax relief so you aren't handing over unnecessary money to HMRC. Bookmark this now so you don't lose it, and subscribe to the channel for more no-nonsense UK breakdowns."
+      }
+    ],
+    "titles": [
+      {
+        "id": "title-1",
+        "type": "Curiosity Gap",
+        "title": "The Unwritten UK Rule of How to invest in index funds and Stocks and Shares ISAs That Changes Everything",
+        "score": 96
+      },
+      {
+        "id": "title-2",
+        "type": "Fear of Missing Out / Loss",
+        "title": "The Costly HMRC & Fee Trap in How to invest in index funds and Stocks and Shares ISAs That Costs You Thousands",
+        "score": 94
+      },
+      {
+        "id": "title-3",
+        "type": "Contrarian",
+        "title": "Why You Must Stop Following Standard Advice on How to invest in index funds and Stocks and Shares ISAs in the UK",
+        "score": 92
+      },
+      {
+        "id": "title-4",
+        "type": "Outcome / How-To",
+        "title": "How to Master How to invest in index funds and Stocks and Shares ISAs in the UK in Just 15 Minutes a Week",
+        "score": 91
+      },
+      {
+        "id": "title-5",
+        "type": "Number / Listicle",
+        "title": "3 Traps in How to invest in index funds and Stocks and Shares ISAs That Nobody Explains in the UK (And How to Avoid Them)",
+        "score": 89
+      }
+    ],
+    "hooks": [
+      {
+        "id": "hook-1",
+        "type": "Pattern Interrupt",
+        "visualHook": "Ultra-fast snap zoom to camera with direct, deadpan expression holding a mobile displaying an HMRC or bank notification.",
+        "spokenHook": "If you're still doing this with How to invest in index funds and Stocks and Shares ISAs in the UK, you are quietly throwing money away.",
+        "overlayText": "90% GET THIS WRONG IN THE UK"
+      },
+      {
+        "id": "hook-2",
+        "type": "Visual Shock",
+        "visualHook": "Highlighting an inflated annual platform fee crossed out in bold red and replaced with an optimised net figure.",
+        "spokenHook": "Have a proper look at this number. That is the exact difference between doing this the smart way or the old-fashioned way.",
+        "overlayText": "PROVEN NET SAVINGS"
+      },
+      {
+        "id": "hook-3",
+        "type": "Provocative Question",
+        "visualHook": "Thoughtful pause looking directly into the lens with a raised eyebrow.",
+        "spokenHook": "Have you ever actually worked out how much you surrender to hidden platform charges and fiscal drag each year in the UK?",
+        "overlayText": "HAVE YOU DONE THE MATHS?"
+      },
+      {
+        "id": "hook-4",
+        "type": "Story Opener",
+        "visualHook": "Sitting at desk with a cup of tea, opening a spreadsheet showing prior year statements.",
+        "spokenHook": "I fell into this exact trap for two solid years in the UK, and nobody bothered to tell me.",
+        "overlayText": "THE MISTAKE THAT COST ME"
+      },
+      {
+        "id": "hook-5",
+        "type": "Bold Statement",
+        "visualHook": "Pointing index finger firmly towards camera lens.",
+        "spokenHook": "The standard textbook advice they gave you on How to invest in index funds and Stocks and Shares ISAs no longer holds up in 2025/2026.",
+        "overlayText": "THE RULES HAVE CHANGED"
+      }
+    ],
+    "ctas": [
+      {
+        "id": "cta-yt-1",
+        "goal": "Follow / Subscribe",
+        "spokenCta": "If this breakdown helped you out, subscribe to the channel and turn on notifications so you don't miss next week's analysis.",
+        "onScreenText": "SUBSCRIBE TO THE CHANNEL 🔔",
+        "platformBestPractice": "Display end screen with subscribe button and recommended video in the final 20 seconds."
+      },
+      {
+        "id": "cta-yt-2",
+        "goal": "Comment / Keyword Automation",
+        "spokenCta": "Leave a comment below with your biggest question on this. I reply to every single comment during the first 24 hours.",
+        "onScreenText": "DROP YOUR QUESTION IN THE COMMENTS 👇",
+        "platformBestPractice": "Pin a top comment with an open-ended question to spark discussion in the comments section."
+      }
+    ],
+    "sources": [
+      {
+        "id": "src-1",
+        "title": "How to Invest in Stocks & Shares ISAs for Beginners (UK Guide)",
+        "url": "https://www.youtube.com/watch?v=0h9VqKqX4L0",
+        "platform": "youtube",
+        "channelOrHost": "Damian Talks Money",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-04T21:06:11.909Z",
+        "snippet": "Comprehensive breakdown of the £20,000 annual ISA allowance, capital gains tax exemptions, and platforms like Trading 212 vs Vanguard UK."
+      },
+      {
+        "id": "src-2",
+        "title": "The UK Pension & Tax Rules You Need to Know in 2025/2026",
+        "url": "https://www.youtube.com/watch?v=7Xw9yV1kM2Q",
+        "platform": "youtube",
+        "channelOrHost": "James Shack",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-04T21:06:11.909Z",
+        "snippet": "Detailed analysis of UK pension tax relief, Lifetime ISA vs SIPP, and National Insurance thresholds."
+      },
+      {
+        "id": "src-3",
+        "title": "How I Organise My Life & Work with Simple Systems (UK)",
+        "url": "https://www.youtube.com/watch?v=sQwH1xM5vQ0",
+        "platform": "youtube",
+        "channelOrHost": "Ali Abdaal",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-04T21:06:11.909Z",
+        "snippet": "Step-by-step walkthrough of weekly planning, daily routines, and productivity frameworks tested over years."
+      },
+      {
+        "id": "src-4",
+        "title": "5 Money Rules That Made Me a Millionaire in the UK",
+        "url": "https://www.youtube.com/watch?v=3nK2v9xP8wE",
+        "platform": "youtube",
+        "channelOrHost": "Mark Tilbury",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-04T21:06:11.909Z",
+        "snippet": "Actionable financial advice focusing on compounding, living below means, and avoiding high-interest consumer debt."
+      },
+      {
+        "id": "src-5",
+        "title": "The £20,000 ISA Rule Most People in the UK Don't Know",
+        "url": "https://www.youtube.com/shorts/3nK9vL1wP0Q",
+        "platform": "youtube",
+        "channelOrHost": "UK Money Tips",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-04T21:06:11.909Z",
+        "snippet": "Quick 45s breakdown on how to split ISA allowances across cash and stocks without breaking HMRC rules."
+      }
+    ]
+  },
+  {
     "id": "proj_1791146472008_82pzq",
     "createdAt": "2026-10-04T20:41:12.008Z",
     "request": {

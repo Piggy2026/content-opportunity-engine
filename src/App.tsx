@@ -376,7 +376,7 @@ export default function App() {
             <strong>Content Opportunity Engine</strong> • Pesquisa & Análise Estratégica de Conteúdo
           </p>
           <p className="text-slate-400">
-            Mercados Alvo: Portugal (pt-PT) • Brasil (pt-BR) • Espanha (es-ES)
+            Mercados Alvo: Portugal (pt-PT) • Brasil (pt-BR) • Espanha (es-ES) • Reino Unido (en-GB)
           </p>
         </div>
       </footer>

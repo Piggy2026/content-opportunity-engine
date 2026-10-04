@@ -1,4 +1,4 @@
-export type TargetMarket = 'pt-PT' | 'pt-BR' | 'es-ES';
+export type TargetMarket = 'pt-PT' | 'pt-BR' | 'es-ES' | 'en-GB';
 
 export type Platform = 'youtube' | 'youtube-shorts' | 'tiktok' | 'instagram-reels';
 

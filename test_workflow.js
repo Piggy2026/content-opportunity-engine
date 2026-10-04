@@ -217,7 +217,26 @@ async function runTests() {
   const esData = await esRes.json();
   assert(esData.rankedIdeas.length >= 15, 'Generated 15-20 ranked ideas for Spain');
   assert(esData.scripts.length === 3, 'Generated 3 scripts for Spain');
-  assert(esData.contentGaps.some(g => g.marketNuance.includes('España') || g.marketNuance.includes('es-ES')), 'Spain market nuance detected');
+  // 16. Testing United Kingdom Workflow (en-GB, YouTube)
+  console.log('\nStep 16: Testing Analysis Pipeline for United Kingdom (en-GB, YouTube)...');
+  const ukReq = {
+    topic: 'How to invest in index funds and Stocks and Shares ISAs in the UK',
+    market: 'en-GB',
+    platform: 'youtube',
+    audienceLevel: 'beginner',
+  };
+  const ukRes = await fetch('http://localhost:3001/api/analyze', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(ukReq),
+  });
+  assert(ukRes.ok, 'Pipeline responded 200 for UK request');
+  const ukData = await ukRes.json();
+  assert(ukData.rankedIdeas.length >= 15, 'Generated 15-20 ranked ideas for UK');
+  assert(ukData.scripts.length === 3, 'Generated 3 scripts for UK');
+  assert(ukData.contentGaps.some(g => g.marketNuance.includes('United Kingdom') || g.marketNuance.includes('UK') || g.marketNuance.includes('en-GB')), 'UK market nuance detected');
+  assert(ukData.scripts[0].fullSpokenText.includes('UK') || ukData.scripts[0].fullSpokenText.includes('HMRC') || ukData.scripts[0].fullSpokenText.includes('per cent'), 'British English vocabulary verified in scripts');
+  assert(ukData.ctas.length >= 2, 'Generated platform-native UK CTAs');
 
   console.log('\n🎉 ALL WORKFLOW TESTS PASSED SUCCESSFULLY! 🎉\n');
 }

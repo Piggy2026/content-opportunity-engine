@@ -36,6 +36,15 @@ export const MARKETS: MarketOption[] = [
     localeCode: 'es-ES',
     description: 'Castellano (móvil, Hacienda, autónomos, IRPF), deducciones y marco legal comunitario.',
   },
+  {
+    id: 'en-GB',
+    name: 'United Kingdom',
+    country: 'United Kingdom',
+    flag: '🇬🇧',
+    language: 'British English',
+    localeCode: 'en-GB',
+    description: 'Natural British English (mobile, flat, holiday, CV), HMRC, ISA, NI, VAT, and UK cost of living.',
+  },
 ];
 
 export const PLATFORMS: PlatformOption[] = [
@@ -95,9 +104,9 @@ const PRESETS = [
     platform: 'youtube-shorts' as Platform,
   },
   {
-    topic: 'Comprar Casa em Portugal em 2026: Garantia Pública e Isenção de IMT',
-    market: 'pt-PT' as TargetMarket,
-    platform: 'instagram-reels' as Platform,
+    topic: 'How to Invest in Stocks & Shares ISAs and Minimise Capital Gains Tax in the UK',
+    market: 'en-GB' as TargetMarket,
+    platform: 'youtube' as Platform,
   },
 ];
 

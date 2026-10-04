@@ -7,6 +7,7 @@ export function generateMarkdownDossier(data: OpportunityEngineResult): string {
     'pt-PT': 'Portugal (Português Europeu)',
     'pt-BR': 'Brasil (Português Brasileiro)',
     'es-ES': 'España (Español)',
+    'en-GB': 'United Kingdom (British English)',
   };
 
   const md = `# Relatório Estratégico: Content Opportunity Engine

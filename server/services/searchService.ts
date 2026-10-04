@@ -19,6 +19,7 @@ function buildSearchQueries(req: ResearchRequest): string[] {
   if (market === 'pt-PT') marketQualifier = 'Portugal';
   else if (market === 'pt-BR') marketQualifier = 'Brasil';
   else if (market === 'es-ES') marketQualifier = 'España';
+  else if (market === 'en-GB') marketQualifier = 'UK';
 
   let siteConstraint = '';
   let platformKeyword = '';
@@ -41,9 +42,17 @@ function buildSearchQueries(req: ResearchRequest): string[] {
   // 2. Broad platform search without strict site: constraint (higher hit rate on DuckDuckGo Lite)
   queries.push(`${platformKeyword} ${topic} ${marketQualifier}`);
   // 3. Problem solving / tutorial query
-  queries.push(`${platformKeyword} "como" ${topic} ${marketQualifier}`);
+  queries.push(
+    market === 'en-GB'
+      ? `${platformKeyword} "how to" ${topic} ${marketQualifier}`
+      : `${platformKeyword} "como" ${topic} ${marketQualifier}`
+  );
   // 4. Topic in target market
-  queries.push(`${topic} ${marketQualifier} ${platform === 'youtube' ? 'canal video' : 'shorts reels viral'}`);
+  queries.push(
+    market === 'en-GB'
+      ? `${topic} ${marketQualifier} ${platform === 'youtube' ? 'channel video' : 'shorts reels viral'}`
+      : `${topic} ${marketQualifier} ${platform === 'youtube' ? 'canal video' : 'shorts reels viral'}`
+  );
 
   return queries;
 }
@@ -286,7 +295,9 @@ export async function searchCompetitors(req: ResearchRequest): Promise<SearchCom
       ? 'Portugal'
       : req.market === 'pt-BR'
       ? 'Brasil'
-      : 'España';
+      : req.market === 'es-ES'
+      ? 'España'
+      : 'United Kingdom';
 
   // 1. If Gemini API key is available, run live search with Google Search Grounding
   if (apiKey) {
@@ -309,12 +320,16 @@ export async function searchCompetitors(req: ResearchRequest): Promise<SearchCom
               snippet: item.snippet,
               isRealVerifiedSource: true,
               sourceDomain: item.sourceDomain,
-              factSummary: `URL real indexada com presença no ecossistema de conteúdo: ${item.title}.`,
+              factSummary: req.market === 'en-GB'
+                ? `Active URL indexed in content ecosystem: ${item.title}.`
+                : `URL real indexada com presença no ecossistema de conteúdo: ${item.title}.`,
               aiInference: req.market === 'pt-PT'
                 ? `Dedução IA: Este conteúdo gerou autoridade no nicho de "${req.topic}" respondendo à intenção de pesquisa prioritária do utilizador local.`
                 : req.market === 'pt-BR'
                 ? `Dedução IA: Este conteúdo gerou autoridade no nicho de "${req.topic}" respondendo à intenção de busca prioritária do usuário local.`
-                : `Deducción IA: Este contenido generó autoridad en el nicho de "${req.topic}" respondiendo a la intención de búsqueda del usuario local.`,
+                : req.market === 'es-ES'
+                ? `Deducción IA: Este contenido generó autoridad en el nicho de "${req.topic}" respondiendo a la intención de búsqueda del usuario local.`
+                : `AI Deduction: This content generated authority in the "${req.topic}" niche by directly addressing the primary search intent of UK viewers.`,
             });
           }
         }
@@ -343,12 +358,18 @@ export async function searchCompetitors(req: ResearchRequest): Promise<SearchCom
             platform: req.platform,
             views,
             publishedDate,
-            snippet: item.snippet || `Vídeo / publicação com foco em ${req.topic} para o mercado selecionado.`,
+            snippet: item.snippet || (req.market === 'en-GB'
+              ? `Video / publication focusing on ${req.topic} for the UK audience.`
+              : `Vídeo / publicação com foco em ${req.topic} para o mercado selecionado.`),
             isRealVerifiedSource: true,
             sourceDomain: item.sourceDomain,
             detectedHookOrAngle: hook,
-            factSummary: `Conteúdo ativo verificado via pesquisa pública: título "${item.title}".`,
-            aiInference: `Dedução IA: Formato estruturado para atrair tráfego orgânico com ênfase em retenção inicial.`,
+            factSummary: req.market === 'en-GB'
+              ? `Active content verified via public search: title "${item.title}".`
+              : `Conteúdo ativo verificado via pesquisa pública: título "${item.title}".`,
+            aiInference: req.market === 'en-GB'
+              ? `AI Deduction: Structured to attract organic search traffic with emphasis on high initial retention.`
+              : `Dedução IA: Formato estruturado para atrair tráfego orgânico com ênfase em retenção inicial.`,
           });
         }
       }
@@ -401,14 +422,18 @@ export async function searchCompetitors(req: ResearchRequest): Promise<SearchCom
       sourceType: 'curated_niche_match',
       isLiveResearchAvailable: true,
       queryPerformed: queries[0] || req.topic,
-      notice: `Fontes auditadas obtidas com correspondência direta às palavras-chave de "${req.topic}".`,
+      notice: req.market === 'en-GB'
+        ? `Audited sources obtained via direct keyword match for "${req.topic}".`
+        : `Fontes auditadas obtidas com correspondência direta às palavras-chave de "${req.topic}".`,
     };
   } else {
     provenance = {
       sourceType: 'insufficient_live_data',
       isLiveResearchAvailable: false,
       queryPerformed: queries[0] || req.topic,
-      notice: `Pesquisa pública direta indisponível ou sem correspondência indexada no momento para "${req.topic}" no mercado de ${marketLabel}. Nenhum canal fora de nicho ou métrica inventada foi apresentado.`,
+      notice: req.market === 'en-GB'
+        ? `Direct public search unavailable or no indexed match currently found for "${req.topic}" in the ${marketLabel} market. No unrelated benchmark channels or fabricated metrics were substituted.`
+        : `Pesquisa pública direta indisponível ou sem correspondência indexada no momento para "${req.topic}" no mercado de ${marketLabel}. Nenhum canal fora de nicho ou métrica inventada foi apresentado.`,
     };
   }
 
