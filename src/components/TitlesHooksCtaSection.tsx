@@ -101,7 +101,7 @@ export const TitlesHooksCtaSection: React.FC<TitlesHooksCtaSectionProps> = ({
                 <div className="flex items-center justify-between text-xs">
                   <span className="font-bold text-indigo-400">{hook.type}</span>
                   <button
-                    onClick={() => handleCopy(hook.id, `VISUAL: ${hook.visualHook}\nFALA: "${hook.spokenHook}"\nTEXTO: ${hook.overlayText}`)}
+                    onClick={() => handleCopy(hook.id, `${t.titlesHooksCta.visualLabel} ${hook.visualHook}\n${t.titlesHooksCta.spokenLabel} "${hook.spokenHook}"\n${t.titlesHooksCta.overlayLabel} ${hook.overlayText}`)}
                     className="p-1 rounded hover:bg-slate-800 text-slate-400 hover:text-white transition"
                     title={t.titlesHooksCta.copyHookTooltip}
                   >
@@ -157,7 +157,7 @@ export const TitlesHooksCtaSection: React.FC<TitlesHooksCtaSectionProps> = ({
                     {cta.goal}
                   </span>
                   <button
-                    onClick={() => handleCopy(cta.id, `FALA: "${cta.spokenCta}"\nTEXTO: ${cta.onScreenText}`)}
+                    onClick={() => handleCopy(cta.id, `${t.titlesHooksCta.ctaSpokenLabel} "${cta.spokenCta}"\n${t.titlesHooksCta.ctaVisualLabel} ${cta.onScreenText}`)}
                     className="p-1 rounded hover:bg-slate-800 text-slate-400 hover:text-white transition"
                     title={t.titlesHooksCta.copyCtaTooltip}
                   >

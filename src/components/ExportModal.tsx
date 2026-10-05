@@ -11,12 +11,12 @@ interface ExportModalProps {
 }
 
 export const ExportModal: React.FC<ExportModalProps> = ({ isOpen, onClose, result }) => {
-  const { t } = useLanguage();
+  const { t, uiLanguage } = useLanguage();
   const [copiedType, setCopiedType] = useState<string | null>(null);
 
   if (!isOpen) return null;
 
-  const markdownContent = generateMarkdownDossier(result);
+  const markdownContent = generateMarkdownDossier(result, uiLanguage);
   const jsonContent = JSON.stringify(result, null, 2);
 
   const handleCopyMarkdown = async () => {
