@@ -7,6 +7,7 @@ import { analyzeOutliers } from './services/outlierService.js';
 import { detectContentGaps } from './services/gapService.js';
 import { generateRankedIdeas } from './services/ideasService.js';
 import { generateScriptSuite } from './services/scriptService.js';
+import { enforceTopicFidelity } from './services/topicValidator.js';
 import { getCacheKey, getCachedItem, setCachedItem } from './services/cacheService.js';
 import { getAllProjects, getProjectById, saveProject, deleteProject } from './data/projectsStore.js';
 
@@ -94,13 +95,16 @@ app.post('/api/analyze', async (req, res) => {
       sources: scriptSuite.sources,
     };
 
+    // Strict topic-fidelity enforcement
+    const validatedResult = enforceTopicFidelity(result);
+
     // Cache the completed analysis
-    setCachedItem(cacheKey, result);
+    setCachedItem(cacheKey, validatedResult);
 
     // Automatically save project into local store
-    saveProject(result);
+    saveProject(validatedResult);
 
-    return res.json(result);
+    return res.json(validatedResult);
   } catch (err: any) {
     console.error('[Engine] Analysis pipeline failed:', err);
     return res.status(500).json({

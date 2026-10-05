@@ -1,4 +1,5 @@
 import { TargetMarket } from '../../src/types/index.js';
+import { detectTopicDomain } from './domainDetector.js';
 
 /**
  * Normalizes user-entered research topics into natural, fluent wording
@@ -281,31 +282,67 @@ export function isRuleOrGuidanceTopic(topic: string): boolean {
  */
 export function formatSpokenHook(topic: string, market: TargetMarket): string {
   const normTopic = normalizeTopic(topic, market);
+  const domainInfo = detectTopicDomain(topic);
+
+  if (domainInfo.isBakingOrCooking) {
+    if (market === 'en-GB') return `If you're still making ${normTopic} this way in your kitchen, you're missing out on the secret to that bakery texture.`;
+    if (market === 'pt-PT') return `Se ainda estás a fazer ${normTopic} desta maneira na cozinha, é por isso que o resultado não fica no ponto certo.`;
+    if (market === 'pt-BR') return `Se você ainda tá fazendo ${normTopic} desse jeito na cozinha, é por isso que não fica no ponto ideal.`;
+    return `Si sigues preparando ${normTopic} de esta manera en la cocina, es por eso que la textura no queda perfecta.`;
+  }
+
+  if (domainInfo.isGardening) {
+    if (market === 'en-GB') return `If you're still planting ${normTopic} like this, you are risking root damage and stunted growth.`;
+    if (market === 'pt-PT') return `Se ainda estás a plantar ${normTopic} desta forma, estás a queimar as raízes sem saber.`;
+    if (market === 'pt-BR') return `Se você ainda tá plantando ${normTopic} desse jeito, você tá prejudicando suas plantas sem perceber.`;
+    return `Si sigues plantando ${normTopic} de esta manera, estás perjudicando el desarrollo de tus plantas.`;
+  }
+
+  if (domainInfo.isHealthOrFitness) {
+    if (market === 'en-GB') return `If you're still approaching ${normTopic} with extreme restrictions, you are setting yourself up for burnout.`;
+    if (market === 'pt-PT') return `Se ainda estás a tentar melhorar ${normTopic} com restrições extremas, vais desistir na segunda semana.`;
+    if (market === 'pt-BR') return `Se você ainda tá tentando mudar ${normTopic} na base da restrição maluca, você vai se frustrar logo.`;
+    return `Si sigues intentando mejorar ${normTopic} con restricciones exageradas, vas a abandonar muy rápido.`;
+  }
+
+  if (domainInfo.isConsumerBudgeting) {
+    if (market === 'en-GB') return `If you're still shopping for ${normTopic} without checking the unit price, you are quietly overpaying every week.`;
+    if (market === 'pt-PT') return `Se ainda vais às compras de ${normTopic} sem comparar o preço por quilo, estás a pagar bem mais do que devias.`;
+    if (market === 'pt-BR') return `Se você ainda faz compras de ${normTopic} sem olhar o preço por quilo, tá deixando dinheiro no caixa.`;
+    return `Si sigues comprando ${normTopic} sin revisar el precio por kilo, estás pagando de más cada semana.`;
+  }
+
   const isRule = isRuleOrGuidanceTopic(normTopic);
 
   if (market === 'en-GB') {
-    if (isRule) {
-      return `If you're still following standard guidance on ${normTopic} in the UK, you are quietly throwing money away.`;
+    if (domainInfo.isFinance) {
+      if (isRule) return `If you're still following standard guidance on ${normTopic} in the UK, you are quietly losing money to tax drag and fees.`;
+      return `If you're still doing this with ${normTopic} in the UK, you are quietly throwing money away on unnecessary costs.`;
     }
-    return `If you're still doing this with ${normTopic} in the UK, you are quietly throwing money away.`;
+    return `If you're still doing this with ${normTopic} in the UK, you are wasting time without seeing real results.`;
   }
 
   if (market === 'pt-PT') {
-    if (isRule) {
-      return `Se ainda estás a seguir o conselho padrão sobre ${normTopic} em Portugal, estás a perder dinheiro sem saber.`;
+    if (domainInfo.isFinance) {
+      if (isRule) return `Se ainda estás a seguir o conselho padrão sobre ${normTopic} em Portugal, estás a perder dinheiro em comissões sem saber.`;
+      return `Se ainda estás a fazer isto com ${normTopic} em Portugal, estás a perder dinheiro sem saber.`;
     }
-    return `Se ainda estás a fazer isto com ${normTopic} em Portugal, estás a perder dinheiro sem saber.`;
+    return `Se ainda estás a fazer isto com ${normTopic} em Portugal, estás a perder tempo sem ver resultados reais.`;
   }
 
   if (market === 'pt-BR') {
-    if (isRule) {
-      return `Pára tudo o que você tá fazendo e olha esse detalhe aqui sobre ${normTopic}!`;
+    if (domainInfo.isFinance) {
+      if (isRule) return `Pára tudo o que você tá fazendo e olha esse detalhe aqui sobre ${normTopic}!`;
+      return `Se você ainda tá fazendo isso com ${normTopic}, você tá perdendo dinheiro sem perceber.`;
     }
-    return `Se você ainda tá fazendo isso com ${normTopic}, você tá perdendo dinheiro sem perceber.`;
+    return `Se você ainda tá fazendo isso com ${normTopic}, você tá perdendo tempo sem sair do lugar.`;
   }
 
   // es-ES
-  return `Si vives en España y aplicas el consejo habitual sobre ${normTopic}, estás cometiendo un error monumental.`;
+  if (domainInfo.isFinance) {
+    return `Si vives en España y aplicas el consejo habitual sobre ${normTopic}, estás regalando dinero en comisiones e impuestos.`;
+  }
+  return `Si vives en España y aplicas el consejo habitual sobre ${normTopic}, estás perdiendo tiempo y esfuerzo innecesario.`;
 }
 
 /**
@@ -352,31 +389,69 @@ export function cleanTemplateText(text: string): string {
 }
 
 /**
- * Formats Script 1 (Contrarian) spoken opening based on topic type.
+ * Formats Script 1 (Contrarian) spoken opening based on topic type and domain.
  */
 export function formatScript1Opening(topic: string, market: TargetMarket): string {
   const normTopic = normalizeTopic(topic, market);
+  const domainInfo = detectTopicDomain(topic);
+
+  if (domainInfo.isBakingOrCooking) {
+    if (market === 'en-GB') return `If you are still making ${normTopic} this way, you are never going to get that moist, tender texture.`;
+    if (market === 'pt-PT') return `Se ainda estás a fazer ${normTopic} desta forma, lamento dizer-te, mas a massa vai continuar a sair pesada e seca.`;
+    if (market === 'pt-BR') return `Se você ainda tá fazendo ${normTopic} desse jeito, lamento te dizer, mas a sua receita não vai atingir o ponto ideal.`;
+    return `Si sigues haciendo ${normTopic} con la receta tradicional, tu preparación va a seguir quedando seca y apelmazada.`;
+  }
+
+  if (domainInfo.isGardening) {
+    if (market === 'en-GB') return `If you are still planting ${normTopic} like this in your garden, your seedlings are going to struggle.`;
+    if (market === 'pt-PT') return `Se ainda estás a plantar ${normTopic} desta maneira, as tuas mudas vão ter imensa dificuldade em vingar.`;
+    if (market === 'pt-BR') return `Se você ainda tá plantando ${normTopic} dessa forma, suas mudas não vão conseguir se desenvolver bem.`;
+    return `Si sigues plantando ${normTopic} de esta forma, tus brotes van a sufrir para salir adelante.`;
+  }
+
+  if (domainInfo.isHealthOrFitness) {
+    if (market === 'en-GB') return `If you are still relying on unrealistic fads for ${normTopic}, you are burning out before seeing lasting energy.`;
+    if (market === 'pt-PT') return `Se ainda estás a seguir dietas ou rotinas extremas para ${normTopic}, vais acabar exausto sem resultados sustentáveis.`;
+    if (market === 'pt-BR') return `Se você ainda tá seguindo modismos malucos para ${normTopic}, vai ficar sem energia antes de ver resultado real.`;
+    return `Si sigues dietas o rutinas extremas para ${normTopic}, vas a agotarte antes de conseguir cambios duraderos.`;
+  }
+
+  if (domainInfo.isConsumerBudgeting) {
+    if (market === 'en-GB') return `If you are still buying ${normTopic} without this simple trolley check, you are quietly wasting hundreds of pounds each year.`;
+    if (market === 'pt-PT') return `Se ainda estás a comprar ${normTopic} sem aplicar este truque no carrinho, estás a deitar centenas de euros ao lixo todos os anos.`;
+    if (market === 'pt-BR') return `Se você ainda compra ${normTopic} sem conferir esse detalhe no carrinho, tá jogando dinheiro fora todo mês.`;
+    return `Si sigues comprando ${normTopic} sin este filtro en el carrito, estás tirando cientos de euros al año.`;
+  }
+
   const isRule = isRuleOrGuidanceTopic(normTopic);
 
   if (market === 'en-GB') {
-    if (isRule) {
-      return `If you are still following standard guidance on ${normTopic} in the UK, I'm sorry to say, but you are throwing money away every single month.`;
+    if (domainInfo.isFinance) {
+      if (isRule) return `If you are still following standard guidance on ${normTopic} in the UK, I'm sorry to say, but you are throwing money away every single month.`;
+      return `If you are still doing this with ${normTopic} in the UK, I'm sorry to say, but you are throwing money away every single month.`;
     }
-    return `If you are still doing this with ${normTopic} in the UK, I'm sorry to say, but you are throwing money away every single month.`;
+    return `If you are still doing this with ${normTopic} in the UK, I'm sorry to say, but you are wasting precious effort every single month.`;
   }
 
   if (market === 'pt-PT') {
-    if (isRule) {
-      return `Se ainda estás a seguir o conselho tradicional sobre ${normTopic} em Portugal, lamento dizer-te, mas estás a deitar dinheiro ao lixo todos os meses.`;
+    if (domainInfo.isFinance) {
+      if (isRule) return `Se ainda estás a seguir o conselho tradicional sobre ${normTopic} em Portugal, lamento dizer-te, mas estás a deitar dinheiro ao lixo todos os meses.`;
+      return `Se ainda estás a fazer isto com ${normTopic} em Portugal, lamento dizer-te, mas estás a deitar dinheiro ao lixo todos os meses.`;
     }
-    return `Se ainda estás a fazer isto com ${normTopic} em Portugal, lamento dizer-te, mas estás a deitar dinheiro ao lixo todos os meses.`;
+    return `Se ainda estás a fazer isto com ${normTopic} em Portugal, lamento dizer-te, mas estás a perder tempo e esforço todos os meses.`;
   }
 
   if (market === 'es-ES') {
-    return `Si sigues aplicando este consejo sobre ${normTopic} en España, estás regalando literalmente tu dinero.`;
+    if (domainInfo.isFinance) {
+      return `Si sigues aplicando este consejo sobre ${normTopic} en España, estás regalando literalmente tu dinero.`;
+    }
+    return `Si sigues aplicando este consejo sobre ${normTopic} en España, estás perdiendo literalmente tu tiempo.`;
   }
 
   // pt-BR
-  return `Se você ainda tá seguindo a receita de bolo sobre ${normTopic}, você tá deixando muito dinheiro na mesa todo mês.`;
+  if (domainInfo.isFinance) {
+    return `Se você ainda tá seguindo esse conselho sobre ${normTopic}, você tá deixando muito dinheiro na mesa todo mês.`;
+  }
+  return `Se você ainda tá fazendo ${normTopic} desse jeito, você tá perdendo muito tempo sem sair do lugar todo mês.`;
 }
 

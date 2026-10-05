@@ -2,6 +2,7 @@ import * as cheerio from 'cheerio';
 import { GoogleGenAI } from '@google/genai';
 import { CompetitorResult, ResearchRequest, TargetMarket, Platform, ResearchProvenance } from '../../src/types/index.js';
 import { VERIFIED_SEEDS } from '../data/verifiedSeeds.js';
+import { isSourceRelevant } from './searchRelevance.js';
 
 interface RawSearchItem {
   title: string;
@@ -306,7 +307,7 @@ export async function searchCompetitors(req: ResearchRequest): Promise<SearchCom
       if (rawItems.length > 0) {
         usedGrounding = true;
         for (const item of rawItems) {
-          if (!seenUrls.has(item.url)) {
+          if (!seenUrls.has(item.url) && isSourceRelevant(item, req.topic, req.platform)) {
             seenUrls.add(item.url);
             const { creator, views, publishedDate, hook } = parseCreatorAndMetrics(item, req.platform);
             results.push({
@@ -347,7 +348,7 @@ export async function searchCompetitors(req: ResearchRequest): Promise<SearchCom
   for (const res of settled) {
     if (res.status === 'fulfilled') {
       for (const item of res.value) {
-        if (!seenUrls.has(item.url) && results.length < 20) {
+        if (!seenUrls.has(item.url) && results.length < 20 && isSourceRelevant(item, req.topic, req.platform)) {
           seenUrls.add(item.url);
           const { creator, views, publishedDate, hook } = parseCreatorAndMetrics(item, req.platform);
           results.push({
@@ -376,7 +377,7 @@ export async function searchCompetitors(req: ResearchRequest): Promise<SearchCom
     }
   }
 
-  // 3. Genuine niche seed matching ONLY: include seeds if and only if keywords match the topic
+  // 3. Genuine niche seed matching ONLY: include seeds if and only if keywords match the topic AND passes relevance
   const lowerTopic = req.topic.toLowerCase();
   for (const seed of VERIFIED_SEEDS) {
     if (results.length >= 16) break;
@@ -385,7 +386,13 @@ export async function searchCompetitors(req: ResearchRequest): Promise<SearchCom
 
     if (isMarketMatch && isKeywordMatch) {
       for (const comp of seed.competitors) {
-        if (!seenUrls.has(comp.url) && results.length < 20) {
+        const seedItem: RawSearchItem = {
+          title: comp.title,
+          url: comp.url,
+          snippet: comp.snippet || '',
+          sourceDomain: comp.sourceDomain || 'youtube.com',
+        };
+        if (!seenUrls.has(comp.url) && results.length < 20 && isSourceRelevant(seedItem, req.topic, req.platform)) {
           seenUrls.add(comp.url);
           results.push({
             ...comp,
@@ -397,25 +404,42 @@ export async function searchCompetitors(req: ResearchRequest): Promise<SearchCom
     }
   }
 
-  // 4. Strict Zero-Fabrication Safeguard:
-  // If live research failed and no seed matched, DO NOT invent fake competitors or substitute unrelated channels.
+  // 4. Strict Zero-Fabrication Safeguard & Low-Data Behavior:
+  // If results are 0 or insufficient, declare clearly. Never inject unrelated benchmarks or fake channels.
   const hasLiveItems = results.some((r) => r.id.startsWith('comp-gemini') || r.id.startsWith('comp-live'));
   const hasCuratedItems = results.some((r) => r.id.startsWith('comp-seed'));
 
   let provenance: ResearchProvenance;
-  if (usedGrounding && results.some((r) => r.id.startsWith('comp-gemini'))) {
+  if (results.length === 0) {
+    provenance = {
+      sourceType: 'insufficient_live_data',
+      isLiveResearchAvailable: false,
+      queryPerformed: queries[0] || req.topic,
+      notice: req.market === 'en-GB'
+        ? `Direct public search found 0 verified sources strictly relevant to "${req.topic}" in the ${marketLabel} market. No unrelated benchmark channels or fabricated metrics were substituted.`
+        : `Pesquisa pública direta não encontrou fontes verificadas estritamente relevantes para "${req.topic}" no mercado de ${marketLabel}. Nenhum canal fora de nicho ou métrica inventada foi apresentado.`,
+    };
+  } else if (usedGrounding && results.some((r) => r.id.startsWith('comp-gemini'))) {
     provenance = {
       sourceType: 'live_google_grounding',
       isLiveResearchAvailable: true,
       queryPerformed: queries[0] || req.topic,
-      notice: undefined,
+      notice: results.length < 3
+        ? (req.market === 'en-GB'
+            ? `Limited verified competitor content found (${results.length} item). Analysis is based strictly on these verified sources and explicit AI inferences.`
+            : `Conteúdo concorrente verificado limitado (${results.length} item). A análise baseia-se estritamente nestas fontes autênticas e deduções IA explícitas.`)
+        : undefined,
     };
   } else if (hasLiveItems) {
     provenance = {
       sourceType: 'live_web_search',
       isLiveResearchAvailable: true,
       queryPerformed: queries[0] || req.topic,
-      notice: undefined,
+      notice: results.length < 3
+        ? (req.market === 'en-GB'
+            ? `Limited verified competitor content found (${results.length} item). Analysis is based strictly on these verified sources and explicit AI inferences.`
+            : `Conteúdo concorrente verificado limitado (${results.length} item). A análise baseia-se estritamente nestas fontes autênticas e deduções IA explícitas.`)
+        : undefined,
     };
   } else if (hasCuratedItems) {
     provenance = {
@@ -423,8 +447,8 @@ export async function searchCompetitors(req: ResearchRequest): Promise<SearchCom
       isLiveResearchAvailable: true,
       queryPerformed: queries[0] || req.topic,
       notice: req.market === 'en-GB'
-        ? `Audited sources obtained via direct keyword match for "${req.topic}".`
-        : `Fontes auditadas obtidas com correspondência direta às palavras-chave de "${req.topic}".`,
+        ? `Audited sources obtained via verified semantic match for "${req.topic}".`
+        : `Fontes auditadas obtidas com correspondência semântica verificada para "${req.topic}".`,
     };
   } else {
     provenance = {

@@ -11,7 +11,7 @@ export interface VerifiedNicheSeed {
 export const VERIFIED_SEEDS: VerifiedNicheSeed[] = [
   // PORTUGAL - Finanças & Negócios / YouTube & Shorts
   {
-    keywords: ['finanças', 'investimentos', 'dinheiro', 'imobiliario', 'poupança', 'irs', 'etf', 'portugal', 'economia'],
+    keywords: ['finanças', 'investimentos', 'dinheiro', 'imobiliario', 'poupança', 'irs', 'etf', 'economia'],
     market: 'pt-PT',
     platform: 'youtube',
     competitors: [
@@ -75,7 +75,7 @@ export const VERIFIED_SEEDS: VerifiedNicheSeed[] = [
   },
   // BRASIL - Finanças & Negócios / YouTube & TikTok & Reels
   {
-    keywords: ['finanças', 'investimentos', 'dinheiro', 'renda fixa', 'cdi', 'selic', 'bolsa', 'brasil', 'nubank'],
+    keywords: ['finanças', 'investimentos', 'dinheiro', 'renda fixa', 'cdi', 'selic', 'bolsa', 'nubank'],
     market: 'pt-BR',
     platform: 'youtube',
     competitors: [
@@ -125,7 +125,7 @@ export const VERIFIED_SEEDS: VerifiedNicheSeed[] = [
   },
   // ESPANHA - Finanzas, Autónomos & Negocios / YouTube & Shorts
   {
-    keywords: ['finanzas', 'autonomos', 'hacienda', 'inversion', 'españa', 'impuestos', 'etf', 'ahorro', 'dinero'],
+    keywords: ['finanzas', 'autonomos', 'hacienda', 'inversion', 'impuestos', 'etf', 'ahorro', 'dinero'],
     market: 'es-ES',
     platform: 'youtube',
     competitors: [
@@ -211,7 +211,7 @@ export const VERIFIED_SEEDS: VerifiedNicheSeed[] = [
   },
   // UNITED KINGDOM - Finance, Investing, HMRC & Productivity (en-GB)
   {
-    keywords: ['finance', 'investing', 'money', 'isa', 'hmrc', 'stocks', 'uk', 'tax', 'property', 'pension', 'savings', 'etf', 'cost of living'],
+    keywords: ['finance', 'investing', 'money', 'isa', 'hmrc', 'stocks', 'tax', 'property', 'pension', 'savings', 'etf', 'cost of living'],
     market: 'en-GB',
     platform: 'youtube',
     competitors: [

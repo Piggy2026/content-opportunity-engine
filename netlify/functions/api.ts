@@ -5,6 +5,7 @@ import { analyzeOutliers } from '../../server/services/outlierService.js';
 import { detectContentGaps } from '../../server/services/gapService.js';
 import { generateRankedIdeas } from '../../server/services/ideasService.js';
 import { generateScriptSuite } from '../../server/services/scriptService.js';
+import { enforceTopicFidelity } from '../../server/services/topicValidator.js';
 import { getCacheKey, getCachedItem, setCachedItem } from '../../server/services/cacheService.js';
 
 import { getAllProjects, getProjectById, saveProject, deleteProject } from '../../server/data/projectsStore.js';
@@ -83,13 +84,15 @@ export const handler: Handler = async (event, context) => {
         sources: scriptSuite.sources,
       };
 
-      setCachedItem(cacheKey, result);
-      saveProject(result);
+      const validatedResult = enforceTopicFidelity(result);
+
+      setCachedItem(cacheKey, validatedResult);
+      saveProject(validatedResult);
 
       return {
         statusCode: 200,
         headers,
-        body: JSON.stringify(result),
+        body: JSON.stringify(validatedResult),
       };
     }
 
