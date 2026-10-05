@@ -10,8 +10,74 @@ interface CompetitorsSectionProps {
 }
 
 export const CompetitorsSection: React.FC<CompetitorsSectionProps> = ({ competitors, provenance, topic }) => {
-  const { t } = useLanguage();
+  const { t, uiLanguage } = useLanguage();
   const [searchTerm, setSearchTerm] = useState('');
+
+  const formatFactSummary = (comp: CompetitorResult) => {
+    if (!comp.factSummary) return '';
+    if (
+      comp.factSummary.includes('pesquisa pública') ||
+      comp.factSummary.includes('public search') ||
+      comp.factSummary.includes('búsqueda pública')
+    ) {
+      if (uiLanguage === 'en') {
+        return `Active content verified via public search: title "${comp.title}".`;
+      }
+      if (uiLanguage === 'es') {
+        return `Contenido activo verificado mediante búsqueda pública: título "${comp.title}".`;
+      }
+      return `Conteúdo ativo verificado via pesquisa pública: título "${comp.title}".`;
+    }
+    if (
+      comp.factSummary.includes('ecossistema') ||
+      comp.factSummary.includes('ecosystem') ||
+      comp.factSummary.includes('ecosistema')
+    ) {
+      if (uiLanguage === 'en') {
+        return `Active URL indexed in content ecosystem: "${comp.title}".`;
+      }
+      if (uiLanguage === 'es') {
+        return `URL activa indexada en el ecosistema de contenido: "${comp.title}".`;
+      }
+      return `URL real indexada com presença no ecossistema de conteúdo: "${comp.title}".`;
+    }
+    return comp.factSummary;
+  };
+
+  const formatAiInference = (comp: CompetitorResult) => {
+    if (!comp.aiInference) return null;
+    const cleaned = comp.aiInference.replace(/^(Dedução IA|Deducción IA|AI Deduction):\s*/i, '');
+
+    if (
+      cleaned.includes('tráfego orgânico') ||
+      cleaned.includes('organic search traffic') ||
+      cleaned.includes('tráfico orgánico')
+    ) {
+      if (uiLanguage === 'en') {
+        return 'Format structured to attract organic search traffic with emphasis on high initial retention.';
+      }
+      if (uiLanguage === 'es') {
+        return 'Formato estructurado para atraer tráfico orgánico con énfasis en alta retención inicial.';
+      }
+      return 'Formato estruturado para atrair tráfego orgânico com ênfase em retenção inicial.';
+    }
+
+    if (
+      cleaned.includes('autoridade no nicho') ||
+      cleaned.includes('authority in the') ||
+      cleaned.includes('autoridad en el nicho')
+    ) {
+      if (uiLanguage === 'en') {
+        return `Established authority in the "${topic || 'target'}" niche by addressing primary viewer search intent.`;
+      }
+      if (uiLanguage === 'es') {
+        return `Estableció autoridad en el nicho de "${topic || 'objetivo'}" respondiendo a la intención de búsqueda del usuario.`;
+      }
+      return `Estabeleceu autoridade no nicho de "${topic || 'pesquisado'}" respondendo à intenção de pesquisa do utilizador.`;
+    }
+
+    return cleaned;
+  };
 
   const filtered = competitors.filter(
     (c) =>
@@ -167,7 +233,7 @@ export const CompetitorsSection: React.FC<CompetitorsSectionProps> = ({ competit
                 <span className="text-[11px] font-semibold text-emerald-400 uppercase tracking-wider block">
                   {t.competitors.cardFact}
                 </span>
-                <p className="text-slate-300">{comp.factSummary}</p>
+                <p className="text-slate-300">{formatFactSummary(comp)}</p>
               </div>
 
               {/* AI Strategic Inference Card */}
@@ -176,7 +242,7 @@ export const CompetitorsSection: React.FC<CompetitorsSectionProps> = ({ competit
                   <span className="text-[11px] font-semibold text-brand-300 uppercase tracking-wider block">
                     {t.competitors.cardAi}
                   </span>
-                  <p className="text-slate-300/90">{comp.aiInference}</p>
+                  <p className="text-slate-300/90">{formatAiInference(comp)}</p>
                 </div>
               )}
             </div>

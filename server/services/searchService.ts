@@ -323,14 +323,16 @@ export async function searchCompetitors(req: ResearchRequest): Promise<SearchCom
               sourceDomain: item.sourceDomain,
               factSummary: req.market === 'en-GB'
                 ? `Active URL indexed in content ecosystem: ${item.title}.`
+                : req.market === 'es-ES'
+                ? `URL real indexada en el ecosistema de contenido: ${item.title}.`
                 : `URL real indexada com presença no ecossistema de conteúdo: ${item.title}.`,
               aiInference: req.market === 'pt-PT'
-                ? `Dedução IA: Este conteúdo gerou autoridade no nicho de "${req.topic}" respondendo à intenção de pesquisa prioritária do utilizador local.`
+                ? `Este conteúdo gerou autoridade no nicho de "${req.topic}" respondendo à intenção de pesquisa prioritária do utilizador local.`
                 : req.market === 'pt-BR'
-                ? `Dedução IA: Este conteúdo gerou autoridade no nicho de "${req.topic}" respondendo à intenção de busca prioritária do usuário local.`
+                ? `Este conteúdo gerou autoridade no nicho de "${req.topic}" respondendo à intenção de busca prioritária do usuário local.`
                 : req.market === 'es-ES'
-                ? `Deducción IA: Este contenido generó autoridad en el nicho de "${req.topic}" respondiendo a la intención de búsqueda del usuario local.`
-                : `AI Deduction: This content generated authority in the "${req.topic}" niche by directly addressing the primary search intent of UK viewers.`,
+                ? `Este contenido generó autoridad en el nicho de "${req.topic}" respondiendo a la intención de búsqueda del usuario local.`
+                : `This content generated authority in the "${req.topic}" niche by directly addressing the primary search intent of UK viewers.`,
             });
           }
         }
@@ -361,16 +363,22 @@ export async function searchCompetitors(req: ResearchRequest): Promise<SearchCom
             publishedDate,
             snippet: item.snippet || (req.market === 'en-GB'
               ? `Video / publication focusing on ${req.topic} for the UK audience.`
+              : req.market === 'es-ES'
+              ? `Vídeo / publicación con foco en ${req.topic} para el mercado español.`
               : `Vídeo / publicação com foco em ${req.topic} para o mercado selecionado.`),
             isRealVerifiedSource: true,
             sourceDomain: item.sourceDomain,
             detectedHookOrAngle: hook,
             factSummary: req.market === 'en-GB'
               ? `Active content verified via public search: title "${item.title}".`
+              : req.market === 'es-ES'
+              ? `Contenido activo verificado mediante búsqueda pública: título "${item.title}".`
               : `Conteúdo ativo verificado via pesquisa pública: título "${item.title}".`,
             aiInference: req.market === 'en-GB'
-              ? `AI Deduction: Structured to attract organic search traffic with emphasis on high initial retention.`
-              : `Dedução IA: Formato estruturado para atrair tráfego orgânico com ênfase em retenção inicial.`,
+              ? `Structured to attract organic search traffic with emphasis on high initial retention.`
+              : req.market === 'es-ES'
+              ? `Estructurado para atraer tráfico orgánico con énfasis en alta retención inicial.`
+              : `Estruturado para atrair tráfego orgânico com ênfase em retenção inicial.`,
           });
         }
       }
