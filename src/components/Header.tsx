@@ -24,7 +24,7 @@ export const Header: React.FC<HeaderProps> = ({
   const activeMarket = currentMarket || 'pt-PT';
 
   return (
-    <header className="sticky top-0 z-40 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+    <header className="sticky top-0 z-40 bg-slate-900/90 backdrop-blur-md border-b border-slate-800 notranslate" translate="no">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-2">
         {/* Brand */}
         <div className="flex items-center space-x-3 cursor-pointer shrink-0" onClick={onReset}>

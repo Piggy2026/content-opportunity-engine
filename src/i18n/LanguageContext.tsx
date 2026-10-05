@@ -36,6 +36,12 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     }
   };
 
+  useEffect(() => {
+    document.documentElement.lang = uiLanguage;
+    document.documentElement.setAttribute('translate', 'no');
+    document.documentElement.classList.add('notranslate');
+  }, [uiLanguage]);
+
   const t = translations[uiLanguage] || translations.pt;
 
   const getOutputLanguageName = (market: TargetMarket): string => {

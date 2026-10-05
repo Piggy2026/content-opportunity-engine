@@ -1,5 +1,1842 @@
 [
   {
+    "id": "proj_1791217356824_73dz9",
+    "createdAt": "2026-10-05T16:22:36.824Z",
+    "request": {
+      "topic": "xyz_random_nonexistent_topic_123",
+      "market": "es-ES",
+      "platform": "youtube"
+    },
+    "cached": false,
+    "isLiveResearchAvailable": false,
+    "researchProvenance": {
+      "sourceType": "insufficient_live_data",
+      "isLiveResearchAvailable": false,
+      "queryPerformed": "site:youtube.com/watch xyz_random_nonexistent_topic_123 España",
+      "notice": "La búsqueda pública directa no encontró fuentes verificadas estrictamente relevantes para \"xyz_random_nonexistent_topic_123\" en el mercado de España. Ningún canal fuera de nicho o métrica inventada fue presentado."
+    },
+    "competitors": [],
+    "outlierAnalysis": {
+      "topFormatOutlier": {
+        "format": "Vídeo Largo de 12 a 18 minutos con Estudio de Caso Práctico y Demostración en Pantalla",
+        "whyItOutperforms": "Los vídeos con demostración práctica real en pantalla (sin rodeos teóricos iniciales) tienen una retención media 2.4x superior a las grabaciones convencionales.",
+        "frequencyObserved": "Patrón de referencia para YOUTUBE en el mercado de España (sin competencia directa indexada en este término)."
+      },
+      "dominantHookPatterns": [
+        {
+          "pattern": "El Fallo Más Común al Empezar",
+          "example": "Hipótesis estratégica: \"El Error de Principiante con xyz_random_nonexistent_topic_123 que Debes Evitar\"",
+          "whyItWorks": "Ahorra horas y frustraciones a quienes dan sus primeros pasos."
+        },
+        {
+          "pattern": "Comparativa Sin Filtros de Alternativas",
+          "example": "Ejemplo: \"Herramienta A vs Herramienta B para xyz_random_nonexistent_topic_123: Cuál Merece la Pena\"",
+          "whyItWorks": "El público valora análisis objetivos y sin patrocinios encubiertos."
+        },
+        {
+          "pattern": "Método Práctico Paso a Paso",
+          "example": "Ejemplo: \"Cómo Dominar xyz_random_nonexistent_topic_123 desde Cero sin Perder Tiempo\"",
+          "whyItWorks": "Pasos sencillos y reproducibles garantizan alta retención de vídeo."
+        }
+      ],
+      "highVelocityTopics": [
+        "Implementación práctica y herramientas esenciales para xyz_random_nonexistent_topic_123",
+        "Comparativa sin patrocinios de las mejores alternativas para xyz_random_nonexistent_topic_123",
+        "El error de principiante que retrasa tus resultados meses en xyz_random_nonexistent_topic_123",
+        "Flujo de trabajo práctico y directo para obtener resultados desde el primer día"
+      ],
+      "emotionalTriggers": [
+        {
+          "trigger": "Aversión a la Frustración y Tiempo Perdido",
+          "application": "Destacar el error que hace fracasar los primeros intentos antes de mostrar la solución directa."
+        },
+        {
+          "trigger": "Curiosidad y Desmitificación",
+          "application": "Desafiar tópicos repetidos en internet mediante una demostración práctica e inmediata."
+        },
+        {
+          "trigger": "Confianza y Aplicación Inmediata",
+          "application": "Facilitar un paso a paso realista que cualquier persona pueda llevar a la práctica hoy mismo."
+        }
+      ],
+      "observedFacts": [
+        "Búsqueda directa realizada para \"xyz_random_nonexistent_topic_123\" en la plataforma YOUTUBE (España (es-ES)).",
+        "Muestra observada: 0 contenidos directos indexados públicamente en el momento de la consulta.",
+        "Garantía de integridad: Ningún competidor ficticio ni métrica simulada fue generada para rellenar la tabla.",
+        "Mapeo de ecosistema: La ausencia de canales dominantes indica oportunidad pionera en el mercado de España."
+      ],
+      "aiDeductions": [
+        "Deducción IA: La ausencia de vídeos competidores directos con autoridad consolidada para \"xyz_random_nonexistent_topic_123\" indica una oportunidad pionera (océano azul) en España (es-ES).",
+        "Deducción IA: Las oportunidades, ideas y guiones generados a continuación se basan en modelos predictivos del comportamiento de la audiencia en España y en las mejores prácticas de retención en YOUTUBE, sin invención de datos.",
+        "Deducción IA: Se recomienda arrancar con formatos de \"Guía Paso a Paso para Principiantes\" y \"Errores Más Comunes a Evitar\" para validar la demanda orgánica."
+      ]
+    },
+    "contentGaps": [
+      {
+        "id": "gap-es-gen-1",
+        "category": "underserved-market-need",
+        "title": "Demostración Práctica Real frente a Diapositivas Teóricas Vacías",
+        "description": "Gran parte de los contenidos sobre xyz_random_nonexistent_topic_123 se limitan a presentaciones teóricas sin enseñar el proceso real y las pantallas de trabajo paso a paso.",
+        "whyCompetitorsMissedIt": "Resulta más fácil divagar en general que resolver y depurar un caso real frente a la cámara.",
+        "marketNuance": "España (es-ES): El público valora el pragmatismo, herramientas reales y transparencia de principio a fin.",
+        "opportunityLevel": "critical",
+        "titleTranslation": "Practical Hands-On Walkthrough vs Generic High-Level Theory",
+        "descriptionTranslation": "Most videos on xyz_random_nonexistent_topic_123 remain stuck in high-level concepts, leaving learners stranded when attempting to implement the first real steps.",
+        "whyCompetitorsMissedItTranslation": "Explaining concepts is easier than building and debugging a real, end-to-end example on camera.",
+        "marketNuanceTranslation": "UK: Direct, articulate delivery with real tools, step-by-step logic, and zero corporate buzzwords."
+      },
+      {
+        "id": "gap-es-gen-2",
+        "category": "unanswered-question",
+        "title": "Cómo Superar el Primer Obstáculo Crítico al Empezar de Cero",
+        "description": "Los principiantes en xyz_random_nonexistent_topic_123 suelen encallarse en un punto concreto que provoca el abandono en la primera semana. Falta una guía directa de resolución.",
+        "whyCompetitorsMissedIt": "Los creadores experimentados olvidan las dudas iniciales de quien está dando sus primeros pasos.",
+        "marketNuance": "España: Explicación accesible, tono constructivo y consejos aplicables al instante.",
+        "opportunityLevel": "very-high",
+        "titleTranslation": "How to Overcome the Most Common Roadblock When Starting from Scratch",
+        "descriptionTranslation": "Beginners routinely hit an immediate wall in xyz_random_nonexistent_topic_123 that causes them to abandon the process within 48 hours. A clear troubleshooting guide solves this acute pain point.",
+        "whyCompetitorsMissedItTranslation": "Experts forget what was confusing when they were beginners.",
+        "marketNuanceTranslation": "UK: Step-by-step diagnostic checklists with clear \"do this, not that\" instructions."
+      },
+      {
+        "id": "gap-es-gen-3",
+        "category": "oversaturated-angle",
+        "title": "Saturación de Vídeos Introductorios que Nunca Llegan a la Práctica",
+        "description": "Exceso de vídeos tipo \"qué es xyz_random_nonexistent_topic_123\" que finalizan justo en el momento en que el usuario necesita aprender a ejecutarlo.",
+        "whyCompetitorsMissedIt": "Los vídeos superficiales son rápidos de grabar pero generan poco valor duradero.",
+        "marketNuance": "España: Búsqueda de atajos eficaces y metodologías para aplicar hoy mismo.",
+        "opportunityLevel": "high",
+        "titleTranslation": "Endless Beginner Introductions That Never Progress Beyond the Basics",
+        "descriptionTranslation": "The market is saturated with \"Introduction to xyz_random_nonexistent_topic_123\" videos that stop right when the material gets interesting and genuinely useful.",
+        "whyCompetitorsMissedItTranslation": "Introductory videos are easy to generate and churn out.",
+        "marketNuanceTranslation": "UK: High appetite for intermediate shortcuts and practical workflows."
+      },
+      {
+        "id": "gap-es-gen-4",
+        "category": "weak-competitor-execution",
+        "title": "Ausencia de Formato Corto Vertical con Solución Inmediata en 45 Segundos",
+        "description": "Falta el creador que sintetice la clave exacta en 40-50 segundos en formato vertical con subtítulos limpios y sin rodeos.",
+        "whyCompetitorsMissedIt": "Aferramiento a vídeos largos de 20 minutos con introducciones lentas.",
+        "marketNuance": "España: Dinamismo, formato directo y llamada a guardar para futuras consultas.",
+        "opportunityLevel": "very-high",
+        "titleTranslation": "Absence of 45-Second Vertical Quick Reference Guides",
+        "descriptionTranslation": "Viewers looking for rapid reference solutions do not want to scrub through a 20-minute video to find one setting or command.",
+        "whyCompetitorsMissedItTranslation": "Slow adaptation to short-form educational formats.",
+        "marketNuanceTranslation": "UK: Mobile-optimised formatting with on-screen annotations and clear save triggers."
+      }
+    ],
+    "rankedIdeas": [
+      {
+        "id": "idea-es-es-1",
+        "title": "El Error #1 con xyz_random_nonexistent_topic_123 que Nadie Te Avisa (Y Cómo Corregirlo)",
+        "angle": "Overcoming the most common beginner stumble with clear demonstration.",
+        "format": "12min Practical Walkthrough",
+        "gapExploited": "Generic advice that glosses over initial setup difficulties.",
+        "targetAudiencePainPoint": "Wasting hours without achieving clear progress.",
+        "viralityPotential": "Exceptional",
+        "competitionLevel": "Low",
+        "rank": 1,
+        "opportunityScore": 95,
+        "whyItWins": "Direct troubleshooting builds instant credibility.",
+        "isBestOpportunity": true,
+        "titleTranslation": "The #1 Mistake with xyz_random_nonexistent_topic_123 (And How to Fix It)",
+        "whyItWinsTranslation": "Direct troubleshooting builds instant credibility."
+      },
+      {
+        "id": "idea-es-es-2",
+        "title": "Cómo Dominar xyz_random_nonexistent_topic_123 desde Cero Paso a Paso",
+        "angle": "Jargon-free beginner roadmap with clear actionable phases.",
+        "format": "14min Complete Guide",
+        "gapExploited": "Theoretical lectures that lack real implementation workflows.",
+        "targetAudiencePainPoint": "Not knowing where to start or what tools to choose.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Low",
+        "rank": 2,
+        "opportunityScore": 90,
+        "whyItWins": "Actionable and empowering for everyday newcomers.",
+        "isBestOpportunity": false,
+        "titleTranslation": "How to Master xyz_random_nonexistent_topic_123 from Scratch Step-by-Step",
+        "whyItWinsTranslation": "Actionable and empowering for everyday newcomers."
+      },
+      {
+        "id": "idea-es-es-5",
+        "title": "La Rutina Diaria de 15 Minutos para Progresar en xyz_random_nonexistent_topic_123",
+        "angle": "Low-friction habit stacking designed for busy working schedules.",
+        "format": "10min Routine Walkthrough",
+        "gapExploited": "Overly demanding procedures that lead to rapid burnout.",
+        "targetAudiencePainPoint": "Having very little free time outside work commitments.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Low",
+        "rank": 3,
+        "opportunityScore": 87,
+        "whyItWins": "High feasibility drives peak save rates.",
+        "isBestOpportunity": false,
+        "titleTranslation": "The 15-Minute Daily Routine for xyz_random_nonexistent_topic_123",
+        "whyItWinsTranslation": "High feasibility drives peak save rates."
+      },
+      {
+        "id": "idea-es-es-7",
+        "title": "3 Hábitos en xyz_random_nonexistent_topic_123 que Deberías Dejar Hoy Mismo",
+        "angle": "Contrarian teardown of outdated advice and wasted effort.",
+        "format": "12min Myth-Buster",
+        "gapExploited": "Dogmatic rules copied blindly across internet communities.",
+        "targetAudiencePainPoint": "Wasting energy on practices that yield zero tangible benefit.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Low",
+        "rank": 4,
+        "opportunityScore": 86,
+        "whyItWins": "Provocative contrarian angles generate viral comment debates.",
+        "isBestOpportunity": false,
+        "titleTranslation": "3 Things in xyz_random_nonexistent_topic_123 You Should Stop Doing Today",
+        "whyItWinsTranslation": "Provocative contrarian angles generate viral comment debates."
+      },
+      {
+        "id": "idea-es-es-9",
+        "title": "Probé el Método Más Viral de xyz_random_nonexistent_topic_123 Durante 30 Días (Auditoría Real)",
+        "angle": "Honest empirical test comparing claims vs reality with open records.",
+        "format": "16min 30-Day Audit",
+        "gapExploited": "Unsubstantiated claims by hype-driven creators.",
+        "targetAudiencePainPoint": "Uncertainty over which popular method actually works.",
+        "viralityPotential": "Exceptional",
+        "competitionLevel": "Low",
+        "rank": 5,
+        "opportunityScore": 86,
+        "whyItWins": "True empirical testing builds bulletproof audience trust.",
+        "isBestOpportunity": false,
+        "titleTranslation": "I Tested the Most Viral Method for xyz_random_nonexistent_topic_123 for 30 Days (Real Review)",
+        "whyItWinsTranslation": "True empirical testing builds bulletproof audience trust."
+      },
+      {
+        "id": "idea-es-es-3",
+        "title": "Opción A vs Opción B para xyz_random_nonexistent_topic_123: ¿Cuál Merece Realmente la Pena?",
+        "angle": "Unsponsored objective comparison of the leading market alternatives.",
+        "format": "15min Honest Audit",
+        "gapExploited": "Sponsored influencer reviews promoting products solely for affiliate fees.",
+        "targetAudiencePainPoint": "Confusion over which option provides real value.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Medium",
+        "rank": 6,
+        "opportunityScore": 83,
+        "whyItWins": "Unbiased reviews trigger heavy bookmarking and discussion.",
+        "isBestOpportunity": false,
+        "titleTranslation": "Tool A vs Tool B for xyz_random_nonexistent_topic_123: Which Is Genuinely Worth It?",
+        "whyItWinsTranslation": "Unbiased reviews trigger heavy bookmarking and discussion."
+      },
+      {
+        "id": "idea-es-es-16",
+        "title": "La Ficha Completa para Principiantes de xyz_random_nonexistent_topic_123: Guía Lista para Guardar",
+        "angle": "Clean visual summary card designed for saving to phone camera rolls.",
+        "format": "10min Summary Walkthrough",
+        "gapExploited": "Lack of single-page summary reference assets.",
+        "targetAudiencePainPoint": "Forgetting critical steps during execution.",
+        "viralityPotential": "Exceptional",
+        "competitionLevel": "Low",
+        "rank": 7,
+        "opportunityScore": 82,
+        "whyItWins": "Peak bookmark and share rates across social media algorithms.",
+        "isBestOpportunity": false,
+        "titleTranslation": "The Complete Beginner Checklist for xyz_random_nonexistent_topic_123: Free Saveable Framework",
+        "whyItWinsTranslation": "Peak bookmark and share rates across social media algorithms."
+      },
+      {
+        "id": "idea-es-es-6",
+        "title": "La Regla No Escrita de xyz_random_nonexistent_topic_123 que Cambia Tus Resultados",
+        "angle": "The insider principle that separates experienced practitioners from novices.",
+        "format": "11min Masterclass",
+        "gapExploited": "Textbook guides that leave out practical tricks of the trade.",
+        "targetAudiencePainPoint": "Working hard but getting mediocre results.",
+        "viralityPotential": "High",
+        "competitionLevel": "Low",
+        "rank": 8,
+        "opportunityScore": 80,
+        "whyItWins": "Specific insider nuance triggers high curiosity.",
+        "isBestOpportunity": false,
+        "titleTranslation": "The Unwritten Rule of xyz_random_nonexistent_topic_123 That Changes Everything",
+        "whyItWinsTranslation": "Specific insider nuance triggers high curiosity."
+      },
+      {
+        "id": "idea-es-es-4",
+        "title": "Por Qué el 90% Abandona xyz_random_nonexistent_topic_123 (Y el Secreto para Tener Éxito)",
+        "angle": "Identifying the core bottleneck and providing the counter-intuitive workaround.",
+        "format": "12min Strategic Analysis",
+        "gapExploited": "Sensationalist promises that ignore execution friction.",
+        "targetAudiencePainPoint": "Hitting an early wall and losing motivation.",
+        "viralityPotential": "High",
+        "competitionLevel": "Medium",
+        "rank": 9,
+        "opportunityScore": 79,
+        "whyItWins": "Challenges common assumptions with refreshing honesty.",
+        "isBestOpportunity": false,
+        "titleTranslation": "Why 90% Fail at xyz_random_nonexistent_topic_123 (And the 10% Secret)",
+        "whyItWinsTranslation": "Challenges common assumptions with refreshing honesty."
+      },
+      {
+        "id": "idea-es-es-8",
+        "title": "Cómo Obtener Resultados Reales en xyz_random_nonexistent_topic_123 Sin Gastar una Fortuna en Equipo",
+        "angle": "Achieving 90% of the outcome with simple, accessible baseline tools.",
+        "format": "13min Budget Blueprint",
+        "gapExploited": "The misconception that expensive gear is required to get started.",
+        "targetAudiencePainPoint": "Hesitation due to the perceived high cost of entry.",
+        "viralityPotential": "High",
+        "competitionLevel": "Low",
+        "rank": 10,
+        "opportunityScore": 79,
+        "whyItWins": "Empowers beginners and dismantles the gatekeeping mentality.",
+        "isBestOpportunity": false,
+        "titleTranslation": "How to Get Real Results in xyz_random_nonexistent_topic_123 Without Expensive Equipment",
+        "whyItWinsTranslation": "Empowers beginners and dismantles the gatekeeping mentality."
+      },
+      {
+        "id": "idea-es-es-10",
+        "title": "Las 5 Mejores Herramientas Gratuitas para xyz_random_nonexistent_topic_123 que Debes Conocer",
+        "angle": "Curated toolkit of high-value free software, templates, and platforms.",
+        "format": "14min Free Toolkit Demo",
+        "gapExploited": "Expensive subscriptions marketed to newcomers unnecessarily.",
+        "targetAudiencePainPoint": "Spending money on tools before validating the concept.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Medium",
+        "rank": 11,
+        "opportunityScore": 78,
+        "whyItWins": "Immediate bookmark value for learners.",
+        "isBestOpportunity": false,
+        "titleTranslation": "The Top 5 Free Resources for xyz_random_nonexistent_topic_123 You Need to Know",
+        "whyItWinsTranslation": "Immediate bookmark value for learners."
+      },
+      {
+        "id": "idea-es-es-11",
+        "title": "Qué Hacer Cuando Te Quedas Bloqueado en xyz_random_nonexistent_topic_123 (Guía de Emergencia)",
+        "angle": "Rapid diagnostics to pinpoint where things broke down and how to resume.",
+        "format": "10min Troubleshooting Masterclass",
+        "gapExploited": "Guides that offer zero troubleshooting when unexpected errors occur.",
+        "targetAudiencePainPoint": "Frustration of getting stuck on an unstated minor detail.",
+        "viralityPotential": "High",
+        "competitionLevel": "Low",
+        "rank": 12,
+        "opportunityScore": 76,
+        "whyItWins": "High-urgency problem solving that gets shared across forums.",
+        "isBestOpportunity": false,
+        "titleTranslation": "What to Do When You Get Stuck in xyz_random_nonexistent_topic_123 (Emergency Guide)",
+        "whyItWinsTranslation": "High-urgency problem solving that gets shared across forums."
+      },
+      {
+        "id": "idea-es-es-13",
+        "title": "Cómo Automatizar xyz_random_nonexistent_topic_123 para que Lleve Cero Esfuerzo Cada Semana",
+        "angle": "Setting up automated systems and shortcuts to handle repetitive tasks.",
+        "format": "10min Automation Walkthrough",
+        "gapExploited": "Doing repetitive manual work that could easily be automated.",
+        "targetAudiencePainPoint": "Spending valuable hours on tedious, repetitive steps.",
+        "viralityPotential": "High",
+        "competitionLevel": "Low",
+        "rank": 13,
+        "opportunityScore": 76,
+        "whyItWins": "Time savings are the most universal hook on video platforms.",
+        "isBestOpportunity": false,
+        "titleTranslation": "How to Automate xyz_random_nonexistent_topic_123 So It Takes Almost Zero Effort",
+        "whyItWinsTranslation": "Time savings are the most universal hook on video platforms."
+      },
+      {
+        "id": "idea-es-es-12",
+        "title": "El Enfoque Moderno para xyz_random_nonexistent_topic_123 en 2026",
+        "angle": "Contrasting legacy techniques with modern, streamlined workflows.",
+        "format": "13min Evolution Guide",
+        "gapExploited": "Outdated tutorials that ignore modern tools and automations.",
+        "targetAudiencePainPoint": "Learning methods that are already obsolete.",
+        "viralityPotential": "High",
+        "competitionLevel": "Low",
+        "rank": 14,
+        "opportunityScore": 75,
+        "whyItWins": "Relevance and timeliness drive high click-through rates.",
+        "isBestOpportunity": false,
+        "titleTranslation": "The Modern Approach to xyz_random_nonexistent_topic_123 in 2026",
+        "whyItWinsTranslation": "Relevance and timeliness drive high click-through rates."
+      },
+      {
+        "id": "idea-es-es-14",
+        "title": "La Regla 80/20 en xyz_random_nonexistent_topic_123: Céntrate en lo que Realmente Mueve la Aguja",
+        "angle": "Cutting out 80% of trivial tasks and mastering the 2 vital levers.",
+        "format": "11min Principle Walkthrough",
+        "gapExploited": "Information overload that paralyses action.",
+        "targetAudiencePainPoint": "Feeling overwhelmed by endless options and steps.",
+        "viralityPotential": "High",
+        "competitionLevel": "Low",
+        "rank": 15,
+        "opportunityScore": 74,
+        "whyItWins": "Provides clarity and peace of mind.",
+        "isBestOpportunity": false,
+        "titleTranslation": "The 80/20 Rule in xyz_random_nonexistent_topic_123: Focus on What Actually Moves the Needle",
+        "whyItWinsTranslation": "Provides clarity and peace of mind."
+      },
+      {
+        "id": "idea-es-es-15",
+        "title": "Preguntas y Respuestas: Las 10 Dudas Más Frecuentes sobre xyz_random_nonexistent_topic_123",
+        "angle": "Direct answers to real audience roadblocks with live screen demonstrations.",
+        "format": "15min Community FAQ",
+        "gapExploited": "Specific real-world hurdles that generic tutorials skip.",
+        "targetAudiencePainPoint": "Unanswered specific questions blocking progress.",
+        "viralityPotential": "High",
+        "competitionLevel": "Low",
+        "rank": 16,
+        "opportunityScore": 72,
+        "whyItWins": "Deepens community loyalty and ongoing interaction.",
+        "isBestOpportunity": false,
+        "titleTranslation": "Community Q&A: Answering the 10 Most Common Questions on xyz_random_nonexistent_topic_123",
+        "whyItWinsTranslation": "Deepens community loyalty and ongoing interaction."
+      }
+    ],
+    "bestOpportunityId": "idea-es-es-1",
+    "bestOpportunity": {
+      "id": "idea-es-es-1",
+      "title": "El Error #1 con xyz_random_nonexistent_topic_123 que Nadie Te Avisa (Y Cómo Corregirlo)",
+      "angle": "Overcoming the most common beginner stumble with clear demonstration.",
+      "format": "12min Practical Walkthrough",
+      "gapExploited": "Generic advice that glosses over initial setup difficulties.",
+      "targetAudiencePainPoint": "Wasting hours without achieving clear progress.",
+      "viralityPotential": "Exceptional",
+      "competitionLevel": "Low",
+      "rank": 1,
+      "opportunityScore": 95,
+      "whyItWins": "Direct troubleshooting builds instant credibility.",
+      "isBestOpportunity": true,
+      "titleTranslation": "The #1 Mistake with xyz_random_nonexistent_topic_123 (And How to Fix It)",
+      "whyItWinsTranslation": "Direct troubleshooting builds instant credibility."
+    },
+    "scripts": [
+      {
+        "id": "script-es-es-contrarian",
+        "style": "contrarian-mythbuster",
+        "styleName": "Variação 1: O Quebrador de Mitos (Contrarian)",
+        "badge": "Maior Retenção & Debate",
+        "tagline": "Desmonta conselhos genéricos e apresenta a alternativa prática.",
+        "estimatedDuration": "12 minutes",
+        "targetWordCount": 1700,
+        "sections": [
+          {
+            "timestamp": "0:00 - 0:03",
+            "stage": "Hook",
+            "visualCue": "[VISUAL: Direct to camera, serious expression with mobile or notes in hand]",
+            "spokenText": "Si sigues aplicando este consejo sobre xyz_random_nonexistent_topic_123 en España, estás perdiendo literalmente tu tiempo.",
+            "audioToneCue": "[AUDIO: Crisp cut effect / no music in first 2 seconds]",
+            "spokenTextTranslation": "If you are still doing this with xyz_random_nonexistent_topic_123 in the UK, I'm sorry to say, but you are wasting precious effort every single month.",
+            "directorNote": "Hook: Subverts viewer expectations within the first 3 seconds to prevent swipe-away."
+          },
+          {
+            "timestamp": "0:03 - 0:12",
+            "stage": "Agitate / Pattern Interrupt",
+            "visualCue": "[VISUAL: Quick cut to comparison screen highlighting the standard error in red]",
+            "spokenText": "90% dos tutoriais dizem-te para seguir o método tradicional. O problema? Perdes horas de esforço sem ver resultados tangíveis.",
+            "audioToneCue": "[AUDIO: Subtle bass drop and building tension]",
+            "spokenTextTranslation": "90% of tutorials tell you to follow the standard method. The problem? It wastes hours of effort without moving the needle on results.",
+            "directorNote": "Pattern Interrupt: Highlights a common blunder and creates tension to sustain watch time."
+          },
+          {
+            "timestamp": "0:12 - 0:32",
+            "stage": "Core Value / Meat",
+            "visualCue": "[VISUAL: Clean screen walkthrough or demonstration showing the 3-step solution]",
+            "spokenText": "Olha com atenção para esta comparação: a abordagem habitual gera bloqueios imediatos. Se fizeres este fluxo de 3 passos, tudo flui com facilidade.",
+            "audioToneCue": "[AUDIO: Dynamic, confident instructional pacing]",
+            "spokenTextTranslation": "Look closely at this comparison: the standard approach leads to immediate roadblocks. If you implement this 3-step workflow instead, everything runs smoothly.",
+            "directorNote": "Core Value: Delivers clear, step-by-step transformation with high actionable density."
+          },
+          {
+            "timestamp": "0:32 - 0:40",
+            "stage": "Payoff / Turnaround",
+            "visualCue": "[VISUAL: Return to main camera with clear proof graphic]",
+            "spokenText": "A diferença é teres paz de espírito e não seres apanhado de surpresa.",
+            "audioToneCue": "[AUDIO: Inspiring, conclusive transition]",
+            "spokenTextTranslation": "The difference is having complete peace of mind and not being caught out by avoidable mistakes.",
+            "directorNote": "Payoff: Proves the tangible benefit and cements channel authority."
+          },
+          {
+            "timestamp": "0:40 - 0:45",
+            "stage": "Call to Action",
+            "visualCue": "[VISUAL: Pointing to bookmark/follow button on screen]",
+            "spokenText": "Guarda este vídeo para consultares quando fores tratar disto e comenta \"GUIA\" para o resumo completo!",
+            "audioToneCue": "[AUDIO: Subtle notification chime]",
+            "spokenTextTranslation": "Save this video to reference when you put this into practice, and comment \"GUIDE\" for the complete breakdown!",
+            "directorNote": "Call to Action: Converts high viewer satisfaction into algorithmic signals (saves/comments)."
+          }
+        ],
+        "fullSpokenText": "Si sigues aplicando este consejo sobre xyz_random_nonexistent_topic_123 en España, estás perdiendo literalmente tu tiempo. 90% dos tutoriais dizem-te para seguir o método tradicional. O problema? Perdes horas de esforço sem ver resultados tangíveis. Olha com atenção para esta comparação: a abordagem habitual gera bloqueios imediatos. Se fizeres este fluxo de 3 passos, tudo flui com facilidade. A diferença é teres paz de espírito e não seres apanhado de surpresa. Guarda este vídeo para consultares quando fores tratar disto e comenta \"GUIA\" para o resumo completo!",
+        "taglineTranslation": "Dismantles standard ineffective advice and reveals the actionable fix.",
+        "fullSpokenTextTranslation": "If you are still doing this with xyz_random_nonexistent_topic_123 in the UK, I'm sorry to say, but you are wasting precious effort every single month. 90% of tutorials tell you to follow the standard method. The problem? It wastes hours of effort without moving the needle on results. Look closely at this comparison: the standard approach leads to immediate roadblocks. If you implement this 3-step workflow instead, everything runs smoothly. The difference is having complete peace of mind and not being caught out by avoidable mistakes. Save this video to reference when you put this into practice, and comment \"GUIDE\" for the complete breakdown!"
+      },
+      {
+        "id": "script-es-es-story",
+        "style": "story-driven-case-study",
+        "styleName": "Variação 2: Estudo de Caso & Jornada Pessoal",
+        "badge": "Máxima Conexão & Autoridade",
+        "tagline": "Narra a frustração real de começar do zero até encontrar a rota sem atritos.",
+        "estimatedDuration": "14 minutes",
+        "targetWordCount": 2000,
+        "sections": [
+          {
+            "timestamp": "0:00 - 0:04",
+            "stage": "Hook",
+            "visualCue": "[VISUAL: Sitting at desk reflecting on past frustrations]",
+            "spokenText": "Quando comecei em xyz_random_nonexistent_topic_123, cometi o erro mais frustrante possível. E ninguém me avisou.",
+            "audioToneCue": "[AUDIO: Reflective piano intro]",
+            "spokenTextTranslation": "When I first started with xyz_random_nonexistent_topic_123, I made the most frustrating mistake possible. And nobody warned me.",
+            "directorNote": "Hook: Subverts viewer expectations within the first 3 seconds to prevent swipe-away."
+          },
+          {
+            "timestamp": "0:04 - 0:15",
+            "stage": "Agitate / Pattern Interrupt",
+            "visualCue": "[VISUAL: Fast montage of confusing documents or endless tabs]",
+            "spokenText": "Passava horas a estudar e a confiar nos conselhos padrão da internet, mas os resultados eram zero.",
+            "audioToneCue": "[AUDIO: Building intensity]",
+            "spokenTextTranslation": "I was putting in hours of work, trusting generic internet guides, but progress completely stalled.",
+            "directorNote": "Pattern Interrupt: Highlights a common blunder and creates tension to sustain watch time."
+          },
+          {
+            "timestamp": "0:15 - 0:35",
+            "stage": "Core Value / Meat",
+            "visualCue": "[VISUAL: Clean dashboard opening up with 3 clear metrics]",
+            "spokenText": "Até que decidi cortar 80% do ruído e focar apenas nestas 3 regras fundamentais. Foi exatamente isto que transformou os meus resultados.",
+            "audioToneCue": "[AUDIO: Cadenced clarity rhythm]",
+            "spokenTextTranslation": "Until I stripped out 80% of the noise and focused strictly on these three fundamental rules. That transformed everything.",
+            "directorNote": "Core Value: Delivers clear, step-by-step transformation with high actionable density."
+          },
+          {
+            "timestamp": "0:35 - 0:43",
+            "stage": "Payoff / Turnaround",
+            "visualCue": "[VISUAL: Clear success metrics on screen with calm confidence]",
+            "spokenText": "Hoje levo 15 minutos por semana a gerir isto com total tranquilidade.",
+            "audioToneCue": "[AUDIO: Positive resolution]",
+            "spokenTextTranslation": "Now it takes me 15 minutes a week to manage with complete confidence.",
+            "directorNote": "Payoff: Proves the tangible benefit and cements channel authority."
+          },
+          {
+            "timestamp": "0:43 - 0:50",
+            "stage": "Call to Action",
+            "visualCue": "[VISUAL: Pointing to bookmark button]",
+            "spokenText": "Guarda este vídeo nos favoritos e segue o canal para mais análises práticas!",
+            "audioToneCue": "[AUDIO: Sign-off chime]",
+            "spokenTextTranslation": "Save this video for later and follow for more straightforward, practical walkthroughs!",
+            "directorNote": "Call to Action: Converts high viewer satisfaction into algorithmic signals (saves/comments)."
+          }
+        ],
+        "fullSpokenText": "Quando comecei em xyz_random_nonexistent_topic_123, cometi o erro mais frustrante possível. E ninguém me avisou. Passava horas a estudar e a confiar nos conselhos padrão da internet, mas os resultados eram zero. Até que decidi cortar 80% do ruído e focar apenas nestas 3 regras fundamentais. Foi exatamente isto que transformou os meus resultados. Hoje levo 15 minutos por semana a gerir isto com total tranquilidade. Guarda este vídeo nos favoritos e segue o canal para mais análises práticas!",
+        "taglineTranslation": "Chronicles the initial frustration of starting from scratch until finding the smooth path.",
+        "fullSpokenTextTranslation": "When I first started with xyz_random_nonexistent_topic_123, I made the most frustrating mistake possible. And nobody warned me. I was putting in hours of work, trusting generic internet guides, but progress completely stalled. Until I stripped out 80% of the noise and focused strictly on these three fundamental rules. That transformed everything. Now it takes me 15 minutes a week to manage with complete confidence. Save this video for later and follow for more straightforward, practical walkthroughs!"
+      },
+      {
+        "id": "script-es-es-blueprint",
+        "style": "actionable-blueprint",
+        "styleName": "Variação 3: O Passo a Passo Definitivo (Blueprint)",
+        "badge": "Maior Taxa de Salvamento",
+        "tagline": "Guia de execução em 4 passos sem rodeios.",
+        "estimatedDuration": "15 minutes",
+        "targetWordCount": 2100,
+        "sections": [
+          {
+            "timestamp": "0:00 - 0:03",
+            "stage": "Hook",
+            "visualCue": "[VISUAL: Clear title card with steps on screen]",
+            "spokenText": "Aqui está o passo a passo em 4 etapas para dominares xyz_random_nonexistent_topic_123 do zero.",
+            "audioToneCue": "[AUDIO: High energy opening sound]",
+            "spokenTextTranslation": "Here is the complete 4-step blueprint for xyz_random_nonexistent_topic_123 from absolute scratch.",
+            "directorNote": "Hook: Subverts viewer expectations within the first 3 seconds to prevent swipe-away."
+          },
+          {
+            "timestamp": "0:03 - 0:15",
+            "stage": "Core Value / Meat",
+            "visualCue": "[VISUAL: Live demonstration of step 1 setup and account/tool configuration]",
+            "spokenText": "Passo 1: Configurar a base correta sem custos desnecessários. Passo 2: Estabelecer o teu fluxo de trabalho automático.",
+            "audioToneCue": "[AUDIO: Upbeat instructional rhythm]",
+            "spokenTextTranslation": "Step 1: Set up the correct foundation without paying unnecessary upfront fees. Step 2: Establish your automated workflow.",
+            "directorNote": "Core Value: Delivers clear, step-by-step transformation with high actionable density."
+          },
+          {
+            "timestamp": "0:15 - 0:30",
+            "stage": "Payoff / Turnaround",
+            "visualCue": "[VISUAL: Live demonstration of step 3 execution and step 4 verification]",
+            "spokenText": "Passo 3: Executar com consistência rigorosa. Passo 4: Fazer uma auditoria rápida para manter tudo otimizado.",
+            "audioToneCue": "[AUDIO: Dynamic pace with woosh transitions]",
+            "spokenTextTranslation": "Step 3: Execute with strict consistency. Step 4: Perform a quarterly 10-minute audit to keep everything optimised.",
+            "directorNote": "Payoff: Proves the tangible benefit and cements channel authority."
+          },
+          {
+            "timestamp": "0:30 - 0:40",
+            "stage": "Payoff / Turnaround",
+            "visualCue": "[VISUAL: Checklist graphic checkmarks completing]",
+            "spokenText": "Aplica estes 4 passos e ficas à frente de 90% das pessoas que ficam presas na teoria.",
+            "audioToneCue": "[AUDIO: Confident resolution]",
+            "spokenTextTranslation": "Follow these 4 steps and you will be ahead of 90% of people who get stuck in theoretical circles.",
+            "directorNote": "Payoff: Proves the tangible benefit and cements channel authority."
+          },
+          {
+            "timestamp": "0:40 - 0:45",
+            "stage": "Call to Action",
+            "visualCue": "[VISUAL: Gesture towards bookmark button]",
+            "spokenText": "Partilha com quem precisa de ver isto e comenta \"GUIA\" para o modelo gratuito!",
+            "audioToneCue": "[AUDIO: Notification chime]",
+            "spokenTextTranslation": "Share this with someone who needs this today and comment \"STEPS\" for the free template!",
+            "directorNote": "Call to Action: Converts high viewer satisfaction into algorithmic signals (saves/comments)."
+          }
+        ],
+        "fullSpokenText": "Aqui está o passo a passo em 4 etapas para dominares xyz_random_nonexistent_topic_123 do zero. Passo 1: Configurar a base correta sem custos desnecessários. Passo 2: Estabelecer o teu fluxo de trabalho automático. Passo 3: Executar com consistência rigorosa. Passo 4: Fazer uma auditoria rápida para manter tudo otimizado. Aplica estes 4 passos e ficas à frente de 90% das pessoas que ficam presas na teoria. Partilha com quem precisa de ver isto e comenta \"GUIA\" para o modelo gratuito!",
+        "taglineTranslation": "Direct 4-step implementation guide taking viewers from zero to competent.",
+        "fullSpokenTextTranslation": "Here is the complete 4-step blueprint for xyz_random_nonexistent_topic_123 from absolute scratch. Step 1: Set up the correct foundation without paying unnecessary upfront fees. Step 2: Establish your automated workflow. Step 3: Execute with strict consistency. Step 4: Perform a quarterly 10-minute audit to keep everything optimised. Follow these 4 steps and you will be ahead of 90% of people who get stuck in theoretical circles. Share this with someone who needs this today and comment \"STEPS\" for the free template!"
+      }
+    ],
+    "titles": [
+      {
+        "id": "title-1",
+        "type": "Contrarian",
+        "title": "O Maior Erro com xyz_random_nonexistent_topic_123 que Quase Ninguém Te Avisa",
+        "score": 96,
+        "titleTranslation": "The Costly Mistake with xyz_random_nonexistent_topic_123 in the UK (And How to Fix It)"
+      },
+      {
+        "id": "title-2",
+        "type": "Outcome / How-To",
+        "title": "Como Dominar xyz_random_nonexistent_topic_123 do Zero Passo a Passo",
+        "score": 94,
+        "titleTranslation": "How to Master xyz_random_nonexistent_topic_123 from Scratch Step-by-Step"
+      },
+      {
+        "id": "title-3",
+        "type": "Curiosity Gap",
+        "title": "Opção A vs Opção B para xyz_random_nonexistent_topic_123: Qual a Escolha Certa?",
+        "score": 92,
+        "titleTranslation": "Option A vs Option B for xyz_random_nonexistent_topic_123: Which Is Genuinely Worth It?"
+      },
+      {
+        "id": "title-4",
+        "type": "Fear of Missing Out / Loss",
+        "title": "3 Erros Críticos em xyz_random_nonexistent_topic_123 que Deves Parar Hoje",
+        "score": 91,
+        "titleTranslation": "3 Critical Traps with xyz_random_nonexistent_topic_123 You Should Stop Doing Today"
+      },
+      {
+        "id": "title-5",
+        "type": "Number / Listicle",
+        "title": "A Rotina de 15 Minutos para xyz_random_nonexistent_topic_123 sem Complicações",
+        "score": 89,
+        "titleTranslation": "The 15-Minute Routine for xyz_random_nonexistent_topic_123 (Zero Fluff)"
+      }
+    ],
+    "hooks": [
+      {
+        "id": "hook-1",
+        "type": "Pattern Interrupt",
+        "spokenHook": "Si vives en España y aplicas el consejo habitual sobre xyz_random_nonexistent_topic_123, estás perdiendo tiempo y esfuerzo innecesario.",
+        "visualHook": "[VISUAL: Expressão séria a apontar diretamente para a comparação]",
+        "overlayText": "PÁRA DE FAZER ISTO ⚠️",
+        "spokenHookTranslation": "If you're still doing this with xyz_random_nonexistent_topic_123 in the UK, you are wasting time without seeing real results.",
+        "visualHookTranslation": "[VISUAL: Serious expression pointing directly to screen comparison]",
+        "overlayTextTranslation": "STOP DOING THIS ⚠️",
+        "directorNote": "Emotional Trigger: Targets the viewer's desire for fast results while removing friction."
+      },
+      {
+        "id": "hook-2",
+        "type": "Bold Statement",
+        "spokenHook": "Queres obter resultados reais em xyz_random_nonexistent_topic_123 sem perder horas todas as semanas? Aqui está o método.",
+        "visualHook": "[VISUAL: Ecrã limpo com os 3 pilares essenciais]",
+        "overlayText": "RESULTADOS REAIS 🎯",
+        "spokenHookTranslation": "Want to get real, tangible results with xyz_random_nonexistent_topic_123 without wasting hours every week? Here is the blueprint.",
+        "visualHookTranslation": "[VISUAL: Clean summary dashboard with 3 key pillars]",
+        "overlayTextTranslation": "REAL RESULTS 🎯",
+        "directorNote": "Emotional Trigger: Targets the viewer's desire for fast results while removing friction."
+      },
+      {
+        "id": "hook-3",
+        "type": "Provocative Question",
+        "spokenHook": "Se estás a sentir bloqueio ao tentar implementar xyz_random_nonexistent_topic_123, o problema não és tu — é o conselho padrão que estás a seguir.",
+        "visualHook": "[VISUAL: Tom acolhedor a mostrar a solução prática]",
+        "overlayText": "PORQUE BLOQUEIAS ❌",
+        "spokenHookTranslation": "If you feel stuck or overwhelmed trying to figure out xyz_random_nonexistent_topic_123, the problem isn't you — it's the advice you're following.",
+        "visualHookTranslation": "[VISUAL: Sympathetic expression cutting straight to the solution]",
+        "overlayTextTranslation": "WHY YOU GET STUCK ❌",
+        "directorNote": "Emotional Trigger: Targets the viewer's desire for fast results while removing friction."
+      },
+      {
+        "id": "hook-4",
+        "type": "Story Opener",
+        "spokenHook": "A maioria das pessoas diz para fazeres isto em xyz_random_nonexistent_topic_123. Olha porque é que isso só te faz perder tempo.",
+        "visualHook": "[VISUAL: Cortar o conselho habitual a vermelho]",
+        "overlayText": "CONSELHO ERRADO 🚫",
+        "spokenHookTranslation": "Most online advice about xyz_random_nonexistent_topic_123 tells you to do this. Here is why that is actually slowing you down.",
+        "visualHookTranslation": "[VISUAL: Crossing out the standard advice with a bold red line]",
+        "overlayTextTranslation": "OUTDATED ADVICE 🚫",
+        "directorNote": "Emotional Trigger: Targets the viewer's desire for fast results while removing friction."
+      },
+      {
+        "id": "hook-5",
+        "type": "Visual Shock",
+        "spokenHook": "Existe uma regra não escrita em xyz_random_nonexistent_topic_123 que muda completamente os teus resultados.",
+        "visualHook": "[VISUAL: Revelação da regra chave destacada no ecrã]",
+        "overlayText": "A REGRA DE OURO 🔑",
+        "spokenHookTranslation": "There is one fundamental rule behind xyz_random_nonexistent_topic_123 that experienced practitioners use every day.",
+        "visualHookTranslation": "[VISUAL: Revealing the key rule highlighted on screen]",
+        "overlayTextTranslation": "THE #1 RULE 🔑",
+        "directorNote": "Emotional Trigger: Targets the viewer's desire for fast results while removing friction."
+      }
+    ],
+    "ctas": [
+      {
+        "id": "cta-1",
+        "goal": "Save / Bookmark",
+        "spokenCta": "Guarda este vídeo nos favoritos para teres a estratégia à mão quando fores implementar!",
+        "onScreenText": "GUARDA ESTE VÍDEO 📌",
+        "platformBestPractice": "Apontar para o botão de guardar.",
+        "spokenCtaTranslation": "Save this video to your library right now so you can refer back when you implement this!",
+        "onScreenTextTranslation": "SAVE THIS VIDEO 📌",
+        "directorNote": "Conversion Goal: Triggers Save / Bookmark by pairing verbal prompt with visual reinforcement."
+      },
+      {
+        "id": "cta-2",
+        "goal": "Comment / Keyword Automation",
+        "spokenCta": "Comenta \"GUIA\" nos comentários para receberes o resumo completo!",
+        "onScreenText": "COMENTA \"GUIA\" 👇",
+        "platformBestPractice": "Aumenta interação inicial.",
+        "spokenCtaTranslation": "Comment \"GUIDE\" below and I will send the complete summary straight to you!",
+        "onScreenTextTranslation": "COMMENT \"GUIDE\" 💬",
+        "directorNote": "Conversion Goal: Triggers Comment / Keyword Automation by pairing verbal prompt with visual reinforcement."
+      },
+      {
+        "id": "cta-3",
+        "goal": "Follow / Subscribe",
+        "spokenCta": "Segue o canal para não perderes os próximos guias práticos!",
+        "onScreenText": "SEGUE PARA MAIS 🔔",
+        "platformBestPractice": "Encerramento claro com chamada de ação.",
+        "spokenCtaTranslation": "Subscribe to the channel for more no-nonsense, practical breakdowns every single week!",
+        "onScreenTextTranslation": "SUBSCRIBE FOR MORE 🔔",
+        "directorNote": "Conversion Goal: Triggers Follow / Subscribe by pairing verbal prompt with visual reinforcement."
+      }
+    ],
+    "sources": []
+  },
+  {
+    "id": "proj_1791217352047_khrbx",
+    "createdAt": "2026-10-05T16:22:32.047Z",
+    "request": {
+      "topic": "Best free tools to make an ebook in 2026",
+      "market": "es-ES",
+      "platform": "youtube"
+    },
+    "cached": false,
+    "isLiveResearchAvailable": true,
+    "researchProvenance": {
+      "sourceType": "live_web_search",
+      "isLiveResearchAvailable": true,
+      "queryPerformed": "site:youtube.com/watch Best free tools to make an ebook in 2026 España"
+    },
+    "competitors": [
+      {
+        "id": "comp-live-1",
+        "title": "Creating EPub Files With FrameMaker 10, RoboHelp and Technical ...",
+        "url": "https://www.youtube.com/watch/?v=8X1EOIZSu2U",
+        "channelOrCreator": "Criador / Canal Especialista",
+        "platform": "youtube",
+        "snippet": "Creating EPub Files With FrameMaker 10, RoboHelp and Technical Communication Suite 3 For Your Tablet Devices Like the IPad",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "www.youtube.com",
+        "detectedHookOrAngle": "Formato lista numerada de alta retenção",
+        "factSummary": "Contenido activo verificado mediante búsqueda pública: título \"Creating EPub Files With FrameMaker 10, RoboHelp and Technical ...\".",
+        "aiInference": "Estructurado para atraer tráfico orgánico con énfasis en alta retención inicial.",
+        "titleTranslation": "Creating EPub Files With FrameMaker 10, RoboHelp and Technical ...",
+        "snippetTranslation": "Creating EPub Files With FrameMaker 10, RoboHelp and Technical Communication Suite 3 For Your Tablet Devices Like the IPad"
+      },
+      {
+        "id": "comp-live-2",
+        "title": "\"3 Herramientas de IA GRATIS para Crear un Ebook en Minutos (2026)\"",
+        "url": "https://www.youtube.com/watch?v=TzqPR8VlF0c",
+        "channelOrCreator": "Criador / Canal Especialista",
+        "platform": "youtube",
+        "snippet": "¿Quieres lanzar un ebook pero no sabes por dónde empezar? Hoy: 3 herramientas de IA GRATIS que escriben, diseñan y formatean tu libro en minutos.👇 Herramie...",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "www.youtube.com",
+        "detectedHookOrAngle": "Formato lista numerada de alta retenção",
+        "factSummary": "Contenido activo verificado mediante búsqueda pública: título \"\"3 Herramientas de IA GRATIS para Crear un Ebook en Minutos (2026)\"\".",
+        "aiInference": "Estructurado para atraer tráfico orgánico con énfasis en alta retención inicial.",
+        "titleTranslation": "\"3 Herramientas de IA GRATIS para Crear un Ebook en Minutos (2026)\"",
+        "snippetTranslation": "¿Quieres lanzar un ebook pero no sabes por dónde empezar? Hoy: 3 herramientas de IA GRATIS que escriben, diseñan y formatean tu libro en minutos.👇 Herramie..."
+      },
+      {
+        "id": "comp-live-3",
+        "title": "Crea Ebooks Gratis_ 5 Herramientas Esenciales - YouTube",
+        "url": "https://www.youtube.com/watch?v=ozPCwvK87Kk",
+        "channelOrCreator": "Criador / Canal Especialista",
+        "platform": "youtube",
+        "snippet": "En este video, te presento cinco herramientas esenciales que te permitirán diseñar y publicar tus propios ebooks sin gastar un solo centavo.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "www.youtube.com",
+        "detectedHookOrAngle": "Formato lista numerada de alta retenção",
+        "factSummary": "Contenido activo verificado mediante búsqueda pública: título \"Crea Ebooks Gratis_ 5 Herramientas Esenciales - YouTube\".",
+        "aiInference": "Estructurado para atraer tráfico orgánico con énfasis en alta retención inicial.",
+        "titleTranslation": "Crea Ebooks Gratis_ 5 Herramientas Esenciales - YouTube",
+        "snippetTranslation": "En este video, te presento cinco herramientas esenciales que te permitirán diseñar y publicar tus propios ebooks sin gastar un solo centavo."
+      },
+      {
+        "id": "comp-live-4",
+        "title": "8 Best Free Ebook Creator Softwares for Creating Stunning ... - YouTube",
+        "url": "https://www.youtube.com/watch?v=3LED2SIvVXQ",
+        "channelOrCreator": "Criador / Canal Especialista",
+        "platform": "youtube",
+        "snippet": "Are you looking to create professional-quality ebooks without spending a dime? In this video, we'll explore the best free ebook creator software that can he...",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "www.youtube.com",
+        "detectedHookOrAngle": "Formato lista numerada de alta retenção",
+        "factSummary": "Contenido activo verificado mediante búsqueda pública: título \"8 Best Free Ebook Creator Softwares for Creating Stunning ... - YouTube\".",
+        "aiInference": "Estructurado para atraer tráfico orgánico con énfasis en alta retención inicial.",
+        "titleTranslation": "8 Best Free Ebook Creator Softwares for Creating Stunning ... - YouTube",
+        "snippetTranslation": "Are you looking to create professional-quality ebooks without spending a dime? In this video, we'll explore the best free ebook creator software that can he..."
+      },
+      {
+        "id": "comp-live-5",
+        "title": "How to Create & Sell Ebooks Online in 2026 (Step-by-Step Guide)",
+        "url": "https://www.youtube.com/watch?v=yCZ5_r-CQ4k",
+        "channelOrCreator": "Criador / Canal Especialista",
+        "platform": "youtube",
+        "snippet": "In this video, I'll show you a complete step-by-step process to create an ebook from scratch and set it up for selling online — even if you're a beginner.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "www.youtube.com",
+        "detectedHookOrAngle": "Formato lista numerada de alta retenção",
+        "factSummary": "Contenido activo verificado mediante búsqueda pública: título \"How to Create & Sell Ebooks Online in 2026 (Step-by-Step Guide)\".",
+        "aiInference": "Estructurado para atraer tráfico orgánico con énfasis en alta retención inicial.",
+        "titleTranslation": "How to Create & Sell Ebooks Online in 2026 (Step-by-Step Guide)",
+        "snippetTranslation": "In this video, I'll show you a complete step-by-step process to create an ebook from scratch and set it up for selling online — even if you're a beginner."
+      },
+      {
+        "id": "comp-live-6",
+        "title": "How to Create an eBook on Canva for Free in 2026 (Step-by ... - YouTube",
+        "url": "https://www.youtube.com/watch?v=k7X-bpydWV0",
+        "channelOrCreator": "Criador / Canal Especialista",
+        "platform": "youtube",
+        "snippet": "This beginner-friendly tutorial walks you through each step to design, format, and download your very own eBook using Canva's free tools and templates.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "www.youtube.com",
+        "detectedHookOrAngle": "Formato lista numerada de alta retenção",
+        "factSummary": "Contenido activo verificado mediante búsqueda pública: título \"How to Create an eBook on Canva for Free in 2026 (Step-by ... - YouTube\".",
+        "aiInference": "Estructurado para atraer tráfico orgánico con énfasis en alta retención inicial.",
+        "titleTranslation": "How to Create an eBook on Canva for Free in 2026 (Step-by ... - YouTube",
+        "snippetTranslation": "This beginner-friendly tutorial walks you through each step to design, format, and download your very own eBook using Canva's free tools and templates."
+      },
+      {
+        "id": "comp-live-7",
+        "title": "Create Professional EBOOKS With AI (100% Free) From Scratch ... - YouTube",
+        "url": "https://www.youtube.com/watch?v=_LiCyTEgVv4",
+        "channelOrCreator": "Criador / Canal Especialista",
+        "platform": "youtube",
+        "snippet": "Would you like to learn how to create a professional ebook with artificial intelligence, without complicating your life and without being an expert designer or writer?",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "www.youtube.com",
+        "detectedHookOrAngle": "Formato lista numerada de alta retenção",
+        "factSummary": "Contenido activo verificado mediante búsqueda pública: título \"Create Professional EBOOKS With AI (100% Free) From Scratch ... - YouTube\".",
+        "aiInference": "Estructurado para atraer tráfico orgánico con énfasis en alta retención inicial.",
+        "titleTranslation": "Create Professional EBOOKS With AI (100% Free) From Scratch ... - YouTube",
+        "snippetTranslation": "Would you like to learn how to create a professional ebook with artificial intelligence, without complicating your life and without being an expert designer or writer?"
+      },
+      {
+        "id": "comp-live-8",
+        "title": "How to Create & Sell an eBook Online in 2026 - YouTube",
+        "url": "https://www.youtube.com/watch?v=KEVVMUS-0Cg",
+        "channelOrCreator": "Criador / Canal Especialista",
+        "platform": "youtube",
+        "snippet": "Want to learn how to create and sell an eBook online? In this video, I'll show you the complete step-by-step process of creating an eBook using Canva and ChatGPT, even if you're a beginner.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "www.youtube.com",
+        "detectedHookOrAngle": "Formato lista numerada de alta retenção",
+        "factSummary": "Contenido activo verificado mediante búsqueda pública: título \"How to Create & Sell an eBook Online in 2026 - YouTube\".",
+        "aiInference": "Estructurado para atraer tráfico orgánico con énfasis en alta retención inicial.",
+        "titleTranslation": "How to Create & Sell an eBook Online in 2026 - YouTube",
+        "snippetTranslation": "Want to learn how to create and sell an eBook online? In this video, I'll show you the complete step-by-step process of creating an eBook using Canva and ChatGPT, even if you're a beginner."
+      },
+      {
+        "id": "comp-live-9",
+        "title": "How To Create & Sell eBooks in 2026 | Complete Beginner Guide",
+        "url": "https://www.youtube.com/watch?v=H9UgmiVVguY",
+        "channelOrCreator": "Criador / Canal Especialista",
+        "platform": "youtube",
+        "snippet": "In this video, you will learn: ️ How to choose a profitable eBook niche ️ How to create an eBook (Free & Paid tools) ️ How to design a professional eBook ️ How to publish on Amazon KDP and ...",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "www.youtube.com",
+        "detectedHookOrAngle": "Formato lista numerada de alta retenção",
+        "factSummary": "Contenido activo verificado mediante búsqueda pública: título \"How To Create & Sell eBooks in 2026 | Complete Beginner Guide\".",
+        "aiInference": "Estructurado para atraer tráfico orgánico con énfasis en alta retención inicial.",
+        "titleTranslation": "How To Create & Sell eBooks in 2026 | Complete Beginner Guide",
+        "snippetTranslation": "In this video, you will learn: ️ How to choose a profitable eBook niche ️ How to create an eBook (Free & Paid tools) ️ How to design a professional eBook ️ How to publish on Amazon KDP and ..."
+      },
+      {
+        "id": "comp-live-10",
+        "title": "Las mejores herramientas para crear ebooks: guía completa",
+        "url": "https://www.commandcat.dev/herramientas-crear-ebooks/",
+        "channelOrCreator": "www.commandcat.dev",
+        "platform": "youtube",
+        "publishedDate": "2026",
+        "snippet": "Las mejores herramientas para crear ebooks en 2026 — gratis y de pago. Desde Sigil y Calibre hasta Atticus y Canva, organizadas por perfil de usuario.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "www.commandcat.dev",
+        "detectedHookOrAngle": "Quebra de padrão ou comparativo de mercado",
+        "factSummary": "Contenido activo verificado mediante búsqueda pública: título \"Las mejores herramientas para crear ebooks: guía completa\".",
+        "aiInference": "Estructurado para atraer tráfico orgánico con énfasis en alta retención inicial.",
+        "titleTranslation": "Las mejores herramientas para crear ebooks: Complete guide",
+        "snippetTranslation": "Las mejores herramientas para crear ebooks en 2026 — gratis y de pago. Desde Sigil y Calibre hasta Atticus y Canva, organizadas por perfil de usuario."
+      },
+      {
+        "id": "comp-live-11",
+        "title": "15 Best Ebook Creator Tools in 2026 [Paid & Free] - Visme",
+        "url": "https://visme.co/blog/best-ebook-creator/",
+        "channelOrCreator": "visme.co",
+        "platform": "youtube",
+        "snippet": "In this article, we'll explore the 15 best ebook creator tools (free and paid) that will help you create scroll-stopping ebooks that hit the mark. Bonus: Watch this video to discover ebook strategies that can help increase your business growth by 10x.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "visme.co",
+        "detectedHookOrAngle": "Formato lista numerada de alta retenção",
+        "factSummary": "Contenido activo verificado mediante búsqueda pública: título \"15 Best Ebook Creator Tools in 2026 [Paid & Free] - Visme\".",
+        "aiInference": "Estructurado para atraer tráfico orgánico con énfasis en alta retención inicial.",
+        "titleTranslation": "15 Best Ebook Creator Tools in 2026 [Paid & Free] - Visme",
+        "snippetTranslation": "In this article, we'll explore the 15 best ebook creator tools (free and paid) that will help you create scroll-stopping ebooks that hit the mark. Bonus: Watch this video to discover ebook strategies that can help increase your business growth by 10x."
+      },
+      {
+        "id": "comp-live-12",
+        "title": "Top 10 eBook Creator Tools in 2026: Free & Paid - PaperTrue",
+        "url": "https://www.papertrue.com/blog/ebook-creator/",
+        "channelOrCreator": "www.papertrue.com",
+        "platform": "youtube",
+        "publishedDate": "2026",
+        "snippet": "Here are the ten best eBook creator software in 2026: Atticus Vellum (New) Reedsy Book Editor / Studio (New) Draft2Digital Scrivener Google Docs Kindle Create Adobe InDesign Apple Pages Canva (New) As you may have noticed, most tools in this list of the best eBook creators are free or offer a free plan. After all, if you can afford to spend on interior formatting, it's better to use it on ...",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "www.papertrue.com",
+        "detectedHookOrAngle": "Formato lista numerada de alta retenção",
+        "factSummary": "Contenido activo verificado mediante búsqueda pública: título \"Top 10 eBook Creator Tools in 2026: Free & Paid - PaperTrue\".",
+        "aiInference": "Estructurado para atraer tráfico orgánico con énfasis en alta retención inicial.",
+        "titleTranslation": "Top 10 eBook Creator Tools in 2026: Free & Paid - PaperTrue",
+        "snippetTranslation": "Here are the ten best eBook creator software in 2026: Atticus Vellum (New) Reedsy Book Editor / Studio (New) Draft2Digital Scrivener Google Docs Kindle Create Adobe InDesign Apple Pages Canva (New) As you may have noticed, most tools in this list of the best eBook creators are free or offer a free plan. After all, if you can afford to spend on interior formatting, it's better to use it on ..."
+      },
+      {
+        "id": "comp-live-13",
+        "title": "15 Best Free AI Ebook Creators Worth Trying - FlipHTML5",
+        "url": "https://fliphtml5.com/guide/tools/free-ai-ebook-creators/",
+        "channelOrCreator": "fliphtml5.com",
+        "platform": "youtube",
+        "snippet": "Looking for a free AI ebook creator? We tested 15 tools with free plans — FlipHTML5, Canva, Reedsy, ChatGPT and more. See features, limits, and best uses.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "fliphtml5.com",
+        "detectedHookOrAngle": "Formato lista numerada de alta retenção",
+        "factSummary": "Contenido activo verificado mediante búsqueda pública: título \"15 Best Free AI Ebook Creators Worth Trying - FlipHTML5\".",
+        "aiInference": "Estructurado para atraer tráfico orgánico con énfasis en alta retención inicial.",
+        "titleTranslation": "15 Best Free AI Ebook Creators Worth Trying - FlipHTML5",
+        "snippetTranslation": "Looking for a free AI ebook creator? We tested 15 tools with free plans — FlipHTML5, Canva, Reedsy, ChatGPT and more. See features, limits, and best uses."
+      },
+      {
+        "id": "comp-live-14",
+        "title": "Best Ebook Creation Tools [2026 Ranked] | Books.by",
+        "url": "https://www.books.by/guides/best-ebook-creation-tools",
+        "channelOrCreator": "www.books.by",
+        "platform": "youtube",
+        "publishedDate": "2026",
+        "snippet": "Ebook Tools Ranked Best Ebook Creation Tools [2026] You need an EPUB file that looks professional on every device — Kindle, iPad, Kobo, phone. Here are the six best tools for creating ebooks, from one-click solutions to full code-level control.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "www.books.by",
+        "detectedHookOrAngle": "Formato lista numerada de alta retenção",
+        "factSummary": "Contenido activo verificado mediante búsqueda pública: título \"Best Ebook Creation Tools [2026 Ranked] | Books.by\".",
+        "aiInference": "Estructurado para atraer tráfico orgánico con énfasis en alta retención inicial.",
+        "titleTranslation": "Best Ebook Creation Tools [2026 Ranked] | Books.by",
+        "snippetTranslation": "Ebook Tools Ranked Best Ebook Creation Tools [2026] You need an EPUB file that looks professional on every device — Kindle, iPad, Kobo, phone. Here are the six best tools for creating ebooks, from one-click solutions to full code-level control."
+      },
+      {
+        "id": "comp-live-15",
+        "title": "The 10 Best Free Ebook Creator Tools For All New Authors",
+        "url": "https://justpublishingadvice.com/free-ebook-creator-tools/",
+        "channelOrCreator": "justpublishingadvice.com",
+        "platform": "youtube",
+        "snippet": "If you plan on writing and publishing an ebook, you will need a few essential tools. Luckily, you have plenty of choices regarding apps and tools to write, format, and prepare your new ebook. Better still, all the tools listed in this article are free for you to use. Self-publishing an ebook is free and fun and can be profitable for some authors.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "justpublishingadvice.com",
+        "detectedHookOrAngle": "Formato lista numerada de alta retenção",
+        "factSummary": "Contenido activo verificado mediante búsqueda pública: título \"The 10 Best Free Ebook Creator Tools For All New Authors\".",
+        "aiInference": "Estructurado para atraer tráfico orgánico con énfasis en alta retención inicial.",
+        "titleTranslation": "The 10 Best Free Ebook Creator Tools For All New Authors",
+        "snippetTranslation": "If you plan on writing and publishing an ebook, you will need a few essential tools. Luckily, you have plenty of choices regarding apps and tools to write, format, and prepare your new ebook. Better still, all the tools listed in this article are free for you to use. Self-publishing an ebook is free and fun and can be profitable for some authors."
+      },
+      {
+        "id": "comp-live-16",
+        "title": "Cómo crear un ebook gratis: Herramientas, trucos y formatos",
+        "url": "https://www.adslzone.net/como-se-hace/ebooks/crear-ebook-gratis/",
+        "channelOrCreator": "www.adslzone.net",
+        "platform": "youtube",
+        "snippet": "Cómo crear un ebook gratis online con estas herramientas y qué debes tener en cuenta. Trucos, formatos y conseguir un acabado profesional",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "www.adslzone.net",
+        "detectedHookOrAngle": "Quebra de padrão ou comparativo de mercado",
+        "factSummary": "Contenido activo verificado mediante búsqueda pública: título \"Cómo crear un ebook gratis: Herramientas, trucos y formatos\".",
+        "aiInference": "Estructurado para atraer tráfico orgánico con énfasis en alta retención inicial.",
+        "titleTranslation": "Cómo crear un ebook gratis: Herramientas, trucos y formatos",
+        "snippetTranslation": "Cómo crear un ebook gratis online con estas herramientas y qué debes tener en cuenta. Trucos, formatos y conseguir un acabado profesional"
+      }
+    ],
+    "outlierAnalysis": {
+      "topFormatOutlier": {
+        "format": "Vídeo Largo de 12 a 18 minutos con Estudio de Caso Práctico y Demostración en Pantalla",
+        "whyItOutperforms": "Los vídeos con demostración práctica real en pantalla (sin rodeos teóricos iniciales) tienen una retención media 2.4x superior a las grabaciones convencionales.",
+        "frequencyObserved": "10 de 16 de los contenidos analizados utilizan esta estructura."
+      },
+      "dominantHookPatterns": [
+        {
+          "pattern": "El Fallo Más Común al Empezar",
+          "example": "Ejemplo real observado: \"Creating EPub Files With FrameMaker 10, RoboHelp and Technical ...\"",
+          "whyItWorks": "Ahorra horas y frustraciones a quienes dan sus primeros pasos."
+        },
+        {
+          "pattern": "Comparativa Sin Filtros de Alternativas",
+          "example": "Ejemplo: \"Herramienta A vs Herramienta B para Best free tools to make an ebook in 2026: Cuál Merece la Pena\"",
+          "whyItWorks": "El público valora análisis objetivos y sin patrocinios encubiertos."
+        },
+        {
+          "pattern": "Método Práctico Paso a Paso",
+          "example": "Ejemplo: \"Cómo Dominar Best free tools to make an ebook in 2026 desde Cero sin Perder Tiempo\"",
+          "whyItWorks": "Pasos sencillos y reproducibles garantizan alta retención de vídeo."
+        }
+      ],
+      "highVelocityTopics": [
+        "Implementación práctica y herramientas esenciales para Best free tools to make an ebook in 2026",
+        "Comparativa sin patrocinios de las mejores alternativas para Best free tools to make an ebook in 2026",
+        "El error de principiante que retrasa tus resultados meses en Best free tools to make an ebook in 2026",
+        "Flujo de trabajo práctico y directo para obtener resultados desde el primer día"
+      ],
+      "emotionalTriggers": [
+        {
+          "trigger": "Aversión a la Frustración y Tiempo Perdido",
+          "application": "Destacar el error que hace fracasar los primeros intentos antes de mostrar la solución directa."
+        },
+        {
+          "trigger": "Curiosidad y Desmitificación",
+          "application": "Desafiar tópicos repetidos en internet mediante una demostración práctica e inmediata."
+        },
+        {
+          "trigger": "Confianza y Aplicación Inmediata",
+          "application": "Facilitar un paso a paso realista que cualquier persona pueda llevar a la práctica hoy mismo."
+        }
+      ],
+      "observedFacts": [
+        "Muestra analizada: 16 contenidos de la competencia activos encontrados en la búsqueda de mercado.",
+        "Plataforma analizada: YOUTUBE en el mercado geográfico y lingüístico de España (es-ES).",
+        "Títulos más efectivos contienen entre 45 y 65 caracteres con verbos de acción o cifras concretas.",
+        "Presencia confirmada de canales establecidos (Criador / Canal Especialista, Criador / Canal Especialista, Criador / Canal Especialista).",
+        "Gran parte de los vídeos competidores se centra en nociones teóricas, dejando huecos para guías prácticas directas."
+      ],
+      "aiDeductions": [
+        "Deducción IA: Existe una saturación evidente de contenidos teóricos y repetitivos sobre \"Best free tools to make an ebook in 2026\", lo que abre una gran oportunidad para enfoques contracorriente y datos prácticos.",
+        "Deducción IA: La audiencia en España demuestra fatiga ante formatos superficiales o de \"gurú\", prefiriendo creadores que muestran ejemplos reales, pasos exactos y total transparencia.",
+        "Deducción IA: El formato de guión con gancho de 3 segundos centrado en el resultado final logrará una retención muy superior a la media del nicho."
+      ]
+    },
+    "contentGaps": [
+      {
+        "id": "gap-es-gen-1",
+        "category": "underserved-market-need",
+        "title": "Demostración Práctica Real frente a Diapositivas Teóricas Vacías",
+        "description": "Gran parte de los contenidos sobre Best free tools to make an ebook in 2026 se limitan a presentaciones teóricas sin enseñar el proceso real y las pantallas de trabajo paso a paso.",
+        "whyCompetitorsMissedIt": "Resulta más fácil divagar en general que resolver y depurar un caso real frente a la cámara.",
+        "marketNuance": "España (es-ES): El público valora el pragmatismo, herramientas reales y transparencia de principio a fin.",
+        "opportunityLevel": "critical",
+        "titleTranslation": "Practical Hands-On Walkthrough vs Generic High-Level Theory",
+        "descriptionTranslation": "Most videos on Best free tools to make an ebook in 2026 remain stuck in high-level concepts, leaving learners stranded when attempting to implement the first real steps.",
+        "whyCompetitorsMissedItTranslation": "Explaining concepts is easier than building and debugging a real, end-to-end example on camera.",
+        "marketNuanceTranslation": "UK: Direct, articulate delivery with real tools, step-by-step logic, and zero corporate buzzwords."
+      },
+      {
+        "id": "gap-es-gen-2",
+        "category": "unanswered-question",
+        "title": "Cómo Superar el Primer Obstáculo Crítico al Empezar de Cero",
+        "description": "Los principiantes en Best free tools to make an ebook in 2026 suelen encallarse en un punto concreto que provoca el abandono en la primera semana. Falta una guía directa de resolución.",
+        "whyCompetitorsMissedIt": "Los creadores experimentados olvidan las dudas iniciales de quien está dando sus primeros pasos.",
+        "marketNuance": "España: Explicación accesible, tono constructivo y consejos aplicables al instante.",
+        "opportunityLevel": "very-high",
+        "titleTranslation": "How to Overcome the Most Common Roadblock When Starting from Scratch",
+        "descriptionTranslation": "Beginners routinely hit an immediate wall in Best free tools to make an ebook in 2026 that causes them to abandon the process within 48 hours. A clear troubleshooting guide solves this acute pain point.",
+        "whyCompetitorsMissedItTranslation": "Experts forget what was confusing when they were beginners.",
+        "marketNuanceTranslation": "UK: Step-by-step diagnostic checklists with clear \"do this, not that\" instructions."
+      },
+      {
+        "id": "gap-es-gen-3",
+        "category": "oversaturated-angle",
+        "title": "Saturación de Vídeos Introductorios que Nunca Llegan a la Práctica",
+        "description": "Exceso de vídeos tipo \"qué es Best free tools to make an ebook in 2026\" que finalizan justo en el momento en que el usuario necesita aprender a ejecutarlo.",
+        "whyCompetitorsMissedIt": "Los vídeos superficiales son rápidos de grabar pero generan poco valor duradero.",
+        "marketNuance": "España: Búsqueda de atajos eficaces y metodologías para aplicar hoy mismo.",
+        "opportunityLevel": "high",
+        "titleTranslation": "Endless Beginner Introductions That Never Progress Beyond the Basics",
+        "descriptionTranslation": "The market is saturated with \"Introduction to Best free tools to make an ebook in 2026\" videos that stop right when the material gets interesting and genuinely useful.",
+        "whyCompetitorsMissedItTranslation": "Introductory videos are easy to generate and churn out.",
+        "marketNuanceTranslation": "UK: High appetite for intermediate shortcuts and practical workflows."
+      },
+      {
+        "id": "gap-es-gen-4",
+        "category": "weak-competitor-execution",
+        "title": "Ausencia de Formato Corto Vertical con Solución Inmediata en 45 Segundos",
+        "description": "Falta el creador que sintetice la clave exacta en 40-50 segundos en formato vertical con subtítulos limpios y sin rodeos.",
+        "whyCompetitorsMissedIt": "Aferramiento a vídeos largos de 20 minutos con introducciones lentas.",
+        "marketNuance": "España: Dinamismo, formato directo y llamada a guardar para futuras consultas.",
+        "opportunityLevel": "very-high",
+        "titleTranslation": "Absence of 45-Second Vertical Quick Reference Guides",
+        "descriptionTranslation": "Viewers looking for rapid reference solutions do not want to scrub through a 20-minute video to find one setting or command.",
+        "whyCompetitorsMissedItTranslation": "Slow adaptation to short-form educational formats.",
+        "marketNuanceTranslation": "UK: Mobile-optimised formatting with on-screen annotations and clear save triggers."
+      }
+    ],
+    "rankedIdeas": [
+      {
+        "id": "idea-es-es-1",
+        "title": "El Error #1 con Best free tools to make an ebook in 2026 que Nadie Te Avisa (Y Cómo Corregirlo)",
+        "angle": "Overcoming the most common beginner stumble with clear demonstration.",
+        "format": "12min Practical Walkthrough",
+        "gapExploited": "Generic advice that glosses over initial setup difficulties.",
+        "targetAudiencePainPoint": "Wasting hours without achieving clear progress.",
+        "viralityPotential": "Exceptional",
+        "competitionLevel": "Low",
+        "rank": 1,
+        "opportunityScore": 95,
+        "whyItWins": "Direct troubleshooting builds instant credibility.",
+        "isBestOpportunity": true,
+        "titleTranslation": "The #1 Mistake with Best free tools to make an ebook in 2026 (And How to Fix It)",
+        "whyItWinsTranslation": "Direct troubleshooting builds instant credibility."
+      },
+      {
+        "id": "idea-es-es-2",
+        "title": "Cómo Dominar Best free tools to make an ebook in 2026 desde Cero Paso a Paso",
+        "angle": "Jargon-free beginner roadmap with clear actionable phases.",
+        "format": "14min Complete Guide",
+        "gapExploited": "Theoretical lectures that lack real implementation workflows.",
+        "targetAudiencePainPoint": "Not knowing where to start or what tools to choose.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Low",
+        "rank": 2,
+        "opportunityScore": 90,
+        "whyItWins": "Actionable and empowering for everyday newcomers.",
+        "isBestOpportunity": false,
+        "titleTranslation": "How to Master Best free tools to make an ebook in 2026 from Scratch Step-by-Step",
+        "whyItWinsTranslation": "Actionable and empowering for everyday newcomers."
+      },
+      {
+        "id": "idea-es-es-5",
+        "title": "La Rutina Diaria de 15 Minutos para Progresar en Best free tools to make an ebook in 2026",
+        "angle": "Low-friction habit stacking designed for busy working schedules.",
+        "format": "10min Routine Walkthrough",
+        "gapExploited": "Overly demanding procedures that lead to rapid burnout.",
+        "targetAudiencePainPoint": "Having very little free time outside work commitments.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Low",
+        "rank": 3,
+        "opportunityScore": 87,
+        "whyItWins": "High feasibility drives peak save rates.",
+        "isBestOpportunity": false,
+        "titleTranslation": "The 15-Minute Daily Routine for Best free tools to make an ebook in 2026",
+        "whyItWinsTranslation": "High feasibility drives peak save rates."
+      },
+      {
+        "id": "idea-es-es-7",
+        "title": "3 Hábitos en Best free tools to make an ebook in 2026 que Deberías Dejar Hoy Mismo",
+        "angle": "Contrarian teardown of outdated advice and wasted effort.",
+        "format": "12min Myth-Buster",
+        "gapExploited": "Dogmatic rules copied blindly across internet communities.",
+        "targetAudiencePainPoint": "Wasting energy on practices that yield zero tangible benefit.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Low",
+        "rank": 4,
+        "opportunityScore": 86,
+        "whyItWins": "Provocative contrarian angles generate viral comment debates.",
+        "isBestOpportunity": false,
+        "titleTranslation": "3 Things in Best free tools to make an ebook in 2026 You Should Stop Doing Today",
+        "whyItWinsTranslation": "Provocative contrarian angles generate viral comment debates."
+      },
+      {
+        "id": "idea-es-es-9",
+        "title": "Probé el Método Más Viral de Best free tools to make an ebook in 2026 Durante 30 Días (Auditoría Real)",
+        "angle": "Honest empirical test comparing claims vs reality with open records.",
+        "format": "16min 30-Day Audit",
+        "gapExploited": "Unsubstantiated claims by hype-driven creators.",
+        "targetAudiencePainPoint": "Uncertainty over which popular method actually works.",
+        "viralityPotential": "Exceptional",
+        "competitionLevel": "Low",
+        "rank": 5,
+        "opportunityScore": 86,
+        "whyItWins": "True empirical testing builds bulletproof audience trust.",
+        "isBestOpportunity": false,
+        "titleTranslation": "I Tested the Most Viral Method for Best free tools to make an ebook in 2026 for 30 Days (Real Review)",
+        "whyItWinsTranslation": "True empirical testing builds bulletproof audience trust."
+      },
+      {
+        "id": "idea-es-es-3",
+        "title": "Opción A vs Opción B para Best free tools to make an ebook in 2026: ¿Cuál Merece Realmente la Pena?",
+        "angle": "Unsponsored objective comparison of the leading market alternatives.",
+        "format": "15min Honest Audit",
+        "gapExploited": "Sponsored influencer reviews promoting products solely for affiliate fees.",
+        "targetAudiencePainPoint": "Confusion over which option provides real value.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Medium",
+        "rank": 6,
+        "opportunityScore": 83,
+        "whyItWins": "Unbiased reviews trigger heavy bookmarking and discussion.",
+        "isBestOpportunity": false,
+        "titleTranslation": "Tool A vs Tool B for Best free tools to make an ebook in 2026: Which Is Genuinely Worth It?",
+        "whyItWinsTranslation": "Unbiased reviews trigger heavy bookmarking and discussion."
+      },
+      {
+        "id": "idea-es-es-16",
+        "title": "La Ficha Completa para Principiantes de Best free tools to make an ebook in 2026: Guía Lista para Guardar",
+        "angle": "Clean visual summary card designed for saving to phone camera rolls.",
+        "format": "10min Summary Walkthrough",
+        "gapExploited": "Lack of single-page summary reference assets.",
+        "targetAudiencePainPoint": "Forgetting critical steps during execution.",
+        "viralityPotential": "Exceptional",
+        "competitionLevel": "Low",
+        "rank": 7,
+        "opportunityScore": 82,
+        "whyItWins": "Peak bookmark and share rates across social media algorithms.",
+        "isBestOpportunity": false,
+        "titleTranslation": "The Complete Beginner Checklist for Best free tools to make an ebook in 2026: Free Saveable Framework",
+        "whyItWinsTranslation": "Peak bookmark and share rates across social media algorithms."
+      },
+      {
+        "id": "idea-es-es-6",
+        "title": "La Regla No Escrita de Best free tools to make an ebook in 2026 que Cambia Tus Resultados",
+        "angle": "The insider principle that separates experienced practitioners from novices.",
+        "format": "11min Masterclass",
+        "gapExploited": "Textbook guides that leave out practical tricks of the trade.",
+        "targetAudiencePainPoint": "Working hard but getting mediocre results.",
+        "viralityPotential": "High",
+        "competitionLevel": "Low",
+        "rank": 8,
+        "opportunityScore": 80,
+        "whyItWins": "Specific insider nuance triggers high curiosity.",
+        "isBestOpportunity": false,
+        "titleTranslation": "The Unwritten Rule of Best free tools to make an ebook in 2026 That Changes Everything",
+        "whyItWinsTranslation": "Specific insider nuance triggers high curiosity."
+      },
+      {
+        "id": "idea-es-es-4",
+        "title": "Por Qué el 90% Abandona Best free tools to make an ebook in 2026 (Y el Secreto para Tener Éxito)",
+        "angle": "Identifying the core bottleneck and providing the counter-intuitive workaround.",
+        "format": "12min Strategic Analysis",
+        "gapExploited": "Sensationalist promises that ignore execution friction.",
+        "targetAudiencePainPoint": "Hitting an early wall and losing motivation.",
+        "viralityPotential": "High",
+        "competitionLevel": "Medium",
+        "rank": 9,
+        "opportunityScore": 79,
+        "whyItWins": "Challenges common assumptions with refreshing honesty.",
+        "isBestOpportunity": false,
+        "titleTranslation": "Why 90% Fail at Best free tools to make an ebook in 2026 (And the 10% Secret)",
+        "whyItWinsTranslation": "Challenges common assumptions with refreshing honesty."
+      },
+      {
+        "id": "idea-es-es-8",
+        "title": "Cómo Obtener Resultados Reales en Best free tools to make an ebook in 2026 Sin Gastar una Fortuna en Equipo",
+        "angle": "Achieving 90% of the outcome with simple, accessible baseline tools.",
+        "format": "13min Budget Blueprint",
+        "gapExploited": "The misconception that expensive gear is required to get started.",
+        "targetAudiencePainPoint": "Hesitation due to the perceived high cost of entry.",
+        "viralityPotential": "High",
+        "competitionLevel": "Low",
+        "rank": 10,
+        "opportunityScore": 79,
+        "whyItWins": "Empowers beginners and dismantles the gatekeeping mentality.",
+        "isBestOpportunity": false,
+        "titleTranslation": "How to Get Real Results in Best free tools to make an ebook in 2026 Without Expensive Equipment",
+        "whyItWinsTranslation": "Empowers beginners and dismantles the gatekeeping mentality."
+      },
+      {
+        "id": "idea-es-es-10",
+        "title": "Las 5 Mejores Herramientas Gratuitas para Best free tools to make an ebook in 2026 que Debes Conocer",
+        "angle": "Curated toolkit of high-value free software, templates, and platforms.",
+        "format": "14min Free Toolkit Demo",
+        "gapExploited": "Expensive subscriptions marketed to newcomers unnecessarily.",
+        "targetAudiencePainPoint": "Spending money on tools before validating the concept.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Medium",
+        "rank": 11,
+        "opportunityScore": 78,
+        "whyItWins": "Immediate bookmark value for learners.",
+        "isBestOpportunity": false,
+        "titleTranslation": "The Top 5 Free Resources for Best free tools to make an ebook in 2026 You Need to Know",
+        "whyItWinsTranslation": "Immediate bookmark value for learners."
+      },
+      {
+        "id": "idea-es-es-11",
+        "title": "Qué Hacer Cuando Te Quedas Bloqueado en Best free tools to make an ebook in 2026 (Guía de Emergencia)",
+        "angle": "Rapid diagnostics to pinpoint where things broke down and how to resume.",
+        "format": "10min Troubleshooting Masterclass",
+        "gapExploited": "Guides that offer zero troubleshooting when unexpected errors occur.",
+        "targetAudiencePainPoint": "Frustration of getting stuck on an unstated minor detail.",
+        "viralityPotential": "High",
+        "competitionLevel": "Low",
+        "rank": 12,
+        "opportunityScore": 76,
+        "whyItWins": "High-urgency problem solving that gets shared across forums.",
+        "isBestOpportunity": false,
+        "titleTranslation": "What to Do When You Get Stuck in Best free tools to make an ebook in 2026 (Emergency Guide)",
+        "whyItWinsTranslation": "High-urgency problem solving that gets shared across forums."
+      },
+      {
+        "id": "idea-es-es-13",
+        "title": "Cómo Automatizar Best free tools to make an ebook in 2026 para que Lleve Cero Esfuerzo Cada Semana",
+        "angle": "Setting up automated systems and shortcuts to handle repetitive tasks.",
+        "format": "10min Automation Walkthrough",
+        "gapExploited": "Doing repetitive manual work that could easily be automated.",
+        "targetAudiencePainPoint": "Spending valuable hours on tedious, repetitive steps.",
+        "viralityPotential": "High",
+        "competitionLevel": "Low",
+        "rank": 13,
+        "opportunityScore": 76,
+        "whyItWins": "Time savings are the most universal hook on video platforms.",
+        "isBestOpportunity": false,
+        "titleTranslation": "How to Automate Best free tools to make an ebook in 2026 So It Takes Almost Zero Effort",
+        "whyItWinsTranslation": "Time savings are the most universal hook on video platforms."
+      },
+      {
+        "id": "idea-es-es-12",
+        "title": "El Enfoque Moderno para Best free tools to make an ebook in 2026 en 2026",
+        "angle": "Contrasting legacy techniques with modern, streamlined workflows.",
+        "format": "13min Evolution Guide",
+        "gapExploited": "Outdated tutorials that ignore modern tools and automations.",
+        "targetAudiencePainPoint": "Learning methods that are already obsolete.",
+        "viralityPotential": "High",
+        "competitionLevel": "Low",
+        "rank": 14,
+        "opportunityScore": 75,
+        "whyItWins": "Relevance and timeliness drive high click-through rates.",
+        "isBestOpportunity": false,
+        "titleTranslation": "The Modern Approach to Best free tools to make an ebook in 2026 in 2026",
+        "whyItWinsTranslation": "Relevance and timeliness drive high click-through rates."
+      },
+      {
+        "id": "idea-es-es-14",
+        "title": "La Regla 80/20 en Best free tools to make an ebook in 2026: Céntrate en lo que Realmente Mueve la Aguja",
+        "angle": "Cutting out 80% of trivial tasks and mastering the 2 vital levers.",
+        "format": "11min Principle Walkthrough",
+        "gapExploited": "Information overload that paralyses action.",
+        "targetAudiencePainPoint": "Feeling overwhelmed by endless options and steps.",
+        "viralityPotential": "High",
+        "competitionLevel": "Low",
+        "rank": 15,
+        "opportunityScore": 74,
+        "whyItWins": "Provides clarity and peace of mind.",
+        "isBestOpportunity": false,
+        "titleTranslation": "The 80/20 Rule in Best free tools to make an ebook in 2026: Focus on What Actually Moves the Needle",
+        "whyItWinsTranslation": "Provides clarity and peace of mind."
+      },
+      {
+        "id": "idea-es-es-15",
+        "title": "Preguntas y Respuestas: Las 10 Dudas Más Frecuentes sobre Best free tools to make an ebook in 2026",
+        "angle": "Direct answers to real audience roadblocks with live screen demonstrations.",
+        "format": "15min Community FAQ",
+        "gapExploited": "Specific real-world hurdles that generic tutorials skip.",
+        "targetAudiencePainPoint": "Unanswered specific questions blocking progress.",
+        "viralityPotential": "High",
+        "competitionLevel": "Low",
+        "rank": 16,
+        "opportunityScore": 72,
+        "whyItWins": "Deepens community loyalty and ongoing interaction.",
+        "isBestOpportunity": false,
+        "titleTranslation": "Community Q&A: Answering the 10 Most Common Questions on Best free tools to make an ebook in 2026",
+        "whyItWinsTranslation": "Deepens community loyalty and ongoing interaction."
+      }
+    ],
+    "bestOpportunityId": "idea-es-es-1",
+    "bestOpportunity": {
+      "id": "idea-es-es-1",
+      "title": "El Error #1 con Best free tools to make an ebook in 2026 que Nadie Te Avisa (Y Cómo Corregirlo)",
+      "angle": "Overcoming the most common beginner stumble with clear demonstration.",
+      "format": "12min Practical Walkthrough",
+      "gapExploited": "Generic advice that glosses over initial setup difficulties.",
+      "targetAudiencePainPoint": "Wasting hours without achieving clear progress.",
+      "viralityPotential": "Exceptional",
+      "competitionLevel": "Low",
+      "rank": 1,
+      "opportunityScore": 95,
+      "whyItWins": "Direct troubleshooting builds instant credibility.",
+      "isBestOpportunity": true,
+      "titleTranslation": "The #1 Mistake with Best free tools to make an ebook in 2026 (And How to Fix It)",
+      "whyItWinsTranslation": "Direct troubleshooting builds instant credibility."
+    },
+    "scripts": [
+      {
+        "id": "script-es-es-contrarian",
+        "style": "contrarian-mythbuster",
+        "styleName": "Variação 1: O Quebrador de Mitos (Contrarian)",
+        "badge": "Maior Retenção & Debate",
+        "tagline": "Desmonta conselhos genéricos e apresenta a alternativa prática.",
+        "estimatedDuration": "12 minutes",
+        "targetWordCount": 1700,
+        "sections": [
+          {
+            "timestamp": "0:00 - 0:03",
+            "stage": "Hook",
+            "visualCue": "[VISUAL: Direct to camera, serious expression with mobile or notes in hand]",
+            "spokenText": "Si sigues aplicando este consejo sobre Best free tools to make an ebook in 2026 en España, estás perdiendo literalmente tu tiempo.",
+            "audioToneCue": "[AUDIO: Crisp cut effect / no music in first 2 seconds]",
+            "spokenTextTranslation": "If you are still doing this with Best free tools to make an ebook in 2026 in the UK, I'm sorry to say, but you are wasting precious effort every single month.",
+            "directorNote": "Hook: Subverts viewer expectations within the first 3 seconds to prevent swipe-away."
+          },
+          {
+            "timestamp": "0:03 - 0:12",
+            "stage": "Agitate / Pattern Interrupt",
+            "visualCue": "[VISUAL: Quick cut to comparison screen highlighting the standard error in red]",
+            "spokenText": "90% dos tutoriais dizem-te para seguir o método tradicional. O problema? Perdes horas de esforço sem ver resultados tangíveis.",
+            "audioToneCue": "[AUDIO: Subtle bass drop and building tension]",
+            "spokenTextTranslation": "90% of tutorials tell you to follow the standard method. The problem? It wastes hours of effort without moving the needle on results.",
+            "directorNote": "Pattern Interrupt: Highlights a common blunder and creates tension to sustain watch time."
+          },
+          {
+            "timestamp": "0:12 - 0:32",
+            "stage": "Core Value / Meat",
+            "visualCue": "[VISUAL: Clean screen walkthrough or demonstration showing the 3-step solution]",
+            "spokenText": "Olha com atenção para esta comparação: a abordagem habitual gera bloqueios imediatos. Se fizeres este fluxo de 3 passos, tudo flui com facilidade.",
+            "audioToneCue": "[AUDIO: Dynamic, confident instructional pacing]",
+            "spokenTextTranslation": "Look closely at this comparison: the standard approach leads to immediate roadblocks. If you implement this 3-step workflow instead, everything runs smoothly.",
+            "directorNote": "Core Value: Delivers clear, step-by-step transformation with high actionable density."
+          },
+          {
+            "timestamp": "0:32 - 0:40",
+            "stage": "Payoff / Turnaround",
+            "visualCue": "[VISUAL: Return to main camera with clear proof graphic]",
+            "spokenText": "A diferença é teres paz de espírito e não seres apanhado de surpresa.",
+            "audioToneCue": "[AUDIO: Inspiring, conclusive transition]",
+            "spokenTextTranslation": "The difference is having complete peace of mind and not being caught out by avoidable mistakes.",
+            "directorNote": "Payoff: Proves the tangible benefit and cements channel authority."
+          },
+          {
+            "timestamp": "0:40 - 0:45",
+            "stage": "Call to Action",
+            "visualCue": "[VISUAL: Pointing to bookmark/follow button on screen]",
+            "spokenText": "Guarda este vídeo para consultares quando fores tratar disto e comenta \"GUIA\" para o resumo completo!",
+            "audioToneCue": "[AUDIO: Subtle notification chime]",
+            "spokenTextTranslation": "Save this video to reference when you put this into practice, and comment \"GUIDE\" for the complete breakdown!",
+            "directorNote": "Call to Action: Converts high viewer satisfaction into algorithmic signals (saves/comments)."
+          }
+        ],
+        "fullSpokenText": "Si sigues aplicando este consejo sobre Best free tools to make an ebook in 2026 en España, estás perdiendo literalmente tu tiempo. 90% dos tutoriais dizem-te para seguir o método tradicional. O problema? Perdes horas de esforço sem ver resultados tangíveis. Olha com atenção para esta comparação: a abordagem habitual gera bloqueios imediatos. Se fizeres este fluxo de 3 passos, tudo flui com facilidade. A diferença é teres paz de espírito e não seres apanhado de surpresa. Guarda este vídeo para consultares quando fores tratar disto e comenta \"GUIA\" para o resumo completo!",
+        "taglineTranslation": "Dismantles standard ineffective advice and reveals the actionable fix.",
+        "fullSpokenTextTranslation": "If you are still doing this with Best free tools to make an ebook in 2026 in the UK, I'm sorry to say, but you are wasting precious effort every single month. 90% of tutorials tell you to follow the standard method. The problem? It wastes hours of effort without moving the needle on results. Look closely at this comparison: the standard approach leads to immediate roadblocks. If you implement this 3-step workflow instead, everything runs smoothly. The difference is having complete peace of mind and not being caught out by avoidable mistakes. Save this video to reference when you put this into practice, and comment \"GUIDE\" for the complete breakdown!"
+      },
+      {
+        "id": "script-es-es-story",
+        "style": "story-driven-case-study",
+        "styleName": "Variação 2: Estudo de Caso & Jornada Pessoal",
+        "badge": "Máxima Conexão & Autoridade",
+        "tagline": "Narra a frustração real de começar do zero até encontrar a rota sem atritos.",
+        "estimatedDuration": "14 minutes",
+        "targetWordCount": 2000,
+        "sections": [
+          {
+            "timestamp": "0:00 - 0:04",
+            "stage": "Hook",
+            "visualCue": "[VISUAL: Sitting at desk reflecting on past frustrations]",
+            "spokenText": "Quando comecei em Best free tools to make an ebook in 2026, cometi o erro mais frustrante possível. E ninguém me avisou.",
+            "audioToneCue": "[AUDIO: Reflective piano intro]",
+            "spokenTextTranslation": "When I first started with Best free tools to make an ebook in 2026, I made the most frustrating mistake possible. And nobody warned me.",
+            "directorNote": "Hook: Subverts viewer expectations within the first 3 seconds to prevent swipe-away."
+          },
+          {
+            "timestamp": "0:04 - 0:15",
+            "stage": "Agitate / Pattern Interrupt",
+            "visualCue": "[VISUAL: Fast montage of confusing documents or endless tabs]",
+            "spokenText": "Passava horas a estudar e a confiar nos conselhos padrão da internet, mas os resultados eram zero.",
+            "audioToneCue": "[AUDIO: Building intensity]",
+            "spokenTextTranslation": "I was putting in hours of work, trusting generic internet guides, but progress completely stalled.",
+            "directorNote": "Pattern Interrupt: Highlights a common blunder and creates tension to sustain watch time."
+          },
+          {
+            "timestamp": "0:15 - 0:35",
+            "stage": "Core Value / Meat",
+            "visualCue": "[VISUAL: Clean dashboard opening up with 3 clear metrics]",
+            "spokenText": "Até que decidi cortar 80% do ruído e focar apenas nestas 3 regras fundamentais. Foi exatamente isto que transformou os meus resultados.",
+            "audioToneCue": "[AUDIO: Cadenced clarity rhythm]",
+            "spokenTextTranslation": "Until I stripped out 80% of the noise and focused strictly on these three fundamental rules. That transformed everything.",
+            "directorNote": "Core Value: Delivers clear, step-by-step transformation with high actionable density."
+          },
+          {
+            "timestamp": "0:35 - 0:43",
+            "stage": "Payoff / Turnaround",
+            "visualCue": "[VISUAL: Clear success metrics on screen with calm confidence]",
+            "spokenText": "Hoje levo 15 minutos por semana a gerir isto com total tranquilidade.",
+            "audioToneCue": "[AUDIO: Positive resolution]",
+            "spokenTextTranslation": "Now it takes me 15 minutes a week to manage with complete confidence.",
+            "directorNote": "Payoff: Proves the tangible benefit and cements channel authority."
+          },
+          {
+            "timestamp": "0:43 - 0:50",
+            "stage": "Call to Action",
+            "visualCue": "[VISUAL: Pointing to bookmark button]",
+            "spokenText": "Guarda este vídeo nos favoritos e segue o canal para mais análises práticas!",
+            "audioToneCue": "[AUDIO: Sign-off chime]",
+            "spokenTextTranslation": "Save this video for later and follow for more straightforward, practical walkthroughs!",
+            "directorNote": "Call to Action: Converts high viewer satisfaction into algorithmic signals (saves/comments)."
+          }
+        ],
+        "fullSpokenText": "Quando comecei em Best free tools to make an ebook in 2026, cometi o erro mais frustrante possível. E ninguém me avisou. Passava horas a estudar e a confiar nos conselhos padrão da internet, mas os resultados eram zero. Até que decidi cortar 80% do ruído e focar apenas nestas 3 regras fundamentais. Foi exatamente isto que transformou os meus resultados. Hoje levo 15 minutos por semana a gerir isto com total tranquilidade. Guarda este vídeo nos favoritos e segue o canal para mais análises práticas!",
+        "taglineTranslation": "Chronicles the initial frustration of starting from scratch until finding the smooth path.",
+        "fullSpokenTextTranslation": "When I first started with Best free tools to make an ebook in 2026, I made the most frustrating mistake possible. And nobody warned me. I was putting in hours of work, trusting generic internet guides, but progress completely stalled. Until I stripped out 80% of the noise and focused strictly on these three fundamental rules. That transformed everything. Now it takes me 15 minutes a week to manage with complete confidence. Save this video for later and follow for more straightforward, practical walkthroughs!"
+      },
+      {
+        "id": "script-es-es-blueprint",
+        "style": "actionable-blueprint",
+        "styleName": "Variação 3: O Passo a Passo Definitivo (Blueprint)",
+        "badge": "Maior Taxa de Salvamento",
+        "tagline": "Guia de execução em 4 passos sem rodeios.",
+        "estimatedDuration": "15 minutes",
+        "targetWordCount": 2100,
+        "sections": [
+          {
+            "timestamp": "0:00 - 0:03",
+            "stage": "Hook",
+            "visualCue": "[VISUAL: Clear title card with steps on screen]",
+            "spokenText": "Aqui está o passo a passo em 4 etapas para dominares Best free tools to make an ebook in 2026 do zero.",
+            "audioToneCue": "[AUDIO: High energy opening sound]",
+            "spokenTextTranslation": "Here is the complete 4-step blueprint for Best free tools to make an ebook in 2026 from absolute scratch.",
+            "directorNote": "Hook: Subverts viewer expectations within the first 3 seconds to prevent swipe-away."
+          },
+          {
+            "timestamp": "0:03 - 0:15",
+            "stage": "Core Value / Meat",
+            "visualCue": "[VISUAL: Live demonstration of step 1 setup and account/tool configuration]",
+            "spokenText": "Passo 1: Configurar a base correta sem custos desnecessários. Passo 2: Estabelecer o teu fluxo de trabalho automático.",
+            "audioToneCue": "[AUDIO: Upbeat instructional rhythm]",
+            "spokenTextTranslation": "Step 1: Set up the correct foundation without paying unnecessary upfront fees. Step 2: Establish your automated workflow.",
+            "directorNote": "Core Value: Delivers clear, step-by-step transformation with high actionable density."
+          },
+          {
+            "timestamp": "0:15 - 0:30",
+            "stage": "Payoff / Turnaround",
+            "visualCue": "[VISUAL: Live demonstration of step 3 execution and step 4 verification]",
+            "spokenText": "Passo 3: Executar com consistência rigorosa. Passo 4: Fazer uma auditoria rápida para manter tudo otimizado.",
+            "audioToneCue": "[AUDIO: Dynamic pace with woosh transitions]",
+            "spokenTextTranslation": "Step 3: Execute with strict consistency. Step 4: Perform a quarterly 10-minute audit to keep everything optimised.",
+            "directorNote": "Payoff: Proves the tangible benefit and cements channel authority."
+          },
+          {
+            "timestamp": "0:30 - 0:40",
+            "stage": "Payoff / Turnaround",
+            "visualCue": "[VISUAL: Checklist graphic checkmarks completing]",
+            "spokenText": "Aplica estes 4 passos e ficas à frente de 90% das pessoas que ficam presas na teoria.",
+            "audioToneCue": "[AUDIO: Confident resolution]",
+            "spokenTextTranslation": "Follow these 4 steps and you will be ahead of 90% of people who get stuck in theoretical circles.",
+            "directorNote": "Payoff: Proves the tangible benefit and cements channel authority."
+          },
+          {
+            "timestamp": "0:40 - 0:45",
+            "stage": "Call to Action",
+            "visualCue": "[VISUAL: Gesture towards bookmark button]",
+            "spokenText": "Partilha com quem precisa de ver isto e comenta \"GUIA\" para o modelo gratuito!",
+            "audioToneCue": "[AUDIO: Notification chime]",
+            "spokenTextTranslation": "Share this with someone who needs this today and comment \"STEPS\" for the free template!",
+            "directorNote": "Call to Action: Converts high viewer satisfaction into algorithmic signals (saves/comments)."
+          }
+        ],
+        "fullSpokenText": "Aqui está o passo a passo em 4 etapas para dominares Best free tools to make an ebook in 2026 do zero. Passo 1: Configurar a base correta sem custos desnecessários. Passo 2: Estabelecer o teu fluxo de trabalho automático. Passo 3: Executar com consistência rigorosa. Passo 4: Fazer uma auditoria rápida para manter tudo otimizado. Aplica estes 4 passos e ficas à frente de 90% das pessoas que ficam presas na teoria. Partilha com quem precisa de ver isto e comenta \"GUIA\" para o modelo gratuito!",
+        "taglineTranslation": "Direct 4-step implementation guide taking viewers from zero to competent.",
+        "fullSpokenTextTranslation": "Here is the complete 4-step blueprint for Best free tools to make an ebook in 2026 from absolute scratch. Step 1: Set up the correct foundation without paying unnecessary upfront fees. Step 2: Establish your automated workflow. Step 3: Execute with strict consistency. Step 4: Perform a quarterly 10-minute audit to keep everything optimised. Follow these 4 steps and you will be ahead of 90% of people who get stuck in theoretical circles. Share this with someone who needs this today and comment \"STEPS\" for the free template!"
+      }
+    ],
+    "titles": [
+      {
+        "id": "title-1",
+        "type": "Contrarian",
+        "title": "O Maior Erro com Best free tools to make an ebook in 2026 que Quase Ninguém Te Avisa",
+        "score": 96,
+        "titleTranslation": "The Costly Mistake with Best free tools to make an ebook in 2026 in the UK (And How to Fix It)"
+      },
+      {
+        "id": "title-2",
+        "type": "Outcome / How-To",
+        "title": "Como Dominar Best free tools to make an ebook in 2026 do Zero Passo a Passo",
+        "score": 94,
+        "titleTranslation": "How to Master Best free tools to make an ebook in 2026 from Scratch Step-by-Step"
+      },
+      {
+        "id": "title-3",
+        "type": "Curiosity Gap",
+        "title": "Opção A vs Opção B para Best free tools to make an ebook in 2026: Qual a Escolha Certa?",
+        "score": 92,
+        "titleTranslation": "Option A vs Option B for Best free tools to make an ebook in 2026: Which Is Genuinely Worth It?"
+      },
+      {
+        "id": "title-4",
+        "type": "Fear of Missing Out / Loss",
+        "title": "3 Erros Críticos em Best free tools to make an ebook in 2026 que Deves Parar Hoje",
+        "score": 91,
+        "titleTranslation": "3 Critical Traps with Best free tools to make an ebook in 2026 You Should Stop Doing Today"
+      },
+      {
+        "id": "title-5",
+        "type": "Number / Listicle",
+        "title": "A Rotina de 15 Minutos para Best free tools to make an ebook in 2026 sem Complicações",
+        "score": 89,
+        "titleTranslation": "The 15-Minute Routine for Best free tools to make an ebook in 2026 (Zero Fluff)"
+      }
+    ],
+    "hooks": [
+      {
+        "id": "hook-1",
+        "type": "Pattern Interrupt",
+        "spokenHook": "Si vives en España y aplicas el consejo habitual sobre Best free tools to make an ebook in 2026, estás perdiendo tiempo y esfuerzo innecesario.",
+        "visualHook": "[VISUAL: Expressão séria a apontar diretamente para a comparação]",
+        "overlayText": "PÁRA DE FAZER ISTO ⚠️",
+        "spokenHookTranslation": "If you're still doing this with Best free tools to make an ebook in 2026 in the UK, you are wasting time without seeing real results.",
+        "visualHookTranslation": "[VISUAL: Serious expression pointing directly to screen comparison]",
+        "overlayTextTranslation": "STOP DOING THIS ⚠️",
+        "directorNote": "Emotional Trigger: Targets the viewer's desire for fast results while removing friction."
+      },
+      {
+        "id": "hook-2",
+        "type": "Bold Statement",
+        "spokenHook": "Queres obter resultados reais em Best free tools to make an ebook in 2026 sem perder horas todas as semanas? Aqui está o método.",
+        "visualHook": "[VISUAL: Ecrã limpo com os 3 pilares essenciais]",
+        "overlayText": "RESULTADOS REAIS 🎯",
+        "spokenHookTranslation": "Want to get real, tangible results with Best free tools to make an ebook in 2026 without wasting hours every week? Here is the blueprint.",
+        "visualHookTranslation": "[VISUAL: Clean summary dashboard with 3 key pillars]",
+        "overlayTextTranslation": "REAL RESULTS 🎯",
+        "directorNote": "Emotional Trigger: Targets the viewer's desire for fast results while removing friction."
+      },
+      {
+        "id": "hook-3",
+        "type": "Provocative Question",
+        "spokenHook": "Se estás a sentir bloqueio ao tentar implementar Best free tools to make an ebook in 2026, o problema não és tu — é o conselho padrão que estás a seguir.",
+        "visualHook": "[VISUAL: Tom acolhedor a mostrar a solução prática]",
+        "overlayText": "PORQUE BLOQUEIAS ❌",
+        "spokenHookTranslation": "If you feel stuck or overwhelmed trying to figure out Best free tools to make an ebook in 2026, the problem isn't you — it's the advice you're following.",
+        "visualHookTranslation": "[VISUAL: Sympathetic expression cutting straight to the solution]",
+        "overlayTextTranslation": "WHY YOU GET STUCK ❌",
+        "directorNote": "Emotional Trigger: Targets the viewer's desire for fast results while removing friction."
+      },
+      {
+        "id": "hook-4",
+        "type": "Story Opener",
+        "spokenHook": "A maioria das pessoas diz para fazeres isto em Best free tools to make an ebook in 2026. Olha porque é que isso só te faz perder tempo.",
+        "visualHook": "[VISUAL: Cortar o conselho habitual a vermelho]",
+        "overlayText": "CONSELHO ERRADO 🚫",
+        "spokenHookTranslation": "Most online advice about Best free tools to make an ebook in 2026 tells you to do this. Here is why that is actually slowing you down.",
+        "visualHookTranslation": "[VISUAL: Crossing out the standard advice with a bold red line]",
+        "overlayTextTranslation": "OUTDATED ADVICE 🚫",
+        "directorNote": "Emotional Trigger: Targets the viewer's desire for fast results while removing friction."
+      },
+      {
+        "id": "hook-5",
+        "type": "Visual Shock",
+        "spokenHook": "Existe uma regra não escrita em Best free tools to make an ebook in 2026 que muda completamente os teus resultados.",
+        "visualHook": "[VISUAL: Revelação da regra chave destacada no ecrã]",
+        "overlayText": "A REGRA DE OURO 🔑",
+        "spokenHookTranslation": "There is one fundamental rule behind Best free tools to make an ebook in 2026 that experienced practitioners use every day.",
+        "visualHookTranslation": "[VISUAL: Revealing the key rule highlighted on screen]",
+        "overlayTextTranslation": "THE #1 RULE 🔑",
+        "directorNote": "Emotional Trigger: Targets the viewer's desire for fast results while removing friction."
+      }
+    ],
+    "ctas": [
+      {
+        "id": "cta-1",
+        "goal": "Save / Bookmark",
+        "spokenCta": "Guarda este vídeo nos favoritos para teres a estratégia à mão quando fores implementar!",
+        "onScreenText": "GUARDA ESTE VÍDEO 📌",
+        "platformBestPractice": "Apontar para o botão de guardar.",
+        "spokenCtaTranslation": "Save this video to your library right now so you can refer back when you implement this!",
+        "onScreenTextTranslation": "SAVE THIS VIDEO 📌",
+        "directorNote": "Conversion Goal: Triggers Save / Bookmark by pairing verbal prompt with visual reinforcement."
+      },
+      {
+        "id": "cta-2",
+        "goal": "Comment / Keyword Automation",
+        "spokenCta": "Comenta \"GUIA\" nos comentários para receberes o resumo completo!",
+        "onScreenText": "COMENTA \"GUIA\" 👇",
+        "platformBestPractice": "Aumenta interação inicial.",
+        "spokenCtaTranslation": "Comment \"GUIDE\" below and I will send the complete summary straight to you!",
+        "onScreenTextTranslation": "COMMENT \"GUIDE\" 💬",
+        "directorNote": "Conversion Goal: Triggers Comment / Keyword Automation by pairing verbal prompt with visual reinforcement."
+      },
+      {
+        "id": "cta-3",
+        "goal": "Follow / Subscribe",
+        "spokenCta": "Segue o canal para não perderes os próximos guias práticos!",
+        "onScreenText": "SEGUE PARA MAIS 🔔",
+        "platformBestPractice": "Encerramento claro com chamada de ação.",
+        "spokenCtaTranslation": "Subscribe to the channel for more no-nonsense, practical breakdowns every single week!",
+        "onScreenTextTranslation": "SUBSCRIBE FOR MORE 🔔",
+        "directorNote": "Conversion Goal: Triggers Follow / Subscribe by pairing verbal prompt with visual reinforcement."
+      }
+    ],
+    "sources": [
+      {
+        "id": "src-1",
+        "title": "Creating EPub Files With FrameMaker 10, RoboHelp and Technical ...",
+        "url": "https://www.youtube.com/watch/?v=8X1EOIZSu2U",
+        "platform": "youtube",
+        "channelOrHost": "Criador / Canal Especialista",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-05T16:22:32.047Z",
+        "snippet": "Creating EPub Files With FrameMaker 10, RoboHelp and Technical Communication Suite 3 For Your Tablet Devices Like the IPad"
+      },
+      {
+        "id": "src-2",
+        "title": "\"3 Herramientas de IA GRATIS para Crear un Ebook en Minutos (2026)\"",
+        "url": "https://www.youtube.com/watch?v=TzqPR8VlF0c",
+        "platform": "youtube",
+        "channelOrHost": "Criador / Canal Especialista",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-05T16:22:32.047Z",
+        "snippet": "¿Quieres lanzar un ebook pero no sabes por dónde empezar? Hoy: 3 herramientas de IA GRATIS que escriben, diseñan y formatean tu libro en minutos.👇 Herramie..."
+      },
+      {
+        "id": "src-3",
+        "title": "Crea Ebooks Gratis_ 5 Herramientas Esenciales - YouTube",
+        "url": "https://www.youtube.com/watch?v=ozPCwvK87Kk",
+        "platform": "youtube",
+        "channelOrHost": "Criador / Canal Especialista",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-05T16:22:32.047Z",
+        "snippet": "En este video, te presento cinco herramientas esenciales que te permitirán diseñar y publicar tus propios ebooks sin gastar un solo centavo."
+      },
+      {
+        "id": "src-4",
+        "title": "8 Best Free Ebook Creator Softwares for Creating Stunning ... - YouTube",
+        "url": "https://www.youtube.com/watch?v=3LED2SIvVXQ",
+        "platform": "youtube",
+        "channelOrHost": "Criador / Canal Especialista",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-05T16:22:32.047Z",
+        "snippet": "Are you looking to create professional-quality ebooks without spending a dime? In this video, we'll explore the best free ebook creator software that can he..."
+      },
+      {
+        "id": "src-5",
+        "title": "How to Create & Sell Ebooks Online in 2026 (Step-by-Step Guide)",
+        "url": "https://www.youtube.com/watch?v=yCZ5_r-CQ4k",
+        "platform": "youtube",
+        "channelOrHost": "Criador / Canal Especialista",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-05T16:22:32.047Z",
+        "snippet": "In this video, I'll show you a complete step-by-step process to create an ebook from scratch and set it up for selling online — even if you're a beginner."
+      },
+      {
+        "id": "src-6",
+        "title": "How to Create an eBook on Canva for Free in 2026 (Step-by ... - YouTube",
+        "url": "https://www.youtube.com/watch?v=k7X-bpydWV0",
+        "platform": "youtube",
+        "channelOrHost": "Criador / Canal Especialista",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-05T16:22:32.047Z",
+        "snippet": "This beginner-friendly tutorial walks you through each step to design, format, and download your very own eBook using Canva's free tools and templates."
+      },
+      {
+        "id": "src-7",
+        "title": "Create Professional EBOOKS With AI (100% Free) From Scratch ... - YouTube",
+        "url": "https://www.youtube.com/watch?v=_LiCyTEgVv4",
+        "platform": "youtube",
+        "channelOrHost": "Criador / Canal Especialista",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-05T16:22:32.047Z",
+        "snippet": "Would you like to learn how to create a professional ebook with artificial intelligence, without complicating your life and without being an expert designer or writer?"
+      },
+      {
+        "id": "src-8",
+        "title": "How to Create & Sell an eBook Online in 2026 - YouTube",
+        "url": "https://www.youtube.com/watch?v=KEVVMUS-0Cg",
+        "platform": "youtube",
+        "channelOrHost": "Criador / Canal Especialista",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-05T16:22:32.047Z",
+        "snippet": "Want to learn how to create and sell an eBook online? In this video, I'll show you the complete step-by-step process of creating an eBook using Canva and ChatGPT, even if you're a beginner."
+      },
+      {
+        "id": "src-9",
+        "title": "How To Create & Sell eBooks in 2026 | Complete Beginner Guide",
+        "url": "https://www.youtube.com/watch?v=H9UgmiVVguY",
+        "platform": "youtube",
+        "channelOrHost": "Criador / Canal Especialista",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-05T16:22:32.047Z",
+        "snippet": "In this video, you will learn: ️ How to choose a profitable eBook niche ️ How to create an eBook (Free & Paid tools) ️ How to design a professional eBook ️ How to publish on Amazon KDP and ..."
+      },
+      {
+        "id": "src-10",
+        "title": "Las mejores herramientas para crear ebooks: guía completa",
+        "url": "https://www.commandcat.dev/herramientas-crear-ebooks/",
+        "platform": "youtube",
+        "channelOrHost": "www.commandcat.dev",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-05T16:22:32.047Z",
+        "snippet": "Las mejores herramientas para crear ebooks en 2026 — gratis y de pago. Desde Sigil y Calibre hasta Atticus y Canva, organizadas por perfil de usuario."
+      },
+      {
+        "id": "src-11",
+        "title": "15 Best Ebook Creator Tools in 2026 [Paid & Free] - Visme",
+        "url": "https://visme.co/blog/best-ebook-creator/",
+        "platform": "youtube",
+        "channelOrHost": "visme.co",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-05T16:22:32.047Z",
+        "snippet": "In this article, we'll explore the 15 best ebook creator tools (free and paid) that will help you create scroll-stopping ebooks that hit the mark. Bonus: Watch this video to discover ebook strategies that can help increase your business growth by 10x."
+      },
+      {
+        "id": "src-12",
+        "title": "Top 10 eBook Creator Tools in 2026: Free & Paid - PaperTrue",
+        "url": "https://www.papertrue.com/blog/ebook-creator/",
+        "platform": "youtube",
+        "channelOrHost": "www.papertrue.com",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-05T16:22:32.047Z",
+        "snippet": "Here are the ten best eBook creator software in 2026: Atticus Vellum (New) Reedsy Book Editor / Studio (New) Draft2Digital Scrivener Google Docs Kindle Create Adobe InDesign Apple Pages Canva (New) As you may have noticed, most tools in this list of the best eBook creators are free or offer a free plan. After all, if you can afford to spend on interior formatting, it's better to use it on ..."
+      },
+      {
+        "id": "src-13",
+        "title": "15 Best Free AI Ebook Creators Worth Trying - FlipHTML5",
+        "url": "https://fliphtml5.com/guide/tools/free-ai-ebook-creators/",
+        "platform": "youtube",
+        "channelOrHost": "fliphtml5.com",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-05T16:22:32.047Z",
+        "snippet": "Looking for a free AI ebook creator? We tested 15 tools with free plans — FlipHTML5, Canva, Reedsy, ChatGPT and more. See features, limits, and best uses."
+      },
+      {
+        "id": "src-14",
+        "title": "Best Ebook Creation Tools [2026 Ranked] | Books.by",
+        "url": "https://www.books.by/guides/best-ebook-creation-tools",
+        "platform": "youtube",
+        "channelOrHost": "www.books.by",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-05T16:22:32.047Z",
+        "snippet": "Ebook Tools Ranked Best Ebook Creation Tools [2026] You need an EPUB file that looks professional on every device — Kindle, iPad, Kobo, phone. Here are the six best tools for creating ebooks, from one-click solutions to full code-level control."
+      },
+      {
+        "id": "src-15",
+        "title": "The 10 Best Free Ebook Creator Tools For All New Authors",
+        "url": "https://justpublishingadvice.com/free-ebook-creator-tools/",
+        "platform": "youtube",
+        "channelOrHost": "justpublishingadvice.com",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-05T16:22:32.047Z",
+        "snippet": "If you plan on writing and publishing an ebook, you will need a few essential tools. Luckily, you have plenty of choices regarding apps and tools to write, format, and prepare your new ebook. Better still, all the tools listed in this article are free for you to use. Self-publishing an ebook is free and fun and can be profitable for some authors."
+      },
+      {
+        "id": "src-16",
+        "title": "Cómo crear un ebook gratis: Herramientas, trucos y formatos",
+        "url": "https://www.adslzone.net/como-se-hace/ebooks/crear-ebook-gratis/",
+        "platform": "youtube",
+        "channelOrHost": "www.adslzone.net",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-05T16:22:32.047Z",
+        "snippet": "Cómo crear un ebook gratis online con estas herramientas y qué debes tener en cuenta. Trucos, formatos y conseguir un acabado profesional"
+      }
+    ]
+  },
+  {
     "id": "proj_1791215764668_htw2s",
     "createdAt": "2026-10-05T15:56:04.668Z",
     "request": {

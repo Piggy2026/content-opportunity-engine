@@ -171,7 +171,11 @@ List at least 10 real existing competitor videos or articles with their authenti
               rawItems.push({
                 title: chunk.web.title,
                 url: chunk.web.uri,
-                snippet: `Fonte encontrada via pesquisa em tempo real Google Grounding (${model}) no mercado de ${marketLabel}.`,
+                snippet: req.market === 'en-GB'
+                  ? `Source identified via real-time Google Grounding search (${model}) in the ${marketLabel} market.`
+                  : req.market === 'es-ES'
+                  ? `Fuente encontrada mediante búsqueda en tiempo real de Google Grounding (${model}) en el mercado de ${marketLabel}.`
+                  : `Fonte encontrada via pesquisa em tempo real Google Grounding (${model}) no mercado de ${marketLabel}.`,
                 sourceDomain: domain,
               });
             } catch {
@@ -197,7 +201,11 @@ List at least 10 real existing competitor videos or articles with their authenti
                 rawItems.push({
                   title: linkTitle,
                   url: linkUrl,
-                  snippet: `Fonte referenciada via pesquisa em tempo real Google Grounding (${model}).`,
+                  snippet: req.market === 'en-GB'
+                    ? `Source referenced via real-time Google Grounding search (${model}).`
+                    : req.market === 'es-ES'
+                    ? `Fuente referenciada mediante búsqueda en tiempo real de Google Grounding (${model}).`
+                    : `Fonte referenciada via pesquisa em tempo real Google Grounding (${model}).`,
                   sourceDomain: domain,
                 });
               }
@@ -426,6 +434,8 @@ export async function searchCompetitors(req: ResearchRequest): Promise<SearchCom
       queryPerformed: queries[0] || req.topic,
       notice: req.market === 'en-GB'
         ? `Direct public search found 0 verified sources strictly relevant to "${req.topic}" in the ${marketLabel} market. No unrelated benchmark channels or fabricated metrics were substituted.`
+        : req.market === 'es-ES'
+        ? `La búsqueda pública directa no encontró fuentes verificadas estrictamente relevantes para "${req.topic}" en el mercado de ${marketLabel}. Ningún canal fuera de nicho o métrica inventada fue presentado.`
         : `Pesquisa pública direta não encontrou fontes verificadas estritamente relevantes para "${req.topic}" no mercado de ${marketLabel}. Nenhum canal fora de nicho ou métrica inventada foi apresentado.`,
     };
   } else if (usedGrounding && results.some((r) => r.id.startsWith('comp-gemini'))) {
@@ -436,6 +446,8 @@ export async function searchCompetitors(req: ResearchRequest): Promise<SearchCom
       notice: results.length < 3
         ? (req.market === 'en-GB'
             ? `Limited verified competitor content found (${results.length} item). Analysis is based strictly on these verified sources and explicit AI inferences.`
+            : req.market === 'es-ES'
+            ? `Contenido verificado de la competencia limitado (${results.length} elemento). El análisis se basa estrictamente en estas fuentes verificadas y deducciones analíticas de IA.`
             : `Conteúdo concorrente verificado limitado (${results.length} item). A análise baseia-se estritamente nestas fontes autênticas e deduções IA explícitas.`)
         : undefined,
     };
@@ -447,6 +459,8 @@ export async function searchCompetitors(req: ResearchRequest): Promise<SearchCom
       notice: results.length < 3
         ? (req.market === 'en-GB'
             ? `Limited verified competitor content found (${results.length} item). Analysis is based strictly on these verified sources and explicit AI inferences.`
+            : req.market === 'es-ES'
+            ? `Contenido verificado de la competencia limitado (${results.length} elemento). El análisis se basa estrictamente en estas fuentes verificadas y deducciones analíticas de IA.`
             : `Conteúdo concorrente verificado limitado (${results.length} item). A análise baseia-se estritamente nestas fontes autênticas e deduções IA explícitas.`)
         : undefined,
     };
@@ -457,6 +471,8 @@ export async function searchCompetitors(req: ResearchRequest): Promise<SearchCom
       queryPerformed: queries[0] || req.topic,
       notice: req.market === 'en-GB'
         ? `Audited sources obtained via verified semantic match for "${req.topic}".`
+        : req.market === 'es-ES'
+        ? `Fuentes auditadas obtenidas mediante coincidencia semántica verificada para "${req.topic}".`
         : `Fontes auditadas obtidas com correspondência semântica verificada para "${req.topic}".`,
     };
   } else {
@@ -466,6 +482,8 @@ export async function searchCompetitors(req: ResearchRequest): Promise<SearchCom
       queryPerformed: queries[0] || req.topic,
       notice: req.market === 'en-GB'
         ? `Direct public search unavailable or no indexed match currently found for "${req.topic}" in the ${marketLabel} market. No unrelated benchmark channels or fabricated metrics were substituted.`
+        : req.market === 'es-ES'
+        ? `Búsqueda pública directa no disponible o sin coincidencia indexada en este momento para "${req.topic}" en el mercado de ${marketLabel}. Ningún canal fuera de nicho o métrica inventada fue presentado.`
         : `Pesquisa pública direta indisponível ou sem correspondência indexada no momento para "${req.topic}" no mercado de ${marketLabel}. Nenhum canal fora de nicho ou métrica inventada foi apresentado.`,
     };
   }
