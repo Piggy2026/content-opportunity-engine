@@ -50,6 +50,14 @@ const TEST_CASES: TestCase[] = [
     expectedDomain: 'finance_investing',
     isFinanceExpected: true,
   },
+  {
+    id: 6,
+    topic: 'how to make perfect rice',
+    market: 'es-ES',
+    platform: 'youtube',
+    expectedDomain: 'cooking_food',
+    isFinanceExpected: false,
+  },
 ];
 
 const FORBIDDEN_FINANCE_PATTERNS = [

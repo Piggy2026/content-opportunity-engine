@@ -25,7 +25,8 @@ function buildCookingScriptBundle(
   subject: string,
   market: TargetMarket,
   platform: Platform,
-  isShorts: boolean
+  isShorts: boolean,
+  isBaking: boolean = true
 ): ScriptBundle {
   const isUK = market === 'en-GB';
   const isPT = market === 'pt-PT';
@@ -37,11 +38,27 @@ function buildCookingScriptBundle(
     {
       id: `script-${market.toLowerCase()}-contrarian`,
       style: 'contrarian-mythbuster',
-      styleName: isUK ? 'Variation 1: The Myth-Buster (Contrarian)' : 'Variação 1: O Quebrador de Mitos (Contrarian)',
-      badge: isUK ? 'Highest Retention & Debate' : 'Maior Retenção & Debate',
-      tagline: isUK
-        ? 'Dismantles the most common kitchen baking blunder and demonstrates the reliable fix.'
-        : 'Desmonta o erro mais comum na cozinha e demonstra o método certo para não arruinar a receita.',
+      styleName: isUK
+        ? 'Variation 1: The Myth-Buster (Contrarian)'
+        : isES
+        ? 'Variación 1: El Cazador de Mitos (Contrarian)'
+        : 'Variação 1: O Quebrador de Mitos (Contrarian)',
+      badge: isUK
+        ? 'Highest Retention & Debate'
+        : isES
+        ? 'Mayor Retención y Debate'
+        : 'Maior Retenção & Debate',
+      tagline: isBaking
+        ? (isUK
+            ? 'Dismantles the most common kitchen baking blunder and demonstrates the reliable fix.'
+            : isES
+            ? 'Desmonta el fallo más habitual al hornear y demuestra el método fiable para que quede perfecto.'
+            : 'Desmonta o erro mais comum na pastelaria e demonstra o método certo.')
+        : (isUK
+            ? 'Dismantles the most common home cooking mistake and demonstrates the foolproof technique.'
+            : isES
+            ? 'Desmonta el error más común al cocinar y demuestra la técnica exacta para no arruinar la textura.'
+            : 'Desmonta o erro mais comum ao cozinhar e demonstra a técnica certa.'),
       estimatedDuration: isShorts ? '45 seconds' : '12 minutes',
       targetWordCount: isShorts ? 135 : 1700,
       sections: [
@@ -49,7 +66,9 @@ function buildCookingScriptBundle(
           timestamp: '0:00 - 0:03',
           stage: 'Hook',
           visualCue: isUK
-            ? '[VISUAL: Close-up of cutting into the finished dish, revealing a steaming, perfectly moist crumb texture]'
+            ? '[VISUAL: Close-up of cutting into the finished dish, revealing a steaming, perfectly moist texture]'
+            : isES
+            ? '[VISUAL: Primer plano cortando el plato terminado, mostrando la textura humeante y en su punto justo]'
             : '[VISUAL: Grande plano a cortar a fatia perfeita, mostrando a textura fumegante, macia e húmida]',
           spokenText: formatScript1Opening(topic, market),
           audioToneCue: '[AUDIO: Crisp cut effect / no background music in first 2 seconds for intense focus]',
@@ -58,30 +77,46 @@ function buildCookingScriptBundle(
           timestamp: '0:03 - 0:12',
           stage: 'Agitate / Pattern Interrupt',
           visualCue: isUK
-            ? '[VISUAL: Quick side-by-side comparison: dry, sunken bake vs light, tall, bakery-quality slice]'
+            ? '[VISUAL: Quick side-by-side comparison: dry, failed attempt vs light, juicy, restaurant-quality plate]'
+            : isES
+            ? '[VISUAL: Comparación rápida lado a lado: intento reseco o apelmazado vs plato jugoso de chef]'
             : '[VISUAL: Comparação rápida lado a lado: fatia seca e abatida vs fatia fofa e volumosa]',
-          spokenText: isUK
-            ? '90% of recipes tell you to whisk everything vigorously all at once. The problem? Overworked gluten makes the crumb rubbery and causes the centre to sink in the oven.'
-            : isPT
-            ? '90% das receitas na internet dizem-te para bater tudo à pressa de uma só vez. O problema? O glúten desenvolve em excesso, a massa fica pesada e o centro afunda no forno.'
-            : isBR
-            ? '90% das receitas mandam bater tudo de uma vez sem parar. O resultado? O bolo sola, fica pesado e embatumado.'
-            : 'El 90% de las recetas te dicen que batas todo a toda prisa. El problema es que la masa se apelmaza y se hunde en el centro.',
+          spokenText: isBaking
+            ? (isUK
+                ? '90% of recipes tell you to whisk everything vigorously all at once. The problem? Overworked gluten makes the crumb rubbery and causes the centre to sink in the oven.'
+                : isPT
+                ? '90% das receitas na internet dizem-te para bater tudo à pressa de uma só vez. O problema? O glúten desenvolve em excesso, a massa fica pesada e o centro afunda no forno.'
+                : isBR
+                ? '90% das receitas mandam bater tudo de uma vez sem parar. O resultado? O bolo sola, fica pesado e embatumado.'
+                : 'El 90% de las recetas te dicen que batas todo a toda prisa. El problema es que la masa se apelmaza y se hunde en el centro.')
+            : (isUK
+                ? '90% of recipes tell you to blast the heat and keep stirring constantly. The problem? You break down the structure and end up with a stodgy, uneven mess.'
+                : isES
+                ? 'El 90% de las recetas te dicen que cocines a fuego fuerte y remuevas continuamente. El problema es que rompes la textura y la comida queda apelmazada o seca.'
+                : '90% das receitas dizem-te para cozinhar em lume forte e mexer sem parar. O problema? Estragas a textura e a comida fica empapada.'),
           audioToneCue: '[AUDIO: Subtle bass drop and building curiosity tempo]',
         },
         {
           timestamp: '0:12 - 0:32',
           stage: 'Core Value / Meat',
           visualCue: isUK
-            ? '[VISUAL: Clean countertop demonstration: sifting dry ingredients and gently folding with a spatula]'
-            : '[VISUAL: Demonstração na bancada: peneirar os secos e envolver suavemente com a espátula]',
-          spokenText: isUK
-            ? 'Look at this simple adjustment: keep eggs at room temperature, gently fold the dry ingredients until just combined, and bake at 160°C fan. That is how you lock in moisture for days.'
-            : isPT
-            ? 'Olha com atenção para este ajuste simples: ovos à temperatura ambiente, peneirar a farinha e envolver sem bater, com o forno ventilado a 160°C. É isto que garante humidade e leveza durante dias.'
-            : isBR
-            ? 'Olha esse pulo do gato: ovos em temperatura ambiente, farinha peneirada misturada com carinho e forno pré-aquecido na temperatura certa. A massa fica fofinha que desmancha.'
-            : 'Mira este truque: huevos a temperatura ambiente, tamizar la harina e integrar con suavidad. Así consigues un bizcocho jugoso durante días.',
+            ? '[VISUAL: Clean countertop demonstration: measuring ingredients accurately on digital scale]'
+            : isES
+            ? '[VISUAL: Demostración en la encimera: medir ingredientes al milímetro en báscula digital]'
+            : '[VISUAL: Demonstração na bancada: ingredientes na balança digital]',
+          spokenText: isBaking
+            ? (isUK
+                ? 'Look at this simple adjustment: keep eggs at room temperature, gently fold the dry ingredients until just combined, and bake at 160°C fan. That is how you lock in moisture for days.'
+                : isPT
+                ? 'Olha com atenção para este ajuste simples: ovos à temperatura ambiente, peneirar a farinha e envolver sem bater, com o forno ventilado a 160°C. É isto que garante humidade e leveza durante dias.'
+                : isBR
+                ? 'Olha esse pulo do gato: ovos em temperatura ambiente, farinha peneirada misturada com carinho e forno pré-aquecido na temperatura certa. A massa fica fofinha que desmancha.'
+                : 'Mira este truco: huevos a temperatura ambiente, tamizar la harina e integrar con suavidad. Así consigues un resultado jugoso durante días.')
+            : (isUK
+                ? 'Look at this simple adjustment: exact liquid ratio by weight, gentle heat, and a 10-minute covered rest with the heat off. That is how you get tender, perfect texture every time.'
+                : isES
+                ? 'Mira este ajuste sencillo: la proporción exacta de líquido por peso, fuego suave y 8 minutos de reposo tapado con el fuego apagado. Así consigues el punto perfecto.'
+                : 'Olha para este ajuste simples: proporção exata de água por peso, lume brando e repouso tapado fora do lume. Assim acertas sempre no ponto.'),
           audioToneCue: '[AUDIO: Dynamic, upbeat kitchen pacing]',
         },
         {
@@ -89,14 +124,16 @@ function buildCookingScriptBundle(
           stage: 'Payoff / Turnaround',
           visualCue: isUK
             ? '[VISUAL: Returning to main camera holding the plate, pulling apart a tender piece]'
+            : isES
+            ? '[VISUAL: Regreso a la cámara principal sujetando el plato y probando un bocado perfecto]'
             : '[VISUAL: Regresso à câmara principal a segurar o prato e a abrir um pedaço macio]',
           spokenText: isUK
-            ? 'The difference is never throwing wasted ingredients into the bin and always serving a bake you are genuinely proud of.'
-            : isPT
-            ? 'A diferença é nunca mais deitares ingredientes para o lixo nem teres vergonha de servir uma fatia aos teus convidados.'
+            ? 'The difference is never throwing wasted ingredients into the bin and always serving a dish you are genuinely proud of.'
+            : isES
+            ? 'La diferencia es no volver a tirar comida a la basura y disfrutar siempre de un plato delicioso con la textura justa.'
             : isBR
-            ? 'A diferença é não desperdiçar comida e ter sempre um bolo maravilhoso para o café da tarde.'
-            : 'La diferencia es no tirar comida a la basura y disfrutar de un resultado de pastelería.',
+            ? 'A diferença é não desperdiçar comida e ter sempre uma refeição maravilhosa na mesa.'
+            : 'A diferença é nunca mais deitares ingredientes para o lixo nem teres vergonha de servir aos teus convidados.',
           audioToneCue: '[AUDIO: Warm, satisfying resolution note]',
         },
         {
@@ -104,26 +141,38 @@ function buildCookingScriptBundle(
           stage: 'Call to Action',
           visualCue: '[VISUAL: Gesture towards bookmark button with on-screen text]',
           spokenText: isUK
-            ? 'Save this video for your weekend bake, and comment "RECIPE" for the exact measurements in grams!'
-            : isPT
-            ? 'Guarda este vídeo para a tua próxima sobremesa e comenta "RECEITA" para te enviar a ficha completa em gramas!'
+            ? 'Save this video for your next cooking session, and comment "RECIPE" for the exact measurements in grams!'
+            : isES
+            ? '¡Guarda este vídeo para cuando vayas a cocinar y comenta "RECETA" para enviarte las cantidades exactas!'
             : isBR
             ? 'Salva esse vídeo para não perder e comenta "RECEITA" que eu te mando as medidas certinhas!'
-            : '¡Guarda este vídeo para el fin de semana y comenta "RECETA" para enviarte las cantidades exactas!',
+            : 'Guarda este vídeo para a próxima refeição e comenta "RECEITA" para te enviar a ficha completa em gramas!',
           audioToneCue: '[AUDIO: Subtle notification chime]',
         },
       ],
       fullSpokenText: isUK
-        ? `${formatScript1Opening(topic, market)} 90% of recipes tell you to whisk everything vigorously all at once. The problem? Overworked gluten makes the crumb rubbery and causes the centre to sink in the oven. Look at this simple adjustment: keep eggs at room temperature, gently fold the dry ingredients until just combined, and bake at 160°C fan. That is how you lock in moisture for days. The difference is never throwing wasted ingredients into the bin and always serving a bake you are genuinely proud of. Save this video for your weekend bake, and comment "RECIPE" for the exact measurements in grams!`
-        : `${formatScript1Opening(topic, market)} 90% das receitas na internet dizem-te para bater tudo à pressa de uma só vez. O problema? O glúten desenvolve em excesso, a massa fica pesada e o centro afunda no forno. Olha com atenção para este ajuste simples: ovos à temperatura ambiente, peneirar a farinha e envolver sem bater, com o forno ventilado a 160°C. É isto que garante humidade e leveza durante dias. A diferença é nunca mais deitares ingredientes para o lixo nem teres vergonha de servir uma fatia aos teus convidados. Guarda este vídeo para a tua próxima sobremesa e comenta "RECEITA" para te enviar a ficha completa em gramas!`,
+        ? `${formatScript1Opening(topic, market)} 90% of recipes tell you to blast the heat or whisk excessively. The problem? Overworked textures ruin the dish. Look at this simple adjustment: measure accurately by weight, control the heat, and allow for proper resting. That is how you lock in flavour and texture. The difference is never throwing wasted ingredients into the bin and always serving a dish you are genuinely proud of. Save this video for your next cooking session, and comment "RECIPE" for the exact measurements in grams!`
+        : isES
+        ? `${formatScript1Opening(topic, market)} El 90% de las recetas te dicen que cocines a toda prisa. El problema es que rompes la textura y la preparación queda apelmazada o seca. Mira este truco sencillo: proporciones exactas por peso, fuego suave y reposo tapado. Así consigues el punto perfecto. La diferencia es no volver a tirar comida a la basura y disfrutar siempre de un resultado sobresaliente. ¡Guarda este vídeo para cuando vayas a cocinar y comenta "RECETA" para enviarte las cantidades exactas!`
+        : `${formatScript1Opening(topic, market)} 90% das receitas na internet dizem-te para cozinhar à pressa de uma só vez. O problema? Estragas a textura e a comida fica pesada ou empapada. Olha com atenção para este ajuste simples: ingredientes na balança, lume no ponto e repouso tapado. É isto que garante leveza e sabor perfeito. A diferença é nunca mais deitares ingredientes para o lixo nem teres vergonha de servir aos teus convidados. Guarda este vídeo para a próxima refeição e comenta "RECEITA" para te enviar a ficha completa em gramas!`,
     },
     {
       id: `script-${market.toLowerCase()}-story`,
       style: 'story-driven-case-study',
-      styleName: isUK ? 'Variation 2: Journey & Kitchen Fix (Story-Driven)' : 'Variação 2: Estudo de Caso & Experiência Prática',
-      badge: isUK ? 'Peak Relatability' : 'Máxima Conexão & Empatia',
+      styleName: isUK
+        ? 'Variation 2: Journey & Kitchen Fix (Story-Driven)'
+        : isES
+        ? 'Variación 2: Caso de Estudio y Experiencia en la Cocina (Story-Driven)'
+        : 'Variação 2: Estudo de Caso & Experiência Prática',
+      badge: isUK
+        ? 'Peak Relatability'
+        : isES
+        ? 'Máxima Conexión y Empatía'
+        : 'Máxima Conexão & Empatia',
       tagline: isUK
         ? 'Relatable personal frustration of failed kitchen attempts until unlocking the foolproof method.'
+        : isES
+        ? 'La frustración real de probar recetas de internet que salían mal hasta descubrir el método infalible.'
         : 'A jornada real de frustração com receitas da internet até descobrir o método infalível.',
       estimatedDuration: isShorts ? '50 seconds' : '14 minutes',
       targetWordCount: isShorts ? 145 : 2000,
@@ -131,9 +180,11 @@ function buildCookingScriptBundle(
         {
           timestamp: '0:00 - 0:04',
           stage: 'Hook',
-          visualCue: '[VISUAL: Looking disappointed at an overbaked, sunken attempt in the kitchen]',
+          visualCue: '[VISUAL: Looking disappointed at an overcooked, failed attempt in the kitchen]',
           spokenText: isUK
-            ? `For years, every single time I tried making ${subject}, it came out dry or burnt on the outside and raw in the middle.`
+            ? `For years, every single time I tried making ${subject}, it came out dry, burnt on the bottom, or completely uneven.`
+            : isES
+            ? `Durante mucho tiempo cometí siempre el mismo error al preparar ${subject}. Y ninguna receta me avisaba.`
             : `Durante anos cometi sempre o mesmo erro ao tentar fazer ${subject}. E nenhuma receita me avisava.`,
           audioToneCue: '[AUDIO: Intimate, reflective storytelling tone]',
         },
@@ -143,24 +194,30 @@ function buildCookingScriptBundle(
           visualCue: '[VISUAL: Fast montage of confusing online recipe printouts and messy kitchen]',
           spokenText: isUK
             ? 'I followed popular viral videos to the letter, but my results were completely unpredictable. I nearly gave up entirely.'
+            : isES
+            ? 'Seguía vídeos famosos de internet al pie de la letra, pero el resultado salía siempre reseco o apelmazado. Estuve a punto de tirar la toalla.'
             : 'Seguia receitas famosas da internet à risca, mas o resultado saía sempre ressequido ou pesado. Estive quase para desistir.',
           audioToneCue: '[AUDIO: Building musical pulse]',
         },
         {
           timestamp: '0:15 - 0:35',
           stage: 'Core Value / Meat',
-          visualCue: '[VISUAL: Clean countertop setup showing simple bowl and measuring scale]',
+          visualCue: '[VISUAL: Clean countertop setup showing simple pan, ingredients, and digital scale]',
           spokenText: isUK
-            ? 'Until a pastry chef showed me the one golden rule: weigh everything accurately on a digital scale and stop opening the oven door before the 25-minute mark. Everything changed.'
-            : 'Até que percebi a regra de ouro dos pasteleiros: usar balança em gramas e nunca abrir a porta do forno nos primeiros 25 minutos. Mudou tudo.',
+            ? 'Until a professional chef showed me the golden rule: weigh everything accurately on a digital scale and never lift the lid during resting. Everything changed.'
+            : isES
+            ? 'Hasta que un cocinero profesional me explicó la regla de oro: medir todo en gramos en báscula digital y no levantar la tapa durante el reposo. Eso lo cambió todo.'
+            : 'Até que percebi a regra de ouro dos profissionais: usar balança em gramas e nunca levantar a tampa no tempo de repouso. Mudou tudo.',
           audioToneCue: '[AUDIO: Pacing becomes upbeat and confident]',
         },
         {
           timestamp: '0:35 - 0:43',
           stage: 'Payoff / Turnaround',
-          visualCue: '[VISUAL: Golden, tender slice served effortlessly with a smile]',
+          visualCue: '[VISUAL: Steaming, delicious plate served effortlessly with a smile]',
           spokenText: isUK
-            ? 'Now it takes me 15 minutes of prep and it turns out bakery-standard every single time.'
+            ? 'Now it takes me 15 minutes of prep and it turns out restaurant-standard every single time.'
+            : isES
+            ? 'Hoy tardo 15 minutos en prepararlo y queda con calidad de restaurante siempre.'
             : 'Hoje levo 15 minutos a preparar isto e sai sempre perfeito à primeira.',
           audioToneCue: '[AUDIO: Warm, celebratory melody]',
         },
@@ -170,21 +227,35 @@ function buildCookingScriptBundle(
           visualCue: '[VISUAL: Finger pointing to follow/save button]',
           spokenText: isUK
             ? 'Bookmark this video for later and follow for more foolproof kitchen guides!'
+            : isES
+            ? '¡Guarda este vídeo en tus favoritos y sigue el canal para más trucos de cocina reales!'
             : 'Guarda este vídeo nos favoritos e segue o canal para mais receitas descomplicadas!',
           audioToneCue: '[AUDIO: Friendly sign-off chime]',
         },
       ],
       fullSpokenText: isUK
-        ? `For years, every single time I tried making ${subject}, it came out dry or burnt on the outside and raw in the middle. I followed popular viral videos to the letter, but my results were completely unpredictable. I nearly gave up entirely. Until a pastry chef showed me the one golden rule: weigh everything accurately on a digital scale and stop opening the oven door before the 25-minute mark. Everything changed. Now it takes me 15 minutes of prep and it turns out bakery-standard every single time. Bookmark this video for later and follow for more foolproof kitchen guides!`
+        ? `For years, every single time I tried making ${subject}, it came out dry, burnt on the bottom, or completely uneven. I followed popular viral videos to the letter, but my results were completely unpredictable. I nearly gave up entirely. Until a professional chef showed me the golden rule: weigh everything accurately on a digital scale and never lift the lid during resting. Everything changed. Now it takes me 15 minutes of prep and it turns out restaurant-standard every single time. Bookmark this video for later and follow for more foolproof kitchen guides!`
+        : isES
+        ? `Durante mucho tiempo cometí siempre el mismo error al preparar ${subject}. Y ninguna receta me avisaba. Seguía vídeos famosos de internet al pie de la letra, pero el resultado salía siempre reseco o apelmazado. Estuve a punto de tirar la toalla. Hasta que un cocinero profesional me explicó la regla de oro: medir todo en gramos en báscula digital y no levantar la tapa durante el reposo. Eso lo cambió todo. Hoy tardo 15 minutos en prepararlo y queda con calidad de restaurante siempre. ¡Guarda este vídeo en tus favoritos y sigue el canal para más trucos de cocina reales!`
         : `Durante anos cometi sempre o mesmo erro ao tentar fazer ${subject}. E nenhuma receita me avisava. Seguia receitas famosas da internet à risca, mas o resultado saía sempre ressequido ou pesado. Estive quase para desistir. Até que percebi a regra de ouro dos pasteleiros: usar balança em gramas e nunca abrir a porta do forno nos primeiros 25 minutos. Mudou tudo. Hoje levo 15 minutos a preparar isto e sai sempre perfeito à primeira. Guarda este vídeo nos favoritos e segue o canal para mais receitas descomplicadas!`,
     },
     {
       id: `script-${market.toLowerCase()}-blueprint`,
       style: 'actionable-blueprint',
-      styleName: isUK ? 'Variation 3: The 4-Step Action Blueprint' : 'Variação 3: O Passo a Passo Definitivo (Blueprint)',
-      badge: isUK ? 'Highest Save & Share Rate' : 'Maior Taxa de Salvamento',
+      styleName: isUK
+        ? 'Variation 3: The 4-Step Action Blueprint'
+        : isES
+        ? 'Variación 3: La Hoja de Ruta Paso a Paso (Blueprint)'
+        : 'Variação 3: O Passo a Passo Definitivo (Blueprint)',
+      badge: isUK
+        ? 'Highest Save & Share Rate'
+        : isES
+        ? 'Mayor Tasa de Guardados'
+        : 'Maior Taxa de Salvamento',
       tagline: isUK
         ? 'Clear, ordered kitchen steps taking viewers from zero prep to mouth-watering finish.'
+        : isES
+        ? 'Guía ordenada en 4 pasos sin rodeos, de la encimera a la mesa.'
         : 'Guia ordenado de 4 passos sem rodeios, da bancada ao prato.',
       estimatedDuration: isShorts ? '45 seconds' : '15 minutes',
       targetWordCount: isShorts ? 135 : 2100,
@@ -195,34 +266,54 @@ function buildCookingScriptBundle(
           visualCue: '[VISUAL: Title card with ingredient lineup on clean kitchen board]',
           spokenText: isUK
             ? `Here is the complete 4-step blueprint to nail ${subject} on your very first try.`
+            : isES
+            ? `Aquí tienes la hoja de ruta en 4 pasos para clavar ${subject} a la primera.`
             : `Aqui está o passo a passo em 4 etapas para acertares ${subject} à primeira.`,
           audioToneCue: '[AUDIO: Crisp, high-energy opening sound]',
         },
         {
           timestamp: '0:03 - 0:15',
           stage: 'Core Value / Meat',
-          visualCue: '[VISUAL: Quick shots of weighing dry ingredients and whisking wet base]',
-          spokenText: isUK
-            ? 'Step 1: Bring your eggs and dairy to room temperature. Step 2: Whisk the wet ingredients until glossy and emulsified.'
-            : 'Passo 1: Ingredientes à temperatura ambiente. Passo 2: Misturar os líquidos primeiro até emulsionar.',
+          visualCue: '[VISUAL: Quick shots of measuring ingredients and preparing base]',
+          spokenText: isBaking
+            ? (isUK
+                ? 'Step 1: Bring your eggs and dairy to room temperature. Step 2: Whisk the wet ingredients until glossy and emulsified.'
+                : isES
+                ? 'Paso 1: Ingredientes a temperatura ambiente. Paso 2: Mezclar los líquidos hasta emulsionar.'
+                : 'Passo 1: Ingredientes à temperatura ambiente. Passo 2: Misturar os líquidos primeiro até emulsionar.')
+            : (isUK
+                ? 'Step 1: Weigh your liquid and ingredients accurately. Step 2: Bring to a gentle simmer on medium heat.'
+                : isES
+                ? 'Paso 1: Pesar los líquidos e ingredientes con precisión. Paso 2: Llevar a fuego medio hasta que comience el hervor.'
+                : 'Passo 1: Pesar líquidos e ingredientes na balança. Passo 2: Lume médio até levantar fervura.'),
           audioToneCue: '[AUDIO: Upbeat instructional rhythm]',
         },
         {
           timestamp: '0:15 - 0:30',
           stage: 'Payoff / Turnaround',
-          visualCue: '[VISUAL: Sifter shaking flour into bowl, gentle folding, then into lined tin]',
-          spokenText: isUK
-            ? 'Step 3: Sift the dry ingredients and fold gently with a spatula. Step 4: Bake in a preheated oven without opening the door early.'
-            : 'Passo 3: Peneirar os secos e envolver suavemente. Passo 4: Forno pré-aquecido à temperatura certa, sem abrir a porta antes do tempo.',
+          visualCue: '[VISUAL: Cooking process followed by clean covered rest]',
+          spokenText: isBaking
+            ? (isUK
+                ? 'Step 3: Sift the dry ingredients and fold gently with a spatula. Step 4: Bake in a preheated oven without opening the door early.'
+                : isES
+                ? 'Paso 3: Tamizar los secos e integrar con suavidad. Paso 4: Hornear a la temperatura justa sin abrir la puerta antes de tiempo.'
+                : 'Passo 3: Peneirar os secos e envolver suavemente. Passo 4: Forno pré-aquecido à temperatura certa, sem abrir a porta antes do tempo.')
+            : (isUK
+                ? 'Step 3: Cover tightly and reduce to low heat. Step 4: Turn off heat and rest undisturbed for 10 minutes.'
+                : isES
+                ? 'Paso 3: Tapar bien y bajar el fuego al mínimo. Paso 4: Apagar el fuego y dejar reposar 8 minutos sin destapar.'
+                : 'Passo 3: Tapar bem e baixar para o mínimo. Passo 4: Apagar o lume e deixar repousar tapado sem mexer.'),
           audioToneCue: '[AUDIO: Satisfying kitchen sound effects]',
         },
         {
           timestamp: '0:30 - 0:40',
           stage: 'Payoff / Turnaround',
-          visualCue: '[VISUAL: Finished bake cooling on rack with clean toothpick test]',
+          visualCue: '[VISUAL: Finished plate showing flawless, mouth-watering texture]',
           spokenText: isUK
             ? 'Follow these four steps and you will get that tender, melt-in-the-mouth texture every time.'
-            : 'Segue estas 4 etapas e tens sempre uma textura fofa e húmida garantida.',
+            : isES
+            ? 'Sigue estos 4 pasos y conseguirás esa textura perfecta y deliciosa siempre.'
+            : 'Segue estas 4 etapas e tens sempre uma textura perfeita garantida.',
           audioToneCue: '[AUDIO: Warm, confident conclusion]',
         },
         {
@@ -230,14 +321,18 @@ function buildCookingScriptBundle(
           stage: 'Call to Action',
           visualCue: '[VISUAL: End screen with recipe checklist graphic]',
           spokenText: isUK
-            ? 'Share this with someone who loves baking and comment "STEPS" for the free checklist!'
+            ? 'Share this with someone who loves good food and comment "STEPS" for the free checklist!'
+            : isES
+            ? '¡Comparte esto con quien cocine en casa y comenta "PASOS" para recibir la guía rápida!'
             : 'Partilha este vídeo com quem adora ir para a cozinha e comenta "GUIA" para receberes a lista!',
           audioToneCue: '[AUDIO: Subtle notification chime]',
         },
       ],
       fullSpokenText: isUK
-        ? `Here is the complete 4-step blueprint to nail ${subject} on your very first try. Step 1: Bring your eggs and dairy to room temperature. Step 2: Whisk the wet ingredients until glossy and emulsified. Step 3: Sift the dry ingredients and fold gently with a spatula. Step 4: Bake in a preheated oven without opening the door early. Follow these four steps and you will get that tender, melt-in-the-mouth texture every time. Share this with someone who loves baking and comment "STEPS" for the free checklist!`
-        : `Aqui está o passo a passo em 4 etapas para acertares ${subject} à primeira. Passo 1: Ingredientes à temperatura ambiente. Passo 2: Misturar os líquidos primeiro até emulsionar. Passo 3: Peneirar os secos e envolver suavemente. Passo 4: Forno pré-aquecido à temperatura certa, sem abrir a porta antes do tempo. Segue estas 4 etapas e tens sempre uma textura fofa e húmida garantida. Partilha este vídeo com quem adora ir para a cozinha e comenta "GUIA" para receberes a lista!`,
+        ? `Here is the complete 4-step blueprint to nail ${subject} on your very first try. Step 1: Measure accurately by weight. Step 2: Establish the correct heat. Step 3: Cook covered on gentle heat. Step 4: Rest undisturbed to lock in texture. Follow these four steps and you will get that tender, melt-in-the-mouth texture every time. Share this with someone who loves good food and comment "STEPS" for the free checklist!`
+        : isES
+        ? `Aquí tienes la hoja de ruta en 4 pasos para clavar ${subject} a la primera. Paso 1: Pesar líquidos e ingredientes con precisión. Paso 2: Controlar la potencia de fuego inicial. Paso 3: Cocinar tapado a fuego suave. Paso 4: Dejar reposar sin destapar para asentar la textura. Sigue estos 4 pasos y conseguirás esa textura perfecta y deliciosa siempre. ¡Comparte esto con quien cocine en casa y comenta "PASOS" para recibir la guía rápida!`
+        : `Aqui está o passo a passo em 4 etapas para acertares ${subject} à primeira. Passo 1: Ingredientes à temperatura ambiente e na balança. Passo 2: Controlar o lume inicial. Passo 3: Cozinhar tapado em lume brando. Passo 4: Deixar repousar tapado antes de servir. Segue estas 4 etapas e tens sempre uma textura perfeita garantida. Partilha este vídeo com quem adora ir para a cozinha e comenta "GUIA" para receberes a lista!`,
     },
   ];
 
@@ -271,7 +366,42 @@ function buildCookingScriptBundle(
         {
           id: 'title-5',
           type: 'Number / Listicle',
-          title: `Easy 15-Minute Prep ${subject} (One Bowl & Zero Stress)`,
+          title: `Easy 15-Minute Prep ${subject} (Zero Stress)`,
+          score: 89,
+        },
+      ]
+    : isES
+    ? [
+        {
+          id: 'title-1',
+          type: 'Contrarian',
+          title: isBaking
+            ? `El Error #1 al Hornear ${subject} que Deja la Masa Seca (Y Cómo Acertar)`
+            : `El Error #1 al Cocinar ${subject} que Arruina la Textura (Y Cómo Acertar)`,
+          score: 96,
+        },
+        {
+          id: 'title-2',
+          type: 'Outcome / How-To',
+          title: `Cómo Preparar ${subject} Perfecto desde Cero Paso a Paso`,
+          score: 94,
+        },
+        {
+          id: 'title-3',
+          type: 'Curiosity Gap',
+          title: `Ingredientes Baratos vs Caros para ${subject}: ¿Cuál Merece la Pena?`,
+          score: 92,
+        },
+        {
+          id: 'title-4',
+          type: 'Fear of Missing Out / Loss',
+          title: `3 Errores al Hacer ${subject} que Deberías Dejar Hoy Mismo`,
+          score: 91,
+        },
+        {
+          id: 'title-5',
+          type: 'Number / Listicle',
+          title: `La Receta de 15 Minutos para ${subject} (Sin Complicaciones)`,
           score: 89,
         },
       ]
@@ -279,7 +409,9 @@ function buildCookingScriptBundle(
         {
           id: 'title-1',
           type: 'Contrarian',
-          title: `O Maior Erro ao Fazer ${subject} que Deixa a Massa Seca (E Como Acertar)`,
+          title: isBaking
+            ? `O Maior Erro ao Fazer ${subject} que Deixa a Massa Seca (E Como Acertar)`
+            : `O Maior Erro ao Fazer ${subject} que Estraga a Textura (E Como Acertar)`,
           score: 96,
         },
         {
@@ -303,7 +435,7 @@ function buildCookingScriptBundle(
         {
           id: 'title-5',
           type: 'Number / Listicle',
-          title: `${subject} Rápido em Menos de 15 Minutos de Preparação (Sem Batedeira)`,
+          title: `${subject} Rápido em Menos de 15 Minutos de Preparação`,
           score: 89,
         },
       ];
@@ -315,36 +447,74 @@ function buildCookingScriptBundle(
           id: 'hook-1',
           type: 'Pattern Interrupt',
           spokenHook: formatSpokenHook(topic, market),
-          visualHook: '[VISUAL: Cutting a generous slice showing steaming, tender crumb]',
+          visualHook: '[VISUAL: Cutting into the finished dish showing steaming, tender texture]',
           overlayText: 'STOP DOING THIS ⚠️',
         },
         {
           id: 'hook-2',
           type: 'Bold Statement',
-          spokenHook: `Want to make bakery-standard ${subject} with standard supermarket staples? Here is the secret.`,
+          spokenHook: `Want to make restaurant-standard ${subject} with standard supermarket staples? Here is the secret.`,
           visualHook: '[VISUAL: Displaying 4 simple pantry staples side-by-side on the board]',
           overlayText: 'THE SECRET TRICK 🤫',
         },
         {
           id: 'hook-3',
           type: 'Provocative Question',
-          spokenHook: `If your ${subject} always comes out dry or sinks in the middle, the problem isn't you — it's this one step.`,
-          visualHook: '[VISUAL: Expressive close-up showing a sunken bake with a sigh of relief]',
-          overlayText: 'WHY BAKES FAIL ❌',
+          spokenHook: `If your ${subject} always comes out dry or stodgy, the problem isn't you — it's this one step.`,
+          visualHook: '[VISUAL: Expressive close-up showing a failed attempt with a sigh of relief]',
+          overlayText: 'WHY IT FAILS ❌',
         },
         {
           id: 'hook-4',
           type: 'Story Opener',
-          spokenHook: `Most online recipes tell you to whisk everything vigorously. Here is why that is actually ruining your bake.`,
-          visualHook: '[VISUAL: Holding whisk with text "Stop overworking the batter" on screen]',
-          overlayText: 'DO NOT WHISK 🚫',
+          spokenHook: `Most online recipes tell you to blast the heat or stir constantly. Here is why that is actually ruining your dish.`,
+          visualHook: '[VISUAL: Text on screen "Stop over-stirring" with sound effect]',
+          overlayText: 'DO NOT DO THIS 🚫',
         },
         {
           id: 'hook-5',
           type: 'Visual Shock',
-          spokenHook: `There is one simple temperature trick that changes the texture of ${subject} completely.`,
-          visualHook: '[VISUAL: Dialling oven thermometer to 160°C fan with dynamic sound]',
+          spokenHook: `There is one simple temperature and resting trick that changes the texture of ${subject} completely.`,
+          visualHook: '[VISUAL: Dialling hob heat and setting timer with dynamic sound]',
           overlayText: 'TEMPERATURE SECRET 🔥',
+        },
+      ]
+    : isES
+    ? [
+        {
+          id: 'hook-1',
+          type: 'Pattern Interrupt',
+          spokenHook: formatSpokenHook(topic, market),
+          visualHook: '[VISUAL: Primer plano mostrando el punto de textura perfecto y humeante]',
+          overlayText: 'DEJA DE HACER ESTO ⚠️',
+        },
+        {
+          id: 'hook-2',
+          type: 'Bold Statement',
+          spokenHook: `¿Quieres conseguir la textura perfecta en ${subject} con ingredientes de supermercado normal? Aquí tienes la clave.`,
+          visualHook: '[VISUAL: Ingredientes simples organizados en la tabla de cocina]',
+          overlayText: 'EL TRUCO SECRETO 🤫',
+        },
+        {
+          id: 'hook-3',
+          type: 'Provocative Question',
+          spokenHook: `Si tu ${subject} siempre queda apelmazado o seco, el secreto que nadie te cuenta está en este paso.`,
+          visualHook: '[VISUAL: Expresión cercana mostrando el plato y pasando a la solución]',
+          overlayText: 'POR QUÉ FALLA ❌',
+        },
+        {
+          id: 'hook-4',
+          type: 'Story Opener',
+          spokenHook: `La mayoría de tutoriales te dicen que cocines a fuego fuerte o remuevas sin parar. Mira por qué eso estropea el resultado.`,
+          visualHook: '[VISUAL: Texto en pantalla "No remuevas continuamente" con aviso sonoro]',
+          overlayText: 'NO HAGAS ESTO 🚫',
+        },
+        {
+          id: 'hook-5',
+          type: 'Visual Shock',
+          spokenHook: `Existe una regla de fuego y reposo que cambia por completo el sabor y punto de ${subject}.`,
+          visualHook: '[VISUAL: Ajuste de potencia de fuego y tapa puesta con efecto sonoro]',
+          overlayText: 'EL SECRETO DEL FUEGO 🔥',
         },
       ]
     : [
@@ -352,36 +522,36 @@ function buildCookingScriptBundle(
           id: 'hook-1',
           type: 'Pattern Interrupt',
           spokenHook: formatSpokenHook(topic, market),
-          visualHook: '[VISUAL: Plano detalhado a cortar uma fatia fofa e húmida]',
+          visualHook: '[VISUAL: Plano detalhado a cortar uma porção fofa e húmida]',
           overlayText: 'PÁRA DE FAZER ISTO ⚠️',
         },
         {
           id: 'hook-2',
           type: 'Bold Statement',
-          spokenHook: `Queres aprender a fazer ${subject} com textura de pastelaria usando apenas ingredientes simples de supermercado?`,
+          spokenHook: `Queres aprender a fazer ${subject} com textura perfeita usando apenas ingredientes simples de supermercado?`,
           visualHook: '[VISUAL: Ingredientes simples alinhados na bancada limpa]',
           overlayText: 'O TRUQUE SECRETO 🤫',
         },
         {
           id: 'hook-3',
           type: 'Provocative Question',
-          spokenHook: `Se o teu ${subject} sai sempre seco ou afunda no centro, o problema não és tu — é esta regra que ninguém te conta.`,
-          visualHook: '[VISUAL: Rosto expressivo com o bolo na mão e sorriso cúmplice]',
+          spokenHook: `Se o teu ${subject} sai sempre seco ou empapado, o problema não és tu — é esta regra que ninguém te conta.`,
+          visualHook: '[VISUAL: Rosto expressivo com o prato na mão e sorriso cúmplice]',
           overlayText: 'PORQUE FALHA ❌',
         },
         {
           id: 'hook-4',
           type: 'Story Opener',
-          spokenHook: `A maioria das receitas manda bater a massa sem parar. Olha porque é que isso arruína a textura.`,
-          visualHook: '[VISUAL: Texto no ecrã "Pára de bater a farinha" com som de alerta]',
-          overlayText: 'NÃO BATAS A MASSA 🚫',
+          spokenHook: `A maioria das receitas manda cozinhar à pressa e mexer sem parar. Olha porque é que isso arruína a textura.`,
+          visualHook: '[VISUAL: Texto no ecrã "Não mexas sem parar" com som de alerta]',
+          overlayText: 'NÃO MEXAS TANTO 🚫',
         },
         {
           id: 'hook-5',
           type: 'Visual Shock',
-          spokenHook: `Existe um segredo simples de temperatura que muda completamente o resultado de ${subject}.`,
-          visualHook: '[VISUAL: Ponto do forno ajustado com efeito sonoro rápido]',
-          overlayText: 'SEGREDO DO FORNO 🔥',
+          spokenHook: `Existe um segredo simples de temperatura e repouso que muda completamente o resultado de ${subject}.`,
+          visualHook: '[VISUAL: Ponto do lume ajustado com efeito sonoro rápido]',
+          overlayText: 'SEGREDO DO LUME 🔥',
         },
       ];
 
@@ -391,15 +561,15 @@ function buildCookingScriptBundle(
         {
           id: 'cta-1',
           goal: 'Save / Bookmark',
-          spokenCta: 'Save this video to your library right now so you have the exact steps ready for your next weekend bake!',
+          spokenCta: 'Save this video to your library right now so you have the exact steps ready for your next cook!',
           onScreenText: 'SAVE THIS RECIPE 📌',
           platformBestPractice: 'Gesture towards the save button to maximise algorithmic bookmark weight.',
         },
         {
           id: 'cta-2',
           goal: 'Comment / Keyword Automation',
-          spokenCta: 'Comment "RECIPE" down below and I will send the exact weights in grams straight to you!',
-          onScreenText: 'COMMENT "RECIPE" FOR GRAMS 💬',
+          spokenCta: 'Comment "RECIPE" down below and I will send the exact weights and timings straight to you!',
+          onScreenText: 'COMMENT "RECIPE" 💬',
           platformBestPractice: 'Triggers high comment velocity within the first 30 minutes of publishing.',
         },
         {
@@ -408,6 +578,30 @@ function buildCookingScriptBundle(
           spokenCta: 'Subscribe to the channel for more foolproof, no-nonsense kitchen guides every week!',
           onScreenText: 'SUBSCRIBE FOR MORE RECIPES 🔔',
           platformBestPractice: 'Place end screen subscribe card in the final 15 seconds.',
+        },
+      ]
+    : isES
+    ? [
+        {
+          id: 'cta-1',
+          goal: 'Save / Bookmark',
+          spokenCta: '¡Guarda este vídeo en tus favoritos para tener la receta a mano cuando vayas a la cocina!',
+          onScreenText: 'GUARDA ESTA RECETA 📌',
+          platformBestPractice: 'Señalar hacia el botón de guardar en la esquina inferior.',
+        },
+        {
+          id: 'cta-2',
+          goal: 'Comment / Keyword Automation',
+          spokenCta: '¡Comenta "RECETA" en los comentarios y te envío las medidas exactas en gramos y tiempos!',
+          onScreenText: 'COMENTA "RECETA" 👇',
+          platformBestPractice: 'Aumenta la velocidad de comentarios en los primeros minutos.',
+        },
+        {
+          id: 'cta-3',
+          goal: 'Follow / Subscribe',
+          spokenCta: '¡Sigue el canal para más recetas sencillas y deliciosas cada semana!',
+          onScreenText: 'SIGUE PARA MÁS RECETAS 🔔',
+          platformBestPractice: 'Cierre con sonrisa y llamada a la acción clara.',
         },
       ]
     : [
@@ -1148,17 +1342,34 @@ function buildGenericOrFinanceBundle(
   domainInfo: DetectedTopicInfo
 ): ScriptBundle {
   const isUK = market === 'en-GB';
+  const isES = market === 'es-ES';
   const isFinance = domainInfo.isFinance;
 
   const scripts: ScriptVariation[] = [
     {
       id: `script-${market.toLowerCase()}-contrarian`,
       style: 'contrarian-mythbuster',
-      styleName: isUK ? 'Variation 1: The Myth-Buster (Contrarian)' : 'Variação 1: O Quebrador de Mitos (Contrarian)',
-      badge: isUK ? 'Highest Retention & Debate' : 'Maior Retenção & Debate',
+      styleName: isUK
+        ? 'Variation 1: The Myth-Buster (Contrarian)'
+        : isES
+        ? 'Variación 1: El Cazador de Mitos (Contrarian)'
+        : 'Variação 1: O Quebrador de Mitos (Contrarian)',
+      badge: isUK
+        ? 'Highest Retention & Debate'
+        : isES
+        ? 'Mayor Retención y Debate'
+        : 'Maior Retenção & Debate',
       tagline: isFinance
-        ? (isUK ? 'Dismantles outdated advice and reveals the tax and fee reality.' : 'Desmonta conselhos antigos e revela a realidade fiscal e de comissões.')
-        : (isUK ? 'Dismantles standard ineffective advice and reveals the actionable fix.' : 'Desmonta conselhos genéricos e apresenta a alternativa prática.'),
+        ? (isUK
+            ? 'Dismantles outdated advice and reveals the tax and fee reality.'
+            : isES
+            ? 'Desmonta el consejo habitual y revela la realidad de comisiones e impuestos en España.'
+            : 'Desmonta conselhos antigos e revela a realidade fiscal e de comissões.')
+        : (isUK
+            ? 'Dismantles standard ineffective advice and reveals the actionable fix.'
+            : isES
+            ? 'Desmonta los consejos genéricos y presenta una alternativa práctica y directa.'
+            : 'Desmonta conselhos genéricos e apresenta a alternativa prática.'),
       estimatedDuration: isShorts ? '45 seconds' : '12 minutes',
       targetWordCount: isShorts ? 135 : 1700,
       sections: [
@@ -1176,9 +1387,13 @@ function buildGenericOrFinanceBundle(
           spokenText: isFinance
             ? (isUK
                 ? '90% of creators tell you to follow the standard generic rule. The problem? Platform fees and HMRC tax thresholds eat away your real net returns.'
+                : isES
+                ? 'El 90% de los consejos te dicen que sigas la fórmula habitual. El problema es que las comisiones ocultas y los tramos fiscales reducen tu rentabilidad neta.'
                 : '90% dos conselhos dizem-te para seguir a receita antiga. O problema? As taxas e comissões comem qualquer benefício real.')
             : (isUK
                 ? '90% of tutorials tell you to follow the standard method. The problem? It wastes hours of effort without moving the needle on results.'
+                : isES
+                ? 'El 90% de los tutoriales te dicen que sigas el método tradicional. El problema es que pierdes horas de esfuerzo sin ver avances reales.'
                 : '90% dos tutoriais dizem-te para seguir o método tradicional. O problema? Perdes horas de esforço sem ver resultados tangíveis.'),
           audioToneCue: '[AUDIO: Subtle bass drop and building tension]',
         },
@@ -1189,9 +1404,13 @@ function buildGenericOrFinanceBundle(
           spokenText: isFinance
             ? (isUK
                 ? 'Look closely at this comparison: with the standard setup you lose an avoidable percentage to fees. By making this 3-step adjustment, you protect your net bottom line.'
+                : isES
+                ? 'Fíjate en esta comparación: con el método habitual pierdes un porcentaje innecesario en costes. Con este ajuste en 3 pasos, proteges tu rentabilidad neta.'
                 : 'Olha com atenção para esta comparação: no método habitual perdes logo uma percentagem em custos. Com este ajuste simples de 3 passos, proteges os teus resultados líquidos.')
             : (isUK
                 ? 'Look closely at this comparison: the standard approach leads to immediate roadblocks. If you implement this 3-step workflow instead, everything runs smoothly.'
+                : isES
+                ? 'Fíjate en esta comparación: el método habitual genera bloqueos innecesarios. Si aplicas este proceso en 3 pasos, todo funciona con fluidez.'
                 : 'Olha com atenção para esta comparação: a abordagem habitual gera bloqueios imediatos. Se fizeres este fluxo de 3 passos, tudo flui com facilidade.'),
           audioToneCue: '[AUDIO: Dynamic, confident instructional pacing]',
         },
@@ -1201,6 +1420,8 @@ function buildGenericOrFinanceBundle(
           visualCue: '[VISUAL: Return to main camera with clear proof graphic]',
           spokenText: isUK
             ? 'The difference is having complete peace of mind and not being caught out by avoidable mistakes.'
+            : isES
+            ? 'La diferencia es tener total tranquilidad y evitar errores costosos desde el primer día.'
             : 'A diferença é teres paz de espírito e não seres apanhado de surpresa.',
           audioToneCue: '[AUDIO: Inspiring, conclusive transition]',
         },
@@ -1210,6 +1431,8 @@ function buildGenericOrFinanceBundle(
           visualCue: '[VISUAL: Pointing to bookmark/follow button on screen]',
           spokenText: isUK
             ? 'Save this video to reference when you put this into practice, and comment "GUIDE" for the complete breakdown!'
+            : isES
+            ? '¡Guarda este vídeo para consultarlo cuando vayas a aplicarlo y comenta "GUÍA" para el resumen completo!'
             : 'Guarda este vídeo para consultares quando fores tratar disto e comenta "GUIA" para o resumo completo!',
           audioToneCue: '[AUDIO: Subtle notification chime]',
         },
@@ -1217,17 +1440,33 @@ function buildGenericOrFinanceBundle(
       fullSpokenText: isFinance
         ? (isUK
             ? `${formatScript1Opening(topic, market)} 90% of creators tell you to follow the standard generic rule. The problem? Platform fees and HMRC tax thresholds eat away your real net returns. Look closely at this comparison: with the standard setup you lose an avoidable percentage to fees. By making this 3-step adjustment, you protect your net bottom line. The difference is having complete peace of mind and not being caught out by avoidable mistakes. Save this video to reference when you put this into practice, and comment "GUIDE" for the complete breakdown!`
+            : isES
+            ? `${formatScript1Opening(topic, market)} El 90% de los consejos te dicen que sigas la fórmula habitual. El problema es que las comisiones ocultas y los tramos fiscales reducen tu rentabilidad neta. Fíjate en esta comparación: con el método habitual pierdes un porcentaje innecesario en costes. Con este ajuste en 3 pasos, proteges tu rentabilidad neta. La diferencia es tener total tranquilidad y evitar errores costosos desde el primer día. ¡Guarda este vídeo para consultarlo cuando vayas a aplicarlo y comenta "GUÍA" para el resumen completo!`
             : `${formatScript1Opening(topic, market)} 90% dos conselhos dizem-te para seguir a receita antiga. O problema? As taxas e comissões comem qualquer benefício real. Olha com atenção para esta comparação: no método habitual perdes logo uma percentagem em custos. Com este ajuste simples de 3 passos, proteges os teus resultados líquidos. A diferença é teres paz de espírito e não seres apanhado de surpresa. Guarda este vídeo para consultares quando fores tratar disto e comenta "GUIA" para o resumo completo!`)
         : (isUK
             ? `${formatScript1Opening(topic, market)} 90% of tutorials tell you to follow the standard method. The problem? It wastes hours of effort without moving the needle on results. Look closely at this comparison: the standard approach leads to immediate roadblocks. If you implement this 3-step workflow instead, everything runs smoothly. The difference is having complete peace of mind and not being caught out by avoidable mistakes. Save this video to reference when you put this into practice, and comment "GUIDE" for the complete breakdown!`
+            : isES
+            ? `${formatScript1Opening(topic, market)} El 90% de los tutoriales te dicen que sigas el método tradicional. El problema es que pierdes horas de esfuerzo sin ver avances reales. Fíjate en esta comparación: el método habitual genera bloqueos innecesarios. Si aplicas este proceso en 3 pasos, todo funciona con fluidez. La diferencia es tener total tranquilidad y evitar errores costosos desde el primer día. ¡Guarda este vídeo para consultarlo cuando vayas a aplicarlo y comenta "GUÍA" para el resumen completo!`
             : `${formatScript1Opening(topic, market)} 90% dos tutoriais dizem-te para seguir o método tradicional. O problema? Perdes horas de esforço sem ver resultados tangíveis. Olha com atenção para esta comparação: a abordagem habitual gera bloqueios imediatos. Se fizeres este fluxo de 3 passos, tudo flui com facilidade. A diferença é teres paz de espírito e não seres apanhado de surpresa. Guarda este vídeo para consultares quando fores tratar disto e comenta "GUIA" para o resumo completo!`),
     },
     {
       id: `script-${market.toLowerCase()}-story`,
       style: 'story-driven-case-study',
-      styleName: isUK ? 'Variation 2: Journey & Case Study (Story-Driven)' : 'Variação 2: Estudo de Caso & Jornada Pessoal',
-      badge: isUK ? 'Peak Authority' : 'Máxima Conexão & Autoridade',
-      tagline: isUK ? 'Chronicles the initial frustration of starting from scratch until finding the smooth path.' : 'Narra a frustração real de começar do zero até encontrar a rota sem atritos.',
+      styleName: isUK
+        ? 'Variation 2: Journey & Case Study (Story-Driven)'
+        : isES
+        ? 'Variación 2: Caso de Estudio y Experiencia Real (Story-Driven)'
+        : 'Variação 2: Estudo de Caso & Jornada Pessoal',
+      badge: isUK
+        ? 'Peak Authority'
+        : isES
+        ? 'Máxima Conexión y Autoridad'
+        : 'Máxima Conexão & Autoridade',
+      tagline: isUK
+        ? 'Chronicles the initial frustration of starting from scratch until finding the smooth path.'
+        : isES
+        ? 'Narra la frustración real de empezar desde cero hasta encontrar la fórmula que funciona.'
+        : 'Narra a frustração real de começar do zero até encontrar a rota sem atritos.',
       estimatedDuration: isShorts ? '50 seconds' : '14 minutes',
       targetWordCount: isShorts ? 145 : 2000,
       sections: [
@@ -1237,6 +1476,8 @@ function buildGenericOrFinanceBundle(
           visualCue: '[VISUAL: Sitting at desk reflecting on past frustrations]',
           spokenText: isUK
             ? `When I first started with ${subject}, I made the most frustrating mistake possible. And nobody warned me.`
+            : isES
+            ? `Cuando empecé con ${subject}, cometí el error más frustrante posible. Y nadie me lo había advertido.`
             : `Quando comecei em ${subject}, cometi o erro mais frustrante possível. E ninguém me avisou.`,
           audioToneCue: '[AUDIO: Reflective piano intro]',
         },
@@ -1246,6 +1487,8 @@ function buildGenericOrFinanceBundle(
           visualCue: '[VISUAL: Fast montage of confusing documents or endless tabs]',
           spokenText: isUK
             ? 'I was putting in hours of work, trusting generic internet guides, but progress completely stalled.'
+            : isES
+            ? 'Pasaba horas probando guías genéricas de internet, pero no conseguía avanzar nada.'
             : 'Passava horas a estudar e a confiar nos conselhos padrão da internet, mas os resultados eram zero.',
           audioToneCue: '[AUDIO: Building intensity]',
         },
@@ -1255,6 +1498,8 @@ function buildGenericOrFinanceBundle(
           visualCue: '[VISUAL: Clean dashboard opening up with 3 clear metrics]',
           spokenText: isUK
             ? 'Until I stripped out 80% of the noise and focused strictly on these three fundamental rules. That transformed everything.'
+            : isES
+            ? 'Hasta que eliminé el 80% del ruido y me concentré únicamente en estas tres reglas clave. Eso lo cambió todo.'
             : 'Até que decidi cortar 80% do ruído e focar apenas nestas 3 regras fundamentais. Foi exatamente isto que transformou os meus resultados.',
           audioToneCue: '[AUDIO: Cadenced clarity rhythm]',
         },
@@ -1264,6 +1509,8 @@ function buildGenericOrFinanceBundle(
           visualCue: '[VISUAL: Clear success metrics on screen with calm confidence]',
           spokenText: isUK
             ? 'Now it takes me 15 minutes a week to manage with complete confidence.'
+            : isES
+            ? 'Hoy le dedico 15 minutos a la semana para gestionarlo con total tranquilidad.'
             : 'Hoje levo 15 minutos por semana a gerir isto com total tranquilidade.',
           audioToneCue: '[AUDIO: Positive resolution]',
         },
@@ -1273,20 +1520,36 @@ function buildGenericOrFinanceBundle(
           visualCue: '[VISUAL: Pointing to bookmark button]',
           spokenText: isUK
             ? 'Save this video for later and follow for more straightforward, practical walkthroughs!'
+            : isES
+            ? '¡Guarda este vídeo en favoritos y sigue el canal para más explicaciones prácticas y directas!'
             : 'Guarda este vídeo nos favoritos e segue o canal para mais análises práticas!',
           audioToneCue: '[AUDIO: Sign-off chime]',
         },
       ],
       fullSpokenText: isUK
         ? `When I first started with ${subject}, I made the most frustrating mistake possible. And nobody warned me. I was putting in hours of work, trusting generic internet guides, but progress completely stalled. Until I stripped out 80% of the noise and focused strictly on these three fundamental rules. That transformed everything. Now it takes me 15 minutes a week to manage with complete confidence. Save this video for later and follow for more straightforward, practical walkthroughs!`
+        : isES
+        ? `Cuando empecé con ${subject}, cometí el error más frustrante posible. Y nadie me lo había advertido. Pasaba horas probando guías genéricas de internet, pero no conseguía avanzar nada. Hasta que eliminé el 80% del ruido y me concentré únicamente en estas tres reglas clave. Eso lo cambió todo. Hoy le dedico 15 minutos a la semana para gestionarlo con total tranquilidad. ¡Guarda este vídeo en favoritos y sigue el canal para más explicaciones prácticas y directas!`
         : `Quando comecei em ${subject}, cometi o erro mais frustrante possível. E ninguém me avisou. Passava horas a estudar e a confiar nos conselhos padrão da internet, mas os resultados eram zero. Até que decidi cortar 80% do ruído e focar apenas nestas 3 regras fundamentais. Foi exatamente isto que transformou os meus resultados. Hoje levo 15 minutos por semana a gerir isto com total tranquilidade. Guarda este vídeo nos favoritos e segue o canal para mais análises práticas!`,
     },
     {
       id: `script-${market.toLowerCase()}-blueprint`,
       style: 'actionable-blueprint',
-      styleName: isUK ? 'Variation 3: The Step-by-Step Blueprint' : 'Variação 3: O Passo a Passo Definitivo (Blueprint)',
-      badge: isUK ? 'Highest Save & Share Rate' : 'Maior Taxa de Salvamento',
-      tagline: isUK ? 'Direct 4-step implementation guide taking viewers from zero to competent.' : 'Guia de execução em 4 passos sem rodeios.',
+      styleName: isUK
+        ? 'Variation 3: The Step-by-Step Blueprint'
+        : isES
+        ? 'Variación 3: La Hoja de Ruta Paso a Paso (Blueprint)'
+        : 'Variação 3: O Passo a Passo Definitivo (Blueprint)',
+      badge: isUK
+        ? 'Highest Save & Share Rate'
+        : isES
+        ? 'Mayor Tasa de Guardados'
+        : 'Maior Taxa de Salvamento',
+      tagline: isUK
+        ? 'Direct 4-step implementation guide taking viewers from zero to competent.'
+        : isES
+        ? 'Guía de ejecución directa en 4 pasos para pasar de cero a dominarlo.'
+        : 'Guia de execução em 4 passos sem rodeios.',
       estimatedDuration: isShorts ? '45 seconds' : '15 minutes',
       targetWordCount: isShorts ? 135 : 2100,
       sections: [
@@ -1296,6 +1559,8 @@ function buildGenericOrFinanceBundle(
           visualCue: '[VISUAL: Clear title card with steps on screen]',
           spokenText: isUK
             ? `Here is the complete 4-step blueprint for ${subject} from absolute scratch.`
+            : isES
+            ? `Aquí tienes la hoja de ruta en 4 pasos para dominar ${subject} desde cero.`
             : `Aqui está o passo a passo em 4 etapas para dominares ${subject} do zero.`,
           audioToneCue: '[AUDIO: High energy opening sound]',
         },
@@ -1305,6 +1570,8 @@ function buildGenericOrFinanceBundle(
           visualCue: '[VISUAL: Live demonstration of step 1 setup and account/tool configuration]',
           spokenText: isUK
             ? 'Step 1: Set up the correct foundation without paying unnecessary upfront fees. Step 2: Establish your automated workflow.'
+            : isES
+            ? 'Paso 1: Configurar la base adecuada sin costes innecesarios. Paso 2: Establecer tu rutina de trabajo automatizada.'
             : 'Passo 1: Configurar a base correta sem custos desnecessários. Passo 2: Estabelecer o teu fluxo de trabalho automático.',
           audioToneCue: '[AUDIO: Upbeat instructional rhythm]',
         },
@@ -1314,6 +1581,8 @@ function buildGenericOrFinanceBundle(
           visualCue: '[VISUAL: Live demonstration of step 3 execution and step 4 verification]',
           spokenText: isUK
             ? 'Step 3: Execute with strict consistency. Step 4: Perform a quarterly 10-minute audit to keep everything optimised.'
+            : isES
+            ? 'Paso 3: Ejecutar con constancia. Paso 4: Hacer una revisión periódica de 10 minutos para mantenerlo optimizado.'
             : 'Passo 3: Executar com consistência rigorosa. Passo 4: Fazer uma auditoria rápida para manter tudo otimizado.',
           audioToneCue: '[AUDIO: Dynamic pace with woosh transitions]',
         },
@@ -1323,6 +1592,8 @@ function buildGenericOrFinanceBundle(
           visualCue: '[VISUAL: Checklist graphic checkmarks completing]',
           spokenText: isUK
             ? 'Follow these 4 steps and you will be ahead of 90% of people who get stuck in theoretical circles.'
+            : isES
+            ? 'Sigue estos 4 pasos y estarás por delante del 90% de las personas que se quedan estancadas en la teoría.'
             : 'Aplica estes 4 passos e ficas à frente de 90% das pessoas que ficam presas na teoria.',
           audioToneCue: '[AUDIO: Confident resolution]',
         },
@@ -1332,12 +1603,16 @@ function buildGenericOrFinanceBundle(
           visualCue: '[VISUAL: Gesture towards bookmark button]',
           spokenText: isUK
             ? 'Share this with someone who needs this today and comment "STEPS" for the free template!'
+            : isES
+            ? '¡Comparte esto con quien lo necesite hoy y comenta "PASOS" para la plantilla gratuita!'
             : 'Partilha com quem precisa de ver isto e comenta "GUIA" para o modelo gratuito!',
           audioToneCue: '[AUDIO: Notification chime]',
         },
       ],
       fullSpokenText: isUK
         ? `Here is the complete 4-step blueprint for ${subject} from absolute scratch. Step 1: Set up the correct foundation without paying unnecessary upfront fees. Step 2: Establish your automated workflow. Step 3: Execute with strict consistency. Step 4: Perform a quarterly 10-minute audit to keep everything optimised. Follow these 4 steps and you will be ahead of 90% of people who get stuck in theoretical circles. Share this with someone who needs this today and comment "STEPS" for the free template!`
+        : isES
+        ? `Aquí tienes la hoja de ruta en 4 pasos para dominar ${subject} desde cero. Paso 1: Configurar la base adecuada sin costes innecesarios. Paso 2: Establecer tu rutina de trabajo automatizada. Paso 3: Ejecutar con constancia. Paso 4: Hacer una revisión periódica de 10 minutos para mantenerlo optimizado. Sigue estos 4 pasos y estarás por delante del 90% de las personas que se quedan estancadas en la teoría. ¡Comparte esto con quien lo necesite hoy y comenta "PASOS" para la plantilla gratuita!`
         : `Aqui está o passo a passo em 4 etapas para dominares ${subject} do zero. Passo 1: Configurar a base correta sem custos desnecessários. Passo 2: Estabelecer o teu fluxo de trabalho automático. Passo 3: Executar com consistência rigorosa. Passo 4: Fazer uma auditoria rápida para manter tudo otimizado. Aplica estes 4 passos e ficas à frente de 90% das pessoas que ficam presas na teoria. Partilha com quem precisa de ver isto e comenta "GUIA" para o modelo gratuito!`,
     },
   ];
@@ -1349,6 +1624,14 @@ function buildGenericOrFinanceBundle(
         { id: 'title-3', type: 'Curiosity Gap', title: `Option A vs Option B for ${subject}: Which Is Genuinely Worth It?`, score: 92 },
         { id: 'title-4', type: 'Fear of Missing Out / Loss', title: `3 Critical Traps with ${subject} You Should Stop Doing Today`, score: 91 },
         { id: 'title-5', type: 'Number / Listicle', title: `The 15-Minute Routine for ${subject} (Zero Fluff)`, score: 89 },
+      ]
+    : isES
+    ? [
+        { id: 'title-1', type: 'Contrarian', title: `El Error Crítico con ${subject} que Casi Nadie Te Cuenta`, score: 96 },
+        { id: 'title-2', type: 'Outcome / How-To', title: `Cómo Dominar ${subject} desde Cero Paso a Paso`, score: 94 },
+        { id: 'title-3', type: 'Curiosity Gap', title: `Opción A vs Opción B para ${subject}: ¿Cuál Merece Realmente la Pena?`, score: 92 },
+        { id: 'title-4', type: 'Fear of Missing Out / Loss', title: `3 Errores Críticos con ${subject} que Deberías Dejar Hoy Mismo`, score: 91 },
+        { id: 'title-5', type: 'Number / Listicle', title: `La Rutina de 15 Minutos para ${subject} (Sin Relleno)`, score: 89 },
       ]
     : [
         { id: 'title-1', type: 'Contrarian', title: `O Maior Erro com ${subject} que Quase Ninguém Te Avisa`, score: 96 },
@@ -1366,6 +1649,14 @@ function buildGenericOrFinanceBundle(
         { id: 'hook-4', type: 'Story Opener', spokenHook: `Most online advice about ${subject} tells you to do this. Here is why that is actually slowing you down.`, visualHook: '[VISUAL: Crossing out the standard advice with a bold red line]', overlayText: 'OUTDATED ADVICE 🚫' },
         { id: 'hook-5', type: 'Visual Shock', spokenHook: `There is one fundamental rule behind ${subject} that experienced practitioners use every day.`, visualHook: '[VISUAL: Revealing the key rule highlighted on screen]', overlayText: 'THE #1 RULE 🔑' },
       ]
+    : isES
+    ? [
+        { id: 'hook-1', type: 'Pattern Interrupt', spokenHook: formatSpokenHook(topic, market), visualHook: '[VISUAL: Expresión seria señalando directamente a la pantalla]', overlayText: 'DEJA DE HACER ESTO ⚠️' },
+        { id: 'hook-2', type: 'Bold Statement', spokenHook: `¿Quieres conseguir resultados reales con ${subject} sin perder horas cada semana? Aquí tienes la clave.`, visualHook: '[VISUAL: Resumen limpio con los 3 pilares esenciales]', overlayText: 'RESULTADOS REALES 🎯' },
+        { id: 'hook-3', type: 'Provocative Question', spokenHook: `Si sientes bloqueo al intentar avanzar con ${subject}, el problema no eres tú: es el consejo estándar que estás siguiendo.`, visualHook: '[VISUAL: Gesto empático pasando directamente a la solución]', overlayText: 'POR QUÉ TE BLOQUEAS ❌' },
+        { id: 'hook-4', type: 'Story Opener', spokenHook: `La mayoría de tutoriales te dicen que hagas esto con ${subject}. Mira por qué eso solo te hace perder el tiempo.`, visualHook: '[VISUAL: Tachando el consejo tradicional en rojo]', overlayText: 'CONSEJO OBSOLETO 🚫' },
+        { id: 'hook-5', type: 'Visual Shock', spokenHook: `Existe una regla fundamental detrás de ${subject} que quienes tienen experiencia aplican todos los días.`, visualHook: '[VISUAL: Revelando la regla clave destacada en pantalla]', overlayText: 'LA REGLA CLAVE 🔑' },
+      ]
     : [
         { id: 'hook-1', type: 'Pattern Interrupt', spokenHook: formatSpokenHook(topic, market), visualHook: '[VISUAL: Expressão séria a apontar diretamente para a comparação]', overlayText: 'PÁRA DE FAZER ISTO ⚠️' },
         { id: 'hook-2', type: 'Bold Statement', spokenHook: `Queres obter resultados reais em ${subject} sem perder horas todas as semanas? Aqui está o método.`, visualHook: '[VISUAL: Ecrã limpo com os 3 pilares essenciais]', overlayText: 'RESULTADOS REAIS 🎯' },
@@ -1379,6 +1670,12 @@ function buildGenericOrFinanceBundle(
         { id: 'cta-1', goal: 'Save / Bookmark', spokenCta: 'Save this video to your library right now so you can refer back when you implement this!', onScreenText: 'SAVE THIS VIDEO 📌', platformBestPractice: 'Gesture towards save button.' },
         { id: 'cta-2', goal: 'Comment / Keyword Automation', spokenCta: 'Comment "GUIDE" below and I will send the complete summary straight to you!', onScreenText: 'COMMENT "GUIDE" 💬', platformBestPractice: 'Drives initial comment velocity.' },
         { id: 'cta-3', goal: 'Follow / Subscribe', spokenCta: 'Subscribe to the channel for more no-nonsense, practical breakdowns every single week!', onScreenText: 'SUBSCRIBE FOR MORE 🔔', platformBestPractice: 'Add end-screen subscribe card.' },
+      ]
+    : isES
+    ? [
+        { id: 'cta-1', goal: 'Save / Bookmark', spokenCta: '¡Guarda este vídeo en tus guardados ahora mismo para tenerlo a mano cuando lo pongas en práctica!', onScreenText: 'GUARDA ESTE VÍDEO 📌', platformBestPractice: 'Señalar hacia el botón de guardar.' },
+        { id: 'cta-2', goal: 'Comment / Keyword Automation', spokenCta: '¡Comenta "GUÍA" abajo y te envío el resumen completo directamente!', onScreenText: 'COMENTA "GUÍA" 💬', platformBestPractice: 'Fomenta el ritmo de comentarios inicial.' },
+        { id: 'cta-3', goal: 'Follow / Subscribe', spokenCta: '¡Suscríbete al canal para más análisis prácticos y directos cada semana!', onScreenText: 'SUSCRÍBETE PARA MÁS 🔔', platformBestPractice: 'Añadir pantalla final de suscripción.' },
       ]
     : [
         { id: 'cta-1', goal: 'Save / Bookmark', spokenCta: 'Guarda este vídeo nos favoritos para teres a estratégia à mão quando fores implementar!', onScreenText: 'GUARDA ESTE VÍDEO 📌', platformBestPractice: 'Apontar para o botão de guardar.' },
@@ -1413,7 +1710,7 @@ export function generateScriptSuite(
   } else if (domainInfo.isConsumerBudgeting) {
     bundle = buildConsumerBudgetingScriptBundle(topic, subject, market, platform, isShorts);
   } else if (domainInfo.isBakingOrCooking) {
-    bundle = buildCookingScriptBundle(topic, subject, market, platform, isShorts);
+    bundle = buildCookingScriptBundle(topic, subject, market, platform, isShorts, domainInfo.isBaking);
   } else if (domainInfo.isGardening) {
     bundle = buildGardeningScriptBundle(topic, subject, market, platform, isShorts);
   } else {
@@ -1429,7 +1726,7 @@ export function generateScriptSuite(
     } else if (domainInfo.isConsumerBudgeting) {
       englishBundle = buildConsumerBudgetingScriptBundle(topic, subject, 'en-GB', platform, isShorts);
     } else if (domainInfo.isBakingOrCooking) {
-      englishBundle = buildCookingScriptBundle(topic, subject, 'en-GB', platform, isShorts);
+      englishBundle = buildCookingScriptBundle(topic, subject, 'en-GB', platform, isShorts, domainInfo.isBaking);
     } else if (domainInfo.isGardening) {
       englishBundle = buildGardeningScriptBundle(topic, subject, 'en-GB', platform, isShorts);
     } else {

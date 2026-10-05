@@ -12,18 +12,33 @@ export interface DetectedTopicInfo {
   primarySubject: string;
   isFinance: boolean;
   isBakingOrCooking: boolean;
+  isBaking: boolean;
   isGardening: boolean;
   isHealthOrFitness: boolean;
   isConsumerBudgeting: boolean;
 }
 
+const BAKING_KEYWORDS = [
+  'cake', 'bolo', 'tarta', 'pastel', 'baking', 'bake', 'bread', 'pão', 'pan',
+  'pastry', 'confectionery', 'confeitaria', 'repostería', 'muffin', 'cupcake',
+  'cookie', 'cookies', 'biscoito', 'galleta', 'galletas', 'brownie',
+  'fermento', 'baking powder', 'yeast', 'dough', 'massa folhada',
+];
+
 const COOKING_KEYWORDS = [
-  'cake', 'bolo', 'tarta', 'pastel', 'baking', 'bake', 'recipe', 'receita', 'receta',
+  ...BAKING_KEYWORDS,
   'cook', 'cooking', 'cozinhar', 'cocina', 'cocinar', 'kitchen', 'cozinha',
-  'chocolate', 'dessert', 'sobremesa', 'postre', 'bread', 'pão', 'pan',
-  'food', 'comida', 'meal', 'refeição', 'dinner', 'jantar', 'cenas',
-  'pastry', 'pasta', 'sauce', 'molho', 'salsa', 'roast', 'assado',
-  'culinária', 'culinary', 'gastronomia', 'airfryer', 'forno', 'oven',
+  'recipe', 'receita', 'receta', 'food', 'comida', 'meal', 'refeição', 'dinner',
+  'jantar', 'cenas', 'lunch', 'almoço', 'almuerzo', 'breakfast', 'pequeno-almoço',
+  'café da manhã', 'desayuno', 'snack', 'lanche', 'merienda',
+  'rice', 'arroz', 'pasta', 'massa', 'macarrão', 'sauce', 'molho', 'salsa',
+  'meat', 'carne', 'fish', 'peixe', 'pescado', 'chicken', 'frango', 'pollo',
+  'egg', 'eggs', 'ovo', 'ovos', 'huevo', 'huevos', 'soup', 'sopa',
+  'steak', 'bife', 'filete', 'pizza', 'burger', 'hambúrguer', 'hamburguesa',
+  'coffee', 'café', 'tea', 'chá', 'té', 'chocolate', 'dessert', 'sobremesa', 'postre',
+  'roast', 'assado', 'fry', 'frying', 'fritar', 'frito', 'grill', 'grelha', 'parrilla',
+  'boil', 'ferver', 'hervir', 'culinária', 'culinary', 'gastronomia', 'airfryer',
+  'forno', 'oven', 'dish', 'prato', 'plato', 'chef', 'seasoning', 'tempero',
 ];
 
 const GARDENING_KEYWORDS = [
@@ -110,11 +125,14 @@ export function detectTopicDomain(topic: string): DetectedTopicInfo {
     .replace(/\s+(in the uk|em portugal|no brasil|en españa|uk|portugal|brasil|españa)$/i, '')
     .trim();
 
+  const isBaking = isCooking && BAKING_KEYWORDS.some((kw) => normalized.includes(kw));
+
   return {
     domain,
     primarySubject: primarySubject || topic,
     isFinance: domain === 'finance_investing',
     isBakingOrCooking: domain === 'cooking_food',
+    isBaking,
     isGardening: domain === 'gardening_diy',
     isHealthOrFitness: domain === 'health_fitness',
     isConsumerBudgeting: domain === 'consumer_budgeting',

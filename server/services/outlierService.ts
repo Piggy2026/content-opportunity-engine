@@ -344,7 +344,7 @@ export function analyzeOutliers(req: ResearchRequest, competitors: CompetitorRes
         },
         {
           pattern: 'Unsponsored Comparison of Alternatives',
-          example: `Example: "Tool A vs Tool B for ${topicClean}: Which Is Actually Worth It?"`,
+          example: `Example: "Option A vs Option B for ${topicClean}: Which Is Actually Worth It?"`,
           whyItWorks: 'Objective benchmarks free of brand sponsorship convert viewers into loyal followers.',
         },
         {
@@ -362,7 +362,7 @@ export function analyzeOutliers(req: ResearchRequest, competitors: CompetitorRes
         },
         {
           pattern: 'Comparativa Sin Filtros de Alternativas',
-          example: `Ejemplo: "Herramienta A vs Herramienta B para ${topicClean}: Cuál Merece la Pena"`,
+          example: `Ejemplo: "Opción A vs Opción B para ${topicClean}: Cuál Merece la Pena"`,
           whyItWorks: 'El público valora análisis objetivos y sin patrocinios encubiertos.',
         },
         {

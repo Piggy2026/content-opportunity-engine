@@ -9,163 +9,328 @@ export function detectContentGaps(req: ResearchRequest, competitors: CompetitorR
   const gaps: ContentGap[] = [];
 
   if (domainInfo.isBakingOrCooking) {
+    const isBaking = domainInfo.isBaking;
     if (market === 'pt-PT') {
-      gaps.push(
-        {
-          id: 'gap-pt-cook-1',
-          category: 'underserved-market-need',
-          title: 'Ingredientes de Supermercado Português vs Receitas Importadas com Medidas Americanas',
-          description: `Muitos vídeos sobre ${topicClean} copiam receitas estrangeiras com chávenas (cups), tipos de farinha inacessíveis ou açúcares especiais difíceis de encontrar em Portugal (como 'heavy cream' ou 'buttermilk'). Falta a versão calibrada para farinha sem fermento comum, ovos M/L nacionais e chocolate de barra do supermercado local.`,
-          whyCompetitorsMissedIt: 'Criadores limitam-se a traduzir receitas virais americanas ou britânicas sem testar nem calibrar para os ingredientes disponíveis no mercado nacional.',
-          marketNuance: 'Portugal (pt-PT): Utilizadores exigem medidas em gramas e mililitros, temperatura do forno em graus Celsius e ingredientes acessíveis no Continente, Pingo Doce ou Mercadona.',
-          opportunityLevel: 'critical',
-        },
-        {
-          id: 'gap-pt-cook-2',
-          category: 'unanswered-question',
-          title: 'Porque é que o Bolo Fica Seco ou Abate no Centro (E o Truque para Salvar)',
-          description: `A dúvida mais comum de quem tenta fazer ${topicClean} é a textura: o bolo fica solado, seco ou afunda no centro ao sair do forno. Mais de 80% dos vídeos ignoram a física da temperatura dos ovos e o ponto exato do palito.`,
-          whyCompetitorsMissedIt: 'Foco exclusivo na montagem estética final, sem explicar a ciência simples do forno e o timing correto de descanso.',
-          marketNuance: 'Portugal: O público valoriza receitas caseiras com textura húmida e fofa, sem excesso enjoativo de açúcar.',
-          opportunityLevel: 'very-high',
-        },
-        {
-          id: 'gap-pt-cook-3',
-          category: 'oversaturated-angle',
-          title: 'Saturação de Vídeos Estéticos com Música e Sem Medidas Claras',
-          description: `As redes estão inundadas de vídeos de 30 segundos hiperacelerados com música de fundo e filtros elegantes, mas sem as quantidades no ecrã e sem o tempo de cozedura. O utilizador assiste por entretenimento mas não consegue reproduzir.`,
-          whyCompetitorsMissedIt: 'Produzir vídeos puramente visuais para viralizar é mais fácil do que ensinar um passo a passo pedagógico e replicável.',
-          marketNuance: 'Portugal: Elevada procura por receitas práticas que funcionem à primeira, explicadas em português com tom acolhedor.',
-          opportunityLevel: 'high',
-        },
-        {
-          id: 'gap-pt-cook-4',
-          category: 'weak-competitor-execution',
-          title: 'Falta de Formato Rápido (Shorts/Reels) com Lista de Ingredientes Direta para Guardar',
-          description: `Os concorrentes ou gravam vídeos de 25 minutos com demasiada conversa inicial ou Shorts sem resumo na descrição. Há um vazio para vídeos de 45 segundos dinâmicos onde o espectador guarda o vídeo e tem a lista exata nos comentários.`,
-          whyCompetitorsMissedIt: 'Falta de visão sobre a mecânica de salvamentos e partilhas nos algoritmos modernos.',
-          marketNuance: 'Portugal: Ritmo ágil, corte de respiro, sem enrolação e incentivo para guardar a receita.',
-          opportunityLevel: 'very-high',
-        }
-      );
+      if (isBaking) {
+        gaps.push(
+          {
+            id: 'gap-pt-cook-1',
+            category: 'underserved-market-need',
+            title: 'Ingredientes de Supermercado Português vs Receitas Importadas com Medidas Americanas',
+            description: `Muitos vídeos sobre ${topicClean} copiam receitas estrangeiras com chávenas (cups), tipos de farinha inacessíveis ou açúcares especiais difíceis de encontrar em Portugal (como 'heavy cream' ou 'buttermilk'). Falta a versão calibrada para farinha sem fermento comum, ovos M/L nacionais e chocolate de barra do supermercado local.`,
+            whyCompetitorsMissedIt: 'Criadores limitam-se a traduzir receitas virais americanas ou britânicas sem testar nem calibrar para os ingredientes disponíveis no mercado nacional.',
+            marketNuance: 'Portugal (pt-PT): Utilizadores exigem medidas em gramas e mililitros, temperatura do forno em graus Celsius e ingredientes acessíveis no Continente, Pingo Doce ou Mercadona.',
+            opportunityLevel: 'critical',
+          },
+          {
+            id: 'gap-pt-cook-2',
+            category: 'unanswered-question',
+            title: 'Porque é que o Bolo Fica Seco ou Abate no Centro (E o Truque para Salvar)',
+            description: `A dúvida mais comum de quem tenta fazer ${topicClean} é a textura: o bolo fica solado, seco ou afunda no centro ao sair do forno. Mais de 80% dos vídeos ignoram a física da temperatura dos ovos e o ponto exato do palito.`,
+            whyCompetitorsMissedIt: 'Foco exclusivo na montagem estética final, sem explicar a ciência simples do forno e o timing correto de descanso.',
+            marketNuance: 'Portugal: O público valoriza receitas caseiras com textura húmida e fofa, sem excesso enjoativo de açúcar.',
+            opportunityLevel: 'very-high',
+          },
+          {
+            id: 'gap-pt-cook-3',
+            category: 'oversaturated-angle',
+            title: 'Saturação de Vídeos Estéticos com Música e Sem Medidas Claras',
+            description: `As redes estão inundadas de vídeos de 30 segundos hiperacelerados com música de fundo e filtros elegantes, mas sem as quantidades no ecrã e sem o tempo de cozedura. O utilizador assiste por entretenimento mas não consegue reproduzir.`,
+            whyCompetitorsMissedIt: 'Produzir vídeos puramente visuais para viralizar é mais fácil do que ensinar um passo a passo pedagógico e replicável.',
+            marketNuance: 'Portugal: Elevada procura por receitas práticas que funcionem à primeira, explicadas em português com tom acolhedor.',
+            opportunityLevel: 'high',
+          },
+          {
+            id: 'gap-pt-cook-4',
+            category: 'weak-competitor-execution',
+            title: 'Falta de Formato Rápido (Shorts/Reels) com Lista de Ingredientes Direta para Guardar',
+            description: `Os concorrentes ou gravam vídeos de 25 minutos com demasiada conversa inicial ou Shorts sem resumo na descrição. Há um vazio para vídeos de 45 segundos dinâmicos onde o espectador guarda o vídeo e tem a lista exata nos comentários.`,
+            whyCompetitorsMissedIt: 'Falta de visão sobre a mecânica de salvamentos e partilhas nos algoritmos modernos.',
+            marketNuance: 'Portugal: Ritmo ágil, corte de respiro, sem enrolação e incentivo para guardar a receita.',
+            opportunityLevel: 'very-high',
+          }
+        );
+      } else {
+        gaps.push(
+          {
+            id: 'gap-pt-cook-1',
+            category: 'underserved-market-need',
+            title: 'Proporções Exatas de Água, Lume e Ingredientes do Supermercado Nacional',
+            description: `Muitos tutoriais de ${topicClean} dão medidas vagas 'a olho' ou usam ingredientes importados. Em Portugal o público procura medidas exatas em gramas/mililitros, potência correta de placa (vitrocerâmica ou indução) e produtos do Continente, Pingo Doce ou Mercadona.`,
+            whyCompetitorsMissedIt: 'Criadores cozinham por intuição e esquecem-se de dar as quantidades e tempos exatos para quem está a aprender.',
+            marketNuance: 'Portugal (pt-PT): Procura por receitas descomplicadas com azeite português, sal na medida certa e sem ingredientes caros.',
+            opportunityLevel: 'critical',
+          },
+          {
+            id: 'gap-pt-cook-2',
+            category: 'unanswered-question',
+            title: 'Como Evitar que Fique Empapado, Seco ou Sem Sabor (O Ponto de Textura e Repouso)',
+            description: `O maior erro ao fazer ${topicClean} é a textura final: ficar empapado, cru no meio ou passar do ponto. Mais de 80% dos vídeos ignoram a importância de controlar o calor residual e o tempo de repouso tapado.`,
+            whyCompetitorsMissedIt: 'Foco apenas na fotografia do prato pronto sem explicar como controlar a humidade e o tempo de repouso.',
+            marketNuance: 'Portugal: O público valoriza comida caseira saborosa e reconfortante, no ponto ideal de cozedura.',
+            opportunityLevel: 'very-high',
+          },
+          {
+            id: 'gap-pt-cook-3',
+            category: 'oversaturated-angle',
+            title: 'Saturação de Vídeos Lentos com Demasiada Conversa Inicial',
+            description: `Muitos canais tradicionais gravam vídeos de 20 minutos onde demoram 10 minutos antes de acender o fogão. O utilizador moderno quer ir direto ao método.`,
+            whyCompetitorsMissedIt: 'Formatos televisivos antigos adaptados sem dinâmica para a internet.',
+            marketNuance: 'Portugal: Elevada procura por receitas práticas que funcionem à primeira, explicadas de forma calorosa e direta.',
+            opportunityLevel: 'high',
+          },
+          {
+            id: 'gap-pt-cook-4',
+            category: 'weak-competitor-execution',
+            title: 'Falta de Formato Rápido de 45 Segundos com Ficha de Proporções para Guardar',
+            description: `Há um vazio para vídeos de 45 segundos verticais onde o espectador vê o processo num minuto e tem a proporção exata nos comentários para guardar no telemóvel.`,
+            whyCompetitorsMissedIt: 'Falta de visão sobre a mecânica de salvamentos e partilhas nos algoritmos modernos.',
+            marketNuance: 'Portugal: Ritmo ágil, corte de respiro, sem enrolação e incentivo para guardar a receita.',
+            opportunityLevel: 'very-high',
+          }
+        );
+      }
     } else if (market === 'pt-BR') {
-      gaps.push(
-        {
-          id: 'gap-br-cook-1',
-          category: 'underserved-market-need',
-          title: 'Receita Econômica sem Ingredientes Caros de Confeitaria Fina',
-          description: `Muitos canais usam chocolates importados, extratos caros e formas especiais que não cabem no orçamento popular. Falta o guia de ${topicClean} com ingredientes que todo brasileiro tem no armário (cacau em pó nacional, óleo, ovos e farinha básica).`,
-          whyCompetitorsMissedIt: 'Criadores que tentam parecer sofisticados acabam se desconectando da dona de casa e do estudante que querem fazer um bolo rápido no domingo.',
-          marketNuance: 'Brasil (pt-BR): Foco em custo-benefício, medidas fáceis (xícara padrão brasileira) e receita que rende para a família toda.',
-          opportunityLevel: 'critical',
-        },
-        {
-          id: 'gap-br-cook-2',
-          category: 'unanswered-question',
-          title: 'O Pulo do Gato para Não Solar e Manter a Massa Molhadinha',
-          description: `O maior medo de quem faz ${topicClean} no Brasil é a massa solar ou ficar embatumada. Falta um criador que mostre o momento exato de parar de bater a farinha e como a água morna ou café potencializa o chocolate.`,
-          whyCompetitorsMissedIt: 'Canais focam em mostrar o resultado bonito e não explicam o segredo da química da massa.',
-          marketNuance: 'Brasil: Linguagem informal, calorosa ("pulo do gato", "olha essa fofura") e demonstração do corte com a colher.',
-          opportunityLevel: 'very-high',
-        },
-        {
-          id: 'gap-br-cook-3',
-          category: 'oversaturated-angle',
-          title: 'Saturação de Receitas com Leite Condensado em Excesso',
-          description: `Existe uma saturação de receitas 'afogadas' em brigadeiro e coberturas hiperdoces. Há uma busca crescente por bolos equilibrados, fofinhos, com sabor intenso de chocolate de verdade.`,
-          whyCompetitorsMissedIt: 'Receitas hipercalóricas geram choque visual rápido, mas quem quer comer no café da tarde busca um bolo fofo e equilibrado.',
-          marketNuance: 'Brasil: Valorização de receitas afetivas com aquele gostinho de bolo de vó.',
-          opportunityLevel: 'high',
-        },
-        {
-          id: 'gap-br-cook-4',
-          category: 'weak-competitor-execution',
-          title: 'Falta de Roteiros Rápidos de 40 Segundos para Liquidificador',
-          description: `Vídeos no TikTok e Reels costumam ser cortes confusos. O criador que demonstrar a massa batida em 1 minuto de liquidificador domina a retenção.`,
-          whyCompetitorsMissedIt: 'Falta de domínio de edição rápida com som crocante e ASMR de cozinha.',
-          marketNuance: 'Brasil: Apelo visual imediato, quebra de padrão nos primeiros 2 segundos e chamada para salvar.',
-          opportunityLevel: 'very-high',
-        }
-      );
+      if (isBaking) {
+        gaps.push(
+          {
+            id: 'gap-br-cook-1',
+            category: 'underserved-market-need',
+            title: 'Receita Econômica sem Ingredientes Caros de Confeitaria Fina',
+            description: `Muitos canais usam chocolates importados, extratos caros e formas especiais que não cabem no orçamento popular. Falta o guia de ${topicClean} com ingredientes que todo brasileiro tem no armário (cacau em pó nacional, óleo, ovos e farinha básica).`,
+            whyCompetitorsMissedIt: 'Criadores que tentam parecer sofisticados acabam se desconectando da dona de casa e do estudante que querem fazer um bolo rápido no domingo.',
+            marketNuance: 'Brasil (pt-BR): Foco em custo-benefício, medidas fáceis (xícara padrão brasileira) e receita que rende para a família toda.',
+            opportunityLevel: 'critical',
+          },
+          {
+            id: 'gap-br-cook-2',
+            category: 'unanswered-question',
+            title: 'O Pulo do Gato para Não Solar e Manter a Massa Molhadinha',
+            description: `O maior medo de quem faz ${topicClean} no Brasil é a massa solar ou ficar embatumada. Falta um criador que mostre o momento exato de parar de bater a farinha e como a água morna ou café potencializa o chocolate.`,
+            whyCompetitorsMissedIt: 'Canais focam em mostrar o resultado bonito e não explicam o segredo da química da massa.',
+            marketNuance: 'Brasil: Linguagem informal, calorosa ("pulo do gato", "olha essa fofura") e demonstração do corte com a colher.',
+            opportunityLevel: 'very-high',
+          },
+          {
+            id: 'gap-br-cook-3',
+            category: 'oversaturated-angle',
+            title: 'Saturação de Receitas com Leite Condensado em Excesso',
+            description: `Existe uma saturação de receitas 'afogadas' em brigadeiro e coberturas hiperdoces. Há uma busca crescente por bolos equilibrados, fofinhos, com sabor intenso de chocolate de verdade.`,
+            whyCompetitorsMissedIt: 'Receitas hipercalóricas geram choque visual rápido, mas quem quer comer no café da tarde busca um bolo fofo e equilibrado.',
+            marketNuance: 'Brasil: Valorização de receitas afetivas com aquele gostinho de bolo de vó.',
+            opportunityLevel: 'high',
+          },
+          {
+            id: 'gap-br-cook-4',
+            category: 'weak-competitor-execution',
+            title: 'Falta de Roteiros Rápidos de 40 Segundos para Liquidificador',
+            description: `Vídeos no TikTok e Reels costumam ser cortes confusos. O criador que demonstrar a massa batida em 1 minuto de liquidificador domina a retenção.`,
+            whyCompetitorsMissedIt: 'Falta de domínio de edição rápida com som crocante e ASMR de cozinha.',
+            marketNuance: 'Brasil: Apelo visual imediato, quebra de padrão nos primeiros 2 segundos e chamada para salvar.',
+            opportunityLevel: 'very-high',
+          }
+        );
+      } else {
+        gaps.push(
+          {
+            id: 'gap-br-cook-1',
+            category: 'underserved-market-need',
+            title: 'Proporções Exatas de Água e Fogo sem Truques Mágicos Furados',
+            description: `Muitos vídeos sobre ${topicClean} dão instruções confusas ou medidas que não funcionam no fogão comum brasileiro. Falta o guia com proporções milimétricas, refogado no ponto e tempo exato de panela.`,
+            whyCompetitorsMissedIt: 'Criadores cozinham no automático e não explicam a quantidade exata de líquido e controle de chama.',
+            marketNuance: 'Brasil (pt-BR): Foco em comida saborosa do dia a dia, rendimento para a família e ingredientes do supermercado comum.',
+            opportunityLevel: 'critical',
+          },
+          {
+            id: 'gap-br-cook-2',
+            category: 'unanswered-question',
+            title: 'O Pulo do Gato para Não Ficar Empapado nem Queimar no Fundo',
+            description: `O maior receio ao preparar ${topicClean} é errar o ponto: ficar empapado, grudento ou passar da conta. Falta um vídeo que ensine a hora certa de tampar, abaixar o fogo e deixar secar no vapor.`,
+            whyCompetitorsMissedIt: 'Canais mostram só o prato final e não explicam a física do vapor e descanso.',
+            marketNuance: 'Brasil: Linguagem prática, direta e afetuosa com foco em resultado perfeito na mesa.',
+            opportunityLevel: 'very-high',
+          },
+          {
+            id: 'gap-br-cook-3',
+            category: 'oversaturated-angle',
+            title: 'Saturação de Receitas Demoradas com Histórias Longas',
+            description: `Vídeos prolixos que demoram minutos para começar a receita. O público quer ver a panela funcionando logo no início.`,
+            whyCompetitorsMissedIt: 'Criadores replicam formatos longos de televisão sem dinamismo para o público digital.',
+            marketNuance: 'Brasil: Agilidade, dicas rápidas e foco na praticidade da rotina.',
+            opportunityLevel: 'high',
+          },
+          {
+            id: 'gap-br-cook-4',
+            category: 'weak-competitor-execution',
+            title: 'Falta de Shorts Rápidos de 40 Segundos com Proporções Claras',
+            description: `Cortes rápidos no TikTok que mostram as medidas na tela e convidam a salvar nos favoritos para consultar na beira do fogão.`,
+            whyCompetitorsMissedIt: 'Falta de visão sobre a dinâmica de salvamentos rápidos de receitas.',
+            marketNuance: 'Brasil: Ritmo dinâmico, áudio nítido e chamada forte para salvar.',
+            opportunityLevel: 'very-high',
+          }
+        );
+      }
     } else if (market === 'es-ES') {
-      gaps.push(
-        {
-          id: 'gap-es-cook-1',
-          category: 'underserved-market-need',
-          title: 'Medidas Precisas en Gramos y Calibración para Hornos Domésticos en España',
-          description: `Gran parte de los tutoriales de ${topicClean} en español provienen de Latinoamérica con ingredientes locales distintos o medidas de taza imprecisas. En España el público busca recetas con gramos exactos, harina de repostería y temperaturas reales de horno doméstico.`,
-          whyCompetitorsMissedIt: 'Falta de adaptación a los tipos de harina y cacao habituales en Mercadona, Carrefour o Lidl.',
-          marketNuance: 'España (es-ES): Preferencia por báscula digital, grados centígrados y repostería sin empalagar.',
-          opportunityLevel: 'critical',
-        },
-        {
-          id: 'gap-es-cook-2',
-          category: 'unanswered-question',
-          title: 'Cómo Conseguir que Quede Jugoso sin Añadir Demasiada Grasa',
-          description: `La pregunta constante es cómo lograr que ${topicClean} tenga un bizcocho tierno y húmedo durante varios días sin recurrir a cantidades desmesuradas de mantequilla.`,
-          whyCompetitorsMissedIt: 'Los creadores repiten fórmulas clásicas sin investigar técnicas modernas con yogur o aceite de oliva suave.',
-          marketNuance: 'España: Gusto por ingredientes naturales y opciones de bizcocho esponjoso para el desayuno.',
-          opportunityLevel: 'very-high',
-        },
-        {
-          id: 'gap-es-cook-3',
-          category: 'oversaturated-angle',
-          title: 'Saturación de Vídeos Largos con Charlas Innecesarias',
-          description: `Muchos canales tradicionales en España siguen grabando vídeos de 20 minutos donde tardan 8 minutos solo en presentar los ingredientes.`,
-          whyCompetitorsMissedIt: 'Anclaje en formatos de televisión antigua en lugar de la inmediatez digital actual.',
-          marketNuance: 'España: El usuario valora el dinamismo, el humor directo y la receta explicada al grano.',
-          opportunityLevel: 'high',
-        },
-        {
-          id: 'gap-es-cook-4',
-          category: 'weak-competitor-execution',
-          title: 'Ausencia de Vídeos Cortos Verticales con Tarjeta de Receta en el Primer Comentario',
-          description: `Faltan Reels y Shorts donde en 45 segundos se muestre el proceso visual y en texto limpio queden las cantidades exactas para guardar en favoritos.`,
-          whyCompetitorsMissedIt: 'Poca disciplina en optimizar la llamada a guardar y compartir.',
-          marketNuance: 'España: Alto consumo de Reels en móviles para consultar directamente en la cocina.',
-          opportunityLevel: 'very-high',
-        }
-      );
+      if (isBaking) {
+        gaps.push(
+          {
+            id: 'gap-es-cook-1',
+            category: 'underserved-market-need',
+            title: 'Medidas Precisas en Gramos y Calibración para Hornos Domésticos en España',
+            description: `Gran parte de los tutoriales de ${topicClean} en español provienen de Latinoamérica con ingredientes locales distintos o medidas de taza imprecisas. En España el público busca recetas con gramos exactos, harina de repostería y temperaturas reales de horno doméstico.`,
+            whyCompetitorsMissedIt: 'Falta de adaptación a los tipos de harina y cacao habituales en Mercadona, Carrefour o Lidl.',
+            marketNuance: 'España (es-ES): Preferencia por báscula digital, grados centígrados y repostería sin empalagar.',
+            opportunityLevel: 'critical',
+          },
+          {
+            id: 'gap-es-cook-2',
+            category: 'unanswered-question',
+            title: 'Cómo Conseguir que Quede Jugoso sin Añadir Demasiada Grasa',
+            description: `La pregunta constante es cómo lograr que ${topicClean} tenga un bizcocho tierno y húmedo durante varios días sin recurrir a cantidades desmesuradas de mantequilla.`,
+            whyCompetitorsMissedIt: 'Los creadores repiten fórmulas clásicas sin investigar técnicas modernas con yogur o aceite de oliva suave.',
+            marketNuance: 'España: Gusto por ingredientes naturales y opciones de bizcocho esponjoso para el desayuno.',
+            opportunityLevel: 'very-high',
+          },
+          {
+            id: 'gap-es-cook-3',
+            category: 'oversaturated-angle',
+            title: 'Saturación de Vídeos Largos con Charlas Innecesarias',
+            description: `Muchos canales tradicionales en España siguen grabando vídeos de 20 minutos donde tardan 8 minutos solo en presentar los ingredientes.`,
+            whyCompetitorsMissedIt: 'Anclaje en formatos de televisión antigua en lugar de la inmediatez digital actual.',
+            marketNuance: 'España: El usuario valora el dinamismo, el humor directo y la receta explicada al grano.',
+            opportunityLevel: 'high',
+          },
+          {
+            id: 'gap-es-cook-4',
+            category: 'weak-competitor-execution',
+            title: 'Ausencia de Vídeos Cortos Verticales con Tarjeta de Receta en el Primer Comentario',
+            description: `Faltan Reels y Shorts donde en 45 segundos se muestre el proceso visual y en texto limpio queden las cantidades exactas para guardar en favoritos.`,
+            whyCompetitorsMissedIt: 'Poca disciplina en optimizar la llamada a guardar y compartir.',
+            marketNuance: 'España: Alto consumo de Reels en móviles para consultar directamente en la cocina.',
+            opportunityLevel: 'very-high',
+          }
+        );
+      } else {
+        gaps.push(
+          {
+            id: 'gap-es-cook-1',
+            category: 'underserved-market-need',
+            title: 'Proporciones Exactas de Líquido, Fuego y Tiempo Real de Cocinado',
+            description: `Gran parte de los tutoriales sobre ${topicClean} dan medidas ambiguas 'a ojo'. En España el público busca proporciones exactas (gramos y mililitros), potencia de fuegos domésticos (vitrocerámica/inducción) y tiempos calibrados.`,
+            whyCompetitorsMissedIt: 'Los creadores experimentados cocinan por intuición y olvidan indicar las medidas exactas y la potencia de fuego para quien empieza.',
+            marketNuance: 'España (es-ES): Preferencia por medidas exactas en báscula digital, aceite de oliva virgen extra y productos habituales de Mercadona, Carrefour o Lidl.',
+            opportunityLevel: 'critical',
+          },
+          {
+            id: 'gap-es-cook-2',
+            category: 'unanswered-question',
+            title: 'Cómo Evitar que Quede Apelmazado, Blando o Sin Sabor (El Secreto de la Textura y el Reposo)',
+            description: `La duda constante al preparar ${topicClean} es el punto de textura: evitar que se pase de cocción, quede duro o pierda su textura suelta. Más del 80% de vídeos no explican la importancia del calor residual y el tiempo de reposo tapado.`,
+            whyCompetitorsMissedIt: 'Foco exclusivo en la presentación del plato terminado sin enseñar el control del fuego y el reposo clave.',
+            marketNuance: 'España: Gusto por la cocina de producto bien ejecutada, con textura perfecta y sabor equilibrado.',
+            opportunityLevel: 'very-high',
+          },
+          {
+            id: 'gap-es-cook-3',
+            category: 'oversaturated-angle',
+            title: 'Saturación de Vídeos Largos con Charlas Innecesarias Antes de Cocinar',
+            description: `Muchos canales tradicionales en España siguen grabando vídeos de 20 minutos donde tardan 8 minutos solo en encender el fuego.`,
+            whyCompetitorsMissedIt: 'Anclaje en formatos de televisión antigua en lugar de la inmediatez digital actual.',
+            marketNuance: 'España: El usuario valora el dinamismo, el humor directo y la receta explicada al grano.',
+            opportunityLevel: 'high',
+          },
+          {
+            id: 'gap-es-cook-4',
+            category: 'weak-competitor-execution',
+            title: 'Ausencia de Vídeos Cortos Verticales con las Proporciones Claras en el Primer Comentario',
+            description: `Faltan Reels y Shorts donde en 45 segundos se muestre el proceso visual y en texto limpio queden las cantidades exactas y tiempos para guardar en favoritos.`,
+            whyCompetitorsMissedIt: 'Poca disciplina en optimizar la llamada a guardar y compartir.',
+            marketNuance: 'España: Alto consumo de Reels en móviles para consultar directamente en la cocina.',
+            opportunityLevel: 'very-high',
+          }
+        );
+      }
     } else {
       // en-GB
-      gaps.push(
-        {
-          id: 'gap-uk-cook-1',
-          category: 'underserved-market-need',
-          title: 'UK Metric Measurements & Supermarket Ingredients vs US Cup Clutter',
-          description: `Too many videos about ${topicClean} uncritically use American cups, sticks of butter, and US-specific flour terms (all-purpose vs cake flour) rather than British metric weights (grams), plain/self-raising flour, and standard UK fan oven temperatures (160°C - 180°C).`,
-          whyCompetitorsMissedIt: 'Creators lazily republish American viral recipes without converting to British kitchen standards or UK ingredient formulations.',
-          marketNuance: 'United Kingdom (en-GB): UK bakers demand grams, millilitres, fan oven temperatures in Celsius, and ingredients readily found in Tesco, Sainsbury’s, or Aldi.',
-          opportunityLevel: 'critical',
-        },
-        {
-          id: 'gap-uk-cook-2',
-          category: 'unanswered-question',
-          title: 'Why It Sinks in the Middle or Turns Out Dry (And the Scientific Fix)',
-          description: `The single biggest complaint from home bakers making ${topicClean} is a sunken centre or dry, crumbly texture. Over 80% of competitor videos skip the chemistry of leavening agents and over-mixing gluten.`,
-          whyCompetitorsMissedIt: 'Most creators showcase only glamorous finished bakes rather than troubleshooting genuine home oven inconsistencies.',
-          marketNuance: 'UK: Viewers respect straightforward, science-backed culinary explanations in the vein of Mary Berry or James Martin.',
-          opportunityLevel: 'very-high',
-        },
-        {
-          id: 'gap-uk-cook-3',
-          category: 'oversaturated-angle',
-          title: 'Over-Stylised Aesthetic Clips with Zero Practical Utility',
-          description: `YouTube Shorts and TikTok feeds are flooded with hyper-edited aesthetic montages set to lo-fi music that fail to display tin dimensions, lining techniques, or exact bake times, leaving viewers unable to recreate the dish.`,
-          whyCompetitorsMissedIt: 'Chasing aesthetic view counts over pedagogical clarity and recipe reproducibility.',
-          marketNuance: 'UK: Pragmatic home cooks want clear step-by-step instructions without self-indulgent camera posturing.',
-          opportunityLevel: 'high',
-        },
-        {
-          id: 'gap-uk-cook-4',
-          category: 'weak-competitor-execution',
-          title: 'Lack of Concise One-Bowl Bakes with Clear Save-to-Phone Recipe Cards',
-          description: `Competitors either deliver 18-minute rambling vlogs or snappy shorts that forget to pin the exact ingredient weights. There is huge demand for a 45-second vertical tutorial with an instant recipe card.`,
-          whyCompetitorsMissedIt: 'Lack of appreciation for mobile-first kitchen usability and bookmarking behaviour.',
-          marketNuance: 'UK: Paced, understated British delivery with clear calls to bookmark for weekend baking.',
-          opportunityLevel: 'very-high',
-        }
-      );
+      if (isBaking) {
+        gaps.push(
+          {
+            id: 'gap-uk-cook-1',
+            category: 'underserved-market-need',
+            title: 'UK Metric Measurements & Supermarket Ingredients vs US Cup Clutter',
+            description: `Too many videos about ${topicClean} uncritically use American cups, sticks of butter, and US-specific flour terms (all-purpose vs cake flour) rather than British metric weights (grams), plain/self-raising flour, and standard UK fan oven temperatures (160°C - 180°C).`,
+            whyCompetitorsMissedIt: 'Creators lazily republish American viral recipes without converting to British kitchen standards or UK ingredient formulations.',
+            marketNuance: 'United Kingdom (en-GB): UK bakers demand grams, millilitres, fan oven temperatures in Celsius, and ingredients readily found in Tesco, Sainsbury’s, or Aldi.',
+            opportunityLevel: 'critical',
+          },
+          {
+            id: 'gap-uk-cook-2',
+            category: 'unanswered-question',
+            title: 'Why It Sinks in the Middle or Turns Out Dry (And the Scientific Fix)',
+            description: `The single biggest complaint from home bakers making ${topicClean} is a sunken centre or dry, crumbly texture. Over 80% of competitor videos skip the chemistry of leavening agents and over-mixing gluten.`,
+            whyCompetitorsMissedIt: 'Most creators showcase only glamorous finished bakes rather than troubleshooting genuine home oven inconsistencies.',
+            marketNuance: 'UK: Viewers respect straightforward, science-backed culinary explanations in the vein of Mary Berry or James Martin.',
+            opportunityLevel: 'very-high',
+          },
+          {
+            id: 'gap-uk-cook-3',
+            category: 'oversaturated-angle',
+            title: 'Over-Stylised Aesthetic Clips with Zero Practical Utility',
+            description: `YouTube Shorts and TikTok feeds are flooded with hyper-edited aesthetic montages set to lo-fi music that fail to display tin dimensions, lining techniques, or exact bake times, leaving viewers unable to recreate the dish.`,
+            whyCompetitorsMissedIt: 'Chasing aesthetic view counts over pedagogical clarity and recipe reproducibility.',
+            marketNuance: 'UK: Pragmatic home cooks want clear step-by-step instructions without self-indulgent camera posturing.',
+            opportunityLevel: 'high',
+          },
+          {
+            id: 'gap-uk-cook-4',
+            category: 'weak-competitor-execution',
+            title: 'Lack of Concise One-Bowl Bakes with Clear Save-to-Phone Recipe Cards',
+            description: `Competitors either deliver 18-minute rambling vlogs or snappy shorts that forget to pin the exact ingredient weights. There is huge demand for a 45-second vertical tutorial with an instant recipe card.`,
+            whyCompetitorsMissedIt: 'Lack of appreciation for mobile-first kitchen usability and bookmarking behaviour.',
+            marketNuance: 'UK: Paced, understated British delivery with clear calls to bookmark for weekend baking.',
+            opportunityLevel: 'very-high',
+          }
+        );
+      } else {
+        gaps.push(
+          {
+            id: 'gap-uk-cook-1',
+            category: 'underserved-market-need',
+            title: 'Precise Metric Ratios & Hob Temperatures vs US Cup Confusion',
+            description: `Too many recipes for ${topicClean} rely on ambiguous 'handfuls' or US measuring cups. British home cooks want exact grams, water-to-ingredient ratios, and heat control on standard UK domestic hobs (gas or induction).`,
+            whyCompetitorsMissedIt: 'Experienced cooks rely on muscle memory and fail to provide exact metric ratios and timings for newcomers.',
+            marketNuance: 'United Kingdom (en-GB): UK cooks demand grams, millilitres, domestic hob heat settings, and ingredients readily found in Tesco, Sainsbury’s, or Aldi.',
+            opportunityLevel: 'critical',
+          },
+          {
+            id: 'gap-uk-cook-2',
+            category: 'unanswered-question',
+            title: 'Why It Turns Out Mushy, Tough, or Bland (And the Scientific Fix)',
+            description: `The single biggest complaint when making ${topicClean} is inconsistent texture—turning out stodgy, overcooked, or dry. Creators rarely explain the simple science of resting and residual heat.`,
+            whyCompetitorsMissedIt: 'Most creators showcase only glamorous finished plates rather than troubleshooting common heat control mistakes.',
+            marketNuance: 'UK: Viewers respect straightforward, science-backed culinary explanations with clear troubleshooting.',
+            opportunityLevel: 'very-high',
+          },
+          {
+            id: 'gap-uk-cook-3',
+            category: 'oversaturated-angle',
+            title: 'Over-Stylised Aesthetic Clips with Zero Exact Timings or Quantities',
+            description: `Feeds are flooded with hyper-edited aesthetic montages set to lo-fi music that fail to show exact water ratios, pan temperatures, or rest times, leaving viewers unable to recreate the dish.`,
+            whyCompetitorsMissedIt: 'Chasing aesthetic view counts over pedagogical clarity and recipe reproducibility.',
+            marketNuance: 'UK: Pragmatic home cooks want clear step-by-step instructions without self-indulgent camera posturing.',
+            opportunityLevel: 'high',
+          },
+          {
+            id: 'gap-uk-cook-4',
+            category: 'weak-competitor-execution',
+            title: 'Lack of Concise 45-Second Tutorials with Save-to-Phone Measurement Cards',
+            description: `Competitors either deliver 18-minute rambling vlogs or snappy shorts that forget to pin the exact ratios. There is huge demand for a 45-second vertical tutorial with an instant recipe card.`,
+            whyCompetitorsMissedIt: 'Lack of appreciation for mobile-first kitchen usability and bookmarking behaviour.',
+            marketNuance: 'UK: Paced, understated British delivery with clear calls to bookmark for weeknight dinners.',
+            opportunityLevel: 'very-high',
+          }
+        );
+      }
     }
   } else if (domainInfo.isGardening) {
     if (market === 'en-GB') {
@@ -684,42 +849,42 @@ export function detectContentGaps(req: ResearchRequest, competitors: CompetitorR
       );
     }
   } else {
-    // General / Tech
+    // General Domain (Lifestyle, Crafts, Skills, Hobbies, Practical Guides)
     if (market === 'en-GB') {
       gaps.push(
         {
           id: 'gap-uk-gen-1',
           category: 'underserved-market-need',
-          title: 'Practical Hands-On Walkthrough vs Generic High-Level Theory',
-          description: `Most videos on ${topicClean} remain stuck in high-level concepts, leaving learners stranded when attempting to implement the first real steps.`,
-          whyCompetitorsMissedIt: 'Explaining concepts is easier than building and debugging a real, end-to-end example on camera.',
-          marketNuance: 'UK: Direct, articulate delivery with real tools, step-by-step logic, and zero corporate buzzwords.',
+          title: 'Clear Execution & Realistic Results vs Vague Superficial Advice',
+          description: `Most videos on ${topicClean} remain stuck in high-level commentary, leaving learners stranded when attempting to implement the first real steps.`,
+          whyCompetitorsMissedIt: 'Explaining concepts in broad strokes is easier than demonstrating and troubleshooting a real example from start to finish on camera.',
+          marketNuance: 'UK: Direct, articulate delivery with practical steps, honest expectations, and zero exaggerated hype.',
           opportunityLevel: 'critical',
         },
         {
           id: 'gap-uk-gen-2',
           category: 'unanswered-question',
-          title: 'How to Overcome the Most Common Roadblock When Starting from Scratch',
-          description: `Beginners routinely hit an immediate wall in ${topicClean} that causes them to abandon the process within 48 hours. A clear troubleshooting guide solves this acute pain point.`,
-          whyCompetitorsMissedIt: 'Experts forget what was confusing when they were beginners.',
+          title: 'How to Fix the #1 Frustrating Stumbling Block from Day One',
+          description: `Beginners tackling ${topicClean} consistently hit an immediate friction point that causes early frustration and abandoned attempts. A straightforward troubleshooting guide solves this acute pain point.`,
+          whyCompetitorsMissedIt: 'Experienced creators overlook the basic hurdles that trip up newcomers right at the start.',
           marketNuance: 'UK: Step-by-step diagnostic checklists with clear "do this, not that" instructions.',
           opportunityLevel: 'very-high',
         },
         {
           id: 'gap-uk-gen-3',
           category: 'oversaturated-angle',
-          title: 'Endless Beginner Introductions That Never Progress Beyond the Basics',
-          description: `The market is saturated with "Introduction to ${topicClean}" videos that stop right when the material gets interesting and genuinely useful.`,
-          whyCompetitorsMissedIt: 'Introductory videos are easy to generate and churn out.',
-          marketNuance: 'UK: High appetite for intermediate shortcuts and practical workflows.',
+          title: 'Repetitive Surface Introductions That Never Show How to Actually Execute',
+          description: `The market is saturated with basic introductory videos about ${topicClean} that stop right when the viewer needs actionable technique and practical depth.`,
+          whyCompetitorsMissedIt: 'Surface-level overview videos are quick to churn out but build very little lasting audience loyalty.',
+          marketNuance: 'UK: High appetite for intermediate shortcuts and practical, reliable workflows.',
           opportunityLevel: 'high',
         },
         {
           id: 'gap-uk-gen-4',
           category: 'weak-competitor-execution',
-          title: 'Absence of 45-Second Vertical Quick Reference Guides',
-          description: `Viewers looking for rapid reference solutions do not want to scrub through a 20-minute video to find one setting or command.`,
-          whyCompetitorsMissedIt: 'Slow adaptation to short-form educational formats.',
+          title: 'Absence of a Dynamic 45-Second Vertical Guide with the Key Takeaway',
+          description: `Viewers looking for rapid reference solutions do not want to scrub through rambling long videos. There is strong demand for 45-second vertical guides with clean on-screen summaries.`,
+          whyCompetitorsMissedIt: 'Slow adaptation to mobile-first, high-density educational formats.',
           marketNuance: 'UK: Mobile-optimised formatting with on-screen annotations and clear save triggers.',
           opportunityLevel: 'very-high',
         }
@@ -729,26 +894,26 @@ export function detectContentGaps(req: ResearchRequest, competitors: CompetitorR
         {
           id: 'gap-es-gen-1',
           category: 'underserved-market-need',
-          title: 'Demostración Práctica Real frente a Diapositivas Teóricas Vacías',
-          description: `Gran parte de los contenidos sobre ${topicClean} se limitan a presentaciones teóricas sin enseñar el proceso real y las pantallas de trabajo paso a paso.`,
-          whyCompetitorsMissedIt: 'Resulta más fácil divagar en general que resolver y depurar un caso real frente a la cámara.',
-          marketNuance: 'España (es-ES): El público valora el pragmatismo, herramientas reales y transparencia de principio a fin.',
+          title: 'Demostración Práctica Real frente a Consejos Superficiales y Genéricos',
+          description: `Gran parte de los contenidos sobre ${topicClean} se quedan en la superficie, ofreciendo consejos genéricos sin enseñar la ejecución real y los matices clave para que funcione.`,
+          whyCompetitorsMissedIt: 'Resulta más fácil dar consejos abstractos que demostrar y resolver un caso real de principio a fin frente a la cámara.',
+          marketNuance: 'España (es-ES): El público valora el pragmatismo, ejemplos claros y transparencia de principio a fin.',
           opportunityLevel: 'critical',
         },
         {
           id: 'gap-es-gen-2',
           category: 'unanswered-question',
-          title: 'Cómo Superar el Primer Obstáculo Crítico al Empezar de Cero',
-          description: `Los principiantes en ${topicClean} suelen encallarse en un punto concreto que provoca el abandono en la primera semana. Falta una guía directa de resolución.`,
-          whyCompetitorsMissedIt: 'Los creadores experimentados olvidan las dudas iniciales de quien está dando sus primeros pasos.',
+          title: 'Cómo Resolver el Obstáculo Crítico que Frustra a la Mayoría al Empezar',
+          description: `Quienes empiezan con ${topicClean} suelen encallarse en un punto concreto que genera frustración y abandono temprano. Falta una guía directa y sencilla de resolución.`,
+          whyCompetitorsMissedIt: 'Los creadores experimentados olvidan las dudas y dificultades iniciales de quien está dando sus primeros pasos.',
           marketNuance: 'España: Explicación accesible, tono constructivo y consejos aplicables al instante.',
           opportunityLevel: 'very-high',
         },
         {
           id: 'gap-es-gen-3',
           category: 'oversaturated-angle',
-          title: 'Saturación de Vídeos Introductorios que Nunca Llegan a la Práctica',
-          description: `Exceso de vídeos tipo "qué es ${topicClean}" que finalizan justo en el momento en que el usuario necesita aprender a ejecutarlo.`,
+          title: 'Saturación de Introducciones Repetitivas que Nunca Pasan a la Acción',
+          description: `Exceso de vídeos introductorios sobre ${topicClean} que repiten generalidades pero nunca enseñan el método paso a paso para aplicarlo con éxito.`,
           whyCompetitorsMissedIt: 'Los vídeos superficiales son rápidos de grabar pero generan poco valor duradero.',
           marketNuance: 'España: Búsqueda de atajos eficaces y metodologías para aplicar hoy mismo.',
           opportunityLevel: 'high',
@@ -756,7 +921,7 @@ export function detectContentGaps(req: ResearchRequest, competitors: CompetitorR
         {
           id: 'gap-es-gen-4',
           category: 'weak-competitor-execution',
-          title: 'Ausencia de Formato Corto Vertical con Solución Inmediata en 45 Segundos',
+          title: 'Ausencia de Formato Corto Vertical con la Clave Exacta en 45 Segundos',
           description: `Falta el creador que sintetice la clave exacta en 40-50 segundos en formato vertical con subtítulos limpios y sin rodeos.`,
           whyCompetitorsMissedIt: 'Aferramiento a vídeos largos de 20 minutos con introducciones lentas.',
           marketNuance: 'España: Dinamismo, formato directo y llamada a guardar para futuras consultas.',
@@ -768,17 +933,17 @@ export function detectContentGaps(req: ResearchRequest, competitors: CompetitorR
         {
           id: 'gap-pt-gen-1',
           category: 'underserved-market-need',
-          title: 'Demonstração Prática Real vs Teoria Vazia de Apresentação',
-          description: `Grande parte dos vídeos sobre ${topicClean} fica-se por diapositivos e definições genéricas, sem mostrar a execução real do início ao fim.`,
-          whyCompetitorsMissedIt: 'É mais fácil falar genericamente do que construir e demonstrar um processo completo no ecrã.',
+          title: 'Demonstração Prática Real vs Conselhos Vagos e Superficiais',
+          description: `Grande parte dos conteúdos sobre ${topicClean} fica-se pela superfície, com dicas genéricas sem mostrar a execução real e os detalhes fundamentais para dar certo.`,
+          whyCompetitorsMissedIt: 'É mais fácil falar em termos abstratos do que demonstrar e resolver um caso real do início ao fim diante da câmara.',
           marketNuance: 'Mercado Local: O público valoriza pragmatismo, exemplos concretos e transparência de processos.',
           opportunityLevel: 'critical',
         },
         {
           id: 'gap-pt-gen-2',
           category: 'unanswered-question',
-          title: 'Como Superar o Primeiro Grande Obstáculo ao Começar do Zero',
-          description: `Principiantes em ${topicClean} deparam-se com um bloqueio imediato que causa desistência logo na primeira semana. Falta o guia cirúrgico de resolução.`,
+          title: 'Como Resolver o Principal Bloqueio que Frustra Quem Está a Começar',
+          description: `Quem começa em ${topicClean} depara-se com uma dificuldade inicial concreta que gera frustração e desistência precoce. Falta um guia direto de resolução prática.`,
           whyCompetitorsMissedIt: 'Criadores experientes esquecem as dúvidas mais básicas de quem está no ponto de partida.',
           marketNuance: 'Passo a passo com linguagem acolhedora e incentivo prático.',
           opportunityLevel: 'very-high',
@@ -786,8 +951,8 @@ export function detectContentGaps(req: ResearchRequest, competitors: CompetitorR
         {
           id: 'gap-pt-gen-3',
           category: 'oversaturated-angle',
-          title: 'Saturação de Vídeos Introdutórios Repetitivos',
-          description: `Excesso de conteúdos com 'o que é ${topicClean}' que nunca chegam à fase da aplicação prática.`,
+          title: 'Saturação de Vídeos Introdutórios que Nunca Passam à Prática',
+          description: `Excesso de conteúdos sobre ${topicClean} que repetem generalidades teóricas sem nunca ensinar o método passo a passo para aplicar com sucesso.`,
           whyCompetitorsMissedIt: 'Vídeos superficiais são mais rápidos de produzir mas geram baixa fidelidade.',
           marketNuance: 'Procura por atalhos acionáveis e métodos aplicáveis no próprio dia.',
           opportunityLevel: 'high',
@@ -796,7 +961,7 @@ export function detectContentGaps(req: ResearchRequest, competitors: CompetitorR
           id: 'gap-pt-gen-4',
           category: 'weak-competitor-execution',
           title: 'Falta de Formatos Curtos Verticais com Dica Única Acionável',
-          description: `Falta o criador que entregue a solução exata em 40 segundos, gravado para vertical com legendas limpas.`,
+          description: `Falta o criador que entregue a solução exata em 40-50 segundos, gravado para vertical com legendas limpas e direto ao assunto.`,
           whyCompetitorsMissedIt: 'Prevalência de vídeos compridos com introduções desnecessárias.',
           marketNuance: 'Formato dinâmico, moderno e direto ao assunto.',
           opportunityLevel: 'very-high',
