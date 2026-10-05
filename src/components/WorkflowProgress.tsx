@@ -11,6 +11,7 @@ import {
   Link2,
   CheckCircle2,
 } from 'lucide-react';
+import { useLanguage } from '../i18n/LanguageContext.js';
 
 interface WorkflowProgressProps {
   currentStage: number; // 1 to 9
@@ -23,16 +24,18 @@ export const WorkflowProgress: React.FC<WorkflowProgressProps> = ({
   onSelectStage,
   isProcessing,
 }) => {
+  const { t } = useLanguage();
+
   const steps = [
-    { id: 1, label: 'Input', icon: Search, anchor: 'section-input' },
-    { id: 2, label: '10–20 Concorrentes', icon: Users, anchor: 'section-competitors' },
-    { id: 3, label: 'Outliers', icon: TrendingUp, anchor: 'section-outliers' },
-    { id: 4, label: 'Gaps de Conteúdo', icon: Target, anchor: 'section-gaps' },
-    { id: 5, label: '20 Ideias Ranqueadas', icon: ListOrdered, anchor: 'section-ideas' },
-    { id: 6, label: 'Melhor Oportunidade', icon: Award, anchor: 'section-best' },
-    { id: 7, label: '3 Variações Roteiro', icon: FileText, anchor: 'section-scripts' },
-    { id: 8, label: 'Títulos / Ganchos / CTA', icon: Flame, anchor: 'section-hooks' },
-    { id: 9, label: 'Fontes Reais', icon: Link2, anchor: 'section-sources' },
+    { id: 1, label: t.workflow.input, icon: Search, anchor: 'section-input' },
+    { id: 2, label: t.workflow.competitors, icon: Users, anchor: 'section-competitors' },
+    { id: 3, label: t.workflow.outliers, icon: TrendingUp, anchor: 'section-outliers' },
+    { id: 4, label: t.workflow.gaps, icon: Target, anchor: 'section-gaps' },
+    { id: 5, label: t.workflow.ideas, icon: ListOrdered, anchor: 'section-ideas' },
+    { id: 6, label: t.workflow.bestOpportunity, icon: Award, anchor: 'section-best' },
+    { id: 7, label: t.workflow.scripts, icon: FileText, anchor: 'section-scripts' },
+    { id: 8, label: t.workflow.hooks, icon: Flame, anchor: 'section-hooks' },
+    { id: 9, label: t.workflow.sources, icon: Link2, anchor: 'section-sources' },
   ];
 
   return (

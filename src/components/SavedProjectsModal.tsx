@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { X, FolderArchive, Trash2, ArrowRight, Calendar, Compass, RefreshCw } from 'lucide-react';
 import { ProjectSummary } from '../types/index.js';
 import { fetchSavedProjects, deleteProjectById } from '../lib/api.js';
+import { useLanguage } from '../i18n/LanguageContext.js';
 
 interface SavedProjectsModalProps {
   isOpen: boolean;
@@ -14,6 +15,7 @@ export const SavedProjectsModal: React.FC<SavedProjectsModalProps> = ({
   onClose,
   onSelectProject,
 }) => {
+  const { t } = useLanguage();
   const [projects, setProjects] = useState<ProjectSummary[]>([]);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -37,7 +39,7 @@ export const SavedProjectsModal: React.FC<SavedProjectsModalProps> = ({
 
   const handleDelete = async (id: string, e: React.MouseEvent) => {
     e.stopPropagation();
-    if (confirm('Tem a certeza que deseja eliminar este projeto guardado?')) {
+    if (confirm(t.savedProjectsModal.confirmDelete)) {
       await deleteProjectById(id);
       setProjects((prev) => prev.filter((p) => p.id !== id));
     }
@@ -52,7 +54,7 @@ export const SavedProjectsModal: React.FC<SavedProjectsModalProps> = ({
         <div className="p-5 border-b border-slate-800 flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <FolderArchive className="w-5 h-5 text-brand-400" />
-            <h3 className="font-bold text-lg text-white">Projetos & Pesquisas Guardadas</h3>
+            <h3 className="font-bold text-lg text-white">{t.savedProjectsModal.title}</h3>
           </div>
           <button
             onClick={onClose}
@@ -65,13 +67,13 @@ export const SavedProjectsModal: React.FC<SavedProjectsModalProps> = ({
         {/* Content */}
         <div className="p-5 overflow-y-auto flex-1 space-y-3">
           {isLoading ? (
-            <div className="py-12 text-center text-slate-400">A carregar projetos...</div>
+            <div className="py-12 text-center text-slate-400">{t.savedProjectsModal.loading}</div>
           ) : projects.length === 0 ? (
             <div className="py-12 text-center space-y-2">
               <Compass className="w-10 h-10 text-slate-600 mx-auto" />
-              <p className="text-sm text-slate-400">Nenhum projeto guardado ainda.</p>
+              <p className="text-sm text-slate-400">{t.savedProjectsModal.emptyTitle}</p>
               <p className="text-xs text-slate-500">
-                Execute uma pesquisa no formulário principal para guardar automaticamente.
+                {t.savedProjectsModal.emptySubtitle}
               </p>
             </div>
           ) : (
@@ -94,7 +96,7 @@ export const SavedProjectsModal: React.FC<SavedProjectsModalProps> = ({
                     </span>
                   </div>
                   <p className="text-xs text-slate-400 line-clamp-1">
-                    Melhor ideia: <span className="text-slate-300">{proj.bestIdeaTitle}</span>
+                    {t.savedProjectsModal.bestIdeaLabel} <span className="text-slate-300">{proj.bestIdeaTitle}</span>
                   </p>
                   <div className="flex items-center space-x-3 text-[11px] text-slate-500 pt-0.5">
                     <span className="flex items-center gap-1">
@@ -102,41 +104,23 @@ export const SavedProjectsModal: React.FC<SavedProjectsModalProps> = ({
                       {new Date(proj.createdAt).toLocaleDateString()}
                     </span>
                     <span>•</span>
-                    <span>{proj.competitorCount} concorrentes</span>
-                    <span>•</span>
-                    <span className="text-brand-400 font-semibold font-mono">
-                      Score {proj.opportunityScore}/100
-                    </span>
+                    <span>Score: {proj.opportunityScore}</span>
                   </div>
                 </div>
 
-                <div className="flex items-center space-x-2 pl-4">
+                <div className="flex items-center space-x-2">
                   <button
                     onClick={(e) => handleDelete(proj.id, e)}
                     className="p-2 rounded-lg hover:bg-rose-500/20 text-slate-500 hover:text-rose-400 transition"
-                    title="Eliminar projeto"
+                    title={t.savedProjectsModal.deleteTooltip}
                   >
                     <Trash2 className="w-4 h-4" />
                   </button>
-                  <div className="p-2 rounded-lg bg-slate-900 text-slate-400 group-hover:text-brand-400 group-hover:bg-brand-500/10 transition">
-                    <ArrowRight className="w-4 h-4" />
-                  </div>
+                  <ArrowRight className="w-4 h-4 text-slate-500 group-hover:text-brand-400 group-hover:translate-x-0.5 transition" />
                 </div>
               </div>
             ))
           )}
-        </div>
-
-        {/* Footer */}
-        <div className="p-4 border-t border-slate-800 bg-slate-950 flex justify-between items-center text-xs text-slate-500">
-          <span>{projects.length} projeto(s) encontrados</span>
-          <button
-            onClick={loadProjects}
-            className="flex items-center gap-1 text-slate-400 hover:text-slate-200"
-          >
-            <RefreshCw className="w-3 h-3" />
-            <span>Atualizar</span>
-          </button>
         </div>
       </div>
     </div>

@@ -1,35 +1,38 @@
 import React from 'react';
 import { Target, AlertTriangle, HelpCircle, XCircle, ArrowUpRight, Compass } from 'lucide-react';
 import { ContentGap } from '../types/index.js';
+import { useLanguage } from '../i18n/LanguageContext.js';
 
 interface ContentGapsSectionProps {
   gaps: ContentGap[];
 }
 
 export const ContentGapsSection: React.FC<ContentGapsSectionProps> = ({ gaps }) => {
+  const { t } = useLanguage();
+
   const getCategoryMeta = (cat: ContentGap['category']) => {
     switch (cat) {
       case 'underserved-market-need':
         return {
-          label: 'Necessidade Local Desatendida',
+          label: t.gaps.categories.underserved,
           icon: Compass,
           color: 'text-amber-400 bg-amber-500/10 border-amber-500/20',
         };
       case 'oversaturated-angle':
         return {
-          label: 'Ângulo Saturado a Evitar',
+          label: t.gaps.categories.oversaturated,
           icon: XCircle,
           color: 'text-rose-400 bg-rose-500/10 border-rose-500/20',
         };
       case 'unanswered-question':
         return {
-          label: 'Dúvida Sem Resposta Prática',
+          label: t.gaps.categories.unanswered,
           icon: HelpCircle,
           color: 'text-indigo-400 bg-indigo-500/10 border-indigo-500/20',
         };
       case 'weak-competitor-execution':
         return {
-          label: 'Execução Fraca dos Concorrentes',
+          label: t.gaps.categories.weakExecution,
           icon: AlertTriangle,
           color: 'text-emerald-400 bg-emerald-500/10 border-emerald-500/20',
         };
@@ -39,11 +42,23 @@ export const ContentGapsSection: React.FC<ContentGapsSectionProps> = ({ gaps }) 
   const getPriorityBadge = (lvl: ContentGap['opportunityLevel']) => {
     switch (lvl) {
       case 'critical':
-        return <span className="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase bg-rose-500/20 text-rose-300 border border-rose-500/30">Oportunidade Crítica</span>;
+        return (
+          <span className="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase bg-rose-500/20 text-rose-300 border border-rose-500/30">
+            {t.gaps.priorities.critical}
+          </span>
+        );
       case 'very-high':
-        return <span className="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase bg-brand-500/20 text-brand-300 border border-brand-500/30">Oportunidade Muito Alta</span>;
+        return (
+          <span className="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase bg-brand-500/20 text-brand-300 border border-brand-500/30">
+            {t.gaps.priorities.veryHigh}
+          </span>
+        );
       case 'high':
-        return <span className="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase bg-blue-500/20 text-blue-300 border border-blue-500/30">Oportunidade Alta</span>;
+        return (
+          <span className="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase bg-blue-500/20 text-blue-300 border border-blue-500/30">
+            {t.gaps.priorities.high}
+          </span>
+        );
     }
   };
 
@@ -52,14 +67,14 @@ export const ContentGapsSection: React.FC<ContentGapsSectionProps> = ({ gaps }) 
       {/* Header */}
       <div className="flex items-center space-x-2 pb-4 border-b border-slate-800">
         <span className="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold text-sm">
-          4
+          {t.gaps.step}
         </span>
         <div>
           <h2 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
-            Deteção de Lacunas de Conteúdo (Content Gaps)
+            {t.gaps.title}
           </h2>
           <p className="text-slate-400 text-xs sm:text-sm mt-0.5">
-            O que os concorrentes repetem em excesso vs o que o público procura e não encontra.
+            {t.gaps.subtitle}
           </p>
         </div>
       </div>
@@ -94,19 +109,19 @@ export const ContentGapsSection: React.FC<ContentGapsSectionProps> = ({ gaps }) 
                 {/* Why competitors missed it */}
                 <div className="mt-3 p-2.5 rounded-lg bg-slate-900/80 border border-slate-800/80 text-xs space-y-1">
                   <span className="text-slate-400 font-medium block text-[11px] uppercase tracking-wider">
-                    Por que a concorrência falhou:
+                    {t.gaps.whyCompetitorsMissed}
                   </span>
                   <p className="text-slate-300">{gap.whyCompetitorsMissedIt}</p>
                 </div>
               </div>
 
-              {/* Market Nuance */}
-              <div className="mt-4 pt-3 border-t border-slate-900 text-xs text-brand-300 flex items-start space-x-2">
-                <ArrowUpRight className="w-3.5 h-3.5 text-brand-400 shrink-0 mt-0.5" />
-                <span>
-                  <strong className="text-white font-semibold">Nuance Local:</strong> {gap.marketNuance}
-                </span>
-              </div>
+              {/* Market nuance */}
+              {gap.marketNuance && (
+                <div className="mt-4 pt-3 border-t border-slate-900 flex items-start space-x-2 text-xs text-amber-300/80">
+                  <span className="font-semibold text-amber-400">{t.gaps.marketNuance}</span>
+                  <span className="text-slate-300">{gap.marketNuance}</span>
+                </div>
+              )}
             </div>
           );
         })}

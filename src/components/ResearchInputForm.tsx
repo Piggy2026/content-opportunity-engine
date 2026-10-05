@@ -1,85 +1,28 @@
 import React, { useState } from 'react';
-import { Search, Sparkles, Youtube, Video, Smartphone, Globe, Layers, ChevronDown, Check } from 'lucide-react';
+import { Search, Sparkles, Youtube, Video, Smartphone, Globe, Layers, ChevronDown, Check, Info } from 'lucide-react';
 import { ResearchRequest, TargetMarket, Platform, MarketOption, PlatformOption } from '../types/index.js';
+import { useLanguage } from '../i18n/LanguageContext.js';
 
 interface ResearchInputFormProps {
   onSubmit: (request: ResearchRequest) => void;
   isLoading: boolean;
   loadingProgress?: string;
+  selectedMarket?: TargetMarket;
+  onMarketChange?: (market: TargetMarket) => void;
 }
 
-export const MARKETS: MarketOption[] = [
-  {
-    id: 'pt-PT',
-    name: 'Portugal',
-    country: 'Portugal',
-    flag: '🇵🇹',
-    language: 'Português Europeu',
-    localeCode: 'pt-PT',
-    description: 'Gramática portuguesa (ecrã, telemóvel, faturas), IRS, banca local e taxas Euribor.',
-  },
-  {
-    id: 'pt-BR',
-    name: 'Brasil',
-    country: 'Brasil',
-    flag: '🇧🇷',
-    language: 'Português Brasileiro',
-    localeCode: 'pt-BR',
-    description: 'Comunicação dinâmica (celular, tela, grana), Selic, Pix, juros reais e classe média.',
-  },
-  {
-    id: 'es-ES',
-    name: 'España',
-    country: 'España',
-    flag: '🇪🇸',
-    language: 'Español Peninsular',
-    localeCode: 'es-ES',
-    description: 'Castellano (móvil, Hacienda, autónomos, IRPF), deducciones y marco legal comunitario.',
-  },
-  {
-    id: 'en-GB',
-    name: 'United Kingdom',
-    country: 'United Kingdom',
-    flag: '🇬🇧',
-    language: 'British English',
-    localeCode: 'en-GB',
-    description: 'Natural British English (mobile, flat, holiday, CV), HMRC, ISA, NI, VAT, and UK cost of living.',
-  },
+const MARKET_BASE_CONFIG: { id: TargetMarket; flag: string; country: string; localeCode: string }[] = [
+  { id: 'pt-PT', flag: '🇵🇹', country: 'Portugal', localeCode: 'pt-PT' },
+  { id: 'pt-BR', flag: '🇧🇷', country: 'Brasil', localeCode: 'pt-BR' },
+  { id: 'es-ES', flag: '🇪🇸', country: 'España', localeCode: 'es-ES' },
+  { id: 'en-GB', flag: '🇬🇧', country: 'United Kingdom', localeCode: 'en-GB' },
 ];
 
-export const PLATFORMS: PlatformOption[] = [
-  {
-    id: 'youtube',
-    name: 'YouTube',
-    icon: 'youtube',
-    format: 'Long-form (10–18 min)',
-    recommendedLength: '12-16 min',
-    description: 'Vídeos aprofundados com demonstração de tela, alta retenção de meio de vídeo e autoridade.',
-  },
-  {
-    id: 'youtube-shorts',
-    name: 'YouTube Shorts',
-    icon: 'video',
-    format: 'Vertical (9:16, 30–60s)',
-    recommendedLength: '45 seg',
-    description: 'Ritmo acelerado, gancho nos primeiros 2 segundos, legendas dinâmicas e loop final.',
-  },
-  {
-    id: 'tiktok',
-    name: 'TikTok',
-    icon: 'smartphone',
-    format: 'Vertical (9:16, 35–50s)',
-    recommendedLength: '40 seg',
-    description: 'Estilo autêntico lo-fi, quebra de padrão, gatilhos de debate e chamada para favoritos.',
-  },
-  {
-    id: 'instagram-reels',
-    name: 'Instagram Reels',
-    icon: 'smartphone',
-    format: 'Vertical (9:16, 40–55s)',
-    recommendedLength: '45 seg',
-    description: 'Alta estética, salvamento para consulta posterior e automação de palavras-chave no direct.',
-  },
+const PLATFORM_BASE_CONFIG: { id: Platform; name: string; icon: string }[] = [
+  { id: 'youtube', name: 'YouTube', icon: 'youtube' },
+  { id: 'youtube-shorts', name: 'YouTube Shorts', icon: 'video' },
+  { id: 'tiktok', name: 'TikTok', icon: 'smartphone' },
+  { id: 'instagram-reels', name: 'Instagram Reels', icon: 'smartphone' },
 ];
 
 const PRESETS = [
@@ -99,12 +42,12 @@ const PRESETS = [
     platform: 'youtube' as Platform,
   },
   {
-    topic: '3 Ferramentas Secretas de IA Gratuitas para Dobrar a Produtividade',
-    market: 'pt-BR' as TargetMarket,
-    platform: 'youtube-shorts' as Platform,
+    topic: 'How to Invest in Stocks & Shares ISAs and Minimise Capital Gains Tax in the UK',
+    market: 'en-GB' as TargetMarket,
+    platform: 'youtube' as Platform,
   },
   {
-    topic: 'How to Invest in Stocks & Shares ISAs and Minimise Capital Gains Tax in the UK',
+    topic: 'How to make a rich chocolate cake from scratch',
     market: 'en-GB' as TargetMarket,
     platform: 'youtube' as Platform,
   },
@@ -114,13 +57,21 @@ export const ResearchInputForm: React.FC<ResearchInputFormProps> = ({
   onSubmit,
   isLoading,
   loadingProgress,
+  selectedMarket,
+  onMarketChange,
 }) => {
+  const { t, uiLanguage, getOutputLanguageName } = useLanguage();
   const [topic, setTopic] = useState('');
-  const [market, setMarket] = useState<TargetMarket>('pt-PT');
+  const [market, setMarket] = useState<TargetMarket>(selectedMarket || 'pt-PT');
   const [platform, setPlatform] = useState<Platform>('youtube');
   const [audienceLevel, setAudienceLevel] = useState<'beginner' | 'intermediate' | 'advanced' | 'all'>('all');
   const [seedCompetitors, setSeedCompetitors] = useState('');
   const [showAdvanced, setShowAdvanced] = useState(false);
+
+  const handleMarketSelect = (m: TargetMarket) => {
+    setMarket(m);
+    if (onMarketChange) onMarketChange(m);
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -142,7 +93,7 @@ export const ResearchInputForm: React.FC<ResearchInputFormProps> = ({
 
   const handleApplyPreset = (preset: typeof PRESETS[0]) => {
     setTopic(preset.topic);
-    setMarket(preset.market);
+    handleMarketSelect(preset.market);
     setPlatform(preset.platform);
   };
 
@@ -151,20 +102,28 @@ export const ResearchInputForm: React.FC<ResearchInputFormProps> = ({
       <div className="max-w-3xl">
         <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/30 text-brand-400 text-xs font-semibold mb-3">
           <Sparkles className="w-3.5 h-3.5" />
-          <span>Pesquisa Baseada em Dados Reais</span>
+          <span>{t.researchForm.badge}</span>
         </div>
         <h1 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
-          Descubra o que já está a funcionar e transforme gaps em roteiros de alta retenção.
+          {t.researchForm.title}
         </h1>
         <p className="text-slate-400 text-sm sm:text-base mt-2">
-          Insira o seu tópico ou nicho. O motor pesquisa criadores reais no mercado selecionado, analisa outliers,
-          deteta o que a concorrência não respondeu e gera 20 oportunidades com 3 roteiros completos.
+          {t.researchForm.subtitle}
         </p>
+
+        {/* Explicit Language Architecture Clarification Banner */}
+        <div className="mt-4 p-3.5 rounded-xl bg-slate-950/70 border border-brand-500/20 text-xs text-slate-300 flex items-start gap-2.5">
+          <Info className="w-4 h-4 text-brand-400 shrink-0 mt-0.5" />
+          <div>
+            <span className="font-semibold text-white">{t.researchForm.archClarification.title}: </span>
+            <span className="text-slate-300/90">{t.researchForm.archClarification.body}</span>
+          </div>
+        </div>
       </div>
 
       {/* Preset Pills */}
       <div className="mt-5 flex flex-wrap items-center gap-2">
-        <span className="text-xs text-slate-500 font-medium mr-1">Exemplos rápidos:</span>
+        <span className="text-xs text-slate-500 font-medium mr-1">{t.researchForm.quickPresets}</span>
         {PRESETS.map((p, idx) => (
           <button
             key={idx}
@@ -172,7 +131,8 @@ export const ResearchInputForm: React.FC<ResearchInputFormProps> = ({
             onClick={() => handleApplyPreset(p)}
             className="text-xs px-2.5 py-1 rounded-full bg-slate-800 hover:bg-slate-700/80 text-slate-300 border border-slate-700/70 transition"
           >
-            {p.market === 'pt-PT' ? '🇵🇹' : p.market === 'pt-BR' ? '🇧🇷' : '🇪🇸'} {p.topic.slice(0, 36)}...
+            {p.market === 'pt-PT' ? '🇵🇹' : p.market === 'pt-BR' ? '🇧🇷' : p.market === 'es-ES' ? '🇪🇸' : '🇬🇧'}{' '}
+            {p.topic.slice(0, 36)}...
           </button>
         ))}
       </div>
@@ -181,7 +141,7 @@ export const ResearchInputForm: React.FC<ResearchInputFormProps> = ({
         {/* Main Topic Input */}
         <div>
           <label className="block text-sm font-semibold text-slate-200 mb-2">
-            Tópico, Palavra-Chave ou Nicho de Conteúdo <span className="text-rose-500">*</span>
+            {t.researchForm.topicLabel} <span className="text-rose-500">*</span>
           </label>
           <div className="relative">
             <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-500">
@@ -191,7 +151,7 @@ export const ResearchInputForm: React.FC<ResearchInputFormProps> = ({
               type="text"
               value={topic}
               onChange={(e) => setTopic(e.target.value)}
-              placeholder="Ex: Como investir em ETFs em Portugal sem comissões escondidas"
+              placeholder={t.researchForm.topicPlaceholder}
               className="w-full pl-11 pr-4 py-3.5 bg-slate-950 rounded-xl border border-slate-700/80 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20 text-white placeholder-slate-500 text-base transition"
               required
             />
@@ -203,17 +163,18 @@ export const ResearchInputForm: React.FC<ResearchInputFormProps> = ({
           {/* Target Market */}
           <div>
             <label className="block text-sm font-semibold text-slate-200 mb-2 flex items-center justify-between">
-              <span>Mercado Alvo & Idioma</span>
-              <span className="text-xs text-slate-400 font-normal">Adaptado a nuances culturais</span>
+              <span>{t.researchForm.marketLabel}</span>
+              <span className="text-xs text-brand-300/80 font-normal">{t.researchForm.marketHelp}</span>
             </label>
             <div className="space-y-2">
-              {MARKETS.map((m) => {
+              {MARKET_BASE_CONFIG.map((m) => {
                 const isSelected = market === m.id;
+                const localizedMarket = t.researchForm.markets[m.id];
                 return (
                   <button
                     key={m.id}
                     type="button"
-                    onClick={() => setMarket(m.id)}
+                    onClick={() => handleMarketSelect(m.id)}
                     className={`w-full text-left p-3 rounded-xl border transition-all flex items-start space-x-3 ${
                       isSelected
                         ? 'bg-brand-500/10 border-brand-500 text-white shadow-sm shadow-brand-500/10'
@@ -223,10 +184,12 @@ export const ResearchInputForm: React.FC<ResearchInputFormProps> = ({
                     <span className="text-2xl mt-0.5">{m.flag}</span>
                     <div className="flex-1">
                       <div className="flex items-center justify-between">
-                        <span className="font-semibold text-sm">{m.name}</span>
-                        <span className="text-xs text-slate-400">{m.language}</span>
+                        <span className="font-semibold text-sm">{localizedMarket.name}</span>
+                        <span className="text-xs text-brand-300 font-mono bg-brand-500/10 px-1.5 py-0.2 rounded">
+                          {localizedMarket.language}
+                        </span>
                       </div>
-                      <p className="text-xs text-slate-400 mt-0.5 line-clamp-1">{m.description}</p>
+                      <p className="text-xs text-slate-400 mt-0.5 line-clamp-1">{localizedMarket.description}</p>
                     </div>
                     {isSelected && <Check className="w-4 h-4 text-brand-400 mt-1" />}
                   </button>
@@ -238,12 +201,13 @@ export const ResearchInputForm: React.FC<ResearchInputFormProps> = ({
           {/* Platform */}
           <div>
             <label className="block text-sm font-semibold text-slate-200 mb-2 flex items-center justify-between">
-              <span>Plataforma Principal</span>
-              <span className="text-xs text-slate-400 font-normal">Ajusta ritmo e ganchos</span>
+              <span>{t.researchForm.platformLabel}</span>
+              <span className="text-xs text-slate-400 font-normal">{t.researchForm.platformHelp}</span>
             </label>
             <div className="grid grid-cols-2 gap-2">
-              {PLATFORMS.map((p) => {
+              {PLATFORM_BASE_CONFIG.map((p) => {
                 const isSelected = platform === p.id;
+                const localizedPlatform = t.researchForm.platforms[p.id];
                 return (
                   <button
                     key={p.id}
@@ -260,10 +224,10 @@ export const ResearchInputForm: React.FC<ResearchInputFormProps> = ({
                         <span className="font-semibold text-sm">{p.name}</span>
                         {isSelected && <Check className="w-3.5 h-3.5 text-brand-400" />}
                       </div>
-                      <span className="text-[11px] text-slate-400 block mt-1">{p.format}</span>
+                      <span className="text-[11px] text-slate-400 block mt-1">{localizedPlatform.format}</span>
                     </div>
                     <span className="text-[10px] text-brand-400 font-mono mt-2 bg-brand-500/10 px-1.5 py-0.5 rounded w-fit">
-                      {p.recommendedLength}
+                      {localizedPlatform.recommendedLength}
                     </span>
                   </button>
                 );
@@ -280,21 +244,21 @@ export const ResearchInputForm: React.FC<ResearchInputFormProps> = ({
             className="flex items-center space-x-1.5 text-xs text-slate-400 hover:text-slate-200 transition"
           >
             <ChevronDown className={`w-3.5 h-3.5 transition-transform ${showAdvanced ? 'rotate-180' : ''}`} />
-            <span>Opções avançadas (Canais de referência, nível do público)</span>
+            <span>{t.researchForm.advancedToggle}</span>
           </button>
 
           {showAdvanced && (
             <div className="mt-4 p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-4">
               <div>
                 <label className="block text-xs font-semibold text-slate-300 mb-1">
-                  Nível de Conhecimento do Público
+                  {t.researchForm.audienceLabel}
                 </label>
-                <div className="flex gap-2">
+                <div className="flex flex-wrap gap-2">
                   {[
-                    { id: 'all', label: 'Todos os Níveis' },
-                    { id: 'beginner', label: 'Iniciantes / Leigos' },
-                    { id: 'intermediate', label: 'Intermédio' },
-                    { id: 'advanced', label: 'Avançado / Profissional' },
+                    { id: 'all', label: t.researchForm.audienceLevels.all },
+                    { id: 'beginner', label: t.researchForm.audienceLevels.beginner },
+                    { id: 'intermediate', label: t.researchForm.audienceLevels.intermediate },
+                    { id: 'advanced', label: t.researchForm.audienceLevels.advanced },
                   ].map((lvl) => (
                     <button
                       key={lvl.id}
@@ -314,12 +278,12 @@ export const ResearchInputForm: React.FC<ResearchInputFormProps> = ({
 
               <div>
                 <label className="block text-xs font-semibold text-slate-300 mb-1">
-                  Canais Concorrentes de Referência ou URLs Específicas (Opcional)
+                  {t.researchForm.seedCompetitorsLabel}
                 </label>
                 <textarea
                   value={seedCompetitors}
                   onChange={(e) => setSeedCompetitors(e.target.value)}
-                  placeholder="Insira um canal ou link por linha. Ex:&#10;https://www.youtube.com/@RicoDinheiro&#10;@prigorico&#10;Canal Autonomos España"
+                  placeholder={t.researchForm.seedCompetitorsPlaceholder}
                   rows={2}
                   className="w-full p-2.5 bg-slate-900 rounded-lg border border-slate-800 text-xs text-white placeholder-slate-500 focus:border-brand-500 focus:ring-1 focus:ring-brand-500"
                 />
@@ -338,17 +302,17 @@ export const ResearchInputForm: React.FC<ResearchInputFormProps> = ({
             {isLoading ? (
               <>
                 <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                <span>{loadingProgress || 'Pesquisando Concorrentes & Analisando Gaps...'}</span>
+                <span>{loadingProgress || t.researchForm.submitBtnLoading}</span>
               </>
             ) : (
               <>
                 <Sparkles className="w-5 h-5 text-yellow-300" />
-                <span>Executar Motor de Oportunidades de Conteúdo</span>
+                <span>{t.researchForm.submitBtnIdle}</span>
               </>
             )}
           </button>
           <p className="text-center text-xs text-slate-500 mt-2">
-            Pesquisa real na web e plataformas sem alucinação de dados • Cache inteligente de 24h
+            {t.researchForm.footerNotice}
           </p>
         </div>
       </form>
