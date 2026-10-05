@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { ExternalLink, CheckCircle2, ShieldCheck, Sparkles, Search, Video, Eye, Calendar, AlertCircle } from 'lucide-react';
+import { ExternalLink, CheckCircle2, ShieldCheck, Sparkles, Search, Video, Eye, Calendar, AlertCircle, Globe, Languages } from 'lucide-react';
 import { CompetitorResult, ResearchProvenance } from '../types/index.js';
 import { useLanguage } from '../i18n/LanguageContext.js';
+import { translateText } from '../lib/api.js';
 
 interface CompetitorsSectionProps {
   competitors: CompetitorResult[];
@@ -12,6 +13,9 @@ interface CompetitorsSectionProps {
 export const CompetitorsSection: React.FC<CompetitorsSectionProps> = ({ competitors, provenance, topic }) => {
   const { t, uiLanguage } = useLanguage();
   const [searchTerm, setSearchTerm] = useState('');
+  const [expandedTranslations, setExpandedTranslations] = useState<Record<string, boolean>>({});
+  const [loadingTranslation, setLoadingTranslation] = useState<Record<string, boolean>>({});
+  const [allTranslated, setAllTranslated] = useState(false);
 
   const formatFactSummary = (comp: CompetitorResult) => {
     if (!comp.factSummary) return '';
@@ -79,6 +83,58 @@ export const CompetitorsSection: React.FC<CompetitorsSectionProps> = ({ competit
     return cleaned;
   };
 
+  const handleToggleTranslation = async (id: string, comp: CompetitorResult) => {
+    if (expandedTranslations[id]) {
+      setExpandedTranslations((prev) => ({ ...prev, [id]: false }));
+      return;
+    }
+
+    if (!comp.titleTranslation) {
+      setLoadingTranslation((prev) => ({ ...prev, [id]: true }));
+      try {
+        const trans = await translateText(comp.title, 'en', 'competitor_title');
+        comp.titleTranslation = trans.translation;
+        if (comp.snippet) {
+          const snipTrans = await translateText(comp.snippet, 'en', 'competitor_snippet');
+          comp.snippetTranslation = snipTrans.translation;
+        }
+      } catch (err) {
+        console.warn('Competitor translation failed:', err);
+      } finally {
+        setLoadingTranslation((prev) => ({ ...prev, [id]: false }));
+      }
+    }
+
+    setExpandedTranslations((prev) => ({ ...prev, [id]: true }));
+  };
+
+  const handleToggleAllTranslations = async () => {
+    const nextState = !allTranslated;
+    setAllTranslated(nextState);
+
+    if (nextState) {
+      const newMap: Record<string, boolean> = {};
+      for (const comp of competitors) {
+        newMap[comp.id] = true;
+        if (!comp.titleTranslation) {
+          try {
+            const trans = await translateText(comp.title, 'en', 'competitor_title');
+            comp.titleTranslation = trans.translation;
+            if (comp.snippet) {
+              const snipTrans = await translateText(comp.snippet, 'en', 'competitor_snippet');
+              comp.snippetTranslation = snipTrans.translation;
+            }
+          } catch {
+            // ignore
+          }
+        }
+      }
+      setExpandedTranslations(newMap);
+    } else {
+      setExpandedTranslations({});
+    }
+  };
+
   const filtered = competitors.filter(
     (c) =>
       c.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -113,17 +169,34 @@ export const CompetitorsSection: React.FC<CompetitorsSectionProps> = ({ competit
           </p>
         </div>
 
-        {/* Search inside results (only when competitors exist) */}
+        {/* Action Controls & Search */}
         {competitors.length > 0 && (
-          <div className="relative min-w-[220px]">
-            <Search className="w-4 h-4 text-slate-500 absolute left-3 top-1/2 -translate-y-1/2" />
-            <input
-              type="text"
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              placeholder={t.competitors.searchPlaceholder}
-              className="w-full pl-9 pr-3 py-1.5 bg-slate-950 rounded-lg border border-slate-800 text-xs text-white placeholder-slate-500 focus:border-brand-500"
-            />
+          <div className="flex flex-wrap items-center gap-2">
+            {uiLanguage === 'en' && (
+              <button
+                onClick={handleToggleAllTranslations}
+                className={`px-3 py-1.5 rounded-lg border text-xs font-semibold flex items-center gap-1.5 transition ${
+                  allTranslated
+                    ? 'bg-indigo-600 text-white border-indigo-500 shadow-sm'
+                    : 'bg-slate-950 text-indigo-300 border-indigo-500/30 hover:border-indigo-500/60'
+                }`}
+                title="Toggle natural English translations for all competitor cards"
+              >
+                <Globe className="w-3.5 h-3.5" />
+                <span>{allTranslated ? t.competitors.hideTranslationBtn : t.competitors.translateTitleBtn}</span>
+              </button>
+            )}
+
+            <div className="relative min-w-[200px]">
+              <Search className="w-4 h-4 text-slate-500 absolute left-3 top-1/2 -translate-y-1/2" />
+              <input
+                type="text"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                placeholder={t.competitors.searchPlaceholder}
+                className="w-full pl-9 pr-3 py-1.5 bg-slate-950 rounded-lg border border-slate-800 text-xs text-white placeholder-slate-500 focus:border-brand-500"
+              />
+            </div>
           </div>
         )}
       </div>
@@ -226,6 +299,40 @@ export const CompetitorsSection: React.FC<CompetitorsSectionProps> = ({ competit
                 <p className="text-xs text-slate-400 mt-2.5 line-clamp-2 leading-relaxed">
                   "{comp.snippet}"
                 </p>
+
+                {/* Inline Translation Toggle & Card */}
+                {uiLanguage === 'en' && (
+                  <div className="mt-2.5">
+                    <button
+                      onClick={() => handleToggleTranslation(comp.id, comp)}
+                      className="text-[11px] text-indigo-400 hover:text-indigo-300 flex items-center gap-1 font-medium transition"
+                    >
+                      <Globe className="w-3 h-3" />
+                      <span>
+                        {loadingTranslation[comp.id]
+                          ? 'Translating...'
+                          : expandedTranslations[comp.id]
+                          ? t.competitors.hideTranslationBtn
+                          : t.competitors.translateTitleBtn}
+                      </span>
+                    </button>
+
+                    {expandedTranslations[comp.id] && comp.titleTranslation && (
+                      <div className="mt-2 p-2.5 rounded-lg bg-indigo-950/40 border border-indigo-500/30 text-xs space-y-1 animate-in fade-in">
+                        <div className="flex items-center gap-1.5 text-indigo-300 font-semibold text-[11px]">
+                          <Languages className="w-3 h-3 text-indigo-400" />
+                          <span>{t.competitors.translatedTitleLabel}</span>
+                        </div>
+                        <p className="text-white font-medium text-xs leading-snug">"{comp.titleTranslation}"</p>
+                        {comp.snippetTranslation && (
+                          <p className="text-slate-300 text-[11px] mt-1 leading-relaxed">
+                            {comp.snippetTranslation}
+                          </p>
+                        )}
+                      </div>
+                    )}
+                  </div>
+                )}
               </div>
 
               {/* Observed Fact Card */}

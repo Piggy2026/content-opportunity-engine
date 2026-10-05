@@ -47,6 +47,8 @@ export interface CompetitorResult {
   detectedHookOrAngle?: string;
   factSummary: string; // Factual observation
   aiInference?: string; // Clearly labeled AI inference
+  titleTranslation?: string; // Natural meaning-first translation for foreign viewers
+  snippetTranslation?: string; // Natural translation of description/snippet
 }
 
 export interface OutlierAnalysis {
@@ -100,6 +102,8 @@ export interface ScriptSection {
   visualCue: string; // e.g., [VISUAL: Fast zoom-in on phone screen displaying bank notification]
   spokenText: string; // Spoken words in target language
   audioToneCue?: string; // e.g., [AUDIO: Snappy sound effect, energetic upbeat delivery]
+  spokenTextTranslation?: string; // Meaning-first natural English translation
+  directorNote?: string; // Creative intent, marketing rationale, or subtext
 }
 
 export interface ScriptVariation {
@@ -108,16 +112,19 @@ export interface ScriptVariation {
   styleName: string;
   badge: string;
   tagline: string;
+  taglineTranslation?: string;
   estimatedDuration: string;
   targetWordCount: number;
   sections: ScriptSection[];
   fullSpokenText: string;
+  fullSpokenTextTranslation?: string;
 }
 
 export interface TitleIdea {
   id: string;
   type: 'Curiosity Gap' | 'Fear of Missing Out / Loss' | 'Contrarian' | 'Outcome / How-To' | 'Number / Listicle';
   title: string;
+  titleTranslation?: string;
   score: number;
 }
 
@@ -127,6 +134,10 @@ export interface HookIdea {
   visualHook: string; // What the viewer sees in the first 2 seconds
   spokenHook: string; // What is spoken in the first 3 seconds
   overlayText: string; // On-screen bold typography
+  spokenHookTranslation?: string; // Natural meaning-first translation
+  visualHookTranslation?: string;
+  overlayTextTranslation?: string;
+  directorNote?: string; // Emotional hook trigger explanation
 }
 
 export interface CallToAction {
@@ -135,6 +146,9 @@ export interface CallToAction {
   spokenCta: string;
   onScreenText: string;
   platformBestPractice: string;
+  spokenCtaTranslation?: string; // Natural translation
+  onScreenTextTranslation?: string;
+  directorNote?: string;
 }
 
 export interface SourceCitation {

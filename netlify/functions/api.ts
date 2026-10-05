@@ -9,6 +9,7 @@ import { enforceTopicFidelity } from '../../server/services/topicValidator.js';
 import { getCacheKey, getCachedItem, setCachedItem } from '../../server/services/cacheService.js';
 
 import { getAllProjects, getProjectById, saveProject, deleteProject } from '../../server/data/projectsStore.js';
+import { translateNaturally } from '../../server/services/translationService.js';
 
 export const handler: Handler = async (event, context) => {
   const headers = {
@@ -103,6 +104,16 @@ export const handler: Handler = async (event, context) => {
         statusCode: 200,
         headers,
         body: JSON.stringify(scriptSuite),
+      };
+    }
+
+    if (path === '/translate' && event.httpMethod === 'POST') {
+      const { text, targetLang = 'en', context = 'general', apiKey } = JSON.parse(event.body || '{}');
+      const result = await translateNaturally(text, targetLang, context, apiKey);
+      return {
+        statusCode: 200,
+        headers,
+        body: JSON.stringify(result),
       };
     }
 

@@ -10,6 +10,8 @@ import {
   Sparkles,
   Layers,
   MessageSquare,
+  Globe,
+  Languages,
 } from 'lucide-react';
 import { ScriptVariation, ContentIdea } from '../types/index.js';
 import { copyToClipboard, downloadFile } from '../lib/exportUtils.js';
@@ -21,9 +23,10 @@ interface ScriptStudioSectionProps {
 }
 
 export const ScriptStudioSection: React.FC<ScriptStudioSectionProps> = ({ scripts, selectedIdea }) => {
-  const { t } = useLanguage();
+  const { t, uiLanguage } = useLanguage();
   const [activeTab, setActiveTab] = useState<number>(0);
   const [copiedType, setCopiedType] = useState<string | null>(null);
+  const [directorMode, setDirectorMode] = useState<boolean>(true);
 
   const currentScript = scripts[activeTab] || scripts[0];
 
@@ -107,6 +110,20 @@ ${currentScript.fullSpokenText}
 
         {/* Action Buttons */}
         <div className="flex flex-wrap items-center gap-2">
+          {/* Director Mode & Natural Translation Toggle */}
+          <button
+            onClick={() => setDirectorMode(!directorMode)}
+            className={`px-3 py-1.5 rounded-lg border text-xs font-semibold flex items-center space-x-1.5 transition ${
+              directorMode
+                ? 'bg-brand-600 text-white border-brand-500 shadow-sm shadow-brand-500/20'
+                : 'bg-slate-800 hover:bg-slate-700 text-brand-300 border-brand-500/30'
+            }`}
+            title="Toggle Director's Notes and natural English translation"
+          >
+            <Globe className="w-3.5 h-3.5" />
+            <span>{directorMode ? t.scripts.directorModeActive : t.scripts.directorModeToggle}</span>
+          </button>
+
           <button
             onClick={handleCopyFull}
             className="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold border border-slate-700 transition flex items-center space-x-1.5"
@@ -237,6 +254,33 @@ ${currentScript.fullSpokenText}
                 </span>
                 "{sec.spokenText}"
               </div>
+
+              {/* Director's Mode: Natural Translation & Strategic Note */}
+              {directorMode && (sec.spokenTextTranslation || sec.directorNote) && (
+                <div className="p-3.5 rounded-lg bg-indigo-950/40 border border-indigo-500/30 text-xs space-y-2 animate-in fade-in">
+                  {sec.spokenTextTranslation && (
+                    <div>
+                      <span className="text-[11px] font-bold text-indigo-300 uppercase tracking-wider flex items-center gap-1.5 mb-1">
+                        <Languages className="w-3.5 h-3.5 text-indigo-400" />
+                        {t.scripts.naturalTranslationLabel}
+                      </span>
+                      <p className="text-white font-medium text-sm leading-relaxed">
+                        "{sec.spokenTextTranslation}"
+                      </p>
+                    </div>
+                  )}
+
+                  {sec.directorNote && (
+                    <div className="pt-2 border-t border-indigo-900/60 flex items-start gap-2 text-indigo-200/90 text-xs">
+                      <Sparkles className="w-3.5 h-3.5 text-yellow-300 shrink-0 mt-0.5" />
+                      <div>
+                        <strong className="text-indigo-300 font-semibold">{t.scripts.directorNoteLabel}</strong>{' '}
+                        <span>{sec.directorNote}</span>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              )}
             </div>
           ))}
         </div>

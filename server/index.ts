@@ -10,6 +10,7 @@ import { generateScriptSuite } from './services/scriptService.js';
 import { enforceTopicFidelity } from './services/topicValidator.js';
 import { getCacheKey, getCachedItem, setCachedItem } from './services/cacheService.js';
 import { getAllProjects, getProjectById, saveProject, deleteProject } from './data/projectsStore.js';
+import { translateNaturally } from './services/translationService.js';
 
 dotenv.config();
 
@@ -127,6 +128,21 @@ app.post('/api/generate-scripts-for-idea', (req, res) => {
   } catch (err: any) {
     console.error('[Engine] Script generation for idea failed:', err);
     return res.status(500).json({ error: 'Failed to generate scripts for idea', details: err.message });
+  }
+});
+
+// Natural Semantic Translation Endpoint (meaning-first for creative directors & strategists)
+app.post('/api/translate', async (req, res) => {
+  try {
+    const { text, targetLang = 'en', context = 'general', apiKey } = req.body;
+    if (!text) {
+      return res.status(400).json({ error: 'Missing text parameter' });
+    }
+    const result = await translateNaturally(text, targetLang, context, apiKey);
+    return res.json(result);
+  } catch (err: any) {
+    console.error('[Engine] Translation failed:', err);
+    return res.status(500).json({ error: 'Translation failed', details: err.message });
   }
 });
 

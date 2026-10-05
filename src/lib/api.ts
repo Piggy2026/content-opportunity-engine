@@ -170,3 +170,23 @@ export async function deleteProjectById(id: string): Promise<boolean> {
 
   return true;
 }
+
+export async function translateText(
+  text: string,
+  targetLang: 'en' | 'es' | 'pt' = 'en',
+  context: 'competitor_title' | 'competitor_snippet' | 'script' | 'hook' | 'general' = 'general'
+): Promise<{ translation: string; directorNote?: string }> {
+  try {
+    const res = await fetch(`${API_BASE}/translate`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ text, targetLang, context }),
+    });
+    if (res.ok) {
+      return await res.json();
+    }
+  } catch (e) {
+    console.warn('[API] Translation request failed:', e);
+  }
+  return { translation: text };
+}

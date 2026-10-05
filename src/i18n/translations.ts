@@ -113,6 +113,9 @@ export interface TranslationDictionary {
     cardAi: string;
     cardAngle: string;
     cardOpenSource: string;
+    translateTitleBtn: string;
+    hideTranslationBtn: string;
+    translatedTitleLabel: string;
     zeroCard: {
       title: string;
       body: (topic: string) => string;
@@ -200,6 +203,10 @@ export interface TranslationDictionary {
     sceneLabel: string;
     audioLabel: string;
     spokenLabel: string;
+    directorModeToggle: string;
+    directorModeActive: string;
+    naturalTranslationLabel: string;
+    directorNoteLabel: string;
     txtHeaderIdea: string;
     txtHeaderStyle: string;
     txtHeaderDuration: string;
@@ -219,6 +226,9 @@ export interface TranslationDictionary {
     spokenLabel: string;
     overlayLabel: string;
     copyHookTooltip: string;
+    showMeaningToggle: string;
+    naturalTranslationLabel: string;
+    directorNoteLabel: string;
     ctaHeading: string;
     ctaSpokenLabel: string;
     ctaVisualLabel: string;
@@ -437,6 +447,9 @@ export const translations: Record<UiLanguage, TranslationDictionary> = {
       cardAi: 'Inferência da IA:',
       cardAngle: 'Ângulo Detetado:',
       cardOpenSource: 'Abrir link original',
+      translateTitleBtn: 'Ver Tradução',
+      hideTranslationBtn: 'Ocultar Tradução',
+      translatedTitleLabel: 'Tradução Natural:',
       zeroCard: {
         title: 'Pesquisa Pública Direta Indisponível para este Termo',
         body: (topic) =>
@@ -527,6 +540,10 @@ export const translations: Record<UiLanguage, TranslationDictionary> = {
       sceneLabel: 'Cena:',
       audioLabel: 'Áudio:',
       spokenLabel: 'Fala:',
+      directorModeToggle: 'Notas do Diretor & Tradução',
+      directorModeActive: 'Modo Diretor Ativo',
+      naturalTranslationLabel: 'Tradução Natural:',
+      directorNoteLabel: 'Nota do Diretor (Estratégia):',
       txtHeaderIdea: 'Ideia:',
       txtHeaderStyle: 'Estilo:',
       txtHeaderDuration: 'Duração:',
@@ -547,6 +564,9 @@ export const translations: Record<UiLanguage, TranslationDictionary> = {
       spokenLabel: 'Fala:',
       overlayLabel: 'Texto no Ecrã:',
       copyHookTooltip: 'Copiar gancho',
+      showMeaningToggle: 'Ver Significado & Estratégia',
+      naturalTranslationLabel: 'Tradução Natural:',
+      directorNoteLabel: 'Gatilho Emocional:',
       ctaHeading: 'Chamadas para Ação (CTAs) de Alta Conversão',
       ctaSpokenLabel: 'Fala Final:',
       ctaVisualLabel: 'Texto Visual:',
@@ -766,6 +786,9 @@ export const translations: Record<UiLanguage, TranslationDictionary> = {
       cardAi: 'Inferencia de IA:',
       cardAngle: 'Ángulo Detectado:',
       cardOpenSource: 'Abrir fuente original',
+      translateTitleBtn: 'Ver Traducción',
+      hideTranslationBtn: 'Ocultar Traducción',
+      translatedTitleLabel: 'Traducción Natural:',
       zeroCard: {
         title: 'Búsqueda Pública Directa No Disponible para este Término',
         body: (topic) =>
@@ -856,6 +879,10 @@ export const translations: Record<UiLanguage, TranslationDictionary> = {
       sceneLabel: 'Escena:',
       audioLabel: 'Audio:',
       spokenLabel: 'Locución:',
+      directorModeToggle: 'Notas del Director y Traducción',
+      directorModeActive: 'Modo Director Activo',
+      naturalTranslationLabel: 'Traducción Natural:',
+      directorNoteLabel: 'Nota del Director (Estrategia):',
       txtHeaderIdea: 'Idea:',
       txtHeaderStyle: 'Estilo:',
       txtHeaderDuration: 'Duración:',
@@ -876,6 +903,9 @@ export const translations: Record<UiLanguage, TranslationDictionary> = {
       spokenLabel: 'Locución:',
       overlayLabel: 'Texto en Pantalla:',
       copyHookTooltip: 'Copiar gancho',
+      showMeaningToggle: 'Ver Significado y Estrategia',
+      naturalTranslationLabel: 'Traducción Natural:',
+      directorNoteLabel: 'Disparador Emocional:',
       ctaHeading: 'Llamadas a la Acción (CTAs) de Alta Conversión',
       ctaSpokenLabel: 'Locución Final:',
       ctaVisualLabel: 'Texto Visual:',
@@ -1095,6 +1125,9 @@ export const translations: Record<UiLanguage, TranslationDictionary> = {
       cardAi: 'AI Inference:',
       cardAngle: 'Detected Angle:',
       cardOpenSource: 'Open original link',
+      translateTitleBtn: 'See English Translation',
+      hideTranslationBtn: 'Hide Translation',
+      translatedTitleLabel: 'Natural English Translation:',
       zeroCard: {
         title: 'Direct Public Search Unavailable for this Query',
         body: (topic) =>
@@ -1185,6 +1218,10 @@ export const translations: Record<UiLanguage, TranslationDictionary> = {
       sceneLabel: 'Scene:',
       audioLabel: 'Audio:',
       spokenLabel: 'Spoken:',
+      directorModeToggle: "Director's Notes & English Translation",
+      directorModeActive: 'Director Mode Active',
+      naturalTranslationLabel: 'Natural English Translation:',
+      directorNoteLabel: "Director's Rationale (Strategy):",
       txtHeaderIdea: 'Idea:',
       txtHeaderStyle: 'Style:',
       txtHeaderDuration: 'Duration:',
@@ -1205,6 +1242,9 @@ export const translations: Record<UiLanguage, TranslationDictionary> = {
       spokenLabel: 'Spoken:',
       overlayLabel: 'On-Screen Text:',
       copyHookTooltip: 'Copy hook',
+      showMeaningToggle: 'Show English Meaning & Strategy',
+      naturalTranslationLabel: 'Natural English Translation:',
+      directorNoteLabel: 'Emotional Hook Trigger:',
       ctaHeading: 'High-Conversion Calls to Action (CTAs)',
       ctaSpokenLabel: 'Spoken CTA:',
       ctaVisualLabel: 'Visual Text:',

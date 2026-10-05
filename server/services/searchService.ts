@@ -3,6 +3,7 @@ import { GoogleGenAI } from '@google/genai';
 import { CompetitorResult, ResearchRequest, TargetMarket, Platform, ResearchProvenance } from '../../src/types/index.js';
 import { VERIFIED_SEEDS } from '../data/verifiedSeeds.js';
 import { isSourceRelevant } from './searchRelevance.js';
+import { translateNaturally } from './translationService.js';
 
 interface RawSearchItem {
   title: string;
@@ -467,6 +468,20 @@ export async function searchCompetitors(req: ResearchRequest): Promise<SearchCom
         ? `Direct public search unavailable or no indexed match currently found for "${req.topic}" in the ${marketLabel} market. No unrelated benchmark channels or fabricated metrics were substituted.`
         : `Pesquisa pública direta indisponível ou sem correspondência indexada no momento para "${req.topic}" no mercado de ${marketLabel}. Nenhum canal fora de nicho ou métrica inventada foi apresentado.`,
     };
+  }
+
+  // Enrich competitor titles and snippets with natural translations when researching non-UK markets
+  if (req.market !== 'en-GB') {
+    for (const comp of results) {
+      if (!comp.titleTranslation) {
+        const trans = await translateNaturally(comp.title, 'en', 'competitor_title', apiKey);
+        comp.titleTranslation = trans.translation;
+      }
+      if (!comp.snippetTranslation && comp.snippet) {
+        const snipTrans = await translateNaturally(comp.snippet, 'en', 'competitor_snippet', apiKey);
+        comp.snippetTranslation = snipTrans.translation;
+      }
+    }
   }
 
   return {

@@ -1420,6 +1420,78 @@ export function generateScriptSuite(
     bundle = buildGenericOrFinanceBundle(topic, subject, market, platform, isShorts, domainInfo);
   }
 
+  // When researching a non-UK market, generate the corresponding natural English bundle
+  // for Director's Notes and on-demand natural meaning-first translation
+  let englishBundle: ScriptBundle | null = null;
+  if (market !== 'en-GB') {
+    if (domainInfo.isHealthOrFitness) {
+      englishBundle = buildHealthScriptBundle(topic, subject, 'en-GB', platform, isShorts);
+    } else if (domainInfo.isConsumerBudgeting) {
+      englishBundle = buildConsumerBudgetingScriptBundle(topic, subject, 'en-GB', platform, isShorts);
+    } else if (domainInfo.isBakingOrCooking) {
+      englishBundle = buildCookingScriptBundle(topic, subject, 'en-GB', platform, isShorts);
+    } else if (domainInfo.isGardening) {
+      englishBundle = buildGardeningScriptBundle(topic, subject, 'en-GB', platform, isShorts);
+    } else {
+      englishBundle = buildGenericOrFinanceBundle(topic, subject, 'en-GB', platform, isShorts, domainInfo);
+    }
+  }
+
+  const STAGE_DIRECTOR_NOTES: Record<string, string> = {
+    'Hook': 'Hook: Subverts viewer expectations within the first 3 seconds to prevent swipe-away.',
+    'Agitate / Pattern Interrupt': 'Pattern Interrupt: Highlights a common blunder and creates tension to sustain watch time.',
+    'Core Value / Meat': 'Core Value: Delivers clear, step-by-step transformation with high actionable density.',
+    'Payoff / Turnaround': 'Payoff: Proves the tangible benefit and cements channel authority.',
+    'Call to Action': 'Call to Action: Converts high viewer satisfaction into algorithmic signals (saves/comments).',
+  };
+
+  const enrichedScripts = bundle.scripts.map((script, sIdx) => {
+    const enScript = englishBundle?.scripts[sIdx];
+    return {
+      ...script,
+      taglineTranslation: enScript?.tagline,
+      fullSpokenTextTranslation: enScript?.fullSpokenText,
+      sections: script.sections.map((sec, secIdx) => {
+        const enSec = enScript?.sections[secIdx];
+        return {
+          ...sec,
+          spokenTextTranslation: enSec?.spokenText,
+          directorNote: STAGE_DIRECTOR_NOTES[sec.stage] || 'Presenter Beat: Drives engagement and maintains narrative momentum.',
+        };
+      }),
+    };
+  });
+
+  const enrichedHooks = bundle.hooks.map((hook, hIdx) => {
+    const enHook = englishBundle?.hooks[hIdx];
+    return {
+      ...hook,
+      spokenHookTranslation: enHook?.spokenHook,
+      visualHookTranslation: enHook?.visualHook,
+      overlayTextTranslation: enHook?.overlayText,
+      directorNote: 'Emotional Trigger: Targets the viewer\'s desire for fast results while removing friction.',
+    };
+  });
+
+  const enrichedCtas = bundle.ctas.map((cta, cIdx) => {
+    const enCta = englishBundle?.ctas[cIdx];
+    return {
+      ...cta,
+      spokenCtaTranslation: enCta?.spokenCta,
+      onScreenTextTranslation: enCta?.onScreenText,
+      directorNote: `Conversion Goal: Triggers ${cta.goal} by pairing verbal prompt with visual reinforcement.`,
+    };
+  });
+
+  const enrichedTitles = bundle.titles.map((title, tIdx) => {
+    const enTitle = englishBundle?.titles[tIdx];
+    return {
+      ...title,
+      title: cleanTemplateText(title.title),
+      titleTranslation: enTitle ? cleanTemplateText(enTitle.title) : undefined,
+    };
+  });
+
   // REAL SOURCE CITATIONS strictly derived from verified competitors
   const sources: SourceCitation[] = competitors
     .filter((c) => c.isRealVerifiedSource && c.url && c.url.startsWith('http'))
@@ -1436,10 +1508,10 @@ export function generateScriptSuite(
     }));
 
   return {
-    scripts: bundle.scripts,
-    titles: bundle.titles.map((t) => ({ ...t, title: cleanTemplateText(t.title) })),
-    hooks: bundle.hooks,
-    ctas: bundle.ctas,
+    scripts: enrichedScripts,
+    titles: enrichedTitles,
+    hooks: enrichedHooks,
+    ctas: enrichedCtas,
     sources,
   };
 }
