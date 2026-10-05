@@ -154,6 +154,9 @@ export interface TranslationDictionary {
     };
     whyCompetitorsMissed: string;
     marketNuance: string;
+    meaningToggleShow: string;
+    meaningToggleHide: string;
+    meaningLabel: string;
   };
   ideas: {
     step: string;
@@ -176,6 +179,9 @@ export interface TranslationDictionary {
     viralityLabel: string;
     competitionLabel: string;
     whyItWinsLabel: string;
+    meaningToggleShow: string;
+    meaningToggleHide: string;
+    meaningLabel: string;
     opportunityScoreLabel: string;
     generatingScripts: string;
     selectScriptBtn: string;
@@ -490,6 +496,9 @@ export const translations: Record<UiLanguage, TranslationDictionary> = {
       },
       whyCompetitorsMissed: 'Por que a concorrência falhou:',
       marketNuance: 'Nuance de mercado:',
+      meaningToggleShow: 'Ver Significado em Inglês',
+      meaningToggleHide: 'Ocultar Significado em Inglês',
+      meaningLabel: 'Significado / Resumo em Inglês (UK):',
     },
     ideas: {
       step: '5',
@@ -512,6 +521,9 @@ export const translations: Record<UiLanguage, TranslationDictionary> = {
       viralityLabel: 'Potencial Viral:',
       competitionLabel: 'Concorrência:',
       whyItWinsLabel: 'Por que vence:',
+      meaningToggleShow: 'Ver Títulos em Inglês',
+      meaningToggleHide: 'Ocultar Títulos em Inglês',
+      meaningLabel: 'Tradução em Inglês (UK):',
       opportunityScoreLabel: 'Score de Oportunidade',
       generatingScripts: 'A gerar roteiros personalizados...',
       selectScriptBtn: 'Ver Roteiros',
@@ -829,6 +841,9 @@ export const translations: Record<UiLanguage, TranslationDictionary> = {
       },
       whyCompetitorsMissed: 'Por qué falló la competencia:',
       marketNuance: 'Matiz de mercado:',
+      meaningToggleShow: 'Ver Significado en Inglés',
+      meaningToggleHide: 'Ocultar Significado en Inglés',
+      meaningLabel: 'Significado / Resumen en Inglés (UK):',
     },
     ideas: {
       step: '5',
@@ -851,6 +866,9 @@ export const translations: Record<UiLanguage, TranslationDictionary> = {
       viralityLabel: 'Potencial Viral:',
       competitionLabel: 'Competencia:',
       whyItWinsLabel: 'Por qué gana:',
+      meaningToggleShow: 'Ver Títulos en Inglés',
+      meaningToggleHide: 'Ocultar Títulos en Inglés',
+      meaningLabel: 'Traducción en Inglés (UK):',
       opportunityScoreLabel: 'Puntuación de Oportunidad',
       generatingScripts: 'Generando guiones personalizados...',
       selectScriptBtn: 'Ver Guiones',
@@ -1168,6 +1186,9 @@ export const translations: Record<UiLanguage, TranslationDictionary> = {
       },
       whyCompetitorsMissed: 'Why competitors missed it:',
       marketNuance: 'Market nuance:',
+      meaningToggleShow: 'Show English Meaning',
+      meaningToggleHide: 'Hide English Meaning',
+      meaningLabel: 'English Meaning / Strategic Summary:',
     },
     ideas: {
       step: '5',
@@ -1190,6 +1211,9 @@ export const translations: Record<UiLanguage, TranslationDictionary> = {
       viralityLabel: 'Viral Potential:',
       competitionLabel: 'Competition:',
       whyItWinsLabel: 'Why it wins:',
+      meaningToggleShow: 'Show English Titles',
+      meaningToggleHide: 'Hide English Titles',
+      meaningLabel: 'English Title & Rationale:',
       opportunityScoreLabel: 'Opportunity Score',
       generatingScripts: 'Generating custom scripts...',
       selectScriptBtn: 'View Scripts',

@@ -207,6 +207,45 @@ export function detectContentGaps(req: ResearchRequest, competitors: CompetitorR
           opportunityLevel: 'very-high',
         }
       );
+    } else if (market === 'es-ES') {
+      gaps.push(
+        {
+          id: 'gap-es-gar-1',
+          category: 'underserved-market-need',
+          title: 'Clima Mediterráneo, Sequía y Ciclos de Riego frente a Guías Foráneas Inaplicables',
+          description: `Muchos tutoriales de ${topicClean} ignoran el calor extremo del verano en España y la escasez de agua, copiando métodos pensados para climas húmedos o fríos del norte. Falta la guía adaptada a la insolación peninsular y técnicas de acolchado y riego eficiente.`,
+          whyCompetitorsMissedIt: 'Traducción y copia literal de consejos anglosajones sin calibrar el suelo y clima español.',
+          marketNuance: 'España (es-ES): Ahorro hídrico, sustratos accesibles (Mercadona, Leroy Merlin) y especies resistentes al calor.',
+          opportunityLevel: 'critical',
+        },
+        {
+          id: 'gap-es-gar-2',
+          category: 'unanswered-question',
+          title: 'Cómo Empezar en Huertos Urbanos, Balcones y Macetas con Bajo Presupuesto',
+          description: `El habitante de piso en ciudades españolas busca cuidar ${topicClean} sin terraza gigante ni gastar una fortuna en centros de jardinería especializados. Falta el paso a paso económico en macetas estándar.`,
+          whyCompetitorsMissedIt: 'Contenidos centrados exclusivamente en grandes jardines de chalets.',
+          marketNuance: 'España: Jardinería urbana en balcones y terrazas con sustratos asequibles.',
+          opportunityLevel: 'very-high',
+        },
+        {
+          id: 'gap-es-gar-3',
+          category: 'oversaturated-angle',
+          title: 'Exceso de Tecnicismos Botánicos que Paralizan al Principiante',
+          description: `Vídeos densos con decenas de términos científicos y exigencias químicas que asustan a quien solo quiere tener su planta viva y sana.`,
+          whyCompetitorsMissedIt: 'Preocupación por demostrar erudición en lugar de aportar claridad práctica y pedagógica.',
+          marketNuance: 'España: Tono cercano, directo y libre de florituras académicas innecesarias.',
+          opportunityLevel: 'high',
+        },
+        {
+          id: 'gap-es-gar-4',
+          category: 'weak-competitor-execution',
+          title: 'Ausencia de Guías Rápidas de Diagnóstico de Plagas y Hojas Amarillas',
+          description: `Cuando aparece pulgón, cochinilla u oídio en ${topicClean}, el usuario busca un vídeo de 40 segundos que enfoque la hoja y ofrezca la solución casera o biológica en 3 pasos.`,
+          whyCompetitorsMissedIt: 'Falta de formatos visuales sintéticos de resolución inmediata de incidencias.',
+          marketNuance: 'España: Formato vertical dinámico con solución casera (jabón potásico) y directa.',
+          opportunityLevel: 'very-high',
+        }
+      );
     } else {
       gaps.push(
         {
@@ -287,6 +326,45 @@ export function detectContentGaps(req: ResearchRequest, competitors: CompetitorR
           opportunityLevel: 'very-high',
         }
       );
+    } else if (market === 'es-ES') {
+      gaps.push(
+        {
+          id: 'gap-es-hlth-1',
+          category: 'underserved-market-need',
+          title: 'Alimentación Real y Sostenible frente a Dietas Restrictivas Inviables',
+          description: `La mayoría de vídeos de ${topicClean} promueven dietas extremas o suplementos caros importados. Falta contenido enfocado en hábitos equilibrados con comida real y accesible adaptada al estilo de vida español.`,
+          whyCompetitorsMissedIt: 'Creadores que copian modas de redes sociales anglosajonas que nadie puede sostener más de dos semanas en la vida cotidiana.',
+          marketNuance: 'España (es-ES): Valoración de la dieta mediterránea, legumbres, aceite de oliva virgen extra, pescado y comidas familiares sencillas.',
+          opportunityLevel: 'critical',
+        },
+        {
+          id: 'gap-es-hlth-2',
+          category: 'unanswered-question',
+          title: 'Comidas Rápidas Ricas en Proteína y Energía Listas en 15 Minutos',
+          description: `Cómo alimentarse de forma saludable y nutritiva con ${topicClean} sin pasar dos horas en la cocina al llegar cansado tras la jornada laboral.`,
+          whyCompetitorsMissedIt: 'Recetas largas pensadas para lucir en vídeo de estudio y no para el ritmo y horarios de trabajo habituales.',
+          marketNuance: 'España: Ingredientes comunes de supermercado (Mercadona, Lidl, Carrefour), saciedad y preparación express.',
+          opportunityLevel: 'very-high',
+        },
+        {
+          id: 'gap-es-hlth-3',
+          category: 'oversaturated-angle',
+          title: 'Saturación de Promesas Milagro y Suplementación Excesiva',
+          description: `El público está saturado de creadores que intentan vender quemagrasas milagrosos o batidos mágicos que prometen resultados en una semana.`,
+          whyCompetitorsMissedIt: 'Los enlaces de afiliados y patrocinios priman sobre la divulgación honesta de hábitos reales.',
+          marketNuance: 'España: Rechazo frontal al humo publicitario; búsqueda de rigor, sensatez y ciencia comprensible.',
+          opportunityLevel: 'high',
+        },
+        {
+          id: 'gap-es-hlth-4',
+          category: 'weak-competitor-execution',
+          title: 'Falta de Formatos Verticales con Cantidades y Plato Listo en el Primer Segundo',
+          description: `Reels y Shorts donde se muestre el resultado apetitoso en el primer segundo, seguido del paso a paso visual y las cantidades exactas en pantalla.`,
+          whyCompetitorsMissedIt: 'Entradillas lentas con el creador hablando a cámara sin enseñar el contenido de inmediato.',
+          marketNuance: 'España: Ritmo ágil, estímulo visual directo y llamada a guardar para consultar en la cocina.',
+          opportunityLevel: 'very-high',
+        }
+      );
     } else {
       gaps.push(
         {
@@ -364,6 +442,45 @@ export function detectContentGaps(req: ResearchRequest, competitors: CompetitorR
           description: `Competitors produce studio monologues instead of taking viewers down the supermarket aisle to show exact yellow-sticker timing and packaging down-sizing.`,
           whyCompetitorsMissedIt: 'Filming in supermarkets requires mobile agility and observational curiosity.',
           marketNuance: 'UK: Yellow-sticker culture, best-before vs use-by distinctions, and shelf unit price literacy.',
+          opportunityLevel: 'very-high',
+        }
+      );
+    } else if (market === 'es-ES') {
+      gaps.push(
+        {
+          id: 'gap-es-bud-1',
+          category: 'underserved-market-need',
+          title: 'Auditoría Real de Tickets de Supermercado y Comparativa de Precio por Kilo',
+          description: `Muchos vídeos sobre ${topicClean} se quedan en tópicos teóricos ("haz una lista"). Falta un creador que vaya a Mercadona, Carrefour, Lidl o Día con tickets reales y demuestre dónde están los engaños y cómo el precio por kilo ahorra cientos de euros al mes.`,
+          whyCompetitorsMissedIt: 'Requiere trabajo de campo minucioso y comparación transparente de marcas blancas vs primeras marcas.',
+          marketNuance: 'España (es-ES): Consumidor muy atento a la inflación en cesta de la compra, promociones 3x2 dudosas y subidas camufladas.',
+          opportunityLevel: 'critical',
+        },
+        {
+          id: 'gap-es-bud-2',
+          category: 'unanswered-question',
+          title: 'Cómo Organizar el Menú Semanal Familiar con Cero Desperdicio de Alimentos',
+          description: `El mayor agujero en el presupuesto es tirar comida a final de semana. Falta una metodología práctica de batch cooking español y aprovechamiento inteligente.`,
+          whyCompetitorsMissedIt: 'Se enseña a comprar pero no cómo encadenar ingredientes frescos para que nada acabe en la basura.',
+          marketNuance: 'España: Cocina tradicional de cuchara, aprovechamiento de sobras y congelación estratégica.',
+          opportunityLevel: 'very-high',
+        },
+        {
+          id: 'gap-es-bud-3',
+          category: 'oversaturated-angle',
+          title: 'Consejos Teóricos de Ahorro Sin Estrategia Ejecutable',
+          description: `Vídeos repetitivos con frases hechas como "no vayas a comprar con hambre" que no aportan ningún método semanal contrastado.`,
+          whyCompetitorsMissedIt: 'Falta de esfuerzo en construir plantillas descargables o listas estructuradas.',
+          marketNuance: 'España: El público valora tablas claras, listas listas para usar y recomendaciones directas sin rodeos.',
+          opportunityLevel: 'high',
+        },
+        {
+          id: 'gap-es-bud-4',
+          category: 'weak-competitor-execution',
+          title: 'Ausencia de Formato Corto con el Coste por Ración en Pantalla',
+          description: `Vídeos dinámicos que muestren el producto en el lineal, el coste exacto por ración (ej. 1,40€ por plato) y el resultado gastronómico final.`,
+          whyCompetitorsMissedIt: 'Poco dominio de edición vertical con métricas financieras claras en pantalla.',
+          marketNuance: 'España: Inmediatez visual, utilidad práctica contrastada y formato guardable.',
           opportunityLevel: 'very-high',
         }
       );
@@ -607,6 +724,45 @@ export function detectContentGaps(req: ResearchRequest, competitors: CompetitorR
           opportunityLevel: 'very-high',
         }
       );
+    } else if (market === 'es-ES') {
+      gaps.push(
+        {
+          id: 'gap-es-gen-1',
+          category: 'underserved-market-need',
+          title: 'Demostración Práctica Real frente a Diapositivas Teóricas Vacías',
+          description: `Gran parte de los contenidos sobre ${topicClean} se limitan a presentaciones teóricas sin enseñar el proceso real y las pantallas de trabajo paso a paso.`,
+          whyCompetitorsMissedIt: 'Resulta más fácil divagar en general que resolver y depurar un caso real frente a la cámara.',
+          marketNuance: 'España (es-ES): El público valora el pragmatismo, herramientas reales y transparencia de principio a fin.',
+          opportunityLevel: 'critical',
+        },
+        {
+          id: 'gap-es-gen-2',
+          category: 'unanswered-question',
+          title: 'Cómo Superar el Primer Obstáculo Crítico al Empezar de Cero',
+          description: `Los principiantes en ${topicClean} suelen encallarse en un punto concreto que provoca el abandono en la primera semana. Falta una guía directa de resolución.`,
+          whyCompetitorsMissedIt: 'Los creadores experimentados olvidan las dudas iniciales de quien está dando sus primeros pasos.',
+          marketNuance: 'España: Explicación accesible, tono constructivo y consejos aplicables al instante.',
+          opportunityLevel: 'very-high',
+        },
+        {
+          id: 'gap-es-gen-3',
+          category: 'oversaturated-angle',
+          title: 'Saturación de Vídeos Introductorios que Nunca Llegan a la Práctica',
+          description: `Exceso de vídeos tipo "qué es ${topicClean}" que finalizan justo en el momento en que el usuario necesita aprender a ejecutarlo.`,
+          whyCompetitorsMissedIt: 'Los vídeos superficiales son rápidos de grabar pero generan poco valor duradero.',
+          marketNuance: 'España: Búsqueda de atajos eficaces y metodologías para aplicar hoy mismo.',
+          opportunityLevel: 'high',
+        },
+        {
+          id: 'gap-es-gen-4',
+          category: 'weak-competitor-execution',
+          title: 'Ausencia de Formato Corto Vertical con Solución Inmediata en 45 Segundos',
+          description: `Falta el creador que sintetice la clave exacta en 40-50 segundos en formato vertical con subtítulos limpios y sin rodeos.`,
+          whyCompetitorsMissedIt: 'Aferramiento a vídeos largos de 20 minutos con introducciones lentas.',
+          marketNuance: 'España: Dinamismo, formato directo y llamada a guardar para futuras consultas.',
+          opportunityLevel: 'very-high',
+        }
+      );
     } else {
       gaps.push(
         {
@@ -647,6 +803,20 @@ export function detectContentGaps(req: ResearchRequest, competitors: CompetitorR
         }
       );
     }
+  }
+
+  // Enrich with English translations if researching a non-UK market
+  if (market !== 'en-GB') {
+    const ukGaps = detectContentGaps({ ...req, market: 'en-GB' }, competitors);
+    gaps.forEach((gap, idx) => {
+      const ukMatch = ukGaps[idx];
+      if (ukMatch) {
+        gap.titleTranslation = ukMatch.title;
+        gap.descriptionTranslation = ukMatch.description;
+        gap.whyCompetitorsMissedItTranslation = ukMatch.whyCompetitorsMissedIt;
+        gap.marketNuanceTranslation = ukMatch.marketNuance;
+      }
+    });
   }
 
   return gaps;

@@ -1,5 +1,5 @@
-import React from 'react';
-import { Target, AlertTriangle, HelpCircle, XCircle, ArrowUpRight, Compass } from 'lucide-react';
+import React, { useState } from 'react';
+import { Target, AlertTriangle, HelpCircle, XCircle, ArrowUpRight, Compass, Languages } from 'lucide-react';
 import { ContentGap } from '../types/index.js';
 import { useLanguage } from '../i18n/LanguageContext.js';
 
@@ -8,7 +8,10 @@ interface ContentGapsSectionProps {
 }
 
 export const ContentGapsSection: React.FC<ContentGapsSectionProps> = ({ gaps }) => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const [showMeaning, setShowMeaning] = useState<boolean>(true);
+
+  const hasTranslations = gaps.some((g) => Boolean(g.titleTranslation));
 
   const getCategoryMeta = (cat: ContentGap['category']) => {
     switch (cat) {
@@ -65,18 +68,34 @@ export const ContentGapsSection: React.FC<ContentGapsSectionProps> = ({ gaps }) 
   return (
     <div id="section-gaps" className="bg-slate-900/90 rounded-2xl border border-slate-800 p-6 md:p-8 shadow-xl space-y-6">
       {/* Header */}
-      <div className="flex items-center space-x-2 pb-4 border-b border-slate-800">
-        <span className="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold text-sm">
-          {t.gaps.step}
-        </span>
-        <div>
-          <h2 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
-            {t.gaps.title}
-          </h2>
-          <p className="text-slate-400 text-xs sm:text-sm mt-0.5">
-            {t.gaps.subtitle}
-          </p>
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-slate-800">
+        <div className="flex items-center space-x-2">
+          <span className="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold text-sm">
+            {t.gaps.step}
+          </span>
+          <div>
+            <h2 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
+              {t.gaps.title}
+            </h2>
+            <p className="text-slate-400 text-xs sm:text-sm mt-0.5">
+              {t.gaps.subtitle}
+            </p>
+          </div>
         </div>
+
+        {hasTranslations && (
+          <button
+            onClick={() => setShowMeaning((prev) => !prev)}
+            className={`inline-flex items-center space-x-2 px-3 py-1.5 rounded-lg text-xs font-semibold border transition self-start sm:self-auto ${
+              showMeaning
+                ? 'bg-indigo-500/20 text-indigo-300 border-indigo-500/40 shadow-sm shadow-indigo-500/10'
+                : 'bg-slate-950 text-slate-400 border-slate-800 hover:border-slate-700'
+            }`}
+          >
+            <Languages className="w-3.5 h-3.5 text-indigo-400" />
+            <span>{showMeaning ? t.gaps.meaningToggleHide : t.gaps.meaningToggleShow}</span>
+          </button>
+        )}
       </div>
 
       {/* Cards Grid */}
@@ -106,6 +125,31 @@ export const ContentGapsSection: React.FC<ContentGapsSectionProps> = ({ gaps }) 
                 {/* Description */}
                 <p className="text-xs text-slate-300 mt-2 leading-relaxed">{gap.description}</p>
 
+                {/* English Companion Translation Card */}
+                {showMeaning && (gap.titleTranslation || gap.descriptionTranslation) && (
+                  <div className="mt-3 p-3 rounded-lg bg-indigo-950/40 border border-indigo-500/30 text-xs space-y-1.5">
+                    <div className="flex items-center space-x-1.5 text-indigo-300 font-semibold text-[11px] uppercase tracking-wider">
+                      <Languages className="w-3 h-3 text-indigo-400" />
+                      <span>{t.gaps.meaningLabel}</span>
+                    </div>
+                    {gap.titleTranslation && gap.titleTranslation !== gap.title && (
+                      <p className="font-bold text-indigo-100 text-xs">
+                        "{gap.titleTranslation}"
+                      </p>
+                    )}
+                    {gap.descriptionTranslation && gap.descriptionTranslation !== gap.description && (
+                      <p className="text-indigo-200/90 leading-relaxed text-[11px]">
+                        {gap.descriptionTranslation}
+                      </p>
+                    )}
+                    {gap.whyCompetitorsMissedItTranslation && gap.whyCompetitorsMissedItTranslation !== gap.whyCompetitorsMissedIt && (
+                      <p className="text-indigo-300/80 text-[11px] pt-1 border-t border-indigo-500/20">
+                        <strong className="text-indigo-200">Context:</strong> {gap.whyCompetitorsMissedItTranslation}
+                      </p>
+                    )}
+                  </div>
+                )}
+
                 {/* Why competitors missed it */}
                 <div className="mt-3 p-2.5 rounded-lg bg-slate-900/80 border border-slate-800/80 text-xs space-y-1">
                   <span className="text-slate-400 font-medium block text-[11px] uppercase tracking-wider">
@@ -117,9 +161,16 @@ export const ContentGapsSection: React.FC<ContentGapsSectionProps> = ({ gaps }) 
 
               {/* Market nuance */}
               {gap.marketNuance && (
-                <div className="mt-4 pt-3 border-t border-slate-900 flex items-start space-x-2 text-xs text-amber-300/80">
-                  <span className="font-semibold text-amber-400">{t.gaps.marketNuance}</span>
-                  <span className="text-slate-300">{gap.marketNuance}</span>
+                <div className="mt-4 pt-3 border-t border-slate-900 flex flex-col space-y-1 text-xs">
+                  <div className="flex items-start space-x-2 text-amber-300/80">
+                    <span className="font-semibold text-amber-400 shrink-0">{t.gaps.marketNuance}</span>
+                    <span className="text-slate-300">{gap.marketNuance}</span>
+                  </div>
+                  {showMeaning && gap.marketNuanceTranslation && gap.marketNuanceTranslation !== gap.marketNuance && (
+                    <div className="text-[11px] text-indigo-300/80 pl-2 border-l border-indigo-500/30">
+                      🇬🇧 {gap.marketNuanceTranslation}
+                    </div>
+                  )}
                 </div>
               )}
             </div>

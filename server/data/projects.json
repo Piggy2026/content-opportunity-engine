@@ -1,5 +1,1057 @@
 [
   {
+    "id": "proj_1791215764668_htw2s",
+    "createdAt": "2026-10-05T15:56:04.668Z",
+    "request": {
+      "topic": "how to make healthy coffee",
+      "market": "es-ES",
+      "platform": "youtube"
+    },
+    "cached": false,
+    "isLiveResearchAvailable": true,
+    "researchProvenance": {
+      "sourceType": "live_web_search",
+      "isLiveResearchAvailable": true,
+      "queryPerformed": "site:youtube.com/watch how to make healthy coffee España"
+    },
+    "competitors": [
+      {
+        "id": "comp-live-1",
+        "title": "How To Make Coffee Healthy - Easy Guide - YouTube",
+        "url": "https://www.youtube.com/watch?v=G2Z13BCQrd8",
+        "channelOrCreator": "Criador / Canal Especialista",
+        "platform": "youtube",
+        "snippet": "So, grab a cup and join us for this informative and engaging video! healthy coffee, coffee brewing methods, coconut oil in coffee, cinnamon in coffee, coffee additives, reduce caffeine intake ...",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "www.youtube.com",
+        "detectedHookOrAngle": "Quebra de padrão ou comparativo de mercado",
+        "factSummary": "Contenido activo verificado mediante búsqueda pública: título \"How To Make Coffee Healthy - Easy Guide - YouTube\".",
+        "aiInference": "Estructurado para atraer tráfico orgánico con énfasis en alta retención inicial.",
+        "titleTranslation": "How To Make Coffee Healthy - Easy Guide - YouTube",
+        "snippetTranslation": "So, grab a cup and join us for this informative and engaging video! healthy coffee, coffee brewing methods, coconut oil in coffee, cinnamon in coffee, coffee additives, reduce caffeine intake ..."
+      },
+      {
+        "id": "comp-live-2",
+        "title": "The secrets to making good coffee at home (with a champion ... - YouTube",
+        "url": "https://www.youtube.com/watch?v=ZJhAA1WGnNU",
+        "channelOrCreator": "Criador / Canal Especialista",
+        "platform": "youtube",
+        "snippet": "He'll show us how to make great coffee at home step by step, explaining the most common mistakes and the tricks professional baristas use.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "www.youtube.com",
+        "detectedHookOrAngle": "Quebra de padrão ou comparativo de mercado",
+        "factSummary": "Contenido activo verificado mediante búsqueda pública: título \"The secrets to making good coffee at home (with a champion ... - YouTube\".",
+        "aiInference": "Estructurado para atraer tráfico orgánico con énfasis en alta retención inicial.",
+        "titleTranslation": "The secrets to making good coffee at home (with a champion ... - YouTube",
+        "snippetTranslation": "He'll show us how to make great coffee at home step by step, explaining the most common mistakes and the tricks professional baristas use."
+      },
+      {
+        "id": "comp-live-3",
+        "title": "☕¿Cómo preparar Healthy Coffee y cuáles son sus beneficios? ☕",
+        "url": "https://www.facebook.com/Fajasconmary/videos/c%C3%B3mo-preparar-healthy-coffee-y-cu%C3%A1les-son-sus-beneficios-/733012440687753/",
+        "channelOrCreator": "www.facebook.com",
+        "platform": "youtube",
+        "snippet": "Aquí te enseñamos la forma correcta de preparar este delicioso café , antioxidante por excelencia, que ayuda a retardar el envejecimiento 聆, reduce el...",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "www.facebook.com",
+        "detectedHookOrAngle": "Quebra de padrão ou comparativo de mercado",
+        "factSummary": "Contenido activo verificado mediante búsqueda pública: título \"☕¿Cómo preparar Healthy Coffee y cuáles son sus beneficios? ☕\".",
+        "aiInference": "Estructurado para atraer tráfico orgánico con énfasis en alta retención inicial.",
+        "titleTranslation": "☕¿Cómo preparar Healthy Coffee y cuáles son sus beneficios? ☕",
+        "snippetTranslation": "Aquí te enseñamos la forma correcta de preparar este delicioso café , antioxidante por excelencia, que ayuda a retardar el envejecimiento 聆, reduce el..."
+      },
+      {
+        "id": "comp-live-4",
+        "title": "Guías y métodos de preparación - Buenavida Coffee",
+        "url": "https://buenavida.coffee/es/guias-y-metodos-de-preparacion/",
+        "channelOrCreator": "buenavida.coffee",
+        "platform": "youtube",
+        "snippet": "El café perfecto con Buena Vida Specialty Coffee Brewing with Tradition: How to Make Coffee with the Chorreado Method Buena Vida Specialty Coffee",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "buenavida.coffee",
+        "detectedHookOrAngle": "Quebra de padrão ou comparativo de mercado",
+        "factSummary": "Contenido activo verificado mediante búsqueda pública: título \"Guías y métodos de preparación - Buenavida Coffee\".",
+        "aiInference": "Estructurado para atraer tráfico orgánico con énfasis en alta retención inicial.",
+        "titleTranslation": "Guías y métodos de preparación - Buenavida Coffee",
+        "snippetTranslation": "El café perfecto con Buena Vida Specialty Coffee Brewing with Tradition: How to Make Coffee with the Chorreado Method Buena Vida Specialty Coffee"
+      },
+      {
+        "id": "comp-live-5",
+        "title": "How to Make Healthy Coffee: 7 Simple Steps to Transform Your Morning ...",
+        "url": "https://roaffee.com/how-to-make-healthy-coffee/",
+        "channelOrCreator": "roaffee.com",
+        "platform": "youtube",
+        "snippet": "Transform your morning coffee into a health-boosting powerhouse! Learn to make delicious, nutritious coffee with antioxidant-rich beans, natural sweeteners, and metabolism-enhancing spices. Discover brewing tips, healthy add-ins, and avoid common mistakes for sustained energy without the crash.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "roaffee.com",
+        "detectedHookOrAngle": "Formato lista numerada de alta retenção",
+        "factSummary": "Contenido activo verificado mediante búsqueda pública: título \"How to Make Healthy Coffee: 7 Simple Steps to Transform Your Morning ...\".",
+        "aiInference": "Estructurado para atraer tráfico orgánico con énfasis en alta retención inicial.",
+        "titleTranslation": "How to Make Healthy Coffee: 7 Simple Steps to Transform Your Morning ...",
+        "snippetTranslation": "Transform your morning coffee into a health-boosting powerhouse! Learn to make delicious, nutritious coffee with antioxidant-rich beans, natural sweeteners, and metabolism-enhancing spices. Discover brewing tips, healthy add-ins, and avoid common mistakes for sustained energy without the crash."
+      },
+      {
+        "id": "comp-live-6",
+        "title": "How To Make Healthy Coffee and My Proffee Recipe",
+        "url": "https://drlivingood.com/blogs/recipes/how-to-make-healthy-coffee-and-my-proffee-recipe",
+        "channelOrCreator": "drlivingood.com",
+        "platform": "youtube",
+        "snippet": "Do you ever wonder whether or not the coffee you drink every morning is good for you? Now you don't have to! The best part about my healthy coffee is that it's loaded with healthy nutrients, you can drink while fasting, and it still tastes delicious! I'll also go over my proffee recipe, which is great for an afternoon snack, or a pre-workout boost.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "drlivingood.com",
+        "detectedHookOrAngle": "Quebra de padrão ou comparativo de mercado",
+        "factSummary": "Contenido activo verificado mediante búsqueda pública: título \"How To Make Healthy Coffee and My Proffee Recipe\".",
+        "aiInference": "Estructurado para atraer tráfico orgánico con énfasis en alta retención inicial.",
+        "titleTranslation": "How To Make Healthy Coffee and My Proffee Recipe",
+        "snippetTranslation": "Do you ever wonder whether or not the coffee you drink every morning is good for you? Now you don't have to! The best part about my healthy coffee is that it's loaded with healthy nutrients, you can drink while fasting, and it still tastes delicious! I'll also go over my proffee recipe, which is great for an afternoon snack, or a pre-workout boost."
+      },
+      {
+        "id": "comp-live-7",
+        "title": "A Dietitian Shares 9 Easy Ways to Make Your Morning Coffee Healthier",
+        "url": "https://www.health.com/how-to-make-coffee-healthier-12125650",
+        "channelOrCreator": "www.health.com",
+        "platform": "youtube",
+        "snippet": "Some coffee drinks are loaded with sugar, while others are high in saturated fat. Learning how to make your coffee healthy can help you maximize its benefits.",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "www.health.com",
+        "detectedHookOrAngle": "Formato lista numerada de alta retenção",
+        "factSummary": "Contenido activo verificado mediante búsqueda pública: título \"A Dietitian Shares 9 Easy Ways to Make Your Morning Coffee Healthier\".",
+        "aiInference": "Estructurado para atraer tráfico orgánico con énfasis en alta retención inicial.",
+        "titleTranslation": "A Dietitian Shares 9 Easy Ways to Make Your Morning Coffee Healthier",
+        "snippetTranslation": "Some coffee drinks are loaded with sugar, while others are high in saturated fat. Learning how to make your coffee healthy can help you maximize its benefits."
+      },
+      {
+        "id": "comp-live-8",
+        "title": "Como Hacer Mejor Café con Leche en Casa - YouTube",
+        "url": "https://www.youtube.com/watch?v=Vi3cckyNmbE",
+        "channelOrCreator": "Criador / Canal Especialista",
+        "platform": "youtube",
+        "views": "45K views",
+        "publishedDate": "11 months ago",
+        "snippet": "Como Hacer Mejor Café con Leche en Casa D·Origen Coffee Roasters 27.3K subscribers 1.2K 45K views 11 months ago",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "www.youtube.com",
+        "detectedHookOrAngle": "Promessa direta de tutorial passo a passo / como fazer",
+        "factSummary": "Contenido activo verificado mediante búsqueda pública: título \"Como Hacer Mejor Café con Leche en Casa - YouTube\".",
+        "aiInference": "Estructurado para atraer tráfico orgánico con énfasis en alta retención inicial.",
+        "titleTranslation": "Como Hacer Mejor Café con Leche en Casa - YouTube",
+        "snippetTranslation": "Como Hacer Mejor Café con Leche en Casa D·Origen Coffee Roasters 27.3K subscribers 1.2K 45K views 11 months ago"
+      },
+      {
+        "id": "comp-live-9",
+        "title": "¿Como Preparar Skinny Coffee? - Skinny Coffee SuperBoost",
+        "url": "https://www.youtube.com/watch?v=UlOH94GBBGo",
+        "channelOrCreator": "Skinny Coffee SuperBoost",
+        "platform": "youtube",
+        "snippet": "¿Cómo Preparar Skinny Coffee? 😋☕️🥇 Primero: Toma un sobre de Skinny Coffee.🥈 Segundo: Viértelo en tu taza o tumbler favorito, y agrega 8 oz (250 ml) de ag...",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "www.youtube.com",
+        "detectedHookOrAngle": "Promessa direta de tutorial passo a passo / como fazer",
+        "factSummary": "Contenido activo verificado mediante búsqueda pública: título \"¿Como Preparar Skinny Coffee? - Skinny Coffee SuperBoost\".",
+        "aiInference": "Estructurado para atraer tráfico orgánico con énfasis en alta retención inicial.",
+        "titleTranslation": "¿How to prepare Skinny Coffee? - Skinny Coffee SuperBoost",
+        "snippetTranslation": "¿Cómo Preparar Skinny Coffee? 😋☕️🥇 Primero: Toma un sobre de Skinny Coffee.🥈 Segundo: Viértelo en tu taza o tumbler favorito, y agrega 8 oz (250 ml) de ag..."
+      },
+      {
+        "id": "comp-live-10",
+        "title": "COMO HACER CAFÉ HELADO / ICED COFFEE / cold brew coffee ... - YouTube",
+        "url": "https://www.youtube.com/watch?v=gR6McyS1MiM",
+        "channelOrCreator": "Criador / Canal Especialista",
+        "platform": "youtube",
+        "snippet": "La receta de hoy es una pura tentación por lo menos para mi . Si quieres un momento de relax y disfrute al mismo tiempo no te pierdas la receta de hoy y aním...",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "www.youtube.com",
+        "detectedHookOrAngle": "Promessa direta de tutorial passo a passo / como fazer",
+        "factSummary": "Contenido activo verificado mediante búsqueda pública: título \"COMO HACER CAFÉ HELADO / ICED COFFEE / cold brew coffee ... - YouTube\".",
+        "aiInference": "Estructurado para atraer tráfico orgánico con énfasis en alta retención inicial.",
+        "titleTranslation": "COMO HACER CAFÉ HELADO / ICED COFFEE / cold brew coffee ... - YouTube",
+        "snippetTranslation": "La receta de hoy es una pura tentación por lo menos para mi . Si quieres un momento de relax y disfrute al mismo tiempo no te pierdas la receta de hoy y aním..."
+      },
+      {
+        "id": "comp-live-11",
+        "title": "RYZe COFFEE DE HONGO COMO SE PREPARA Y BENEFICIOS - YouTube",
+        "url": "https://www.youtube.com/watch?v=urIIxU64Z7g",
+        "channelOrCreator": "Criador / Canal Especialista",
+        "platform": "youtube",
+        "views": "11K views",
+        "publishedDate": "2 years ago",
+        "snippet": "RYZe COFFEE DE HONGO COMO SE PREPARA Y BENEFICIOS Biblia y nutricion Oficial 41.7K subscribers 11K views 2 years ago",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "www.youtube.com",
+        "detectedHookOrAngle": "Promessa direta de tutorial passo a passo / como fazer",
+        "factSummary": "Contenido activo verificado mediante búsqueda pública: título \"RYZe COFFEE DE HONGO COMO SE PREPARA Y BENEFICIOS - YouTube\".",
+        "aiInference": "Estructurado para atraer tráfico orgánico con énfasis en alta retención inicial.",
+        "titleTranslation": "RYZe COFFEE DE HONGO COMO SE PREPARA Y BENEFICIOS - YouTube",
+        "snippetTranslation": "RYZe COFFEE DE HONGO COMO SE PREPARA Y BENEFICIOS Biblia y nutricion Oficial 41.7K subscribers 11K views 2 years ago"
+      },
+      {
+        "id": "comp-live-12",
+        "title": "☕¿Cómo preparar Healthy Coffee y cuáles son sus beneficios? ☕",
+        "url": "https://www.youtube.com/watch?v=px6Q6YhmJnU",
+        "channelOrCreator": "Criador / Canal Especialista",
+        "platform": "youtube",
+        "snippet": "😁Aquí te enseñamos la forma correcta de preparar este delicioso café , antioxidante por excelencia, que ayuda a retardar el envejecimiento👩🦰, reduce el es...",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "www.youtube.com",
+        "detectedHookOrAngle": "Quebra de padrão ou comparativo de mercado",
+        "factSummary": "Contenido activo verificado mediante búsqueda pública: título \"☕¿Cómo preparar Healthy Coffee y cuáles son sus beneficios? ☕\".",
+        "aiInference": "Estructurado para atraer tráfico orgánico con énfasis en alta retención inicial.",
+        "titleTranslation": "☕¿Cómo preparar Healthy Coffee y cuáles son sus beneficios? ☕",
+        "snippetTranslation": "😁Aquí te enseñamos la forma correcta de preparar este delicioso café , antioxidante por excelencia, que ayuda a retardar el envejecimiento👩🦰, reduce el es..."
+      },
+      {
+        "id": "comp-live-13",
+        "title": "How to Make: Spanish-Style Coffee at Home - Sincerely, Spain",
+        "url": "https://www.sincerelyspain.com/blog/2021/06/02/how-to-make-coffee-at-home-spanish-style/",
+        "channelOrCreator": "www.sincerelyspain.com",
+        "platform": "youtube",
+        "snippet": "How to Make Spanish-Style Coffee at Home, Step-by-Step: 1.) The cafetera consists of three parts, as shown below. In order to prepare the coffee, unscrew the top and bottom portion, remove the middle one, and fill the lower receptacle with water, no higher than the notch you will notice from the air hole. Tip: If you happen to have an electric kettle (unlikely if you're in the average ...",
+        "isRealVerifiedSource": true,
+        "sourceDomain": "www.sincerelyspain.com",
+        "detectedHookOrAngle": "Quebra de padrão ou comparativo de mercado",
+        "factSummary": "Contenido activo verificado mediante búsqueda pública: título \"How to Make: Spanish-Style Coffee at Home - Sincerely, Spain\".",
+        "aiInference": "Estructurado para atraer tráfico orgánico con énfasis en alta retención inicial.",
+        "titleTranslation": "How to Make: Spanish-Style Coffee at Home - Sincerely, Spain",
+        "snippetTranslation": "How to Make Spanish-Style Coffee at Home, Step-by-Step: 1.) The cafetera consists of three parts, as shown below. In order to prepare the coffee, unscrew the top and bottom portion, remove the middle one, and fill the lower receptacle with water, no higher than the notch you will notice from the air hole. Tip: If you happen to have an electric kettle (unlikely if you're in the average ..."
+      }
+    ],
+    "outlierAnalysis": {
+      "topFormatOutlier": {
+        "format": "Vídeo Largo de 12 a 18 minutos con Estudio de Caso Práctico y Demostración en Pantalla",
+        "whyItOutperforms": "Los vídeos con demostración práctica real en pantalla (sin rodeos teóricos iniciales) tienen una retención media 2.4x superior a las grabaciones convencionales.",
+        "frequencyObserved": "8 de 13 de los contenidos analizados utilizan esta estructura."
+      },
+      "dominantHookPatterns": [
+        {
+          "pattern": "El Error de las Dietas y Rutinas Extremas",
+          "example": "Ejemplo real observado: \"How To Make Coffee Healthy - Easy Guide - YouTube\"",
+          "whyItWorks": "El público general no quiere dietas inviables ni suplementos milagrosos; busca hábitos realistas y comida de verdad."
+        },
+        {
+          "pattern": "Comida Real vs Suplementos Caros",
+          "example": "Ejemplo: \"Alimentos Cotidianos vs Polvos Caros para how to make healthy coffee\"",
+          "whyItWorks": "Desmontar mitos de marketing genera enorme autoridad, credibilidad y debate constructivo."
+        },
+        {
+          "pattern": "Hábito Sostenible de 15 Minutos al Día",
+          "example": "Ejemplo: \"La Guía Real para Mantener how to make healthy coffee sin Complicarte la Vida\"",
+          "whyItWorks": "Facilidad de aplicación para personas trabajadoras con poco tiempo y responsabilidades familiares."
+        }
+      ],
+      "highVelocityTopics": [
+        "Comidas prácticas de alta densidad nutricional para how to make healthy coffee",
+        "Comida real de mercado vs suplementos caros para how to make healthy coffee",
+        "El error de las restricciones extremas que hace fracasar al 90% en how to make healthy coffee",
+        "Rutina diaria sostenible de 15 minutos para mantener la vitalidad"
+      ],
+      "emotionalTriggers": [
+        {
+          "trigger": "Aversión a la Frustración y Tiempo Perdido",
+          "application": "Destacar el error que hace fracasar los primeros intentos antes de mostrar la solución directa."
+        },
+        {
+          "trigger": "Curiosidad y Desmitificación",
+          "application": "Desafiar tópicos repetidos en internet mediante una demostración práctica e inmediata."
+        },
+        {
+          "trigger": "Confianza y Aplicación Inmediata",
+          "application": "Facilitar un paso a paso realista que cualquier persona pueda llevar a la práctica hoy mismo."
+        }
+      ],
+      "observedFacts": [
+        "Muestra analizada: 13 contenidos de la competencia activos encontrados en la búsqueda de mercado.",
+        "Plataforma analizada: YOUTUBE en el mercado geográfico y lingüístico de España (es-ES).",
+        "Títulos más efectivos contienen entre 45 y 65 caracteres con verbos de acción o cifras concretas.",
+        "Presencia confirmada de canales establecidos (Criador / Canal Especialista, Criador / Canal Especialista, www.facebook.com).",
+        "Gran parte de los vídeos competidores se centra en nociones teóricas, dejando huecos para guías prácticas directas."
+      ],
+      "aiDeductions": [
+        "Deducción IA: Existe una saturación evidente de contenidos teóricos y repetitivos sobre \"how to make healthy coffee\", lo que abre una gran oportunidad para enfoques contracorriente y datos prácticos.",
+        "Deducción IA: La audiencia en España demuestra fatiga ante formatos superficiales o de \"gurú\", prefiriendo creadores que muestran ejemplos reales, pasos exactos y total transparencia.",
+        "Deducción IA: El formato de guión con gancho de 3 segundos centrado en el resultado final logrará una retención muy superior a la media del nicho."
+      ]
+    },
+    "contentGaps": [
+      {
+        "id": "gap-es-hlth-1",
+        "category": "underserved-market-need",
+        "title": "Alimentación Real y Sostenible frente a Dietas Restrictivas Inviables",
+        "description": "La mayoría de vídeos de how to make healthy coffee promueven dietas extremas o suplementos caros importados. Falta contenido enfocado en hábitos equilibrados con comida real y accesible adaptada al estilo de vida español.",
+        "whyCompetitorsMissedIt": "Creadores que copian modas de redes sociales anglosajonas que nadie puede sostener más de dos semanas en la vida cotidiana.",
+        "marketNuance": "España (es-ES): Valoración de la dieta mediterránea, legumbres, aceite de oliva virgen extra, pescado y comidas familiares sencillas.",
+        "opportunityLevel": "critical",
+        "titleTranslation": "Realistic Everyday Nutrition for Busy Adults vs Extreme Bodybuilder Meal Preps",
+        "descriptionTranslation": "Content surrounding how to make healthy coffee routinely forces unrealistic 6-meal-a-day regimens, bland dry chicken breasts, and two hours daily in commercial gyms. There is a glaring lack of practical, wholesome routines designed for working adults with busy careers and family commitments.",
+        "whyCompetitorsMissedItTranslation": "Fitness influencers create content for other gym obsessives rather than pragmatic everyday adults seeking sustainable vitality.",
+        "marketNuanceTranslation": "UK (en-GB): Grounded British sensibility, NHS healthy living alignment, supermarket ingredients, and joint-friendly mobility."
+      },
+      {
+        "id": "gap-es-hlth-2",
+        "category": "unanswered-question",
+        "title": "Comidas Rápidas Ricas en Proteína y Energía Listas en 15 Minutos",
+        "description": "Cómo alimentarse de forma saludable y nutritiva con how to make healthy coffee sin pasar dos horas en la cocina al llegar cansado tras la jornada laboral.",
+        "whyCompetitorsMissedIt": "Recetas largas pensadas para lucir en vídeo de estudio y no para el ritmo y horarios de trabajo habituales.",
+        "marketNuance": "España: Ingredientes comunes de supermercado (Mercadona, Lidl, Carrefour), saciedad y preparación express.",
+        "opportunityLevel": "very-high",
+        "titleTranslation": "High-Protein, Nutrient-Dense Meals Ready in Under 15 Minutes",
+        "descriptionTranslation": "The top barrier to healthy habits in how to make healthy coffee is evening exhaustion. Viewers desperately need fast, nourishing recipes made with simple staple ingredients from Tesco, Sainsbury's, or M&S.",
+        "whyCompetitorsMissedItTranslation": "Creators focus on complex 90-minute Sunday batch cooking that viewers abandon after week one.",
+        "marketNuanceTranslation": "UK: Comforting, hearty, nutrient-packed meals that warm up quickly without specialised kitchen gadgets."
+      },
+      {
+        "id": "gap-es-hlth-3",
+        "category": "oversaturated-angle",
+        "title": "Saturación de Promesas Milagro y Suplementación Excesiva",
+        "description": "El público está saturado de creadores que intentan vender quemagrasas milagrosos o batidos mágicos que prometen resultados en una semana.",
+        "whyCompetitorsMissedIt": "Los enlaces de afiliados y patrocinios priman sobre la divulgación honesta de hábitos reales.",
+        "marketNuance": "España: Rechazo frontal al humo publicitario; búsqueda de rigor, sensatez y ciencia comprensible.",
+        "opportunityLevel": "high",
+        "titleTranslation": "Overhyped Exotic Supplements and Crash Calorie Deficits",
+        "descriptionTranslation": "Audiences are exhausted by aggressive sponsored promotions for unproven powders and extreme fasting protocols that inevitably cause rebound fatigue and burnout.",
+        "whyCompetitorsMissedItTranslation": "Supplement sponsorships offer high creator revenue, leading to disingenuous product pushes over honest lifestyle adjustments.",
+        "marketNuanceTranslation": "UK: Heavy viewer cynicism towards influencer sponsorships; strong demand for independent, sensible whole-food advice."
+      },
+      {
+        "id": "gap-es-hlth-4",
+        "category": "weak-competitor-execution",
+        "title": "Falta de Formatos Verticales con Cantidades y Plato Listo en el Primer Segundo",
+        "description": "Reels y Shorts donde se muestre el resultado apetitoso en el primer segundo, seguido del paso a paso visual y las cantidades exactas en pantalla.",
+        "whyCompetitorsMissedIt": "Entradillas lentas con el creador hablando a cámara sin enseñar el contenido de inmediato.",
+        "marketNuance": "España: Ritmo ágil, estímulo visual directo y llamada a guardar para consultar en la cocina.",
+        "opportunityLevel": "very-high",
+        "titleTranslation": "Lack of No-Fluff 45-Second Recipe Walkthroughs with Exact Macro Breakdowns",
+        "descriptionTranslation": "Competitors either produce slow 15-minute talking heads or silent video clips without portion measurements. There is prime space for high-energy vertical shorts showing ingredients, frying pan action, and total protein/calories on screen.",
+        "whyCompetitorsMissedItTranslation": "Failing to pair dynamic editing with transparent nutritional numbers on screen.",
+        "marketNuanceTranslation": "UK: Crisp pacing, clear British audio, legible subtitles, and immediate visual payoff."
+      }
+    ],
+    "rankedIdeas": [
+      {
+        "id": "idea-es-es-1",
+        "title": "El Mayor Error en healthy coffee que Hace que el 90% lo Abandone (Y Cómo Evitarlo)",
+        "angle": "Replacing extreme restrictive fads with realistic, nutrient-dense habits.",
+        "format": "12min Wellness Blueprint",
+        "gapExploited": "Influencer diets that demand 2 hours in the gym and eating boiled chicken daily.",
+        "targetAudiencePainPoint": "Exhaustion, low energy, and quitting after two weeks.",
+        "viralityPotential": "Exceptional",
+        "competitionLevel": "Low",
+        "rank": 1,
+        "opportunityScore": 95,
+        "whyItWins": "Relieves guilt and provides an achievable, grounded health path.",
+        "isBestOpportunity": true,
+        "titleTranslation": "The #1 Unsustainable Mistake with healthy coffee (And How to Fix It)",
+        "whyItWinsTranslation": "Relieves guilt and provides an achievable, grounded health path."
+      },
+      {
+        "id": "idea-es-es-2",
+        "title": "Comidas Rápidas Ricas en Proteína para healthy coffee Listas en Menos de 15 Minutos",
+        "angle": "Fast, hearty whole-food meals using standard supermarket staples.",
+        "format": "14min Meal Prep Walkthrough",
+        "gapExploited": "90-minute complicated Sunday meal prep routines that no busy person can maintain.",
+        "targetAudiencePainPoint": "Coming home exhausted from work and ordering unhealthy takeaway.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Low",
+        "rank": 2,
+        "opportunityScore": 90,
+        "whyItWins": "Solves the acute evening dilemma with delicious, fast nourishment.",
+        "isBestOpportunity": false,
+        "titleTranslation": "Quick High-Protein Meals for healthy coffee Ready in Under 15 Minutes",
+        "whyItWinsTranslation": "Solves the acute evening dilemma with delicious, fast nourishment."
+      },
+      {
+        "id": "idea-es-es-3",
+        "title": "Comida Real de Supermercado vs Suplementos Caros para healthy coffee: La Verdad",
+        "angle": "Unsponsored nutritional audit comparing eggs, Greek yoghurt, and tinned fish against expensive powders.",
+        "format": "15min Honest Nutrition Audit",
+        "gapExploited": "Aggressive sponsored supplement peddling on fitness social media.",
+        "targetAudiencePainPoint": "Spending £80+ a month on tubs of powders with zero visible change.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Low",
+        "rank": 3,
+        "opportunityScore": 88,
+        "whyItWins": "Saves household money while improving real nutritional vitality.",
+        "isBestOpportunity": false,
+        "titleTranslation": "Whole Supermarket Foods vs Expensive Powders for healthy coffee",
+        "whyItWinsTranslation": "Saves household money while improving real nutritional vitality."
+      },
+      {
+        "id": "idea-es-es-8",
+        "title": "Cómo Adaptar healthy coffee a Partir de los 40 Años: Articulaciones y Longevidad",
+        "angle": "Slower tempo, higher protein distribution, and joint preservation over ego lifting.",
+        "format": "14min Over-40 Masterclass",
+        "gapExploited": "Fitness channels predominantly catered to 20-year-olds with indestructible joints.",
+        "targetAudiencePainPoint": "Knee and shoulder aches when trying standard exercise regimes.",
+        "viralityPotential": "Exceptional",
+        "competitionLevel": "Low",
+        "rank": 4,
+        "opportunityScore": 88,
+        "whyItWins": "Massive underserved audience of mature adults with purchasing power.",
+        "isBestOpportunity": false,
+        "titleTranslation": "How to Tailor healthy coffee for Adults Over 40: Joint Health & Longevity",
+        "whyItWinsTranslation": "Massive underserved audience of mature adults with purchasing power."
+      },
+      {
+        "id": "idea-es-es-5",
+        "title": "La Rutina Diaria de 15 Minutos para Vitalidad, Movilidad y Fuerza con healthy coffee",
+        "angle": "Joint-friendly functional movements and breakfast habits for busy adults.",
+        "format": "12min Follow-Along Routine",
+        "gapExploited": "Extreme workout videos that cause joint pain for mature or working adults.",
+        "targetAudiencePainPoint": "Stiff joints, morning sluggishness, and lack of exercise time.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Low",
+        "rank": 5,
+        "opportunityScore": 87,
+        "whyItWins": "Doable at home in ordinary clothes without gym subscriptions.",
+        "isBestOpportunity": false,
+        "titleTranslation": "The 15-Minute Daily Routine for Energy, Mobility & Strength with healthy coffee",
+        "whyItWinsTranslation": "Doable at home in ordinary clothes without gym subscriptions."
+      },
+      {
+        "id": "idea-es-es-7",
+        "title": "3 Mitos de Internet sobre healthy coffee que Son Completamente Inútiles",
+        "angle": "Exposing useless fat-burning teas, extreme cold plunge hype, and overpriced detoxes.",
+        "format": "12min Scam Buster",
+        "gapExploited": "Predatory marketing targeting people desperate for fast health transformations.",
+        "targetAudiencePainPoint": "Wasting money on fads without experiencing real health benefits.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Low",
+        "rank": 6,
+        "opportunityScore": 86,
+        "whyItWins": "Sharp, refreshing honesty cut through wellness noise.",
+        "isBestOpportunity": false,
+        "titleTranslation": "3 Health 'Hacks' for healthy coffee That Are Completely Useless",
+        "whyItWinsTranslation": "Sharp, refreshing honesty cut through wellness noise."
+      },
+      {
+        "id": "idea-es-es-9",
+        "title": "Analicé Mis Parámetros de Salud con healthy coffee Durante 30 Días (Resultados Reales)",
+        "angle": "Empirical biomarker review showing real improvements in resting heart rate and focus.",
+        "format": "16min 30-Day Experiment",
+        "gapExploited": "Anecdotal claims without auditable before-and-after data.",
+        "targetAudiencePainPoint": "Scepticism about whether modest routine changes make a tangible difference.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Low",
+        "rank": 7,
+        "opportunityScore": 82,
+        "whyItWins": "Transparent personal data generates deep audience trust.",
+        "isBestOpportunity": false,
+        "titleTranslation": "I Tracked My Health Markers on healthy coffee for 30 Days (Blood & Energy Results)",
+        "whyItWinsTranslation": "Transparent personal data generates deep audience trust."
+      },
+      {
+        "id": "idea-es-es-16",
+        "title": "La Ficha en Tarjeta de Hábitos y Menú Práctico para healthy coffee",
+        "angle": "Clean visual summary card designed for saving to phone camera rolls or fridge doors.",
+        "format": "10min Printable Guide",
+        "gapExploited": "Lack of practical daily accountability frameworks.",
+        "targetAudiencePainPoint": "Starting strong on Monday and drifting off by Thursday.",
+        "viralityPotential": "Exceptional",
+        "competitionLevel": "Low",
+        "rank": 8,
+        "opportunityScore": 82,
+        "whyItWins": "Peak bookmark rates across platforms.",
+        "isBestOpportunity": false,
+        "titleTranslation": "The Printable Weekly Habit & Meal Tracker for healthy coffee",
+        "whyItWinsTranslation": "Peak bookmark rates across platforms."
+      },
+      {
+        "id": "idea-es-es-13",
+        "title": "La Lista de la Compra Minimalista para healthy coffee por Menos de 30€",
+        "angle": "Clean trolley audit with exact items and prices for a week of nutritious eating.",
+        "format": "11min Budget Grocery Walkthrough",
+        "gapExploited": "Health advice that assumes an unlimited budget at organic farmers markets.",
+        "targetAudiencePainPoint": "Believing that healthy eating is only for the affluent.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Low",
+        "rank": 9,
+        "opportunityScore": 81,
+        "whyItWins": "Tangible, cost-effective grocery lists get saved and shared endlessly.",
+        "isBestOpportunity": false,
+        "titleTranslation": "The Minimalist Grocery Shopping List for healthy coffee Under £30",
+        "whyItWinsTranslation": "Tangible, cost-effective grocery lists get saved and shared endlessly."
+      },
+      {
+        "id": "idea-es-es-6",
+        "title": "La Regla Clave de Sueño e Hidratación para Potenciar healthy coffee",
+        "angle": "How sleep architecture and morning hydration drive 70% of vitality and appetite control.",
+        "format": "11min Recovery Masterclass",
+        "gapExploited": "Obsessing over workouts while ignoring chronic sleep deprivation.",
+        "targetAudiencePainPoint": "Brain fog and mid-afternoon energy crashes.",
+        "viralityPotential": "High",
+        "competitionLevel": "Low",
+        "rank": 10,
+        "opportunityScore": 80,
+        "whyItWins": "Focuses on the foundation of wellness without selling products.",
+        "isBestOpportunity": false,
+        "titleTranslation": "The Unwritten Sleep & Hydration Rule Behind healthy coffee",
+        "whyItWinsTranslation": "Focuses on the foundation of wellness without selling products."
+      },
+      {
+        "id": "idea-es-es-4",
+        "title": "Por Qué el 90% No Consigue Mantener la Constancia en healthy coffee (Y el Secreto para Lograrlo)",
+        "angle": "Habit stacking, friction reduction, and keeping energy stable throughout the workday.",
+        "format": "11min Behavioural Masterclass",
+        "gapExploited": "Glorifying extreme willpower over intelligent environmental design.",
+        "targetAudiencePainPoint": "The rollercoaster cycle of motivation followed by crash burnout.",
+        "viralityPotential": "High",
+        "competitionLevel": "Medium",
+        "rank": 11,
+        "opportunityScore": 79,
+        "whyItWins": "Actionable psychology that viewers can implement immediately.",
+        "isBestOpportunity": false,
+        "titleTranslation": "Why 90% Fail to Maintain Progress in healthy coffee (And the Consistency Secret)",
+        "whyItWinsTranslation": "Actionable psychology that viewers can implement immediately."
+      },
+      {
+        "id": "idea-es-es-10",
+        "title": "5 Alimentos Básicos de Supermercado que Sacian durante Horas en healthy coffee",
+        "angle": "Fibre density, lean proteins, and complex carbohydrates that stop snacking urges.",
+        "format": "13min Shopping Walkthrough",
+        "gapExploited": "Diets that leave people hungry, cranky, and obsessing over snacks.",
+        "targetAudiencePainPoint": "Constant cravings and willpower fatigue by 3pm.",
+        "viralityPotential": "Very High",
+        "competitionLevel": "Medium",
+        "rank": 12,
+        "opportunityScore": 78,
+        "whyItWins": "Solves hunger at the root using cheap everyday foods.",
+        "isBestOpportunity": false,
+        "titleTranslation": "5 Supermarket Essentials That Keep You Full for Hours with healthy coffee",
+        "whyItWinsTranslation": "Solves hunger at the root using cheap everyday foods."
+      },
+      {
+        "id": "idea-es-es-11",
+        "title": "Cómo Mantener los Resultados en healthy coffee al Salir a Cenar o Viajar",
+        "angle": "Sensible menu selection strategies that let you enjoy social occasions without guilt.",
+        "format": "10min Social Life Guide",
+        "gapExploited": "Unrealistic advice telling people to bring cold Tupperware to restaurants.",
+        "targetAudiencePainPoint": "Fear of ruining progress during social gatherings or weekend trips.",
+        "viralityPotential": "High",
+        "competitionLevel": "Low",
+        "rank": 13,
+        "opportunityScore": 76,
+        "whyItWins": "Empowers viewers to live a normal, enjoyable social life.",
+        "isBestOpportunity": false,
+        "titleTranslation": "How to Stay on Track with healthy coffee When Dining Out or Travelling",
+        "whyItWinsTranslation": "Empowers viewers to live a normal, enjoyable social life."
+      },
+      {
+        "id": "idea-es-es-12",
+        "title": "La Trampa del Estrés y el Cortisol en healthy coffee: Por Qué No Ves Resultados",
+        "angle": "Explaining how chronic workplace anxiety inhibits recovery and drives abdominal fat storage.",
+        "format": "12min Hormonal Balance Guide",
+        "gapExploited": "Treating health purely as a calories-in-calories-out equation.",
+        "targetAudiencePainPoint": "Doing everything right with food but still feeling exhausted and bloated.",
+        "viralityPotential": "High",
+        "competitionLevel": "Low",
+        "rank": 14,
+        "opportunityScore": 75,
+        "whyItWins": "Validates the viewer's lived experience of demanding work pressure.",
+        "isBestOpportunity": false,
+        "titleTranslation": "The Stress & Cortisol Trap in healthy coffee: Why You're Not Seeing Results",
+        "whyItWinsTranslation": "Validates the viewer's lived experience of demanding work pressure."
+      },
+      {
+        "id": "idea-es-es-14",
+        "title": "La Regla 80/20 en healthy coffee: Los 2 Hábitos que Producen el 80% de los Resultados",
+        "angle": "Prioritising adequate daily protein and 7,500 daily steps over complex training splits.",
+        "format": "10min Principle Guide",
+        "gapExploited": "Confusing beginners with 15 minor details that only matter for elite athletes.",
+        "targetAudiencePainPoint": "Overwhelmed by contradictory wellness information.",
+        "viralityPotential": "High",
+        "competitionLevel": "Low",
+        "rank": 15,
+        "opportunityScore": 74,
+        "whyItWins": "Provides immense psychological relief and clarity.",
+        "isBestOpportunity": false,
+        "titleTranslation": "The 80/20 Rule for healthy coffee: The 2 Habits That Provide 80% of the Results",
+        "whyItWinsTranslation": "Provides immense psychological relief and clarity."
+      },
+      {
+        "id": "idea-es-es-15",
+        "title": "Preguntas y Respuestas: Las 10 Mayores Dudas sobre healthy coffee",
+        "angle": "Direct answers on meal timing, coffee intake, carb consumption, and fatigue.",
+        "format": "15min Comprehensive FAQ",
+        "gapExploited": "Nuanced questions that standard fitness videos dismiss.",
+        "targetAudiencePainPoint": "Confusion over conflicting advice seen on TikTok and podcasts.",
+        "viralityPotential": "High",
+        "competitionLevel": "Low",
+        "rank": 16,
+        "opportunityScore": 72,
+        "whyItWins": "Builds warm trust and authoritative connection.",
+        "isBestOpportunity": false,
+        "titleTranslation": "Health & Nutrition Q&A: Addressing the 10 Most Common Dilemmas on healthy coffee",
+        "whyItWinsTranslation": "Builds warm trust and authoritative connection."
+      }
+    ],
+    "bestOpportunityId": "idea-es-es-1",
+    "bestOpportunity": {
+      "id": "idea-es-es-1",
+      "title": "El Mayor Error en healthy coffee que Hace que el 90% lo Abandone (Y Cómo Evitarlo)",
+      "angle": "Replacing extreme restrictive fads with realistic, nutrient-dense habits.",
+      "format": "12min Wellness Blueprint",
+      "gapExploited": "Influencer diets that demand 2 hours in the gym and eating boiled chicken daily.",
+      "targetAudiencePainPoint": "Exhaustion, low energy, and quitting after two weeks.",
+      "viralityPotential": "Exceptional",
+      "competitionLevel": "Low",
+      "rank": 1,
+      "opportunityScore": 95,
+      "whyItWins": "Relieves guilt and provides an achievable, grounded health path.",
+      "isBestOpportunity": true,
+      "titleTranslation": "The #1 Unsustainable Mistake with healthy coffee (And How to Fix It)",
+      "whyItWinsTranslation": "Relieves guilt and provides an achievable, grounded health path."
+    },
+    "scripts": [
+      {
+        "id": "script-es-es-contrarian",
+        "style": "contrarian-mythbuster",
+        "styleName": "Variação 1: O Quebrador de Mitos (Contrarian)",
+        "badge": "Maior Retenção & Debate",
+        "tagline": "Desmonta dietas restritivas e revela a rotina prática de nutrição sustentável.",
+        "estimatedDuration": "12 minutes",
+        "targetWordCount": 1700,
+        "sections": [
+          {
+            "timestamp": "0:00 - 0:03",
+            "stage": "Hook",
+            "visualCue": "[VISUAL: Hearty, vibrant plate of real whole food on kitchen counter]",
+            "spokenText": "Si sigues dietas o rutinas extremas para how to make healthy coffee, vas a agotarte antes de conseguir cambios duraderos.",
+            "audioToneCue": "[AUDIO: Crisp cut effect / no music in first 2 seconds]",
+            "spokenTextTranslation": "If you are still relying on unrealistic fads for how to make healthy coffee, you are burning out before seeing lasting energy.",
+            "directorNote": "Hook: Subverts viewer expectations within the first 3 seconds to prevent swipe-away."
+          },
+          {
+            "timestamp": "0:03 - 0:12",
+            "stage": "Agitate / Pattern Interrupt",
+            "visualCue": "[VISUAL: Showing bland, dry diet food vs balanced colourful plate]",
+            "spokenText": "90% das dicas na internet mandam cortar tudo e passar fome com comida sem sabor. O problema? Ficas sem energia e desistes na segunda semana.",
+            "audioToneCue": "[AUDIO: Subtle bass drop and building rhythm]",
+            "spokenTextTranslation": "90% of fitness advice tells you to cut all carbs and survive on plain chicken and lettuce. The problem? Your energy crashes and you quit by week two.",
+            "directorNote": "Pattern Interrupt: Highlights a common blunder and creates tension to sustain watch time."
+          },
+          {
+            "timestamp": "0:12 - 0:32",
+            "stage": "Core Value / Meat",
+            "visualCue": "[VISUAL: Quick pan action: cooking high-protein meal in 12 minutes with olive oil and greens]",
+            "spokenText": "Olha para este ajuste simples: 30g de proteína de qualidade por refeição, legumes coloridos e gorduras boas como azeite. É isto que te dá saciedade e energia sem sofrimento.",
+            "audioToneCue": "[AUDIO: Upbeat, energetic kitchen audio]",
+            "spokenTextTranslation": "Look at this simple shift: 30g of quality protein per meal, colourful fibrous vegetables, and healthy fats from olive oil or nuts. That is how you stay full and keep your metabolism firing.",
+            "directorNote": "Core Value: Delivers clear, step-by-step transformation with high actionable density."
+          },
+          {
+            "timestamp": "0:32 - 0:40",
+            "stage": "Payoff / Turnaround",
+            "visualCue": "[VISUAL: Energetic presenter taking a delicious bite with confidence]",
+            "spokenText": "A diferença é teres prazer à mesa todos os dias e sentires uma energia constante da manhã à noite.",
+            "audioToneCue": "[AUDIO: Warm, motivating resolution]",
+            "spokenTextTranslation": "The difference is enjoying your meals every single day while building lasting health and mobility.",
+            "directorNote": "Payoff: Proves the tangible benefit and cements channel authority."
+          },
+          {
+            "timestamp": "0:40 - 0:45",
+            "stage": "Call to Action",
+            "visualCue": "[VISUAL: Gesture towards save button with checklist graphic]",
+            "spokenText": "Guarda este vídeo nos favoritos e comenta \"SAÚDE\" para receberes o guia de receitas rápidas!",
+            "audioToneCue": "[AUDIO: Notification chime]",
+            "spokenTextTranslation": "Save this video to your favourites and comment \"HEALTH\" for the 15-minute recipe guide!",
+            "directorNote": "Call to Action: Converts high viewer satisfaction into algorithmic signals (saves/comments)."
+          }
+        ],
+        "fullSpokenText": "Si sigues dietas o rutinas extremas para how to make healthy coffee, vas a agotarte antes de conseguir cambios duraderos. 90% das dicas na internet mandam cortar tudo e passar fome com comida sem sabor. O problema? Ficas sem energia e desistes na segunda semana. Olha para este ajuste simples: 30g de proteína de qualidade por refeição, legumes coloridos e gorduras boas como azeite. É isto que te dá saciedade e energia sem sofrimento. A diferença é teres prazer à mesa todos os dias e sentires uma energia constante da manhã à noite. Guarda este vídeo nos favoritos e comenta \"SAÚDE\" para receberes o guia de receitas rápidas!",
+        "taglineTranslation": "Challenges unsustainable crash diets and reveals realistic nutritional vitality.",
+        "fullSpokenTextTranslation": "If you are still relying on unrealistic fads for how to make healthy coffee, you are burning out before seeing lasting energy. 90% of fitness advice tells you to cut all carbs and survive on plain chicken and lettuce. The problem? Your energy crashes and you quit by week two. Look at this simple shift: 30g of quality protein per meal, colourful fibrous vegetables, and healthy fats from olive oil or nuts. That is how you stay full and keep your metabolism firing. The difference is enjoying your meals every single day while building lasting health and mobility. Save this video to your favourites and comment \"HEALTH\" for the 15-minute recipe guide!"
+      },
+      {
+        "id": "script-es-es-story",
+        "style": "story-driven-case-study",
+        "styleName": "Variação 2: Estudo de Caso & Mudança Real",
+        "badge": "Máxima Conexão & Empatia",
+        "tagline": "A jornada real de quem vivia cansado até desbloquear hábitos sustentáveis.",
+        "estimatedDuration": "14 minutes",
+        "targetWordCount": 2000,
+        "sections": [
+          {
+            "timestamp": "0:00 - 0:04",
+            "stage": "Hook",
+            "visualCue": "[VISUAL: Looking at clock showing 3pm with low energy]",
+            "spokenText": "Há uns tempos sentia uma quebra de energia brutal a meio da tarde ao tentar cuidar de healthy coffee.",
+            "audioToneCue": "[AUDIO: Reflective piano intro]",
+            "spokenTextTranslation": "Two years ago I was having a massive 3pm energy crash every single day when dealing with healthy coffee.",
+            "directorNote": "Hook: Subverts viewer expectations within the first 3 seconds to prevent swipe-away."
+          },
+          {
+            "timestamp": "0:04 - 0:15",
+            "stage": "Agitate / Pattern Interrupt",
+            "visualCue": "[VISUAL: Showing useless supplement pills and energy drinks]",
+            "spokenText": "Gastava dinheiro em suplementos e seguia dietas malucas, mas nada me dava foco duradouro.",
+            "audioToneCue": "[AUDIO: Building tempo]",
+            "spokenTextTranslation": "I tried expensive powders and restrictive diet rules, but nothing gave me lasting focus.",
+            "directorNote": "Pattern Interrupt: Highlights a common blunder and creates tension to sustain watch time."
+          },
+          {
+            "timestamp": "0:15 - 0:35",
+            "stage": "Core Value / Meat",
+            "visualCue": "[VISUAL: Demonstrating a 15-minute whole food pan meal on the hob]",
+            "spokenText": "Até que mudei para comida de verdade e refeições de 15 minutos na frigideira. Foi aí que tudo mudou.",
+            "audioToneCue": "[AUDIO: Upbeat, confident rhythm]",
+            "spokenTextTranslation": "Until I focused on real supermarket whole foods and 15-minute prep times. That single shift gave me my energy back.",
+            "directorNote": "Core Value: Delivers clear, step-by-step transformation with high actionable density."
+          },
+          {
+            "timestamp": "0:35 - 0:43",
+            "stage": "Payoff / Turnaround",
+            "visualCue": "[VISUAL: High energy lifestyle shot with smiling presenter]",
+            "spokenText": "Hoje cozinho rápido, como bem e sinto-me com energia o dia inteiro.",
+            "audioToneCue": "[AUDIO: Inspiring conclusion]",
+            "spokenTextTranslation": "Now I cook fast, hearty meals and maintain sharp focus all day long.",
+            "directorNote": "Payoff: Proves the tangible benefit and cements channel authority."
+          },
+          {
+            "timestamp": "0:43 - 0:50",
+            "stage": "Call to Action",
+            "visualCue": "[VISUAL: Pointing to follow button]",
+            "spokenText": "Guarda este vídeo nos favoritos e segue o canal para mais dicas práticas de saúde!",
+            "audioToneCue": "[AUDIO: Sign-off chime]",
+            "spokenTextTranslation": "Bookmark this video for later and follow for more sensible everyday health tips!",
+            "directorNote": "Call to Action: Converts high viewer satisfaction into algorithmic signals (saves/comments)."
+          }
+        ],
+        "fullSpokenText": "Há uns tempos sentia uma quebra de energia brutal a meio da tarde ao tentar cuidar de healthy coffee. Gastava dinheiro em suplementos e seguia dietas malucas, mas nada me dava foco duradouro. Até que mudei para comida de verdade e refeições de 15 minutos na frigideira. Foi aí que tudo mudou. Hoje cozinho rápido, como bem e sinto-me com energia o dia inteiro. Guarda este vídeo nos favoritos e segue o canal para mais dicas práticas de saúde!",
+        "taglineTranslation": "Real journey from afternoon sluggishness to consistent vitality using simple habits.",
+        "fullSpokenTextTranslation": "Two years ago I was having a massive 3pm energy crash every single day when dealing with healthy coffee. I tried expensive powders and restrictive diet rules, but nothing gave me lasting focus. Until I focused on real supermarket whole foods and 15-minute prep times. That single shift gave me my energy back. Now I cook fast, hearty meals and maintain sharp focus all day long. Bookmark this video for later and follow for more sensible everyday health tips!"
+      },
+      {
+        "id": "script-es-es-blueprint",
+        "style": "actionable-blueprint",
+        "styleName": "Variação 3: O Passo a Passo Definitivo (Blueprint)",
+        "badge": "Maior Taxa de Salvamento",
+        "tagline": "Guia de 4 passos para refeições rápidas e nutritivas.",
+        "estimatedDuration": "15 minutes",
+        "targetWordCount": 2100,
+        "sections": [
+          {
+            "timestamp": "0:00 - 0:03",
+            "stage": "Hook",
+            "visualCue": "[VISUAL: Clean chopping board with fresh whole food ingredients]",
+            "spokenText": "Aqui está o passo a passo em 4 etapas para dominares healthy coffee sem passar horas no fogão.",
+            "audioToneCue": "[AUDIO: Dynamic opening sound]",
+            "spokenTextTranslation": "Here is the 4-step blueprint to nail healthy coffee without spending hours cooking.",
+            "directorNote": "Hook: Subverts viewer expectations within the first 3 seconds to prevent swipe-away."
+          },
+          {
+            "timestamp": "0:03 - 0:15",
+            "stage": "Core Value / Meat",
+            "visualCue": "[VISUAL: Prepping high-protein base and fresh vegetables in a hot pan]",
+            "spokenText": "Passo 1: Escolhe uma boa base de proteína. Passo 2: Junta duas porções generosas de legumes frescos.",
+            "audioToneCue": "[AUDIO: Pacing with frying sound]",
+            "spokenTextTranslation": "Step 1: Pick a lean, high-protein base. Step 2: Add two fistfuls of fibrous seasonal vegetables.",
+            "directorNote": "Core Value: Delivers clear, step-by-step transformation with high actionable density."
+          },
+          {
+            "timestamp": "0:15 - 0:30",
+            "stage": "Payoff / Turnaround",
+            "visualCue": "[VISUAL: Drizzling extra virgin olive oil and serving on a plate]",
+            "spokenText": "Passo 3: Tempera com azeite virgem e especiarias naturais. Passo 4: Mantém o tempo de preparação abaixo dos 15 minutos.",
+            "audioToneCue": "[AUDIO: Upbeat kitchen tempo]",
+            "spokenTextTranslation": "Step 3: Season with natural spices and healthy oils. Step 4: Keep prep under 15 minutes to guarantee consistency.",
+            "directorNote": "Payoff: Proves the tangible benefit and cements channel authority."
+          },
+          {
+            "timestamp": "0:30 - 0:40",
+            "stage": "Payoff / Turnaround",
+            "visualCue": "[VISUAL: Steaming, delicious meal ready on plate in under 15 minutes]",
+            "spokenText": "Aplica estes 4 passos e tens nutrição de verdade todos os dias com zero complicação.",
+            "audioToneCue": "[AUDIO: Confident resolution]",
+            "spokenTextTranslation": "Follow these 4 steps and you will build genuine vitality without restrictive fads.",
+            "directorNote": "Payoff: Proves the tangible benefit and cements channel authority."
+          },
+          {
+            "timestamp": "0:40 - 0:45",
+            "stage": "Call to Action",
+            "visualCue": "[VISUAL: On-screen card graphic with macro breakdown]",
+            "spokenText": "Partilha com quem precisa de refeições saudáveis e comenta \"GUIA\" para receberes o resumo!",
+            "audioToneCue": "[AUDIO: Notification chime]",
+            "spokenTextTranslation": "Share this with someone who needs quick healthy meals and comment \"BLUEPRINT\" for the guide!",
+            "directorNote": "Call to Action: Converts high viewer satisfaction into algorithmic signals (saves/comments)."
+          }
+        ],
+        "fullSpokenText": "Aqui está o passo a passo em 4 etapas para dominares healthy coffee sem passar horas no fogão. Passo 1: Escolhe uma boa base de proteína. Passo 2: Junta duas porções generosas de legumes frescos. Passo 3: Tempera com azeite virgem e especiarias naturais. Passo 4: Mantém o tempo de preparação abaixo dos 15 minutos. Aplica estes 4 passos e tens nutrição de verdade todos os dias com zero complicação. Partilha com quem precisa de refeições saudáveis e comenta \"GUIA\" para receberes o resumo!",
+        "taglineTranslation": "Structured 4-step framework for sustainable nutrition and strength.",
+        "fullSpokenTextTranslation": "Here is the 4-step blueprint to nail healthy coffee without spending hours cooking. Step 1: Pick a lean, high-protein base. Step 2: Add two fistfuls of fibrous seasonal vegetables. Step 3: Season with natural spices and healthy oils. Step 4: Keep prep under 15 minutes to guarantee consistency. Follow these 4 steps and you will build genuine vitality without restrictive fads. Share this with someone who needs quick healthy meals and comment \"BLUEPRINT\" for the guide!"
+      }
+    ],
+    "titles": [
+      {
+        "id": "title-1",
+        "type": "Contrarian",
+        "title": "O Maior Erro em healthy coffee que Faz 90% das Pessoas Desistirem",
+        "score": 96,
+        "titleTranslation": "The #1 Unsustainable Mistake with healthy coffee (And How to Fix It)"
+      },
+      {
+        "id": "title-2",
+        "type": "Outcome / How-To",
+        "title": "Refeições Rápidas de Alta Proteína para healthy coffee em 15 Minutos",
+        "score": 94,
+        "titleTranslation": "Quick Nutrient-Dense Meals for healthy coffee in Under 15 Minutes"
+      },
+      {
+        "id": "title-3",
+        "type": "Curiosity Gap",
+        "title": "Comida de Supermercado vs Suplementos Caros para healthy coffee: A Verdade",
+        "score": 92,
+        "titleTranslation": "Supermarket Whole Foods vs Expensive Powders for healthy coffee: Tested!"
+      },
+      {
+        "id": "title-4",
+        "type": "Fear of Missing Out / Loss",
+        "title": "3 Modismos sobre healthy coffee que Deves Parar Hoje",
+        "score": 91,
+        "titleTranslation": "3 Health 'Hacks' for healthy coffee You Should Stop Doing Today"
+      },
+      {
+        "id": "title-5",
+        "type": "Number / Listicle",
+        "title": "A Rotina Diária de 15 Minutos para Vitalidade em healthy coffee",
+        "score": 89,
+        "titleTranslation": "The 15-Minute Daily Habit for Lifelong Vitality with healthy coffee"
+      }
+    ],
+    "hooks": [
+      {
+        "id": "hook-1",
+        "type": "Pattern Interrupt",
+        "spokenHook": "Si sigues intentando mejorar how to make healthy coffee con restricciones exageradas, vas a abandonar muy rápido.",
+        "visualHook": "[VISUAL: Prato delicioso de comida real vs suplementos caros]",
+        "overlayText": "PÁRA DE PASSAR FOME ⚠️",
+        "spokenHookTranslation": "If you're still approaching how to make healthy coffee with extreme restrictions, you are setting yourself up for burnout.",
+        "visualHookTranslation": "[VISUAL: Showing balanced whole food plate vs powder tub]",
+        "overlayTextTranslation": "STOP STARVING ⚠️",
+        "directorNote": "Emotional Trigger: Targets the viewer's desire for fast results while removing friction."
+      },
+      {
+        "id": "hook-2",
+        "type": "Bold Statement",
+        "spokenHook": "Queres ter energia constante o dia inteiro com ingredientes simples de supermercado?",
+        "visualHook": "[VISUAL: Frigideira com refeição apetitosa em preparação]",
+        "overlayText": "ENERGIA REAL ⚡",
+        "spokenHookTranslation": "Want to build lasting energy and strength with simple supermarket foods? Here is the blueprint.",
+        "visualHookTranslation": "[VISUAL: Sizzling pan meal ready in minutes]",
+        "overlayTextTranslation": "ENERGY BLUEPRINT ⚡",
+        "directorNote": "Emotional Trigger: Targets the viewer's desire for fast results while removing friction."
+      },
+      {
+        "id": "hook-3",
+        "type": "Provocative Question",
+        "spokenHook": "Se sentes cansaço constante a meio da tarde, o problema não és tu — é esta regra no almoço.",
+        "visualHook": "[VISUAL: Expressão acolhedora a mostrar o prato equilibrado]",
+        "overlayText": "CHEGA DE CANSAÇO ❌",
+        "spokenHookTranslation": "If you feel sluggish every afternoon, the problem isn't your willpower — it's this simple meal balance.",
+        "visualHookTranslation": "[VISUAL: Sympathetic expression cutting straight to plate]",
+        "overlayTextTranslation": "NO MORE CRASHES ❌",
+        "directorNote": "Emotional Trigger: Targets the viewer's desire for fast results while removing friction."
+      },
+      {
+        "id": "hook-4",
+        "type": "Story Opener",
+        "spokenHook": "A maioria das dietas manda passar fome. Olha porque é que isso destrói o teu metabolismo.",
+        "visualHook": "[VISUAL: Texto \"Pára de passar fome\" com som de alerta]",
+        "overlayText": "DIETAS MALUCAS 🚫",
+        "spokenHookTranslation": "Most online fitness creators tell you to cut everything you enjoy. Here is why that ruins your results.",
+        "visualHookTranslation": "[VISUAL: Holding plate of real food with text \"Stop starving yourself\"]",
+        "overlayTextTranslation": "STOP RESTRICTING 🚫",
+        "directorNote": "Emotional Trigger: Targets the viewer's desire for fast results while removing friction."
+      },
+      {
+        "id": "hook-5",
+        "type": "Visual Shock",
+        "spokenHook": "Existe um segredo simples de saciedade que acaba com as vontades de petiscar à tarde.",
+        "visualHook": "[VISUAL: Demonstração de alimentos ricos em fibra e proteína]",
+        "overlayText": "SACIEDADE TOTAL 🥗",
+        "spokenHookTranslation": "There is one simple nutrition rule that keeps you full and energised all day long.",
+        "visualHookTranslation": "[VISUAL: Protein breakdown on screen with clean audio]",
+        "overlayTextTranslation": "FULL ALL DAY 🥗",
+        "directorNote": "Emotional Trigger: Targets the viewer's desire for fast results while removing friction."
+      }
+    ],
+    "ctas": [
+      {
+        "id": "cta-1",
+        "goal": "Save / Bookmark",
+        "spokenCta": "Guarda este vídeo nos favoritos para teres a receita à mão durante a semana!",
+        "onScreenText": "GUARDA ESTA RECEITA 📌",
+        "platformBestPractice": "Apontar para o botão de guardar.",
+        "spokenCtaTranslation": "Save this video to your library right now for your weekly health plan!",
+        "onScreenTextTranslation": "SAVE THIS RECIPE 📌",
+        "directorNote": "Conversion Goal: Triggers Save / Bookmark by pairing verbal prompt with visual reinforcement."
+      },
+      {
+        "id": "cta-2",
+        "goal": "Comment / Keyword Automation",
+        "spokenCta": "Comenta \"SAÚDE\" nos comentários para receberes o guia completo de refeições!",
+        "onScreenText": "COMENTA \"SAÚDE\" 👇",
+        "platformBestPractice": "Aumenta interação inicial.",
+        "spokenCtaTranslation": "Comment \"HEALTH\" below and I will send the 15-minute meal guide straight to you!",
+        "onScreenTextTranslation": "COMMENT \"HEALTH\" 💬",
+        "directorNote": "Conversion Goal: Triggers Comment / Keyword Automation by pairing verbal prompt with visual reinforcement."
+      },
+      {
+        "id": "cta-3",
+        "goal": "Follow / Subscribe",
+        "spokenCta": "Segue o canal para mais receitas saudáveis e práticas todos os dias!",
+        "onScreenText": "SEGUE PARA MAIS DICAS 🔔",
+        "platformBestPractice": "Encerramento acolhedor.",
+        "spokenCtaTranslation": "Subscribe to the channel for more sensible, evidence-based wellness tips!",
+        "onScreenTextTranslation": "SUBSCRIBE FOR HEALTH 🔔",
+        "directorNote": "Conversion Goal: Triggers Follow / Subscribe by pairing verbal prompt with visual reinforcement."
+      }
+    ],
+    "sources": [
+      {
+        "id": "src-1",
+        "title": "How To Make Coffee Healthy - Easy Guide - YouTube",
+        "url": "https://www.youtube.com/watch?v=G2Z13BCQrd8",
+        "platform": "youtube",
+        "channelOrHost": "Criador / Canal Especialista",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-05T15:56:04.668Z",
+        "snippet": "So, grab a cup and join us for this informative and engaging video! healthy coffee, coffee brewing methods, coconut oil in coffee, cinnamon in coffee, coffee additives, reduce caffeine intake ..."
+      },
+      {
+        "id": "src-2",
+        "title": "The secrets to making good coffee at home (with a champion ... - YouTube",
+        "url": "https://www.youtube.com/watch?v=ZJhAA1WGnNU",
+        "platform": "youtube",
+        "channelOrHost": "Criador / Canal Especialista",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-05T15:56:04.668Z",
+        "snippet": "He'll show us how to make great coffee at home step by step, explaining the most common mistakes and the tricks professional baristas use."
+      },
+      {
+        "id": "src-3",
+        "title": "☕¿Cómo preparar Healthy Coffee y cuáles son sus beneficios? ☕",
+        "url": "https://www.facebook.com/Fajasconmary/videos/c%C3%B3mo-preparar-healthy-coffee-y-cu%C3%A1les-son-sus-beneficios-/733012440687753/",
+        "platform": "youtube",
+        "channelOrHost": "www.facebook.com",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-05T15:56:04.668Z",
+        "snippet": "Aquí te enseñamos la forma correcta de preparar este delicioso café , antioxidante por excelencia, que ayuda a retardar el envejecimiento 聆, reduce el..."
+      },
+      {
+        "id": "src-4",
+        "title": "Guías y métodos de preparación - Buenavida Coffee",
+        "url": "https://buenavida.coffee/es/guias-y-metodos-de-preparacion/",
+        "platform": "youtube",
+        "channelOrHost": "buenavida.coffee",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-05T15:56:04.668Z",
+        "snippet": "El café perfecto con Buena Vida Specialty Coffee Brewing with Tradition: How to Make Coffee with the Chorreado Method Buena Vida Specialty Coffee"
+      },
+      {
+        "id": "src-5",
+        "title": "How to Make Healthy Coffee: 7 Simple Steps to Transform Your Morning ...",
+        "url": "https://roaffee.com/how-to-make-healthy-coffee/",
+        "platform": "youtube",
+        "channelOrHost": "roaffee.com",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-05T15:56:04.668Z",
+        "snippet": "Transform your morning coffee into a health-boosting powerhouse! Learn to make delicious, nutritious coffee with antioxidant-rich beans, natural sweeteners, and metabolism-enhancing spices. Discover brewing tips, healthy add-ins, and avoid common mistakes for sustained energy without the crash."
+      },
+      {
+        "id": "src-6",
+        "title": "How To Make Healthy Coffee and My Proffee Recipe",
+        "url": "https://drlivingood.com/blogs/recipes/how-to-make-healthy-coffee-and-my-proffee-recipe",
+        "platform": "youtube",
+        "channelOrHost": "drlivingood.com",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-05T15:56:04.668Z",
+        "snippet": "Do you ever wonder whether or not the coffee you drink every morning is good for you? Now you don't have to! The best part about my healthy coffee is that it's loaded with healthy nutrients, you can drink while fasting, and it still tastes delicious! I'll also go over my proffee recipe, which is great for an afternoon snack, or a pre-workout boost."
+      },
+      {
+        "id": "src-7",
+        "title": "A Dietitian Shares 9 Easy Ways to Make Your Morning Coffee Healthier",
+        "url": "https://www.health.com/how-to-make-coffee-healthier-12125650",
+        "platform": "youtube",
+        "channelOrHost": "www.health.com",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-05T15:56:04.668Z",
+        "snippet": "Some coffee drinks are loaded with sugar, while others are high in saturated fat. Learning how to make your coffee healthy can help you maximize its benefits."
+      },
+      {
+        "id": "src-8",
+        "title": "Como Hacer Mejor Café con Leche en Casa - YouTube",
+        "url": "https://www.youtube.com/watch?v=Vi3cckyNmbE",
+        "platform": "youtube",
+        "channelOrHost": "Criador / Canal Especialista",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-05T15:56:04.668Z",
+        "snippet": "Como Hacer Mejor Café con Leche en Casa D·Origen Coffee Roasters 27.3K subscribers 1.2K 45K views 11 months ago"
+      },
+      {
+        "id": "src-9",
+        "title": "¿Como Preparar Skinny Coffee? - Skinny Coffee SuperBoost",
+        "url": "https://www.youtube.com/watch?v=UlOH94GBBGo",
+        "platform": "youtube",
+        "channelOrHost": "Skinny Coffee SuperBoost",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-05T15:56:04.668Z",
+        "snippet": "¿Cómo Preparar Skinny Coffee? 😋☕️🥇 Primero: Toma un sobre de Skinny Coffee.🥈 Segundo: Viértelo en tu taza o tumbler favorito, y agrega 8 oz (250 ml) de ag..."
+      },
+      {
+        "id": "src-10",
+        "title": "COMO HACER CAFÉ HELADO / ICED COFFEE / cold brew coffee ... - YouTube",
+        "url": "https://www.youtube.com/watch?v=gR6McyS1MiM",
+        "platform": "youtube",
+        "channelOrHost": "Criador / Canal Especialista",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-05T15:56:04.668Z",
+        "snippet": "La receta de hoy es una pura tentación por lo menos para mi . Si quieres un momento de relax y disfrute al mismo tiempo no te pierdas la receta de hoy y aním..."
+      },
+      {
+        "id": "src-11",
+        "title": "RYZe COFFEE DE HONGO COMO SE PREPARA Y BENEFICIOS - YouTube",
+        "url": "https://www.youtube.com/watch?v=urIIxU64Z7g",
+        "platform": "youtube",
+        "channelOrHost": "Criador / Canal Especialista",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-05T15:56:04.668Z",
+        "snippet": "RYZe COFFEE DE HONGO COMO SE PREPARA Y BENEFICIOS Biblia y nutricion Oficial 41.7K subscribers 11K views 2 years ago"
+      },
+      {
+        "id": "src-12",
+        "title": "☕¿Cómo preparar Healthy Coffee y cuáles son sus beneficios? ☕",
+        "url": "https://www.youtube.com/watch?v=px6Q6YhmJnU",
+        "platform": "youtube",
+        "channelOrHost": "Criador / Canal Especialista",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-05T15:56:04.668Z",
+        "snippet": "😁Aquí te enseñamos la forma correcta de preparar este delicioso café , antioxidante por excelencia, que ayuda a retardar el envejecimiento👩🦰, reduce el es..."
+      },
+      {
+        "id": "src-13",
+        "title": "How to Make: Spanish-Style Coffee at Home - Sincerely, Spain",
+        "url": "https://www.sincerelyspain.com/blog/2021/06/02/how-to-make-coffee-at-home-spanish-style/",
+        "platform": "youtube",
+        "channelOrHost": "www.sincerelyspain.com",
+        "type": "competitor_video",
+        "verificationStatus": "verified_real_url",
+        "retrievedAt": "2026-10-05T15:56:04.668Z",
+        "snippet": "How to Make Spanish-Style Coffee at Home, Step-by-Step: 1.) The cafetera consists of three parts, as shown below. In order to prepare the coffee, unscrew the top and bottom portion, remove the middle one, and fill the lower receptacle with water, no higher than the notch you will notice from the air hole. Tip: If you happen to have an electric kettle (unlikely if you're in the average ..."
+      }
+    ]
+  },
+  {
     "id": "proj_1791147986525_vl2t2",
     "createdAt": "2026-10-04T21:06:26.525Z",
     "request": {

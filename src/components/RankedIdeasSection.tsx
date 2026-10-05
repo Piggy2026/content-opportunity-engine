@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ListOrdered, Sparkles, Flame, CheckCircle, ArrowRight, Filter, ChevronRight, HelpCircle } from 'lucide-react';
+import { ListOrdered, Sparkles, Flame, CheckCircle, ArrowRight, Filter, ChevronRight, HelpCircle, Languages } from 'lucide-react';
 import { ContentIdea } from '../types/index.js';
 import { useLanguage } from '../i18n/LanguageContext.js';
 
@@ -18,6 +18,9 @@ export const RankedIdeasSection: React.FC<RankedIdeasSectionProps> = ({
 }) => {
   const { t } = useLanguage();
   const [filterVirality, setFilterVirality] = useState<string>('all');
+  const [showTranslations, setShowTranslations] = useState<boolean>(true);
+
+  const hasTranslations = ideas.some((i) => Boolean(i.titleTranslation));
 
   const filtered = ideas.filter((idea) => {
     if (filterVirality === 'all') return true;
@@ -54,22 +57,38 @@ export const RankedIdeasSection: React.FC<RankedIdeasSectionProps> = ({
           </div>
         </div>
 
-        {/* Filter */}
-        <div className="flex items-center space-x-2 text-xs">
-          <span className="text-slate-400">{t.ideas.filterViralityLabel}</span>
-          {viralityFilters.map((f) => (
+        {/* Controls: Filter & Translation Toggle */}
+        <div className="flex flex-wrap items-center gap-3 text-xs">
+          {hasTranslations && (
             <button
-              key={f.id}
-              onClick={() => setFilterVirality(f.id)}
-              className={`px-2.5 py-1 rounded-lg font-medium border transition ${
-                filterVirality === f.id
-                  ? 'bg-brand-500/20 text-brand-300 border-brand-500/40'
+              onClick={() => setShowTranslations((prev) => !prev)}
+              className={`inline-flex items-center space-x-1.5 px-2.5 py-1 rounded-lg font-medium border transition ${
+                showTranslations
+                  ? 'bg-indigo-500/20 text-indigo-300 border-indigo-500/40 shadow-sm shadow-indigo-500/10'
                   : 'bg-slate-950 text-slate-400 border-slate-800 hover:border-slate-700'
               }`}
             >
-              {f.label}
+              <Languages className="w-3.5 h-3.5 text-indigo-400" />
+              <span>{showTranslations ? t.ideas.meaningToggleHide : t.ideas.meaningToggleShow}</span>
             </button>
-          ))}
+          )}
+
+          <div className="flex items-center space-x-1.5">
+            <span className="text-slate-400">{t.ideas.filterViralityLabel}</span>
+            {viralityFilters.map((f) => (
+              <button
+                key={f.id}
+                onClick={() => setFilterVirality(f.id)}
+                className={`px-2.5 py-1 rounded-lg font-medium border transition ${
+                  filterVirality === f.id
+                    ? 'bg-brand-500/20 text-brand-300 border-brand-500/40'
+                    : 'bg-slate-950 text-slate-400 border-slate-800 hover:border-slate-700'
+                }`}
+              >
+                {f.label}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
 
@@ -113,6 +132,13 @@ export const RankedIdeasSection: React.FC<RankedIdeasSectionProps> = ({
                     )}
                   </div>
 
+                  {showTranslations && idea.titleTranslation && idea.titleTranslation !== idea.title && (
+                    <div className="inline-flex items-center space-x-1.5 px-2 py-0.5 rounded-md bg-indigo-950/50 border border-indigo-500/30 text-xs text-indigo-200">
+                      <span className="text-[10px] font-bold text-indigo-300 uppercase tracking-wide">🇬🇧 Meaning:</span>
+                      <span className="font-medium italic">"{idea.titleTranslation}"</span>
+                    </div>
+                  )}
+
                   <p className="text-xs text-brand-300/90 font-medium">
                     {t.ideas.angleLabel} {idea.angle}
                   </p>
@@ -143,6 +169,13 @@ export const RankedIdeasSection: React.FC<RankedIdeasSectionProps> = ({
                     <strong className="text-slate-300 not-italic">{t.ideas.whyItWinsLabel}</strong>{' '}
                     {idea.whyItWins}
                   </p>
+
+                  {showTranslations && idea.whyItWinsTranslation && idea.whyItWinsTranslation !== idea.whyItWins && (
+                    <p className="text-[11px] text-indigo-300/80 pt-0.5 italic">
+                      <strong className="text-indigo-200 not-italic">🇬🇧 UK Rationale:</strong>{' '}
+                      {idea.whyItWinsTranslation}
+                    </p>
+                  )}
                 </div>
               </div>
 

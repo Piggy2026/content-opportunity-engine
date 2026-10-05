@@ -79,6 +79,10 @@ export interface ContentGap {
   whyCompetitorsMissedIt: string;
   marketNuance: string; // Specific to Portugal, Brazil, or Spain
   opportunityLevel: 'high' | 'very-high' | 'critical';
+  titleTranslation?: string;
+  descriptionTranslation?: string;
+  whyCompetitorsMissedItTranslation?: string;
+  marketNuanceTranslation?: string;
 }
 
 export interface ContentIdea {
@@ -93,6 +97,8 @@ export interface ContentIdea {
   viralityPotential: 'High' | 'Very High' | 'Exceptional';
   competitionLevel: 'Low' | 'Medium' | 'High';
   whyItWins: string;
+  titleTranslation?: string;
+  whyItWinsTranslation?: string;
   isBestOpportunity?: boolean;
 }
 

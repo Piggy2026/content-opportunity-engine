@@ -178,6 +178,171 @@ function buildCookingIdeas(subject: string, market: TargetMarket, isShorts: bool
       },
     ];
   }
+  
+  if (market === 'es-ES') {
+    return [
+      {
+        title: `El Mayor Error al Hacer ${subject} que Deja la Masa Seca (Y Cómo Acertar)`,
+        angle: 'Desmitificación de temperatura del horno y orden de mezcla con demostración práctica.',
+        format: isShorts ? 'Shorts 45s con Gancho de Ruptura de Patrón' : 'Vídeo Largo 12min Paso a Paso en la Encimera',
+        gapExploited: 'Vídeos que muestran solo el montaje bonito sin explicar por qué la masa quedó dura o seca.',
+        targetAudiencePainPoint: 'Frustración de gastar ingredientes y que el resultado quede apelmazado o seco.',
+        viralityPotential: 'Exceptional',
+        competitionLevel: 'Low',
+        whyItWins: 'Resuelve el mayor miedo de quien cocina en casa y genera guardados masivos.',
+      },
+      {
+        title: `Cómo Hacer ${subject} Perfecto desde Cero Paso a Paso (Sin Complicaciones)`,
+        angle: 'Receta infalible calibrada para ingredientes comunes de supermercado español (Mercadona, Lidl, Carrefour).',
+        format: isShorts ? 'Reel de 50s en 3 Etapas' : 'Vídeo de 14min Tutorial para Principiantes',
+        gapExploited: 'Recetas traducidas con medidas confusas de tazas americanas e ingredientes raros.',
+        targetAudiencePainPoint: 'Inseguridad por no tener robots de cocina caros ni moldes profesionales.',
+        viralityPotential: 'Very High',
+        competitionLevel: 'Low',
+        whyItWins: 'Accesible para cualquier persona, con medidas exactas en gramos y grados centígrados.',
+      },
+      {
+        title: `Ingredientes de Marca vs Marca Blanca para ${subject}: ¿Merece la Pena Gastar Más?`,
+        angle: 'Cata a ciegas sin patrocinios comparando harina y chocolate caros vs básicos de supermercado.',
+        format: isShorts ? 'TikTok 40s con Prueba a Ciegas' : 'Vídeo 15min Comparativa Completa',
+        gapExploited: 'Mito de que para lograr un postre espectacular es obligatorio gastar una fortuna.',
+        targetAudiencePainPoint: 'Duda de si merece la pena pagar el doble por marcas gourmet.',
+        viralityPotential: 'Very High',
+        competitionLevel: 'Low',
+        whyItWins: 'Ahorro directo en la cesta de la compra con autoridad visual intachable.',
+      },
+      {
+        title: `Por Qué el 90% Falla el Punto de ${subject} (Y el Secreto de los Pasteleros)`,
+        angle: 'Explicación visual de la física del leudado y la temperatura de los ingredientes.',
+        format: isShorts ? 'Shorts 45s de Choque de Realidad' : 'Vídeo 11min Secreto de Pastelería',
+        gapExploited: 'Falta de divulgación sobre el comportamiento térmico de los hornos domésticos.',
+        targetAudiencePainPoint: 'Bizcocho que se hunde en el centro o queda crudo por dentro.',
+        viralityPotential: 'High',
+        competitionLevel: 'Medium',
+        whyItWins: 'Despierta la curiosidad y aporta un truco práctico inmediato.',
+      },
+      {
+        title: `Mi Receta de 15 Minutos de Preparación para ${subject} Sin Ensuciar Toda la Cocina`,
+        angle: 'Método de un solo bol (one-bowl) para días entre semana.',
+        format: isShorts ? 'POV Timelapse 35s' : 'Vídeo 10min Receta Express',
+        gapExploited: 'Recetas interminables que dejan una montaña de platos para fregar.',
+        targetAudiencePainPoint: 'Falta de tiempo para elaboraciones largas y tediosas.',
+        viralityPotential: 'Very High',
+        competitionLevel: 'Low',
+        whyItWins: 'Facilidad de ejecución extrema que dispara los guardados.',
+      },
+      {
+        title: `La Regla No Escrita del Horno en España para ${subject}`,
+        angle: 'Calibración de hornos convencionales vs ventilados a 160°C - 180°C.',
+        format: isShorts ? 'Shorts 40s Consejo Rápido' : 'Vídeo 12min Masterclass de Horno',
+        gapExploited: 'Ignorar las fluctuaciones térmicas habituales en hornos españoles.',
+        targetAudiencePainPoint: 'Recetas quemadas por fuera pero crudas en el interior.',
+        viralityPotential: 'High',
+        competitionLevel: 'Low',
+        whyItWins: 'Precisión técnica explicada de forma amena y clara.',
+      },
+      {
+        title: `3 Errores al Hacer ${subject} que Parecen Inofensivos Pero Arruinan el Resultado`,
+        angle: 'Contrarian: batir en exceso el gluten, abrir el horno antes de tiempo e ingredientes fríos.',
+        format: isShorts ? 'Reel de 40s con 3 Cortes Rápidos' : 'Vídeo 12min Errores Críticos',
+        gapExploited: 'Malos hábitos perpetuados por vídeos rápidos sin fundamento culinario.',
+        targetAudiencePainPoint: 'Repetir siempre los mismos fallos sin entender qué falla.',
+        viralityPotential: 'Very High',
+        competitionLevel: 'Low',
+        whyItWins: 'Genera debate masivo en comentarios ("¡yo siempre hacía eso!").',
+      },
+      {
+        title: `Cómo Hacer ${subject} Tierno y Esponjoso Sin Batidora ni Máquinas Caras`,
+        angle: 'Técnica manual sencilla usando únicamente unas varillas de mano o cuchara de madera.',
+        format: isShorts ? 'Shorts 45s con Checklist' : 'Vídeo 13min Paso a Paso Manual',
+        gapExploited: 'Canales que asumen que todo el mundo tiene amasadoras profesionales caras.',
+        targetAudiencePainPoint: 'Pensar que la buena repostería exige electrodomésticos de lujo.',
+        viralityPotential: 'High',
+        competitionLevel: 'Low',
+        whyItWins: 'Democratiza la cocina para estudiantes y familias prácticas.',
+      },
+      {
+        title: `Probé la Receta Viral de ${subject} de TikTok Durante 3 Días (¿Merece la Pena?)`,
+        angle: 'Auditoría honesta de "trucos" virales puntuando sabor, coste y textura.',
+        format: isShorts ? 'TikTok 55s Formato Review' : 'Vídeo 16min Test Empírico',
+        gapExploited: 'Vídeos que viralizan recetas absurdas que en la práctica no funcionan.',
+        targetAudiencePainPoint: 'Cansancio de caer en recetas de moda que acaban en desastre.',
+        viralityPotential: 'Exceptional',
+        competitionLevel: 'Low',
+        whyItWins: 'Formato honesto de verificación que genera máxima credibilidad.',
+      },
+      {
+        title: `Los 5 Ingredientes de Supermercado que Elevan Cualquier ${subject} a Nivel Profesional`,
+        angle: 'Pequeños toques de chef: sal marina en escamas, cacao puro del porcentaje correcto, vainilla natural.',
+        format: isShorts ? 'Reel 45s Consejos de Oro' : 'Vídeo 14min Secretos de Chef',
+        gapExploited: 'Falta de consejos de equilibrio de sabor y texturas.',
+        targetAudiencePainPoint: 'Recetas con sabor plano o excesivamente azucaradas.',
+        viralityPotential: 'Very High',
+        competitionLevel: 'Medium',
+        whyItWins: 'Promesa de transformación gastronómica con productos accesibles.',
+      },
+      {
+        title: `Qué Hacer Cuando ${subject} Se Hunde en el Centro (Cómo Salvarlo Sin Tirarlo)`,
+        angle: 'Trucos de relleno, decoración y reaprovechamiento para no tirar ingredientes caros.',
+        format: isShorts ? 'Shorts 40s Solución Rápida' : 'Vídeo 10min Guía de Rescate',
+        gapExploited: 'Inexistencia de tutoriales de emergencia cuando la receta sale torcida.',
+        targetAudiencePainPoint: 'Miedo a arruinar el postre cuando hay invitados en casa.',
+        viralityPotential: 'High',
+        competitionLevel: 'Low',
+        whyItWins: 'Resuelve un apuro real y acumula guardados.',
+      },
+      {
+        title: `La Versión Más Ligera y Equilibrada de ${subject} Sin Perder Sabor`,
+        angle: 'Ajuste inteligente de azúcares y grasas sin recurrir a edulcorantes extraños.',
+        format: isShorts ? 'Reel 45s Antes y Después' : 'Vídeo 13min Receta Equilibrada',
+        gapExploited: 'Extremos entre bombas hipercalóricas o versiones fitness insípidas.',
+        targetAudiencePainPoint: 'Ganas de disfrutar de un capricho delicioso sin remordimientos.',
+        viralityPotential: 'Very High',
+        competitionLevel: 'Low',
+        whyItWins: 'Conecta con quien busca disfrute y equilibrio en la mesa.',
+      },
+      {
+        title: `Cómo Conservar ${subject} para que Quede Tan Tierno el Tercer Día como el Primero`,
+        angle: 'Pautas de almacenamiento, recipientes herméticos y temperatura adecuada.',
+        format: isShorts ? 'Shorts 35s Pauta de Conservación' : 'Vídeo 9min Guía de Conservación',
+        gapExploited: 'Vídeos que solo muestran el bizcocho caliente y olvidan el día siguiente.',
+        targetAudiencePainPoint: 'Postres que se quedan secos 24 horas después de hornear.',
+        viralityPotential: 'High',
+        competitionLevel: 'Low',
+        whyItWins: 'Utilidad diaria de gran valor para la economía familiar.',
+      },
+      {
+        title: `La Regla 80/20 en ${subject}: Los 2 Pasos que Definen el 80% del Éxito`,
+        angle: 'Foco en lo esencial: batido correcto de huevos y reposo de la masa.',
+        format: isShorts ? 'TikTok 45s Resumen Estratégico' : 'Vídeo 11min Técnica Pura',
+        gapExploited: 'Exceso de pasos secundarios que confunden al cocinero aficionado.',
+        targetAudiencePainPoint: 'Sobrecarga de instrucciones contradictorias en internet.',
+        viralityPotential: 'High',
+        competitionLevel: 'Low',
+        whyItWins: 'Claridad directa y calma frente a los fuegos.',
+      },
+      {
+        title: `Preguntas y Respuestas: Las 10 Dudas Más Frecuentes sobre ${subject}`,
+        angle: 'Resolución de comentarios reales de quienes intentaron hacer la receta.',
+        format: isShorts ? 'Reel 50s Preguntas Rápidas' : 'Vídeo 15min FAQ Completo',
+        gapExploited: 'Dudas sobre sustituciones que nunca se aclaran en los tutoriales principales.',
+        targetAudiencePainPoint: 'Dudas sobre harinas, moldes y sustitutos de azúcar.',
+        viralityPotential: 'Medium',
+        competitionLevel: 'Low',
+        whyItWins: 'Crea comunidad y resuelve fricciones concretas.',
+      },
+      {
+        title: `La Ficha de Receta Completa de ${subject}: Medidas en Gramos Listas para Guardar`,
+        angle: 'Resumen visual limpio para guardar en el móvil y tener en la cocina.',
+        format: isShorts ? 'Shorts 40s con Tarjeta de Receta' : 'Vídeo 10min Ficha Técnica',
+        gapExploited: 'Tener que pausar vídeos en marcha con las manos llenas de harina.',
+        targetAudiencePainPoint: 'Perder la receta y tener que buscar el vídeo entero otra vez.',
+        viralityPotential: 'Exceptional',
+        competitionLevel: 'Low',
+        whyItWins: 'Máxima tasa de favoritos y envíos por WhatsApp.',
+      },
+    ];
+  }
 
   // en-GB cooking
   return [
@@ -346,9 +511,14 @@ function buildCookingIdeas(subject: string, market: TargetMarket, isShorts: bool
 
 function buildGardeningIdeas(subject: string, market: TargetMarket, isShorts: boolean): IdeaTemplateSpec[] {
   const isUK = market === 'en-GB';
+  const isES = market === 'es-ES';
   return [
     {
-      title: isUK ? `The Fatal Mistake with ${subject} in UK Gardens (And How to Fix It)` : `O Maior Erro com ${subject} que Queima as Raízes (E Como Evitar)`,
+      title: isUK
+        ? `The Fatal Mistake with ${subject} in UK Gardens (And How to Fix It)`
+        : isES
+        ? `El Mayor Error con ${subject} en Jardines y Terrazas (Y Cómo Evitarlo)`
+        : `O Maior Erro com ${subject} que Queima as Raízes (E Como Evitar)`,
       angle: 'Troubleshooting soil drainage, seasonal planting, and watering.',
       format: isShorts ? 'Shorts 45s Warning' : '12min Practical Guide',
       gapExploited: 'Generic advice that ignores local rainfall, frost dates, or summer heat.',
@@ -358,7 +528,11 @@ function buildGardeningIdeas(subject: string, market: TargetMarket, isShorts: bo
       whyItWins: 'Saves real plants and prevents frustration for beginner gardeners.',
     },
     {
-      title: isUK ? `How to Grow ${subject} from Scratch on a Budget` : `Como Cultivar ${subject} do Zero com Orçamento Reduzido`,
+      title: isUK
+        ? `How to Grow ${subject} from Scratch on a Budget`
+        : isES
+        ? `Cómo Cultivar ${subject} desde Cero con Bajo Presupuesto`
+        : `Como Cultivar ${subject} do Zero com Orçamento Reduzido`,
       angle: 'Beginner container and patio setup using repurposed pots and affordable compost.',
       format: isShorts ? 'Reel 50s 3-Step Setup' : '14min Beginner Blueprint',
       gapExploited: 'Guides that assume viewers have huge plots of land and expensive gardening tools.',
@@ -368,7 +542,11 @@ function buildGardeningIdeas(subject: string, market: TargetMarket, isShorts: bo
       whyItWins: 'Democratises gardening for urban dwellers and beginners.',
     },
     {
-      title: isUK ? `Bargain Compost vs Specialist Soil for ${subject}: The Honest Test` : `Substrato Barato vs Terra Especial para ${subject}: Vale a Pena?`,
+      title: isUK
+        ? `Bargain Compost vs Specialist Soil for ${subject}: The Honest Test`
+        : isES
+        ? `Sustrato Barato vs Tierra Especial para ${subject}: La Prueba Honesta`
+        : `Substrato Barato vs Terra Especial para ${subject}: Vale a Pena?`,
       angle: 'Unsponsored growth test comparing budget supermarket bags with premium garden centre mixes.',
       format: isShorts ? 'TikTok 40s Growth Test' : '15min Comparison Audit',
       gapExploited: 'Expensive soil marketing that confuses newcomers.',
@@ -378,7 +556,11 @@ function buildGardeningIdeas(subject: string, market: TargetMarket, isShorts: bo
       whyItWins: 'High-value consumer advice with visible green results.',
     },
     {
-      title: isUK ? `Why 90% of Seedlings of ${subject} Fail (And the Secret of the 10%)` : `Porque é que 90% das Mudas de ${subject} Morrem (E o Segredo para Salvar)`,
+      title: isUK
+        ? `Why 90% of Seedlings of ${subject} Fail (And the Secret of the 10%)`
+        : isES
+        ? `Por Qué el 90% de las Plántulas de ${subject} Mueren (Y el Secreto para Salvarlas)`
+        : `Porque é que 90% das Mudas de ${subject} Morrem (E o Segredo para Salvar)`,
       angle: 'Addressing over-watering, damping off, and insufficient natural light.',
       format: isShorts ? 'Shorts 45s Reality Check' : '11min Troubleshooting Walkthrough',
       gapExploited: 'Failing to explain the critical first 3 weeks of seedling care.',
@@ -388,7 +570,11 @@ function buildGardeningIdeas(subject: string, market: TargetMarket, isShorts: bo
       whyItWins: 'Eliminates the #1 reason beginners give up on gardening.',
     },
     {
-      title: isUK ? `The 10-Minute Weekly Maintenance Routine for ${subject}` : `A Rotina Semanal de 10 Minutos para Manter ${subject} Saudável`,
+      title: isUK
+        ? `The 10-Minute Weekly Maintenance Routine for ${subject}`
+        : isES
+        ? `La Rutina Semanal de 10 Minutos para Mantener ${subject} Sano y Fuerte`
+        : `A Rotina Semanal de 10 Minutos para Manter ${subject} Saudável`,
       angle: 'Minimalist checklist: targeted watering, checking leaf undersides, and deadheading.',
       format: isShorts ? 'POV 35s Routine' : '10min Routine Walkthrough',
       gapExploited: 'Gardening videos that make plant care sound like a full-time job.',
@@ -398,7 +584,11 @@ function buildGardeningIdeas(subject: string, market: TargetMarket, isShorts: bo
       whyItWins: 'Low friction and daily feasibility.',
     },
     {
-      title: isUK ? `The Unwritten UK Frost & Pruning Rule for ${subject}` : `A Regra Não Escrita de Rega e Poda para ${subject}`,
+      title: isUK
+        ? `The Unwritten UK Frost & Pruning Rule for ${subject}`
+        : isES
+        ? `La Regla No Escrita de Riego y Podas para ${subject} en el Clima Local`
+        : `A Regra Não Escrita de Rega e Poda para ${subject}`,
       angle: 'Local seasonal nuances that prevent cold snaps or scorched roots from killing plants.',
       format: isShorts ? 'Shorts 40s Quick Tip' : '12min Seasonal Masterclass',
       gapExploited: 'Imported guides with the wrong calendar dates.',
@@ -408,7 +598,11 @@ function buildGardeningIdeas(subject: string, market: TargetMarket, isShorts: bo
       whyItWins: 'Essential local seasonal knowledge.',
     },
     {
-      title: isUK ? `3 Common Plant Care Trends That Actually Harm ${subject}` : `3 Erros Comuns no Cuidado de ${subject} que Deves Parar Hoje`,
+      title: isUK
+        ? `3 Common Plant Care Trends That Actually Harm ${subject}`
+        : isES
+        ? `3 Mitos Comunes sobre el Cuidado de ${subject} que Deberías Dejar Hoy Mismo`
+        : `3 Erros Comuns no Cuidado de ${subject} que Deves Parar Hoje`,
       angle: 'Debunking excessive chemical sprays, incorrect fertilising, and tight repotting.',
       format: isShorts ? 'Reel 40s 3 Fast Cuts' : '12min Myth-Buster',
       gapExploited: 'Gimmicky internet gardening hacks that do more harm than good.',
@@ -418,7 +612,11 @@ function buildGardeningIdeas(subject: string, market: TargetMarket, isShorts: bo
       whyItWins: 'Builds trust through sober, grounded botanical sense.',
     },
     {
-      title: isUK ? `How to Grow ${subject} in Pots and Small Balconies` : `Como Ter ${subject} em Vasos e Varandas Pequenas`,
+      title: isUK
+        ? `How to Grow ${subject} in Pots and Small Balconies`
+        : isES
+        ? `Cómo Cultivar ${subject} en Macetas y Balcones Pequeños`
+        : `Como Ter ${subject} em Vasos e Varandas Pequenas`,
       angle: 'Container sizing, drainage holes, and balcony wind protection.',
       format: isShorts ? 'Shorts 45s Balcony Guide' : '13min Urban Gardening Blueprint',
       gapExploited: 'Lack of container-specific tutorials for renters and flat dwellers.',
@@ -428,7 +626,11 @@ function buildGardeningIdeas(subject: string, market: TargetMarket, isShorts: bo
       whyItWins: 'Expands the addressable audience to urban renters.',
     },
     {
-      title: isUK ? `I Tested 3 Ways to Propagate ${subject} (30-Day Growth Results)` : `Testei 3 Formas de Propagar ${subject} (Resultados Reais ao Fim de 30 Dias)`,
+      title: isUK
+        ? `I Tested 3 Ways to Propagate ${subject} (30-Day Growth Results)`
+        : isES
+        ? `Probé 3 Formas de Propagar ${subject} (Resultados Reales tras 30 Días)`
+        : `Testei 3 Formas de Propagar ${subject} (Resultados Reais ao Fim de 30 Dias)`,
       angle: 'Direct test of cuttings in water, soil, and direct rooting hormones.',
       format: isShorts ? 'TikTok 55s Time-Lapse' : '16min 30-Day Experiment',
       gapExploited: 'Videos showing cuttings being made but never showing root development weeks later.',
@@ -438,7 +640,11 @@ function buildGardeningIdeas(subject: string, market: TargetMarket, isShorts: bo
       whyItWins: 'Compelling visual proof and satisfying progression.',
     },
     {
-      title: isUK ? `5 Natural Household Ingredients That Help ${subject} Thrive Without Chemicals` : `5 Ingredientes Caseiros que Adubam ${subject} Sem Químicos Caros`,
+      title: isUK
+        ? `5 Natural Household Ingredients That Help ${subject} Thrive Without Chemicals`
+        : isES
+        ? `5 Ingredientes Caseros que Nutren ${subject} Sin Gastar en Fertilizantes Químicos`
+        : `5 Ingredientes Caseiros que Adubam ${subject} Sem Químicos Caros`,
       angle: 'Eggshell calcium, coffee ground acidity balance, and natural weed suppression.',
       format: isShorts ? 'Reel 45s Organic Secrets' : '14min Natural Feed Guide',
       gapExploited: 'Over-reliance on synthetic fertilisers that harm soil microbiology.',
@@ -448,7 +654,11 @@ function buildGardeningIdeas(subject: string, market: TargetMarket, isShorts: bo
       whyItWins: 'Free, eco-friendly kitchen hacks for the garden.',
     },
     {
-      title: isUK ? `How to Protect ${subject} from Slugs, Aphids & Common Pests Organically` : `Como Proteger ${subject} de Pragas sem Venenos Perigosos`,
+      title: isUK
+        ? `How to Protect ${subject} from Slugs, Aphids & Common Pests Organically`
+        : isES
+        ? `Cómo Proteger ${subject} de Plagas (Pulgón, Cochinilla) de Forma Ecológica`
+        : `Como Proteger ${subject} de Pragas sem Venenos Perigosos`,
       angle: 'Physical barriers, companion planting, and natural soap sprays.',
       format: isShorts ? 'Shorts 40s Pest Hack' : '10min Organic Pest Blueprint',
       gapExploited: 'Videos recommending harsh poisons harmful to pets and pollinators.',
@@ -458,7 +668,11 @@ function buildGardeningIdeas(subject: string, market: TargetMarket, isShorts: bo
       whyItWins: 'High-urgency problem solving that saves viewers\' hard work.',
     },
     {
-      title: isUK ? `How to Water ${subject} Properly: Why Morning vs Evening Matters` : `A Forma Correta de Regar ${subject}: Porque a Hora do Dia Faz Toda a Diferença`,
+      title: isUK
+        ? `How to Water ${subject} Properly: Why Morning vs Evening Matters`
+        : isES
+        ? `La Forma Correcta de Regar ${subject}: Por Qué la Hora del Día Marca la Diferencia`
+        : `A Forma Correta de Regar ${subject}: Porque a Hora do Dia Faz Toda a Diferença`,
       angle: 'Evaporation rates, fungal leaf prevention, and deep soaking vs shallow sprinkles.',
       format: isShorts ? 'Reel 45s Watering Technique' : '11min Hydration Guide',
       gapExploited: 'Assuming watering is just wetting the surface soil.',
@@ -468,7 +682,11 @@ function buildGardeningIdeas(subject: string, market: TargetMarket, isShorts: bo
       whyItWins: 'Simple tweak with massive visual impact on plant health.',
     },
     {
-      title: isUK ? `The Signs Your ${subject} Needs Repotting (And How to Do It Without Shock)` : `Como Saber Quando Mudar ${subject} de Vaso Sem Matar a Planta`,
+      title: isUK
+        ? `The Signs Your ${subject} Needs Repotting (And How to Do It Without Shock)`
+        : isES
+        ? `Las Señales de que ${subject} Necesita Trasplante (Sin Provocar Shock)`
+        : `Como Saber Quando Mudar ${subject} de Vaso Sem Matar a Planta`,
       angle: 'Root-bound diagnosis and gentle root loosening technique.',
       format: isShorts ? 'Shorts 35s Repotting Checklist' : '12min Repotting Walkthrough',
       gapExploited: 'Transplant shock killing mature plants during pot upgrades.',
@@ -478,7 +696,11 @@ function buildGardeningIdeas(subject: string, market: TargetMarket, isShorts: bo
       whyItWins: 'Practical confidence builder for indoor and outdoor plant lovers.',
     },
     {
-      title: isUK ? `The 80/20 Rule in Plant Care: The 2 Things That Guarantee Success with ${subject}` : `A Regra 80/20 na Jardinagem: Os 2 Hábitos Essenciais para ${subject}`,
+      title: isUK
+        ? `The 80/20 Rule in Plant Care: The 2 Things That Guarantee Success with ${subject}`
+        : isES
+        ? `La Regla 80/20 en Jardinería: Los 2 Hábitos que Garantizan el Éxito con ${subject}`
+        : `A Regra 80/20 na Jardinagem: Os 2 Hábitos Essenciais para ${subject}`,
       angle: 'Focus on correct lighting location and proper drainage holes.',
       format: isShorts ? 'TikTok 45s Essential Rules' : '10min Principle Guide',
       gapExploited: 'Complicated botanical instructions that paralyse the gardener.',
@@ -488,7 +710,11 @@ function buildGardeningIdeas(subject: string, market: TargetMarket, isShorts: bo
       whyItWins: 'Cuts through fluff with serene clarity.',
     },
     {
-      title: isUK ? `Gardening Q&A: Answering the 10 Most Common Questions on ${subject}` : `Perguntas e Respostas: As 10 Dúvidas Mais Comuns Sobre ${subject}`,
+      title: isUK
+        ? `Gardening Q&A: Answering the 10 Most Common Questions on ${subject}`
+        : isES
+        ? `Preguntas y Respuestas: Las 10 Dudas Más Comunes sobre ${subject}`
+        : `Perguntas e Respostas: As 10 Dúvidas Mais Comuns Sobre ${subject}`,
       angle: 'Resolving real community problems regarding yellow leaves, flowering, and winter care.',
       format: isShorts ? 'Reel 50s Rapid Fire' : '15min Q&A Guide',
       gapExploited: 'Specific grower dilemmas that general guides gloss over.',
@@ -498,7 +724,11 @@ function buildGardeningIdeas(subject: string, market: TargetMarket, isShorts: bo
       whyItWins: 'Builds dedicated niche community followers.',
     },
     {
-      title: isUK ? `The Complete Seasonal Calendar for ${subject}: What to Do Month-by-Month` : `O Calendário Completo de Cuidados para ${subject}: O Que Fazer Mês a Mês`,
+      title: isUK
+        ? `The Complete Seasonal Calendar for ${subject}: What to Do Month-by-Month`
+        : isES
+        ? `El Calendario Completo de Cuidados para ${subject}: Qué Hacer Mes a Mes`
+        : `O Calendário Completo de Cuidados para ${subject}: O Que Fazer Mês a Mês`,
       angle: 'Concise visual guide detailing planting, feeding, pruning, and dormant seasons.',
       format: isShorts ? 'Shorts 40s Saveable Calendar' : '13min Year-Round Guide',
       gapExploited: 'Gardening guides that cover one day rather than year-round plant lifecycle.',
@@ -512,9 +742,14 @@ function buildGardeningIdeas(subject: string, market: TargetMarket, isShorts: bo
 
 function buildHealthIdeas(subject: string, market: TargetMarket, isShorts: boolean): IdeaTemplateSpec[] {
   const isUK = market === 'en-GB';
+  const isES = market === 'es-ES';
   return [
     {
-      title: isUK ? `The #1 Unsustainable Mistake with ${subject} (And How to Fix It)` : `O Maior Erro em ${subject} que Faz 90% das Pessoas Desistirem`,
+      title: isUK
+        ? `The #1 Unsustainable Mistake with ${subject} (And How to Fix It)`
+        : isES
+        ? `El Mayor Error en ${subject} que Hace que el 90% lo Abandone (Y Cómo Evitarlo)`
+        : `O Maior Erro em ${subject} que Faz 90% das Pessoas Desistirem`,
       angle: 'Replacing extreme restrictive fads with realistic, nutrient-dense habits.',
       format: isShorts ? 'Shorts 45s Pattern Interrupt' : '12min Wellness Blueprint',
       gapExploited: 'Influencer diets that demand 2 hours in the gym and eating boiled chicken daily.',
@@ -524,7 +759,11 @@ function buildHealthIdeas(subject: string, market: TargetMarket, isShorts: boole
       whyItWins: 'Relieves guilt and provides an achievable, grounded health path.',
     },
     {
-      title: isUK ? `Quick High-Protein Meals for ${subject} Ready in Under 15 Minutes` : `Refeições Rápidas de Alta Proteína para ${subject} Prontas em 15 Minutos`,
+      title: isUK
+        ? `Quick High-Protein Meals for ${subject} Ready in Under 15 Minutes`
+        : isES
+        ? `Comidas Rápidas Ricas en Proteína para ${subject} Listas en Menos de 15 Minutos`
+        : `Refeições Rápidas de Alta Proteína para ${subject} Prontas em 15 Minutos`,
       angle: 'Fast, hearty whole-food meals using standard supermarket staples.',
       format: isShorts ? 'Reel 50s 3-Recipe Reel' : '14min Meal Prep Walkthrough',
       gapExploited: '90-minute complicated Sunday meal prep routines that no busy person can maintain.',
@@ -534,7 +773,11 @@ function buildHealthIdeas(subject: string, market: TargetMarket, isShorts: boole
       whyItWins: 'Solves the acute evening dilemma with delicious, fast nourishment.',
     },
     {
-      title: isUK ? `Whole Supermarket Foods vs Expensive Powders for ${subject}` : `Comida de Supermercado vs Suplementos Caros para ${subject}: A Verdade`,
+      title: isUK
+        ? `Whole Supermarket Foods vs Expensive Powders for ${subject}`
+        : isES
+        ? `Comida Real de Supermercado vs Suplementos Caros para ${subject}: La Verdad`
+        : `Comida de Supermercado vs Suplementos Caros para ${subject}: A Verdade`,
       angle: 'Unsponsored nutritional audit comparing eggs, Greek yoghurt, and tinned fish against expensive powders.',
       format: isShorts ? 'TikTok 40s Comparison' : '15min Honest Nutrition Audit',
       gapExploited: 'Aggressive sponsored supplement peddling on fitness social media.',
@@ -544,7 +787,11 @@ function buildHealthIdeas(subject: string, market: TargetMarket, isShorts: boole
       whyItWins: 'Saves household money while improving real nutritional vitality.',
     },
     {
-      title: isUK ? `Why 90% Fail to Maintain Progress in ${subject} (And the Consistency Secret)` : `Porque é que 90% Falham em ${subject} (E o Segredo da Consistência)`,
+      title: isUK
+        ? `Why 90% Fail to Maintain Progress in ${subject} (And the Consistency Secret)`
+        : isES
+        ? `Por Qué el 90% No Consigue Mantener la Constancia en ${subject} (Y el Secreto para Lograrlo)`
+        : `Porque é que 90% Falham em ${subject} (E o Segredo da Consistência)`,
       angle: 'Habit stacking, friction reduction, and keeping energy stable throughout the workday.',
       format: isShorts ? 'Shorts 45s Reality Check' : '11min Behavioural Masterclass',
       gapExploited: 'Glorifying extreme willpower over intelligent environmental design.',
@@ -554,7 +801,11 @@ function buildHealthIdeas(subject: string, market: TargetMarket, isShorts: boole
       whyItWins: 'Actionable psychology that viewers can implement immediately.',
     },
     {
-      title: isUK ? `The 15-Minute Daily Routine for Energy, Mobility & Strength with ${subject}` : `A Rotina Diária de 15 Minutos para Vitalidade e Mobilidade em ${subject}`,
+      title: isUK
+        ? `The 15-Minute Daily Routine for Energy, Mobility & Strength with ${subject}`
+        : isES
+        ? `La Rutina Diaria de 15 Minutos para Vitalidad, Movilidad y Fuerza con ${subject}`
+        : `A Rotina Diária de 15 Minutos para Vitalidade e Mobilidade em ${subject}`,
       angle: 'Joint-friendly functional movements and breakfast habits for busy adults.',
       format: isShorts ? 'POV 35s Routine' : '12min Follow-Along Routine',
       gapExploited: 'Extreme workout videos that cause joint pain for mature or working adults.',
@@ -564,7 +815,11 @@ function buildHealthIdeas(subject: string, market: TargetMarket, isShorts: boole
       whyItWins: 'Doable at home in ordinary clothes without gym subscriptions.',
     },
     {
-      title: isUK ? `The Unwritten Sleep & Hydration Rule Behind ${subject}` : `A Regra Essencial de Sono e Hidratação para Potenciar ${subject}`,
+      title: isUK
+        ? `The Unwritten Sleep & Hydration Rule Behind ${subject}`
+        : isES
+        ? `La Regla Clave de Sueño e Hidratación para Potenciar ${subject}`
+        : `A Regra Essencial de Sono e Hidratação para Potenciar ${subject}`,
       angle: 'How sleep architecture and morning hydration drive 70% of vitality and appetite control.',
       format: isShorts ? 'Shorts 40s Science Tip' : '11min Recovery Masterclass',
       gapExploited: 'Obsessing over workouts while ignoring chronic sleep deprivation.',
@@ -574,7 +829,11 @@ function buildHealthIdeas(subject: string, market: TargetMarket, isShorts: boole
       whyItWins: 'Focuses on the foundation of wellness without selling products.',
     },
     {
-      title: isUK ? `3 Health 'Hacks' for ${subject} That Are Completely Useless` : `3 Modismos da Internet sobre ${subject} que Só Fazem Perder Tempo`,
+      title: isUK
+        ? `3 Health 'Hacks' for ${subject} That Are Completely Useless`
+        : isES
+        ? `3 Mitos de Internet sobre ${subject} que Son Completamente Inútiles`
+        : `3 Modismos da Internet sobre ${subject} que Só Fazem Perder Tempo`,
       angle: 'Exposing useless fat-burning teas, extreme cold plunge hype, and overpriced detoxes.',
       format: isShorts ? 'Reel 40s 3 Fast Cuts' : '12min Scam Buster',
       gapExploited: 'Predatory marketing targeting people desperate for fast health transformations.',
@@ -584,7 +843,11 @@ function buildHealthIdeas(subject: string, market: TargetMarket, isShorts: boole
       whyItWins: 'Sharp, refreshing honesty cut through wellness noise.',
     },
     {
-      title: isUK ? `How to Tailor ${subject} for Adults Over 40: Joint Health & Longevity` : `Como Adaptar ${subject} Depois dos 40 Anos: Articulações e Longevidade`,
+      title: isUK
+        ? `How to Tailor ${subject} for Adults Over 40: Joint Health & Longevity`
+        : isES
+        ? `Cómo Adaptar ${subject} a Partir de los 40 Años: Articulaciones y Longevidad`
+        : `Como Adaptar ${subject} Depois dos 40 Anos: Articulações e Longevidade`,
       angle: 'Slower tempo, higher protein distribution, and joint preservation over ego lifting.',
       format: isShorts ? 'Shorts 45s Longevity Tip' : '14min Over-40 Masterclass',
       gapExploited: 'Fitness channels predominantly catered to 20-year-olds with indestructible joints.',
@@ -594,7 +857,11 @@ function buildHealthIdeas(subject: string, market: TargetMarket, isShorts: boole
       whyItWins: 'Massive underserved audience of mature adults with purchasing power.',
     },
     {
-      title: isUK ? `I Tracked My Health Markers on ${subject} for 30 Days (Blood & Energy Results)` : `Testei Esta Mudança em ${subject} Durante 30 Dias (Resultados Reais de Energia)`,
+      title: isUK
+        ? `I Tracked My Health Markers on ${subject} for 30 Days (Blood & Energy Results)`
+        : isES
+        ? `Analicé Mis Parámetros de Salud con ${subject} Durante 30 Días (Resultados Reales)`
+        : `Testei Esta Mudança em ${subject} Durante 30 Dias (Resultados Reais de Energia)`,
       angle: 'Empirical biomarker review showing real improvements in resting heart rate and focus.',
       format: isShorts ? 'TikTok 55s Data Review' : '16min 30-Day Experiment',
       gapExploited: 'Anecdotal claims without auditable before-and-after data.',
@@ -604,7 +871,11 @@ function buildHealthIdeas(subject: string, market: TargetMarket, isShorts: boole
       whyItWins: 'Transparent personal data generates deep audience trust.',
     },
     {
-      title: isUK ? `5 Supermarket Essentials That Keep You Full for Hours with ${subject}` : `5 Alimentos Simples de Supermercado que Saciam por Horas em ${subject}`,
+      title: isUK
+        ? `5 Supermarket Essentials That Keep You Full for Hours with ${subject}`
+        : isES
+        ? `5 Alimentos Básicos de Supermercado que Sacian durante Horas en ${subject}`
+        : `5 Alimentos Simples de Supermercado que Saciam por Horas em ${subject}`,
       angle: 'Fibre density, lean proteins, and complex carbohydrates that stop snacking urges.',
       format: isShorts ? 'Reel 45s Satiety Staples' : '13min Shopping Walkthrough',
       gapExploited: 'Diets that leave people hungry, cranky, and obsessing over snacks.',
@@ -614,7 +885,11 @@ function buildHealthIdeas(subject: string, market: TargetMarket, isShorts: boole
       whyItWins: 'Solves hunger at the root using cheap everyday foods.',
     },
     {
-      title: isUK ? `How to Stay on Track with ${subject} When Dining Out or Travelling` : `Como Manter os Resultados em ${subject} Mesmo ao Comer Fora ou Viajar`,
+      title: isUK
+        ? `How to Stay on Track with ${subject} When Dining Out or Travelling`
+        : isES
+        ? `Cómo Mantener los Resultados en ${subject} al Salir a Cenar o Viajar`
+        : `Como Manter os Resultados em ${subject} Mesmo ao Comer Fora ou Viajar`,
       angle: 'Sensible menu selection strategies that let you enjoy social occasions without guilt.',
       format: isShorts ? 'Shorts 40s Restaurant Hack' : '10min Social Life Guide',
       gapExploited: 'Unrealistic advice telling people to bring cold Tupperware to restaurants.',
@@ -624,7 +899,11 @@ function buildHealthIdeas(subject: string, market: TargetMarket, isShorts: boole
       whyItWins: 'Empowers viewers to live a normal, enjoyable social life.',
     },
     {
-      title: isUK ? `The Stress & Cortisol Trap in ${subject}: Why You're Not Seeing Results` : `O Efeito do Stress e Cortisol em ${subject}: Porque Não Vês Resultados`,
+      title: isUK
+        ? `The Stress & Cortisol Trap in ${subject}: Why You're Not Seeing Results`
+        : isES
+        ? `La Trampa del Estrés y el Cortisol en ${subject}: Por Qué No Ves Resultados`
+        : `O Efeito do Stress e Cortisol em ${subject}: Porque Não Vês Resultados`,
       angle: 'Explaining how chronic workplace anxiety inhibits recovery and drives abdominal fat storage.',
       format: isShorts ? 'Reel 45s Stress Connection' : '12min Hormonal Balance Guide',
       gapExploited: 'Treating health purely as a calories-in-calories-out equation.',
@@ -634,7 +913,11 @@ function buildHealthIdeas(subject: string, market: TargetMarket, isShorts: boole
       whyItWins: 'Validates the viewer\'s lived experience of demanding work pressure.',
     },
     {
-      title: isUK ? `The Minimalist Grocery Shopping List for ${subject} Under £30` : `A Lista de Compras Essencial para ${subject} com Menos de 30€`,
+      title: isUK
+        ? `The Minimalist Grocery Shopping List for ${subject} Under £30`
+        : isES
+        ? `La Lista de la Compra Minimalista para ${subject} por Menos de 30€`
+        : `A Lista de Compras Essencial para ${subject} com Menos de 30€`,
       angle: 'Clean trolley audit with exact items and prices for a week of nutritious eating.',
       format: isShorts ? 'Shorts 35s Trolley Tour' : '11min Budget Grocery Walkthrough',
       gapExploited: 'Health advice that assumes an unlimited budget at organic farmers markets.',
@@ -644,7 +927,11 @@ function buildHealthIdeas(subject: string, market: TargetMarket, isShorts: boole
       whyItWins: 'Tangible, cost-effective grocery lists get saved and shared endlessly.',
     },
     {
-      title: isUK ? `The 80/20 Rule for ${subject}: The 2 Habits That Provide 80% of the Results` : `A Regra 80/20 em ${subject}: Os 2 Hábitos que Geram 80% dos Resultados`,
+      title: isUK
+        ? `The 80/20 Rule for ${subject}: The 2 Habits That Provide 80% of the Results`
+        : isES
+        ? `La Regla 80/20 en ${subject}: Los 2 Hábitos que Producen el 80% de los Resultados`
+        : `A Regra 80/20 em ${subject}: Os 2 Hábitos que Geram 80% dos Resultados`,
       angle: 'Prioritising adequate daily protein and 7,500 daily steps over complex training splits.',
       format: isShorts ? 'TikTok 45s Essential Habits' : '10min Principle Guide',
       gapExploited: 'Confusing beginners with 15 minor details that only matter for elite athletes.',
@@ -654,7 +941,11 @@ function buildHealthIdeas(subject: string, market: TargetMarket, isShorts: boole
       whyItWins: 'Provides immense psychological relief and clarity.',
     },
     {
-      title: isUK ? `Health & Nutrition Q&A: Addressing the 10 Most Common Dilemmas on ${subject}` : `Perguntas e Respostas: As 10 Maiores Dúvidas sobre ${subject}`,
+      title: isUK
+        ? `Health & Nutrition Q&A: Addressing the 10 Most Common Dilemmas on ${subject}`
+        : isES
+        ? `Preguntas y Respuestas: Las 10 Mayores Dudas sobre ${subject}`
+        : `Perguntas e Respostas: As 10 Maiores Dúvidas sobre ${subject}`,
       angle: 'Direct answers on meal timing, coffee intake, carb consumption, and fatigue.',
       format: isShorts ? 'Reel 50s Rapid Fire Answers' : '15min Comprehensive FAQ',
       gapExploited: 'Nuanced questions that standard fitness videos dismiss.',
@@ -664,7 +955,11 @@ function buildHealthIdeas(subject: string, market: TargetMarket, isShorts: boole
       whyItWins: 'Builds warm trust and authoritative connection.',
     },
     {
-      title: isUK ? `The Printable Weekly Habit & Meal Tracker for ${subject}` : `O Guia em Cartão de Hábitos e Refeições Práticas para ${subject}`,
+      title: isUK
+        ? `The Printable Weekly Habit & Meal Tracker for ${subject}`
+        : isES
+        ? `La Ficha en Tarjeta de Hábitos y Menú Práctico para ${subject}`
+        : `O Guia em Cartão de Hábitos e Refeições Práticas para ${subject}`,
       angle: 'Clean visual summary card designed for saving to phone camera rolls or fridge doors.',
       format: isShorts ? 'Shorts 40s Save-to-Phone Checklist' : '10min Printable Guide',
       gapExploited: 'Lack of practical daily accountability frameworks.',
@@ -678,9 +973,14 @@ function buildHealthIdeas(subject: string, market: TargetMarket, isShorts: boole
 
 function buildConsumerBudgetingIdeas(subject: string, market: TargetMarket, isShorts: boolean): IdeaTemplateSpec[] {
   const isUK = market === 'en-GB';
+  const isES = market === 'es-ES';
   return [
     {
-      title: isUK ? `The Sneaky Trolley Trap Costing UK Shoppers on ${subject}` : `A Armadilha Oculta no Supermercado ao Fazer Compras de ${subject}`,
+      title: isUK
+        ? `The Sneaky Trolley Trap Costing UK Shoppers on ${subject}`
+        : isES
+        ? `La Trampa Silenciosa en el Carrito de la Compra con ${subject}`
+        : `A Armadilha Oculta no Supermercado ao Fazer Compras de ${subject}`,
       angle: 'Exposing how shrinkflation and fake promotional tags mislead shoppers on unit pricing (£/kg vs €/kg).',
       format: isShorts ? 'Shorts 45s Trolley Trap' : '13min Supermarket Audit',
       gapExploited: 'Recycled advice saying "make a list" without showing how supermarkets manipulate prices.',
@@ -690,7 +990,11 @@ function buildConsumerBudgetingIdeas(subject: string, market: TargetMarket, isSh
       whyItWins: 'Saves immediate cash at checkout and triggers passionate sharing.',
     },
     {
-      title: isUK ? `Real Supermarket Price Audit for ${subject}: Aldi & Lidl vs Tesco & Sainsbury\'s` : `Comparativo Real de Faturas: Onde Fica Mais Barato Comprar ${subject}?`,
+      title: isUK
+        ? `Real Supermarket Price Audit for ${subject}: Aldi & Lidl vs Tesco & Sainsbury\'s`
+        : isES
+        ? `Comparativa Real de Tickets de Supermercado: ¿Dónde Sale Más Barato Comprar ${subject}?`
+        : `Comparativo Real de Faturas: Onde Fica Mais Barato Comprar ${subject}?`,
       angle: 'Basket-by-basket receipt audit comparing exact staple items across major chains.',
       format: isShorts ? 'Reel 50s Basket Comparison' : '15min Full Receipt Breakdown',
       gapExploited: 'Vague claims about discounters without displaying actual receipts and unit prices.',
@@ -700,7 +1004,11 @@ function buildConsumerBudgetingIdeas(subject: string, market: TargetMarket, isSh
       whyItWins: 'Field research with transparent proof is irresistible to household budget managers.',
     },
     {
-      title: isUK ? `How to Cut Your ${subject} Grocery Bill by 30% Without Eating Bland Food` : `Como Cortar 30% nas Compras de ${subject} Sem Comer Pior`,
+      title: isUK
+        ? `How to Cut Your ${subject} Grocery Bill by 30% Without Eating Bland Food`
+        : isES
+        ? `Cómo Recortar un 30% en la Compra de ${subject} Sin Comer Peor`
+        : `Como Cortar 30% nas Compras de ${subject} Sem Comer Pior`,
       angle: 'Strategic batch cooking, freezer optimisation, and intelligent store cupboard staples.',
       format: isShorts ? 'TikTok 40s Money Saving Hack' : '14min Complete Grocery Strategy',
       gapExploited: 'Extreme couponing that produces unappetising meals nobody wants to eat.',
@@ -710,7 +1018,11 @@ function buildConsumerBudgetingIdeas(subject: string, market: TargetMarket, isSh
       whyItWins: 'Delivers dignified, flavourful savings.',
     },
     {
-      title: isUK ? `Why 90% Overpay on ${subject} at the Checkout (And the Unit Price Fix)` : `Porque é que 90% das Famílias Pagam a Mais em ${subject} Sem Perceber`,
+      title: isUK
+        ? `Why 90% Overpay on ${subject} at the Checkout (And the Unit Price Fix)`
+        : isES
+        ? `Por Qué el 90% Paga de Más en ${subject} en la Caja (Y el Truco del Precio por Kilo)`
+        : `Porque é que 90% das Famílias Pagam a Mais em ${subject} Sem Perceber`,
       angle: 'Reading the small print on shelf edges to identify true cost per kilogram or litre.',
       format: isShorts ? 'Shorts 45s Shelf Edge Hack' : '11min Pricing Masterclass',
       gapExploited: 'Lack of shelf-edge unit pricing literacy.',
@@ -720,7 +1032,11 @@ function buildConsumerBudgetingIdeas(subject: string, market: TargetMarket, isSh
       whyItWins: 'Simple practical habit that pays off every single week.',
     },
     {
-      title: isUK ? `The 15-Minute Weekly Meal Plan for ${subject} That Eliminates Food Waste` : `O Plano de Refeições de 15 Minutos para ${subject} que Reduz o Desperdício a Zero`,
+      title: isUK
+        ? `The 15-Minute Weekly Meal Plan for ${subject} That Eliminates Food Waste`
+        : isES
+        ? `El Menú Semanal de 15 Minutos para ${subject} que Elimina el Desperdicio`
+        : `O Plano de Refeições de 15 Minutos para ${subject} que Reduz o Desperdício a Zero`,
       angle: 'A structured 5-dinner framework that uses overlapping fresh ingredients before they spoil.',
       format: isShorts ? 'POV 35s Meal Plan Tour' : '12min Weekly Planning Blueprint',
       gapExploited: 'Throwing away spoiled salad, herbs, and dairy at the end of every week.',
@@ -730,7 +1046,11 @@ function buildConsumerBudgetingIdeas(subject: string, market: TargetMarket, isSh
       whyItWins: 'Stops food waste and saves £40+ a month effortlessly.',
     },
     {
-      title: isUK ? `The Yellow-Sticker & Reduced Aisle Strategy for ${subject}` : `O Guia de Descontos de Fim de Dia no Supermercado para ${subject}`,
+      title: isUK
+        ? `The Yellow-Sticker & Reduced Aisle Strategy for ${subject}`
+        : isES
+        ? `La Estrategia de Productos Rebajados por Fecha Corta para ${subject}`
+        : `O Guia de Descontos de Fim de Dia no Supermercado para ${subject}`,
       angle: 'Timing, freezer safety, and meal repurposing for discounted supermarket produce.',
       format: isShorts ? 'Shorts 40s Yellow Sticker Hack' : '12min Markdown Guide',
       gapExploited: 'Stigma or lack of practical strategy around reduced-to-clear sections.',
@@ -740,7 +1060,11 @@ function buildConsumerBudgetingIdeas(subject: string, market: TargetMarket, isSh
       whyItWins: 'Popular shopping subculture with massive view engagement.',
     },
     {
-      title: isUK ? `3 Things You Should Never Buy Pre-Packaged for ${subject}` : `3 Coisas em ${subject} que Nunca Deves Comprar Já Embaladas`,
+      title: isUK
+        ? `3 Things You Should Never Buy Pre-Packaged for ${subject}`
+        : isES
+        ? `3 Cosas en ${subject} que Nunca Deberías Comprar Ya Envasadas`
+        : `3 Coisas em ${subject} que Nunca Deves Comprar Já Embaladas`,
       angle: 'Pre-grated cheese, bagged chopped veg, and pre-marinated meats that carry a 200% premium.',
       format: isShorts ? 'Reel 40s 3 Fast Comparisons' : '11min Convenience Premium Audit',
       gapExploited: 'Paying exorbitant convenience fees for 30 seconds of prep work.',
@@ -750,7 +1074,11 @@ function buildConsumerBudgetingIdeas(subject: string, market: TargetMarket, isSh
       whyItWins: 'Eye-opening visual price differences that shock viewers.',
     },
     {
-      title: isUK ? `How to Feed a Family on ${subject} for Under £35 a Week` : `Como Alimentar a Família com ${subject} por Menos de 40€ por Semana`,
+      title: isUK
+        ? `How to Feed a Family on ${subject} for Under £35 a Week`
+        : isES
+        ? `Cómo Alimentar a la Familia con ${subject} por Menos de 40€ a la Semana`
+        : `Como Alimentar a Família com ${subject} por Menos de 40€ por Semana`,
       angle: 'Wholesome, filling recipes with lentils, whole chicken breakdown, and seasonal vegetables.',
       format: isShorts ? 'Shorts 45s Family Menu' : '16min Budget Masterclass',
       gapExploited: 'Austerity recipes that taste like cardboard and alienate children.',
@@ -760,7 +1088,11 @@ function buildConsumerBudgetingIdeas(subject: string, market: TargetMarket, isSh
       whyItWins: 'Direct, compassionate, high-value public service content.',
     },
     {
-      title: isUK ? `I Swapped to Supermarket Own-Brands for ${subject} for 30 Days (Savings & Taste Review)` : `Troquei Todas as Marcas Famosas de ${subject} por Marcas Brancas por 30 Dias`,
+      title: isUK
+        ? `I Swapped to Supermarket Own-Brands for ${subject} for 30 Days (Savings & Taste Review)`
+        : isES
+        ? `Cambié Todas las Primeras Marcas de ${subject} por Marcas Blancas Durante 30 Días`
+        : `Troquei Todas as Marcas Famosas de ${subject} por Marcas Brancas por 30 Dias`,
       angle: 'Unfiltered audit of quality, taste, and exact bank balance differences after one month.',
       format: isShorts ? 'TikTok 55s Own-Brand Review' : '15min 30-Day Budget Audit',
       gapExploited: 'Unsubstantiated claims about supermarket brand inferiority.',
@@ -770,7 +1102,11 @@ function buildConsumerBudgetingIdeas(subject: string, market: TargetMarket, isSh
       whyItWins: 'Empirical proof that breaks brand snobbery and saves real money.',
     },
     {
-      title: isUK ? `5 Supermarket Pantry Staples That Stretch Any ${subject} Meal Further` : `5 Alimentos Baratos de Despensa que Rendem o Dobro em ${subject}`,
+      title: isUK
+        ? `5 Supermarket Pantry Staples That Stretch Any ${subject} Meal Further`
+        : isES
+        ? `5 Alimentos Básicos de Despensa que Rinden el Doble en ${subject}`
+        : `5 Alimentos Baratos de Despensa que Rendem o Dobro em ${subject}`,
       angle: 'Tinned pulses, oats, tinned tomatoes, and versatile spices that bulk up meals nutrition.',
       format: isShorts ? 'Reel 45s Pantry Staples' : '12min Pantry Elevation Guide',
       gapExploited: 'Not knowing how to bulk up dishes healthily on a budget.',
@@ -780,7 +1116,11 @@ function buildConsumerBudgetingIdeas(subject: string, market: TargetMarket, isSh
       whyItWins: 'Practical culinary hacks that stretch household food budgets.',
     },
     {
-      title: isUK ? `How to Store Supermarket Fresh Produce for ${subject} to Last 2 Weeks` : `Como Guardar Frutas e Legumes de ${subject} para Durarem 2 Semanas Sem Estragar`,
+      title: isUK
+        ? `How to Store Supermarket Fresh Produce for ${subject} to Last 2 Weeks`
+        : isES
+        ? `Cómo Guardar Frutas y Verduras de ${subject} para que Aguanten 2 Semanas Frescas`
+        : `Como Guardar Frutas e Legumes de ${subject} para Durarem 2 Semanas Sem Estragar`,
       angle: 'Water jars, paper towels, and crisper drawer vent adjustments.',
       format: isShorts ? 'Shorts 40s Freshness Hack' : '11min Produce Storage Masterclass',
       gapExploited: 'Buying fresh vegetables that turn to sludge within 4 days.',
@@ -790,7 +1130,11 @@ function buildConsumerBudgetingIdeas(subject: string, market: TargetMarket, isSh
       whyItWins: 'Direct, tangible visual tips that pay for themselves immediately.',
     },
     {
-      title: isUK ? `The Real Truth About Loyalty Cards and 'Clubcard' Prices on ${subject}` : `A Verdade Sobre Cartões de Fidelização e Preços Exclusivos em ${subject}`,
+      title: isUK
+        ? `The Real Truth About Loyalty Cards and 'Clubcard' Prices on ${subject}`
+        : isES
+        ? `La Verdad Sobre Tarjetas de Fidelización y Ofertas Exclusivas en ${subject}`
+        : `A Verdade Sobre Cartões de Fidelização e Preços Exclusivos em ${subject}`,
       angle: 'Auditing whether loyalty discounts are genuine bargains or inflated baseline prices.',
       format: isShorts ? 'Reel 45s Loyalty Trap' : '13min Loyalty Card Investigation',
       gapExploited: 'Data harvesting and psychological pricing tactics used by supermarket chains.',
@@ -800,7 +1144,11 @@ function buildConsumerBudgetingIdeas(subject: string, market: TargetMarket, isSh
       whyItWins: 'Investigative consumer edge that builds deep creator authority.',
     },
     {
-      title: isUK ? `How to Shop for ${subject} Online vs In-Store: Which Saves More Money?` : `Comprar ${subject} Online vs na Loja Física: Onde se Poupa Mais?`,
+      title: isUK
+        ? `How to Shop for ${subject} Online vs In-Store: Which Saves More Money?`
+        : isES
+        ? `Comprar ${subject} Online vs en Tienda Física: ¿Dónde Se Ahorra Más Dinero?`
+        : `Comprar ${subject} Online vs na Loja Física: Onde se Poupa Mais?`,
       angle: 'Delivery charges vs impulse purchases: an auditable comparison of checkout receipts.',
       format: isShorts ? 'Shorts 35s Online vs In-Store' : '11min Shopping Channel Comparison',
       gapExploited: 'Debating whether delivery pass costs offset supermarket aisle impulse buys.',
@@ -810,7 +1158,11 @@ function buildConsumerBudgetingIdeas(subject: string, market: TargetMarket, isSh
       whyItWins: 'Pragmatic advice for busy parents and working professionals.',
     },
     {
-      title: isUK ? `The 80/20 Rule for Grocery Budgets: The 2 Changes That Cut 80% of Waste in ${subject}` : `A Regra 80/20 no Orçamento de Alimentação: Os 2 Hábitos Essenciais para ${subject}`,
+      title: isUK
+        ? `The 80/20 Rule for Grocery Budgets: The 2 Changes That Cut 80% of Waste in ${subject}`
+        : isES
+        ? `La Regla 80/20 del Presupuesto de Comida: Los 2 Cambios que Ahorran el 80% en ${subject}`
+        : `A Regra 80/20 no Orçamento de Alimentação: Os 2 Hábitos Essenciais para ${subject}`,
       angle: 'Shop your own freezer and pantry first, and buy meat by unit price (£/kg or €/kg).',
       format: isShorts ? 'TikTok 45s Essential Rules' : '10min Principle Guide',
       gapExploited: 'Obsessing over micro-coupons instead of the primary cost drivers.',
@@ -820,7 +1172,11 @@ function buildConsumerBudgetingIdeas(subject: string, market: TargetMarket, isSh
       whyItWins: 'Simplicity that delivers instant financial peace of mind.',
     },
     {
-      title: isUK ? `Budget Supermarket Q&A: Answering Your Top 10 Dilemmas on ${subject}` : `Perguntas e Respostas: As 10 Dúvidas Mais Comuns para Poupar em ${subject}`,
+      title: isUK
+        ? `Budget Supermarket Q&A: Answering Your Top 10 Dilemmas on ${subject}`
+        : isES
+        ? `Preguntas y Respuestas: Las 10 Dudas Más Comunes para Ahorrar en ${subject}`
+        : `Perguntas e Respostas: As 10 Dúvidas Mais Comuns para Poupar em ${subject}`,
       angle: 'Addressing real community questions on bulk buying, freezer burn, and discount apps.',
       format: isShorts ? 'Reel 50s Rapid Fire Answers' : '14min Comprehensive FAQ',
       gapExploited: 'Niche budgeting dilemmas that traditional media ignores.',
@@ -830,7 +1186,11 @@ function buildConsumerBudgetingIdeas(subject: string, market: TargetMarket, isSh
       whyItWins: 'Deepens community loyalty and ongoing engagement.',
     },
     {
-      title: isUK ? `The Printable Weekly Shopping & Meal Plan Card for ${subject}` : `O Cartão Descarregável de Lista de Compras Inteligente para ${subject}`,
+      title: isUK
+        ? `The Printable Weekly Shopping & Meal Plan Card for ${subject}`
+        : isES
+        ? `La Tarjeta Imprimible de Lista de Compra Inteligente para ${subject}`
+        : `O Cartão Descarregável de Lista de Compras Inteligente para ${subject}`,
       angle: 'Clean visual summary card designed for saving to phone camera rolls before heading into the store.',
       format: isShorts ? 'Shorts 40s Save-to-Phone Checklist' : '10min Printable Guide',
       gapExploited: 'Walking into supermarkets without a clear, organised visual plan.',
@@ -1012,6 +1372,171 @@ function buildFinanceIdeas(subject: string, market: TargetMarket, isShorts: bool
     ];
   }
 
+  if (isES) {
+    return [
+      {
+        title: `El Fallo con Hacienda e IRPF en España con ${subject} que Nadie Te Cuenta`,
+        angle: 'Alerta regulatoria y fiscal desmitificada con borrador y pantalla real de la Agencia Tributaria.',
+        format: isShorts ? 'Shorts 45s con Gancho de Alerta' : 'Vídeo Largo 14min con Pantalla en la Sede Electrónica',
+        gapExploited: 'Vacío de fiscalidad española práctica frente a consejos importados de EE.UU. o Latinoamérica.',
+        targetAudiencePainPoint: 'Miedo a cometer errores en la declaración de la renta y recibir sanciones de Hacienda.',
+        viralityPotential: 'Exceptional',
+        competitionLevel: 'Low',
+        whyItWins: 'Al abrir la sede electrónica y enseñar las casillas exactas, gana autoridad inmediata.',
+      },
+      {
+        title: `Cómo Empezar con ${subject} en España con Solo 50€ a 100€ al Mes`,
+        angle: 'Guía realista adaptada al salario mediano español y al coste de vida en ciudades.',
+        format: isShorts ? 'Reel de 50s en 3 Pasos' : 'Vídeo de 12min Paso a Paso con Simulación en Euros',
+        gapExploited: 'Inexistencia de tutoriales con cifras alcanzables para el ciudadano común.',
+        targetAudiencePainPoint: 'Frustración con gurús que afirman que hay que disponer de miles de euros para empezar.',
+        viralityPotential: 'Very High',
+        competitionLevel: 'Low',
+        whyItWins: 'Conecta con la realidad socioeconómica sin paternalismo ni falsas promesas.',
+      },
+      {
+        title: `Bancos Tradicionales Españoles vs Neobancos para ${subject}: Comisiones Reales`,
+        angle: 'Auditoría implacable de comisiones de mantenimiento, custodia y cambio de divisa.',
+        format: isShorts ? 'TikTok 40s con Tabla' : 'Vídeo YouTube 16min Tabla Completa',
+        gapExploited: 'Falta de transparencia en las comisiones de la banca tradicional en España.',
+        targetAudiencePainPoint: 'Pago de comisiones abusivas por servicios obsoletos.',
+        viralityPotential: 'Very High',
+        competitionLevel: 'Medium',
+        whyItWins: 'Genera debate masivo en comentarios y un índice muy alto de guardados.',
+      },
+      {
+        title: `Por Qué el 90% Pierde Dinero con ${subject} en España (Y el Secreto del 10%)`,
+        angle: 'Ruptura de mitos y desmontaje de métodos obsoletos con datos de mercado.',
+        format: isShorts ? 'Shorts 45s de Choque' : 'Vídeo 15min Análisis Crítico',
+        gapExploited: 'Saturación de discursos motivacionales vacíos sin base matemática.',
+        targetAudiencePainPoint: 'Sensación de esforzarse sin ver rentabilidad real neta.',
+        viralityPotential: 'High',
+        competitionLevel: 'Medium',
+        whyItWins: 'Activa la aversión a la pérdida y la curiosidad al desafiar el tópico.',
+      },
+      {
+        title: `Mi Rutina Mensual de 15 Minutos para Gestionar ${subject}`,
+        angle: 'Minimalismo operativo para personas con jornada laboral completa.',
+        format: isShorts ? 'POV Timelapse 35s' : 'Vídeo 10min Walkthrough de Rutina',
+        gapExploited: 'Falta de tiempo de los profesionales para estudiar sistemas complejos.',
+        targetAudiencePainPoint: 'No tener horas libres para seguir gráficos ni noticias a diario.',
+        viralityPotential: 'Very High',
+        competitionLevel: 'Low',
+        whyItWins: 'La promesa de ahorro de tiempo con rigor es el mayor imán de retención.',
+      },
+      {
+        title: `La Regla No Escrita de Fiscalidad e IRPF en España para ${subject}`,
+        angle: 'Tramos del ahorro, retenciones en origen y compensación de pérdidas y ganancias.',
+        format: isShorts ? 'Shorts 45s Consejo Fiscal' : 'Vídeo 13min Caso Práctico',
+        gapExploited: 'Contenido que suele copiar la legislación de otros países sin adaptar al IRPF.',
+        targetAudiencePainPoint: 'Dudas complejas al confeccionar la declaración de la renta anual.',
+        viralityPotential: 'High',
+        competitionLevel: 'Low',
+        whyItWins: 'Valor de utilidad pública duradera para contribuyentes en España.',
+      },
+      {
+        title: `3 Cosas en ${subject} que Parecen Rentables Pero Son una Pérdida de Dinero`,
+        angle: 'Contrarian puro: desmontar productos financieros caros con comisiones ocultas.',
+        format: isShorts ? 'Reel de 40s con 3 Cortes' : 'Vídeo 11min Desmitificación',
+        gapExploited: 'Escepticismo del usuario ante las recomendaciones interesadas de las entidades.',
+        targetAudiencePainPoint: 'Cansancio de pagar comisiones que merman la rentabilidad.',
+        viralityPotential: 'Very High',
+        competitionLevel: 'Low',
+        whyItWins: 'Genera confianza inquebrantable al ahorrar dinero real a la comunidad.',
+      },
+      {
+        title: `Cómo Estructurar una Estrategia con ${subject} desde Cero (Sin Jerga Financiera)`,
+        angle: 'Paso a paso accesible con terminología clara en español para principiantes.',
+        format: isShorts ? 'Shorts 50s con Checklist' : 'Vídeo 15min Tutorial para Principiantes',
+        gapExploited: 'La barrera técnica del lenguaje rebuscado que emplean los especialistas.',
+        targetAudiencePainPoint: 'Miedo a equivocarse por no comprender los acrónimos financieros.',
+        viralityPotential: 'High',
+        competitionLevel: 'Medium',
+        whyItWins: 'Acoge al público principiante que otros canales ignoran.',
+      },
+      {
+        title: `Probé la Estrategia Más Famosa de ${subject} Durante 12 Meses (Rentabilidad Neta Real)`,
+        angle: 'Experimento empírico con extractos bancarios reales y comisiones deducidas.',
+        format: isShorts ? 'TikTok 55s Formato Historia' : 'Vídeo 18min Documental de Cartera',
+        gapExploited: 'Falta de auditorías reales y honestas sobre las promesas de internet.',
+        targetAudiencePainPoint: 'Incertidumbre sobre si los métodos populares realmente funcionan.',
+        viralityPotential: 'Exceptional',
+        competitionLevel: 'Low',
+        whyItWins: 'Storytelling verificado con datos reales que convierte visitas en suscriptores.',
+      },
+      {
+        title: `Las 5 Mejores Herramientas Gratuitas en España para Gestionar ${subject}`,
+        angle: 'Arsenal gratuito y accesible para simular comisiones y seguir la evolución.',
+        format: isShorts ? 'Reel 45s Guarda este vídeo' : 'Vídeo 14min Demostración de Herramientas',
+        gapExploited: 'Desconocimiento de calculadoras oficiales y herramientas gratuitas.',
+        targetAudiencePainPoint: 'Pagar suscripciones caras prescindibles.',
+        viralityPotential: 'Very High',
+        competitionLevel: 'Medium',
+        whyItWins: 'Contenido práctico de referencia que dispara los favoritos.',
+      },
+      {
+        title: `Qué Hacer Cuando el Mercado Cae: Guía de Supervivencia con ${subject}`,
+        angle: 'Psicología de aversión a la pérdida y protocolo de tranquilidad patrimonial.',
+        format: isShorts ? 'Shorts 40s Respuesta de Emergencia' : 'Vídeo 13min Gestión de Caídas',
+        gapExploited: 'Falta de criterio sereno cuando hay volatilidad en el mercado.',
+        targetAudiencePainPoint: 'Ansiedad al ver fluctuaciones temporales a la baja.',
+        viralityPotential: 'High',
+        competitionLevel: 'Low',
+        whyItWins: 'Posiciona al creador como referente de calma y sensatez.',
+      },
+      {
+        title: `Deja de Copiar Consejos de EE.UU.: Normas Cruciales de ${subject} en España`,
+        angle: 'Comparativa de las diferencias normativas entre España y modelos anglosajones.',
+        format: isShorts ? 'Shorts 45s Alerta' : 'Vídeo 12min Análisis de Fondo',
+        gapExploited: 'Consejos traducidos que no se ajustan a la legalidad española.',
+        targetAudiencePainPoint: 'Descubrir tarde que se han seguido pautas sancionables en España.',
+        viralityPotential: 'Very High',
+        competitionLevel: 'Low',
+        whyItWins: 'Fuerte identificación cultural y defensa de los intereses locales.',
+      },
+      {
+        title: `Cómo Automatizar ${subject} para No Tener que Pensar en Ello Cada Mes`,
+        angle: 'Transferencias automáticas periódicas y reglas de ahorro sin esfuerzo.',
+        format: isShorts ? 'Reel 35s Setup Rápido' : 'Vídeo 9min Tutorial de Automatización',
+        gapExploited: 'Depender de la fuerza de voluntad cada mes para apartar el dinero.',
+        targetAudiencePainPoint: 'Llegar a final de mes sin haber reservado la cantidad prevista.',
+        viralityPotential: 'High',
+        competitionLevel: 'Low',
+        whyItWins: 'Convierte un hábito difícil en un protocolo 100% automático.',
+      },
+      {
+        title: `La Regla 80/20 en ${subject}: Dónde Debes Enfocar Realmente Tu Dinero`,
+        angle: 'Eliminar el ruido mediático diario y centrarse en las 2 decisiones determinantes.',
+        format: isShorts ? 'TikTok 45s Regla de Oro' : 'Vídeo 11min Principios Clave',
+        gapExploited: 'Ansiedad por noticias diarias de cotizaciones sin impacto a largo plazo.',
+        targetAudiencePainPoint: 'Consultar aplicaciones constantemente sin necesidad.',
+        viralityPotential: 'High',
+        competitionLevel: 'Low',
+        whyItWins: 'Aporta serenidad y claridad mental al espectador.',
+      },
+      {
+        title: `Preguntas y Respuestas de Finanzas: Las 10 Dudas de la Comunidad sobre ${subject}`,
+        angle: 'Respuestas directas a casos reales con simulaciones numéricas en euros.',
+        format: isShorts ? 'Reel 50s Preguntas Rápidas' : 'Vídeo 17min FAQ Especial',
+        gapExploited: 'Ignorar las dudas concretas que los usuarios dejan en comentarios.',
+        targetAudiencePainPoint: 'Tener dudas específicas y no encontrar respuestas imparciales.',
+        viralityPotential: 'Medium',
+        competitionLevel: 'Low',
+        whyItWins: 'Fomenta la comunidad y el diálogo cercano.',
+      },
+      {
+        title: `La Lista de Seguridad y Regulación para ${subject}: Cómo Verificar en la CNMV y Evitar Estafas`,
+        angle: 'Comprobación en los registros de la CNMV y Banco de España para evitar chiringuitos financieros.',
+        format: isShorts ? 'Shorts 45s Tarjeta de Alerta' : 'Vídeo 13min Auditoría de Seguridad',
+        gapExploited: 'Aparición constante de fraudes y plataformas no reguladas en redes sociales.',
+        targetAudiencePainPoint: 'Miedo legítimo a perder ahorros en entidades fraudulentas.',
+        viralityPotential: 'Exceptional',
+        competitionLevel: 'Low',
+        whyItWins: 'Servicio público imprescindible que la audiencia comparte con su entorno.',
+      },
+    ];
+  }
+
   // pt-PT finance
   return [
     {
@@ -1179,9 +1704,14 @@ function buildFinanceIdeas(subject: string, market: TargetMarket, isShorts: bool
 
 function buildGeneralIdeas(subject: string, market: TargetMarket, isShorts: boolean): IdeaTemplateSpec[] {
   const isUK = market === 'en-GB';
+  const isES = market === 'es-ES';
   return [
     {
-      title: isUK ? `The #1 Mistake with ${subject} (And How to Fix It)` : `O Maior Erro com ${subject} que Pouca Gente Te Avisa`,
+      title: isUK
+        ? `The #1 Mistake with ${subject} (And How to Fix It)`
+        : isES
+        ? `El Error #1 con ${subject} que Nadie Te Avisa (Y Cómo Corregirlo)`
+        : `O Maior Erro com ${subject} que Pouca Gente Te Avisa`,
       angle: 'Overcoming the most common beginner stumble with clear demonstration.',
       format: isShorts ? 'Shorts 45s Reality Check' : '12min Practical Walkthrough',
       gapExploited: 'Generic advice that glosses over initial setup difficulties.',
@@ -1191,7 +1721,11 @@ function buildGeneralIdeas(subject: string, market: TargetMarket, isShorts: bool
       whyItWins: 'Direct troubleshooting builds instant credibility.',
     },
     {
-      title: isUK ? `How to Master ${subject} from Scratch Step-by-Step` : `Como Dominar ${subject} do Zero Passo a Passo`,
+      title: isUK
+        ? `How to Master ${subject} from Scratch Step-by-Step`
+        : isES
+        ? `Cómo Dominar ${subject} desde Cero Paso a Paso`
+        : `Como Dominar ${subject} do Zero Passo a Passo`,
       angle: 'Jargon-free beginner roadmap with clear actionable phases.',
       format: isShorts ? 'Reel 50s 3-Step Blueprint' : '14min Complete Guide',
       gapExploited: 'Theoretical lectures that lack real implementation workflows.',
@@ -1201,7 +1735,11 @@ function buildGeneralIdeas(subject: string, market: TargetMarket, isShorts: bool
       whyItWins: 'Actionable and empowering for everyday newcomers.',
     },
     {
-      title: isUK ? `Tool A vs Tool B for ${subject}: Which Is Genuinely Worth It?` : `Opção A vs Opção B para ${subject}: Qual a Melhor Escolha?`,
+      title: isUK
+        ? `Tool A vs Tool B for ${subject}: Which Is Genuinely Worth It?`
+        : isES
+        ? `Opción A vs Opción B para ${subject}: ¿Cuál Merece Realmente la Pena?`
+        : `Opção A vs Opção B para ${subject}: Qual a Melhor Escolha?`,
       angle: 'Unsponsored objective comparison of the leading market alternatives.',
       format: isShorts ? 'TikTok 40s Comparison' : '15min Honest Audit',
       gapExploited: 'Sponsored influencer reviews promoting products solely for affiliate fees.',
@@ -1211,7 +1749,11 @@ function buildGeneralIdeas(subject: string, market: TargetMarket, isShorts: bool
       whyItWins: 'Unbiased reviews trigger heavy bookmarking and discussion.',
     },
     {
-      title: isUK ? `Why 90% Fail at ${subject} (And the 10% Secret)` : `Por que 90% das Pessoas Desistem de ${subject} (E o Segredo para Ter Sucesso)`,
+      title: isUK
+        ? `Why 90% Fail at ${subject} (And the 10% Secret)`
+        : isES
+        ? `Por Qué el 90% Abandona ${subject} (Y el Secreto para Tener Éxito)`
+        : `Por que 90% das Pessoas Desistem de ${subject} (E o Segredo para Ter Sucesso)`,
       angle: 'Identifying the core bottleneck and providing the counter-intuitive workaround.',
       format: isShorts ? 'Shorts 45s Pattern Interrupt' : '12min Strategic Analysis',
       gapExploited: 'Sensationalist promises that ignore execution friction.',
@@ -1221,7 +1763,11 @@ function buildGeneralIdeas(subject: string, market: TargetMarket, isShorts: bool
       whyItWins: 'Challenges common assumptions with refreshing honesty.',
     },
     {
-      title: isUK ? `The 15-Minute Daily Routine for ${subject}` : `A Rotina Diária de 15 Minutos para Evoluir em ${subject}`,
+      title: isUK
+        ? `The 15-Minute Daily Routine for ${subject}`
+        : isES
+        ? `La Rutina Diaria de 15 Minutos para Progresar en ${subject}`
+        : `A Rotina Diária de 15 Minutos para Evoluir em ${subject}`,
       angle: 'Low-friction habit stacking designed for busy working schedules.',
       format: isShorts ? 'POV 35s Routine' : '10min Routine Walkthrough',
       gapExploited: 'Overly demanding procedures that lead to rapid burnout.',
@@ -1231,7 +1777,11 @@ function buildGeneralIdeas(subject: string, market: TargetMarket, isShorts: bool
       whyItWins: 'High feasibility drives peak save rates.',
     },
     {
-      title: isUK ? `The Unwritten Rule of ${subject} That Changes Everything` : `A Regra Não Escrita de ${subject} que Muda os Teus Resultados`,
+      title: isUK
+        ? `The Unwritten Rule of ${subject} That Changes Everything`
+        : isES
+        ? `La Regla No Escrita de ${subject} que Cambia Tus Resultados`
+        : `A Regra Não Escrita de ${subject} que Muda os Teus Resultados`,
       angle: 'The insider principle that separates experienced practitioners from novices.',
       format: isShorts ? 'Shorts 40s Quick Tip' : '11min Masterclass',
       gapExploited: 'Textbook guides that leave out practical tricks of the trade.',
@@ -1241,7 +1791,11 @@ function buildGeneralIdeas(subject: string, market: TargetMarket, isShorts: bool
       whyItWins: 'Specific insider nuance triggers high curiosity.',
     },
     {
-      title: isUK ? `3 Things in ${subject} You Should Stop Doing Today` : `3 Hábitos em ${subject} que Deves Parar Hoje`,
+      title: isUK
+        ? `3 Things in ${subject} You Should Stop Doing Today`
+        : isES
+        ? `3 Hábitos en ${subject} que Deberías Dejar Hoy Mismo`
+        : `3 Hábitos em ${subject} que Deves Parar Hoje`,
       angle: 'Contrarian teardown of outdated advice and wasted effort.',
       format: isShorts ? 'Reel 40s 3 Fast Cuts' : '12min Myth-Buster',
       gapExploited: 'Dogmatic rules copied blindly across internet communities.',
@@ -1251,7 +1805,11 @@ function buildGeneralIdeas(subject: string, market: TargetMarket, isShorts: bool
       whyItWins: 'Provocative contrarian angles generate viral comment debates.',
     },
     {
-      title: isUK ? `How to Get Real Results in ${subject} Without Expensive Equipment` : `Como Obter Resultados em ${subject} Sem Gastar uma Fortuna`,
+      title: isUK
+        ? `How to Get Real Results in ${subject} Without Expensive Equipment`
+        : isES
+        ? `Cómo Obtener Resultados Reales en ${subject} Sin Gastar una Fortuna en Equipo`
+        : `Como Obter Resultados em ${subject} Sem Gastar uma Fortuna`,
       angle: 'Achieving 90% of the outcome with simple, accessible baseline tools.',
       format: isShorts ? 'Shorts 45s Minimalist Setup' : '13min Budget Blueprint',
       gapExploited: 'The misconception that expensive gear is required to get started.',
@@ -1261,7 +1819,11 @@ function buildGeneralIdeas(subject: string, market: TargetMarket, isShorts: bool
       whyItWins: 'Empowers beginners and dismantles the gatekeeping mentality.',
     },
     {
-      title: isUK ? `I Tested the Most Viral Method for ${subject} for 30 Days (Real Review)` : `Testei o Método Mais Famoso de ${subject} Durante 30 Dias (Resultados Reais)`,
+      title: isUK
+        ? `I Tested the Most Viral Method for ${subject} for 30 Days (Real Review)`
+        : isES
+        ? `Probé el Método Más Viral de ${subject} Durante 30 Días (Auditoría Real)`
+        : `Testei o Método Mais Famoso de ${subject} Durante 30 Dias (Resultados Reais)`,
       angle: 'Honest empirical test comparing claims vs reality with open records.',
       format: isShorts ? 'TikTok 55s Case Review' : '16min 30-Day Audit',
       gapExploited: 'Unsubstantiated claims by hype-driven creators.',
@@ -1271,7 +1833,11 @@ function buildGeneralIdeas(subject: string, market: TargetMarket, isShorts: bool
       whyItWins: 'True empirical testing builds bulletproof audience trust.',
     },
     {
-      title: isUK ? `The Top 5 Free Resources for ${subject} You Need to Know` : `As 5 Melhores Ferramentas Gratuitas para ${subject}`,
+      title: isUK
+        ? `The Top 5 Free Resources for ${subject} You Need to Know`
+        : isES
+        ? `Las 5 Mejores Herramientas Gratuitas para ${subject} que Debes Conocer`
+        : `As 5 Melhores Ferramentas Gratuitas para ${subject}`,
       angle: 'Curated toolkit of high-value free software, templates, and platforms.',
       format: isShorts ? 'Reel 45s Tool Tour' : '14min Free Toolkit Demo',
       gapExploited: 'Expensive subscriptions marketed to newcomers unnecessarily.',
@@ -1281,7 +1847,11 @@ function buildGeneralIdeas(subject: string, market: TargetMarket, isShorts: bool
       whyItWins: 'Immediate bookmark value for learners.',
     },
     {
-      title: isUK ? `What to Do When You Get Stuck in ${subject} (Emergency Guide)` : `O Que Fazer Quando Empancas em ${subject} (Guia de Desbloqueio)`,
+      title: isUK
+        ? `What to Do When You Get Stuck in ${subject} (Emergency Guide)`
+        : isES
+        ? `Qué Hacer Cuando Te Quedas Bloqueado en ${subject} (Guía de Emergencia)`
+        : `O Que Fazer Quando Empancas em ${subject} (Guia de Desbloqueio)`,
       angle: 'Rapid diagnostics to pinpoint where things broke down and how to resume.',
       format: isShorts ? 'Shorts 40s Troubleshooting' : '10min Troubleshooting Masterclass',
       gapExploited: 'Guides that offer zero troubleshooting when unexpected errors occur.',
@@ -1291,7 +1861,11 @@ function buildGeneralIdeas(subject: string, market: TargetMarket, isShorts: bool
       whyItWins: 'High-urgency problem solving that gets shared across forums.',
     },
     {
-      title: isUK ? `The Modern Approach to ${subject} in 2026` : `A Abordagem Moderna para ${subject} em 2026`,
+      title: isUK
+        ? `The Modern Approach to ${subject} in 2026`
+        : isES
+        ? `El Enfoque Moderno para ${subject} en 2026`
+        : `A Abordagem Moderna para ${subject} em 2026`,
       angle: 'Contrasting legacy techniques with modern, streamlined workflows.',
       format: isShorts ? 'Shorts 45s Before/After' : '13min Evolution Guide',
       gapExploited: 'Outdated tutorials that ignore modern tools and automations.',
@@ -1301,7 +1875,11 @@ function buildGeneralIdeas(subject: string, market: TargetMarket, isShorts: bool
       whyItWins: 'Relevance and timeliness drive high click-through rates.',
     },
     {
-      title: isUK ? `How to Automate ${subject} So It Takes Almost Zero Effort` : `Como Automatizar ${subject} para Poupar Tempo Toda a Semana`,
+      title: isUK
+        ? `How to Automate ${subject} So It Takes Almost Zero Effort`
+        : isES
+        ? `Cómo Automatizar ${subject} para que Lleve Cero Esfuerzo Cada Semana`
+        : `Como Automatizar ${subject} para Poupar Tempo Toda a Semana`,
       angle: 'Setting up automated systems and shortcuts to handle repetitive tasks.',
       format: isShorts ? 'Reel 35s Setup' : '10min Automation Walkthrough',
       gapExploited: 'Doing repetitive manual work that could easily be automated.',
@@ -1311,7 +1889,11 @@ function buildGeneralIdeas(subject: string, market: TargetMarket, isShorts: bool
       whyItWins: 'Time savings are the most universal hook on video platforms.',
     },
     {
-      title: isUK ? `The 80/20 Rule in ${subject}: Focus on What Actually Moves the Needle` : `A Regra 80/20 em ${subject}: Foca no Que Realmente Traz Resultados`,
+      title: isUK
+        ? `The 80/20 Rule in ${subject}: Focus on What Actually Moves the Needle`
+        : isES
+        ? `La Regla 80/20 en ${subject}: Céntrate en lo que Realmente Mueve la Aguja`
+        : `A Regra 80/20 em ${subject}: Foca no Que Realmente Traz Resultados`,
       angle: 'Cutting out 80% of trivial tasks and mastering the 2 vital levers.',
       format: isShorts ? 'TikTok 45s 80/20 Truth' : '11min Principle Walkthrough',
       gapExploited: 'Information overload that paralyses action.',
@@ -1321,7 +1903,11 @@ function buildGeneralIdeas(subject: string, market: TargetMarket, isShorts: bool
       whyItWins: 'Provides clarity and peace of mind.',
     },
     {
-      title: isUK ? `Community Q&A: Answering the 10 Most Common Questions on ${subject}` : `Perguntas e Respostas: As 10 Dúvidas Mais Comuns sobre ${subject}`,
+      title: isUK
+        ? `Community Q&A: Answering the 10 Most Common Questions on ${subject}`
+        : isES
+        ? `Preguntas y Respuestas: Las 10 Dudas Más Frecuentes sobre ${subject}`
+        : `Perguntas e Respostas: As 10 Dúvidas Mais Comuns sobre ${subject}`,
       angle: 'Direct answers to real audience roadblocks with live screen demonstrations.',
       format: isShorts ? 'Reel 50s Rapid Fire Answers' : '15min Community FAQ',
       gapExploited: 'Specific real-world hurdles that generic tutorials skip.',
@@ -1331,7 +1917,11 @@ function buildGeneralIdeas(subject: string, market: TargetMarket, isShorts: bool
       whyItWins: 'Deepens community loyalty and ongoing interaction.',
     },
     {
-      title: isUK ? `The Complete Beginner Checklist for ${subject}: Free Saveable Framework` : `A Checklist Completa para ${subject}: Guia Rápido para Guardar`,
+      title: isUK
+        ? `The Complete Beginner Checklist for ${subject}: Free Saveable Framework`
+        : isES
+        ? `La Ficha Completa para Principiantes de ${subject}: Guía Lista para Guardar`
+        : `A Checklist Completa para ${subject}: Guia Rápido para Guardar`,
       angle: 'Clean visual summary card designed for saving to phone camera rolls.',
       format: isShorts ? 'Shorts 40s Save-to-Phone Checklist' : '10min Summary Walkthrough',
       gapExploited: 'Lack of single-page summary reference assets.',
@@ -1402,6 +1992,18 @@ export function generateRankedIdeas(
     item.rank = idx + 1;
     item.isBestOpportunity = idx === 0;
   });
+
+  // Enrich with English translations if researching a non-UK market
+  if (market !== 'en-GB') {
+    const ukIdeas = generateRankedIdeas({ ...req, market: 'en-GB' }, gaps, competitors);
+    ranked.forEach((item, idx) => {
+      const ukMatch = ukIdeas[idx];
+      if (ukMatch) {
+        item.titleTranslation = ukMatch.title;
+        item.whyItWinsTranslation = ukMatch.whyItWins;
+      }
+    });
+  }
 
   return ranked;
 }

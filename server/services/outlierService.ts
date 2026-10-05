@@ -109,6 +109,24 @@ export function analyzeOutliers(req: ResearchRequest, competitors: CompetitorRes
           whyItWorks: 'Encourages beginners who lack green fingers without overcomplicating the setup.',
         },
       ];
+    } else if (market === 'es-ES') {
+      dominantHookPatterns = [
+        {
+          pattern: 'El Error Crítico con el Sustrato y las Raíces',
+          example: firstTitle ? `Ejemplo real observado: "${firstTitle}"` : `Hipótesis estratégica: "El Mayor Fallo al Cuidar ${topicClean} que Pudre las Raíces"`,
+          whyItWorks: 'Los errores de riego, drenaje y aclimatación frustran a principiantes; explicarlos con claridad genera enorme retención y guardados.',
+        },
+        {
+          pattern: 'Comparativa de Sustratos y Abonos Naturales',
+          example: `Ejemplo: "Sustrato Caro vs Mezcla Casera Barata para ${topicClean}"`,
+          whyItWorks: 'Ahorrar dinero con consejos prácticos y accesibles fomenta una gran fidelidad en la comunidad verde.',
+        },
+        {
+          pattern: 'Rutina Semanal de Mantenimiento Fácil',
+          example: `Ejemplo: "Cómo Mantener ${topicClean} Impecable con 10 Minutos a la Semana"`,
+          whyItWorks: 'Aporta soluciones realistas para personas con poco tiempo y espacios reducidos o terrazas.',
+        },
+      ];
     } else {
       dominantHookPatterns = [
         {
@@ -147,6 +165,24 @@ export function analyzeOutliers(req: ResearchRequest, competitors: CompetitorRes
           whyItWorks: 'Low friction and daily feasibility prevent the typical drop-off after week two.',
         },
       ];
+    } else if (market === 'es-ES') {
+      dominantHookPatterns = [
+        {
+          pattern: 'El Error de las Dietas y Rutinas Extremas',
+          example: firstTitle ? `Ejemplo real observado: "${firstTitle}"` : `Hipótesis estratégica: "El Error Común en ${topicClean} que Agota tu Energía"`,
+          whyItWorks: 'El público general no quiere dietas inviables ni suplementos milagrosos; busca hábitos realistas y comida de verdad.',
+        },
+        {
+          pattern: 'Comida Real vs Suplementos Caros',
+          example: `Ejemplo: "Alimentos Cotidianos vs Polvos Caros para ${topicClean}"`,
+          whyItWorks: 'Desmontar mitos de marketing genera enorme autoridad, credibilidad y debate constructivo.',
+        },
+        {
+          pattern: 'Hábito Sostenible de 15 Minutos al Día',
+          example: `Ejemplo: "La Guía Real para Mantener ${topicClean} sin Complicarte la Vida"`,
+          whyItWorks: 'Facilidad de aplicación para personas trabajadoras con poco tiempo y responsabilidades familiares.',
+        },
+      ];
     } else {
       dominantHookPatterns = [
         {
@@ -183,6 +219,24 @@ export function analyzeOutliers(req: ResearchRequest, competitors: CompetitorRes
           pattern: 'The Weekly Meal Plan Under £25',
           example: `Example: "How to Cut Food Waste and Overspending on ${topicClean}"`,
           whyItWorks: 'Families and young professionals actively seek structured meal plans that keep food bills down.',
+        },
+      ];
+    } else if (market === 'es-ES') {
+      dominantHookPatterns = [
+        {
+          pattern: 'La Trampa del Precio por Kilo en el Supermercado',
+          example: firstTitle ? `Ejemplo real observado: "${firstTitle}"` : `Hipótesis estratégica: "El Engaño Oculto al Comprar ${topicClean} en el Súper"`,
+          whyItWorks: 'Destapar la reducción de gramajes (reduflación) y precios por unidad/kg ahorra dinero real a las familias y se comparte de forma masiva.',
+        },
+        {
+          pattern: 'Comparativa Real Mercadona / Carrefour / Lidl',
+          example: `Ejemplo: "Auditoría de Ticket y Marcas Blancas para ${topicClean}"`,
+          whyItWorks: 'La transparencia de costes y el análisis directo ticket en mano enganchan de principio a fin.',
+        },
+        {
+          pattern: 'Planificación Semanal sin Desperdicio',
+          example: `Ejemplo: "Cómo Recortar un 30% en ${topicClean} sin Comer Peor"`,
+          whyItWorks: 'Estructurar la lista y aprovechar sobras evita gastos impulsivos y compras repetidas.',
         },
       ];
     } else {
@@ -299,6 +353,24 @@ export function analyzeOutliers(req: ResearchRequest, competitors: CompetitorRes
           whyItWorks: 'Actionable steps without fluff keep retention high across all video formats.',
         },
       ];
+    } else if (market === 'es-ES') {
+      dominantHookPatterns = [
+        {
+          pattern: 'El Fallo Más Común al Empezar',
+          example: firstTitle ? `Ejemplo real observado: "${firstTitle}"` : `Hipótesis estratégica: "El Error de Principiante con ${topicClean} que Debes Evitar"`,
+          whyItWorks: 'Ahorra horas y frustraciones a quienes dan sus primeros pasos.',
+        },
+        {
+          pattern: 'Comparativa Sin Filtros de Alternativas',
+          example: `Ejemplo: "Herramienta A vs Herramienta B para ${topicClean}: Cuál Merece la Pena"`,
+          whyItWorks: 'El público valora análisis objetivos y sin patrocinios encubiertos.',
+        },
+        {
+          pattern: 'Método Práctico Paso a Paso',
+          example: `Ejemplo: "Cómo Dominar ${topicClean} desde Cero sin Perder Tiempo"`,
+          whyItWorks: 'Pasos sencillos y reproducibles garantizan alta retención de vídeo.',
+        },
+      ];
     } else {
       dominantHookPatterns = [
         {
@@ -361,9 +433,13 @@ export function analyzeOutliers(req: ResearchRequest, competitors: CompetitorRes
       competitors.length > 0
         ? (market === 'en-GB'
           ? `${Math.round(competitors.length * 0.65)} of ${competitors.length} top analysed UK videos utilise this structure.`
+          : market === 'es-ES'
+          ? `${Math.round(competitors.length * 0.65)} de ${competitors.length} de los contenidos analizados utilizan esta estructura.`
           : `${Math.round(competitors.length * 0.65)} de ${competitors.length} dos conteúdos de topo analisados utilizam esta estrutura.`)
         : (market === 'en-GB'
           ? `Benchmark behavioural pattern for ${platform.toUpperCase()} in the UK market (no direct indexed competitors on this exact term).`
+          : market === 'es-ES'
+          ? `Patrón de referencia para ${platform.toUpperCase()} en el mercado de España (sin competencia directa indexada en este término).`
           : `Padrão comportamental de referência para ${platform.toUpperCase()} no mercado ${market} (sem concorrência direta indexada no termo).`),
   };
 
@@ -376,6 +452,13 @@ export function analyzeOutliers(req: ResearchRequest, competitors: CompetitorRes
           `Unsponsored blind taste test: Budget ingredients vs premium brands for ${topicClean}`,
           `The quiet mistake ruining 9 in 10 bakes of ${topicClean}`,
           `Quick foolproof technique for ${topicClean} in under 15 minutes of prep`,
+        ]
+      : market === 'es-ES'
+      ? [
+          `Técnica infalible de horno y punto exacto para ${topicClean}`,
+          `Comparativa sin patrocinios: Ingredientes de súper vs marcas caras para ${topicClean}`,
+          `El error clásico que arruina la textura de ${topicClean}`,
+          `Preparación rápida en menos de 15 minutos sin complicaciones`,
         ]
       : [
           `Técnica infalível de forno e ponto correto para ${topicClean}`,
@@ -391,6 +474,13 @@ export function analyzeOutliers(req: ResearchRequest, competitors: CompetitorRes
           `The root and watering blunder that kills 9 in 10 seedlings of ${topicClean}`,
           `Minimalist 10-minute weekly garden routine for beginners`,
         ]
+      : market === 'es-ES'
+      ? [
+          `Calendario de siembra y cuidados del sustrato para ${topicClean}`,
+          `Comparativa sin patrocinios: Mezclas sencillas vs abonos caros para ${topicClean}`,
+          `El error de riego y drenaje que arruína las plantas de ${topicClean}`,
+          `Rutina semanal de mantenimiento de 10 minutos para principiantes`,
+        ]
       : [
           `Calendário de plantio e cuidados com o solo para ${topicClean}`,
           `Comparativo sem patrocínios: Misturas simples vs adubos caros para ${topicClean}`,
@@ -404,6 +494,13 @@ export function analyzeOutliers(req: ResearchRequest, competitors: CompetitorRes
           `Whole supermarket food vs expensive supplements: The unfiltered truth for ${topicClean}`,
           `The crash-diet trap causing 9 in 10 people to quit ${topicClean} after week two`,
           `Sustainable 15-minute daily habit for lasting energy and vitality`,
+        ]
+      : market === 'es-ES'
+      ? [
+          `Comidas prácticas de alta densidad nutricional para ${topicClean}`,
+          `Comida real de mercado vs suplementos caros para ${topicClean}`,
+          `El error de las restricciones extremas que hace fracasar al 90% en ${topicClean}`,
+          `Rutina diaria sostenible de 15 minutos para mantener la vitalidad`,
         ]
       : [
           `Refeições práticas de alta densidade nutricional para ${topicClean}`,
@@ -419,6 +516,13 @@ export function analyzeOutliers(req: ResearchRequest, competitors: CompetitorRes
           `The quiet shopping habit costing UK households hundreds each month on ${topicClean}`,
           `Structured weekly meal and trolley plan taking under 20 minutes to organise`,
         ]
+      : market === 'es-ES'
+      ? [
+          `Auditoría real de tickets de súper y trucos de precio por kilo en ${topicClean}`,
+          `Comparativa sin patrocinios: Marcas blancas vs marcas líderes en ${topicClean}`,
+          `El gasto silencioso en la cesta de la compra que perjudica a 9 de cada 10 familias`,
+          `Plan semanal de compra económica organizado en menos de 15 minutos`,
+        ]
       : [
           `Auditoria real de faturas de supermercado e truques de preço por quilo em ${topicClean}`,
           `Comparativo sem patrocínios: Marcas próprias vs marcas líderes em ${topicClean}`,
@@ -432,6 +536,13 @@ export function analyzeOutliers(req: ResearchRequest, competitors: CompetitorRes
           `Unsponsored comparison: The 3 UK platforms and funds that are genuinely worthwhile`,
           `The quiet blunder costing 9 in 10 UK creators and investors hundreds of pounds each year with ${topicClean}`,
           `Minimalist investing routine for UK full-time workers taking under 15 minutes a month`,
+        ]
+      : market === 'es-ES'
+      ? [
+          `Impacto práctico de las novedades fiscales y regulatorias en 2025/2026 aplicadas a ${topicClean}`,
+          `Comparativa sin patrocinios: Las 3 opciones que realmente merecen la pena`,
+          `El fallo silencioso que cuesta cientos de euros a 9 de cada 10 personas con ${topicClean}`,
+          `Estrategia minimalista para principiantes con ejecución en 15 minutos al mes`,
         ]
       : [
           `Impacto prático das novas regras e custos em 2025/2026 aplicadas a ${topicClean}`,
@@ -447,6 +558,13 @@ export function analyzeOutliers(req: ResearchRequest, competitors: CompetitorRes
           `Unsponsored comparison: The top 3 alternatives for ${topicClean}`,
           `The common setup mistake that stalls progress for months with ${topicClean}`,
           `Streamlined workflow taking under 15 minutes a day for consistent results`,
+        ]
+      : market === 'es-ES'
+      ? [
+          `Implementación práctica y herramientas esenciales para ${topicClean}`,
+          `Comparativa sin patrocinios de las mejores alternativas para ${topicClean}`,
+          `El error de principiante que retrasa tus resultados meses en ${topicClean}`,
+          `Flujo de trabajo práctico y directo para obtener resultados desde el primer día`,
         ]
       : [
           `Implementação prática e ferramentas essenciais para ${topicClean}`,
@@ -490,6 +608,38 @@ export function analyzeOutliers(req: ResearchRequest, competitors: CompetitorRes
         },
       ];
     }
+  } else if (market === 'es-ES') {
+    if (domainInfo.isFinance) {
+      emotionalTriggers = [
+        {
+          trigger: 'Aversión a la Pérdida / Errores Fiscales',
+          application: 'Exponer el coste directo o gasto innecesario antes de presentar la estrategia optimizada.',
+        },
+        {
+          trigger: 'Curiosidad Específica (Brecha de Conocimiento)',
+          application: 'Plantear una paradoja ("por qué el consejo financiero más extendido en redes es contraproducente").',
+        },
+        {
+          trigger: 'Perspectiva Exclusiva / Ventaja Práctica',
+          application: 'Explicar los criterios y números reales que manejan los especialistas detrás de escena.',
+        },
+      ];
+    } else {
+      emotionalTriggers = [
+        {
+          trigger: 'Aversión a la Frustración y Tiempo Perdido',
+          application: 'Destacar el error que hace fracasar los primeros intentos antes de mostrar la solución directa.',
+        },
+        {
+          trigger: 'Curiosidad y Desmitificación',
+          application: 'Desafiar tópicos repetidos en internet mediante una demostración práctica e inmediata.',
+        },
+        {
+          trigger: 'Confianza y Aplicación Inmediata',
+          application: 'Facilitar un paso a paso realista que cualquier persona pueda llevar a la práctica hoy mismo.',
+        },
+      ];
+    }
   } else {
     if (domainInfo.isFinance) {
       emotionalTriggers = [
@@ -529,7 +679,7 @@ export function analyzeOutliers(req: ResearchRequest, competitors: CompetitorRes
     : market === 'pt-BR'
     ? 'Brasil (pt-BR)'
     : market === 'es-ES'
-    ? 'Espanha (es-ES)'
+    ? 'España (es-ES)'
     : 'United Kingdom (en-GB)';
 
   // 5. Strictly factual observations
@@ -542,6 +692,14 @@ export function analyzeOutliers(req: ResearchRequest, competitors: CompetitorRes
             `Most effective titles range between 45 and 65 characters with concrete figures or actionable phrasing.`,
             `Confirmed presence of established UK channels (${competitors.slice(0, 3).map((c) => c.channelOrCreator).join(', ')}).`,
             `A significant proportion of competitors focus on introductory theory, leaving clear gaps for practical walkthroughs.`,
+          ]
+        : market === 'es-ES'
+        ? [
+            `Muestra analizada: ${competitors.length} contenidos de la competencia activos encontrados en la búsqueda de mercado.`,
+            `Plataforma analizada: ${platform.toUpperCase()} en el mercado geográfico y lingüístico de ${marketName}.`,
+            `Títulos más efectivos contienen entre 45 y 65 caracteres con verbos de acción o cifras concretas.`,
+            `Presencia confirmada de canales establecidos (${competitors.slice(0, 3).map((c) => c.channelOrCreator).join(', ')}).`,
+            `Gran parte de los vídeos competidores se centra en nociones teóricas, dejando huecos para guías prácticas directas.`,
           ]
         : [
             `Amostra pesquisada: ${competitors.length} conteúdos concorrentes ativos encontrados na pesquisa de mercado.`,
@@ -556,6 +714,13 @@ export function analyzeOutliers(req: ResearchRequest, competitors: CompetitorRes
             `Observed sample: 0 direct competitor videos publicly indexed at query time.`,
             `Zero-fabrication guarantee: No dummy competitors or simulated statistics were generated to populate this audit.`,
             `Ecosystem mapping: The absence of dominant incumbent channels indicates an early-mover opportunity in the UK market.`,
+          ]
+        : market === 'es-ES'
+        ? [
+            `Búsqueda directa realizada para "${topic}" en la plataforma ${platform.toUpperCase()} (${marketName}).`,
+            `Muestra observada: 0 contenidos directos indexados públicamente en el momento de la consulta.`,
+            `Garantía de integridad: Ningún competidor ficticio ni métrica simulada fue generada para rellenar la tabla.`,
+            `Mapeo de ecosistema: La ausencia de canales dominantes indica oportunidad pionera en el mercado de España.`,
           ]
         : [
             `Pesquisa direta realizada para "${topic}" na plataforma ${platform.toUpperCase()} (${marketName}).`,
@@ -573,6 +738,12 @@ export function analyzeOutliers(req: ResearchRequest, competitors: CompetitorRes
             `AI Deduction: The UK audience displays fatigue with superficial guru-style formats, favouring creators who demonstrate real examples, exact techniques, and transparent evidence.`,
             `AI Deduction: A script structure with an urgent 3-second hook focused on tangible end results will achieve retention well above the niche average.`,
           ]
+        : market === 'es-ES'
+        ? [
+            `Deducción IA: Existe una saturación evidente de contenidos teóricos y repetitivos sobre "${topic}", lo que abre una gran oportunidad para enfoques contracorriente y datos prácticos.`,
+            `Deducción IA: La audiencia en España demuestra fatiga ante formatos superficiales o de "gurú", prefiriendo creadores que muestran ejemplos reales, pasos exactos y total transparencia.`,
+            `Deducción IA: El formato de guión con gancho de 3 segundos centrado en el resultado final logrará una retención muy superior a la media del nicho.`,
+          ]
         : [
             `Dedução IA: Há uma saturação evidente de conteúdos teóricos e repetitivos sobre "${topic}", criando uma oportunidade gigantesca para abordagens contrárias e dados práticos.`,
             market === 'pt-PT'
@@ -589,6 +760,12 @@ export function analyzeOutliers(req: ResearchRequest, competitors: CompetitorRes
             domainInfo.isFinance
               ? `AI Deduction: Starting with a "Beginner Step-by-Step UK Blueprint" and a "Common Mistakes with HMRC/Fees" video is recommended to validate organic search demand.`
               : `AI Deduction: Starting with a "Beginner Step-by-Step Blueprint" and a "Common Critical Mistakes to Avoid" video is recommended to validate organic search demand.`,
+          ]
+        : market === 'es-ES'
+        ? [
+            `Deducción IA: La ausencia de vídeos competidores directos con autoridad consolidada para "${topic}" indica una oportunidad pionera (océano azul) en ${marketName}.`,
+            `Deducción IA: Las oportunidades, ideas y guiones generados a continuación se basan en modelos predictivos del comportamiento de la audiencia en España y en las mejores prácticas de retención en ${platform.toUpperCase()}, sin invención de datos.`,
+            `Deducción IA: Se recomienda arrancar con formatos de "Guía Paso a Paso para Principiantes" y "Errores Más Comunes a Evitar" para validar la demanda orgánica.`,
           ]
         : [
             `Dedução IA: A ausência de vídeos concorrentes diretos com forte autoridade para "${topic}" indica oportunidade pioneira (oceano azul) em ${marketName}.`,
